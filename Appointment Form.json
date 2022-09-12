@@ -1,1 +1,326 @@
-{"pc":{"type":"Grid","model":{"rows":[{"cells":[{"component":{"type":"Grid","model":{"rows":[{"cells":[{"component":{"type":"Text","model":{"text":"<h1 style=\"text-align:center;\">Appointment Form<br /></h1>","_internalName":"Text1"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"Text","model":{"text":"<p style=\"text-align:center;\">To schedule an appointment, please fill out the information below.</p>","_internalName":"Text4"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md","class":"fd-blur-background fd-form-header","_internalName":"Grid2"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"padding":[30,null,null,null],"component":{"type":"Grid","model":{"rows":[{"cells":[{"component":{"type":"Text","model":{"text":"<h4>Contact Information</h4>","_internalName":"Text2"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"SingleLineText","model":{"title":{"text":"First Name","visible":false},"orientation":"Horizontal","required":false,"cHint":"First Name","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"Anything","wrap":true,"_internalName":"FirstName"}},"alignment":"Justify","columns":{"width":6}},{"component":{"type":"SingleLineText","model":{"title":{"text":"Family Name","visible":false},"orientation":"Horizontal","required":false,"cHint":"Family Name","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"Anything","wrap":true,"_internalName":"FamilyName"}},"alignment":"Justify","columns":{"width":6}}]},{"cells":[{"component":{"type":"SingleLineText","model":{"title":{"text":"Email","visible":false},"orientation":"Horizontal","required":false,"cHint":"Email","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"E-mail","wrap":true,"_internalName":"Email","pattern":"^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$","error":"This field must contain a valid e-mail address."}},"alignment":"Justify","columns":{"width":6}},{"component":{"type":"MaskedInput","model":{"title":{"text":"Phone","visible":false},"orientation":"Horizontal","required":false,"font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"mask":"+0 (000) 000 00 00","wrap":true,"_internalName":"Phone"}},"alignment":"Justify","columns":{"width":6}}]},{"cells":[{"component":{"type":"Text","model":{"text":"<h4>Appointment Details</h4>","_internalName":"Text3"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"Date","model":{"title":{"text":"Date1","visible":false},"orientation":"Horizontal","required":false,"cHint":"Select Appointment Date","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"wrap":true,"_internalName":"Date1"}},"alignment":"Justify","columns":{"width":6}}]},{"cells":[{"component":{"type":"SingleLineText","model":{"title":{"text":"How can we help you?","visible":true},"orientation":"Vertical","required":false,"font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"Anything","wrap":true,"_internalName":"Comment"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"padding":[15,null,null,null],"component":{"type":"Submit","model":{"text":"Schedule","type":"Primary","click":"return fd.save();","_internalName":"Submit1","style":"font-weight: 700 !important;"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md","class":"fd-blur-background","_internalName":"Grid1"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md"}},"phone":null,"tablet":null,"js":"","css":".fd-form {\r\n    background: linear-gradient(to right, #0000004d, #0000004d), url(\"https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/cbba8d0e-1fd5-4b3d-927c-8f556638c8ac_bg.jpg\") no-repeat center top;\r\n    -webkit-background-size: cover;\r\n    -moz-background-size: cover;\r\n    -o-background-size: cover;\r\n    background-size: cover;\r\n}\r\n\r\n.fd-form .form-widget > .fd-form {\r\n    background: none;\r\n}\r\n\r\n.fd-form.k-animation-container {\r\n    background-image: none !important;\r\n}\r\n\r\n.fd-form .success-animation {\r\n    padding: 20px;\r\n    background: rgba(0, 0, 0, 0.5);\r\n    backdrop-filter: blur(8px);\r\n    border-radius: 2px;\r\n}\r\n\r\n.fd-form .fd-blur-background {\r\n    background: rgba(0, 0, 0, 0.2);\r\n    backdrop-filter: blur(8px);\r\n    border-radius: 2px;\r\n}\r\n\r\n.fd-form h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    text-align: center !important;\r\n    color: #ffff !important;\r\n    margin-bottom: 1rem !important;\r\n}\r\n\r\n.fd-form h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    padding-top: 4px !important;\r\n    padding-bottom: 4px !important;\r\n    text-align: center !important;\r\n    color: #ffff !important;\r\n    margin-bottom: 1rem !important;\r\n}\r\n\r\n.fd-form .fd-field-title,\r\n.fd-form .fd-form-header p {\r\n    color: #fff !important;\r\n}\r\n","theme":{"primary":"#f79646","bodyText":"#ffffff","bodyBackground":"#f2f2f2","fontFamily":null,"fontType":0,"fontSize":15,"fontWeight":400,"borderThickness":0,"borderRadius":8,"shadow":true,"themeId":"bfc3c668ff84aa3374e10648a87427eb"},"timezone":"Europe/Budapest","culture":"en-US","notifySubscribers":false,"thankYouMessage":"Thank you! We will contact you to confirm the details.","redirectURL":null,"hideAfterSubmission":true,"submissionTimeout":"60","authentication":0,"singleSubmissionPerUser":false,"allowEditingSubmission":false,"restrictAccess":false,"azureADTenant":null,"azureADObjects":[],"azureB2CProperties":null,"version":"1.0.2"}
+{
+  "pc": {
+    "type": "Grid",
+    "model": {
+      "rows": [
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "Grid",
+                "model": {
+                  "rows": [
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "Text",
+                            "model": {
+                              "text": "<h1 style=\"text-align:center;\">Appointment Form<br /></h1>",
+                              "_internalName": "Text1"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "Text",
+                            "model": {
+                              "text": "<p style=\"text-align:center;\">To schedule an appointment, please fill out the information below.</p>",
+                              "_internalName": "Text4"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    }
+                  ],
+                  "stacked": "md",
+                  "class": "fd-blur-background fd-form-header",
+                  "_internalName": "Grid2"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "padding": [30, null, null, null],
+              "component": {
+                "type": "Grid",
+                "model": {
+                  "rows": [
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "Text",
+                            "model": {
+                              "text": "<h4>Contact Information</h4>",
+                              "_internalName": "Text2"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "SingleLineText",
+                            "model": {
+                              "title": {
+                                "text": "First Name",
+                                "visible": false
+                              },
+                              "orientation": "Horizontal",
+                              "required": false,
+                              "cHint": "First Name",
+                              "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                              },
+                              "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                              },
+                              "type": "Anything",
+                              "wrap": true,
+                              "_internalName": "FirstName"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 6 }
+                        },
+                        {
+                          "component": {
+                            "type": "SingleLineText",
+                            "model": {
+                              "title": {
+                                "text": "Family Name",
+                                "visible": false
+                              },
+                              "orientation": "Horizontal",
+                              "required": false,
+                              "cHint": "Family Name",
+                              "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                              },
+                              "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                              },
+                              "type": "Anything",
+                              "wrap": true,
+                              "_internalName": "FamilyName"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 6 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "SingleLineText",
+                            "model": {
+                              "title": { "text": "Email", "visible": false },
+                              "orientation": "Horizontal",
+                              "required": false,
+                              "cHint": "Email",
+                              "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                              },
+                              "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                              },
+                              "type": "E-mail",
+                              "wrap": true,
+                              "_internalName": "Email",
+                              "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                              "error": "This field must contain a valid e-mail address."
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 6 }
+                        },
+                        {
+                          "component": {
+                            "type": "MaskedInput",
+                            "model": {
+                              "title": { "text": "Phone", "visible": false },
+                              "orientation": "Horizontal",
+                              "required": false,
+                              "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                              },
+                              "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                              },
+                              "mask": "+0 (000) 000 00 00",
+                              "wrap": true,
+                              "_internalName": "Phone"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 6 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "Text",
+                            "model": {
+                              "text": "<h4>Appointment Details</h4>",
+                              "_internalName": "Text3"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "Date",
+                            "model": {
+                              "title": { "text": "Date1", "visible": false },
+                              "orientation": "Horizontal",
+                              "required": false,
+                              "cHint": "Select Appointment Date",
+                              "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                              },
+                              "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                              },
+                              "wrap": true,
+                              "_internalName": "Date1"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 6 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "SingleLineText",
+                            "model": {
+                              "title": {
+                                "text": "How can we help you?",
+                                "visible": true
+                              },
+                              "orientation": "Vertical",
+                              "required": false,
+                              "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                              },
+                              "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                              },
+                              "type": "Anything",
+                              "wrap": true,
+                              "_internalName": "Comment"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "padding": [15, null, null, null],
+                          "component": {
+                            "type": "Submit",
+                            "model": {
+                              "text": "Schedule",
+                              "type": "Primary",
+                              "click": "return fd.save();",
+                              "_internalName": "Submit1",
+                              "style": "font-weight: 700 !important;"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    }
+                  ],
+                  "stacked": "md",
+                  "class": "fd-blur-background",
+                  "_internalName": "Grid1"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        }
+      ],
+      "stacked": "md"
+    }
+  },
+  "phone": null,
+  "tablet": null,
+  "js": "",
+  "css": ".fd-form {\r\n    background: linear-gradient(to right, #0000004d, #0000004d), url(\"https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/cbba8d0e-1fd5-4b3d-927c-8f556638c8ac_bg.jpg\") no-repeat center top;\r\n    -webkit-background-size: cover;\r\n    -moz-background-size: cover;\r\n    -o-background-size: cover;\r\n    background-size: cover;\r\n}\r\n\r\n.fd-form .form-widget > .fd-form {\r\n    background: none;\r\n}\r\n\r\n.fd-form.k-animation-container {\r\n    background-image: none !important;\r\n}\r\n\r\n.fd-form .success-animation {\r\n    padding: 20px;\r\n    background: rgba(0, 0, 0, 0.5);\r\n    backdrop-filter: blur(8px);\r\n    border-radius: 2px;\r\n}\r\n\r\n.fd-form .fd-blur-background {\r\n    background: rgba(0, 0, 0, 0.2);\r\n    backdrop-filter: blur(8px);\r\n    border-radius: 2px;\r\n}\r\n\r\n.fd-form h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    text-align: center !important;\r\n    color: #ffff !important;\r\n    margin-bottom: 1rem !important;\r\n}\r\n\r\n.fd-form h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    padding-top: 4px !important;\r\n    padding-bottom: 4px !important;\r\n    text-align: center !important;\r\n    color: #ffff !important;\r\n    margin-bottom: 1rem !important;\r\n}\r\n\r\n.fd-form .fd-field-title,\r\n.fd-form .fd-form-header p {\r\n    color: #fff !important;\r\n}\r\n",
+  "theme": {
+    "primary": "#f79646",
+    "bodyText": "#ffffff",
+    "bodyBackground": "#f2f2f2",
+    "fontFamily": null,
+    "fontType": 0,
+    "fontSize": 15,
+    "fontWeight": 400,
+    "borderThickness": 0,
+    "borderRadius": 8,
+    "shadow": true,
+    "themeId": "bfc3c668ff84aa3374e10648a87427eb"
+  },
+  "timezone": "Europe/Budapest",
+  "culture": "en-US",
+  "notifySubscribers": false,
+  "thankYouMessage": "Thank you! We will contact you to confirm the details.",
+  "redirectURL": null,
+  "hideAfterSubmission": true,
+  "submissionTimeout": "60",
+  "authentication": 0,
+  "singleSubmissionPerUser": false,
+  "allowEditingSubmission": false,
+  "restrictAccess": false,
+  "azureADTenant": null,
+  "azureADObjects": [],
+  "azureB2CProperties": null,
+  "version": "1.0.2"
+}

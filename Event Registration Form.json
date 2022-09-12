@@ -1,1 +1,418 @@
-{"pc":{"type":"Grid","model":{"rows":[{"cells":[{"component":{"type":"Grid","model":{"rows":[{"cells":[{"component":{"type":"Text","model":{"text":"<h1 style=\"text-align:center;\">Event Name</h1>","_internalName":"Text6"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"Text","model":{"text":"<p style=\"text-align:center;\">Please fill out the form, and we will include you on the guest list. You will receive the invitation by email. We can't wait to see you!</p>","_internalName":"Text1"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md","class":"fd-blur-background fd-form-header","_internalName":"Grid6"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"padding":[30,null,null,null],"component":{"type":"Grid","model":{"rows":[{"cells":[{"padding":[null,0,null,0],"component":{"type":"Grid","model":{"rows":[{"cells":[{"component":{"type":"SingleLineText","model":{"title":{"text":"What is your name?","visible":true},"orientation":"Vertical","required":false,"cHint":"Enola Holmes","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"Anything","wrap":true,"_internalName":"Name"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"SingleLineText","model":{"title":{"text":"Your email","visible":true},"orientation":"Horizontal","required":false,"cHint":"ex: username@domain.com","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"E-mail","wrap":true,"_internalName":"Email","pattern":"^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$","error":"This field must contain a valid e-mail address."}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"MaskedInput","model":{"title":{"text":"and phone","visible":true},"orientation":"Horizontal","required":false,"font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"mask":"+0 (000) 000 00 00","wrap":true,"_internalName":"Phone"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"SingleChoice","model":{"title":{"text":"How did you hear about the event?","visible":true},"orientation":"Vertical","required":false,"font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"dataSource":"StaticList","options":"Friends\nAdvertisement\nSearch Engine\nSocial Media","wrap":true,"cColumns":1,"_internalName":"HowDidYouHearAboutTheEvent"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"Toggle","model":{"width":220,"title":{"text":"Will you bring friends?","visible":true},"orientation":"Horizontal","required":false,"font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"mode":"Toggle","wrap":true,"cOnText":"YES","cOffText":"NO","_internalName":"Friends"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md","_internalName":"Grid2"}},"alignment":"Justify","columns":{"width":6}},{"padding":[null,0,null,0],"component":{"type":"Grid","model":{"rows":[{"cells":[{"component":{"type":"Text","model":{"text":"<h6>We will be waiting for you here:</h6>","_internalName":"Text5"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"HTML","model":{"content":"<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4575.227344977622!2d15.085213220197977!3d37.48784919960512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313e317db79808b%3A0xcf578fec54df7e0c!2sPorto%20Catania!5e0!3m2!1sen!2sru!4v1616679728463!5m2!1sen!2sru\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>","_internalName":"HTML1"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md","_internalName":"Grid4"}},"alignment":"Justify","columns":{"width":6}}]},{"cells":[{"padding":[null,0,null,0],"class":"fd-friends-list","component":{"type":"Grid","model":{"rows":[{"cells":[{"component":{"type":"Text","model":{"text":"<h6>Please list your friends and their contacts. We will send them invitations and make sure they not get lost.</h6>","_internalName":"Text4"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"DataTable","model":{"columns":[{"_internalName":"FriendName","title":"Friend Name","required":true,"type":"String"},{"_internalName":"Email","title":"Email","required":false,"type":"String"},{"_internalName":"Phone","title":"Phone","required":false,"type":"String"}],"newLine":"Top","delete":"Last","_internalName":"DataTable1"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md","_internalName":"Grid5"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"Submit","model":{"text":"REGISTER ME","type":"Primary","click":"return fd.save();","_internalName":"Submit1","style":"font-size: 18px; font-weight: 600 !important;"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md","class":"fd-blur-background","_internalName":"Grid3"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md"}},"phone":null,"tablet":null,"js":"//function that shows/hides container with the DataTable\r\nfunction friendsList() {\r\n    \r\n    var friends = fd.field('Friends').value;\r\n\r\n    if (friends) {\r\n        //show elements\r\n        $('.fd-friends-list').show();\r\n    }\r\n    else {\r\n        //hide elements\r\n        $('.fd-friends-list').hide();\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    //call the function on form load\r\n    friendsList();\r\n    \r\n    //call function when field is changed\r\n    fd.field('Friends').$on('change', friendsList)\r\n});\r\n","css":".fd-form {\r\n    background: url(https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/cb53dc1f-1b51-488f-b9a2-c818ba9a9e75_bg.jpg) no-repeat center top ;\r\n    -webkit-background-size: cover;\r\n    -moz-background-size: cover;\r\n    -o-background-size: cover;\r\n    background-size: cover;\r\n    \r\n}\r\n\r\n.fd-form .form-widget > .fd-form {\r\n    background: none;\r\n}\r\n\r\n.fd-form .fd-blur-background{\r\n    background: rgba(0, 0, 0, 0.4);\r\n    backdrop-filter: blur(8px);\r\n    color: #000000;\r\n    border-radius: 3px;\r\n}\r\n\r\n.fd-form .fd-form-header p {\r\n    color: #fff8c4 !important;\r\n    font-size: .8rem;\r\n    opacity: .5;\r\n}\r\n\r\n.fd-form h1, .fd-form h6, .fd-form h4, .fd-form small, .fd-field-title, .fd-form label {\r\n    color: #fff8c4 !important;\r\n}\r\n\r\n.fd-form .text-danger {\r\n    color: #ffb3ed !important;\r\n}\r\n\r\n.fd-form .form-control.is-invalid {\r\n    border-color: #ffb3ed !important;\r\n}\r\n\r\n.fd-form h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    text-align: center !important;\r\n}\r\n\r\n.fd-form iframe {\r\n    width:100%;\r\n    height:300px;\r\n}\r\n","theme":{"primary":"#ffb3ed","bodyText":"#0d83a2","bodyBackground":"#ffffff","fontFamily":null,"fontType":0,"fontSize":15,"fontWeight":400,"borderThickness":1,"borderRadius":0,"shadow":true,"themeId":"10e6fe06a66c151fcab1336b0fa1fc2a"},"timezone":"Europe/Budapest","culture":"en-US","notifySubscribers":false,"thankYouMessage":null,"redirectURL":null,"hideAfterSubmission":false,"submissionTimeout":0,"authentication":0,"singleSubmissionPerUser":false,"allowEditingSubmission":false,"restrictAccess":false,"azureADTenant":null,"azureADObjects":[],"azureB2CProperties":null,"version":"1.0.2"}
+{
+  "pc": {
+    "type": "Grid",
+    "model": {
+      "rows": [
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "Grid",
+                "model": {
+                  "rows": [
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "Text",
+                            "model": {
+                              "text": "<h1 style=\"text-align:center;\">Event Name</h1>",
+                              "_internalName": "Text6"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "Text",
+                            "model": {
+                              "text": "<p style=\"text-align:center;\">Please fill out the form, and we will include you on the guest list. You will receive the invitation by email. We can't wait to see you!</p>",
+                              "_internalName": "Text1"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    }
+                  ],
+                  "stacked": "md",
+                  "class": "fd-blur-background fd-form-header",
+                  "_internalName": "Grid6"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "padding": [30, null, null, null],
+              "component": {
+                "type": "Grid",
+                "model": {
+                  "rows": [
+                    {
+                      "cells": [
+                        {
+                          "padding": [null, 0, null, 0],
+                          "component": {
+                            "type": "Grid",
+                            "model": {
+                              "rows": [
+                                {
+                                  "cells": [
+                                    {
+                                      "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                          "title": {
+                                            "text": "What is your name?",
+                                            "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "cHint": "Enola Holmes",
+                                          "font": {
+                                            "style": "Normal",
+                                            "weight": "Semibold"
+                                          },
+                                          "cFont": {
+                                            "style": "Normal",
+                                            "weight": "Normal"
+                                          },
+                                          "type": "Anything",
+                                          "wrap": true,
+                                          "_internalName": "Name"
+                                        }
+                                      },
+                                      "alignment": "Justify",
+                                      "columns": { "width": 12 }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                          "title": {
+                                            "text": "Your email",
+                                            "visible": true
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "cHint": "ex: username@domain.com",
+                                          "font": {
+                                            "style": "Normal",
+                                            "weight": "Semibold"
+                                          },
+                                          "cFont": {
+                                            "style": "Normal",
+                                            "weight": "Normal"
+                                          },
+                                          "type": "E-mail",
+                                          "wrap": true,
+                                          "_internalName": "Email",
+                                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                          "error": "This field must contain a valid e-mail address."
+                                        }
+                                      },
+                                      "alignment": "Justify",
+                                      "columns": { "width": 12 }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                          "title": {
+                                            "text": "and phone",
+                                            "visible": true
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                            "style": "Normal",
+                                            "weight": "Semibold"
+                                          },
+                                          "cFont": {
+                                            "style": "Normal",
+                                            "weight": "Normal"
+                                          },
+                                          "mask": "+0 (000) 000 00 00",
+                                          "wrap": true,
+                                          "_internalName": "Phone"
+                                        }
+                                      },
+                                      "alignment": "Justify",
+                                      "columns": { "width": 12 }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                          "title": {
+                                            "text": "How did you hear about the event?",
+                                            "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                            "style": "Normal",
+                                            "weight": "Semibold"
+                                          },
+                                          "cFont": {
+                                            "style": "Normal",
+                                            "weight": "Normal"
+                                          },
+                                          "dataSource": "StaticList",
+                                          "options": "Friends\nAdvertisement\nSearch Engine\nSocial Media",
+                                          "wrap": true,
+                                          "cColumns": 1,
+                                          "_internalName": "HowDidYouHearAboutTheEvent"
+                                        }
+                                      },
+                                      "alignment": "Justify",
+                                      "columns": { "width": 12 }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "component": {
+                                        "type": "Toggle",
+                                        "model": {
+                                          "width": 220,
+                                          "title": {
+                                            "text": "Will you bring friends?",
+                                            "visible": true
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                            "style": "Normal",
+                                            "weight": "Semibold"
+                                          },
+                                          "cFont": {
+                                            "style": "Normal",
+                                            "weight": "Normal"
+                                          },
+                                          "mode": "Toggle",
+                                          "wrap": true,
+                                          "cOnText": "YES",
+                                          "cOffText": "NO",
+                                          "_internalName": "Friends"
+                                        }
+                                      },
+                                      "alignment": "Justify",
+                                      "columns": { "width": 12 }
+                                    }
+                                  ]
+                                }
+                              ],
+                              "stacked": "md",
+                              "_internalName": "Grid2"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 6 }
+                        },
+                        {
+                          "padding": [null, 0, null, 0],
+                          "component": {
+                            "type": "Grid",
+                            "model": {
+                              "rows": [
+                                {
+                                  "cells": [
+                                    {
+                                      "component": {
+                                        "type": "Text",
+                                        "model": {
+                                          "text": "<h6>We will be waiting for you here:</h6>",
+                                          "_internalName": "Text5"
+                                        }
+                                      },
+                                      "alignment": "Justify",
+                                      "columns": { "width": 12 }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "component": {
+                                        "type": "HTML",
+                                        "model": {
+                                          "content": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4575.227344977622!2d15.085213220197977!3d37.48784919960512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313e317db79808b%3A0xcf578fec54df7e0c!2sPorto%20Catania!5e0!3m2!1sen!2sru!4v1616679728463!5m2!1sen!2sru\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+                                          "_internalName": "HTML1"
+                                        }
+                                      },
+                                      "alignment": "Justify",
+                                      "columns": { "width": 12 }
+                                    }
+                                  ]
+                                }
+                              ],
+                              "stacked": "md",
+                              "_internalName": "Grid4"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 6 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "padding": [null, 0, null, 0],
+                          "class": "fd-friends-list",
+                          "component": {
+                            "type": "Grid",
+                            "model": {
+                              "rows": [
+                                {
+                                  "cells": [
+                                    {
+                                      "component": {
+                                        "type": "Text",
+                                        "model": {
+                                          "text": "<h6>Please list your friends and their contacts. We will send them invitations and make sure they not get lost.</h6>",
+                                          "_internalName": "Text4"
+                                        }
+                                      },
+                                      "alignment": "Justify",
+                                      "columns": { "width": 12 }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "component": {
+                                        "type": "DataTable",
+                                        "model": {
+                                          "columns": [
+                                            {
+                                              "_internalName": "FriendName",
+                                              "title": "Friend Name",
+                                              "required": true,
+                                              "type": "String"
+                                            },
+                                            {
+                                              "_internalName": "Email",
+                                              "title": "Email",
+                                              "required": false,
+                                              "type": "String"
+                                            },
+                                            {
+                                              "_internalName": "Phone",
+                                              "title": "Phone",
+                                              "required": false,
+                                              "type": "String"
+                                            }
+                                          ],
+                                          "newLine": "Top",
+                                          "delete": "Last",
+                                          "_internalName": "DataTable1"
+                                        }
+                                      },
+                                      "alignment": "Justify",
+                                      "columns": { "width": 12 }
+                                    }
+                                  ]
+                                }
+                              ],
+                              "stacked": "md",
+                              "_internalName": "Grid5"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "component": {
+                            "type": "Submit",
+                            "model": {
+                              "text": "REGISTER ME",
+                              "type": "Primary",
+                              "click": "return fd.save();",
+                              "_internalName": "Submit1",
+                              "style": "font-size: 18px; font-weight: 600 !important;"
+                            }
+                          },
+                          "alignment": "Justify",
+                          "columns": { "width": 12 }
+                        }
+                      ]
+                    }
+                  ],
+                  "stacked": "md",
+                  "class": "fd-blur-background",
+                  "_internalName": "Grid3"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        }
+      ],
+      "stacked": "md"
+    }
+  },
+  "phone": null,
+  "tablet": null,
+  "js": "//function that shows/hides container with the DataTable\r\nfunction friendsList() {\r\n    \r\n    var friends = fd.field('Friends').value;\r\n\r\n    if (friends) {\r\n        //show elements\r\n        $('.fd-friends-list').show();\r\n    }\r\n    else {\r\n        //hide elements\r\n        $('.fd-friends-list').hide();\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    //call the function on form load\r\n    friendsList();\r\n    \r\n    //call function when field is changed\r\n    fd.field('Friends').$on('change', friendsList)\r\n});\r\n",
+  "css": ".fd-form {\r\n    background: url(https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/cb53dc1f-1b51-488f-b9a2-c818ba9a9e75_bg.jpg) no-repeat center top ;\r\n    -webkit-background-size: cover;\r\n    -moz-background-size: cover;\r\n    -o-background-size: cover;\r\n    background-size: cover;\r\n    \r\n}\r\n\r\n.fd-form .form-widget > .fd-form {\r\n    background: none;\r\n}\r\n\r\n.fd-form .fd-blur-background{\r\n    background: rgba(0, 0, 0, 0.4);\r\n    backdrop-filter: blur(8px);\r\n    color: #000000;\r\n    border-radius: 3px;\r\n}\r\n\r\n.fd-form .fd-form-header p {\r\n    color: #fff8c4 !important;\r\n    font-size: .8rem;\r\n    opacity: .5;\r\n}\r\n\r\n.fd-form h1, .fd-form h6, .fd-form h4, .fd-form small, .fd-field-title, .fd-form label {\r\n    color: #fff8c4 !important;\r\n}\r\n\r\n.fd-form .text-danger {\r\n    color: #ffb3ed !important;\r\n}\r\n\r\n.fd-form .form-control.is-invalid {\r\n    border-color: #ffb3ed !important;\r\n}\r\n\r\n.fd-form h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    text-align: center !important;\r\n}\r\n\r\n.fd-form iframe {\r\n    width:100%;\r\n    height:300px;\r\n}\r\n",
+  "theme": {
+    "primary": "#ffb3ed",
+    "bodyText": "#0d83a2",
+    "bodyBackground": "#ffffff",
+    "fontFamily": null,
+    "fontType": 0,
+    "fontSize": 15,
+    "fontWeight": 400,
+    "borderThickness": 1,
+    "borderRadius": 0,
+    "shadow": true,
+    "themeId": "10e6fe06a66c151fcab1336b0fa1fc2a"
+  },
+  "timezone": "Europe/Budapest",
+  "culture": "en-US",
+  "notifySubscribers": false,
+  "thankYouMessage": null,
+  "redirectURL": null,
+  "hideAfterSubmission": false,
+  "submissionTimeout": 0,
+  "authentication": 0,
+  "singleSubmissionPerUser": false,
+  "allowEditingSubmission": false,
+  "restrictAccess": false,
+  "azureADTenant": null,
+  "azureADObjects": [],
+  "azureB2CProperties": null,
+  "version": "1.0.2"
+}

@@ -1,1 +1,235 @@
-{"pc":{"type":"Grid","model":{"rows":[{"cells":[{"component":{"type":"Text","model":{"text":"<h1 style=\"text-align:center;\">Work Order Request Form</h1>","class":"bg-primary","_internalName":"Text1"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"padding":[30,null,null,null],"component":{"type":"SingleLineText","model":{"title":{"text":"Full Name","visible":false},"orientation":"Horizontal","required":false,"description":"Full Name","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"Anything","wrap":true,"_internalName":"FullName"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"MaskedInput","model":{"title":{"text":":","visible":false},"orientation":"Vertical","required":false,"description":"Phone Number","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"mask":"+0 (000) 000 00 00","wrap":true,"_internalName":"PhoneNumber"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"SingleLineText","model":{"title":{"text":"Email:","visible":false},"orientation":"Vertical","required":false,"description":"Email","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"E-mail","wrap":true,"_internalName":"Email","pattern":"^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$","error":"This field must contain a valid e-mail address."}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"SingleLineText","model":{"title":{"text":"Location","visible":false},"orientation":"Vertical","required":false,"description":"Location","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"Anything","wrap":true,"_internalName":"Location"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"DropDown","model":{"title":{"text":"Work Type","visible":false},"orientation":"Vertical","required":false,"description":"Work Type","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"dataSource":"StaticList","options":"Repair\nMaintenance\nCleaning\nOther","selection":"Single","wrap":true,"_internalName":"WorkType"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"SingleLineText","model":{"title":{"text":"Other","visible":false},"orientation":"Horizontal","required":false,"description":"Please specify the work type","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"type":"Anything","wrap":true,"_internalName":"Other"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"MultiLineText","model":{"title":{"text":"Comment:","visible":false},"orientation":"Horizontal","required":false,"description":"Comments","font":{"style":"Normal","weight":"Semibold"},"cFont":{"style":"Normal","weight":"Normal"},"mode":"Plain","wrap":true,"_internalName":"Comment"}},"alignment":"Justify","columns":{"width":12}}]},{"cells":[{"component":{"type":"Submit","model":{"text":"Request Work","type":"Primary","click":"return fd.save();","_internalName":"Submit1","style":"font-weight: 700 !important; color: white !important;"}},"alignment":"Justify","columns":{"width":12}}]}],"stacked":"md"}},"phone":null,"tablet":null,"js":"// show/hide Other field and makes it mandatory based on the Work Type selection\r\nfunction toggleOtherField() {\r\n    if(fd.field('WorkType').value === 'Other') {\r\n        fd.field('Other').hidden = false;\r\n        fd.field('Other').required = true;\r\n    } else {\r\n        fd.field('Other').hidden = true;\r\n        fd.field('Other').required = false;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    //call function on form load\r\n    toggleOtherField();\r\n    \r\n    //call function when the WorkType is changed\r\n    fd.field('WorkType').$on('change', toggleOtherField)\r\n});","css":".fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem)!important;\r\n    text-align: left!important;\r\n    color: white!important;\r\n    text-align: center !important;\r\n}","theme":{"primary":"#51bfb3","bodyText":"#000000","bodyBackground":"#ffffff","fontFamily":null,"fontType":0,"fontSize":15,"fontWeight":400,"borderThickness":1,"borderRadius":8,"shadow":true,"themeId":"99bc028f60420001dbf5450c74384acf"},"timezone":"Europe/Budapest","culture":"en-US","notifySubscribers":false,"thankYouMessage":null,"redirectURL":null,"hideAfterSubmission":false,"submissionTimeout":0,"authentication":0,"singleSubmissionPerUser":false,"allowEditingSubmission":false,"restrictAccess":false,"azureADTenant":null,"azureADObjects":[],"azureB2CProperties":null,"version":"1.0.2"}
+{
+  "pc": {
+    "type": "Grid",
+    "model": {
+      "rows": [
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "Text",
+                "model": {
+                  "text": "<h1 style=\"text-align:center;\">Work Order Request Form</h1>",
+                  "class": "bg-primary",
+                  "_internalName": "Text1"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "padding": [30, null, null, null],
+              "component": {
+                "type": "SingleLineText",
+                "model": {
+                  "title": { "text": "Full Name", "visible": false },
+                  "orientation": "Horizontal",
+                  "required": false,
+                  "description": "Full Name",
+                  "font": { "style": "Normal", "weight": "Semibold" },
+                  "cFont": { "style": "Normal", "weight": "Normal" },
+                  "type": "Anything",
+                  "wrap": true,
+                  "_internalName": "FullName"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "MaskedInput",
+                "model": {
+                  "title": { "text": ":", "visible": false },
+                  "orientation": "Vertical",
+                  "required": false,
+                  "description": "Phone Number",
+                  "font": { "style": "Normal", "weight": "Semibold" },
+                  "cFont": { "style": "Normal", "weight": "Normal" },
+                  "mask": "+0 (000) 000 00 00",
+                  "wrap": true,
+                  "_internalName": "PhoneNumber"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "SingleLineText",
+                "model": {
+                  "title": { "text": "Email:", "visible": false },
+                  "orientation": "Vertical",
+                  "required": false,
+                  "description": "Email",
+                  "font": { "style": "Normal", "weight": "Semibold" },
+                  "cFont": { "style": "Normal", "weight": "Normal" },
+                  "type": "E-mail",
+                  "wrap": true,
+                  "_internalName": "Email",
+                  "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                  "error": "This field must contain a valid e-mail address."
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "SingleLineText",
+                "model": {
+                  "title": { "text": "Location", "visible": false },
+                  "orientation": "Vertical",
+                  "required": false,
+                  "description": "Location",
+                  "font": { "style": "Normal", "weight": "Semibold" },
+                  "cFont": { "style": "Normal", "weight": "Normal" },
+                  "type": "Anything",
+                  "wrap": true,
+                  "_internalName": "Location"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "DropDown",
+                "model": {
+                  "title": { "text": "Work Type", "visible": false },
+                  "orientation": "Vertical",
+                  "required": false,
+                  "description": "Work Type",
+                  "font": { "style": "Normal", "weight": "Semibold" },
+                  "cFont": { "style": "Normal", "weight": "Normal" },
+                  "dataSource": "StaticList",
+                  "options": "Repair\nMaintenance\nCleaning\nOther",
+                  "selection": "Single",
+                  "wrap": true,
+                  "_internalName": "WorkType"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "SingleLineText",
+                "model": {
+                  "title": { "text": "Other", "visible": false },
+                  "orientation": "Horizontal",
+                  "required": false,
+                  "description": "Please specify the work type",
+                  "font": { "style": "Normal", "weight": "Semibold" },
+                  "cFont": { "style": "Normal", "weight": "Normal" },
+                  "type": "Anything",
+                  "wrap": true,
+                  "_internalName": "Other"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "MultiLineText",
+                "model": {
+                  "title": { "text": "Comment:", "visible": false },
+                  "orientation": "Horizontal",
+                  "required": false,
+                  "description": "Comments",
+                  "font": { "style": "Normal", "weight": "Semibold" },
+                  "cFont": { "style": "Normal", "weight": "Normal" },
+                  "mode": "Plain",
+                  "wrap": true,
+                  "_internalName": "Comment"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "component": {
+                "type": "Submit",
+                "model": {
+                  "text": "Request Work",
+                  "type": "Primary",
+                  "click": "return fd.save();",
+                  "_internalName": "Submit1",
+                  "style": "font-weight: 700 !important; color: white !important;"
+                }
+              },
+              "alignment": "Justify",
+              "columns": { "width": 12 }
+            }
+          ]
+        }
+      ],
+      "stacked": "md"
+    }
+  },
+  "phone": null,
+  "tablet": null,
+  "js": "// show/hide Other field and makes it mandatory based on the Work Type selection\r\nfunction toggleOtherField() {\r\n    if(fd.field('WorkType').value === 'Other') {\r\n        fd.field('Other').hidden = false;\r\n        fd.field('Other').required = true;\r\n    } else {\r\n        fd.field('Other').hidden = true;\r\n        fd.field('Other').required = false;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    //call function on form load\r\n    toggleOtherField();\r\n    \r\n    //call function when the WorkType is changed\r\n    fd.field('WorkType').$on('change', toggleOtherField)\r\n});",
+  "css": ".fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem)!important;\r\n    text-align: left!important;\r\n    color: white!important;\r\n    text-align: center !important;\r\n}",
+  "theme": {
+    "primary": "#51bfb3",
+    "bodyText": "#000000",
+    "bodyBackground": "#ffffff",
+    "fontFamily": null,
+    "fontType": 0,
+    "fontSize": 15,
+    "fontWeight": 400,
+    "borderThickness": 1,
+    "borderRadius": 8,
+    "shadow": true,
+    "themeId": "99bc028f60420001dbf5450c74384acf"
+  },
+  "timezone": "Europe/Budapest",
+  "culture": "en-US",
+  "notifySubscribers": false,
+  "thankYouMessage": null,
+  "redirectURL": null,
+  "hideAfterSubmission": false,
+  "submissionTimeout": 0,
+  "authentication": 0,
+  "singleSubmissionPerUser": false,
+  "allowEditingSubmission": false,
+  "restrictAccess": false,
+  "azureADTenant": null,
+  "azureADObjects": [],
+  "azureB2CProperties": null,
+  "version": "1.0.2"
+}
