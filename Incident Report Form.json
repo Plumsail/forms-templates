@@ -6,21 +6,23 @@
         {
           "cells": [
             {
+              "padding": [null, null, 0, null],
               "class": "col-md-auto",
               "component": {
                 "type": "Image",
                 "model": {
                   "width": 120,
-                  "class": "logo-img",
                   "target": "Blank",
                   "_internalName": "Image1",
-                  "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
+                  "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png",
+                  "style": "margin-bottom: 0px"
                 }
               },
               "alignment": "Left",
               "columns": { "width": 2 }
             },
             {
+              "class": "align-self-center",
               "component": {
                 "type": "Text",
                 "model": {
@@ -624,7 +626,7 @@
   "phone": null,
   "tablet": null,
   "js": "// function that shows/hides Other field\r\nfunction toggleOtherType() {\r\n    if (fd.field('IncidentType').value.includes('Other')) {\r\n        fd.field('OtherIncidentType').hidden = false;\r\n    } else {\r\n        fd.field('OtherIncidentType').hidden = true;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    // call function on form load\r\n    toggleOtherType();\r\n\r\n    // call function when the field value is changed\r\n    fd.field('IncidentType').$on('change', toggleOtherType);\r\n});\r\n",
-  "css": ".fd-form .alert-success {\n    display: none;\n}\n\n.fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem)!important;\n    text-align: center!important;\n    color: #ffff!important;\n}\n\n.fd-form h4, .fd-form .h4 {\n    font-size: min(4.5vw, 1.40625rem)!important;\n    padding-top: 20px!important;\n    padding-bottom: 4px!important;\n    display: flex!important;\n    flex-direction: row!important;\n}\n\n.fd-form h4:before, .fd-form h4:after{\n  content: \"\";\n  flex: 1 1;\n  border-bottom: 1px solid;\n  margin: auto;\n}\n\n.fd-form h4:before {\n  margin-right: 10px\n}\n\n.fd-form h4:after {\n  margin-left: 10px\n}\n\n.fd-form .btn-primary {\n    font-weight: 500 !important;\n    color: white !important;\n}\n\n.fd-form .fd-total-field span.k-select {\n    display: none !important;\n}\n\n.fd-form .fd-payment-form {\n    display: none;\n}\n",
+  "css": "@media (min-width: 768px) {\n    .fd-form .col-md-auto {\n        width: auto !important;\n        flex: 0 0 auto !important;\n    }\n}\n\n.fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form .btn-primary {\n    font-weight: 500 !important;\n    color: white !important;\n}\n\n.fd-form .fd-total-field span.k-select {\n    display: none !important;\n}\n\n.fd-form .fd-payment-form {\n    display: none;\n}\n",
   "theme": {
     "primary": "#737373",
     "bodyText": "#333333",
