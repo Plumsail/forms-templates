@@ -2,6 +2,7 @@
   "pc": {
     "type": "Grid",
     "model": {
+      "stacked": "md",
       "rows": [
         {
           "cells": [
@@ -18,7 +19,7 @@
                   "style": "margin-bottom: 0px"
                 }
               },
-              "alignment": "Left",
+              "alignment": { "horizontal": "Left", "vertical": "Middle" },
               "columns": { "width": 2 }
             },
             {
@@ -27,10 +28,11 @@
                 "type": "Text",
                 "model": {
                   "text": "<h1>Incident Report Form</h1>Please complete this form to report any type of incident. If possible, the report should be completed within 24 hours of the event. The report will be sent to HSE team directly.",
-                  "_internalName": "Text1"
+                  "_internalName": "Text1",
+                  "style": "margin-bottom: 1rem"
                 }
               },
-              "alignment": "Justify",
+              "alignment": { "horizontal": "Justify", "vertical": "Middle" },
               "columns": { "width": 10 }
             }
           ]
@@ -41,6 +43,12 @@
               "component": {
                 "type": "Wizard",
                 "model": {
+                  "shape": "Circle",
+                  "nextText": "Next",
+                  "backText": "Back",
+                  "finishText": "Send Report",
+                  "finish": "return fd.save();",
+                  "_internalName": "Wizard1",
                   "steps": [
                     {
                       "_internalName": "Step1",
@@ -48,6 +56,7 @@
                       "component": {
                         "type": "Grid",
                         "model": {
+                          "stacked": "md",
                           "rows": [
                             {
                               "cells": [
@@ -56,6 +65,8 @@
                                   "component": {
                                     "type": "Grid",
                                     "model": {
+                                      "stacked": "md",
+                                      "_internalName": "Grid1",
                                       "rows": [
                                         {
                                           "cells": [
@@ -82,7 +93,10 @@
                                                   "_internalName": "IncidentDateTime"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 6 }
                                             },
                                             {
@@ -104,13 +118,19 @@
                                                     "weight": "Normal"
                                                   },
                                                   "dataSource": "StaticList",
-                                                  "options": "Minor\nModerate\nMajor\nDisaster\nCatastrophic",
+                                                  "StaticList": {
+                                                    "options": "Minor\nModerate\nMajor\nDisaster\nCatastrophic"
+                                                  },
                                                   "selection": "Single",
                                                   "wrap": true,
-                                                  "_internalName": "IncidentSeverity"
+                                                  "_internalName": "IncidentSeverity",
+                                                  "options": "Minor\nModerate\nMajor\nDisaster\nCatastrophic"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 6 }
                                             }
                                           ]
@@ -137,13 +157,19 @@
                                                     "weight": "Normal"
                                                   },
                                                   "dataSource": "StaticList",
-                                                  "options": "Vehicle\r\nEnvironmental\r\nFire\r\nInjury\r\nTheft\r\nIllness\r\nSabotage\r\nSecurity\r\nExternal Assessment\r\nExplosives Involved?\r\nRadiation Involved?\r\nOther",
+                                                  "StaticList": {
+                                                    "options": "Vehicle\r\nEnvironmental\r\nFire\r\nInjury\r\nTheft\r\nIllness\r\nSabotage\r\nSecurity\r\nExternal Assessment\r\nExplosives Involved?\r\nRadiation Involved?\r\nOther"
+                                                  },
                                                   "wrap": true,
                                                   "cColumns": 3,
-                                                  "_internalName": "IncidentType"
+                                                  "_internalName": "IncidentType",
+                                                  "options": "Vehicle\r\nEnvironmental\r\nFire\r\nInjury\r\nTheft\r\nIllness\r\nSabotage\r\nSecurity\r\nExternal Assessment\r\nExplosives Involved?\r\nRadiation Involved?\r\nOther"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 12 }
                                             }
                                           ]
@@ -174,7 +200,10 @@
                                                   "_internalName": "OtherIncidentType"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 12 }
                                             }
                                           ]
@@ -205,23 +234,26 @@
                                                   "_internalName": "Description"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 12 }
                                             }
                                           ]
                                         }
-                                      ],
-                                      "stacked": "md",
-                                      "_internalName": "Grid1"
+                                      ]
                                     }
                                   },
-                                  "alignment": "Justify",
+                                  "alignment": {
+                                    "horizontal": "Justify",
+                                    "vertical": "Top"
+                                  },
                                   "columns": { "width": 12 }
                                 }
                               ]
                             }
-                          ],
-                          "stacked": "md"
+                          ]
                         }
                       }
                     },
@@ -231,6 +263,7 @@
                       "component": {
                         "type": "Grid",
                         "model": {
+                          "stacked": "md",
                           "rows": [
                             {
                               "cells": [
@@ -239,6 +272,8 @@
                                   "component": {
                                     "type": "Grid",
                                     "model": {
+                                      "stacked": "md",
+                                      "_internalName": "Grid2",
                                       "rows": [
                                         {
                                           "cells": [
@@ -266,7 +301,10 @@
                                                   "_internalName": "Address"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 12 }
                                             }
                                           ]
@@ -298,23 +336,26 @@
                                                   "_internalName": "LocationDescription"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 12 }
                                             }
                                           ]
                                         }
-                                      ],
-                                      "stacked": "md",
-                                      "_internalName": "Grid2"
+                                      ]
                                     }
                                   },
-                                  "alignment": "Justify",
+                                  "alignment": {
+                                    "horizontal": "Justify",
+                                    "vertical": "Top"
+                                  },
                                   "columns": { "width": 12 }
                                 }
                               ]
                             }
-                          ],
-                          "stacked": "md"
+                          ]
                         }
                       }
                     },
@@ -324,6 +365,7 @@
                       "component": {
                         "type": "Grid",
                         "model": {
+                          "stacked": "md",
                           "rows": [
                             {
                               "cells": [
@@ -332,6 +374,8 @@
                                   "component": {
                                     "type": "Grid",
                                     "model": {
+                                      "stacked": "md",
+                                      "_internalName": "Grid3",
                                       "rows": [
                                         {
                                           "cells": [
@@ -343,7 +387,10 @@
                                                   "_internalName": "Text11"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 12 }
                                             }
                                           ]
@@ -354,6 +401,9 @@
                                               "component": {
                                                 "type": "DataTable",
                                                 "model": {
+                                                  "newLine": "Top",
+                                                  "delete": "Last",
+                                                  "_internalName": "DataTable1",
                                                   "columns": [
                                                     {
                                                       "_internalName": "Name",
@@ -366,8 +416,8 @@
                                                       "title": "How involved?",
                                                       "required": true,
                                                       "type": "Dropdown",
-                                                      "options": "incident participant\r\nwitness",
-                                                      "selection": "Single"
+                                                      "selection": "Single",
+                                                      "options": "incident participant\r\nwitness"
                                                     },
                                                     {
                                                       "_internalName": "MobileNumber",
@@ -375,29 +425,29 @@
                                                       "required": false,
                                                       "type": "String"
                                                     }
-                                                  ],
-                                                  "newLine": "Top",
-                                                  "delete": "Last",
-                                                  "_internalName": "DataTable1"
+                                                  ]
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 12 }
                                             }
                                           ]
                                         }
-                                      ],
-                                      "stacked": "md",
-                                      "_internalName": "Grid3"
+                                      ]
                                     }
                                   },
-                                  "alignment": "Justify",
+                                  "alignment": {
+                                    "horizontal": "Justify",
+                                    "vertical": "Top"
+                                  },
                                   "columns": { "width": 12 }
                                 }
                               ]
                             }
-                          ],
-                          "stacked": "md"
+                          ]
                         }
                       }
                     },
@@ -407,6 +457,7 @@
                       "component": {
                         "type": "Grid",
                         "model": {
+                          "stacked": "md",
                           "rows": [
                             {
                               "cells": [
@@ -415,6 +466,8 @@
                                   "component": {
                                     "type": "Grid",
                                     "model": {
+                                      "stacked": "md",
+                                      "_internalName": "Grid4",
                                       "rows": [
                                         {
                                           "cells": [
@@ -426,7 +479,10 @@
                                                   "_internalName": "Text15"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 12 }
                                             }
                                           ]
@@ -457,7 +513,10 @@
                                                   "_internalName": "FirstName"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 4 }
                                             },
                                             {
@@ -484,7 +543,10 @@
                                                   "_internalName": "MiddleName"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 4 }
                                             },
                                             {
@@ -511,7 +573,10 @@
                                                   "_internalName": "LastName"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 4 }
                                             }
                                           ]
@@ -526,7 +591,10 @@
                                                   "_internalName": "Text16"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 12 }
                                             }
                                           ]
@@ -559,7 +627,10 @@
                                                   "error": "This field must contain a valid e-mail address."
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 6 }
                                             },
                                             {
@@ -585,48 +656,44 @@
                                                   "_internalName": "MobileNumber"
                                                 }
                                               },
-                                              "alignment": "Justify",
+                                              "alignment": {
+                                                "horizontal": "Justify",
+                                                "vertical": "Top"
+                                              },
                                               "columns": { "width": 6 }
                                             }
                                           ]
                                         }
-                                      ],
-                                      "stacked": "md",
-                                      "_internalName": "Grid4"
+                                      ]
                                     }
                                   },
-                                  "alignment": "Justify",
+                                  "alignment": {
+                                    "horizontal": "Justify",
+                                    "vertical": "Top"
+                                  },
                                   "columns": { "width": 12 }
                                 }
                               ]
                             }
-                          ],
-                          "stacked": "md"
+                          ]
                         }
                       }
                     }
-                  ],
-                  "shape": "Circle",
-                  "nextText": "Next",
-                  "backText": "Back",
-                  "finishText": "Send Report",
-                  "finish": "return fd.save();",
-                  "_internalName": "Wizard1"
+                  ]
                 }
               },
-              "alignment": "Justify",
+              "alignment": { "horizontal": "Justify", "vertical": "Top" },
               "columns": { "width": 12 }
             }
           ]
         }
-      ],
-      "stacked": "md"
+      ]
     }
   },
   "phone": null,
   "tablet": null,
   "js": "// function that shows/hides Other field\r\nfunction toggleOtherType() {\r\n    if (fd.field('IncidentType').value.includes('Other')) {\r\n        fd.field('OtherIncidentType').hidden = false;\r\n    } else {\r\n        fd.field('OtherIncidentType').hidden = true;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    // call function on form load\r\n    toggleOtherType();\r\n\r\n    // call function when the field value is changed\r\n    fd.field('IncidentType').$on('change', toggleOtherType);\r\n});\r\n",
-  "css": "@media (min-width: 768px) {\n    .fd-form .col-md-auto {\n        width: auto !important;\n        flex: 0 0 auto !important;\n    }\n}\n\n.fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form .btn-primary {\n    font-weight: 500 !important;\n    color: white !important;\n}\n\n.fd-form .fd-total-field span.k-select {\n    display: none !important;\n}\n\n.fd-form .fd-payment-form {\n    display: none;\n}\n",
+  "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form .btn-primary {\n    font-weight: 500 !important;\n    color: white !important;\n}\n\n.fd-form .fd-total-field span.k-select {\n    display: none !important;\n}\n\n.fd-form .fd-payment-form {\n    display: none;\n}\n",
   "theme": {
     "primary": "#737373",
     "bodyText": "#333333",

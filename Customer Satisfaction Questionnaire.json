@@ -2,6 +2,7 @@
   "pc": {
     "type": "Grid",
     "model": {
+      "stacked": "md",
       "rows": [
         {
           "cells": [
@@ -10,10 +11,13 @@
               "component": {
                 "type": "Grid",
                 "model": {
+                  "stacked": "sm",
+                  "_internalName": "Grid3",
                   "rows": [
                     {
                       "cells": [
                         {
+                          "padding": [15, null, null, null],
                           "class": "col-md-auto",
                           "component": {
                             "type": "Image",
@@ -24,28 +28,34 @@
                               "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
                             }
                           },
-                          "alignment": "Left",
+                          "alignment": {
+                            "horizontal": "Left",
+                            "vertical": "Middle"
+                          },
                           "columns": { "width": 2 }
                         },
                         {
+                          "padding": [15, null, null, null],
                           "component": {
                             "type": "Text",
                             "model": {
                               "text": "<h1>Customer Satisfaction Survey</h1><p>Please help us to improve our service. Rate your satisfaction level with each of the following statements. It takes less than five minutes.</p>",
-                              "_internalName": "Text1"
+                              "_internalName": "Text1",
+                              "style": "margin-bottom: 1rem;"
                             }
                           },
-                          "alignment": "Justify",
+                          "alignment": {
+                            "horizontal": "Justify",
+                            "vertical": "Middle"
+                          },
                           "columns": { "width": 10 }
                         }
                       ]
                     }
-                  ],
-                  "stacked": "sm",
-                  "_internalName": "Grid3"
+                  ]
                 }
               },
-              "alignment": "Justify",
+              "alignment": { "horizontal": "Justify", "vertical": "Top" },
               "columns": { "width": 12 }
             }
           ]
@@ -63,7 +73,7 @@
                   "_internalName": "LikertScale1"
                 }
               },
-              "alignment": "Justify",
+              "alignment": { "horizontal": "Justify", "vertical": "Top" },
               "columns": { "width": 12 }
             }
           ]
@@ -79,7 +89,7 @@
                   "_internalName": "Text3"
                 }
               },
-              "alignment": "Justify",
+              "alignment": { "horizontal": "Justify", "vertical": "Top" },
               "columns": { "width": 12 }
             }
           ]
@@ -97,7 +107,7 @@
                   "_internalName": "LikertScale2"
                 }
               },
-              "alignment": "Justify",
+              "alignment": { "horizontal": "Justify", "vertical": "Top" },
               "columns": { "width": 12 }
             }
           ]
@@ -124,7 +134,7 @@
                   "_internalName": "AdditionalCommentsOrConcerns"
                 }
               },
-              "alignment": "Justify",
+              "alignment": { "horizontal": "Justify", "vertical": "Top" },
               "columns": { "width": 12 }
             }
           ]
@@ -142,19 +152,18 @@
                   "style": "font-weight: 700 !important;"
                 }
               },
-              "alignment": "Justify",
+              "alignment": { "horizontal": "Justify", "vertical": "Top" },
               "columns": { "width": 12 }
             }
           ]
         }
-      ],
-      "stacked": "md"
+      ]
     }
   },
   "phone": null,
   "tablet": null,
   "js": "fd.rendered(function () {\r\n    // add background for questions\r\n    var element = document.querySelectorAll('.fd-likert-question-title');\r\n    element.forEach(function(e){\r\n        e.classList.add('bg-primary');\r\n    });\r\n});",
-  "css": "@media (min-width: 768px) {\n    .fd-form .col-md-auto {\n        width: auto !important;\n        flex: 0 0 auto !important;\n    }\n}\n\n.fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    color: #ffffff !important;\n}\n\n.fd-form h6, .fd-form .h6, .fd-form .fd-field-title {\n    font-size: min(4.5vw, .9375rem) !important;\n    font-weight: 600 !important;\n    padding-top: 4px;\n    padding-bottom: 4px;\n}\n\n.fd-form p{\n    color: #ffffff;\n}\n\n.fd-form .fd-likert-answer-connected-lines > .flex-column {\n    align-items: center;\n}\n\n.fd-form .fd-likert-answer-connected-lines label {\n    text-align: center;\n}\n\n.fd-form .fd-likert-question-title {\n    padding: 10px;\n    margin-bottom: 1rem !important;\n}\n",
+  "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    color: #ffffff !important;\n}\n\n.fd-form h6, .fd-form .h6, .fd-form .fd-field-title {\n    font-size: min(4.5vw, .9375rem) !important;\n    font-weight: 600 !important;\n    padding-top: 4px;\n    padding-bottom: 4px;\n}\n\n.fd-form p {\n    color: #ffffff;\n}\n\n.fd-form .fd-likert-answer-connected-lines > .flex-column {\n    align-items: center;\n}\n\n.fd-form .fd-likert-answer-connected-lines label {\n    text-align: center;\n}\n\n.fd-form .fd-likert-question-title {\n    padding: 10px;\n    margin-bottom: 1rem !important;\n}\n",
   "theme": {
     "primary": "#8e44ad",
     "bodyText": "#333333",

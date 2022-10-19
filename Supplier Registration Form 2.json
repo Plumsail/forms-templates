@@ -7,50 +7,13 @@
         {
           "cells": [
             {
+              "padding": [null, null, 50, null],
               "component": {
-                "type": "Grid",
+                "type": "Text",
                 "model": {
-                  "stacked": "md",
-                  "_internalName": "Grid1",
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "class": "col-md-auto",
-                          "component": {
-                            "type": "Image",
-                            "model": {
-                              "width": 120,
-                              "target": "Blank",
-                              "_internalName": "Image2",
-                              "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Left",
-                            "vertical": "Middle"
-                          },
-                          "columns": { "width": 2 }
-                        },
-                        {
-                          "component": {
-                            "type": "Text",
-                            "model": {
-                              "text": "<h1 class=\"text-primary\" style=\"text-align:center;\">Supplier Registration Form</h1><p style=\"text-align:center;\">Please fill out the form to become one of our potential suppliers.</p>",
-                              "class": "fd-form-header",
-                              "_internalName": "Text28",
-                              "style": "margin-bottom: 1rem"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Middle"
-                          },
-                          "columns": { "width": 10 }
-                        }
-                      ]
-                    }
-                  ]
+                  "text": "<h1 style=\"text-align:center;\">Supplier Registration Form</h1>",
+                  "class": "text-primary",
+                  "_internalName": "Text1"
                 }
               },
               "alignment": { "horizontal": "Justify", "vertical": "Top" },
@@ -61,11 +24,10 @@
         {
           "cells": [
             {
-              "padding": [30, null, null, null],
               "component": {
                 "type": "TabControl",
                 "model": {
-                  "orientation": "Left",
+                  "orientation": "Top",
                   "_internalName": "TabControl1",
                   "tabs": [
                     {
@@ -79,6 +41,7 @@
                             {
                               "cells": [
                                 {
+                                  "padding": [30, null, null, null],
                                   "component": {
                                     "type": "SingleLineText",
                                     "model": {
@@ -267,6 +230,7 @@
                             {
                               "cells": [
                                 {
+                                  "padding": [30, null, null, null],
                                   "component": {
                                     "type": "SingleLineText",
                                     "model": {
@@ -446,6 +410,7 @@
                             {
                               "cells": [
                                 {
+                                  "padding": [30, null, null, null],
                                   "component": {
                                     "type": "MaskedInput",
                                     "model": {
@@ -527,7 +492,7 @@
                                       "orientation": "Horizontal",
                                       "required": false,
                                       "cHint": "www.monster.com",
-                                      "description": "SiteURL",
+                                      "description": "Site URL",
                                       "font": {
                                         "style": "Normal",
                                         "weight": "Semibold"
@@ -536,11 +501,9 @@
                                         "style": "Normal",
                                         "weight": "Normal"
                                       },
-                                      "type": "E-mail",
+                                      "type": "Anything",
                                       "wrap": true,
-                                      "_internalName": "SiteURL",
-                                      "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                      "error": "This field must contain a valid e-mail address."
+                                      "_internalName": "SiteURL"
                                     }
                                   },
                                   "alignment": {
@@ -566,6 +529,7 @@
                             {
                               "cells": [
                                 {
+                                  "padding": [30, null, null, null],
                                   "component": {
                                     "type": "Attachments",
                                     "model": {
@@ -609,34 +573,12 @@
           "cells": [
             {
               "component": {
-                "type": "Grid",
+                "type": "Submit",
                 "model": {
-                  "stacked": "md",
-                  "_internalName": "Grid2",
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Submit",
-                            "model": {
-                              "width": 300,
-                              "text": "SEND REQUEST",
-                              "type": "Primary",
-                              "click": "return fd.save();",
-                              "_internalName": "Submit1",
-                              "style": "font-weight: 700 !important;"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Right",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ]
+                  "text": "Submit Request",
+                  "type": "Primary",
+                  "click": "return fd.save();",
+                  "_internalName": "Submit2"
                 }
               },
               "alignment": { "horizontal": "Justify", "vertical": "Top" },
@@ -649,27 +591,27 @@
   },
   "phone": null,
   "tablet": null,
-  "js": "/*****************************************************************************\r\nThe JavaScript code from this section will be executed while loading\r\nthe current form.\r\n\r\nThe following predefined variables can be utilized in the code:\r\n\r\nfd  - instance of the current form\r\n$   - jQuery object\r\n\r\n==============================================================================\r\n\r\nfd.rendered(function () {\r\n    // This code is executed once the form is rendered\r\n\r\n    // Hide State field for all values of Country field except 'USA'\r\n    function updateStateVisibility() {\r\n        var stateContainer = $(fd.field('State').$el).closest('.form-group');\r\n        if (fd.field('Country').value === 'USA') {\r\n            stateContainer.show();\r\n        } else {\r\n            stateContainer.hide();\r\n        }\r\n    }\r\n\r\n    // Set initial State visibility\r\n    updateStateVisibility();\r\n\r\n    // Update State visibility after changing Country\r\n    fd.field('Country').$on('change', updateStateVisibility)\r\n});\r\n\r\nfd.beforeSave(function () {\r\n    // This code is exeuted before saving the form and\r\n    // may return Promise. The saving does not proceed until\r\n    // the Promise is resolved. If the Promise is rejected,\r\n    // the saving interrupts. This is the appropriate place\r\n    // for adding custom validation.\r\n\r\n    // Prevent saving if Start Date is greater than End Date\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\nfd.saved(function (result) {\r\n    // This code is executed after saving the form\r\n\r\n    // Forwarding users to specific URL\r\n    window.location = '--- Some URL ---';\r\n});\r\n\r\n*****************************************************************************/\r\n\r\n",
-  "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    text-align: center !important;\n}\n\n.fd-form .fd-form-header p {\n    text-align: center !important;\n}",
+  "js": "fd.themeChanged = theme => {\n    $('.fd-form').attr('theme', theme);\n}",
+  "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    text-align: center !important;\n    color: #069 !important;\n}\n\n.fd-form .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5;\n    border-color: #D7E1E5 #D7E1E5 #006699;\n}\n\n.fd-form .nav-tabs .nav-item {\n    margin-bottom: 0;\n}\n\n.fd-form .nav-tabs .nav-link.active,\n.fd-form .nav-tabs .nav-link:focus {\n    color: #333;\n    border-color: #006699 #006699 #fff5e7;\n}\n\n.fd-form .nav-link {\n    color: #006699;\n}\n\n.fd-form .nav-tabs,\n.fd-form .nav-tabs:hover {\n    border-bottom-color: #006699;\n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] h1 {\n    color: #6658EA !important;\n}\n\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5;\n    border-color: #D7E1E5 #D7E1E5 #006699;\n    border-radius: 10px;\n}\n\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs .nav-link.active,\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs .nav-link:focus {\n    border-color: #006699 #006699 #fff5e7;\n    background-color: #6658EA;\n    color: white;\n    border-radius: 10px;\n}\n\n\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-link {\n    color: #006699;\n}\n\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs,\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs:hover {\n    border-bottom-color: #006699;\n}\n\n/****** THEME 3 ******/\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] h1 {\n    color: #333 !important;\n    font-weight: 1000;\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: transparent;\n    border-bottom: 5px solid #9C27B0\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs .nav-link.active,\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs .nav-link:focus {\n    color: #333;\n    border-bottom: 5px solid #9C27B0\n}\n\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-link {\n    color: #333;\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs,\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs:hover {\n    border-bottom-color: #9C27B0;\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .form-control, .k-input {\n    background: none !important;\n    padding-left: 0px !important;\n    border: none;\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .form-control, span.k-picker-wrap.k-state-default {\n    border: 0px;\n    border-bottom: 2px solid #868E9D;\n}\n\n/****** THEME 4 ******/\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] h1 {\n    color: #333 !important;\n    font-weight: 1000;\n}\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs .nav-link:hover {\n    color: #f5a637;\n    background-color: #D7E1E5;\n    border: none;\n}\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs .nav-link.active,\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs .nav-link:focus {\n    color: #f5a637;\n    border: none !important;\n    background-color: transparent !important;\n}\n\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-link {\n    color: black;\n    border: none !important;\n    background-color: transparent !important;\n}\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs,\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs:hover {\n    border: none;\n}\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .btn-primary {\n    color: white !important;\n}\n}\n",
   "theme": {
-    "primary": "#8e44ac",
+    "primary": "#006699",
     "bodyText": "#333",
     "bodyBackground": "#FFF5E7",
     "fontFamily": null,
     "fontType": 0,
     "fontSize": 18,
-    "fontWeight": 300,
+    "fontWeight": 400,
     "borderThickness": 2,
     "borderRadius": 8,
     "shadow": true,
-    "themeId": "466c3bdb92b2c9e0c1491aef572eaf75"
+    "themeId": "d0d799c233e363cf357227bcc379b8a6"
   },
   "timezone": "Europe/Budapest",
   "culture": "en-US",
   "notifySubscribers": false,
   "thankYouMessage": null,
   "redirectURL": null,
-  "hideAfterSubmission": false,
+  "hideAfterSubmission": true,
   "submissionTimeout": 0,
   "authentication": 0,
   "singleSubmissionPerUser": false,
