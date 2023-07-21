@@ -1,0 +1,1416 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "rows": [{
+                "cells": [{
+                    "padding": [null, null, 10, null],
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text1",
+                            "text": "<h6>MEDICAL GROUP</h6><h6>Healthcare Service</h6>",
+                            "class": "company-name bg-primary"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 4
+                    }
+                }, {
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text5",
+                            "text": "<h1>Medical Questionnaire<br /></h1><p>Please provide complete and honest responses in the questionnaire. Accurate information is crucial for understanding your medical history and providing personalized care. Thank you for your cooperation!</p>",
+                            "class": "header"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 8
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text2",
+                            "text": "<h3>Patient Details</h3>",
+                            "class": "bg-primary"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "FullName",
+                            "title": {
+                                "text": "Full Name",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 5
+                    }
+                }, {
+                    "component": {
+                        "type": "Date",
+                        "model": {
+                            "_internalName": "DateOfBirth",
+                            "title": {
+                                "text": "Date of Birth",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            }
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 5
+                    }
+                }, {
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "Age",
+                            "title": {
+                                "text": "Age",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "class": "age",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 2
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "MultiLineText",
+                        "model": {
+                            "_internalName": "Address",
+                            "title": {
+                                "text": "Address",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Plain"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "MaskedInput",
+                        "model": {
+                            "_internalName": "PhoneMobile1",
+                            "title": {
+                                "text": "Phone - Mobile",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mask": "+ 000 000 0000"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "component": {
+                        "type": "MaskedInput",
+                        "model": {
+                            "_internalName": "PhoneHome1",
+                            "title": {
+                                "text": "Phone - Home",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mask": "+ 000 000 0000"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "Email",
+                            "title": {
+                                "text": "Email",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "username@domain.com",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "E-mail",
+                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                            "error": "This field must contain a valid e-mail address."
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text3",
+                            "text": "<h3>Insurance Information</h3>",
+                            "class": "bg-primary"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleChoice",
+                        "model": {
+                            "_internalName": "Insurance",
+                            "title": {
+                                "text": "Do you have Health Insurance?",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Yes\nNo",
+                                "allowUserValue": false
+                            },
+                            "cColumns": 1,
+                            "options": "Yes\nNo",
+                            "allowUserValue": false
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 4
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "class": "insurance",
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "InsuranceProvider",
+                            "title": {
+                                "text": "Insurance Provider",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "class": "insurance",
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "HealthFundName",
+                            "title": {
+                                "text": "Health Fund Name",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "class": "insurance",
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "MembershipNumber",
+                            "title": {
+                                "text": "Membership Number",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "class": "insurance",
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "Reference Number",
+                            "title": {
+                                "text": "Reference Number",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "class": "insurance",
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "LevelInsurance",
+                            "title": {
+                                "text": "Level of the Insurance Coverage",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "class": "insurance",
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "InsuranceDate",
+                            "title": {
+                                "text": "Insurance Start Date ",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "class": "insurance",
+                    "component": {
+                        "type": "Number",
+                        "model": {
+                            "_internalName": "Excess",
+                            "title": {
+                                "text": "Insurance Excess",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "decimals": 0,
+                            "format": "n0",
+                            "step": 1
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text6",
+                            "text": "<h3>Emergency Contacts</h3>",
+                            "class": "bg-primary"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "EmergencyContactFullName",
+                            "title": {
+                                "text": "Full Name",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "EmergencyContactRelationship",
+                            "title": {
+                                "text": "Relationship",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "EmergencyContactPhone",
+                            "title": {
+                                "text": "Phone",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "EmergencyContactEmail",
+                            "title": {
+                                "text": "Email",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Medical Data",
+                            "text": "<h3>Medical Data</h3>",
+                            "class": "bg-primary"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Number",
+                        "model": {
+                            "_internalName": "HEIGHT",
+                            "title": {
+                                "text": "Height",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "decimals": 0,
+                            "format": "n0",
+                            "step": 1
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "component": {
+                        "type": "Number",
+                        "model": {
+                            "_internalName": "WEIGHT",
+                            "width": 180,
+                            "title": {
+                                "text": "Weight",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "decimals": 0,
+                            "format": "n0",
+                            "step": 1
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "MultiLineText",
+                        "model": {
+                            "_internalName": "ALLMEDICALCONDITIONS",
+                            "title": {
+                                "text": "All confirmed Medical Conditions ",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Plain"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "MultiLineText",
+                        "model": {
+                            "_internalName": "FamilyHistory",
+                            "title": {
+                                "text": "Relevant Family History",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Plain"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleChoice",
+                        "model": {
+                            "_internalName": "Medications",
+                            "title": {
+                                "text": "Are you taking any medications on a regular or occasional basis?",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Yes\nNo",
+                                "allowUserValue": false
+                            },
+                            "cColumns": 1,
+                            "options": "Yes\nNo",
+                            "allowUserValue": false
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "DataTable",
+                        "model": {
+                            "_internalName": "MedicationsList",
+                            "title": {
+                                "text": "List all medications you're taking ",
+                                "visible": true
+                            },
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "newLine": "Top",
+                            "delete": "Last",
+                            "columns": [{
+                                "_internalName": "MedicationName",
+                                "title": "Medication name",
+                                "required": false,
+                                "type": "String"
+                            }, {
+                                "_internalName": "Dosage",
+                                "title": "Dosage(mg)",
+                                "required": false,
+                                "type": "Number",
+                                "decimals": 0,
+                                "format": "n0",
+                                "step": 1
+                            }, {
+                                "_internalName": "FrequencyDay",
+                                "title": "How often on a daily basis?",
+                                "required": false,
+                                "type": "Dropdown",
+                                "selection": "Single",
+                                "allowUserValue": true,
+                                "options": "1 time\n2 times\n3 times\n"
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "SingleChoice",
+                        "model": {
+                            "_internalName": "AllergicOnMedications",
+                            "title": {
+                                "text": "Are you allergic to any medications? ",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Yes\nNo",
+                                "allowUserValue": false
+                            },
+                            "cColumns": 1,
+                            "options": "Yes\nNo",
+                            "allowUserValue": false
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "MultiLineText",
+                        "model": {
+                            "_internalName": "AllergicOnMedicationsList",
+                            "title": {
+                                "text": "Please write medications you are allergic to:",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Plain"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "SingleChoice",
+                        "model": {
+                            "_internalName": "AllergicFood",
+                            "title": {
+                                "text": "Are you allergic to any food or anything else?",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Yes\nNo",
+                                "allowUserValue": false
+                            },
+                            "cColumns": 1,
+                            "options": "Yes\nNo",
+                            "allowUserValue": false
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "MultiLineText",
+                        "model": {
+                            "_internalName": "AllergicFoodList",
+                            "title": {
+                                "text": "Please write on what are you allergic and what kind of reaction you had (rash, itching, strangling, heart failure, shock and similar)",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Plain"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "SingleChoice",
+                        "model": {
+                            "_internalName": "AreYouASmoker",
+                            "title": {
+                                "text": "Are you a smoker?",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Yes\nNo",
+                                "allowUserValue": false
+                            },
+                            "cColumns": 1,
+                            "options": "Yes\nNo",
+                            "allowUserValue": false
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "Number",
+                        "model": {
+                            "_internalName": "SmokingDaily",
+                            "title": {
+                                "text": "How much are you smoking on daily basis?",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "decimals": 0,
+                            "format": "n0",
+                            "step": 1
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "SingleChoice",
+                        "model": {
+                            "_internalName": "AreYouDrinkingAlcohol",
+                            "title": {
+                                "text": "Are you drinking alcohol? ",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "No\nOccasionally\nOften",
+                                "allowUserValue": false
+                            },
+                            "cColumns": 1,
+                            "options": "No\nOccasionally\nOften",
+                            "allowUserValue": false
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text7",
+                            "text": "<h3>Surgical History</h3>",
+                            "class": "bg-primary"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "DataTable",
+                        "model": {
+                            "_internalName": "SurgicalHistory",
+                            "title": {
+                                "text": "Surgical History",
+                                "visible": false
+                            },
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "newLine": "Top",
+                            "delete": "Last",
+                            "columns": [{
+                                "_internalName": "Type",
+                                "title": "Type of surgery ",
+                                "required": false,
+                                "type": "Dropdown",
+                                "selection": "Single",
+                                "allowUserValue": true,
+                                "options": "Appendectomy\nBrain surgery\nBreast surgery\nCABG\nCholecystectomy\nColon surgery\nTonsillectomy\nAppendectomy\nThyroid surgery\nLung surgery\nC-section\nEye surgery\nFracture surgery\nHernia repair\nHysterectomy\nJoint surgery\nBunionectomy\nVaricose vein surgery\nProstate surgery\nWeight reduction surgery\nSmall intestine surgery\nSpine surgery\nTubal ligation\nValve replacement\nVasectomy\nVascular surgery\nCardiac stent\nBladder surgery"
+                            }, {
+                                "_internalName": "Date",
+                                "title": "Date of surgery ",
+                                "required": false,
+                                "type": "String"
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "HTML",
+                        "model": {
+                            "_internalName": "HTML1",
+                            "content": "<hr>"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Date",
+                        "model": {
+                            "_internalName": "CompletionDate",
+                            "width": 150,
+                            "title": {
+                                "text": "Completion Date",
+                                "visible": false
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "class": "completion-date",
+                            "cWidth": 250,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            }
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Left",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text4",
+                            "text": "I state that I fully understood all the questions, received needed explanations and that the data in this questionnaire is authentic."
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "component": {
+                        "type": "Signature",
+                        "model": {
+                            "_internalName": "Signature",
+                            "title": {
+                                "text": "",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cWidth": 300,
+                            "height": 150,
+                            "inkColor": "#000000"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Left",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "SUBMIT",
+                            "type": "Primary",
+                            "click": "return fd.save();"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "fd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n}\r\n\r\nfd.rendered(function() {\r\n\t//disable fields\r\n    fd.field('Age').disabled = true;\r\n    fd.field('CompletionDate').disabled = true;\r\n  \t//set CompletionDate to the current date\r\n    fd.field('CompletionDate').value = new Date();\r\n\r\n\t//call functions when changing field values\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n    fd.field('Insurance').$on('change', showHideInsuranceFields);\r\n    fd.field('AllergicOnMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', showHideSmokingDaily);\r\n\r\n \t//сalling агтсешщты on form loading\r\n    showHideMedicationsList();\r\n    showHideInsuranceFields();\r\n    showHideAllergicFood();\r\n    showHideSmokingDaily();\r\n    showHideAllergicOnMedicationsList();\r\n\r\n\t//load the Moment.js library to calculate patient's age\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calculateAge();\r\n            fd.field('DateOfBirth').$on('change', calculateAge);\r\n        })\r\n\r\n});\r\n\r\n//show/hide insuarance details\r\nfunction showHideInsuranceFields() {\r\n    if (fd.field('Insurance').value == 'Yes') {\r\n        $('.insurance').show();\r\n    } else {\r\n        $('.insurance').hide();\r\n    }\r\n}\r\n\r\n//show/hide medications list\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value == 'Yes') {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicOnMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicOnMedications').value == 'Yes') {\r\n        fd.field('AllergicOnMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicOnMedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicFoodList field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value == 'Yes') {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide SmokingDaily field\r\nfunction showHideSmokingDaily() {\r\n    if (fd.field('AreYouASmoker').value == 'Yes') {\r\n        fd.field('SmokingDaily').hidden = false;\r\n    } else {\r\n        fd.field('SmokingDaily').hidden = true;\r\n    }\r\n}\r\n\r\n//calculate patient's age\r\nfunction calculateAge() {\r\n    if (fd.field('DateOfBirth').value) {\r\n        var purchase = moment(fd.field('DateOfBirth').value);\r\n        var delivery = moment(new Date());\r\n        var dateDiff = delivery.diff(purchase, 'years', false);\r\n        fd.field('Age').value = dateDiff;\r\n    } else {\r\n        fd.field('Age').value = '';\r\n    }\r\n}\r\n\r\n",
+    "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    text-align: center !important;\n}\n.header p {\n    font-size: 16px !important;;\n}\n\n.fd-form .age .form-control:disabled {\n    background-color: transparent;\n    border: none;\n}\n\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-select {\n    display: none !important;\n}\n.fd-form .company-name {\n    border-right: solid 15px;\n    padding: 25px\n}\n.fd-form .company-name h6 {    \n    margin-top: 0;\n    margin-bottom: 5px;\n    text-align:right;\n    font-weight: bold;\n}\n.fd-form h3 {\n    padding-block: 10px;\n    padding-left: 5px;  \n}\n\n.fd-form .btn-primary {\n    font-weight: 700 !important;\n}\n/****** THEME 1 ******/\n\n.fd-form .company-name {\n    border-right-color: #1a1a1a;\n}\n\n.fd-form .company-name h6 {    \n    color: #4f4d4d;\n}\n\n.fd-form h3 {\n    color: #4f4d4d;\n}\n\n.fd-form h3::before {\n    content: ' /';\n}\n\n\n\n/****** THEME 2 ******/\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .company-name {\n    border-right-color: #3d9e87;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] h3 {\n    border-left: solid 15px;\n    border-left-color: #3d9e87;\n}\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5']  h3::before {\n    content: '';\n}\n\n/****** THEME 3 ******/\n.fd-form[theme='blue'] .company-name {\n    border-right-color: #1a1a1a;\n}\n\n.fd-form[theme='blue']  .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='blue']  h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='blue']  h3::before {\n    content: ' #';\n}\n\n\n/****** THEME 4 ******/\n\n.fd-form[theme='purple'] .company-name {\n    border-right-color: #F7C200;\n}\n\n.fd-form[theme='purple'] .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='purple'] h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='purple'] h3 {\n    border-left: solid 15px;\n    border-left-color: #F7C200;\n}\n\n.fd-form[theme='purple']  h3::before {\n    content: '';\n}",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#1a2c43",
+        "bodyText": "#1a1a1a",
+        "bodyBackground": "#f5f5f5",
+        "fontFamily": "Cantarell",
+        "fontType": 1,
+        "fontSize": 16,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "themeId": "d3d0e45fe35e8efafd7c37a2b012a5c5"
+    },
+    "timezone": "Asia/Yekaterinburg",
+    "culture": "en",
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
+}
