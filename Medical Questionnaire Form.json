@@ -26,12 +26,13 @@
                         "type": "Text",
                         "model": {
                             "_internalName": "Text5",
-                            "text": "<h1>Medical Questionnaire<br /></h1><p>Please provide complete and honest responses in the questionnaire. Accurate information is crucial for understanding your medical history and providing personalized care. Thank you for your cooperation!</p>",
+                            "width": 600,
+                            "text": "<h1>Medical Questionnaire<br /></h1><p>Please provide complete and honest responses in the questionnaire. Accurate information is crucial for understanding your medical history and providing personalized care. </p><p>Thank you for your cooperation!</p>",
                             "class": "header"
                         }
                     },
                     "alignment": {
-                        "horizontal": "Justify",
+                        "horizontal": "Left",
                         "vertical": "Top"
                     },
                     "columns": {
@@ -98,7 +99,7 @@
                                 "visible": true
                             },
                             "orientation": "Vertical",
-                            "required": false,
+                            "required": true,
                             "font": {
                                 "style": "Normal",
                                 "weight": "Semibold"
@@ -133,6 +134,7 @@
                                 "weight": "Semibold"
                             },
                             "wrap": true,
+                            "description": "Select date of birth",
                             "class": "age",
                             "cFont": {
                                 "style": "Normal",
@@ -732,9 +734,9 @@
                     "component": {
                         "type": "Number",
                         "model": {
-                            "_internalName": "HEIGHT",
+                            "_internalName": "Height",
                             "title": {
-                                "text": "Height",
+                                "text": "Height (ft)",
                                 "visible": true
                             },
                             "orientation": "Vertical",
@@ -764,10 +766,10 @@
                     "component": {
                         "type": "Number",
                         "model": {
-                            "_internalName": "WEIGHT",
+                            "_internalName": "Weight",
                             "width": 180,
                             "title": {
-                                "text": "Weight",
+                                "text": "Weight (lb)",
                                 "visible": true
                             },
                             "orientation": "Vertical",
@@ -1310,7 +1312,7 @@
                         "vertical": "Top"
                     },
                     "columns": {
-                        "width": 12
+                        "width": 6
                     }
                 }]
             }, {
@@ -1319,17 +1321,21 @@
                         "type": "Text",
                         "model": {
                             "_internalName": "Text4",
-                            "text": "I state that I fully understood all the questions, received needed explanations and that the data in this questionnaire is authentic."
+                            "width": 600,
+                            "text": "I state that I fully understood all the questions, received needed explanations and that the data in this questionnaire is authentic.",
+                            "class": "confirmation"
                         }
                     },
                     "alignment": {
-                        "horizontal": "Justify",
+                        "horizontal": "Left",
                         "vertical": "Top"
                     },
                     "columns": {
                         "width": 6
                     }
-                }, {
+                }]
+            }, {
+                "cells": [{
                     "component": {
                         "type": "Signature",
                         "model": {
@@ -1355,7 +1361,7 @@
                         "vertical": "Top"
                     },
                     "columns": {
-                        "width": 6
+                        "width": 12
                     }
                 }]
             }, {
@@ -1383,24 +1389,24 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n}\r\n\r\nfd.rendered(function() {\r\n\t//disable fields\r\n    fd.field('Age').disabled = true;\r\n    fd.field('CompletionDate').disabled = true;\r\n  \t//set CompletionDate to the current date\r\n    fd.field('CompletionDate').value = new Date();\r\n\r\n\t//call functions when changing field values\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n    fd.field('Insurance').$on('change', showHideInsuranceFields);\r\n    fd.field('AllergicOnMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', showHideSmokingDaily);\r\n\r\n \t//сalling агтсешщты on form loading\r\n    showHideMedicationsList();\r\n    showHideInsuranceFields();\r\n    showHideAllergicFood();\r\n    showHideSmokingDaily();\r\n    showHideAllergicOnMedicationsList();\r\n\r\n\t//load the Moment.js library to calculate patient's age\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calculateAge();\r\n            fd.field('DateOfBirth').$on('change', calculateAge);\r\n        })\r\n\r\n});\r\n\r\n//show/hide insuarance details\r\nfunction showHideInsuranceFields() {\r\n    if (fd.field('Insurance').value == 'Yes') {\r\n        $('.insurance').show();\r\n    } else {\r\n        $('.insurance').hide();\r\n    }\r\n}\r\n\r\n//show/hide medications list\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value == 'Yes') {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicOnMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicOnMedications').value == 'Yes') {\r\n        fd.field('AllergicOnMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicOnMedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicFoodList field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value == 'Yes') {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide SmokingDaily field\r\nfunction showHideSmokingDaily() {\r\n    if (fd.field('AreYouASmoker').value == 'Yes') {\r\n        fd.field('SmokingDaily').hidden = false;\r\n    } else {\r\n        fd.field('SmokingDaily').hidden = true;\r\n    }\r\n}\r\n\r\n//calculate patient's age\r\nfunction calculateAge() {\r\n    if (fd.field('DateOfBirth').value) {\r\n        var purchase = moment(fd.field('DateOfBirth').value);\r\n        var delivery = moment(new Date());\r\n        var dateDiff = delivery.diff(purchase, 'years', false);\r\n        fd.field('Age').value = dateDiff;\r\n    } else {\r\n        fd.field('Age').value = '';\r\n    }\r\n}\r\n\r\n",
-    "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    text-align: center !important;\n}\n.header p {\n    font-size: 16px !important;;\n}\n\n.fd-form .age .form-control:disabled {\n    background-color: transparent;\n    border: none;\n}\n\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-select {\n    display: none !important;\n}\n.fd-form .company-name {\n    border-right: solid 15px;\n    padding: 25px\n}\n.fd-form .company-name h6 {    \n    margin-top: 0;\n    margin-bottom: 5px;\n    text-align:right;\n    font-weight: bold;\n}\n.fd-form h3 {\n    padding-block: 10px;\n    padding-left: 5px;  \n}\n\n.fd-form .btn-primary {\n    font-weight: 700 !important;\n}\n/****** THEME 1 ******/\n\n.fd-form .company-name {\n    border-right-color: #1a1a1a;\n}\n\n.fd-form .company-name h6 {    \n    color: #4f4d4d;\n}\n\n.fd-form h3 {\n    color: #4f4d4d;\n}\n\n.fd-form h3::before {\n    content: ' /';\n}\n\n\n\n/****** THEME 2 ******/\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .company-name {\n    border-right-color: #3d9e87;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] h3 {\n    border-left: solid 15px;\n    border-left-color: #3d9e87;\n}\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5']  h3::before {\n    content: '';\n}\n\n/****** THEME 3 ******/\n.fd-form[theme='blue'] .company-name {\n    border-right-color: #1a1a1a;\n}\n\n.fd-form[theme='blue']  .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='blue']  h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='blue']  h3::before {\n    content: ' #';\n}\n\n\n/****** THEME 4 ******/\n\n.fd-form[theme='purple'] .company-name {\n    border-right-color: #F7C200;\n}\n\n.fd-form[theme='purple'] .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='purple'] h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='purple'] h3 {\n    border-left: solid 15px;\n    border-left-color: #F7C200;\n}\n\n.fd-form[theme='purple']  h3::before {\n    content: '';\n}",
+    "js": "fd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nfd.rendered(function() {\r\n    //disable fields\r\n    fd.field('Age').disabled = true;\r\n    fd.field('CompletionDate').disabled = true;\r\n    //set CompletionDate to the current date\r\n    fd.field('CompletionDate').value = new Date();\r\n\r\n    //call functions when changing field values\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n    fd.field('Insurance').$on('change', showHideInsuranceFields);\r\n    fd.field('AllergicOnMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', showHideSmokingDaily);\r\n    fd.field('DateOfBirth').$on('change', ageDescription);\r\n\r\n    //сalling functions on form loading\r\n    showHideMedicationsList();\r\n    showHideInsuranceFields();\r\n    showHideAllergicFood();\r\n    showHideSmokingDaily();\r\n    showHideAllergicOnMedicationsList();\r\n    ageDescription();\r\n\r\n    //load the Moment.js library to calculate patient's age and disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calculateAge();\r\n            fd.field('DateOfBirth').$on('change', calculateAge);\r\n            calendarSetUp();\r\n\r\n        });\r\n});\r\n\r\n//show/hide Age field description\r\nfunction ageDescription () {\r\n    if(!fd.field('DateOfBirth').value){\r\n    fd.field('Age').description = 'Select date of birth'\r\n    }\r\n    else {\r\n        fd.field('Age').description = ''\r\n    }\r\n}\r\n\r\n\r\n//show/hide insurance details\r\nfunction showHideInsuranceFields() {\r\n    if (fd.field('Insurance').value == 'Yes') {\r\n        $('.insurance').show();\r\n    } else {\r\n        $('.insurance').hide();\r\n    }\r\n}\r\n\r\n//show/hide medications list\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value == 'Yes') {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicOnMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicOnMedications').value == 'Yes') {\r\n        fd.field('AllergicOnMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicOnMedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicFoodList field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value == 'Yes') {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide SmokingDaily field\r\nfunction showHideSmokingDaily() {\r\n    if (fd.field('AreYouASmoker').value == 'Yes') {\r\n        fd.field('SmokingDaily').hidden = false;\r\n    } else {\r\n        fd.field('SmokingDaily').hidden = true;\r\n    }\r\n}\r\n\r\n//calculate patient's age\r\nfunction calculateAge() {\r\n    if (fd.field('DateOfBirth').value) {\r\n        var purchase = moment(fd.field('DateOfBirth').value);\r\n        var delivery = moment(new Date());\r\n        var dateDiff = delivery.diff(purchase, 'years', false);\r\n        fd.field('Age').value = dateDiff;\r\n    } else {\r\n        fd.field('Age').value = '';\r\n    }\r\n}\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}",
+    "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    text-align: left !important;\n}\n\n.fd-form .header p, .fd-form .confirmation {\n    font-size: 16px !important;\n    text-align: left !important;\n    \n}\n\n.fd-form .age .form-control:disabled {\n    background-color: transparent;\n    border: none;\n}\n\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-select {\n    display: none !important;\n}\n.fd-form .company-name {\n    border-left: solid 15px;\n    padding: 25px\n}\n.fd-form .company-name h6 {    \n    margin-top: 0;\n    margin-bottom: 5px;\n    text-align:left;\n    font-weight: bold;\n    padding-left: 10px;\n}\n.fd-form h3 {\n    padding-block: 10px;\n    padding-left: 5px;  \n}\n\n.fd-form .btn-primary {\n    font-weight: 700 !important;\n}\n/****** THEME 1 ******/\n\n.fd-form .company-name {\n    border-left-color: #1a1a1a;\n}\n\n.fd-form .company-name h6 {    \n    color: #4f4d4d;\n}\n\n.fd-form h3 {\n    color: #4f4d4d;\n}\n\n.fd-form h3::before {\n    content: ' /';\n}\n\n\n\n/****** THEME 2 ******/\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .company-name {\n    border-left-color: #3d9e87;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] h3 {\n    border-left: solid 15px;\n    border-left-color: #3d9e87;\n}\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5']  h3::before {\n    content: '';\n}\n\n/****** THEME 3 ******/\n.fd-form[theme='blue'] .company-name {\n    border-left-color: #1a1a1a;\n}\n\n.fd-form[theme='blue']  .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='blue']  h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='blue']  h3::before {\n    content: ' #';\n}\n\n\n/****** THEME 4 ******/\n\n.fd-form[theme='purple'] .company-name {\n    border-left-color: #F7C200;\n}\n\n.fd-form[theme='purple'] .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='purple'] h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='purple'] h3 {\n    border-left: solid 15px;\n    border-left-color: #F7C200;\n}\n\n.fd-form[theme='purple']  h3::before {\n    content: '';\n}",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "primary": "#1a2c43",
+        "primary": "#bfd3d0",
         "bodyText": "#1a1a1a",
-        "bodyBackground": "#f5f5f5",
-        "fontFamily": "Cantarell",
+        "bodyBackground": "#f2efea",
+        "fontFamily": "Marcellus",
         "fontType": 1,
         "fontSize": 16,
         "fontWeight": 400,
         "borderThickness": 1,
         "borderRadius": 2,
         "shadow": true,
-        "themeId": "d3d0e45fe35e8efafd7c37a2b012a5c5"
+        "themeId": null
     },
-    "timezone": "Asia/Yekaterinburg",
+    "timezone": "Europe/Budapest",
     "culture": "en",
     "thankYouMessage": null,
     "redirectURL": null,
