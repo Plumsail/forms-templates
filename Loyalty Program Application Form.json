@@ -1,582 +1,800 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "stacked": "md",
-      "rows": [
-        {
-          "cells": [
-            {
-              "class": "col-md-auto",
-              "component": {
-                "type": "Image",
-                "model": {
-                  "width": 120,
-                  "target": "Blank",
-                  "_internalName": "Image1",
-                  "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
-                }
-              },
-              "alignment": { "horizontal": "Left", "vertical": "Middle" },
-              "columns": { "width": 2 }
-            },
-            {
-              "padding": [null, null, null, 10],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h1>Loyalty Program Application<br /></h1><p>Please fill out the application form to become a member of our loyalty program.</p>",
-                  "_internalName": "Text25",
-                  "style": "margin-bottom: 1rem"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Middle" },
-              "columns": { "width": 10 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h6>Full Name</h6>",
-                  "class": "bg-secondary",
-                  "_internalName": "Text7"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "First Name", "visible": false },
-                  "orientation": "Vertical",
-                  "required": false,
-                  "cHint": "First Name",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "Anything",
-                  "wrap": true,
-                  "_internalName": "FirstName"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 4 }
-            },
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "Middle Name", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "cHint": "Middle Name",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "Anything",
-                  "wrap": true,
-                  "_internalName": "MiddleName"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 4 }
-            },
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "Last Name", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "cHint": "Last Name",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "Anything",
-                  "wrap": true,
-                  "_internalName": "LastName"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 4 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h6>Address</h6>",
-                  "class": "bg-secondary",
-                  "_internalName": "Text8"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "Street Address", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "cHint": "Street Address",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "Anything",
-                  "wrap": true,
-                  "_internalName": "StreetAddress"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "City", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "cHint": "City",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "Anything",
-                  "wrap": true,
-                  "_internalName": "City"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 6 }
-            },
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "State", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "cHint": "State / Province",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "Anything",
-                  "wrap": true,
-                  "_internalName": "State"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 6 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "Country", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "cHint": "Country",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "Anything",
-                  "wrap": true,
-                  "_internalName": "Country"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 6 }
-            },
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "ZIP", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "cHint": "ZIP Code",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "Anything",
-                  "wrap": true,
-                  "_internalName": "ZIP"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 6 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h6>How would you prefer to receive information about our promotions?<span style=\"color:#ff0000;\">*</span></h6>",
-                  "class": "bg-secondary",
-                  "_internalName": "Text15"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [0, null, null, null],
-              "component": {
-                "type": "MultipleChoice",
-                "model": {
-                  "title": { "text": "PromoInformation", "visible": false },
-                  "orientation": "Vertical",
-                  "required": true,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cWidth": 250,
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "dataSource": "StaticList",
-                  "StaticList": { "options": "by e-mail\nby SMS" },
-                  "wrap": true,
-                  "cColumns": 2,
-                  "_internalName": "PromoInformation",
-                  "options": "by e-mail\nby SMS"
-                }
-              },
-              "alignment": { "horizontal": "Left", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "E-mail", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "cHint": "E-mail",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "E-mail",
-                  "wrap": true,
-                  "_internalName": "Email",
-                  "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                  "error": "This field must contain a valid e-mail address."
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 6 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "MaskedInput",
-                "model": {
-                  "title": { "text": "Mobile Number", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "mask": "+0 (000) 000 00 00",
-                  "wrap": true,
-                  "_internalName": "MobileNumber"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 6 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h6>How did you hear about us?</h6>",
-                  "class": "bg-secondary",
-                  "_internalName": "Text21"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [0, null, null, null],
-              "component": {
-                "type": "DropDown",
-                "model": {
-                  "title": { "text": "HearAboutUS", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "cHint": "Please select",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "dataSource": "StaticList",
-                  "StaticList": {
-                    "options": "Social Media\nAdvertisement\nFrom a friend"
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "class": "col-md-auto",
+                  "component": {
+                      "type": "Image",
+                      "model": {
+                          "_internalName": "Image1",
+                          "width": 120,
+                          "target": "Blank",
+                          "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
+                      }
                   },
-                  "selection": "Single",
-                  "wrap": true,
-                  "_internalName": "HearAboutUS",
-                  "options": "Social Media\nAdvertisement\nFrom a friend"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 6 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h6>What do you think about us?</h6>",
-                  "class": "bg-secondary",
-                  "_internalName": "Text22"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [0, null, null, null],
-              "component": {
-                "type": "MultiLineText",
-                "model": {
-                  "title": { "text": "Feedback", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "mode": "Plain",
-                  "wrap": true,
-                  "_internalName": "Feedback"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h6>What would you suggest us to improve?</h6>",
-                  "class": "bg-secondary",
-                  "_internalName": "Text23"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [0, null, null, null],
-              "component": {
-                "type": "MultiLineText",
-                "model": {
-                  "title": { "text": "Suggestions ", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "mode": "Plain",
-                  "wrap": true,
-                  "_internalName": "Suggestions"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h6>Would you recommend us to a friend?</h6>",
-                  "class": "bg-secondary",
-                  "_internalName": "Text24"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [0, null, null, null],
-              "component": {
-                "type": "SingleChoice",
-                "model": {
-                  "title": { "text": "Recommend Us", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "dataSource": "StaticList",
-                  "StaticList": { "options": "Yes\nNo" },
-                  "wrap": true,
-                  "cColumns": 1,
-                  "_internalName": "RecommendUs",
-                  "options": "Yes\nNo"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h6>Who may also be interested in our products/services?&nbsp;<span style=\"color:#ff0000;\"></span></h6>",
-                  "class": "bg-secondary",
-                  "_internalName": "Text19"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "DataTable",
-                "model": {
-                  "newLine": "Bottom",
-                  "delete": "Last",
-                  "_internalName": "Reference ",
-                  "columns": [
-                    {
-                      "_internalName": "FullName",
-                      "title": "Full Name",
-                      "required": true,
-                      "type": "String"
-                    },
-                    {
-                      "_internalName": "Address",
-                      "title": "Address",
-                      "required": false,
-                      "type": "String"
-                    },
-                    {
-                      "_internalName": "Number",
-                      "title": "Contact Number",
-                      "required": true,
-                      "type": "String"
-                    }
-                  ]
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, null, null],
-              "component": {
-                "type": "Submit",
-                "model": {
-                  "text": "SEND REQUEST",
-                  "type": "Primary",
-                  "click": "return fd.save();",
-                  "_internalName": "Submit1",
-                  "style": "font-weight: 700 !important;"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        }
-      ]
-    }
+                  "alignment": {
+                      "horizontal": "Left",
+                      "vertical": "Middle"
+                  },
+                  "columns": {
+                      "width": 2
+                  }
+              }, {
+                  "padding": [null, null, null, 10],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading1",
+                          "heading": "Loyalty Program Application",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "subheading": "Please fill out the application form to become a member of our loyalty program.",
+                          "size": "H1",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 10
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, 0, null],
+                  "component": {
+                      "type": "Text",
+                      "model": {
+                          "_internalName": "Text7",
+                          "text": "<h6>Full Name</h6>",
+                          "class": "bg-secondary"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "FirstName",
+                          "title": {
+                              "text": "First Name",
+                              "visible": false
+                          },
+                          "orientation": "Vertical",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "First Name",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "Anything"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 4
+                  }
+              }, {
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "MiddleName",
+                          "title": {
+                              "text": "Middle Name",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "Middle Name",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "Anything"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 4
+                  }
+              }, {
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "LastName",
+                          "title": {
+                              "text": "Last Name",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "Last Name",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "Anything"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 4
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, 0, null],
+                  "component": {
+                      "type": "Text",
+                      "model": {
+                          "_internalName": "Text8",
+                          "text": "<h6>Address</h6>",
+                          "class": "bg-secondary"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "StreetAddress",
+                          "title": {
+                              "text": "Street Address",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "Street Address",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "Anything"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "City",
+                          "title": {
+                              "text": "City",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "City",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "Anything"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 6
+                  }
+              }, {
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "State",
+                          "title": {
+                              "text": "State",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "State / Province",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "Anything"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 6
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "Country",
+                          "title": {
+                              "text": "Country",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "Country",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "Anything"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 6
+                  }
+              }, {
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "ZIP",
+                          "title": {
+                              "text": "ZIP",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "ZIP Code",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "Anything"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 6
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, 0, null],
+                  "component": {
+                      "type": "Text",
+                      "model": {
+                          "_internalName": "Text15",
+                          "text": "<h6>How would you prefer to receive information about our promotions?<span style=\"color:#ff0000;\">*</span></h6>",
+                          "class": "bg-secondary"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [0, null, null, null],
+                  "component": {
+                      "type": "MultipleChoice",
+                      "model": {
+                          "_internalName": "PromoInformation",
+                          "title": {
+                              "text": "PromoInformation",
+                              "visible": false
+                          },
+                          "orientation": "Vertical",
+                          "required": true,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cWidth": 250,
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "dataSource": "StaticList",
+                          "StaticList": {
+                              "options": "by e-mail\nby SMS"
+                          },
+                          "cColumns": 2,
+                          "options": "by e-mail\nby SMS"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Left",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "Email",
+                          "title": {
+                              "text": "E-mail",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "E-mail",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "E-mail",
+                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                          "error": "This field must contain a valid e-mail address."
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 6
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "MaskedInput",
+                      "model": {
+                          "_internalName": "MobileNumber",
+                          "title": {
+                              "text": "Mobile Number",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "mask": "000-000-0000"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 6
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, 0, null],
+                  "component": {
+                      "type": "Text",
+                      "model": {
+                          "_internalName": "Text21",
+                          "text": "<h6>How did you hear about us?</h6>",
+                          "class": "bg-secondary"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [0, null, null, null],
+                  "component": {
+                      "type": "DropDown",
+                      "model": {
+                          "_internalName": "HearAboutUS",
+                          "title": {
+                              "text": "HearAboutUS",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cHint": "Please select",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "dataSource": "StaticList",
+                          "StaticList": {
+                              "options": "Social Media\nAdvertisement\nFrom a friend"
+                          },
+                          "selection": "Single",
+                          "options": "Social Media\nAdvertisement\nFrom a friend"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 6
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, 0, null],
+                  "component": {
+                      "type": "Text",
+                      "model": {
+                          "_internalName": "Text22",
+                          "text": "<h6>What do you think about us?</h6>",
+                          "class": "bg-secondary"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [0, null, null, null],
+                  "component": {
+                      "type": "MultiLineText",
+                      "model": {
+                          "_internalName": "Feedback",
+                          "title": {
+                              "text": "Feedback",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "mode": "Plain"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, 0, null],
+                  "component": {
+                      "type": "Text",
+                      "model": {
+                          "_internalName": "Text23",
+                          "text": "<h6>What would you suggest us to improve?</h6>",
+                          "class": "bg-secondary"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [0, null, null, null],
+                  "component": {
+                      "type": "MultiLineText",
+                      "model": {
+                          "_internalName": "Suggestions",
+                          "title": {
+                              "text": "Suggestions ",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "mode": "Plain"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, 0, null],
+                  "component": {
+                      "type": "Text",
+                      "model": {
+                          "_internalName": "Text24",
+                          "text": "<h6>Would you recommend us to a friend?</h6>",
+                          "class": "bg-secondary"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [0, null, null, null],
+                  "component": {
+                      "type": "SingleChoice",
+                      "model": {
+                          "_internalName": "RecommendUs",
+                          "title": {
+                              "text": "Recommend Us",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "dataSource": "StaticList",
+                          "StaticList": {
+                              "options": "Yes\nNo"
+                          },
+                          "cColumns": 1,
+                          "options": "Yes\nNo"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, 0, null],
+                  "component": {
+                      "type": "Text",
+                      "model": {
+                          "_internalName": "Text19",
+                          "text": "<h6>Who may also be interested in our products/services?&nbsp;<span style=\"color:#ff0000;\"></span></h6>",
+                          "class": "bg-secondary"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "DataTable",
+                      "model": {
+                          "_internalName": "Reference ",
+                          "title": {
+                              "text": "Reference ",
+                              "visible": false
+                          },
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "newLine": "Bottom",
+                          "delete": "Last",
+                          "columns": [{
+                              "_internalName": "FullName",
+                              "title": "Full Name",
+                              "required": true,
+                              "type": "String"
+                          }, {
+                              "_internalName": "Address",
+                              "title": "Address",
+                              "required": false,
+                              "type": "String"
+                          }, {
+                              "_internalName": "Number",
+                              "title": "Contact Number",
+                              "required": true,
+                              "type": "String"
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Submit",
+                      "model": {
+                          "_internalName": "Submit1",
+                          "text": "SEND REQUEST",
+                          "savingText": "Submitting...",
+                          "type": "Primary",
+                          "click": "return fd.save();",
+                          "style": "font-weight: 700 !important;"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "// show/hide Email and MobileNumber fields and make them mandatory\r\nfunction notificationMethod() {\r\n    var notifyBy = fd.field('PromoInformation').value;\r\n    \r\n    // hide fields\r\n    fd.field('Email').hidden = true;\r\n    fd.field('MobileNumber').hidden = true;\r\n    \r\n    // make fields optional\r\n    fd.field('Email').required = false;\r\n    fd.field('MobileNumber').required = false;\r\n    \r\n    if (notifyBy.includes('by e-mail')) {\r\n        //show Email field and make it required\r\n        fd.field('Email').hidden = false;\r\n        fd.field('Email').required = true;\r\n    }\r\n    \r\n    if (notifyBy.includes('by SMS')) {\r\n        //show MobileNumber field and make it required\r\n        fd.field('MobileNumber').hidden = false;\r\n        fd.field('MobileNumber').required = true;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    // сall the function on form load\r\n    notificationMethod();\r\n    \r\n    // call the function when PromoInformation is changed\r\n    fd.field('PromoInformation').$on('change', notificationMethod)\r\n});\r\n\r\n",
   "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form h6, .fd-form .h6 {\n    font-size: min(4.5vw, .9375rem) !important;\n    padding-top: 4px !important;\n    padding-bottom: 4px !important;\n    padding-left: 5px;\n}\n",
+  "notifySubscribers": false,
+  "version": "1.0.2",
   "theme": {
-    "primary": "#008EFF",
-    "bodyText": "#373A3C",
-    "bodyBackground": "#FFFFFF",
-    "fontFamily": null,
-    "fontType": 0,
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 0,
-    "shadow": true,
-    "themeId": "default"
+      "primary": "#008EFF",
+      "bodyText": "#373A3C",
+      "bodyBackground": "#FFFFFF",
+      "fontFamily": null,
+      "fontType": 0,
+      "fontSize": 15,
+      "fontWeight": 400,
+      "borderThickness": 1,
+      "borderRadius": 0,
+      "shadow": true,
+      "themeId": "default"
   },
   "timezone": "Europe/Budapest",
-  "culture": "en-US",
-  "notifySubscribers": false,
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": null,
   "redirectURL": null,
   "hideAfterSubmission": false,
@@ -587,6 +805,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }

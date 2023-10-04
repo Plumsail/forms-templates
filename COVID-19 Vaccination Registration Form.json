@@ -7,10 +7,17 @@
                 "cells": [{
                     "padding": [40, null, null, null],
                     "component": {
-                        "type": "Text",
+                        "type": "Heading",
                         "model": {
-                            "_internalName": "Text1",
-                            "text": "<h1 style=\"text-align:center;\">COVID-19 Vaccination Registration Form</h1>"
+                            "_internalName": "Heading1",
+                            "heading": "COVID-19 Vaccination Registration Form",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "size": "H1",
+                            "textAlignment": "Center"
                         }
                     },
                     "alignment": {
@@ -32,6 +39,7 @@
                             "nextText": "Next",
                             "backText": "Back",
                             "finishText": "Complete",
+                            "savingText": "Submitting...",
                             "finish": "return fd.save();",
                             "steps": [{
                                 "_internalName": "Step5",
@@ -181,11 +189,11 @@
                                                         },
                                                         "dataSource": "StaticList",
                                                         "StaticList": {
-                                                            "options": "Male\nFemail\nOther",
+                                                            "options": "Male\nFemale\nOther",
                                                             "allowUserValue": false
                                                         },
                                                         "cColumns": 3,
-                                                        "options": "Male\nFemail\nOther",
+                                                        "options": "Male\nFemale\nOther",
                                                         "allowUserValue": false
                                                     }
                                                 },
@@ -251,7 +259,7 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "mask": "0000 0000 000 "
+                                                        "mask": "000-000-0000"
                                                     }
                                                 },
                                                 "alignment": {
@@ -831,7 +839,7 @@
     "tablet": null,
     "phone": null,
     "js": "fd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable VaccinationDate date fields\r\n    fd.field('VaccinationDate').disabled = true;\r\n    //set VaccinationDate to the current date\r\n    fd.field('VaccinationDate').value = new Date();\r\n\r\n    //load the Moment.js library to disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            birthDateCalendarSetUp();\r\n\r\n        });\r\n        \r\n    //set up calendar start view and disable dates\r\n    fd.field('DiagnosedCOVIDDate').widgetOptions = {\r\n        max: new Date(),\r\n        min: new Date('2020-03-01'),\r\n        start: 'decade'\r\n    }\r\n    \r\n    fd.field('ImmunizationDate').widgetOptions = {\r\n        max: new Date(),\r\n        min: new Date('2021-01-01'),\r\n        start: 'decade'\r\n    }\r\n\r\n    //call functions when changing field values    \r\n    fd.field('ChronicConditions').$on('change', showHideDiagnosedChronicHealthProblems);\r\n    fd.field('DiagnosedCOVID').$on('change', showHideDiagnosedCOVIDDate);\r\n    fd.field('Immunized').$on('change', showHideImmunizationDate);\r\n\r\n    //сalling functions on form loading\r\n    showHideDiagnosedChronicHealthProblems();\r\n    showHideDiagnosedCOVIDDate();\r\n    showHideImmunizationDate();\r\n\r\n});\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction birthDateCalendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}\r\n\r\n//show hide DiagnosedChronicHealthProblems field\r\nfunction showHideDiagnosedChronicHealthProblems() {\r\n    if (fd.field('ChronicConditions').value == 'Yes') {\r\n        fd.field('DiagnosedChronicHealthProblems').hidden = false;\r\n    } else {\r\n        fd.field('DiagnosedChronicHealthProblems').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide DiagnosedCOVIDDate field\r\nfunction showHideDiagnosedCOVIDDate() {\r\n    if (fd.field('DiagnosedCOVID').value == 'Yes') {\r\n        fd.field('DiagnosedCOVIDDate').hidden = false;\r\n    } else {\r\n        fd.field('DiagnosedCOVIDDate').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide ImmunizationDate field\r\nfunction showHideImmunizationDate() {\r\n    if (fd.field('Immunized').value == 'Yes') {\r\n        fd.field('ImmunizationDate').hidden = false;\r\n    } else {\r\n        fd.field('ImmunizationDate').hidden = true;\r\n    }\r\n}",
-    "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    text-align: center !important;\n}\n\n.fd-form p, .fd-form ul, .fd-form li {\n    font-size: 16px !important;\n}\n\n.fd-form ul {\n    list-style-type: disc !important;\n}\n\n.fd-form .vaccination-date .form-control:disabled,\n.fd-form .vaccination-date .form-control[readonly],\n.fd-form .vaccination-date .k-datepicker .k-picker-wrap,\n.fd-form .vaccination-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .wizard-progress-bar {\n    background-color: #4871e3;\n    display: none;\n}\n\n.fd-form .vaccination-date .k-select {\n    display: none !important;\n}\n\n.fd-form .vaccination-date input {\n    padding-left: 0px;\n}\n/****** THEME 1 ******/\n.fd-form .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #4871e3; \n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='purple'] .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #8764B8; \n}\n\n/****** THEME 3 ******/\n\n.fd-form[theme='3549a05d1f63e8787c845e9b548df57b'] .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #f79646; \n}\n\n/****** THEME 4 ******/\n\n.fd-form[theme='8f994ce2b57dd1e4312d114d87ca535c'] .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #f79646; \n}",
+    "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form p, .fd-form ul, .fd-form li {\n    font-size: 16px !important;\n}\n\n.fd-form ul {\n    list-style-type: disc !important;\n}\n\n.fd-form .vaccination-date .form-control:disabled,\n.fd-form .vaccination-date .form-control[readonly],\n.fd-form .vaccination-date .k-datepicker .k-picker-wrap,\n.fd-form .vaccination-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .wizard-progress-bar {\n    background-color: #4871e3;\n    display: none;\n}\n\n.fd-form .vaccination-date .k-select {\n    display: none !important;\n}\n\n.fd-form .vaccination-date input {\n    padding-left: 0px;\n}\n/****** THEME 1 ******/\n.fd-form .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #4871e3; \n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='purple'] .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #8764B8; \n}\n\n/****** THEME 3 ******/\n\n.fd-form[theme='3549a05d1f63e8787c845e9b548df57b'] .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #f79646; \n}\n\n/****** THEME 4 ******/\n\n.fd-form[theme='8f994ce2b57dd1e4312d114d87ca535c'] .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #f79646; \n}",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
@@ -849,6 +857,8 @@
     },
     "timezone": "Europe/Budapest",
     "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,

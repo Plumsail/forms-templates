@@ -1,784 +1,914 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "rows": [
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Text",
-                "model": { "text": "<h1>W-8BEN</h1>", "_internalName": "Text2" }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [null, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<p>Please find instructions and the latest information <a href=\"https://www.irs.gov/pub/irs-pdf/iw8ben.pdf\" target=\"_blank\">here</a>.</p>",
-                  "_internalName": "Text3"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [20, null, null, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Part I. Identification of Beneficial Owner (see instructions)</h4>",
-                  "_internalName": "Text4"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "(1) Name of individual who is the beneficial owner",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "NameOfIndividualWhoIsTheBeneficialOwner"
-                            }
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading1",
+                          "heading": "W-8BEN",
+                          "view": "Underline1",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "(2) Country of citizenship",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "CountryOfCitizenship"
-                            }
+                          "size": "H1",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [null, null, 0, null],
+                  "component": {
+                      "type": "Text",
+                      "model": {
+                          "_internalName": "Text3",
+                          "text": "<p>Please find instructions and the latest information <a href=\"https://www.irs.gov/pub/irs-pdf/iw8ben.pdf\" target=\"_blank\">here</a>.</p>"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading2",
+                          "heading": "Part I. Identification of Beneficial Owner (see instructions)",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "(3) Permanent residence address",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "(street, apt. or suite no., or rural route). Do not use a P.O. box or in-care-of address. ",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "Street"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "City or town, state or province",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "Include postal code where appropriate. ",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "CityOrTownStateOrProvince"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        },
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "Country", "visible": true },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "Country"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "(4) Mailing address ",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "(if different from above)",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "MailingAddress"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "(5) U.S. taxpayer identification number",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "(SSN or ITIN), if required (see instructions)",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "USTaxpayerIdentificationNumber"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "(6a) Foreign tax identifying number",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "(see instructions)",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "ForeignTaxIdentifyingNumber"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        },
-                        {
-                          "component": {
-                            "type": "Toggle",
-                            "model": {
-                              "title": {
-                                "text": "(6b) FTIN not required",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "mode": "Toggle",
-                              "wrap": true,
-                              "cOnText": "ON",
-                              "cOffText": "OFF",
-                              "_internalName": "NoFTIN"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "(7) Reference number(s)",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "ReferenceNumbers"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        },
-                        {
-                          "component": {
-                            "type": "Date",
-                            "model": {
-                              "title": {
-                                "text": "(8) Date of birth",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "wrap": true,
-                              "_internalName": "DateOfBirth"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "class": "bg-secondary",
-                  "_internalName": "Grid1"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [20, null, null, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Part II. Claim of Tax Treaty Benefits (for chapter 3 purposes only) (see instructions)<br /></h4>",
-                  "_internalName": "Text16"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Stack",
-                            "model": {
-                              "cells": [
-                                {
-                                  "class": "align-self-center",
+                          "size": "H4",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid1",
+                          "stacked": "md",
+                          "class": "bg-secondary",
+                          "rows": [{
+                              "cells": [{
                                   "component": {
-                                    "type": "Text",
-                                    "model": {
-                                      "text": "<p><strong>(9)</strong> I certify that the beneficial owner is a resident of</p>",
-                                      "_internalName": "Text32"
-                                    }
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "NameOfIndividualWhoIsTheBeneficialOwner",
+                                          "title": {
+                                              "text": "(1) Name of individual who is the beneficial owner",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
                                   }
-                                },
-                                {
+                              }]
+                          }, {
+                              "cells": [{
                                   "component": {
-                                    "type": "SingleLineText",
-                                    "model": {
-                                      "width": 360,
-                                      "title": {
-                                        "text": "I certify that the beneficial owner is a resident of",
-                                        "visible": false
-                                      },
-                                      "orientation": "Horizontal",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cWidth": 145,
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "type": "Anything",
-                                      "wrap": true,
-                                      "_internalName": "CountryTax"
-                                    }
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "CountryOfCitizenship",
+                                          "title": {
+                                              "text": "(2) Country of citizenship",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
                                   }
-                                },
-                                {
-                                  "class": "align-self-center",
+                              }]
+                          }, {
+                              "cells": [{
                                   "component": {
-                                    "type": "Text",
-                                    "model": {
-                                      "text": "<p>within the meaning of the income tax treaty between the United States and that country.</p>",
-                                      "_internalName": "Text20"
-                                    }
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Street",
+                                          "title": {
+                                              "text": "(3) Permanent residence address",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "(street, apt. or suite no., or rural route). Do not use a P.O. box or in-care-of address. ",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
                                   }
-                                }
-                              ],
-                              "overflow": "wrap",
-                              "_internalName": "Stack3"
-                            }
-                          },
-                          "alignment": "Left",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "padding": [8, null, 8, null],
-                          "component": {
-                            "type": "Text",
-                            "model": {
-                              "text": "<p><strong>(10) Special rates and conditions</strong> (if applicable - see instructions): The beneficial owner is claiming the provisions of Article and paragraph</p>",
-                              "_internalName": "Text21"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Stack",
-                            "model": {
-                              "cells": [
-                                {
+                              }]
+                          }, {
+                              "cells": [{
                                   "component": {
-                                    "type": "SingleLineText",
-                                    "model": {
-                                      "title": {
-                                        "text": "paragraph",
-                                        "visible": false
-                                      },
-                                      "orientation": "Horizontal",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cWidth": 145,
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "type": "Anything",
-                                      "wrap": true,
-                                      "_internalName": "Paragraph"
-                                    }
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "CityOrTownStateOrProvince",
+                                          "title": {
+                                              "text": "City or town, state or province",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Include postal code where appropriate. ",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
                                   }
-                                },
-                                {
-                                  "class": "align-self-center",
+                              }, {
                                   "component": {
-                                    "type": "Text",
-                                    "model": {
-                                      "text": "<p style=\"text-align:center;\">of the treaty identified on line 9 above to claim a</p>",
-                                      "_internalName": "Text31"
-                                    }
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Country",
+                                          "title": {
+                                              "text": "Country",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
                                   }
-                                },
-                                {
+                              }]
+                          }, {
+                              "cells": [{
                                   "component": {
-                                    "type": "Number",
-                                    "model": {
-                                      "width": 360,
-                                      "title": {
-                                        "text": "Percent",
-                                        "visible": false
-                                      },
-                                      "orientation": "Horizontal",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cWidth": 110,
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "min": 1,
-                                      "max": 50,
-                                      "decimals": 0,
-                                      "format": "n",
-                                      "step": 1,
-                                      "wrap": true,
-                                      "_internalName": "Percent"
-                                    }
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "MailingAddress",
+                                          "title": {
+                                              "text": "(4) Mailing address ",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "(if different from above)",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
                                   }
-                                },
-                                {
-                                  "class": "align-self-center",
+                              }]
+                          }, {
+                              "cells": [{
                                   "component": {
-                                    "type": "Text",
-                                    "model": {
-                                      "text": "<p style=\"text-align:center;\">% rate of withholding on (specify type of income):</p>",
-                                      "_internalName": "Text24"
-                                    }
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "USTaxpayerIdentificationNumber",
+                                          "title": {
+                                              "text": "(5) U.S. taxpayer identification number",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "(SSN or ITIN), if required (see instructions)",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
                                   }
-                                }
-                              ],
-                              "overflow": "wrap",
-                              "_internalName": "Stack4"
-                            }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "ForeignTaxIdentifyingNumber",
+                                          "title": {
+                                              "text": "(6a) Foreign tax identifying number",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "(see instructions)",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "Toggle",
+                                      "model": {
+                                          "_internalName": "NoFTIN",
+                                          "title": {
+                                              "text": "(6b) FTIN not required",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "mode": "Toggle",
+                                          "cOnText": "ON",
+                                          "cOffText": "OFF"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "ReferenceNumbers",
+                                          "title": {
+                                              "text": "(7) Reference number(s)",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "Date",
+                                      "model": {
+                                          "_internalName": "DateOfBirth",
+                                          "title": {
+                                              "text": "(8) Date of birth",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          }
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading3",
+                          "heading": "Part II. Claim of Tax Treaty Benefits (for chapter 3 purposes only) (see instructions)",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Left",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "IncomeType",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "IncomeType"
-                            }
+                          "size": "H4",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid2",
+                          "stacked": "md",
+                          "class": "bg-secondary",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "Stack",
+                                      "model": {
+                                          "_internalName": "Stack3",
+                                          "fill": "None",
+                                          "overflow": "wrap",
+                                          "cells": [{
+                                              "class": "align-self-center",
+                                              "component": {
+                                                  "type": "Text",
+                                                  "model": {
+                                                      "_internalName": "Text32",
+                                                      "text": "<p><strong>(9)</strong> I certify that the beneficial owner is a resident of</p>"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "vertical": "Top",
+                                                  "horizontal": null
+                                              }
+                                          }, {
+                                              "component": {
+                                                  "type": "SingleLineText",
+                                                  "model": {
+                                                      "_internalName": "CountryTax",
+                                                      "width": 360,
+                                                      "title": {
+                                                          "text": "I certify that the beneficial owner is a resident of",
+                                                          "visible": false
+                                                      },
+                                                      "orientation": "Horizontal",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cWidth": 145,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "type": "Anything"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "vertical": "Top",
+                                                  "horizontal": null
+                                              }
+                                          }, {
+                                              "class": "align-self-center",
+                                              "component": {
+                                                  "type": "Text",
+                                                  "model": {
+                                                      "_internalName": "Text20",
+                                                      "text": "<p>within the meaning of the income tax treaty between the United States and that country.</p>"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "vertical": "Top",
+                                                  "horizontal": null
+                                              }
+                                          }]
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Left",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "padding": [8, null, 8, null],
+                                  "component": {
+                                      "type": "Text",
+                                      "model": {
+                                          "_internalName": "Text21",
+                                          "text": "<p><strong>(10) Special rates and conditions</strong> (if applicable - see instructions): The beneficial owner is claiming the provisions of Article and paragraph</p>"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "Stack",
+                                      "model": {
+                                          "_internalName": "Stack4",
+                                          "fill": "None",
+                                          "overflow": "wrap",
+                                          "cells": [{
+                                              "component": {
+                                                  "type": "SingleLineText",
+                                                  "model": {
+                                                      "_internalName": "Paragraph",
+                                                      "title": {
+                                                          "text": "paragraph",
+                                                          "visible": false
+                                                      },
+                                                      "orientation": "Horizontal",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cWidth": 145,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "type": "Anything"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "vertical": "Top",
+                                                  "horizontal": null
+                                              }
+                                          }, {
+                                              "class": "align-self-center",
+                                              "component": {
+                                                  "type": "Text",
+                                                  "model": {
+                                                      "_internalName": "Text31",
+                                                      "text": "<p style=\"text-align:center;\">of the treaty identified on line 9 above to claim a</p>"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "vertical": "Top",
+                                                  "horizontal": null
+                                              }
+                                          }, {
+                                              "component": {
+                                                  "type": "Number",
+                                                  "model": {
+                                                      "_internalName": "Percent",
+                                                      "width": 360,
+                                                      "title": {
+                                                          "text": "Percent",
+                                                          "visible": false
+                                                      },
+                                                      "orientation": "Horizontal",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cWidth": 110,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "min": 1,
+                                                      "max": 50,
+                                                      "decimals": 0,
+                                                      "format": "n",
+                                                      "step": 1
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "vertical": "Top",
+                                                  "horizontal": null
+                                              }
+                                          }, {
+                                              "class": "align-self-center",
+                                              "component": {
+                                                  "type": "Text",
+                                                  "model": {
+                                                      "_internalName": "Text24",
+                                                      "text": "<p style=\"text-align:center;\">% rate of withholding on (specify type of income):</p>"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "vertical": "Top",
+                                                  "horizontal": null
+                                              }
+                                          }]
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Left",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "IncomeType",
+                                          "title": {
+                                              "text": "IncomeType",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "Text",
+                                      "model": {
+                                          "_internalName": "Text26",
+                                          "text": "<p>Explain the additional conditions in the Article and paragraph the beneficial owner meets to be eligible for the rate of withholding:</p>"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "MultiLineText",
+                                      "model": {
+                                          "_internalName": "Conditions",
+                                          "title": {
+                                              "text": "Conditions",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mode": "Plain"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading4",
+                          "heading": "Part III. Certification",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Text",
-                            "model": {
-                              "text": "<p>Explain the additional conditions in the Article and paragraph the beneficial owner meets to be eligible for the rate of withholding:</p>",
-                              "_internalName": "Text26"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "MultiLineText",
-                            "model": {
-                              "title": {
-                                "text": "Conditions",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "mode": "Plain",
-                              "wrap": true,
-                              "_internalName": "Conditions"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "class": "bg-secondary",
-                  "_internalName": "Grid2"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [20, null, null, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Part III. Certification</h4>",
-                  "_internalName": "Text29"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Text",
-                            "model": {
-                              "text": "<p>Under penalties of perjury, I declare that I have examined the information on this form and to the best of my knowledge and belief it is true, correct, and complete. I further certify under penalties of perjury that: </p><ul><li>I am the individual that is the beneficial owner (or am authorized to sign for the individual that is the beneficial owner) of all the income or proceeds to which this form&nbsp;relates or am using this form to document myself for chapter 4 purposes;</li><li>The person named on line 1 of this form is not a U.S. person;</li><li>This form relates to:<br />(a) income not effectively connected with the conduct of a trade or business in the United States;<br />(b) income effectively connected with the conduct of a trade or business in the United States but is not subject to tax under an applicable income tax treaty;<br />(c) the partner&rsquo;s share of a partnership&rsquo;s effectively connected taxable income; or<br />(d) the partner&rsquo;s amount realized from the transfer of a partnership interest subject to withholding under section 1446(f);&nbsp;</li><li>The person named on line 1 of this form is a resident of the treaty country listed on line 9 of the form (if any) within the meaning of the income tax treaty between the United States and that country; and</li><li>For broker transactions or barter exchanges, the beneficial owner is an exempt foreign person as defined in the instructions.</li></ul>Furthermore, I authorize this form to be provided to any withholding agent that has control, receipt, or custody of the income of which I am the beneficial owner or any withholding agent that can&nbsp;<br />disburse or make payments of the income of which I am the beneficial owner. <strong>I agree that I will submit a new form within 30 days if any certification made on this form becomes incorrect.</strong>",
-                              "_internalName": "Text27"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "padding": [15, null, null, null],
-                          "component": {
-                            "type": "Text",
-                            "model": {
-                              "text": "<h6>Sign Here:</h6>",
-                              "_internalName": "Text28"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Signature",
-                            "model": {
-                              "width": 300,
-                              "height": 150,
-                              "inkColor": "#000000",
-                              "_internalName": "Signature"
-                            }
-                          },
-                          "alignment": "Left",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "class": "bg-secondary",
-                  "_internalName": "Grid3"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, null, null],
-              "component": {
-                "type": "Submit",
-                "model": {
-                  "width": 174,
-                  "text": "Submit W-8 ",
-                  "type": "Primary",
-                  "click": "return fd.save();",
-                  "_internalName": "Submit1"
-                }
-              },
-              "alignment": "Center",
-              "columns": { "width": 12 }
-            }
-          ]
-        }
-      ],
-      "stacked": "md"
-    }
+                          "size": "H4",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid3",
+                          "stacked": "md",
+                          "class": "bg-secondary",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "Text",
+                                      "model": {
+                                          "_internalName": "Text27",
+                                          "text": "<p>Under penalties of perjury, I declare that I have examined the information on this form and to the best of my knowledge and belief it is true, correct, and complete. I further certify under penalties of perjury that: </p><ul><li>I am the individual that is the beneficial owner (or am authorized to sign for the individual that is the beneficial owner) of all the income or proceeds to which this form&nbsp;relates or am using this form to document myself for chapter 4 purposes;</li><li>The person named on line 1 of this form is not a U.S. person;</li><li>This form relates to:<br />(a) income not effectively connected with the conduct of a trade or business in the United States;<br />(b) income effectively connected with the conduct of a trade or business in the United States but is not subject to tax under an applicable income tax treaty;<br />(c) the partner&rsquo;s share of a partnership&rsquo;s effectively connected taxable income; or<br />(d) the partner&rsquo;s amount realized from the transfer of a partnership interest subject to withholding under section 1446(f);&nbsp;</li><li>The person named on line 1 of this form is a resident of the treaty country listed on line 9 of the form (if any) within the meaning of the income tax treaty between the United States and that country; and</li><li>For broker transactions or barter exchanges, the beneficial owner is an exempt foreign person as defined in the instructions.</li></ul>Furthermore, I authorize this form to be provided to any withholding agent that has control, receipt, or custody of the income of which I am the beneficial owner or any withholding agent that can&nbsp;<br />disburse or make payments of the income of which I am the beneficial owner. <strong>I agree that I will submit a new form within 30 days if any certification made on this form becomes incorrect.</strong>"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "padding": [15, null, null, null],
+                                  "component": {
+                                      "type": "Text",
+                                      "model": {
+                                          "_internalName": "Text28",
+                                          "text": "<h6>Sign Here:</h6>"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "Signature",
+                                      "model": {
+                                          "_internalName": "Signature",
+                                          "title": {
+                                              "text": "Signature",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cWidth": 300,
+                                          "height": 150,
+                                          "inkColor": "#000000"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Left",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Submit",
+                      "model": {
+                          "_internalName": "Submit1",
+                          "width": 174,
+                          "text": "Submit W-8 ",
+                          "savingText": "Submitting...",
+                          "type": "Primary",
+                          "click": "return fd.save();"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Center",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "",
-  "css": ".fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    text-align: left !important;\r\n}\r\n\r\n.fd-form h1:after {\r\n    content: ' ';\r\n    display: block;\r\n    border-top: 3px solid;\r\n    padding-bottom: 10px;\r\n    margin-top: 10px;\r\n}\r\n\r\n.fd-form h4, .fd-form .h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    padding-top: 4px !important;\r\n    padding-bottom: 4px !important;\r\n}\r\n\r\n.fd-form p {\r\n    margin-bottom: 1rem !important;\r\n}\r\n",
+  "css": ".fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n}\r\n\r\n.fd-form h4, .fd-form .h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    padding-top: 4px !important;\r\n    padding-bottom: 4px !important;\r\n}\r\n\r\n.fd-form p {\r\n    margin-bottom: 1rem !important;\r\n}\r\n",
+  "notifySubscribers": false,
+  "version": "1.0.2",
   "theme": null,
   "timezone": "Europe/Budapest",
-  "culture": "en-US",
-  "notifySubscribers": false,
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": null,
   "redirectURL": null,
   "hideAfterSubmission": false,
@@ -789,6 +919,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }

@@ -1,465 +1,506 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "rows": [
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h1 style=\"text-align:center;\">Job Application</h1>",
-                  "_internalName": "Text1"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [30, null, null, null],
-              "component": {
-                "type": "Wizard",
-                "model": {
-                  "steps": [
-                    {
-                      "_internalName": "Step4",
-                      "title": "Position",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "DropDown",
-                                    "model": {
-                                      "title": {
-                                        "text": "Position",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "dataSource": "StaticList",
-                                      "options": "Account Manager\nCustomer Program Manager\nSoftware Engineer",
-                                      "selection": "Single",
-                                      "wrap": true,
-                                      "_internalName": "Position"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 6 }
-                                },
-                                {
-                                  "component": {
-                                    "type": "Number",
-                                    "model": {
-                                      "title": {
-                                        "text": "Desired Salary (Monthly)",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "decimals": 0,
-                                      "format": "c",
-                                      "step": 1,
-                                      "wrap": true,
-                                      "_internalName": "DesiredSalaryMonthly"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 6 }
-                                }
-                              ]
-                            }
-                          ],
-                          "stacked": "md"
-                        }
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "padding": [30, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading1",
+                          "heading": "Job Application",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "size": "H1",
+                          "textAlignment": "Center"
                       }
-                    },
-                    {
-                      "_internalName": "Step1",
-                      "title": "Personal Details",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "SingleLineText",
-                                    "model": {
-                                      "title": {
-                                        "text": "First Name",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "type": "Anything",
-                                      "wrap": true,
-                                      "_internalName": "FirstName"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 4 }
-                                },
-                                {
-                                  "component": {
-                                    "type": "SingleLineText",
-                                    "model": {
-                                      "title": {
-                                        "text": "Last Name",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "type": "Anything",
-                                      "wrap": true,
-                                      "_internalName": "LastName"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 4 }
-                                },
-                                {
-                                  "component": {
-                                    "type": "Date",
-                                    "model": {
-                                      "title": {
-                                        "text": "Birth Date",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "wrap": true,
-                                      "_internalName": "BirthDate"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 4 }
-                                }
-                              ]
-                            },
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "MultiLineText",
-                                    "model": {
-                                      "title": {
-                                        "text": "Address",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "mode": "Plain",
-                                      "wrap": true,
-                                      "_internalName": "Address"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            },
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "SingleLineText",
-                                    "model": {
-                                      "title": {
-                                        "text": "Email",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "cHint": "username@domain.com",
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "type": "E-mail",
-                                      "wrap": true,
-                                      "_internalName": "Email",
-                                      "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                      "error": "This field must contain a valid e-mail address."
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 6 }
-                                },
-                                {
-                                  "component": {
-                                    "type": "SingleLineText",
-                                    "model": {
-                                      "title": {
-                                        "text": "Phone",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "cHint": "123-456-7890",
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "type": "Phone",
-                                      "wrap": true,
-                                      "_internalName": "Phone",
-                                      "pattern": "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]\\d{3}[\\s.-]\\d{4}$",
-                                      "error": "This field must contain a valid phone number."
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 6 }
-                                }
-                              ]
-                            }
-                          ],
-                          "stacked": "md"
-                        }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Wizard",
+                      "model": {
+                          "_internalName": "Wizard1",
+                          "shape": "Circle",
+                          "nextText": "Next",
+                          "backText": "Back",
+                          "finishText": "Finish",
+                          "savingText": "Submitting...",
+                          "finish": "return fd.save();",
+                          "steps": [{
+                              "_internalName": "Step4",
+                              "title": "Position",
+                              "component": {
+                                  "type": "Grid",
+                                  "model": {
+                                      "stacked": "md",
+                                      "rows": [{
+                                          "cells": [{
+                                              "component": {
+                                                  "type": "DropDown",
+                                                  "model": {
+                                                      "_internalName": "Position",
+                                                      "title": {
+                                                          "text": "Position",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "dataSource": "StaticList",
+                                                      "StaticList": {
+                                                          "options": "Account Manager\nCustomer Program Manager\nSoftware Engineer"
+                                                      },
+                                                      "selection": "Single",
+                                                      "options": "Account Manager\nCustomer Program Manager\nSoftware Engineer"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 6
+                                              }
+                                          }, {
+                                              "component": {
+                                                  "type": "Number",
+                                                  "model": {
+                                                      "_internalName": "DesiredSalaryMonthly",
+                                                      "title": {
+                                                          "text": "Desired Salary (Monthly)",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "decimals": 0,
+                                                      "format": "c",
+                                                      "step": 1
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 6
+                                              }
+                                          }]
+                                      }]
+                                  }
+                              }
+                          }, {
+                              "_internalName": "Step1",
+                              "title": "Personal Details",
+                              "component": {
+                                  "type": "Grid",
+                                  "model": {
+                                      "stacked": "md",
+                                      "rows": [{
+                                          "cells": [{
+                                              "component": {
+                                                  "type": "SingleLineText",
+                                                  "model": {
+                                                      "_internalName": "FirstName",
+                                                      "title": {
+                                                          "text": "First Name",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "type": "Anything"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 4
+                                              }
+                                          }, {
+                                              "component": {
+                                                  "type": "SingleLineText",
+                                                  "model": {
+                                                      "_internalName": "LastName",
+                                                      "title": {
+                                                          "text": "Last Name",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "type": "Anything"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 4
+                                              }
+                                          }, {
+                                              "component": {
+                                                  "type": "Date",
+                                                  "model": {
+                                                      "_internalName": "BirthDate",
+                                                      "title": {
+                                                          "text": "Birth Date",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      }
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 4
+                                              }
+                                          }]
+                                      }, {
+                                          "cells": [{
+                                              "component": {
+                                                  "type": "MultiLineText",
+                                                  "model": {
+                                                      "_internalName": "Address",
+                                                      "title": {
+                                                          "text": "Address",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "mode": "Plain"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 12
+                                              }
+                                          }]
+                                      }, {
+                                          "cells": [{
+                                              "component": {
+                                                  "type": "SingleLineText",
+                                                  "model": {
+                                                      "_internalName": "Email",
+                                                      "title": {
+                                                          "text": "Email",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cHint": "username@domain.com",
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "type": "E-mail",
+                                                      "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                      "error": "This field must contain a valid e-mail address."
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 6
+                                              }
+                                          }, {
+                                              "component": {
+                                                  "type": "MaskedInput",
+                                                  "model": {
+                                                      "_internalName": "Phone",
+                                                      "title": {
+                                                          "text": "Phone",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "cFont": {
+                                                          "style": "Normal",
+                                                          "weight": "Normal"
+                                                      },
+                                                      "mask": "000-000-0000"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 6
+                                              }
+                                          }]
+                                      }]
+                                  }
+                              }
+                          }, {
+                              "_internalName": "Step2",
+                              "title": "Employment History",
+                              "component": {
+                                  "type": "Grid",
+                                  "model": {
+                                      "stacked": "md",
+                                      "rows": [{
+                                          "cells": [{
+                                              "component": {
+                                                  "type": "Text",
+                                                  "model": {
+                                                      "_internalName": "Text2",
+                                                      "text": "<p>Please give details of relevant previous employment, starting with the most recent employment, working backwards.</p>"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 12
+                                              }
+                                          }]
+                                      }, {
+                                          "cells": [{
+                                              "component": {
+                                                  "type": "DataTable",
+                                                  "model": {
+                                                      "_internalName": "History",
+                                                      "title": {
+                                                          "text": "History",
+                                                          "visible": false
+                                                      },
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "newLine": "Top",
+                                                      "delete": "Last",
+                                                      "columns": [{
+                                                          "_internalName": "Position",
+                                                          "title": "Position",
+                                                          "required": false,
+                                                          "type": "String"
+                                                      }, {
+                                                          "_internalName": "Company",
+                                                          "title": "Company",
+                                                          "required": false,
+                                                          "type": "String"
+                                                      }, {
+                                                          "_internalName": "HireDate",
+                                                          "title": "Hire Date",
+                                                          "required": false,
+                                                          "type": "Date"
+                                                      }, {
+                                                          "_internalName": "LeaveDate",
+                                                          "title": "Leave Date",
+                                                          "required": false,
+                                                          "type": "Date"
+                                                      }, {
+                                                          "_internalName": "Phone",
+                                                          "title": "Phone",
+                                                          "required": false,
+                                                          "type": "String"
+                                                      }]
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 12
+                                              }
+                                          }]
+                                      }]
+                                  }
+                              }
+                          }, {
+                              "_internalName": "Step3",
+                              "title": "Resume",
+                              "component": {
+                                  "type": "Grid",
+                                  "model": {
+                                      "stacked": "md",
+                                      "rows": [{
+                                          "cells": [{
+                                              "component": {
+                                                  "type": "MultiLineText",
+                                                  "model": {
+                                                      "_internalName": "Description",
+                                                      "title": {
+                                                          "text": "A couple of words about yourself",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "mode": "Rich"
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 12
+                                              }
+                                          }]
+                                      }, {
+                                          "cells": [{
+                                              "component": {
+                                                  "type": "Attachments",
+                                                  "model": {
+                                                      "_internalName": "Attachments",
+                                                      "title": {
+                                                          "text": "Attachments",
+                                                          "visible": true
+                                                      },
+                                                      "orientation": "Vertical",
+                                                      "required": false,
+                                                      "font": {
+                                                          "style": "Normal",
+                                                          "weight": "Semibold"
+                                                      },
+                                                      "wrap": true,
+                                                      "maxSize": 10240
+                                                  }
+                                              },
+                                              "alignment": {
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
+                                              },
+                                              "columns": {
+                                                  "width": 12
+                                              }
+                                          }]
+                                      }]
+                                  }
+                              }
+                          }]
                       }
-                    },
-                    {
-                      "_internalName": "Step2",
-                      "title": "Employment History",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "Text",
-                                    "model": {
-                                      "text": "<p>Please give details of relevant previous employment, starting with the most recent employment, working backwards.</p>",
-                                      "_internalName": "Text1"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            },
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "DataTable",
-                                    "model": {
-                                      "columns": [
-                                        {
-                                          "_internalName": "Position",
-                                          "title": "Position",
-                                          "required": false,
-                                          "type": "String"
-                                        },
-                                        {
-                                          "_internalName": "Company",
-                                          "title": "Company",
-                                          "required": false,
-                                          "type": "String"
-                                        },
-                                        {
-                                          "_internalName": "HireDate",
-                                          "title": "Hire Date",
-                                          "required": false,
-                                          "type": "Date"
-                                        },
-                                        {
-                                          "_internalName": "LeaveDate",
-                                          "title": "Leave Date",
-                                          "required": false,
-                                          "type": "Date"
-                                        },
-                                        {
-                                          "_internalName": "Phone",
-                                          "title": "Phone",
-                                          "required": false,
-                                          "type": "String"
-                                        }
-                                      ],
-                                      "newLine": "Top",
-                                      "delete": "Last",
-                                      "_internalName": "History"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ],
-                          "stacked": "md"
-                        }
-                      }
-                    },
-                    {
-                      "_internalName": "Step3",
-                      "title": "Resume",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "MultiLineText",
-                                    "model": {
-                                      "title": {
-                                        "text": "A couple of words about yourself",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "mode": "Rich",
-                                      "wrap": true,
-                                      "_internalName": "Description"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            },
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "Attachments",
-                                    "model": {
-                                      "title": {
-                                        "text": "Attachments",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "maxSize": 10240,
-                                      "wrap": true,
-                                      "_internalName": "Attachments"
-                                    }
-                                  },
-                                  "alignment": "Justify",
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ],
-                          "stacked": "md"
-                        }
-                      }
-                    }
-                  ],
-                  "shape": "Circle",
-                  "nextText": "Next",
-                  "backText": "Back",
-                  "finishText": "Finish",
-                  "finish": "return fd.save();",
-                  "_internalName": "Wizard1"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        }
-      ],
-      "stacked": "md"
-    }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "fd.rendered(function(){\r\n    // require at least one record in the employment history\r\n    fd.control('History').addValidator({\r\n        error: 'Error message',\r\n        validate: function(value) {\r\n            if (value.length === 0) {\r\n                this.error = 'Add at least one record of the previous employment list';\r\n                return false;\r\n            }\r\n\r\n            return true;\r\n        }\r\n    });\r\n});",
-  "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem)!important;\n    text-align: center !important;\n}",
+  "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem)!important;\n}",
+  "notifySubscribers": false,
+  "version": "1.0.2",
   "theme": {
-    "primary": "#008EFF",
-    "bodyText": "#373A3C",
-    "bodyBackground": "#FFFFFF",
-    "fontFamily": null,
-    "fontType": 0,
-    "fontSize": 18,
-    "fontWeight": 400,
-    "borderThickness": 2,
-    "borderRadius": 3,
-    "shadow": true,
-    "themeId": "837d962e619dd2ed5dac45b734463789"
+      "primary": "#008EFF",
+      "bodyText": "#373A3C",
+      "bodyBackground": "#FFFFFF",
+      "fontFamily": null,
+      "fontType": 0,
+      "fontSize": 18,
+      "fontWeight": 400,
+      "borderThickness": 2,
+      "borderRadius": 3,
+      "shadow": true,
+      "themeId": "837d962e619dd2ed5dac45b734463789"
   },
   "timezone": "Europe/Budapest",
-  "culture": "en-US",
-  "notifySubscribers": false,
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": null,
   "redirectURL": null,
   "hideAfterSubmission": true,
@@ -470,6 +511,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }

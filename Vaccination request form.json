@@ -1,0 +1,799 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "rows": [{
+                "cells": [{
+                    "padding": [null, null, 40, null],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid3",
+                            "stacked": "md",
+                            "class": "bg-primary",
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "Heading",
+                                        "model": {
+                                            "_internalName": "Heading1",
+                                            "heading": "Vaccination request",
+                                            "view": "Normal",
+                                            "font": {
+                                                "color": "",
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "class": "bg-primary",
+                                            "size": "H1",
+                                            "textAlignment": "Left"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [null, null, 20, null],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid2",
+                            "stacked": "md",
+                            "class": "bg-light",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [null, null, 15, null],
+                                    "component": {
+                                        "type": "Heading",
+                                        "model": {
+                                            "_internalName": "Heading2",
+                                            "heading": "Patient Info",
+                                            "view": "Underline1",
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "class": "bg-light",
+                                            "size": "H3",
+                                            "textAlignment": "Left"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Name",
+                                            "title": {
+                                                "text": "Name",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "Date",
+                                        "model": {
+                                            "_internalName": "BirthDate",
+                                            "title": {
+                                                "text": "Birth Date",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            }
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                            "_internalName": "Phone",
+                                            "title": {
+                                                "text": "Phone",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mask": "000-000-0000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Email",
+                                            "title": {
+                                                "text": "Email",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "username@domain.com",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "E-mail",
+                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                            "error": "This field must contain a valid e-mail address."
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                            "_internalName": "MedicareNumber",
+                                            "title": {
+                                                "text": "Medicare Number",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mask": "0-000-000-0000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                            "_internalName": "IndividualHealthIdentifierIHI",
+                                            "title": {
+                                                "text": "Individual Health Identifier (IHI)",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mask": "0000 0000 0000 0000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [null, null, 20, null],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid1",
+                            "stacked": "md",
+                            "class": "bg-light",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [null, null, 15, null],
+                                    "component": {
+                                        "type": "Heading",
+                                        "model": {
+                                            "_internalName": "Heading3",
+                                            "heading": "Medical History",
+                                            "view": "Underline1",
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "class": "bg-light",
+                                            "size": "H3",
+                                            "textAlignment": "Left"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "Allergic",
+                                            "title": {
+                                                "text": "Are you allergic?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "Yes\nNo",
+                                                "allowUserValue": false
+                                            },
+                                            "cColumns": 1,
+                                            "options": "Yes\nNo",
+                                            "allowUserValue": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "MultiLineText",
+                                        "model": {
+                                            "_internalName": "AllergicDetails",
+                                            "title": {
+                                                "text": "Please provide more details",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mode": "Plain"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "VaccineReaction",
+                                            "title": {
+                                                "text": "Have you ever had a reaction to the vaccine?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "Yes\nNo",
+                                                "allowUserValue": false
+                                            },
+                                            "cColumns": 1,
+                                            "options": "Yes\nNo",
+                                            "allowUserValue": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "MultiLineText",
+                                        "model": {
+                                            "_internalName": "VaccineDetails",
+                                            "title": {
+                                                "text": "Please provide more details",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mode": "Plain"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "СhronicСonditions",
+                                            "title": {
+                                                "text": "Do you have any chronic medical conditions?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "Yes\nNo",
+                                                "allowUserValue": false
+                                            },
+                                            "cColumns": 1,
+                                            "options": "Yes\nNo",
+                                            "allowUserValue": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "MultiLineText",
+                                        "model": {
+                                            "_internalName": "СhronicСonditionsDetails",
+                                            "title": {
+                                                "text": "Please provide more details",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mode": "Plain"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "DropDown",
+                                        "model": {
+                                            "_internalName": "VaccinationAgainst",
+                                            "width": 165,
+                                            "title": {
+                                                "text": "Vaccination against",
+                                                "visible": true
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "COVID-19 vaccine\r\nFlu vaccine\r\nTdap vaccine\r\nHepatitis B vaccine\r\nHPV vaccine\r\nMMR vaccine\r\nMenB vaccine\r\nChickenpox vaccine",
+                                                "allowUserValue": false
+                                            },
+                                            "selection": "Single",
+                                            "options": "COVID-19 vaccine\r\nFlu vaccine\r\nTdap vaccine\r\nHepatitis B vaccine\r\nHPV vaccine\r\nMMR vaccine\r\nMenB vaccine\r\nChickenpox vaccine",
+                                            "allowUserValue": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid4",
+                            "stacked": "md",
+                            "class": "bg-light",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [null, null, 15, null],
+                                    "component": {
+                                        "type": "Heading",
+                                        "model": {
+                                            "_internalName": "Heading4",
+                                            "heading": "Consent for Vaccination",
+                                            "view": "Underline1",
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "class": "bg-light",
+                                            "size": "H3",
+                                            "textAlignment": "Left"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MultipleChoice",
+                                        "model": {
+                                            "_internalName": "Consent",
+                                            "title": {
+                                                "text": "Consent for vaccination",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "I authorize the hospital to perform the necessary treatment or procedure on me.\r\nI have been provided with information about the vaccine, including its potential benefits and known risks. I have had the opportunity to ask questions and have received satisfactory answers.\r\nI understand that the vaccine may cause mild side effects, which are generally short-lived and similar to those of other vaccines.\r\nI agree to follow any post-vaccination instructions provided to me by healthcare providers.\r\nI certify that I have read and understood the information provided and that I am providing this consent voluntarily and without any coercion.\r\nI acknowledge that all the information I provided in this form is true and accurate.",
+                                                "allowUserValue": false
+                                            },
+                                            "cColumns": 1,
+                                            "options": "I authorize the hospital to perform the necessary treatment or procedure on me.\r\nI have been provided with information about the vaccine, including its potential benefits and known risks. I have had the opportunity to ask questions and have received satisfactory answers.\r\nI understand that the vaccine may cause mild side effects, which are generally short-lived and similar to those of other vaccines.\r\nI agree to follow any post-vaccination instructions provided to me by healthcare providers.\r\nI certify that I have read and understood the information provided and that I am providing this consent voluntarily and without any coercion.\r\nI acknowledge that all the information I provided in this form is true and accurate.",
+                                            "allowUserValue": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 10, null],
+                                    "component": {
+                                        "type": "HTML",
+                                        "model": {
+                                            "_internalName": "HTML1",
+                                            "content": "<hr>"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Date",
+                                        "model": {
+                                            "_internalName": "Date",
+                                            "title": {
+                                                "text": "Vaccination Date",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "class": "completion-date",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            }
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "Signature",
+                                        "model": {
+                                            "_internalName": "InkSketch1",
+                                            "title": {
+                                                "text": "InkSketch1",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cWidth": 300,
+                                            "height": 150,
+                                            "inkColor": "#000000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Left",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [30, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "Submit",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "fd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nfd.rendered(function() {\r\n    //disable fields\r\n    fd.field('Date').disabled = true;\r\n\r\n    //set Date to the current date\r\n    fd.field('Date').value = new Date();\r\n\r\n\r\n    //load the Moment.js library to calculate patient's age and disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calendarSetUp();\r\n\r\n        });\r\n\r\n    // add validation for Consent\r\n    fd.field('Consent').addValidator({\r\n        name: 'ConsentValidator',\r\n        error: 'You must confirm all points. If you still have questions, contact your family doctor.',\r\n        validate: function(value) {\r\n            if (fd.field('Consent').value.length < 6)\r\n                return false;\r\n\r\n            return true;\r\n        }\r\n    });\r\n\r\n    //call functions when changing field values\r\n    fd.field('Allergic').$on('change', showHideAllergicList);\r\n    fd.field('VaccineReaction').$on('change', showHideVaccineReactionList);\r\n    fd.field('СhronicСonditions').$on('change', showHideСhronicСonditionList);\r\n\r\n    //сalling functions on form loading\r\n    showHideAllergicList();\r\n    showHideVaccineReactionList();\r\n    showHideСhronicСonditionList();\r\n\r\n});\r\n\r\n\r\n//show/hide AllergicDetails list\r\nfunction showHideAllergicList() {\r\n    if (fd.field('Allergic').value == 'Yes') {\r\n        fd.field('AllergicDetails').hidden = false;\r\n    } else {\r\n        fd.field('AllergicDetails').hidden = true;\r\n    }\r\n}\r\n\r\n//show/hide Vaccine Reaction list\r\nfunction showHideVaccineReactionList() {\r\n    if (fd.field('VaccineReaction').value == 'Yes') {\r\n        fd.field('VaccineDetails').hidden = false;\r\n    } else {\r\n        fd.field('VaccineDetails').hidden = true;\r\n    }\r\n}\r\n\r\n//show/hide Сhronic Сonditions list\r\nfunction showHideСhronicСonditionList() {\r\n    if (fd.field('СhronicСonditions').value == 'Yes') {\r\n        fd.field('СhronicСonditionsDetails').hidden = false;\r\n    } else {\r\n        fd.field('СhronicСonditionsDetails').hidden = true;\r\n    }\r\n}\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}",
+    "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    color: white !important;\n}\n\n.fd-form h1 > span{\n   background-color: var(--fd-primary-rgb) !important;;\n}\n\nh3 > .fd-heading__heading-text {\n    background-color: var(--fd-light-rgb) !important;\n}\n\n.fd-form .k-calendar .k-header {\n    color: #868e96\n}\n\n.fd-form .header p {\n    font-size: 16px !important;\n}\n\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-select {\n    display: none !important;\n}\n\n.fd-form .completion-date input {\n    padding-left: 0px;\n}\n\n.fd-form .btn-primary {\n    font-weight: 600 !important\n}",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#527c88",
+        "bodyText": "#373A3C",
+        "bodyBackground": "#ffffff",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "themeId": "5404470142be6bcff11d8e8bb05eda82"
+    },
+    "timezone": "Europe/Budapest",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
+}

@@ -32,10 +32,17 @@
                                     }
                                 }, {
                                     "component": {
-                                        "type": "Text",
+                                        "type": "Heading",
                                         "model": {
-                                            "_internalName": "Text34",
-                                            "text": "<h1>Health Leaf Hospital</h1>"
+                                            "_internalName": "Heading1",
+                                            "heading": "Health Leaf Hospital",
+                                            "view": "Normal",
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "size": "H1",
+                                            "textAlignment": "Center"
                                         }
                                     },
                                     "alignment": {
@@ -143,15 +150,22 @@
                 }, {
                     "padding": [40, null, null, null],
                     "component": {
-                        "type": "Text",
+                        "type": "Heading",
                         "model": {
-                            "_internalName": "Text5",
-                            "text": "<h2> New Patient Registration</h2>"
+                            "_internalName": "Heading2",
+                            "heading": "New Patient Registration",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "size": "H2",
+                            "textAlignment": "Center"
                         }
                     },
                     "alignment": {
                         "horizontal": "Justify",
-                        "vertical": "Middle"
+                        "vertical": "Top"
                     },
                     "columns": {
                         "width": 10
@@ -355,7 +369,7 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "mask": "0000 0000 000 "
+                                                        "mask": "000-000-0000"
                                                     }
                                                 },
                                                 "alignment": {
@@ -385,7 +399,7 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "mask": "0000 0000 000 "
+                                                        "mask": "000-000-0000"
                                                     }
                                                 },
                                                 "alignment": {
@@ -630,7 +644,7 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "mask": "0000 0000 000 "
+                                                        "mask": "000-000-0000"
                                                     }
                                                 },
                                                 "alignment": {
@@ -3283,7 +3297,7 @@
                                                     "model": {
                                                         "_internalName": "HowMuchAreYouSmokingOnDailyBasis",
                                                         "title": {
-                                                            "text": "How much are you smoking on daily basis?",
+                                                            "text": "How much do you smoke in a day?",
                                                             "visible": true
                                                         },
                                                         "orientation": "Vertical",
@@ -3390,7 +3404,7 @@
                                                     "model": {
                                                         "_internalName": "AlcoholHowOften",
                                                         "title": {
-                                                            "text": "How often do you have a drink containing alcohol?",
+                                                            "text": "How often do you drink alcohol?",
                                                             "visible": true
                                                         },
                                                         "orientation": "Vertical",
@@ -3428,7 +3442,7 @@
                                                     "model": {
                                                         "_internalName": "AlcoholUnits",
                                                         "title": {
-                                                            "text": "How many units of alcohol do you drink on a typical day when you are drinking?",
+                                                            "text": "How many units of alcohol do you typically drink at once?",
                                                             "visible": true
                                                         },
                                                         "orientation": "Vertical",
@@ -3582,6 +3596,7 @@
                         "model": {
                             "_internalName": "Submit1",
                             "text": "SUBMIT",
+                            "savingText": "Submitting...",
                             "type": "Primary",
                             "click": "return fd.save();",
                             "style": "font-weight: 600 !important"
@@ -3601,7 +3616,7 @@
     "tablet": null,
     "phone": null,
     "js": "fd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n}\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable registration date fields\r\n    fd.field('RegistrationDate').disabled = true;\r\n    //set RegistrationDate to the current date\r\n    fd.field('RegistrationDate').value = new Date();\r\n\r\n\r\n    //сalling functions on form loading\r\n    showHideMedicationsList();\r\n    showHideAllergicOnMedicationsList();\r\n    showHideAllergicFood();\r\n    smoker();\r\n    alcohol();\r\n\r\n    //call functions when changing field values    \r\n    fd.field('AllergicMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', smoker);\r\n    fd.field('Alcohol').$on('change', alcohol);\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n\r\n    //load the Moment.js library to calculate the date range to disable\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calendarSetUp();\r\n        });\r\n\r\n});\r\n\r\n//show/hide MedicationsList\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value) {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n\r\n//show hide AllergicMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicMedications').value) {\r\n        fd.field('AllergicMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicMedicationsList').hidden = true;\r\n    }\r\n}\r\n//show hide AllergicFood field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value) {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n//show/hide questions about smoking\r\nfunction smoker() {\r\n    if (fd.field('AreYouASmoker').value) {\r\n        $('.smoker').show()\r\n    } else {\r\n        $('.smoker').hide()\r\n    }\r\n}\r\n//show/hide questions about alcohol\r\nfunction alcohol() {\r\n    if (fd.field('Alcohol').value == 'Occasionally' || fd.field('Alcohol').value == 'Often') {\r\n        $('.alcohol').show()\r\n    } else {\r\n        $('.alcohol').hide()\r\n    }\r\n}\r\n\r\n//disable dates to allow only 18+ users\r\n//set up start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}",
-    "css": ".fd-form .logo{\n    filter: invert(100%) sepia(7%) saturate(7476%) hue-rotate(256deg) brightness(115%) contrast(91%);\n}\n\n\n.fd-form h1, .fd-form .info p{\n    color: white !important;;\n}\n\n.fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    text-align: center !important;\n}\n\n.fd-form h2 {\n    text-align: center;\n}\n\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.completion-date .k-select {\n    display: none !important;\n}\n\n.fd-form .info p {\n    margin-top: 0;\n    margin-bottom: 0 !important;;\n}\n\n.fd-form .nav-tabs .nav-link.active,\n.fd-form .nav-tabs .nav-link:focus {\n    border-color: #335da3 rgba(0,0,0,0) #335da3 #335da3;\n    background-color: #335da2;\n    color: white;\n}\n\n/****** THEME 1 ******/\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:hover {\n    color: #fff;\n    background-color: #bbc756;\n    border-color: #bbc756 #bbc756 #bbc756;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-item {\n    margin-bottom: 0;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link.active,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:focus \n{\n    color: #889e5c !important;\n    border-color: #889e5c #ffffff #889e5c #889e5c !important;\n    background-color: transparent !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-link {\n    color: #3f3f3f !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs:hover {\n    border-right-color: #889e5c !important;\n    color: white\n}\n\n/****** THEME 2 ******/\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: transparent !important;\n    border-right: 5px solid #eaeaea;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link.active,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:focus {\n    color: #333;\n    border: none !important;\n    border-right: 5px solid #ed885d!important;\n    background-color: transparent !important;\n}\n\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-link {\n    color: #333;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs:hover {\n    border: none !important;\n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5;\n    border-color: #D7E1E5 #D7E1E5 #006699;\n    border-radius: 10px;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link.active,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:focus {\n    border-color: #883f86 #883f86 #883f86 !Important;\n    background-color: #883f86;\n    color: white;\n    border-radius: 10px;\n}\n\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-link {\n    color: #883f86;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs:hover {\n    border-color: transparent !Important;\n}\n",
+    "css": ".fd-form .logo{\n    filter: invert(100%) sepia(7%) saturate(7476%) hue-rotate(256deg) brightness(115%) contrast(91%);\n}\n\n\n.fd-form h1, .fd-form .info p{\n    color: white !important;;\n}\n\n.fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form h1 > span{\n   background-color: transparent !important;;\n}\n\n.fd-form .fd-heading {\n    background-color: transparent !important;\n}\n\n\n.fd-form h2 {\n    text-align: center;\n}\n\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.completion-date .k-select {\n    display: none !important;\n}\n\n.fd-form .info p {\n    margin-top: 0;\n    margin-bottom: 0 !important;;\n}\n\n.fd-form .nav-tabs .nav-link.active,\n.fd-form .nav-tabs .nav-link:focus {\n    border-color: #335da3 rgba(0,0,0,0) #335da3 #335da3;\n    background-color: #335da2;\n    color: white;\n}\n\n/****** THEME 1 ******/\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:hover {\n    color: #fff;\n    background-color: #bbc756;\n    border-color: #bbc756 #bbc756 #bbc756;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-item {\n    margin-bottom: 0;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link.active,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:focus \n{\n    color: #889e5c !important;\n    border-color: #889e5c #ffffff #889e5c #889e5c !important;\n    background-color: transparent !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-link {\n    color: #3f3f3f !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs:hover {\n    border-right-color: #889e5c !important;\n    color: white\n}\n\n/****** THEME 2 ******/\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: transparent !important;\n    border-right: 5px solid #eaeaea;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link.active,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:focus {\n    color: #333;\n    border: none !important;\n    border-right: 5px solid #ed885d!important;\n    background-color: transparent !important;\n}\n\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-link {\n    color: #333;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs:hover {\n    border: none !important;\n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5;\n    border-color: #D7E1E5 #D7E1E5 #006699;\n    border-radius: 10px;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link.active,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:focus {\n    border-color: #883f86 #883f86 #883f86 !Important;\n    background-color: #883f86;\n    color: white;\n    border-radius: 10px;\n}\n\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-link {\n    color: #883f86;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs:hover {\n    border-color: transparent !Important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
@@ -3619,6 +3634,8 @@
     },
     "timezone": "Europe/Budapest",
     "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,

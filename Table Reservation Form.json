@@ -1,258 +1,368 @@
 {
-    "pc": {
-        "type": "Grid",
-        "model": {
-            "stacked": "md",
-            "rows": [
-                {
-                    "cells": [
-                        {
-                            "component": {
-                                "type": "Grid",
-                                "model": {
-                                    "_internalName": "Grid2",
-                                    "stacked": "md",
-                                    "class": "fd-blur-background",
-                                    "rows": [
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "Text",
-                                                        "model": { "_internalName": "Text1", "text": "<h1>Table Reservation</h1>" }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 12 }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "DateTime",
-                                                        "model": {
-                                                            "_internalName": "ReservationTime",
-                                                            "title": { "text": "Reservation Time", "visible": true },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": { "style": "Normal", "weight": "Semibold" },
-                                                            "wrap": true,
-                                                            "cFont": { "style": "Normal", "weight": "Normal" }
-                                                        }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 6 }
-                                                },
-                                                {
-                                                    "component": {
-                                                        "type": "Number",
-                                                        "model": {
-                                                            "_internalName": "NumberOfGuests",
-                                                            "title": { "text": "Number of Guests", "visible": true },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": { "style": "Normal", "weight": "Semibold" },
-                                                            "wrap": true,
-                                                            "cFont": { "style": "Normal", "weight": "Normal" },
-                                                            "min": 1,
-                                                            "max": 15,
-                                                            "decimals": 0,
-                                                            "format": "n0",
-                                                            "step": 1
-                                                        }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 6 }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "DropDown",
-                                                        "model": {
-                                                            "_internalName": "ReservationType",
-                                                            "title": { "text": "Reservation Type", "visible": true },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": { "style": "Normal", "weight": "Semibold" },
-                                                            "wrap": true,
-                                                            "cFont": { "style": "Normal", "weight": "Normal" },
-                                                            "dataSource": "StaticList",
-                                                            "StaticList": {
-                                                                "options": "Birthday\nFamily Dinner\nBusness Dinner\nAnniversary\nDinner"
-                                                            },
-                                                            "selection": "Single",
-                                                            "options": "Birthday\nFamily Dinner\nBusness Dinner\nAnniversary\nDinner"
-                                                        }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 12 }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "MultiLineText",
-                                                        "model": {
-                                                            "_internalName": "ReservationComments",
-                                                            "title": { "text": "Reservation Comments", "visible": true },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": { "style": "Normal", "weight": "Semibold" },
-                                                            "wrap": true,
-                                                            "cHint": "Any special requests or comments",
-                                                            "cFont": { "style": "Normal", "weight": "Normal" },
-                                                            "mode": "Plain"
-                                                        }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 12 }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "Text",
-                                                        "model": { "_internalName": "Text2", "text": "<h4>Reservation for</h4>" }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 12 }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "SingleLineText",
-                                                        "model": {
-                                                            "_internalName": "Name",
-                                                            "title": { "text": "FirstName", "visible": false },
-                                                            "orientation": "Horizontal",
-                                                            "required": false,
-                                                            "font": { "style": "Normal", "weight": "Semibold" },
-                                                            "wrap": true,
-                                                            "cHint": "Full Name",
-                                                            "cFont": { "style": "Normal", "weight": "Normal" },
-                                                            "type": "Anything"
-                                                        }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 12 }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "SingleLineText",
-                                                        "model": {
-                                                            "_internalName": "Email",
-                                                            "title": { "text": "Email", "visible": false },
-                                                            "orientation": "Horizontal",
-                                                            "required": false,
-                                                            "font": { "style": "Normal", "weight": "Semibold" },
-                                                            "wrap": true,
-                                                            "cHint": "E-mail",
-                                                            "cFont": { "style": "Normal", "weight": "Normal" },
-                                                            "type": "E-mail",
-                                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                            "error": "This field must contain a valid e-mail address."
-                                                        }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 12 }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "MaskedInput",
-                                                        "model": {
-                                                            "_internalName": "MobileNumber",
-                                                            "title": { "text": "Mobile Number", "visible": false },
-                                                            "orientation": "Horizontal",
-                                                            "required": false,
-                                                            "font": { "style": "Normal", "weight": "Semibold" },
-                                                            "wrap": true,
-                                                            "cFont": { "style": "Normal", "weight": "Normal" },
-                                                            "mask": "+0 (000) 000 00 00"
-                                                        }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 12 }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "Submit",
-                                                        "model": {
-                                                            "_internalName": "Submit1",
-                                                            "text": "RESERVE TABLE",
-                                                            "type": "Primary",
-                                                            "click": "return fd.save();",
-                                                            "style": "font-weight: 600 !important"
-                                                        }
-                                                    },
-                                                    "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                                                    "columns": { "width": 12 }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            },
-                            "alignment": { "horizontal": "Justify", "vertical": "Top" },
-                            "columns": { "width": 8 }
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    "tablet": null,
-    "phone": null,
-    "js": "/*****************************************************************************\r\nThe JavaScript code from this section will be executed while loading\r\nthe current form.\r\n\r\nThe following predefined variables can be utilized in the code:\r\n\r\nfd  - instance of the current form\r\n$   - jQuery object\r\n\r\n==============================================================================\r\n\r\nfd.rendered(function () {\r\n    // This code is executed once the form is rendered\r\n\r\n    // Hide State field for all values of Country field except 'USA'\r\n    function updateStateVisibility() {\r\n        var stateContainer = $(fd.field('State').$el).closest('.form-group');\r\n        if (fd.field('Country').value === 'USA') {\r\n            stateContainer.show();\r\n        } else {\r\n            stateContainer.hide();\r\n        }\r\n    }\r\n\r\n    // Set initial State visibility\r\n    updateStateVisibility();\r\n\r\n    // Update State visibility after changing Country\r\n    fd.field('Country').$on('change', updateStateVisibility)\r\n});\r\n\r\nfd.beforeSave(function () {\r\n    // This code is exeuted before saving the form and\r\n    // may return Promise. The saving does not proceed until\r\n    // the Promise is resolved. If the Promise is rejected,\r\n    // the saving interrupts. This is the appropriate place\r\n    // for adding custom validation.\r\n\r\n    // Prevent saving if Start Date is greater than End Date\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\nfd.saved(function (result) {\r\n    // This code is executed after saving the form\r\n\r\n    // Forwarding users to specific URL\r\n    window.location = '--- Some URL ---';\r\n});\r\n\r\n*****************************************************************************/\r\n\r\n",
-    "css": ".fd-form {\r\n    background: url(https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/154ca303-1797-4064-add4-edf8f265ebfd_bg.jpg) no-repeat center top ;\r\n    -webkit-background-size: cover;\r\n    -moz-background-size: cover;\r\n    -o-background-size: cover;\r\n    background-size: cover;\r\n    \r\n}\r\n\r\n.fd-form .form-widget > .fd-form {\r\n    background: none;\r\n}\r\n\r\n.fd-form .page-layout .page-body .form-container .form-widget {\r\n    margin: 0px !important;\r\n}\r\n\r\n.form-container.fd-form {\r\n    padding-top: 0px !important;\r\n}\r\n\r\n.fd-form.k-animation-container {\r\n    background-image: none !important;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .fd-form .alert {\r\n        background: rgb(255, 255, 255);\r\n        backdrop-filter: blur(8px);\r\n        flex: 0 0 66.66%;\r\n        max-width: 66.66%;\r\n    }\r\n}\r\n\r\n.fd-form .text-danger {\r\n    color: #ffd1d1 !important; \r\n}\r\n\r\n.fd-form .form-control.is-invalid {\r\n    border-color: #ffd1d1 !important;\r\n}\r\n\r\n.fd-form .success-animation {\r\n    padding: 20px;\r\n    background: rgba(0, 0, 0, 0.5);\r\n    backdrop-filter: blur(8px);\r\n    border-radius: 2px;\r\n}\r\n\r\n.fd-form .fd-blur-background {\r\n    background: rgba(0, 0, 0, 0.2);\r\n    backdrop-filter: blur(8px);\r\n    border-radius: 2px;\r\n}\r\n\r\n.fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    text-align: center !important;\r\n    color: #ffff !important;\r\n    display: flex !important;\r\n    flex-direction: row !important;\r\n}\r\n\r\n.fd-form h4, .fd-form .h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    padding-top: 4px !important;\r\n    padding-bottom: 4px !important;\r\n    display: flex !important;\r\n    flex-direction: row !important;\r\n    color: white !important;\r\n}\r\n\r\n.fd-form .fd-field-title{\r\n    font-size: min(3vw, .9375rem) !important;\r\n    color: white !important;\r\n}\r\n\r\n.fd-form h4:before, .fd-form h4:after, .fd-form h1:before, .fd-form h1:after{\r\n    content: \"\";\r\n    flex: 1 1;\r\n    border-bottom: 1px solid;\r\n    margin: auto;\r\n}\r\n\r\n.fd-form h4:before, .fd-form h1:before {\r\n    margin-right: 10px\r\n}\r\n\r\n.fd-form h4:after, .fd-form h1:after {\r\n    margin-left: 10px\r\n}",
-    "notifySubscribers": false,
-    "version": "1.0.2",
-    "theme": {
-        "primary": "#cc4f03",
-        "bodyText": "#373a3c",
-        "bodyBackground": "#FFFFFF",
-        "fontFamily": null,
-        "fontType": 0,
-        "fontSize": 15,
-        "fontWeight": 400,
-        "borderThickness": 1,
-        "borderRadius": 0,
-        "shadow": true,
-        "themeId": "c65e181b0cfa0c52549c29479e0d8d8a"
-    },
-    "timezone": "Europe/Belgrade",
-    "culture": "en-US",
-    "thankYouMessage": "Thanks for booking! You will receive a confirmation email.",
-    "redirectURL": null,
-    "hideAfterSubmission": true,
-    "submissionTimeout": "60",
-    "authentication": 0,
-    "singleSubmissionPerUser": false,
-    "allowEditingSubmission": false,
-    "restrictAccess": false,
-    "azureADTenant": null,
-    "azureADObjects": [],
-    "azureB2CProperties": null
+  "pc": {
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid2",
+                          "stacked": "md",
+                          "class": "fd-blur-background",
+                          "rows": [{
+                              "cells": [{
+                                  "padding": [null, null, 10, null],
+                                  "component": {
+                                      "type": "Heading",
+                                      "model": {
+                                          "_internalName": "Heading1",
+                                          "heading": "Table Reservation",
+                                          "view": "Normal",
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "size": "H1",
+                                          "textAlignment": "Center"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "DateTime",
+                                      "model": {
+                                          "_internalName": "ReservationTime",
+                                          "title": {
+                                              "text": "Reservation Time",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          }
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "Number",
+                                      "model": {
+                                          "_internalName": "NumberOfGuests",
+                                          "title": {
+                                              "text": "Number of Guests",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "min": 1,
+                                          "max": 15,
+                                          "decimals": 0,
+                                          "format": "n0",
+                                          "step": 1
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "DropDown",
+                                      "model": {
+                                          "_internalName": "ReservationType",
+                                          "title": {
+                                              "text": "Reservation Type",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "dataSource": "StaticList",
+                                          "StaticList": {
+                                              "options": "Birthday\nFamily Dinner\nBusness Dinner\nAnniversary\nDinner"
+                                          },
+                                          "selection": "Single",
+                                          "options": "Birthday\nFamily Dinner\nBusness Dinner\nAnniversary\nDinner"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "MultiLineText",
+                                      "model": {
+                                          "_internalName": "ReservationComments",
+                                          "title": {
+                                              "text": "Reservation Comments",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Any special requests or comments",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mode": "Plain"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "padding": [20, null, 10, null],
+                                  "component": {
+                                      "type": "Heading",
+                                      "model": {
+                                          "_internalName": "Heading2",
+                                          "heading": "Reservation for",
+                                          "view": "Normal",
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "size": "H4",
+                                          "textAlignment": "Center"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Name",
+                                          "title": {
+                                              "text": "FirstName",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Full Name",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Email",
+                                          "title": {
+                                              "text": "Email",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "E-mail",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "E-mail",
+                                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                          "error": "This field must contain a valid e-mail address."
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "MaskedInput",
+                                      "model": {
+                                          "_internalName": "MobileNumber",
+                                          "title": {
+                                              "text": "Mobile Number",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mask": "000-000-0000"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "Submit",
+                                      "model": {
+                                          "_internalName": "Submit1",
+                                          "text": "RESERVE TABLE",
+                                          "savingText": "Submitting...",
+                                          "type": "Primary",
+                                          "click": "return fd.save();",
+                                          "style": "font-weight: 600 !important"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 8
+                  }
+              }]
+          }]
+      }
+  },
+  "tablet": null,
+  "phone": null,
+  "js": "/*****************************************************************************\r\nThe JavaScript code from this section will be executed while loading\r\nthe current form.\r\n\r\nThe following predefined variables can be utilized in the code:\r\n\r\nfd  - instance of the current form\r\n$   - jQuery object\r\n\r\n==============================================================================\r\n\r\nfd.rendered(function () {\r\n    // This code is executed once the form is rendered\r\n\r\n    // Hide State field for all values of Country field except 'USA'\r\n    function updateStateVisibility() {\r\n        var stateContainer = $(fd.field('State').$el).closest('.form-group');\r\n        if (fd.field('Country').value === 'USA') {\r\n            stateContainer.show();\r\n        } else {\r\n            stateContainer.hide();\r\n        }\r\n    }\r\n\r\n    // Set initial State visibility\r\n    updateStateVisibility();\r\n\r\n    // Update State visibility after changing Country\r\n    fd.field('Country').$on('change', updateStateVisibility)\r\n});\r\n\r\nfd.beforeSave(function () {\r\n    // This code is exeuted before saving the form and\r\n    // may return Promise. The saving does not proceed until\r\n    // the Promise is resolved. If the Promise is rejected,\r\n    // the saving interrupts. This is the appropriate place\r\n    // for adding custom validation.\r\n\r\n    // Prevent saving if Start Date is greater than End Date\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\nfd.saved(function (result) {\r\n    // This code is executed after saving the form\r\n\r\n    // Forwarding users to specific URL\r\n    window.location = '--- Some URL ---';\r\n});\r\n\r\n*****************************************************************************/\r\n\r\n",
+  "css": ".fd-form {\r\n    background: url(https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/154ca303-1797-4064-add4-edf8f265ebfd_bg.jpg) no-repeat center top ;\r\n    -webkit-background-size: cover;\r\n    -moz-background-size: cover;\r\n    -o-background-size: cover;\r\n    background-size: cover;\r\n    \r\n}\r\n\r\n.fd-form h1 > span,\r\n.fd-form h4 > span{\r\n   background-color: transparent !important;;\r\n}\r\n\r\n.fd-form .fd-heading {\r\n    background-color: transparent !important;\r\n}\r\n\r\n.fd-form .form-widget > .fd-form {\r\n    background: none;\r\n}\r\n\r\n.fd-form .page-layout .page-body .form-container .form-widget {\r\n    margin: 0px !important;\r\n}\r\n\r\n.form-container.fd-form {\r\n    padding-top: 0px !important;\r\n}\r\n\r\n.fd-form.k-animation-container {\r\n    background-image: none !important;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .fd-form .alert {\r\n        background: rgb(255, 255, 255);\r\n        backdrop-filter: blur(8px);\r\n        flex: 0 0 66.66%;\r\n        max-width: 66.66%;\r\n    }\r\n}\r\n\r\n.fd-form .text-danger {\r\n    color: #ffd1d1 !important; \r\n}\r\n\r\n.fd-form .form-control.is-invalid {\r\n    border-color: #ffd1d1 !important;\r\n}\r\n\r\n.fd-form .success-animation {\r\n    padding: 20px;\r\n    background: rgba(0, 0, 0, 0.5);\r\n    backdrop-filter: blur(8px);\r\n    border-radius: 2px;\r\n}\r\n\r\n.fd-form .fd-blur-background {\r\n    background: rgba(0, 0, 0, 0.2);\r\n    backdrop-filter: blur(8px);\r\n    border-radius: 2px;\r\n}\r\n\r\n.fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    color: #ffff !important;\r\n}\r\n\r\n.fd-form h4, .fd-form .h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    color: white !important;\r\n}\r\n\r\n.fd-form .fd-field-title{\r\n    font-size: min(3vw, .9375rem) !important;\r\n    color: white !important;\r\n}\r\n\r\n.fd-form h4:before, .fd-form h4:after, .fd-form h1:before, .fd-form h1:after{\r\n    content: \"\";\r\n    flex: 1 1;\r\n    border-bottom: 1px solid;\r\n    margin: auto;\r\n}\r\n\r\n.fd-form h4:before, .fd-form h1:before {\r\n    margin-right: 10px\r\n}\r\n\r\n.fd-form h4:after, .fd-form h1:after {\r\n    margin-left: 10px\r\n}",
+  "notifySubscribers": false,
+  "version": "1.0.2",
+  "theme": {
+      "primary": "#cc4f03",
+      "bodyText": "#373a3c",
+      "bodyBackground": "#FFFFFF",
+      "fontFamily": null,
+      "fontType": 0,
+      "fontSize": 15,
+      "fontWeight": 400,
+      "borderThickness": 1,
+      "borderRadius": 0,
+      "shadow": true,
+      "themeId": "c65e181b0cfa0c52549c29479e0d8d8a"
+  },
+  "timezone": "Europe/Belgrade",
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
+  "thankYouMessage": "Thanks for booking! You will receive a confirmation email.",
+  "redirectURL": null,
+  "hideAfterSubmission": true,
+  "submissionTimeout": "60",
+  "authentication": 0,
+  "singleSubmissionPerUser": false,
+  "allowEditingSubmission": false,
+  "restrictAccess": false,
+  "azureADTenant": null,
+  "azureADObjects": [],
+  "azureB2CProperties": null
 }

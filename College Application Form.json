@@ -1,661 +1,733 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "stacked": "md",
-      "rows": [
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "stacked": "md",
-                  "_internalName": "Grid5",
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "class": "col-md-auto",
-                          "component": {
-                            "type": "Image",
-                            "model": {
-                              "width": 120,
-                              "target": "Blank",
-                              "_internalName": "Image1",
-                              "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
-                            }
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid5",
+                          "stacked": "md",
+                          "rows": [{
+                              "cells": [{
+                                  "class": "col-md-auto",
+                                  "component": {
+                                      "type": "Image",
+                                      "model": {
+                                          "_internalName": "Image1",
+                                          "width": 120,
+                                          "target": "Blank",
+                                          "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Left",
+                                      "vertical": "Middle"
+                                  },
+                                  "columns": {
+                                      "width": 2
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "Heading",
+                                      "model": {
+                                          "_internalName": "Heading1",
+                                          "heading": "College Application Form",
+                                          "view": "Normal",
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "size": "H1",
+                                          "textAlignment": "Left"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Middle"
+                                  },
+                                  "columns": {
+                                      "width": 10
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading2",
+                          "heading": "Student Information",
+                          "view": "Line",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": {
-                            "horizontal": "Left",
-                            "vertical": "Middle"
+                          "size": "H4",
+                          "textAlignment": "Center"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid1",
+                          "stacked": "md",
+                          "class": "bg-secondary",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "FirstName",
+                                          "title": {
+                                              "text": "First Name",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "First Name",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 4
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "MiddleName",
+                                          "title": {
+                                              "text": "Middle Name",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Middle Name",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 4
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "LastName",
+                                          "title": {
+                                              "text": "Last Name",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Last Name",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 4
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "Date",
+                                      "model": {
+                                          "_internalName": "BirthDate",
+                                          "title": {
+                                              "text": "Birth Date",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "size": 19,
+                                              "style": "Normal",
+                                              "weight": "Normal",
+                                              "unit": "Pixel"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Date of Birth",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          }
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "MaskedInput",
+                                      "model": {
+                                          "_internalName": "MobileNumber",
+                                          "title": {
+                                              "text": "Mobile Number",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mask": "000-000-0000"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Email",
+                                          "title": {
+                                              "text": "E-mail",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Email",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "E-mail",
+                                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                          "error": "This field must contain a valid e-mail address."
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading3",
+                          "heading": "Address",
+                          "view": "Line",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "columns": { "width": 2 }
-                        },
-                        {
-                          "component": {
-                            "type": "Text",
-                            "model": {
-                              "text": "<h1>College Application Form</h1>",
-                              "_internalName": "Text2",
-                              "style": "margin-bottom: 1rem"
-                            }
+                          "size": "H4",
+                          "textAlignment": "Center"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid2",
+                          "stacked": "md",
+                          "class": "bg-secondary",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "StreetAddress",
+                                          "title": {
+                                              "text": "Street Address",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Street Address",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "City",
+                                          "title": {
+                                              "text": "City",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "City",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "State",
+                                          "title": {
+                                              "text": "State",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "State / Province",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Country",
+                                          "title": {
+                                              "text": "Country",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Country",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "ZIP",
+                                          "title": {
+                                              "text": "ZIP",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "ZIP Code",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading4",
+                          "heading": "Courses",
+                          "view": "Line",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Middle"
+                          "size": "H4",
+                          "textAlignment": "Center"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid3",
+                          "stacked": "md",
+                          "class": "bg-secondary",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "DataTable",
+                                      "model": {
+                                          "_internalName": "Courses",
+                                          "title": {
+                                              "text": "Courses",
+                                              "visible": false
+                                          },
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "newLine": "Bottom",
+                                          "delete": "Last",
+                                          "columns": [{
+                                              "_internalName": "Course",
+                                              "title": "Course",
+                                              "required": true,
+                                              "type": "Dropdown",
+                                              "selection": "Single",
+                                              "options": "Project Management\nData Analytics\nIBM Data Science\nBusiness Administration\nAccounting"
+                                          }, {
+                                              "_internalName": "Level",
+                                              "title": "Level",
+                                              "required": false,
+                                              "type": "Dropdown",
+                                              "selection": "Single",
+                                              "options": "Level 1\nLevel 2\nLevel 3"
+                                          }, {
+                                              "_internalName": "Language",
+                                              "title": "Language",
+                                              "required": false,
+                                              "type": "Dropdown",
+                                              "selection": "Single",
+                                              "options": "English\nSpanish\nFrench\nGerman"
+                                          }, {
+                                              "_internalName": "StartDate",
+                                              "title": "Start Date",
+                                              "required": false,
+                                              "type": "Date"
+                                          }]
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading5",
+                          "heading": "Comments",
+                          "view": "Line",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "columns": { "width": 10 }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, null, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Student Information</h4>",
-                  "_internalName": "Text7"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "stacked": "md",
-                  "class": "bg-secondary",
-                  "_internalName": "Grid1",
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "First Name",
-                                "visible": false
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "cHint": "First Name",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "FirstName"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 4 }
-                        },
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "Middle Name",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "Middle Name",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "MiddleName"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 4 }
-                        },
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "Last Name",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "Last Name",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "LastName"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 4 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Date",
-                            "model": {
-                              "title": {
-                                "text": "Birth Date",
-                                "visible": false
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "cHint": "Date of Birth",
-                              "font": {
-                                "size": 14,
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "wrap": true,
-                              "_internalName": "BirthDate"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 6 }
-                        },
-                        {
-                          "component": {
-                            "type": "MaskedInput",
-                            "model": {
-                              "title": {
-                                "text": "Mobile Number",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "mask": "+0 (000) 000 00 00",
-                              "wrap": true,
-                              "_internalName": "MobileNumber"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 6 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "E-mail", "visible": false },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "Email",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "E-mail",
-                              "wrap": true,
-                              "_internalName": "Email",
-                              "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                              "error": "This field must contain a valid e-mail address."
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, null, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Address</h4>",
-                  "_internalName": "Text8"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "stacked": "md",
-                  "class": "bg-secondary",
-                  "_internalName": "Grid2",
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "Street Address",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "Street Address",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "StreetAddress"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "City", "visible": false },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "City",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "City"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 6 }
-                        },
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "State", "visible": false },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "State / Province",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "State"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 6 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "Country", "visible": false },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "Country",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "Country"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 6 }
-                        },
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "ZIP", "visible": false },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "ZIP Code",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "ZIP"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 6 }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, null, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Courses<span style=\"color:#ff0000;\">*</span></h4>",
-                  "_internalName": "Text19"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "stacked": "md",
-                  "class": "bg-secondary",
-                  "_internalName": "Grid3",
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "DataTable",
-                            "model": {
-                              "newLine": "Bottom",
-                              "delete": "Last",
-                              "_internalName": "Courses",
-                              "columns": [
-                                {
-                                  "_internalName": "Course",
-                                  "title": "Course",
-                                  "required": true,
-                                  "type": "Dropdown",
-                                  "selection": "Single",
-                                  "options": "Project Management\nData Analytics\nIBM Data Science\nBusiness Administration\nAccounting"
-                                },
-                                {
-                                  "_internalName": "Level",
-                                  "title": "Level",
-                                  "required": false,
-                                  "type": "Dropdown",
-                                  "selection": "Single",
-                                  "options": "Level 1\nLevel 2\nLevel 3"
-                                },
-                                {
-                                  "_internalName": "Language",
-                                  "title": "Language",
-                                  "required": false,
-                                  "type": "Dropdown",
-                                  "selection": "Single",
-                                  "options": "English\nSpanish\nFrench\nGerman"
-                                },
-                                {
-                                  "_internalName": "StartDate",
-                                  "title": "Start Date",
-                                  "required": false,
-                                  "type": "Date"
-                                }
-                              ]
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, null, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Comments</h4>",
-                  "_internalName": "Text20"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "stacked": "md",
-                  "class": "bg-secondary",
-                  "_internalName": "Grid4",
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "MultiLineText",
-                            "model": {
-                              "title": {
-                                "text": "Additional Comments",
-                                "visible": false
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "font": { "style": "Normal", "weight": "Normal" },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "mode": "Plain",
-                              "wrap": true,
-                              "_internalName": "AdditionalComments"
-                            }
-                          },
-                          "alignment": {
-                            "horizontal": "Justify",
-                            "vertical": "Top"
-                          },
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [20, null, null, null],
-              "component": {
-                "type": "Submit",
-                "model": {
-                  "text": "SEND REQUEST",
-                  "type": "Primary",
-                  "click": "return fd.save();",
-                  "_internalName": "Submit1",
-                  "style": "font-weight: 600 !important"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        }
-      ]
-    }
+                          "size": "H4",
+                          "textAlignment": "Center"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid4",
+                          "stacked": "md",
+                          "class": "bg-secondary",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "MultiLineText",
+                                      "model": {
+                                          "_internalName": "AdditionalComments",
+                                          "title": {
+                                              "text": "Additional Comments",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mode": "Plain"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [20, null, null, null],
+                  "component": {
+                      "type": "Submit",
+                      "model": {
+                          "_internalName": "Submit1",
+                          "text": "SEND REQUEST",
+                          "savingText": "Submitting...",
+                          "type": "Primary",
+                          "click": "return fd.save();",
+                          "style": "font-weight: 600 !important"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "fd.rendered(function () {\r\n    // require a user to add at least one record to the data table\r\n    fd.control('Courses').addValidator({\r\n        name: 'Courses validator',\r\n        error: 'At least one course must be added',\r\n        validate: function(value) {\r\n            // change this number to make more records required\r\n            if (value.length < 1) {\r\n                return false;\r\n            }\r\n\r\n            return true;\r\n        }\r\n    });\r\n});",
-  "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form h6, .fd-form .h6, .fd-form .fd-field-title {\n    font-size: min(4.5vw, .9375rem) !important;\n    font-weight: 600 !important;\n    padding-top: 4px;\n    padding-bottom: 4px;\n}\n\n.fd-form p {\n    color: #ffffff;\n}\n\n.fd-form .fd-likert-answer-connected-lines > .flex-column {\n    align-items: center;\n}\n\n.fd-form .fd-likert-answer-connected-lines label {\n    text-align: center;\n}\n\n.fd-form .fd-likert-question-title {\n    padding: 10px;\n    margin-bottom: 1rem !important;\n}\n",
+  "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form h4, .fd-form .h4 {\n    font-size: min(4.5vw, 1.40625rem) !important;\n}\n\n.fd-form p {\n    color: #ffffff;\n}\n\n.fd-form .fd-likert-answer-connected-lines > .flex-column {\n    align-items: center;\n}\n\n.fd-form .fd-likert-answer-connected-lines label {\n    text-align: center;\n}\n\n.fd-form .fd-likert-question-title {\n    padding: 10px;\n    margin-bottom: 1rem !important;\n}\n",
+  "notifySubscribers": false,
+  "version": "1.0.2",
   "theme": {
-    "primary": "#737373",
-    "bodyText": "#333333",
-    "bodyBackground": "#FFFFFF",
-    "fontFamily": null,
-    "fontType": 0,
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 0,
-    "shadow": true,
-    "themeId": "gray"
+      "primary": "#737373",
+      "bodyText": "#333333",
+      "bodyBackground": "#FFFFFF",
+      "fontFamily": null,
+      "fontType": 0,
+      "fontSize": 15,
+      "fontWeight": 400,
+      "borderThickness": 1,
+      "borderRadius": 0,
+      "shadow": true,
+      "themeId": "gray"
   },
   "timezone": "Europe/Budapest",
-  "culture": "en-US",
-  "notifySubscribers": false,
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": null,
   "redirectURL": null,
   "hideAfterSubmission": false,
@@ -666,6 +738,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }

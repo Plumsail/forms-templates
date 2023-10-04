@@ -1,372 +1,440 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "rows": [
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h1>Request for time off</h1>",
-                  "_internalName": "Text1"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Employee Information</h4>",
-                  "_internalName": "Text4"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "Employee Name",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "Ernest Hemingway",
-                              "description": "Full Name",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "EmployeeName"
-                            }
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading1",
+                          "heading": "Request for time off",
+                          "view": "Underline1",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "Manager Name",
-                                "visible": false
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "cHint": "John Hopkins",
-                              "description": "Manager Name",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "ManagerName"
-                            }
+                          "size": "H1",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [30, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading2",
+                          "heading": "Employee Information",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "Email", "visible": false },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "cHint": "username@domain.com",
-                              "description": "Email",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "E-mail",
-                              "wrap": true,
-                              "_internalName": "Email",
-                              "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                              "error": "This field must contain a valid e-mail address."
-                            }
+                          "size": "H4",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid2",
+                          "stacked": "md",
+                          "class": "bg-secondary",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "EmployeeName",
+                                          "title": {
+                                              "text": "Employee Name",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Ernest Hemingway",
+                                          "description": "Full Name",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "ManagerName",
+                                          "title": {
+                                              "text": "Manager Name",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "John Hopkins",
+                                          "description": "Manager Name",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Email",
+                                          "title": {
+                                              "text": "Email",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "username@domain.com",
+                                          "description": "Email",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "E-mail",
+                                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                          "error": "This field must contain a valid e-mail address."
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading3",
+                          "heading": "Request Information",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "class": "bg-secondary",
-                  "_internalName": "Grid2"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [20, null, null, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Request Information</h4>",
-                  "_internalName": "Text5"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "DropDown",
-                            "model": {
-                              "title": {
-                                "text": "Reason for request",
-                                "visible": false
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "cHint": "Select...",
-                              "description": "Reason for request",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "dataSource": "StaticList",
-                              "options": "Annual vacation\nLeave without pay\nSick leave\nOther",
-                              "selection": "Single",
-                              "wrap": true,
-                              "_internalName": "ReasonForRequest"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "Reason", "visible": false },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "Please specify the reason",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "Reason"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Date",
-                            "model": {
-                              "title": {
-                                "text": "Start Date",
-                                "visible": false
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "Start Date",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "wrap": true,
-                              "_internalName": "StartDate"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        },
-                        {
-                          "component": {
-                            "type": "Date",
-                            "model": {
-                              "title": { "text": "End Date", "visible": false },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "End Date",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "wrap": true,
-                              "_internalName": "EndDate"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "MultiLineText",
-                            "model": {
-                              "title": { "text": "Comments", "visible": false },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "cHint": "Message for the manager and HR department",
-                              "description": "Comments",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "mode": "Plain",
-                              "wrap": true,
-                              "_internalName": "Comments"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "class": "bg-secondary",
-                  "_internalName": "Grid3"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [20, null, null, null],
-              "component": {
-                "type": "Submit",
-                "model": {
-                  "text": "Send Request",
-                  "type": "Primary",
-                  "click": "return fd.save();",
-                  "_internalName": "Submit1",
-                  "style": "font-weight: 500 !important;"
-                }
-              },
-              "alignment": "Center",
-              "columns": { "width": 12 }
-            }
-          ]
-        }
-      ],
-      "stacked": "md"
-    }
+                          "size": "H4",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid3",
+                          "stacked": "md",
+                          "class": "bg-secondary",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "DropDown",
+                                      "model": {
+                                          "_internalName": "ReasonForRequest",
+                                          "title": {
+                                              "text": "Reason for request",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Select...",
+                                          "description": "Reason for request",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "dataSource": "StaticList",
+                                          "StaticList": {
+                                              "options": "Annual vacation\nLeave without pay\nSick leave\nOther"
+                                          },
+                                          "selection": "Single",
+                                          "options": "Annual vacation\nLeave without pay\nSick leave\nOther"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Reason",
+                                          "title": {
+                                              "text": "Reason",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Please specify the reason",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "Date",
+                                      "model": {
+                                          "_internalName": "StartDate",
+                                          "title": {
+                                              "text": "Start Date",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Start Date",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          }
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "Date",
+                                      "model": {
+                                          "_internalName": "EndDate",
+                                          "title": {
+                                              "text": "End Date",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "End Date",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          }
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "MultiLineText",
+                                      "model": {
+                                          "_internalName": "Comments",
+                                          "title": {
+                                              "text": "Comments",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Message for the manager and HR department",
+                                          "description": "Comments",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mode": "Plain"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [20, null, null, null],
+                  "component": {
+                      "type": "Submit",
+                      "model": {
+                          "_internalName": "Submit1",
+                          "text": "Send Request",
+                          "savingText": "Submitting...",
+                          "type": "Primary",
+                          "click": "return fd.save();",
+                          "style": "font-weight: 500 !important;"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Center",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "// show/hide Reason field and make it mandatory based on a ReasonForRequest selection\r\nfunction toggleReasonField() {\r\n    if(fd.field('ReasonForRequest').value === 'Other') {\r\n        fd.field('Reason').hidden = false;\r\n        fd.field('Reason').required = true;\r\n    } else {\r\n        fd.field('Reason').hidden = true;\r\n        fd.field('Reason').required = false;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    // call the function on form load\r\n    toggleReasonField();\r\n    \r\n    // call function when the ReasonForRequest field is changed\r\n    fd.field('ReasonForRequest').$on('change', toggleReasonField)\r\n});",
   "css": ".fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    text-align: left !important;\r\n}\r\n\r\n.fd-form h1:after {\r\n    content: ' ';\r\n    display: block;\r\n    border-top: 3px solid;\r\n    padding-bottom: 10px;\r\n    margin-top: 10px;\r\n}\r\n\r\n.fd-form h4, .fd-form .h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    padding-top: 4px !important;\r\n    padding-bottom: 4px !important;\r\n}\r\n\r\n",
+  "notifySubscribers": false,
+  "version": "1.0.2",
   "theme": {
-    "primary": "#008EFF",
-    "bodyText": "#373A3C",
-    "bodyBackground": "#FFFFFF",
-    "fontFamily": null,
-    "fontType": 0,
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 0,
-    "shadow": true,
-    "themeId": "default"
+      "primary": "#008EFF",
+      "bodyText": "#373A3C",
+      "bodyBackground": "#FFFFFF",
+      "fontFamily": null,
+      "fontType": 0,
+      "fontSize": 15,
+      "fontWeight": 400,
+      "borderThickness": 1,
+      "borderRadius": 0,
+      "shadow": true,
+      "themeId": "default"
   },
   "timezone": "Europe/Budapest",
-  "culture": "en-US",
-  "notifySubscribers": false,
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": null,
   "redirectURL": null,
   "hideAfterSubmission": false,
@@ -377,6 +445,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }

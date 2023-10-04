@@ -1,518 +1,606 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "rows": [
-        {
-          "cells": [
-            {
-              "class": "bg-primary",
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h1>Hotel Name</h1>",
-                  "_internalName": "Text1"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [30, null, 0, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Guest Details</h4>",
-                  "_internalName": "Text3"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "FirstName",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "description": "First Name",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "FirstName"
-                            }
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "class": "bg-primary",
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading1",
+                          "heading": "Hotel Name",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "Last Name",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "description": "Last Name",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "LastName"
-                            }
+                          "class": "bg-primary",
+                          "size": "H1",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [30, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading2",
+                          "heading": "Guest Details",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "Email", "visible": false },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "description": "E-mail",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "E-mail",
-                              "wrap": true,
-                              "_internalName": "Email",
-                              "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                              "error": "This field must contain a valid e-mail address."
-                            }
+                          "size": "H4",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid1",
+                          "stacked": "md",
+                          "class": "bg-light",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "FirstName",
+                                          "title": {
+                                              "text": "FirstName",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "First Name",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "LastName",
+                                          "title": {
+                                              "text": "Last Name",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Last Name",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Email",
+                                          "title": {
+                                              "text": "Email",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "E-mail",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "E-mail",
+                                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                          "error": "This field must contain a valid e-mail address."
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "MaskedInput",
+                                      "model": {
+                                          "_internalName": "MobileNumber",
+                                          "title": {
+                                              "text": "Mobile Number",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Phone",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mask": "000-000-0000"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [15, null, null, null],
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading3",
+                          "heading": "Reservation Details",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
                           },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "MaskedInput",
-                            "model": {
-                              "title": {
-                                "text": "Mobile Number",
-                                "visible": false
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "description": "Phone",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "mask": "+0 (000) 00 00 00",
-                              "wrap": true,
-                              "_internalName": "MobileNumber"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "class": "bg-light",
-                  "_internalName": "Grid1"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [20, null, null, null],
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h4>Reservation Details</h4>",
-                  "_internalName": "Text11"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Date",
-                            "model": {
-                              "title": { "text": "", "visible": false },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "Check-In Date",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "wrap": true,
-                              "_internalName": "CheckInDate"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        },
-                        {
-                          "component": {
-                            "type": "Date",
-                            "model": {
-                              "title": { "text": "", "visible": false },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "Check-Out Date",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "wrap": true,
-                              "_internalName": "CheckOutDate"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Number",
-                            "model": {
-                              "title": { "text": "", "visible": true },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "Number of adults",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "min": 1,
-                              "max": 10,
-                              "decimals": 0,
-                              "format": "n0",
-                              "step": 1,
-                              "wrap": true,
-                              "_internalName": "Adults"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 3 }
-                        },
-                        {
-                          "component": {
-                            "type": "Number",
-                            "model": {
-                              "title": { "text": "Children", "visible": false },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "Number of children",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "min": 0,
-                              "max": 4,
-                              "decimals": 0,
-                              "format": "n0",
-                              "step": 1,
-                              "wrap": true,
-                              "_internalName": "Children"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 3 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "SingleChoice",
-                            "model": {
-                              "title": {
-                                "text": "Room Preference",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "dataSource": "StaticList",
-                              "options": "Standart\nFamily\nDeluxe\nSuite",
-                              "wrap": true,
-                              "cColumns": 2,
-                              "_internalName": "RoomPreference"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 4 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "MultiLineText",
-                            "model": {
-                              "title": { "text": "Comments", "visible": false },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "cHint": "Comments",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "mode": "Plain",
-                              "wrap": true,
-                              "_internalName": "Comments"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Toggle",
-                            "model": {
-                              "width": 300,
-                              "title": {
-                                "text": "Do you need an airport transfer?",
-                                "visible": true
-                              },
-                              "orientation": "Horizontal",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "mode": "Toggle",
-                              "wrap": true,
-                              "cOnText": "ON",
-                              "cOffText": "OFF",
-                              "_internalName": "PickUp"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "DateTime",
-                            "model": {
-                              "title": {
-                                "text": "Arrival Time",
-                                "visible": false
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "Arrival Time ",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "wrap": true,
-                              "_internalName": "ArrivalTime"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        },
-                        {
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": {
-                                "text": "Flight Number",
-                                "visible": false
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "description": "Flight Number",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "FlightNumber"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 6 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "class": "bg-light",
-                  "_internalName": "Grid2"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [20, null, null, null],
-              "component": {
-                "type": "Submit",
-                "model": {
-                  "text": "MAKE RESERVATION",
-                  "type": "Primary",
-                  "click": "return fd.save();",
-                  "_internalName": "Submit1",
-                  "style": "font-weight: 500 !important"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        }
-      ],
-      "stacked": "md"
-    }
+                          "size": "H4",
+                          "textAlignment": "Left"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid2",
+                          "stacked": "md",
+                          "class": "bg-light",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "Date",
+                                      "model": {
+                                          "_internalName": "CheckInDate",
+                                          "title": {
+                                              "text": "",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Check-In Date",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          }
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "Date",
+                                      "model": {
+                                          "_internalName": "CheckOutDate",
+                                          "title": {
+                                              "text": "",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Check-Out Date",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          }
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "Number",
+                                      "model": {
+                                          "_internalName": "Adults",
+                                          "title": {
+                                              "text": "",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Number of adults",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "min": 1,
+                                          "max": 10,
+                                          "decimals": 0,
+                                          "format": "n0",
+                                          "step": 1
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 3
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "Number",
+                                      "model": {
+                                          "_internalName": "Children",
+                                          "title": {
+                                              "text": "Children",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Number of children",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "min": 0,
+                                          "max": 4,
+                                          "decimals": 0,
+                                          "format": "n0",
+                                          "step": 1
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 3
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "SingleChoice",
+                                      "model": {
+                                          "_internalName": "RoomPreference",
+                                          "title": {
+                                              "text": "Room Preference",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "dataSource": "StaticList",
+                                          "StaticList": {
+                                              "options": "Standart\nFamily\nDeluxe\nSuite"
+                                          },
+                                          "cColumns": 2,
+                                          "options": "Standart\nFamily\nDeluxe\nSuite"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 4
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "MultiLineText",
+                                      "model": {
+                                          "_internalName": "Comments",
+                                          "title": {
+                                              "text": "Comments",
+                                              "visible": false
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Comments",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mode": "Plain"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "Toggle",
+                                      "model": {
+                                          "_internalName": "PickUp",
+                                          "width": 300,
+                                          "title": {
+                                              "text": "Do you need an airport transfer?",
+                                              "visible": true
+                                          },
+                                          "orientation": "Horizontal",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mode": "Toggle",
+                                          "cOnText": "ON",
+                                          "cOffText": "OFF"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "DateTime",
+                                      "model": {
+                                          "_internalName": "ArrivalTime",
+                                          "title": {
+                                              "text": "Arrival Time",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Arrival Time ",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          }
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }, {
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "FlightNumber",
+                                          "title": {
+                                              "text": "Flight Number",
+                                              "visible": false
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "description": "Flight Number",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 6
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [20, null, null, null],
+                  "component": {
+                      "type": "Submit",
+                      "model": {
+                          "_internalName": "Submit1",
+                          "text": "MAKE RESERVATION",
+                          "savingText": "Submitting...",
+                          "type": "Primary",
+                          "click": "return fd.save();",
+                          "style": "font-weight: 500 !important"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "// show/hide ArrivalTime and FlightNumber fields and make them mandatory when PickUp field is enabled\r\nfunction toggleArrivalInfo() {\r\n    var pickUpRequired = fd.field('PickUp').value\r\n    \r\n    if(pickUpRequired) {\r\n        fd.field('ArrivalTime').required = true;\r\n        fd.field('FlightNumber').required = true;\r\n        \r\n        fd.field('ArrivalTime').hidden = false\r\n        fd.field('FlightNumber').hidden = false;\r\n    }\r\n    else {\r\n        fd.field('ArrivalTime').required = false;\r\n        fd.field('FlightNumber').required = false;\r\n        \r\n        fd.field('ArrivalTime').hidden = true;\r\n        fd.field('FlightNumber').hidden = true;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    // validation of the time interval\r\n    fd.validators.push({\r\n        name: 'Start and End time validation',\r\n        error: 'Please select valid start and end time',\r\n        validate: function(value) {\r\n            if (fd.field('CheckInDate').value > fd.field('CheckOutDate').value)\r\n                return false;\r\n    \r\n            return true;\r\n        }\r\n    });\r\n    \r\n    \r\n    // call the function on form load\r\n    toggleArrivalInfo();\r\n    \r\n    // call the function when the PickUp field changes\r\n    fd.field('PickUp').$on('change', toggleArrivalInfo);\r\n});",
-  "css": ".fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    text-align: center !important;\r\n    color: white !important;\r\n}\r\n\r\n.fd-form h4, .fd-form .h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    padding-top: 4px !important;\r\n    padding-bottom: 4px !important;\r\n}",
+  "css": ".fd-form h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    color: white;\r\n}\r\n.fd-form h1 > span {\r\n    background-color: var(--fd-primary-rgb) !important;\r\n}\r\n.fd-form h4{\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    padding-top: 4px !important;\r\n    padding-bottom: 4px !important;\r\n}\r\n\r\n",
+  "notifySubscribers": false,
+  "version": "1.0.2",
   "theme": {
-    "primary": "#CA5010",
-    "bodyText": "#333333",
-    "bodyBackground": "#FFFFFF",
-    "fontFamily": null,
-    "fontType": 0,
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 0,
-    "shadow": true,
-    "themeId": "orange"
+      "primary": "#CA5010",
+      "bodyText": "#333333",
+      "bodyBackground": "#FFFFFF",
+      "fontFamily": null,
+      "fontType": 0,
+      "fontSize": 15,
+      "fontWeight": 400,
+      "borderThickness": 1,
+      "borderRadius": 0,
+      "shadow": true,
+      "themeId": "orange"
   },
   "timezone": "Europe/Budapest",
-  "culture": "en-US",
-  "notifySubscribers": false,
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": "Thank you! You will receive the confirmation by email!",
   "redirectURL": null,
   "hideAfterSubmission": false,
@@ -523,6 +611,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }

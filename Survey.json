@@ -1,250 +1,271 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "rows": [
-        {
-          "cells": [
-            {
-              "class": "content-container",
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "class": "message",
-                          "component": {
-                            "type": "Grid",
-                            "model": {
-                              "rows": [
-                                {
-                                  "cells": [
-                                    {
-                                      "component": {
-                                        "type": "Text",
-                                        "model": {
-                                          "text": "<h1>What do you think of our products?</h1>",
-                                          "_internalName": "Text1"
-                                        }
-                                      },
-                                      "alignment": "Justify",
-                                      "columns": { "width": 12 }
-                                    }
-                                  ]
-                                },
-                                {
-                                  "cells": [
-                                    {
-                                      "component": {
-                                        "type": "Text",
-                                        "model": {
-                                          "text": "<p>Please complete this short survey to receive a coupon code.</p>",
-                                          "_internalName": "Text4"
-                                        }
-                                      },
-                                      "alignment": "Justify",
-                                      "columns": { "width": 12 }
-                                    }
-                                  ]
-                                },
-                                {
-                                  "cells": [
-                                    {
-                                      "component": {
-                                        "type": "Submit",
-                                        "model": {
-                                          "width": 300,
-                                          "text": "START",
-                                          "type": "Primary",
-                                          "click": "$('.survey').show();\n$('.message').hide();\nfd.field('DoYouLikeOurProducts').hidden = false;",
-                                          "_internalName": "Submit1"
-                                        }
-                                      },
-                                      "alignment": "Center",
-                                      "columns": { "width": 12 }
-                                    }
-                                  ]
-                                }
-                              ],
-                              "stacked": "md",
-                              "class": "message",
-                              "_internalName": "Grid2"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "class": "survey",
-                          "component": {
-                            "type": "Grid",
-                            "model": {
-                              "rows": [
-                                {
-                                  "cells": [
-                                    {
-                                      "component": {
-                                        "type": "SingleChoice",
-                                        "model": {
-                                          "title": {
-                                            "text": "Do you like our products?",
-                                            "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                            "style": "Normal",
-                                            "weight": "Semibold"
-                                          },
-                                          "cFont": {
-                                            "style": "Normal",
-                                            "weight": "Normal"
-                                          },
-                                          "dataSource": "StaticList",
-                                          "options": "Yes\nNo",
-                                          "allowUserValue": false,
-                                          "wrap": true,
-                                          "cColumns": 3,
-                                          "_internalName": "DoYouLikeOurProducts"
-                                        }
-                                      },
-                                      "alignment": "Justify",
-                                      "columns": { "width": 12 }
-                                    }
-                                  ]
-                                },
-                                {
-                                  "cells": [
-                                    {
-                                      "component": {
-                                        "type": "SingleChoice",
-                                        "model": {
-                                          "title": {
-                                            "text": "Would you recommend us to a friend?",
-                                            "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                            "style": "Normal",
-                                            "weight": "Semibold"
-                                          },
-                                          "cFont": {
-                                            "style": "Normal",
-                                            "weight": "Normal"
-                                          },
-                                          "dataSource": "StaticList",
-                                          "options": "Yes\nNo",
-                                          "allowUserValue": false,
-                                          "wrap": true,
-                                          "cColumns": 3,
-                                          "_internalName": "WouldYouRecommendUsToAFriend"
-                                        }
-                                      },
-                                      "alignment": "Justify",
-                                      "columns": { "width": 12 }
-                                    }
-                                  ]
-                                },
-                                {
-                                  "cells": [
-                                    {
-                                      "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                          "title": {
-                                            "text": "Email to receive a coupon code:",
-                                            "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                            "style": "Normal",
-                                            "weight": "Semibold"
-                                          },
-                                          "cFont": {
-                                            "style": "Normal",
-                                            "weight": "Normal"
-                                          },
-                                          "type": "Anything",
-                                          "wrap": true,
-                                          "_internalName": "EmailToReceiveACouponCode"
-                                        }
-                                      },
-                                      "alignment": "Justify",
-                                      "columns": { "width": 12 }
-                                    }
-                                  ]
-                                },
-                                {
-                                  "cells": [
-                                    {
-                                      "component": {
-                                        "type": "Submit",
-                                        "model": {
-                                          "width": 300,
-                                          "text": "Finish",
-                                          "type": "Primary",
-                                          "click": "return fd.save();",
-                                          "_internalName": "Submit2"
-                                        }
-                                      },
-                                      "alignment": "Center",
-                                      "columns": { "width": 12 }
-                                    }
-                                  ]
-                                }
-                              ],
-                              "stacked": "md",
-                              "class": "survey",
-                              "_internalName": "Grid3"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "_internalName": "Grid1"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        }
-      ],
-      "stacked": "md"
-    }
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "class": "content-container",
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid1",
+                          "stacked": "md",
+                          "rows": [{
+                              "cells": [{
+                                  "class": "message",
+                                  "component": {
+                                      "type": "Grid",
+                                      "model": {
+                                          "_internalName": "Grid2",
+                                          "stacked": "md",
+                                          "class": "message",
+                                          "rows": [{
+                                              "cells": [{
+                                                  "padding": [null, null, 10, null],
+                                                  "component": {
+                                                      "type": "Heading",
+                                                      "model": {
+                                                          "_internalName": "Heading1",
+                                                          "heading": "What do you think of our products?",
+                                                          "view": "Normal",
+                                                          "font": {
+                                                              "style": "Normal",
+                                                              "weight": "Semibold"
+                                                          },
+                                                          "subheading": "Please complete this short survey to receive a coupon code.",
+                                                          "size": "H1",
+                                                          "textAlignment": "Center"
+                                                      }
+                                                  },
+                                                  "alignment": {
+                                                      "horizontal": "Justify",
+                                                      "vertical": "Top"
+                                                  },
+                                                  "columns": {
+                                                      "width": 12
+                                                  }
+                                              }]
+                                          }, {
+                                              "cells": [{
+                                                  "component": {
+                                                      "type": "Submit",
+                                                      "model": {
+                                                          "_internalName": "Submit1",
+                                                          "width": 300,
+                                                          "text": "START",
+                                                          "savingText": "Submitting...",
+                                                          "type": "Primary",
+                                                          "click": "$('.survey').show();\n$('.message').hide();\nfd.field('DoYouLikeOurProducts').hidden = false;"
+                                                      }
+                                                  },
+                                                  "alignment": {
+                                                      "horizontal": "Center",
+                                                      "vertical": "Top"
+                                                  },
+                                                  "columns": {
+                                                      "width": 12
+                                                  }
+                                              }]
+                                          }]
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "class": "survey",
+                                  "component": {
+                                      "type": "Grid",
+                                      "model": {
+                                          "_internalName": "Grid3",
+                                          "stacked": "md",
+                                          "class": "survey",
+                                          "rows": [{
+                                              "cells": [{
+                                                  "component": {
+                                                      "type": "SingleChoice",
+                                                      "model": {
+                                                          "_internalName": "DoYouLikeOurProducts",
+                                                          "title": {
+                                                              "text": "Do you like our products?",
+                                                              "visible": true
+                                                          },
+                                                          "orientation": "Vertical",
+                                                          "required": false,
+                                                          "font": {
+                                                              "style": "Normal",
+                                                              "weight": "Semibold"
+                                                          },
+                                                          "wrap": true,
+                                                          "cFont": {
+                                                              "style": "Normal",
+                                                              "weight": "Normal"
+                                                          },
+                                                          "dataSource": "StaticList",
+                                                          "StaticList": {
+                                                              "options": "Yes\nNo",
+                                                              "allowUserValue": false
+                                                          },
+                                                          "cColumns": 3,
+                                                          "options": "Yes\nNo",
+                                                          "allowUserValue": false
+                                                      }
+                                                  },
+                                                  "alignment": {
+                                                      "horizontal": "Justify",
+                                                      "vertical": "Top"
+                                                  },
+                                                  "columns": {
+                                                      "width": 12
+                                                  }
+                                              }]
+                                          }, {
+                                              "cells": [{
+                                                  "component": {
+                                                      "type": "SingleChoice",
+                                                      "model": {
+                                                          "_internalName": "WouldYouRecommendUsToAFriend",
+                                                          "title": {
+                                                              "text": "Would you recommend us to a friend?",
+                                                              "visible": true
+                                                          },
+                                                          "orientation": "Vertical",
+                                                          "required": false,
+                                                          "font": {
+                                                              "style": "Normal",
+                                                              "weight": "Semibold"
+                                                          },
+                                                          "wrap": true,
+                                                          "cFont": {
+                                                              "style": "Normal",
+                                                              "weight": "Normal"
+                                                          },
+                                                          "dataSource": "StaticList",
+                                                          "StaticList": {
+                                                              "options": "Yes\nNo",
+                                                              "allowUserValue": false
+                                                          },
+                                                          "cColumns": 3,
+                                                          "options": "Yes\nNo",
+                                                          "allowUserValue": false
+                                                      }
+                                                  },
+                                                  "alignment": {
+                                                      "horizontal": "Justify",
+                                                      "vertical": "Top"
+                                                  },
+                                                  "columns": {
+                                                      "width": 12
+                                                  }
+                                              }]
+                                          }, {
+                                              "cells": [{
+                                                  "component": {
+                                                      "type": "SingleLineText",
+                                                      "model": {
+                                                          "_internalName": "EmailToReceiveACouponCode",
+                                                          "title": {
+                                                              "text": "Email to receive a coupon code:",
+                                                              "visible": true
+                                                          },
+                                                          "orientation": "Vertical",
+                                                          "required": false,
+                                                          "font": {
+                                                              "style": "Normal",
+                                                              "weight": "Semibold"
+                                                          },
+                                                          "wrap": true,
+                                                          "cFont": {
+                                                              "style": "Normal",
+                                                              "weight": "Normal"
+                                                          },
+                                                          "type": "Anything"
+                                                      }
+                                                  },
+                                                  "alignment": {
+                                                      "horizontal": "Justify",
+                                                      "vertical": "Top"
+                                                  },
+                                                  "columns": {
+                                                      "width": 12
+                                                  }
+                                              }]
+                                          }, {
+                                              "cells": [{
+                                                  "component": {
+                                                      "type": "Submit",
+                                                      "model": {
+                                                          "_internalName": "Submit2",
+                                                          "width": 300,
+                                                          "text": "Finish",
+                                                          "savingText": "Submitting...",
+                                                          "type": "Primary",
+                                                          "click": "return fd.save();"
+                                                      }
+                                                  },
+                                                  "alignment": {
+                                                      "horizontal": "Center",
+                                                      "vertical": "Top"
+                                                  },
+                                                  "columns": {
+                                                      "width": 12
+                                                  }
+                                              }]
+                                          }]
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "window.$ = $;\n\nfd.rendered(function() {\n    \n    $('.survey').hide()\n    fd.field('WouldYouRecommendUsToAFriend').hidden = true;\n    fd.field('EmailToReceiveACouponCode').hidden = true; \n    fd.field('DoYouLikeOurProducts').hidden = true;\n    fd.control('Submit2').hidden = true;\n    \n fd.field('DoYouLikeOurProducts').$on('change', function() {\n     fd.field('WouldYouRecommendUsToAFriend').hidden = false;\n })\n \n fd.field('WouldYouRecommendUsToAFriend').$on('change', function() {\n     fd.field('EmailToReceiveACouponCode').hidden = false;\n     //show control\nfd.control('Submit2').hidden = false;\n });\n \n});\n",
-  "css": ".fd-form  {\n    box-sizing: border-box;\n\n    -webkit-background-size: cover;\n    -moz-background-size: cover;\n    -o-background-size: cover;\n    background-size: cover;\n    width: 80%;\n    display: block;\n    margin: 0 auto;\n margin-bottom: 20px;\n}\n\n.fd-form .form-control {\n    color: #000 !important;\n}\n.fd-form .form-check .form-check-input {\n        padding-right: 0px;\n    padding-left: 0px;\n    padding-top: 0px;\n    padding-bottom: 0px;\n}\n\nbutton.fd-button.btn.btn-primary {\n    background: white;\n    color: #3a3a3a;\n        font-weight: 600;\n}\n.fd-form .btn-primary {\n    color: #3a3a3a !important;\n}\n\n.fd-form.k-animation-container {\n    background-image: none !important;\n}\n\n.fd-form h1, .fd-form h4, .fd-form p {\n    color: #ffff !important;\n}\n.fd-form h1, .fd-form p{\n    text-align:center!important\n}\n.fd-form h4 {\n  display: flex;\n  flex-direction: row;\n  \n}\n.fd-form h4:before, .fd-form h4:after{\n  content: \"\";\n  flex: 1 1;\n  border-bottom: 1px solid;\n  margin: auto;\n}\n.fd-form h4:before {\n  margin-right: 10px\n}\n.fd-form h4:after {\n  margin-left: 10px\n}\n\n.fd-form .total .k-numerictextbox .k-numeric-wrap .k-select {\n display: none;\n}",
-  "theme": {
-    "primary": "#000000",
-    "bodyText": "#ffffff",
-    "bodyBackground": "#3b94e0",
-    "fontFamily": "Roboto",
-    "fontType": 1,
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 0,
-    "shadow": true,
-    "themeId": "7ef9c359d074d50ede9d415abbab090d"
-  },
-  "timezone": "Asia/Yekaterinburg",
-  "culture": "en-US",
+  "css": ".fd-form  {\n    box-sizing: border-box;\n\n    -webkit-background-size: cover;\n    -moz-background-size: cover;\n    -o-background-size: cover;\n    background-size: cover;\n    width: 80%;\n    display: block;\n    margin: 0 auto;\n margin-bottom: 20px;\n}\n\n.fd-form .form-control {\n    color: #000 !important;\n}\n.fd-form .form-check .form-check-input {\n        padding-right: 0px;\n    padding-left: 0px;\n    padding-top: 0px;\n    padding-bottom: 0px;\n}\n\nbutton.fd-button.btn.btn-primary {\n    background: white;\n    color: #3a3a3a;\n        font-weight: 600;\n}\n.fd-form .btn-primary {\n    color: #3a3a3a !important;\n}\n\n.fd-form.k-animation-container {\n    background-image: none !important;\n}\n\n.fd-form h1, .fd-form p {\n    color: #ffff !important;\n}\n\n.fd-form h1 > span {\n    background-color: var(--fd-primary-rgb) !important;\n}\n",
   "notifySubscribers": false,
+  "version": "1.0.2",
+  "theme": {
+      "primary": "#000000",
+      "bodyText": "#ffffff",
+      "bodyBackground": "#3b94e0",
+      "fontFamily": "Roboto",
+      "fontType": 1,
+      "fontSize": 15,
+      "fontWeight": 400,
+      "borderThickness": 1,
+      "borderRadius": 0,
+      "shadow": true,
+      "themeId": "7ef9c359d074d50ede9d415abbab090d"
+  },
+  "timezone": "Europe/Budapest",
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": "Thank you! We sent the coupon code to your email!\nEnjoy your shopping!",
   "redirectURL": null,
   "hideAfterSubmission": true,
@@ -255,6 +276,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }

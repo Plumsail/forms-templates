@@ -1,211 +1,246 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "rows": [
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "Text",
-                            "model": {
-                              "text": "<h1>Call Back Request</h1>",
-                              "_internalName": "Text1"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "padding": [15, null, null, null],
-                          "component": {
-                            "type": "SingleLineText",
-                            "model": {
-                              "title": { "text": "Name", "visible": true },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "cHint": "Peter Jackson",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "type": "Anything",
-                              "wrap": true,
-                              "_internalName": "Name"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "MaskedInput",
-                            "model": {
-                              "title": { "text": "Phone ", "visible": true },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "mask": "+0 (000) 000 00 00",
-                              "wrap": true,
-                              "_internalName": "Phone"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "DateTime",
-                            "model": {
-                              "title": {
-                                "text": "Time to call",
-                                "visible": true
-                              },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "cHint": "2/7/2002",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "wrap": true,
-                              "_internalName": "TimeToCall"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "_internalName": "Grid1"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 6 }
-            },
-            {
-              "class": "fd-right-grid",
-              "component": {
-                "type": "Grid",
-                "model": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "component": {
-                            "type": "MultiLineText",
-                            "model": {
-                              "title": { "text": "Message", "visible": true },
-                              "orientation": "Vertical",
-                              "required": false,
-                              "cHint": "Write text here...",
-                              "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                              },
-                              "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                              },
-                              "mode": "Plain",
-                              "wrap": true,
-                              "_internalName": "Message"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "class": "button-cell",
-                          "component": {
-                            "type": "Submit",
-                            "model": {
-                              "text": "Request a call",
-                              "type": "Primary",
-                              "click": "return fd.save();",
-                              "_internalName": "Submit1",
-                              "style": "font-weight: 500 !important;"
-                            }
-                          },
-                          "alignment": "Justify",
-                          "columns": { "width": 12 }
-                        }
-                      ]
-                    }
-                  ],
-                  "stacked": "md",
-                  "_internalName": "Grid2"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 6 }
-            }
-          ]
-        }
-      ],
-      "stacked": "md"
-    }
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid1",
+                          "stacked": "md",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "Heading",
+                                      "model": {
+                                          "_internalName": "Heading1",
+                                          "heading": "Call Back Request",
+                                          "view": "Normal",
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "size": "H1",
+                                          "textAlignment": "Left"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "padding": [15, null, null, null],
+                                  "component": {
+                                      "type": "SingleLineText",
+                                      "model": {
+                                          "_internalName": "Name",
+                                          "title": {
+                                              "text": "Name",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Peter Jackson",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "type": "Anything"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "MaskedInput",
+                                      "model": {
+                                          "_internalName": "Phone",
+                                          "title": {
+                                              "text": "Phone ",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mask": "000-000-0000"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "component": {
+                                      "type": "DateTime",
+                                      "model": {
+                                          "_internalName": "TimeToCall",
+                                          "title": {
+                                              "text": "Time to call",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "2/7/2002",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          }
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 6
+                  }
+              }, {
+                  "class": "fd-right-grid",
+                  "component": {
+                      "type": "Grid",
+                      "model": {
+                          "_internalName": "Grid2",
+                          "stacked": "md",
+                          "rows": [{
+                              "cells": [{
+                                  "component": {
+                                      "type": "MultiLineText",
+                                      "model": {
+                                          "_internalName": "Message",
+                                          "title": {
+                                              "text": "Message",
+                                              "visible": true
+                                          },
+                                          "orientation": "Vertical",
+                                          "required": false,
+                                          "font": {
+                                              "style": "Normal",
+                                              "weight": "Semibold"
+                                          },
+                                          "wrap": true,
+                                          "cHint": "Write text here...",
+                                          "cFont": {
+                                              "style": "Normal",
+                                              "weight": "Normal"
+                                          },
+                                          "mode": "Plain"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }, {
+                              "cells": [{
+                                  "class": "button-cell",
+                                  "component": {
+                                      "type": "Submit",
+                                      "model": {
+                                          "_internalName": "Submit1",
+                                          "text": "Request a call",
+                                          "savingText": "Submitting...",
+                                          "type": "Primary",
+                                          "click": "return fd.save();",
+                                          "style": "font-weight: 500 !important;"
+                                      }
+                                  },
+                                  "alignment": {
+                                      "horizontal": "Justify",
+                                      "vertical": "Top"
+                                  },
+                                  "columns": {
+                                      "width": 12
+                                  }
+                              }]
+                          }]
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 6
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "",
-  "css": "@media (min-width: 750px){\r\n    .fd-form .fd-right-grid{\r\n        border-left: solid;\r\n    }\r\n}\r\n\r\n.fd-form .form-control, \r\n.k-input {\r\n    background: none !important;\r\n    padding-left: 0px !important;\r\n    border: none;\r\n}\r\n\r\n.fd-form .form-control,\r\n.fd-form span.k-picker-wrap.k-state-default {\r\n    border: 0px;\r\n    border-bottom: solid;\r\n    border-radius: 0 !important;\r\n}\r\n\r\n.fd-form .form-control:focus,\r\n.fd-form .fd-field-control .k-state-focused\r\n{\r\n    box-shadow: none !important;\r\n    border-color: #ced4da !important;\r\n}\r\n\r\n.fd-form h1 {\r\n    font-size: min(6.5vw, 2.34375rem)!important;\r\n    text-align:center !important;\r\n}\r\n",
+  "css": "@media (min-width: 750px){\r\n    .fd-form .fd-right-grid{\r\n        border-left: solid;\r\n    }\r\n}\r\n\r\n.fd-form .form-control, \r\n.k-input {\r\n    background: none !important;\r\n    padding-left: 0px !important;\r\n    border: none;\r\n}\r\n\r\n.fd-form .form-control,\r\n.fd-form span.k-picker-wrap.k-state-default {\r\n    border: 0px;\r\n    border-bottom: solid;\r\n    border-radius: 0 !important;\r\n}\r\n\r\n.fd-form .form-control:focus,\r\n.fd-form .fd-field-control .k-state-focused\r\n{\r\n    box-shadow: none !important;\r\n    border-color: #ced4da !important;\r\n}\r\n\r\n.fd-form h1 {\r\n    font-size: min(6.5vw, 2.34375rem)!important;\r\n}\r\n",
+  "notifySubscribers": false,
+  "version": "1.0.2",
   "theme": {
-    "primary": "#008EFF",
-    "bodyText": "#373A3C",
-    "bodyBackground": "#FFFFFF",
-    "fontFamily": null,
-    "fontType": 0,
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 0,
-    "shadow": true,
-    "themeId": "default"
+      "primary": "#008EFF",
+      "bodyText": "#373A3C",
+      "bodyBackground": "#FFFFFF",
+      "fontFamily": null,
+      "fontType": 0,
+      "fontSize": 15,
+      "fontWeight": 400,
+      "borderThickness": 1,
+      "borderRadius": 0,
+      "shadow": true,
+      "themeId": "default"
   },
   "timezone": "Europe/Budapest",
-  "culture": "en-US",
-  "notifySubscribers": false,
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": "We will contact you at the given time.\nThank you! ",
   "redirectURL": null,
   "hideAfterSubmission": true,
@@ -216,6 +251,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }

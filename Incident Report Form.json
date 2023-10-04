@@ -1,715 +1,712 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "stacked": "md",
-      "rows": [
-        {
-          "cells": [
-            {
-              "padding": [null, null, 0, null],
-              "class": "col-md-auto",
-              "component": {
-                "type": "Image",
-                "model": {
-                  "width": 120,
-                  "target": "Blank",
-                  "_internalName": "Image1",
-                  "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png",
-                  "style": "margin-bottom: 0px"
-                }
-              },
-              "alignment": { "horizontal": "Left", "vertical": "Middle" },
-              "columns": { "width": 2 }
-            },
-            {
-              "class": "align-self-center",
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h1>Incident Report Form</h1>Please complete this form to report any type of incident. If possible, the report should be completed within 24 hours of the event. The report will be sent to HSE team directly.",
-                  "_internalName": "Text1",
-                  "style": "margin-bottom: 1rem"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Middle" },
-              "columns": { "width": 10 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Wizard",
-                "model": {
-                  "shape": "Circle",
-                  "nextText": "Next",
-                  "backText": "Back",
-                  "finishText": "Send Report",
-                  "finish": "return fd.save();",
-                  "_internalName": "Wizard1",
-                  "steps": [
-                    {
-                      "_internalName": "Step1",
-                      "title": "General Information",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "stacked": "md",
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "class": "bg-secondary",
-                                  "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                      "stacked": "md",
-                                      "_internalName": "Grid1",
-                                      "rows": [
-                                        {
-                                          "cells": [
-                                            {
-                                              "component": {
-                                                "type": "DateTime",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Incident Date & Time",
-                                                    "visible": true
-                                                  },
-                                                  "orientation": "Vertical",
-                                                  "required": false,
-                                                  "cHint": "Incident Date & Time",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "wrap": true,
-                                                  "_internalName": "IncidentDateTime"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 6 }
-                                            },
-                                            {
-                                              "component": {
-                                                "type": "DropDown",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Incident Severity",
-                                                    "visible": true
-                                                  },
-                                                  "orientation": "Vertical",
-                                                  "required": false,
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "dataSource": "StaticList",
-                                                  "StaticList": {
-                                                    "options": "Minor\nModerate\nMajor\nDisaster\nCatastrophic"
-                                                  },
-                                                  "selection": "Single",
-                                                  "wrap": true,
-                                                  "_internalName": "IncidentSeverity",
-                                                  "options": "Minor\nModerate\nMajor\nDisaster\nCatastrophic"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 6 }
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "cells": [
-                                            {
-                                              "component": {
-                                                "type": "MultipleChoice",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Incident Type",
-                                                    "visible": true
-                                                  },
-                                                  "orientation": "Vertical",
-                                                  "required": false,
-                                                  "description": "More than one type can be selected. For instance a Vehicle Incident may result in an injury to the driver/passenger",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "dataSource": "StaticList",
-                                                  "StaticList": {
-                                                    "options": "Vehicle\r\nEnvironmental\r\nFire\r\nInjury\r\nTheft\r\nIllness\r\nSabotage\r\nSecurity\r\nExternal Assessment\r\nExplosives Involved?\r\nRadiation Involved?\r\nOther"
-                                                  },
-                                                  "wrap": true,
-                                                  "cColumns": 3,
-                                                  "_internalName": "IncidentType",
-                                                  "options": "Vehicle\r\nEnvironmental\r\nFire\r\nInjury\r\nTheft\r\nIllness\r\nSabotage\r\nSecurity\r\nExternal Assessment\r\nExplosives Involved?\r\nRadiation Involved?\r\nOther"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 12 }
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "cells": [
-                                            {
-                                              "component": {
-                                                "type": "SingleLineText",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Please describe incident type",
-                                                    "visible": false
-                                                  },
-                                                  "orientation": "Horizontal",
-                                                  "required": false,
-                                                  "cHint": "Please describe incident type",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "type": "Anything",
-                                                  "wrap": true,
-                                                  "_internalName": "OtherIncidentType"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 12 }
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "cells": [
-                                            {
-                                              "component": {
-                                                "type": "MultiLineText",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Description",
-                                                    "visible": true
-                                                  },
-                                                  "orientation": "Vertical",
-                                                  "required": false,
-                                                  "cHint": "Describe what happened",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "mode": "Plain",
-                                                  "wrap": true,
-                                                  "_internalName": "Description"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 12 }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ]
-                        }
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "padding": [null, null, 0, null],
+                  "class": "col-md-auto",
+                  "component": {
+                      "type": "Image",
+                      "model": {
+                          "_internalName": "Image1",
+                          "width": 120,
+                          "target": "Blank",
+                          "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png",
+                          "style": "margin-bottom: 0px"
                       }
-                    },
-                    {
-                      "_internalName": "Step2",
-                      "title": "Incident Location",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "stacked": "md",
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "class": "bg-secondary",
-                                  "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                      "stacked": "md",
-                                      "_internalName": "Grid2",
-                                      "rows": [
-                                        {
-                                          "cells": [
-                                            {
-                                              "component": {
-                                                "type": "SingleLineText",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Address",
-                                                    "visible": false
-                                                  },
-                                                  "orientation": "Vertical",
-                                                  "required": false,
-                                                  "cHint": "Incident Location Address",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "type": "Anything",
-                                                  "wrap": true,
-                                                  "_internalName": "Address"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 12 }
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "cells": [
-                                            {
-                                              "component": {
-                                                "type": "MultiLineText",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Location Description",
-                                                    "visible": false
-                                                  },
-                                                  "orientation": "Horizontal",
-                                                  "required": false,
-                                                  "cHint": "Incident Location Description",
-                                                  "description": "Please provide as much details about the incident location as you can",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "mode": "Plain",
-                                                  "wrap": true,
-                                                  "_internalName": "LocationDescription"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 12 }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ]
-                        }
+                  },
+                  "alignment": {
+                      "horizontal": "Left",
+                      "vertical": "Middle"
+                  },
+                  "columns": {
+                      "width": 2
+                  }
+              }, {
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading1",
+                          "heading": "Incident Report Form",
+                          "view": "Normal",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "subheading": "Please complete this form to report any type of incident. If possible, the report should be completed within 24 hours of the event. The report will be sent to HSE team directly.",
+                          "size": "H1",
+                          "textAlignment": "Left"
                       }
-                    },
-                    {
-                      "_internalName": "Step4",
-                      "title": "Incident Participants",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "stacked": "md",
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "class": "bg-secondary",
-                                  "component": {
-                                    "type": "Grid",
-                                    "model": {
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Middle"
+                  },
+                  "columns": {
+                      "width": 10
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Wizard",
+                      "model": {
+                          "_internalName": "Wizard1",
+                          "shape": "Circle",
+                          "nextText": "Next",
+                          "backText": "Back",
+                          "finishText": "Send Report",
+                          "savingText": "Submitting...",
+                          "finish": "return fd.save();",
+                          "steps": [{
+                              "_internalName": "Step1",
+                              "title": "General Information",
+                              "component": {
+                                  "type": "Grid",
+                                  "model": {
                                       "stacked": "md",
-                                      "_internalName": "Grid3",
-                                      "rows": [
-                                        {
-                                          "cells": [
-                                            {
+                                      "rows": [{
+                                          "cells": [{
+                                              "class": "bg-secondary",
                                               "component": {
-                                                "type": "Text",
-                                                "model": {
-                                                  "text": "<h6>Please share names and contact information of incident participants and witnesses</h6>",
-                                                  "_internalName": "Text11"
-                                                }
+                                                  "type": "Grid",
+                                                  "model": {
+                                                      "_internalName": "Grid1",
+                                                      "stacked": "md",
+                                                      "rows": [{
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "DateTime",
+                                                                  "model": {
+                                                                      "_internalName": "IncidentDateTime",
+                                                                      "title": {
+                                                                          "text": "Incident Date & Time",
+                                                                          "visible": true
+                                                                      },
+                                                                      "orientation": "Vertical",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cHint": "Incident Date & Time",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      }
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 6
+                                                              }
+                                                          }, {
+                                                              "component": {
+                                                                  "type": "DropDown",
+                                                                  "model": {
+                                                                      "_internalName": "IncidentSeverity",
+                                                                      "title": {
+                                                                          "text": "Incident Severity",
+                                                                          "visible": true
+                                                                      },
+                                                                      "orientation": "Vertical",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "dataSource": "StaticList",
+                                                                      "StaticList": {
+                                                                          "options": "Minor\nModerate\nMajor\nDisaster\nCatastrophic"
+                                                                      },
+                                                                      "selection": "Single",
+                                                                      "options": "Minor\nModerate\nMajor\nDisaster\nCatastrophic"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 6
+                                                              }
+                                                          }]
+                                                      }, {
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "MultipleChoice",
+                                                                  "model": {
+                                                                      "_internalName": "IncidentType",
+                                                                      "title": {
+                                                                          "text": "Incident Type",
+                                                                          "visible": true
+                                                                      },
+                                                                      "orientation": "Vertical",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "description": "More than one type can be selected. For instance a Vehicle Incident may result in an injury to the driver/passenger",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "dataSource": "StaticList",
+                                                                      "StaticList": {
+                                                                          "options": "Vehicle\r\nEnvironmental\r\nFire\r\nInjury\r\nTheft\r\nIllness\r\nSabotage\r\nSecurity\r\nExternal Assessment\r\nExplosives Involved?\r\nRadiation Involved?\r\nOther"
+                                                                      },
+                                                                      "cColumns": 3,
+                                                                      "options": "Vehicle\r\nEnvironmental\r\nFire\r\nInjury\r\nTheft\r\nIllness\r\nSabotage\r\nSecurity\r\nExternal Assessment\r\nExplosives Involved?\r\nRadiation Involved?\r\nOther"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 12
+                                                              }
+                                                          }]
+                                                      }, {
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "SingleLineText",
+                                                                  "model": {
+                                                                      "_internalName": "OtherIncidentType",
+                                                                      "title": {
+                                                                          "text": "Please describe incident type",
+                                                                          "visible": false
+                                                                      },
+                                                                      "orientation": "Horizontal",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cHint": "Please describe incident type",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "type": "Anything"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 12
+                                                              }
+                                                          }]
+                                                      }, {
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "MultiLineText",
+                                                                  "model": {
+                                                                      "_internalName": "Description",
+                                                                      "title": {
+                                                                          "text": "Description",
+                                                                          "visible": true
+                                                                      },
+                                                                      "orientation": "Vertical",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cHint": "Describe what happened",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "mode": "Plain"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 12
+                                                              }
+                                                          }]
+                                                      }]
+                                                  }
                                               },
                                               "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
                                               },
-                                              "columns": { "width": 12 }
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "cells": [
-                                            {
-                                              "component": {
-                                                "type": "DataTable",
-                                                "model": {
-                                                  "newLine": "Top",
-                                                  "delete": "Last",
-                                                  "_internalName": "DataTable1",
-                                                  "columns": [
-                                                    {
-                                                      "_internalName": "Name",
-                                                      "title": "Name",
-                                                      "required": true,
-                                                      "type": "String"
-                                                    },
-                                                    {
-                                                      "_internalName": "involvement",
-                                                      "title": "How involved?",
-                                                      "required": true,
-                                                      "type": "Dropdown",
-                                                      "selection": "Single",
-                                                      "options": "incident participant\r\nwitness"
-                                                    },
-                                                    {
-                                                      "_internalName": "MobileNumber",
-                                                      "title": "Mobile Number",
-                                                      "required": false,
-                                                      "type": "String"
-                                                    }
-                                                  ]
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 12 }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      }
-                    },
-                    {
-                      "_internalName": "Step3",
-                      "title": "Contact information",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "stacked": "md",
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "class": "bg-secondary",
-                                  "component": {
-                                    "type": "Grid",
-                                    "model": {
+                                              "columns": {
+                                                  "width": 12
+                                              }
+                                          }]
+                                      }]
+                                  }
+                              }
+                          }, {
+                              "_internalName": "Step2",
+                              "title": "Incident Location",
+                              "component": {
+                                  "type": "Grid",
+                                  "model": {
                                       "stacked": "md",
-                                      "_internalName": "Grid4",
-                                      "rows": [
-                                        {
-                                          "cells": [
-                                            {
+                                      "rows": [{
+                                          "cells": [{
+                                              "class": "bg-secondary",
                                               "component": {
-                                                "type": "Text",
-                                                "model": {
-                                                  "text": "<h6>Form completed by: <span style=\"color:#ff0000;\">*</span></h6>",
-                                                  "_internalName": "Text15"
-                                                }
+                                                  "type": "Grid",
+                                                  "model": {
+                                                      "_internalName": "Grid2",
+                                                      "stacked": "md",
+                                                      "rows": [{
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "SingleLineText",
+                                                                  "model": {
+                                                                      "_internalName": "Address",
+                                                                      "title": {
+                                                                          "text": "Address",
+                                                                          "visible": false
+                                                                      },
+                                                                      "orientation": "Vertical",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cHint": "Incident Location Address",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "type": "Anything"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 12
+                                                              }
+                                                          }]
+                                                      }, {
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "MultiLineText",
+                                                                  "model": {
+                                                                      "_internalName": "LocationDescription",
+                                                                      "title": {
+                                                                          "text": "Location Description",
+                                                                          "visible": false
+                                                                      },
+                                                                      "orientation": "Horizontal",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cHint": "Incident Location Description",
+                                                                      "description": "Please provide as much details about the incident location as you can",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "mode": "Plain"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 12
+                                                              }
+                                                          }]
+                                                      }]
+                                                  }
                                               },
                                               "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
                                               },
-                                              "columns": { "width": 12 }
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "cells": [
-                                            {
+                                              "columns": {
+                                                  "width": 12
+                                              }
+                                          }]
+                                      }]
+                                  }
+                              }
+                          }, {
+                              "_internalName": "Step4",
+                              "title": "Incident Participants",
+                              "component": {
+                                  "type": "Grid",
+                                  "model": {
+                                      "stacked": "md",
+                                      "rows": [{
+                                          "cells": [{
+                                              "class": "bg-secondary",
                                               "component": {
-                                                "type": "SingleLineText",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "FirstName",
-                                                    "visible": false
-                                                  },
-                                                  "orientation": "Horizontal",
-                                                  "required": false,
-                                                  "cHint": "First Name",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "type": "Anything",
-                                                  "wrap": true,
-                                                  "_internalName": "FirstName"
-                                                }
+                                                  "type": "Grid",
+                                                  "model": {
+                                                      "_internalName": "Grid3",
+                                                      "stacked": "md",
+                                                      "rows": [{
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "Text",
+                                                                  "model": {
+                                                                      "_internalName": "Text11",
+                                                                      "text": "<h6>Please share names and contact information of incident participants and witnesses</h6>"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 12
+                                                              }
+                                                          }]
+                                                      }, {
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "DataTable",
+                                                                  "model": {
+                                                                      "_internalName": "DataTable1",
+                                                                      "title": {
+                                                                          "text": "DataTable1",
+                                                                          "visible": false
+                                                                      },
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "newLine": "Top",
+                                                                      "delete": "Last",
+                                                                      "columns": [{
+                                                                          "_internalName": "Name",
+                                                                          "title": "Name",
+                                                                          "required": true,
+                                                                          "type": "String"
+                                                                      }, {
+                                                                          "_internalName": "involvement",
+                                                                          "title": "How involved?",
+                                                                          "required": true,
+                                                                          "type": "Dropdown",
+                                                                          "selection": "Single",
+                                                                          "options": "incident participant\r\nwitness"
+                                                                      }, {
+                                                                          "_internalName": "MobileNumber",
+                                                                          "title": "Mobile Number",
+                                                                          "required": false,
+                                                                          "type": "String"
+                                                                      }]
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 12
+                                                              }
+                                                          }]
+                                                      }]
+                                                  }
                                               },
                                               "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
                                               },
-                                              "columns": { "width": 4 }
-                                            },
-                                            {
+                                              "columns": {
+                                                  "width": 12
+                                              }
+                                          }]
+                                      }]
+                                  }
+                              }
+                          }, {
+                              "_internalName": "Step3",
+                              "title": "Contact information",
+                              "component": {
+                                  "type": "Grid",
+                                  "model": {
+                                      "stacked": "md",
+                                      "rows": [{
+                                          "cells": [{
+                                              "class": "bg-secondary",
                                               "component": {
-                                                "type": "SingleLineText",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "MiddleName",
-                                                    "visible": false
-                                                  },
-                                                  "orientation": "Horizontal",
-                                                  "required": false,
-                                                  "cHint": "Middle Name",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "type": "Anything",
-                                                  "wrap": true,
-                                                  "_internalName": "MiddleName"
-                                                }
+                                                  "type": "Grid",
+                                                  "model": {
+                                                      "_internalName": "Grid4",
+                                                      "stacked": "md",
+                                                      "rows": [{
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "Text",
+                                                                  "model": {
+                                                                      "_internalName": "Text15",
+                                                                      "text": "<h6>Form completed by: <span style=\"color:#ff0000;\">*</span></h6>"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 12
+                                                              }
+                                                          }]
+                                                      }, {
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "SingleLineText",
+                                                                  "model": {
+                                                                      "_internalName": "FirstName",
+                                                                      "title": {
+                                                                          "text": "FirstName",
+                                                                          "visible": false
+                                                                      },
+                                                                      "orientation": "Horizontal",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cHint": "First Name",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "type": "Anything"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 4
+                                                              }
+                                                          }, {
+                                                              "component": {
+                                                                  "type": "SingleLineText",
+                                                                  "model": {
+                                                                      "_internalName": "MiddleName",
+                                                                      "title": {
+                                                                          "text": "MiddleName",
+                                                                          "visible": false
+                                                                      },
+                                                                      "orientation": "Horizontal",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cHint": "Middle Name",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "type": "Anything"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 4
+                                                              }
+                                                          }, {
+                                                              "component": {
+                                                                  "type": "SingleLineText",
+                                                                  "model": {
+                                                                      "_internalName": "LastName",
+                                                                      "title": {
+                                                                          "text": "Last Name",
+                                                                          "visible": false
+                                                                      },
+                                                                      "orientation": "Horizontal",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cHint": "Last Name",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "type": "Anything"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 4
+                                                              }
+                                                          }]
+                                                      }, {
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "Text",
+                                                                  "model": {
+                                                                      "_internalName": "Text16",
+                                                                      "text": "<h6>How can we contact you?</h6>"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 12
+                                                              }
+                                                          }]
+                                                      }, {
+                                                          "cells": [{
+                                                              "component": {
+                                                                  "type": "SingleLineText",
+                                                                  "model": {
+                                                                      "_internalName": "Email",
+                                                                      "title": {
+                                                                          "text": "Email",
+                                                                          "visible": false
+                                                                      },
+                                                                      "orientation": "Horizontal",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cHint": "Email",
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "type": "E-mail",
+                                                                      "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                                      "error": "This field must contain a valid e-mail address."
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 6
+                                                              }
+                                                          }, {
+                                                              "component": {
+                                                                  "type": "MaskedInput",
+                                                                  "model": {
+                                                                      "_internalName": "MobileNumber",
+                                                                      "title": {
+                                                                          "text": "Mobile Number",
+                                                                          "visible": false
+                                                                      },
+                                                                      "orientation": "Horizontal",
+                                                                      "required": false,
+                                                                      "font": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Semibold"
+                                                                      },
+                                                                      "wrap": true,
+                                                                      "cFont": {
+                                                                          "style": "Normal",
+                                                                          "weight": "Normal"
+                                                                      },
+                                                                      "mask": "000-0000-0000"
+                                                                  }
+                                                              },
+                                                              "alignment": {
+                                                                  "horizontal": "Justify",
+                                                                  "vertical": "Top"
+                                                              },
+                                                              "columns": {
+                                                                  "width": 6
+                                                              }
+                                                          }]
+                                                      }]
+                                                  }
                                               },
                                               "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
+                                                  "horizontal": "Justify",
+                                                  "vertical": "Top"
                                               },
-                                              "columns": { "width": 4 }
-                                            },
-                                            {
-                                              "component": {
-                                                "type": "SingleLineText",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Last Name",
-                                                    "visible": false
-                                                  },
-                                                  "orientation": "Horizontal",
-                                                  "required": false,
-                                                  "cHint": "Last Name",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "type": "Anything",
-                                                  "wrap": true,
-                                                  "_internalName": "LastName"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 4 }
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "cells": [
-                                            {
-                                              "component": {
-                                                "type": "Text",
-                                                "model": {
-                                                  "text": "<h6>How can we contact you?</h6>",
-                                                  "_internalName": "Text16"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 12 }
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "cells": [
-                                            {
-                                              "component": {
-                                                "type": "SingleLineText",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Email",
-                                                    "visible": false
-                                                  },
-                                                  "orientation": "Horizontal",
-                                                  "required": false,
-                                                  "cHint": "Email",
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "type": "E-mail",
-                                                  "wrap": true,
-                                                  "_internalName": "Email",
-                                                  "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                  "error": "This field must contain a valid e-mail address."
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 6 }
-                                            },
-                                            {
-                                              "component": {
-                                                "type": "MaskedInput",
-                                                "model": {
-                                                  "title": {
-                                                    "text": "Mobile Number",
-                                                    "visible": false
-                                                  },
-                                                  "orientation": "Horizontal",
-                                                  "required": false,
-                                                  "font": {
-                                                    "style": "Normal",
-                                                    "weight": "Semibold"
-                                                  },
-                                                  "cFont": {
-                                                    "style": "Normal",
-                                                    "weight": "Normal"
-                                                  },
-                                                  "mask": "+0 (000) 000 00 00",
-                                                  "wrap": true,
-                                                  "_internalName": "MobileNumber"
-                                                }
-                                              },
-                                              "alignment": {
-                                                "horizontal": "Justify",
-                                                "vertical": "Top"
-                                              },
-                                              "columns": { "width": 6 }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ]
-                        }
+                                              "columns": {
+                                                  "width": 12
+                                              }
+                                          }]
+                                      }]
+                                  }
+                              }
+                          }]
                       }
-                    }
-                  ]
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        }
-      ]
-    }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "// function that shows/hides Other field\r\nfunction toggleOtherType() {\r\n    if (fd.field('IncidentType').value.includes('Other')) {\r\n        fd.field('OtherIncidentType').hidden = false;\r\n    } else {\r\n        fd.field('OtherIncidentType').hidden = true;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    // call function on form load\r\n    toggleOtherType();\r\n\r\n    // call function when the field value is changed\r\n    fd.field('IncidentType').$on('change', toggleOtherType);\r\n});\r\n",
   "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form .btn-primary {\n    font-weight: 500 !important;\n    color: white !important;\n}\n\n.fd-form .fd-total-field span.k-select {\n    display: none !important;\n}\n\n.fd-form .fd-payment-form {\n    display: none;\n}\n",
+  "notifySubscribers": false,
+  "version": "1.0.2",
   "theme": {
-    "primary": "#737373",
-    "bodyText": "#333333",
-    "bodyBackground": "#FFFFFF",
-    "fontFamily": null,
-    "fontType": 0,
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 0,
-    "shadow": true,
-    "themeId": "gray"
+      "primary": "#737373",
+      "bodyText": "#333333",
+      "bodyBackground": "#FFFFFF",
+      "fontFamily": null,
+      "fontType": 0,
+      "fontSize": 15,
+      "fontWeight": 400,
+      "borderThickness": 1,
+      "borderRadius": 0,
+      "shadow": true,
+      "themeId": "gray"
   },
   "timezone": "Europe/Budapest",
-  "culture": "en-US",
-  "notifySubscribers": false,
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": null,
   "redirectURL": null,
   "hideAfterSubmission": false,
@@ -720,6 +717,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }

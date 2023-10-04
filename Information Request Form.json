@@ -1,160 +1,215 @@
 {
   "pc": {
-    "type": "Grid",
-    "model": {
-      "rows": [
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Text",
-                "model": {
-                  "text": "<h1>Information Request Form</h1>",
-                  "_internalName": "Text1"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [20, null, null, null],
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "Full Name", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "description": "Full Name",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "Anything",
-                  "wrap": true,
-                  "_internalName": "FullName"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "SingleLineText",
-                "model": {
-                  "title": { "text": "Email", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "description": "username@domain.com",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "type": "E-mail",
-                  "wrap": true,
-                  "_internalName": "Email",
-                  "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                  "error": "This field must contain a valid e-mail address."
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "MaskedInput",
-                "model": {
-                  "title": { "text": "Phone", "visible": false },
-                  "orientation": "Horizontal",
-                  "required": false,
-                  "description": "Phone",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "mask": "+0 (000) 000 00 00",
-                  "wrap": true,
-                  "_internalName": "Phone"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "MultiLineText",
-                "model": {
-                  "title": {
-                    "text": "Requesting Information Regarding:",
-                    "visible": false
+      "type": "Grid",
+      "model": {
+          "stacked": "md",
+          "rows": [{
+              "cells": [{
+                  "component": {
+                      "type": "Heading",
+                      "model": {
+                          "_internalName": "Heading1",
+                          "heading": "Information Request Form",
+                          "view": "Underline2",
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "size": "H1",
+                          "textAlignment": "Left"
+                      }
                   },
-                  "orientation": "Vertical",
-                  "required": false,
-                  "description": "Requesting Information Regarding",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "mode": "Plain",
-                  "wrap": true,
-                  "_internalName": "RequestingInformationRegarding"
-                }
-              },
-              "alignment": "Justify",
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Submit",
-                "model": {
-                  "width": 200,
-                  "text": "SEND",
-                  "type": "Primary",
-                  "click": "return fd.save();",
-                  "_internalName": "Submit1",
-                  "style": "font-weight: 700 !important;"
-                }
-              },
-              "alignment": "Center",
-              "columns": { "width": 12 }
-            }
-          ]
-        }
-      ],
-      "stacked": "md"
-    }
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "padding": [20, null, null, null],
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "FullName",
+                          "title": {
+                              "text": "Full Name",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "description": "Full Name",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "Anything"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "SingleLineText",
+                      "model": {
+                          "_internalName": "Email",
+                          "title": {
+                              "text": "Email",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "description": "username@domain.com",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "type": "E-mail",
+                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                          "error": "This field must contain a valid e-mail address."
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "MaskedInput",
+                      "model": {
+                          "_internalName": "Phone",
+                          "title": {
+                              "text": "Phone",
+                              "visible": false
+                          },
+                          "orientation": "Horizontal",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "description": "Phone",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "mask": "000-000-0000"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "MultiLineText",
+                      "model": {
+                          "_internalName": "RequestingInformationRegarding",
+                          "title": {
+                              "text": "Requesting Information Regarding:",
+                              "visible": false
+                          },
+                          "orientation": "Vertical",
+                          "required": false,
+                          "font": {
+                              "style": "Normal",
+                              "weight": "Semibold"
+                          },
+                          "wrap": true,
+                          "description": "Requesting Information Regarding",
+                          "cFont": {
+                              "style": "Normal",
+                              "weight": "Normal"
+                          },
+                          "mode": "Plain"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Justify",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }, {
+              "cells": [{
+                  "component": {
+                      "type": "Submit",
+                      "model": {
+                          "_internalName": "Submit1",
+                          "width": 200,
+                          "text": "SEND",
+                          "savingText": "Submitting...",
+                          "type": "Primary",
+                          "click": "return fd.save();",
+                          "style": "font-weight: 700 !important;"
+                      }
+                  },
+                  "alignment": {
+                      "horizontal": "Center",
+                      "vertical": "Top"
+                  },
+                  "columns": {
+                      "width": 12
+                  }
+              }]
+          }]
+      }
   },
-  "phone": null,
   "tablet": null,
+  "phone": null,
   "js": "",
-  "css": ".fd-form .alert-body {\r\n    background-color: white;\r\n}\r\n\r\n.fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n    text-align: left!important;\r\n}\r\n\r\n.fd-form h1:after {\r\n    content: ' ';\r\n    display: block;\r\n    width: 30%;\r\n    border-top: 3px solid;\r\n    padding-bottom: 15px;\r\n    margin-top: 10px;\r\n    color: inherit;\r\n}",
+  "css": ".fd-form .alert-body {\r\n    background-color: white;\r\n}\r\n\r\n.fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n}\r\n",
+  "notifySubscribers": false,
+  "version": "1.0.2",
   "theme": {
-    "primary": "#000000",
-    "bodyText": "#000000",
-    "bodyBackground": "#F9D342",
-    "fontFamily": null,
-    "fontType": 0,
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 0,
-    "shadow": true,
-    "themeId": "7c99d951e0bc277ffcb2ebd2407d9c0d"
+      "primary": "#000000",
+      "bodyText": "#000000",
+      "bodyBackground": "#F9D342",
+      "fontFamily": null,
+      "fontType": 0,
+      "fontSize": 15,
+      "fontWeight": 400,
+      "borderThickness": 1,
+      "borderRadius": 0,
+      "shadow": true,
+      "themeId": "7c99d951e0bc277ffcb2ebd2407d9c0d"
   },
   "timezone": "Europe/Budapest",
-  "culture": "en-US",
-  "notifySubscribers": false,
+  "culture": "en",
+  "userLanguage": null,
+  "userCulture": null,
   "thankYouMessage": "Thank you for submitting the request!\nWe will send the requested information to the specified email address.",
   "redirectURL": null,
   "hideAfterSubmission": false,
@@ -165,6 +220,5 @@
   "restrictAccess": false,
   "azureADTenant": null,
   "azureADObjects": [],
-  "azureB2CProperties": null,
-  "version": "1.0.2"
+  "azureB2CProperties": null
 }
