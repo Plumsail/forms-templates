@@ -1,590 +1,615 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "class": "bg-primary",
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading1",
-                          "heading": "Employee Complaint Form",
-                          "view": "Normal",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "class": "bg-primary",
-                          "size": "H1",
-                          "textAlignment": "Center"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [30, null, null, null],
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid3",
-                          "stacked": "md",
-                          "rows": [{
-                              "cells": [{
-                                  "component": {
-                                      "type": "Heading",
-                                      "model": {
-                                          "_internalName": "Heading2",
-                                          "heading": "Employee Information",
-                                          "view": "Line",
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "size": "H4",
-                                          "textAlignment": "Center"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [15, null, null, null],
-                                  "class": "bg-secondary",
-                                  "component": {
-                                      "type": "Grid",
-                                      "model": {
-                                          "_internalName": "Grid2",
-                                          "stacked": "md",
-                                          "rows": [{
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "FirstName",
-                                                          "title": {
-                                                              "text": "FirstName",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "First Name",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 4
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "MiddleName",
-                                                          "title": {
-                                                              "text": "MiddleName",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Middle Name",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 4
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "LastName",
-                                                          "title": {
-                                                              "text": "Last Name",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Last Name",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 4
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "JobTitle",
-                                                          "title": {
-                                                              "text": "Job Title",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Job Title",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "DropDown",
-                                                      "model": {
-                                                          "_internalName": "Department",
-                                                          "title": {
-                                                              "text": "Department",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Department",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "dataSource": "StaticList",
-                                                          "StaticList": {
-                                                              "options": "Production\r\nResearch and Development\r\nMarketing\r\nProcurenment and Sourcsing\r\nIT\r\nCompliance\r\nLegal\r\nHealth, Safety and Security\r\nMaintenance"
-                                                          },
-                                                          "selection": "Single",
-                                                          "options": "Production\r\nResearch and Development\r\nMarketing\r\nProcurenment and Sourcsing\r\nIT\r\nCompliance\r\nLegal\r\nHealth, Safety and Security\r\nMaintenance"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "Email",
-                                                          "title": {
-                                                              "text": "Email",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "E-mail",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "E-mail",
-                                                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                          "error": "This field must contain a valid e-mail address."
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "MaskedInput",
-                                                      "model": {
-                                                          "_internalName": "MobileNumber",
-                                                          "title": {
-                                                              "text": "Mobile Number",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "mask": "+0 (000) 000 00 00"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }]
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [20, null, null, null],
-                                  "component": {
-                                      "type": "Heading",
-                                      "model": {
-                                          "_internalName": "Heading3",
-                                          "heading": "Complaint Details",
-                                          "view": "Line",
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "size": "H4",
-                                          "textAlignment": "Center"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [15, null, null, null],
-                                  "class": "bg-secondary",
-                                  "component": {
-                                      "type": "Grid",
-                                      "model": {
-                                          "_internalName": "Grid1",
-                                          "stacked": "md",
-                                          "rows": [{
-                                              "cells": [{
-                                                  "padding": [0, null, null, null],
-                                                  "component": {
-                                                      "type": "DateTime",
-                                                      "model": {
-                                                          "_internalName": "IncidentDateTime",
-                                                          "title": {
-                                                              "text": "IncidentDateTime",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Incident Date & Time",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          }
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "IncidentLocation",
-                                                          "title": {
-                                                              "text": "IncidentLocation",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Incident Location",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "MultiLineText",
-                                                      "model": {
-                                                          "_internalName": "Details",
-                                                          "title": {
-                                                              "text": "Please provide as many details as you can:",
-                                                              "visible": true
-                                                          },
-                                                          "orientation": "Vertical",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Complaint Details",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "mode": "Plain"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "padding": [15, null, 0, null],
-                                                  "component": {
-                                                      "type": "Text",
-                                                      "model": {
-                                                          "_internalName": "Text11",
-                                                          "text": "<h6>Please share names and contact information of incident participants and witnesses:</h6>"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "DataTable",
-                                                      "model": {
-                                                          "_internalName": "DataTable1",
-                                                          "title": {
-                                                              "text": "DataTable1",
-                                                              "visible": false
-                                                          },
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "newLine": "Top",
-                                                          "delete": "Last",
-                                                          "columns": [{
-                                                              "_internalName": "Name",
-                                                              "title": "Name",
-                                                              "required": true,
-                                                              "type": "String"
-                                                          }, {
-                                                              "_internalName": "involvement",
-                                                              "title": "How involved?",
-                                                              "required": false,
-                                                              "type": "Dropdown",
-                                                              "selection": "Single",
-                                                              "options": "incident participant\r\nwitness"
-                                                          }, {
-                                                              "_internalName": "MobileNumber",
-                                                              "title": "Mobile Number",
-                                                              "required": false,
-                                                              "type": "String"
-                                                          }]
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }]
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [30, null, null, null],
-                  "component": {
-                      "type": "Submit",
-                      "model": {
-                          "_internalName": "Submit1",
-                          "text": "SEND REPORT",
-                          "savingText": "Submitting...",
-                          "type": "Primary",
-                          "click": "return fd.save();",
-                          "style": "font-weight: 700 !important;"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "",
-  "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    text-align: center !important;\n    color: #ffff !important;\n    padding: 10px;\n}\n\n.fd-form h4, .fd-form .h4 {\n    font-size: min(4.5vw, 1.40625rem) !important;\n}\n\n.fd-form h1 > span {\n    background-color: var(--fd-primary-rgb) !important;\n}\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-      "primary": "#8764B8",
-      "bodyText": "#333333",
-      "bodyBackground": "#FFFFFF",
-      "fontFamily": null,
-      "fontType": 0,
-      "fontSize": 15,
-      "fontWeight": 400,
-      "borderThickness": 1,
-      "borderRadius": 0,
-      "shadow": true,
-      "themeId": "purple"
-  },
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Employee Complaint Form",
+                            "view": "Normal",
+                            "font": {
+                                "color": "#ffffff",
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "fill": "#8764B8",
+                            "size": "H1",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [30, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading2",
+                            "heading": "Employee Information",
+                            "view": "Line",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid2",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 20,
+                                "vertical": 20,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "FirstName",
+                                            "title": {
+                                                "text": "FirstName",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "First Name",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 4
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "MiddleName",
+                                            "title": {
+                                                "text": "MiddleName",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Middle Name",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 4
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "LastName",
+                                            "title": {
+                                                "text": "Last Name",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Last Name",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 4
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "JobTitle",
+                                            "title": {
+                                                "text": "Job Title",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Job Title",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "DropDown",
+                                        "model": {
+                                            "_internalName": "Department",
+                                            "title": {
+                                                "text": "Department",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Department",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "Production\r\nResearch and Development\r\nMarketing\r\nProcurenment and Sourcsing\r\nIT\r\nCompliance\r\nLegal\r\nHealth, Safety and Security\r\nMaintenance"
+                                            },
+                                            "selection": "Single",
+                                            "options": "Production\r\nResearch and Development\r\nMarketing\r\nProcurenment and Sourcsing\r\nIT\r\nCompliance\r\nLegal\r\nHealth, Safety and Security\r\nMaintenance"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Email",
+                                            "title": {
+                                                "text": "Email",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "E-mail",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "E-mail",
+                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                            "error": "This field must contain a valid e-mail address."
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                            "_internalName": "MobileNumber",
+                                            "title": {
+                                                "text": "Mobile Number",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mask": "+0 (000) 000 00 00"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [30, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading3",
+                            "heading": "Complaint Details",
+                            "view": "Line",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid1",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 20,
+                                "vertical": 20,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [0, null, null, null],
+                                    "component": {
+                                        "type": "DateTime",
+                                        "model": {
+                                            "_internalName": "IncidentDateTime",
+                                            "title": {
+                                                "text": "IncidentDateTime",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Incident Date & Time",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            }
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "IncidentLocation",
+                                            "title": {
+                                                "text": "IncidentLocation",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Incident Location",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MultiLineText",
+                                        "model": {
+                                            "_internalName": "Details",
+                                            "title": {
+                                                "text": "Please provide as many details as you can:",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Complaint Details",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mode": "Plain"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [15, null, 0, null],
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text11",
+                                            "text": "<h6>Please share names and contact information of incident participants and witnesses:</h6>"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "DataTable",
+                                        "model": {
+                                            "_internalName": "DataTable1",
+                                            "title": {
+                                                "text": "DataTable1",
+                                                "visible": false
+                                            },
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "newLine": "Top",
+                                            "delete": "Last",
+                                            "columns": [{
+                                                "_internalName": "Name",
+                                                "title": "Name",
+                                                "required": true,
+                                                "type": "String"
+                                            }, {
+                                                "_internalName": "involvement",
+                                                "title": "How involved?",
+                                                "required": false,
+                                                "type": "Dropdown",
+                                                "selection": "Single",
+                                                "options": "incident participant\r\nwitness"
+                                            }, {
+                                                "_internalName": "MobileNumber",
+                                                "title": "Mobile Number",
+                                                "required": false,
+                                                "type": "String"
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [30, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "SEND REPORT",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();",
+                            "style": "font-weight: 700 !important;"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "//setting the form header background when changing the theme\r\n//for plumsail.com site\r\nfd.themeChanged = theme => {\r\n    switch (theme) {\r\n        case '54ffdf77c99512360e16de33f4fc5e37':\r\n            fd.control('Heading1').fill = '#f66f69';\r\n            break;\r\n\r\n        case '3a786676a9391ac6e95404541837c423':\r\n            fd.control('Heading1').fill = '#9d2d30';\r\n            break;\r\n        case 'a6a6c91aa7b3d2e301f9e16f4ff99ad7':\r\n            fd.control('Heading1').fill = '#413393';\r\n            break;\r\n\r\n        default:\r\n            return '#8764B8';\r\n    }\r\n\r\n};",
+    "css": ".fd-form h1, .fd-form .h1 {\n    color: #ffff !important;\n}",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#8764B8",
+        "bodyText": "#333333",
+        "bodyBackground": "#FFFFFF",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "themeId": "purple",
+        "isDark": false
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }

@@ -3,6 +3,15 @@
         "type": "Grid",
         "model": {
             "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
             "rows": [{
                 "cells": [{
                     "padding": [40, null, null, null],
@@ -15,6 +24,11 @@
                             "font": {
                                 "style": "Normal",
                                 "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
                             },
                             "size": "H1",
                             "textAlignment": "Center"
@@ -48,13 +62,22 @@
                                     "type": "Grid",
                                     "model": {
                                         "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
                                         "rows": [{
                                             "cells": [{
                                                 "component": {
                                                     "type": "Text",
                                                     "model": {
                                                         "_internalName": "Text2",
-                                                        "text": "<h6>Take the time to read the following information carefully, and don't hesitate to seek assistance if you have any questions or concerns.</h6><ul><li>The COVID-19 vaccine lowers the risk of contracting the virus and suffering from severe illness.</li><li>Please be aware that no vaccine is 100% effective, but getting vaccinated reduces the severity of any potential infection.</li><li>It may take a few weeks for your body to build up protection after receiving the vaccine, so continue to follow health guidelines during this period.</li><li>The vaccine may have side effects like other vaccines or medicines, but not everyone experiences them.</li><li>Common side effects include fever, pain at the injection site, redness and hardness of the skin at the injection site, headache, muscle and joint aches, fatigue, nausea/vomiting, chills, and underarm gland swelling on the side of study vaccination.</li><li>If you experience any side effects, please remain calm and consult your doctor immediately.</li><li>If <strong>you are pregnant</strong> or planning to become pregnant, or if your partner is planning to become pregnant, it's essential to consult your doctor before getting vaccinated to ensure it is safe for you.</li></ul>"
+                                                        "text": "<p><strong>Take the time to read the following information carefully, and don't hesitate to seek assistance if you have any questions or concerns.</strong></p><ul><li>The COVID-19 vaccine lowers the risk of contracting the virus and suffering from severe illness.</li><li>Please be aware that no vaccine is 100% effective, but getting vaccinated reduces the severity of any potential infection.<br /></li><li>It may take a few weeks for your body to build up protection after receiving the vaccine, so continue to follow health guidelines during this period.<br /></li><li>The vaccine may have side effects like other vaccines or medicines, but not everyone experiences them.<br /></li><li>Common side effects include fever, pain at the injection site, redness and hardness of the skin at the injection site, headache, muscle and joint aches, fatigue, nausea/vomiting, chills, and underarm gland swelling on the side of study vaccination.<br /></li><li>If you experience any side effects, please remain calm and consult your doctor immediately.<br /></li><li>If <strong>you are pregnant</strong> or planning to become pregnant, or if your partner is planning to become pregnant, it's essential to consult your doctor before getting vaccinated to ensure it is safe for you.</li></ul><h6><br /></h6>"
                                                     }
                                                 },
                                                 "alignment": {
@@ -75,6 +98,15 @@
                                     "type": "Grid",
                                     "model": {
                                         "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
                                         "rows": [{
                                             "cells": [{
                                                 "component": {
@@ -374,6 +406,15 @@
                                     "type": "Grid",
                                     "model": {
                                         "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
                                         "rows": [{
                                             "cells": [{
                                                 "component": {
@@ -667,6 +708,15 @@
                                     "type": "Grid",
                                     "model": {
                                         "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
                                         "rows": [{
                                             "cells": [{
                                                 "component": {
@@ -708,12 +758,24 @@
                                             }]
                                         }, {
                                             "cells": [{
-                                                "padding": [20, null, null, null],
+                                                "padding": [5, null, 5, null],
                                                 "component": {
-                                                    "type": "HTML",
+                                                    "type": "Heading",
                                                     "model": {
-                                                        "_internalName": "HTML1",
-                                                        "content": "<hr>"
+                                                        "_internalName": "Heading2",
+                                                        "heading": "",
+                                                        "view": "Line",
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "frame": {
+                                                            "horizontal": null,
+                                                            "vertical": null,
+                                                            "radius": null
+                                                        },
+                                                        "size": "H4",
+                                                        "textAlignment": "Center"
                                                     }
                                                 },
                                                 "alignment": {
@@ -731,6 +793,15 @@
                                                     "model": {
                                                         "_internalName": "Grid1",
                                                         "stacked": "md",
+                                                        "frame": {
+                                                            "horizontal": null,
+                                                            "vertical": null,
+                                                            "radius": null
+                                                        },
+                                                        "border": {
+                                                            "width": null,
+                                                            "color": null
+                                                        },
                                                         "rows": [{
                                                             "cells": [{
                                                                 "component": {
@@ -838,24 +909,25 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable VaccinationDate date fields\r\n    fd.field('VaccinationDate').disabled = true;\r\n    //set VaccinationDate to the current date\r\n    fd.field('VaccinationDate').value = new Date();\r\n\r\n    //load the Moment.js library to disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            birthDateCalendarSetUp();\r\n\r\n        });\r\n        \r\n    //set up calendar start view and disable dates\r\n    fd.field('DiagnosedCOVIDDate').widgetOptions = {\r\n        max: new Date(),\r\n        min: new Date('2020-03-01'),\r\n        start: 'decade'\r\n    }\r\n    \r\n    fd.field('ImmunizationDate').widgetOptions = {\r\n        max: new Date(),\r\n        min: new Date('2021-01-01'),\r\n        start: 'decade'\r\n    }\r\n\r\n    //call functions when changing field values    \r\n    fd.field('ChronicConditions').$on('change', showHideDiagnosedChronicHealthProblems);\r\n    fd.field('DiagnosedCOVID').$on('change', showHideDiagnosedCOVIDDate);\r\n    fd.field('Immunized').$on('change', showHideImmunizationDate);\r\n\r\n    //сalling functions on form loading\r\n    showHideDiagnosedChronicHealthProblems();\r\n    showHideDiagnosedCOVIDDate();\r\n    showHideImmunizationDate();\r\n\r\n});\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction birthDateCalendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}\r\n\r\n//show hide DiagnosedChronicHealthProblems field\r\nfunction showHideDiagnosedChronicHealthProblems() {\r\n    if (fd.field('ChronicConditions').value == 'Yes') {\r\n        fd.field('DiagnosedChronicHealthProblems').hidden = false;\r\n    } else {\r\n        fd.field('DiagnosedChronicHealthProblems').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide DiagnosedCOVIDDate field\r\nfunction showHideDiagnosedCOVIDDate() {\r\n    if (fd.field('DiagnosedCOVID').value == 'Yes') {\r\n        fd.field('DiagnosedCOVIDDate').hidden = false;\r\n    } else {\r\n        fd.field('DiagnosedCOVIDDate').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide ImmunizationDate field\r\nfunction showHideImmunizationDate() {\r\n    if (fd.field('Immunized').value == 'Yes') {\r\n        fd.field('ImmunizationDate').hidden = false;\r\n    } else {\r\n        fd.field('ImmunizationDate').hidden = true;\r\n    }\r\n}",
-    "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form p, .fd-form ul, .fd-form li {\n    font-size: 16px !important;\n}\n\n.fd-form ul {\n    list-style-type: disc !important;\n}\n\n.fd-form .vaccination-date .form-control:disabled,\n.fd-form .vaccination-date .form-control[readonly],\n.fd-form .vaccination-date .k-datepicker .k-picker-wrap,\n.fd-form .vaccination-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .wizard-progress-bar {\n    background-color: #4871e3;\n    display: none;\n}\n\n.fd-form .vaccination-date .k-select {\n    display: none !important;\n}\n\n.fd-form .vaccination-date input {\n    padding-left: 0px;\n}\n/****** THEME 1 ******/\n.fd-form .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #4871e3; \n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='purple'] .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #8764B8; \n}\n\n/****** THEME 3 ******/\n\n.fd-form[theme='3549a05d1f63e8787c845e9b548df57b'] .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #f79646; \n}\n\n/****** THEME 4 ******/\n\n.fd-form[theme='8f994ce2b57dd1e4312d114d87ca535c'] .vue-form-wizard .wizard-nav-pills>li>a {\n  color: #f79646; \n}",
+    "js": "fd.rendered(function() {\r\n\r\n    //disable VaccinationDate date fields\r\n    fd.field('VaccinationDate').disabled = true;\r\n    //set VaccinationDate to the current date\r\n    fd.field('VaccinationDate').value = new Date();\r\n\r\n    //load the Moment.js library to disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            birthDateCalendarSetUp();\r\n\r\n        });\r\n        \r\n    //set up calendar start view and disable dates\r\n    fd.field('DiagnosedCOVIDDate').widgetOptions = {\r\n        max: new Date(),\r\n        min: new Date('2020-03-01'),\r\n        start: 'decade'\r\n    }\r\n    \r\n    fd.field('ImmunizationDate').widgetOptions = {\r\n        max: new Date(),\r\n        min: new Date('2021-01-01'),\r\n        start: 'decade'\r\n    }\r\n\r\n    //call functions when changing field values    \r\n    fd.field('ChronicConditions').$on('change', showHideDiagnosedChronicHealthProblems);\r\n    fd.field('DiagnosedCOVID').$on('change', showHideDiagnosedCOVIDDate);\r\n    fd.field('Immunized').$on('change', showHideImmunizationDate);\r\n\r\n    //сalling functions on form loading\r\n    showHideDiagnosedChronicHealthProblems();\r\n    showHideDiagnosedCOVIDDate();\r\n    showHideImmunizationDate();\r\n\r\n});\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction birthDateCalendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}\r\n\r\n//show hide DiagnosedChronicHealthProblems field\r\nfunction showHideDiagnosedChronicHealthProblems() {\r\n    if (fd.field('ChronicConditions').value == 'Yes') {\r\n        fd.field('DiagnosedChronicHealthProblems').hidden = false;\r\n    } else {\r\n        fd.field('DiagnosedChronicHealthProblems').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide DiagnosedCOVIDDate field\r\nfunction showHideDiagnosedCOVIDDate() {\r\n    if (fd.field('DiagnosedCOVID').value == 'Yes') {\r\n        fd.field('DiagnosedCOVIDDate').hidden = false;\r\n    } else {\r\n        fd.field('DiagnosedCOVIDDate').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide ImmunizationDate field\r\nfunction showHideImmunizationDate() {\r\n    if (fd.field('Immunized').value == 'Yes') {\r\n        fd.field('ImmunizationDate').hidden = false;\r\n    } else {\r\n        fd.field('ImmunizationDate').hidden = true;\r\n    }\r\n}",
+    "css": "/** styling of the disable Date field **/\n\n.fd-form .vaccination-date .form-control:disabled,\n.fd-form .vaccination-date .form-control[readonly],\n.fd-form .vaccination-date .k-datepicker .k-picker-wrap,\n.fd-form .vaccination-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .vaccination-date .k-select {\n    display: none !important;\n}\n\n.fd-form .vaccination-date input {\n    padding-left: 0px;\n}\n\n/* hide the wizard progress bar on plumsail.com */\n.fd-form .wizard-progress-bar {\n    display: none;\n}\n\n/*show bulleted list on plumsail.com */\n.fd-form ul {\n    list-style-type: disc !important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
         "primary": "#4871e3",
         "bodyText": "#373A3C",
         "bodyBackground": "#f6f8fe",
-        "fontFamily": "Work Sans",
-        "fontType": 1,
+        "fontFamily": "Arial, Helvetica, sans-serif",
+        "fontType": 0,
         "fontSize": 15,
         "fontWeight": 300,
         "borderThickness": 2,
         "borderRadius": 8,
         "shadow": false,
-        "themeId": "d76bebf967c16428265bed3556716e0f"
+        "themeId": "8eb82e02cd5b7f79a700ecd8bc49178e",
+        "isDark": false
     },
-    "timezone": "Europe/Budapest",
+    "timezone": "America/Los_Angeles",
     "culture": "en",
     "userLanguage": null,
     "userCulture": null,
