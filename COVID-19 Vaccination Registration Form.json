@@ -3,914 +3,907 @@
         "type": "Grid",
         "model": {
             "stacked": "md",
-            "frame": {
-                "horizontal": null,
-                "vertical": null,
-                "radius": null
-            },
-            "border": {
-                "width": null,
-                "color": null
-            },
-            "rows": [{
-                "cells": [{
-                    "padding": [40, null, null, null],
-                    "component": {
-                        "type": "Heading",
-                        "model": {
-                            "_internalName": "Heading1",
-                            "heading": "COVID-19 Vaccination Registration Form",
-                            "view": "Normal",
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+            "frame": { "horizontal": null, "vertical": null, "radius": null },
+            "border": { "width": null, "color": null },
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "padding": [40, null, null, null],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading1",
+                                    "heading": "COVID-19 Vaccination Registration Form",
+                                    "view": "Normal",
+                                    "font": { "style": "Normal", "weight": "Semibold" },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H1",
+                                    "textAlignment": "Center"
+                                }
                             },
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
-                            },
-                            "size": "H1",
-                            "textAlignment": "Center"
+                            "alignment": { "horizontal": "Justify", "vertical": "Top" },
+                            "columns": { "width": 12 }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [20, 40, 40, 40],
-                    "component": {
-                        "type": "Wizard",
-                        "model": {
-                            "_internalName": "Wizard1",
-                            "shape": "Tab",
-                            "nextText": "Next",
-                            "backText": "Back",
-                            "finishText": "Complete",
-                            "savingText": "Submitting...",
-                            "finish": "return fd.save();",
-                            "steps": [{
-                                "_internalName": "Step5",
-                                "title": "Consent",
-                                "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                        "stacked": "md",
-                                        "frame": {
-                                            "horizontal": null,
-                                            "vertical": null,
-                                            "radius": null
-                                        },
-                                        "border": {
-                                            "width": null,
-                                            "color": null
-                                        },
-                                        "rows": [{
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Text",
-                                                    "model": {
-                                                        "_internalName": "Text2",
-                                                        "text": "<p><strong>Take the time to read the following information carefully, and don't hesitate to seek assistance if you have any questions or concerns.</strong></p><ul><li>The COVID-19 vaccine lowers the risk of contracting the virus and suffering from severe illness.</li><li>Please be aware that no vaccine is 100% effective, but getting vaccinated reduces the severity of any potential infection.<br /></li><li>It may take a few weeks for your body to build up protection after receiving the vaccine, so continue to follow health guidelines during this period.<br /></li><li>The vaccine may have side effects like other vaccines or medicines, but not everyone experiences them.<br /></li><li>Common side effects include fever, pain at the injection site, redness and hardness of the skin at the injection site, headache, muscle and joint aches, fatigue, nausea/vomiting, chills, and underarm gland swelling on the side of study vaccination.<br /></li><li>If you experience any side effects, please remain calm and consult your doctor immediately.<br /></li><li>If <strong>you are pregnant</strong> or planning to become pregnant, or if your partner is planning to become pregnant, it's essential to consult your doctor before getting vaccinated to ensure it is safe for you.</li></ul><h6><br /></h6>"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }]
-                                    }
-                                }
-                            }, {
-                                "_internalName": "Step1",
-                                "title": "Personal Information",
-                                "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                        "stacked": "md",
-                                        "frame": {
-                                            "horizontal": null,
-                                            "vertical": null,
-                                            "radius": null
-                                        },
-                                        "border": {
-                                            "width": null,
-                                            "color": null
-                                        },
-                                        "rows": [{
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "SingleLineText",
-                                                    "model": {
-                                                        "_internalName": "FirstName",
-                                                        "title": {
-                                                            "text": "First Name",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "type": "Anything"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }, {
-                                                "component": {
-                                                    "type": "SingleLineText",
-                                                    "model": {
-                                                        "_internalName": "LastName",
-                                                        "title": {
-                                                            "text": "Last Name",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "type": "Anything"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Date",
-                                                    "model": {
-                                                        "_internalName": "BirthDate",
-                                                        "title": {
-                                                            "text": "Birth Date",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        }
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }, {
-                                                "component": {
-                                                    "type": "SingleChoice",
-                                                    "model": {
-                                                        "_internalName": "Gender",
-                                                        "title": {
-                                                            "text": "Gender",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Male\nFemale\nOther",
-                                                            "allowUserValue": false
-                                                        },
-                                                        "cColumns": 3,
-                                                        "options": "Male\nFemale\nOther",
-                                                        "allowUserValue": false
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "SingleLineText",
-                                                    "model": {
-                                                        "_internalName": "Email",
-                                                        "title": {
-                                                            "text": "Email",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cHint": "username@domain.com",
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "type": "E-mail",
-                                                        "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                        "error": "This field must contain a valid e-mail address."
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }, {
-                                                "component": {
-                                                    "type": "MaskedInput",
-                                                    "model": {
-                                                        "_internalName": "PhoneNumber",
-                                                        "title": {
-                                                            "text": "Phone Number",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "mask": "000-000-0000"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "MultiLineText",
-                                                    "model": {
-                                                        "_internalName": "Address",
-                                                        "title": {
-                                                            "text": "Address",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "mode": "Plain"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "SingleLineText",
-                                                    "model": {
-                                                        "_internalName": "InsuranceCompany",
-                                                        "title": {
-                                                            "text": "Insurance Company",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "type": "Anything"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }, {
-                                                "component": {
-                                                    "type": "SingleLineText",
-                                                    "model": {
-                                                        "_internalName": "InsuranceNumber",
-                                                        "title": {
-                                                            "text": "Insurance Number",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "type": "Anything"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }]
-                                        }]
-                                    }
-                                }
-                            }, {
-                                "_internalName": "Step2",
-                                "title": "Medical History",
-                                "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                        "stacked": "md",
-                                        "frame": {
-                                            "horizontal": null,
-                                            "vertical": null,
-                                            "radius": null
-                                        },
-                                        "border": {
-                                            "width": null,
-                                            "color": null
-                                        },
-                                        "rows": [{
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "SingleChoice",
-                                                    "model": {
-                                                        "_internalName": "ChronicConditions",
-                                                        "title": {
-                                                            "text": "Do you have any chronic health condition?",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
-                                                        "cColumns": 4,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }, {
-                                                "component": {
-                                                    "type": "MultiLineText",
-                                                    "model": {
-                                                        "_internalName": "DiagnosedChronicHealthProblems",
-                                                        "title": {
-                                                            "text": "List all diagnosed chronic health problems:",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "mode": "Plain"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "SingleChoice",
-                                                    "model": {
-                                                        "_internalName": "DiagnosedCOVID",
-                                                        "title": {
-                                                            "text": "Have you been diagnosed with COVID-19?",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
-                                                        "cColumns": 4,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }, {
-                                                "component": {
-                                                    "type": "Date",
-                                                    "model": {
-                                                        "_internalName": "DiagnosedCOVIDDate",
-                                                        "title": {
-                                                            "text": "Date",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        }
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "SingleChoice",
-                                                    "model": {
-                                                        "_internalName": "Immunized",
-                                                        "title": {
-                                                            "text": "Have you been immunized against COVID-19 before?",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
-                                                        "cColumns": 4,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }, {
-                                                "component": {
-                                                    "type": "Date",
-                                                    "model": {
-                                                        "_internalName": "ImmunizationDate",
-                                                        "title": {
-                                                            "text": "Immunization Date",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        }
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "SingleChoice",
-                                                    "model": {
-                                                        "_internalName": "COVIDContact",
-                                                        "title": {
-                                                            "text": "Have you been in contact with a COVID-19 positive person in the last 14 days?",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo\nUncertain",
-                                                            "allowUserValue": false
-                                                        },
-                                                        "cColumns": 6,
-                                                        "options": "Yes\nNo\nUncertain",
-                                                        "allowUserValue": false
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 8
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "MultipleChoice",
-                                                    "model": {
-                                                        "_internalName": "Symptoms",
-                                                        "title": {
-                                                            "text": "Do you have any of the following symptoms?",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Cough\nCold\nFever\nShortness of breath\nSore throat\nLoss of smell or taste\nAbdominal pain/diarrhea",
-                                                            "allowUserValue": true
-                                                        },
-                                                        "cColumns": 2,
-                                                        "options": "Cough\nCold\nFever\nShortness of breath\nSore throat\nLoss of smell or taste\nAbdominal pain/diarrhea",
-                                                        "allowUserValue": true
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }]
-                                    }
-                                }
-                            }, {
-                                "_internalName": "Step4",
-                                "title": "Vaccination",
-                                "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                        "stacked": "md",
-                                        "frame": {
-                                            "horizontal": null,
-                                            "vertical": null,
-                                            "radius": null
-                                        },
-                                        "border": {
-                                            "width": null,
-                                            "color": null
-                                        },
-                                        "rows": [{
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "DropDown",
-                                                    "model": {
-                                                        "_internalName": "VaccineBrand",
-                                                        "title": {
-                                                            "text": "Vaccine Brand",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Pfizer\nNovavax\nModerna",
-                                                            "allowUserValue": true
-                                                        },
-                                                        "selection": "Single",
-                                                        "options": "Pfizer\nNovavax\nModerna",
-                                                        "allowUserValue": true
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Middle"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "padding": [5, null, 5, null],
-                                                "component": {
-                                                    "type": "Heading",
-                                                    "model": {
-                                                        "_internalName": "Heading2",
-                                                        "heading": "",
-                                                        "view": "Line",
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "size": "H4",
-                                                        "textAlignment": "Center"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "_internalName": "Grid1",
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "Date",
-                                                                    "model": {
-                                                                        "_internalName": "VaccinationDate",
-                                                                        "title": {
-                                                                            "text": "Vaccination Date:",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "class": "vaccination-date",
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [20, 40, 40, 40],
+                            "component": {
+                                "type": "Wizard",
+                                "model": {
+                                    "_internalName": "Wizard1",
+                                    "shape": "Tab",
+                                    "nextText": "Next",
+                                    "backText": "Back",
+                                    "finishText": "Complete",
+                                    "savingText": "Submitting...",
+                                    "finish": "return fd.save();",
+                                    "steps": [
+                                        {
+                                            "_internalName": "Step5",
+                                            "title": "Consent",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": { "width": null, "color": null },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Text",
+                                                                        "model": {
+                                                                            "_internalName": "Text2",
+                                                                            "text": "<p><strong>Take the time to read the following information carefully, and don't hesitate to seek assistance if you have any questions or concerns.</strong></p><ul><li>The COVID-19 vaccine lowers the risk of contracting the virus and suffering from severe illness.</li><li>Please be aware that no vaccine is 100% effective, but getting vaccinated reduces the severity of any potential infection.<br /></li><li>It may take a few weeks for your body to build up protection after receiving the vaccine, so continue to follow health guidelines during this period.<br /></li><li>The vaccine may have side effects like other vaccines or medicines, but not everyone experiences them.<br /></li><li>Common side effects include fever, pain at the injection site, redness and hardness of the skin at the injection site, headache, muscle and joint aches, fatigue, nausea/vomiting, chills, and underarm gland swelling on the side of study vaccination.<br /></li><li>If you experience any side effects, please remain calm and consult your doctor immediately.<br /></li><li>If <strong>you are pregnant</strong> or planning to become pregnant, or if your partner is planning to become pregnant, it's essential to consult your doctor before getting vaccinated to ensure it is safe for you.</li></ul><h6><br /></h6>"
                                                                         }
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 12 }
                                                                 }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "Text",
-                                                                    "model": {
-                                                                        "_internalName": "Text3",
-                                                                        "text": "<p data-pm-slice=\"1 1 []\">The information I have provided is correct, and I consent to receiving the COVID-19 vaccine willingly.</p>"
-                                                                    }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "Step1",
+                                            "title": "Personal Information",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": { "width": null, "color": null },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "FirstName",
+                                                                            "title": {
+                                                                                "text": "First Name",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
                                                                 },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "LastName",
+                                                                            "title": {
+                                                                                "text": "Last Name",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
                                                                 }
-                                                            }]
-                                                        }]
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }, {
-                                                "component": {
-                                                    "type": "Signature",
-                                                    "model": {
-                                                        "_internalName": "Signature",
-                                                        "title": {
-                                                            "text": "Signature",
-                                                            "visible": false
+                                                            ]
                                                         },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Date",
+                                                                        "model": {
+                                                                            "_internalName": "BirthDate",
+                                                                            "title": {
+                                                                                "text": "Birth Date",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleChoice",
+                                                                        "model": {
+                                                                            "_internalName": "Gender",
+                                                                            "title": {
+                                                                                "text": "Gender",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "StaticList": {
+                                                                                "options": "Male\nFemale\nOther",
+                                                                                "allowUserValue": false
+                                                                            },
+                                                                            "cColumns": 3,
+                                                                            "options": "Male\nFemale\nOther",
+                                                                            "allowUserValue": false
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                }
+                                                            ]
                                                         },
-                                                        "wrap": true,
-                                                        "cWidth": 300,
-                                                        "height": 150,
-                                                        "inkColor": "#000000"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Left",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "Email",
+                                                                            "title": {
+                                                                                "text": "Email",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cHint": "username@domain.com",
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "E-mail",
+                                                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                                            "error": "This field must contain a valid e-mail address."
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "MaskedInput",
+                                                                        "model": {
+                                                                            "_internalName": "PhoneNumber",
+                                                                            "title": {
+                                                                                "text": "Phone Number",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mask": "000-000-0000"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "MultiLineText",
+                                                                        "model": {
+                                                                            "_internalName": "Address",
+                                                                            "title": {
+                                                                                "text": "Address",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Plain"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 12 }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "InsuranceCompany",
+                                                                            "title": {
+                                                                                "text": "Insurance Company",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "InsuranceNumber",
+                                                                            "title": {
+                                                                                "text": "Insurance Number",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            }]
-                                        }]
-                                    }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "Step2",
+                                            "title": "Medical History",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": { "width": null, "color": null },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleChoice",
+                                                                        "model": {
+                                                                            "_internalName": "ChronicConditions",
+                                                                            "title": {
+                                                                                "text": "Do you have any chronic health condition?",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "StaticList": {
+                                                                                "options": "Yes\nNo",
+                                                                                "allowUserValue": false
+                                                                            },
+                                                                            "cColumns": 4,
+                                                                            "options": "Yes\nNo",
+                                                                            "allowUserValue": false
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "MultiLineText",
+                                                                        "model": {
+                                                                            "_internalName": "DiagnosedChronicHealthProblems",
+                                                                            "title": {
+                                                                                "text": "List all diagnosed chronic health problems:",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Plain"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleChoice",
+                                                                        "model": {
+                                                                            "_internalName": "DiagnosedCOVID",
+                                                                            "title": {
+                                                                                "text": "Have you been diagnosed with COVID-19?",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "StaticList": {
+                                                                                "options": "Yes\nNo",
+                                                                                "allowUserValue": false
+                                                                            },
+                                                                            "cColumns": 4,
+                                                                            "options": "Yes\nNo",
+                                                                            "allowUserValue": false
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Date",
+                                                                        "model": {
+                                                                            "_internalName": "DiagnosedCOVIDDate",
+                                                                            "title": {
+                                                                                "text": "Date",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleChoice",
+                                                                        "model": {
+                                                                            "_internalName": "Immunized",
+                                                                            "title": {
+                                                                                "text": "Have you been immunized against COVID-19 before?",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "StaticList": {
+                                                                                "options": "Yes\nNo",
+                                                                                "allowUserValue": false
+                                                                            },
+                                                                            "cColumns": 4,
+                                                                            "options": "Yes\nNo",
+                                                                            "allowUserValue": false
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Date",
+                                                                        "model": {
+                                                                            "_internalName": "ImmunizationDate",
+                                                                            "title": {
+                                                                                "text": "Immunization Date",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleChoice",
+                                                                        "model": {
+                                                                            "_internalName": "COVIDContact",
+                                                                            "title": {
+                                                                                "text": "Have you been in contact with a COVID-19 positive person in the last 14 days?",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "StaticList": {
+                                                                                "options": "Yes\nNo\nUncertain",
+                                                                                "allowUserValue": false
+                                                                            },
+                                                                            "cColumns": 6,
+                                                                            "options": "Yes\nNo\nUncertain",
+                                                                            "allowUserValue": false
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 8 }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "MultipleChoice",
+                                                                        "model": {
+                                                                            "_internalName": "Symptoms",
+                                                                            "title": {
+                                                                                "text": "Do you have any of the following symptoms?",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "StaticList": {
+                                                                                "options": "Cough\nCold\nFever\nShortness of breath\nSore throat\nLoss of smell or taste\nAbdominal pain/diarrhea",
+                                                                                "allowUserValue": true
+                                                                            },
+                                                                            "cColumns": 2,
+                                                                            "options": "Cough\nCold\nFever\nShortness of breath\nSore throat\nLoss of smell or taste\nAbdominal pain/diarrhea",
+                                                                            "allowUserValue": true
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 12 }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "Step4",
+                                            "title": "Vaccination",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": { "width": null, "color": null },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DropDown",
+                                                                        "model": {
+                                                                            "_internalName": "VaccineBrand",
+                                                                            "title": {
+                                                                                "text": "Vaccine Brand",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "StaticList": {
+                                                                                "options": "Pfizer\nNovavax\nModerna",
+                                                                                "allowUserValue": true
+                                                                            },
+                                                                            "selection": "Single",
+                                                                            "options": "Pfizer\nNovavax\nModerna",
+                                                                            "allowUserValue": true
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Middle"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "padding": [5, null, 5, null],
+                                                                    "component": {
+                                                                        "type": "Heading",
+                                                                        "model": {
+                                                                            "_internalName": "Heading2",
+                                                                            "heading": "",
+                                                                            "view": "Line",
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "size": "H4",
+                                                                            "textAlignment": "Center"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 12 }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Grid",
+                                                                        "model": {
+                                                                            "_internalName": "Grid1",
+                                                                            "stacked": "md",
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "border": {
+                                                                                "width": null,
+                                                                                "color": null
+                                                                            },
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cells": [
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "Date",
+                                                                                                "model": {
+                                                                                                    "_internalName": "VaccinationDate",
+                                                                                                    "title": {
+                                                                                                        "text": "Vaccination Date:",
+                                                                                                        "visible": true
+                                                                                                    },
+                                                                                                    "orientation": "Vertical",
+                                                                                                    "required": false,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "class": "vaccination-date",
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": { "width": 12 }
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cells": [
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "Text",
+                                                                                                "model": {
+                                                                                                    "_internalName": "Text3",
+                                                                                                    "text": "<p data-pm-slice=\"1 1 []\">The information I have provided is correct, and I consent to receiving the COVID-19 vaccine willingly.</p>"
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": { "width": 12 }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Signature",
+                                                                        "model": {
+                                                                            "_internalName": "Signature",
+                                                                            "title": {
+                                                                                "text": "Signature",
+                                                                                "visible": false
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cWidth": 300,
+                                                                            "height": 150,
+                                                                            "inkColor": "#000000"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Left",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": { "width": 6 }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    ]
                                 }
-                            }]
+                            },
+                            "alignment": { "horizontal": "Justify", "vertical": "Top" },
+                            "columns": { "width": 12 }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
+                    ]
+                }
+            ]
         }
     },
     "tablet": null,
     "phone": null,
     "js": "fd.rendered(function() {\r\n\r\n    //disable VaccinationDate date fields\r\n    fd.field('VaccinationDate').disabled = true;\r\n    //set VaccinationDate to the current date\r\n    fd.field('VaccinationDate').value = new Date();\r\n\r\n    //load the Moment.js library to disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            birthDateCalendarSetUp();\r\n\r\n        });\r\n        \r\n    //set up calendar start view and disable dates\r\n    fd.field('DiagnosedCOVIDDate').widgetOptions = {\r\n        max: new Date(),\r\n        min: new Date('2020-03-01'),\r\n        start: 'decade'\r\n    }\r\n    \r\n    fd.field('ImmunizationDate').widgetOptions = {\r\n        max: new Date(),\r\n        min: new Date('2021-01-01'),\r\n        start: 'decade'\r\n    }\r\n\r\n    //call functions when changing field values    \r\n    fd.field('ChronicConditions').$on('change', showHideDiagnosedChronicHealthProblems);\r\n    fd.field('DiagnosedCOVID').$on('change', showHideDiagnosedCOVIDDate);\r\n    fd.field('Immunized').$on('change', showHideImmunizationDate);\r\n\r\n    //сalling functions on form loading\r\n    showHideDiagnosedChronicHealthProblems();\r\n    showHideDiagnosedCOVIDDate();\r\n    showHideImmunizationDate();\r\n\r\n});\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction birthDateCalendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}\r\n\r\n//show hide DiagnosedChronicHealthProblems field\r\nfunction showHideDiagnosedChronicHealthProblems() {\r\n    if (fd.field('ChronicConditions').value == 'Yes') {\r\n        fd.field('DiagnosedChronicHealthProblems').hidden = false;\r\n    } else {\r\n        fd.field('DiagnosedChronicHealthProblems').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide DiagnosedCOVIDDate field\r\nfunction showHideDiagnosedCOVIDDate() {\r\n    if (fd.field('DiagnosedCOVID').value == 'Yes') {\r\n        fd.field('DiagnosedCOVIDDate').hidden = false;\r\n    } else {\r\n        fd.field('DiagnosedCOVIDDate').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide ImmunizationDate field\r\nfunction showHideImmunizationDate() {\r\n    if (fd.field('Immunized').value == 'Yes') {\r\n        fd.field('ImmunizationDate').hidden = false;\r\n    } else {\r\n        fd.field('ImmunizationDate').hidden = true;\r\n    }\r\n}",
-    "css": "/** styling of the disable Date field **/\n\n.fd-form .vaccination-date .form-control:disabled,\n.fd-form .vaccination-date .form-control[readonly],\n.fd-form .vaccination-date .k-datepicker .k-picker-wrap,\n.fd-form .vaccination-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .vaccination-date .k-select {\n    display: none !important;\n}\n\n.fd-form .vaccination-date input {\n    padding-left: 0px;\n}\n\n/* hide the wizard progress bar on plumsail.com */\n.fd-form .wizard-progress-bar {\n    display: none;\n}\n\n/*show bulleted list on plumsail.com */\n.fd-form ul {\n    list-style-type: disc !important;\n}\n",
+    "css": "/** styling of the disable Date field **/\n\n.fd-form .vaccination-date .form-control:disabled,\n.fd-form .vaccination-date .form-control[readonly],\n.fd-form .vaccination-date .k-datepicker .k-picker-wrap,\n.fd-form .vaccination-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .vaccination-date .k-select {\n    display: none !important;\n}\n\n.fd-form .vaccination-date input {\n    padding-left: 0px;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
@@ -928,7 +921,7 @@
         "isDark": false
     },
     "timezone": "America/Los_Angeles",
-    "culture": "en",
+    "culture": "en-US",
     "userLanguage": null,
     "userCulture": null,
     "thankYouMessage": null,
