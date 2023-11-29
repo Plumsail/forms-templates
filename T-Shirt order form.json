@@ -1,0 +1,823 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "T-Shirt Order Form",
+                            "view": "Normal",
+                            "font": {
+                                "color": "",
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H1",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [30, 70, 15, 70],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid4",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 40,
+                                "vertical": 10,
+                                "radius": 4
+                            },
+                            "border": {
+                                "width": 2,
+                                "color": "#ebebeb"
+                            },
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "Grid",
+                                        "model": {
+                                            "_internalName": "Grid3",
+                                            "stacked": "md",
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "border": {
+                                                "width": null,
+                                                "color": null
+                                            },
+                                            "rows": [{
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "Size",
+                                                            "title": {
+                                                                "text": "Size",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "StaticList": {
+                                                                "options": "XS\nS\nM\nL\nXl\nXXL\n3XL",
+                                                                "allowUserValue": false
+                                                            },
+                                                            "selection": "Single",
+                                                            "options": "XS\nS\nM\nL\nXl\nXXL\n3XL",
+                                                            "allowUserValue": false
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }, {
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "Color",
+                                                            "title": {
+                                                                "text": "Color",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "StaticList": {
+                                                                "options": "White\nBeige\nGrey\nBlack",
+                                                                "allowUserValue": false
+                                                            },
+                                                            "selection": "Single",
+                                                            "options": "White\nBeige\nGrey\nBlack",
+                                                            "allowUserValue": false
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }]
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Grid",
+                                        "model": {
+                                            "_internalName": "Grid6",
+                                            "stacked": "md",
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "border": {
+                                                "width": null,
+                                                "color": null
+                                            },
+                                            "rows": [{
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "TshirtPrint",
+                                                            "title": {
+                                                                "text": "Print",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "StaticList": {
+                                                                "options": "Dragon\nFlower\nAbstract\nOther",
+                                                                "allowUserValue": false
+                                                            },
+                                                            "selection": "Single",
+                                                            "options": "Dragon\nFlower\nAbstract\nOther",
+                                                            "allowUserValue": false
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "Attachments",
+                                                        "model": {
+                                                            "_internalName": "CustomPrint",
+                                                            "title": {
+                                                                "text": "Custom Print",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "maxSize": 10240,
+                                                            "allowedExt": "jpg\njpeg\npng\nsvg"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "padding": [15, null, null, null],
+                                                    "component": {
+                                                        "type": "Grid",
+                                                        "model": {
+                                                            "_internalName": "Grid5",
+                                                            "stacked": "md",
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": 4
+                                                            },
+                                                            "border": {
+                                                                "width": null,
+                                                                "color": ""
+                                                            },
+                                                            "class": "cart",
+                                                            "rows": [{
+                                                                "cells": [{
+                                                                    "padding": [null, null, 5, null],
+                                                                    "component": {
+                                                                        "type": "Heading",
+                                                                        "model": {
+                                                                            "_internalName": "Heading3",
+                                                                            "heading": "Cart:",
+                                                                            "view": "Normal",
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "size": "H4",
+                                                                            "textAlignment": "Left"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }]
+                                                            }, {
+                                                                "cells": [{
+                                                                    "component": {
+                                                                        "type": "Currency",
+                                                                        "model": {
+                                                                            "_internalName": "TShirt",
+                                                                            "title": {
+                                                                                "text": "T-Shirt:",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Horizontal",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "min": 0,
+                                                                            "symbol": "$",
+                                                                            "precision": 2,
+                                                                            "spinButtons": false
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }]
+                                                            }, {
+                                                                "cells": [{
+                                                                    "component": {
+                                                                        "type": "Currency",
+                                                                        "model": {
+                                                                            "_internalName": "Printing",
+                                                                            "title": {
+                                                                                "text": "Printing:",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Horizontal",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "min": 0,
+                                                                            "symbol": "$",
+                                                                            "precision": 2,
+                                                                            "spinButtons": false
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }]
+                                                            }, {
+                                                                "cells": [{
+                                                                    "component": {
+                                                                        "type": "Currency",
+                                                                        "model": {
+                                                                            "_internalName": "Total",
+                                                                            "title": {
+                                                                                "text": "Order Total:",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Horizontal",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Bold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Bold"
+                                                                            },
+                                                                            "min": 0,
+                                                                            "symbol": "$",
+                                                                            "precision": 2,
+                                                                            "spinButtons": false
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }]
+                                                            }]
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "Grid",
+                                        "model": {
+                                            "_internalName": "Grid1",
+                                            "stacked": "md",
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": 4
+                                            },
+                                            "border": {
+                                                "width": 1,
+                                                "color": "#ebebeb"
+                                            },
+                                            "class": "bg-img",
+                                            "rows": [{
+                                                "cells": [{
+                                                    "padding": [85, null, null, null],
+                                                    "component": {
+                                                        "type": "Image",
+                                                        "model": {
+                                                            "_internalName": "Image2",
+                                                            "width": 160,
+                                                            "class": "img2",
+                                                            "target": "_blank"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Center",
+                                                        "vertical": "Middle"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Middle"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading2",
+                            "heading": "Delivery Information",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [null, 70, 15, 70],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid2",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 40,
+                                "vertical": 10,
+                                "radius": 4
+                            },
+                            "border": {
+                                "width": 2,
+                                "color": "#ebebeb"
+                            },
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Name",
+                                            "title": {
+                                                "text": "Full Name",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Email",
+                                            "title": {
+                                                "text": "Email",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "username@domain.com",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "E-mail",
+                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                            "error": "This field must contain a valid e-mail address."
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "StreetAddress",
+                                            "title": {
+                                                "text": "Address",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Street Address",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "City",
+                                            "title": {
+                                                "text": "City",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "City",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "RegionState",
+                                            "title": {
+                                                "text": "Region/State",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Region/State",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "PostalZipCode",
+                                            "title": {
+                                                "text": "Postal / Zip Code",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Postal / Zip Code",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Country",
+                                            "title": {
+                                                "text": "Country",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Country",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [30, 70, null, 70],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "PLACE ORDER",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "\r\n//show a print over t-shirt mockup\r\nfunction previewtShirtPrint() {\r\n    fd.field('CustomPrint').hidden = true;\r\n    let tShirtPrint = fd.field('TshirtPrint').value;\r\n  \r\n    if (tShirtPrint == 'Abstract') {\r\n        fd.control('Image2').source = 'https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/abstract.png';\r\n    } else if (tShirtPrint == 'Dragon') {\r\n        fd.control('Image2').source = 'https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/dragon.png';\r\n    } else if (tShirtPrint == 'Flower') {\r\n        fd.control('Image2').source = 'https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/flower.png';\r\n    } else if (tShirtPrint == 'Other') {\r\n        fd.field('CustomPrint').hidden = false;\r\n        if (fd.field('CustomPrint').value.length > 0) {\r\n            fd.control('Image2').source = fd.field('CustomPrint').value[0].url;\r\n        } else {\r\n            fd.control('Image2').source = '';\r\n        }\r\n    }\r\n}\r\n\r\n//calculate total for the order\r\nfunction shirtPrice() {\r\n    let tShirtPrintType = fd.field('TshirtPrint').value;\r\n    fd.field('TShirt').value = 14.59;\r\n  \r\n    if (tShirtPrintType == 'Other') {\r\n        fd.field('Printing').value = 10.99;\r\n    } else if (!tShirtPrintType) {\r\n        fd.field('Printing').value = 0;\r\n    } else {\r\n        fd.field('Printing').value = 5.99;\r\n    }\r\n    fd.field('Total').value = fd.field('TShirt').value + fd.field('Printing').value;\r\n}\r\n\r\nfd.rendered(function() {\r\n    \r\n    //disable price fields on form load \r\n    fd.field('TShirt').disabled = true;\r\n    fd.field('Printing').disabled = true;\r\n    fd.field('Total').disabled = true;\r\n    \r\n    //call functions on form load\r\n    previewtShirtPrint();\r\n    shirtPrice();\r\n\r\n    //call functions when field value changes\r\n    fd.field('TshirtPrint').$on('change', previewtShirtPrint);\r\n    fd.field('CustomPrint').$on('change', previewtShirtPrint);\r\n    fd.field('TshirtPrint').$on('change', shirtPrice);\r\n});",
+    "css": "/* set the t-shirt mockup as the grid background */\r\n.fd-form div.bg-img {\r\n\tbackground: url('https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/t-shirts-mockup.jpg') no-repeat center;\r\n\tbackground-size: cover;\r\n\twidth: 430px !important;\r\n\theight: 490px;\r\n}\r\n\r\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#737373",
+        "bodyText": "#333333",
+        "bodyBackground": "#FFFFFF",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "themeId": "gray",
+        "isDark": false
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
+}

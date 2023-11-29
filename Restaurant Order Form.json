@@ -1,0 +1,785 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid3",
+                            "stacked": "sm",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": 4
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "class": "bg-img",
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "Heading",
+                                        "model": {
+                                            "_internalName": "Heading1",
+                                            "heading": "Your Restaurant Favorites",
+                                            "view": "Normal",
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "size": "H1",
+                                            "textAlignment": "Center"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid6",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 40,
+                                "vertical": 20,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text1",
+                                            "text": "Please select your preferred dishes from the menu below and specifying the quantity for each item."
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "DataTable",
+                                        "model": {
+                                            "_internalName": "Appetizers",
+                                            "title": {
+                                                "text": "Appetizers & Salads",
+                                                "visible": true
+                                            },
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "newLine": "Top",
+                                            "delete": "Last",
+                                            "columns": [{
+                                                "_internalName": "Item",
+                                                "title": "Item",
+                                                "required": true,
+                                                "type": "Dropdown",
+                                                "selection": "Single",
+                                                "options": "Garlic Parmesan Fries\nMozzarella Sticks\nChicken Wings (6 pcs)\nBruschetta\nCaesar Salad\nGreek Salad\nCobb Salad\nCaprese Salad"
+                                            }, {
+                                                "_internalName": "Quantity",
+                                                "title": "Quantity",
+                                                "required": true,
+                                                "type": "Number",
+                                                "min": 1,
+                                                "max": 10,
+                                                "step": 1,
+                                                "spinButtons": true,
+                                                "percents": false,
+                                                "precision": 0
+                                            }, {
+                                                "_internalName": "Price",
+                                                "title": "Price ($)",
+                                                "required": false,
+                                                "type": "Currency",
+                                                "step": 1,
+                                                "symbol": null,
+                                                "spinButtons": true,
+                                                "precision": 2,
+                                                "min": 0
+                                            }, {
+                                                "_internalName": "Total",
+                                                "title": "Total",
+                                                "required": false,
+                                                "type": "Currency",
+                                                "step": 1,
+                                                "symbol": null,
+                                                "spinButtons": true,
+                                                "precision": 2,
+                                                "min": 0
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Currency",
+                                        "model": {
+                                            "_internalName": "AppetizersTotal",
+                                            "title": {
+                                                "text": "Total",
+                                                "visible": true
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "min": 0,
+                                            "symbol": "$",
+                                            "precision": 2,
+                                            "spinButtons": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "DataTable",
+                                        "model": {
+                                            "_internalName": "MainCourses",
+                                            "title": {
+                                                "text": "Main Courses",
+                                                "visible": true
+                                            },
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "newLine": "Top",
+                                            "delete": "Last",
+                                            "columns": [{
+                                                "_internalName": "Item",
+                                                "title": "Item",
+                                                "required": true,
+                                                "type": "Dropdown",
+                                                "selection": "Single",
+                                                "options": "Spaghetti Bolognese\nGrilled Salmon\nChicken Alfredo Pasta\nSteak (8 oz)\nMargherita Pizza\nPepperoni Pizza\nVegetarian Pizza\nBBQ Chicken Pizza\nClassic Cheeseburger\nVeggie Burger\nBacon Avocado Burger\nMushroom Swiss Burger"
+                                            }, {
+                                                "_internalName": "Quantity",
+                                                "title": "Quantity",
+                                                "required": true,
+                                                "type": "Number",
+                                                "min": 1,
+                                                "max": 10,
+                                                "step": 1,
+                                                "spinButtons": true,
+                                                "percents": false,
+                                                "precision": 0
+                                            }, {
+                                                "_internalName": "Price",
+                                                "title": "Price ($)",
+                                                "required": false,
+                                                "type": "Currency",
+                                                "step": 1,
+                                                "symbol": null,
+                                                "spinButtons": true,
+                                                "precision": 2,
+                                                "min": 0
+                                            }, {
+                                                "_internalName": "Total",
+                                                "title": "Total",
+                                                "required": false,
+                                                "type": "Currency",
+                                                "step": 1,
+                                                "symbol": null,
+                                                "spinButtons": true,
+                                                "precision": 2,
+                                                "min": 0
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Currency",
+                                        "model": {
+                                            "_internalName": "MainCoursesTotal",
+                                            "title": {
+                                                "text": "Total",
+                                                "visible": true
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "min": 0,
+                                            "symbol": "$",
+                                            "precision": 2,
+                                            "spinButtons": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "DataTable",
+                                        "model": {
+                                            "_internalName": "Desserts",
+                                            "title": {
+                                                "text": "Desserts",
+                                                "visible": true
+                                            },
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "newLine": "Top",
+                                            "delete": "Last",
+                                            "columns": [{
+                                                "_internalName": "Item",
+                                                "title": "Item",
+                                                "required": true,
+                                                "type": "Dropdown",
+                                                "selection": "Single",
+                                                "options": "Chocolate Lava Cake\nNew York Cheesecake\nFruit Tart\nTiramisu"
+                                            }, {
+                                                "_internalName": "Quantity",
+                                                "title": "Quantity",
+                                                "required": true,
+                                                "type": "Number",
+                                                "min": 1,
+                                                "max": 10,
+                                                "step": 1,
+                                                "spinButtons": true,
+                                                "percents": false,
+                                                "precision": 0
+                                            }, {
+                                                "_internalName": "Price",
+                                                "title": "Price ($)",
+                                                "required": false,
+                                                "type": "Currency",
+                                                "step": 1,
+                                                "symbol": null,
+                                                "spinButtons": true,
+                                                "precision": 2,
+                                                "min": 0
+                                            }, {
+                                                "_internalName": "Total",
+                                                "title": "Total",
+                                                "required": false,
+                                                "type": "Currency",
+                                                "step": 1,
+                                                "symbol": null,
+                                                "spinButtons": true,
+                                                "precision": 2,
+                                                "min": 0
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Currency",
+                                        "model": {
+                                            "_internalName": "DessertsTotal",
+                                            "title": {
+                                                "text": "Total",
+                                                "visible": true
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "min": 0,
+                                            "symbol": "$",
+                                            "precision": 2,
+                                            "spinButtons": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "Currency",
+                                        "model": {
+                                            "_internalName": "Total",
+                                            "width": 60,
+                                            "title": {
+                                                "text": "Total",
+                                                "visible": true
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cWidth": 150,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "min": 0,
+                                            "symbol": "$",
+                                            "precision": 2,
+                                            "spinButtons": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Left",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [20, null, null, null],
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "Delivery",
+                                            "title": {
+                                                "text": "How would you like to receive your order today: delivery or take-away?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "Delivery\nTake away",
+                                                "allowUserValue": false
+                                            },
+                                            "cColumns": 3,
+                                            "options": "Delivery\nTake away",
+                                            "allowUserValue": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "FirstName",
+                                            "title": {
+                                                "text": "Name",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                            "_internalName": "Phone",
+                                            "title": {
+                                                "text": "Phone",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mask": "000-000-0000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Email",
+                                            "title": {
+                                                "text": "Email",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Email",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "E-mail",
+                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                            "error": "This field must contain a valid e-mail address."
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Address",
+                                            "title": {
+                                                "text": "Delivery Address",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Address",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Building",
+                                            "title": {
+                                                "text": "Building",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Building",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Apartment",
+                                            "title": {
+                                                "text": "Apartment",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Apt./Off.",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MultiLineText",
+                                        "model": {
+                                            "_internalName": "Instructions",
+                                            "title": {
+                                                "text": "Instructions",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Special ",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mode": "Plain"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Button",
+                                        "model": {
+                                            "_internalName": "Button1",
+                                            "text": "Order Now!",
+                                            "type": "Primary",
+                                            "click": "return fd.save();"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "// set the price for the dish\r\nvar menu = {\r\n    'Garlic Parmesan Fries': 6.99,\r\n    'Mozzarella Sticks': 8.49,\r\n    'Chicken Wings (6 pcs)': 9.99,\r\n    'Bruschetta': 7.29,\r\n    'Caesar Salad': 10.99,\r\n    'Greek Salad': 11.49,\r\n    'Cobb Salad': 12.99,\r\n    'Caprese Salad': 9.99,\r\n    'Spaghetti Bolognese': 13.99,\r\n    'Grilled Salmon': 17.49,\r\n    'Chicken Alfredo Pasta': 15.99,\r\n    'Steak (8 oz)': 19.99,\r\n    'Margherita Pizza': 12.99,\r\n    'Pepperoni Pizza': 14.49,\r\n    'Vegetarian Pizza': 13.99,\r\n    'BBQ Chicken Pizza': 15.99,\r\n    'Classic Cheeseburger': 11.99,\r\n    'Veggie Burger': 10.99,\r\n    'Bacon Avocado Burger': 13.49,\r\n    'Mushroom Swiss Burger': 12.99,\r\n    'Chocolate Lava Cake': 8.99,\r\n    'New York Cheesecake': 7.99,\r\n    'Fruit Tart': 9.49,\r\n    'Tiramisu': 8.49\r\n};\r\n\r\n//function to show/hide details for delivery\r\nfunction showHideDelivery() {\r\n    if (fd.field('Delivery').value == 'Delivery') {\r\n        fd.field('Address').hidden = false;\r\n        fd.field('Building').hidden = false;\r\n        fd.field('Apartment').hidden = false;\r\n        fd.field('Instructions').hidden = false;\r\n    } else {\r\n        fd.field('Address').hidden = true;\r\n        fd.field('Building').hidden = true;\r\n        fd.field('Apartment').hidden = true;\r\n        fd.field('Instructions').hidden = true;\r\n    }\r\n}\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable Total field\r\n    fd.field('Total').disabled = true;\r\n\r\n    //call function when field value changes\r\n    fd.field('Delivery').$on('change', showHideDelivery);\r\n    //call function on form load\r\n    showHideDelivery();\r\n\r\n    //names of table controls\r\n    let menuCategories = ['Appetizers', 'MainCourses', 'Desserts'];\r\n\r\n    //customize each table control\r\n    menuCategories.forEach((category) => {\r\n\r\n\r\n        let dt = fd.control(category)\r\n\r\n\r\n        // make Price column read-only\r\n        const unitPriceColumn = dt.columns.find(c => c.field === 'Price');\r\n        unitPriceColumn.editable = () => false;\r\n\r\n        // make Total column read-only\r\n        const lineTotalColumn = dt.columns.find(c => c.field === 'Total');\r\n        lineTotalColumn.editable = () => false;\r\n\r\n        dt.$on('change', function(value) {\r\n            //variable to count total\r\n            var categoryTotal = 0.0;\r\n\r\n            if (value) {\r\n                //go through each row one by one\r\n                for (var i = 0; i < value.length; i++) {\r\n\r\n                    if (value[i].Item && !value[i].Quantity) {\r\n                        value[i].set('Quantity', 1);\r\n                    }\r\n\r\n                    // populate Price column\r\n                    value[i].set('Price', menu[value[i].Item] || 0);\r\n\r\n                    // calculate total for the row\r\n                    value[i].set('Total', value[i].Quantity * value[i].Price || 0);\r\n\r\n                    //calculate total for the table\r\n                    if (value[i].Total) {\r\n                        categoryTotal += parseFloat(value[i].Total);\r\n                    }\r\n                }\r\n            }\r\n            //set the category total \r\n            fd.field(category + 'Total').value = categoryTotal;\r\n        });\r\n\r\n        //hide category total \r\n        fd.field(category + 'Total').hidden = true;\r\n\r\n        //calculate total for the whole order\r\n        fd.field(category + 'Total').$on('change', function() {\r\n            fd.field('Total').value = fd.field('AppetizersTotal').value + fd.field('MainCoursesTotal').value + fd.field('DessertsTotal').value;\r\n        })\r\n    })\r\n\r\n\r\n\r\n});",
+    "css": ".fd-form div.bg-img {\n\tbackground: url('https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/food-order.jpg') no-repeat center;\n\tbackground-size: cover;\n}\n\n.fd-form h1 > span,\n.fd-form .fd-heading{\n    background-color: unset !important;\n}\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#407855",
+        "bodyText": "#333333",
+        "bodyBackground": "#FFFFFF",
+        "fontFamily": "Montserrat",
+        "fontType": 1,
+        "fontSize": 16,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 4,
+        "shadow": true,
+        "themeId": "a24131774ee638b9993dc0d64c3c8318",
+        "isDark": false
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
+}
