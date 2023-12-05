@@ -3,14 +3,33 @@
         "type": "Grid",
         "model": {
             "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
             "rows": [{
                 "cells": [{
-                    "class": "header bg-primary",
                     "component": {
                         "type": "Grid",
                         "model": {
                             "_internalName": "Grid1",
                             "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": 20,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "class": "header bg-primary",
+                            "fill": "#335da2",
                             "rows": [{
                                 "cells": [{
                                     "component": {
@@ -18,9 +37,8 @@
                                         "model": {
                                             "_internalName": "Image1",
                                             "width": 100,
-                                            "class": "logo",
                                             "target": "Blank",
-                                            "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/healthcare.png"
+                                            "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/healthcare_logo_hands.png"
                                         }
                                     },
                                     "alignment": {
@@ -38,8 +56,14 @@
                                             "heading": "Health Leaf Hospital",
                                             "view": "Normal",
                                             "font": {
+                                                "color": "#ffffff",
                                                 "style": "Normal",
                                                 "weight": "Semibold"
+                                            },
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
                                             },
                                             "size": "H1",
                                             "textAlignment": "Center"
@@ -57,7 +81,7 @@
                                         "type": "Text",
                                         "model": {
                                             "_internalName": "Text7",
-                                            "text": "<p><strong>Address&nbsp;</strong></p><p>3232 Lindale Avenue, Berkeley,</p><p>California, 94704</p>",
+                                            "text": "<p><strong><span style=\"color:#ffffff;\">Address&nbsp;</span></strong></p><p><span style=\"color:#ffffff;\">3232 Lindale Avenue, Berkeley,</span></p><p><span style=\"color:#ffffff;\">California, 94704</span></p>",
                                             "class": "info"
                                         }
                                     },
@@ -73,7 +97,7 @@
                                         "type": "Text",
                                         "model": {
                                             "_internalName": "Text36",
-                                            "text": "<p><strong>Phone</strong></p><p>510-486-8056</p><p>510-717-3328</p>",
+                                            "text": "<p><strong><span style=\"color:#ffffff;\">Phone</span></strong></p><p><span style=\"color:#ffffff;\">510-486-8056</span></p><p><span style=\"color:#ffffff;\">510-717-3328</span></p>",
                                             "class": "info"
                                         }
                                     },
@@ -159,6 +183,11 @@
                                 "style": "Normal",
                                 "weight": "Semibold"
                             },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
                             "size": "H2",
                             "textAlignment": "Center"
                         }
@@ -186,6 +215,15 @@
                                     "type": "Grid",
                                     "model": {
                                         "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
                                         "rows": [{
                                             "cells": [{
                                                 "component": {
@@ -518,7 +556,7 @@
                                                 }
                                             }, {
                                                 "component": {
-                                                    "type": "Number",
+                                                    "type": "Currency",
                                                     "model": {
                                                         "_internalName": "Excess",
                                                         "width": 180,
@@ -537,8 +575,10 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "decimals": 0,
-                                                        "format": "c0",
+                                                        "min": 0,
+                                                        "symbol": null,
+                                                        "precision": "0",
+                                                        "spinButtons": true,
                                                         "step": 1
                                                     }
                                                 },
@@ -560,6 +600,15 @@
                                     "type": "Grid",
                                     "model": {
                                         "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
                                         "rows": [{
                                             "cells": [{
                                                 "component": {
@@ -730,6 +779,15 @@
                                     "type": "Grid",
                                     "model": {
                                         "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
                                         "rows": [{
                                             "cells": [{
                                                 "component": {
@@ -751,9 +809,10 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "decimals": 0,
-                                                        "format": "n0",
-                                                        "step": 1
+                                                        "min": 0,
+                                                        "precision": "0",
+                                                        "percents": false,
+                                                        "spinButtons": false
                                                     }
                                                 },
                                                 "alignment": {
@@ -783,9 +842,10 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "decimals": 0,
-                                                        "format": "n0",
-                                                        "step": 1
+                                                        "min": 0,
+                                                        "precision": "2",
+                                                        "percents": false,
+                                                        "spinButtons": false
                                                     }
                                                 },
                                                 "alignment": {
@@ -816,9 +876,10 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "decimals": 0,
-                                                        "format": "n0",
-                                                        "step": 1
+                                                        "min": 0,
+                                                        "precision": "1",
+                                                        "percents": false,
+                                                        "spinButtons": false
                                                     }
                                                 },
                                                 "alignment": {
@@ -889,9 +950,11 @@
                                                             "title": "Dosage(mg)",
                                                             "required": false,
                                                             "type": "Number",
-                                                            "decimals": 0,
-                                                            "format": "n0",
-                                                            "step": 1
+                                                            "step": 1,
+                                                            "spinButtons": true,
+                                                            "percents": false,
+                                                            "precision": 0,
+                                                            "min": 0
                                                         }, {
                                                             "_internalName": "FrequencyDay",
                                                             "title": "How often on daily basis?",
@@ -1124,6 +1187,15 @@
                                     "type": "Grid",
                                     "model": {
                                         "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
                                         "rows": [{
                                             "cells": [{
                                                 "padding": [null, null, 20, null],
@@ -3257,6 +3329,15 @@
                                     "type": "Grid",
                                     "model": {
                                         "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
                                         "rows": [{
                                             "cells": [{
                                                 "component": {
@@ -3312,8 +3393,10 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "decimals": 0,
-                                                        "format": "n0",
+                                                        "min": 0,
+                                                        "precision": "0",
+                                                        "percents": false,
+                                                        "spinButtons": true,
                                                         "step": 1
                                                     }
                                                 },
@@ -3345,8 +3428,10 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "decimals": 0,
-                                                        "format": "n0",
+                                                        "min": 0,
+                                                        "precision": "0",
+                                                        "percents": false,
+                                                        "spinButtons": true,
                                                         "step": 1
                                                     }
                                                 },
@@ -3457,8 +3542,10 @@
                                                             "style": "Normal",
                                                             "weight": "Normal"
                                                         },
-                                                        "decimals": 0,
-                                                        "format": "n0",
+                                                        "min": 0,
+                                                        "precision": "0",
+                                                        "percents": false,
+                                                        "spinButtons": true,
                                                         "step": 1
                                                     }
                                                 },
@@ -3615,8 +3702,8 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n}\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable registration date fields\r\n    fd.field('RegistrationDate').disabled = true;\r\n    //set RegistrationDate to the current date\r\n    fd.field('RegistrationDate').value = new Date();\r\n\r\n\r\n    //сalling functions on form loading\r\n    showHideMedicationsList();\r\n    showHideAllergicOnMedicationsList();\r\n    showHideAllergicFood();\r\n    smoker();\r\n    alcohol();\r\n\r\n    //call functions when changing field values    \r\n    fd.field('AllergicMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', smoker);\r\n    fd.field('Alcohol').$on('change', alcohol);\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n\r\n    //load the Moment.js library to calculate the date range to disable\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calendarSetUp();\r\n        });\r\n\r\n});\r\n\r\n//show/hide MedicationsList\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value) {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n\r\n//show hide AllergicMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicMedications').value) {\r\n        fd.field('AllergicMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicMedicationsList').hidden = true;\r\n    }\r\n}\r\n//show hide AllergicFood field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value) {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n//show/hide questions about smoking\r\nfunction smoker() {\r\n    if (fd.field('AreYouASmoker').value) {\r\n        $('.smoker').show()\r\n    } else {\r\n        $('.smoker').hide()\r\n    }\r\n}\r\n//show/hide questions about alcohol\r\nfunction alcohol() {\r\n    if (fd.field('Alcohol').value == 'Occasionally' || fd.field('Alcohol').value == 'Often') {\r\n        $('.alcohol').show()\r\n    } else {\r\n        $('.alcohol').hide()\r\n    }\r\n}\r\n\r\n//disable dates to allow only 18+ users\r\n//set up start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}",
-    "css": ".fd-form .logo{\n    filter: invert(100%) sepia(7%) saturate(7476%) hue-rotate(256deg) brightness(115%) contrast(91%);\n}\n\n\n.fd-form h1, .fd-form .info p{\n    color: white !important;;\n}\n\n.fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form h1 > span{\n   background-color: transparent !important;;\n}\n\n.fd-form .fd-heading {\n    background-color: transparent !important;\n}\n\n\n.fd-form h2 {\n    text-align: center;\n}\n\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.completion-date .k-select {\n    display: none !important;\n}\n\n.fd-form .info p {\n    margin-top: 0;\n    margin-bottom: 0 !important;;\n}\n\n.fd-form .nav-tabs .nav-link.active,\n.fd-form .nav-tabs .nav-link:focus {\n    border-color: #335da3 rgba(0,0,0,0) #335da3 #335da3;\n    background-color: #335da2;\n    color: white;\n}\n\n/****** THEME 1 ******/\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:hover {\n    color: #fff;\n    background-color: #bbc756;\n    border-color: #bbc756 #bbc756 #bbc756;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-item {\n    margin-bottom: 0;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link.active,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:focus \n{\n    color: #889e5c !important;\n    border-color: #889e5c #ffffff #889e5c #889e5c !important;\n    background-color: transparent !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-link {\n    color: #3f3f3f !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs:hover {\n    border-right-color: #889e5c !important;\n    color: white\n}\n\n/****** THEME 2 ******/\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: transparent !important;\n    border-right: 5px solid #eaeaea;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link.active,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:focus {\n    color: #333;\n    border: none !important;\n    border-right: 5px solid #ed885d!important;\n    background-color: transparent !important;\n}\n\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-link {\n    color: #333;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs:hover {\n    border: none !important;\n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5;\n    border-color: #D7E1E5 #D7E1E5 #006699;\n    border-radius: 10px;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link.active,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:focus {\n    border-color: #883f86 #883f86 #883f86 !Important;\n    background-color: #883f86;\n    color: white;\n    border-radius: 10px;\n}\n\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-link {\n    color: #883f86;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs:hover {\n    border-color: transparent !Important;\n}\n",
+    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n}\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable registration date fields\r\n    fd.field('RegistrationDate').disabled = true;\r\n    //set RegistrationDate to the current date\r\n    fd.field('RegistrationDate').value = new Date();\r\n\r\n\r\n    //сalling functions on form loading\r\n    showHideMedicationsList();\r\n    showHideAllergicOnMedicationsList();\r\n    showHideAllergicFood();\r\n    smoker();\r\n    alcohol();\r\n\r\n    //call functions when changing field values    \r\n    fd.field('AllergicMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', smoker);\r\n    fd.field('Alcohol').$on('change', alcohol);\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n\r\n    //load the Moment.js library to calculate the date range to disable\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calendarSetUp();\r\n        });\r\n\r\n});\r\n\r\n//show/hide MedicationsList\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value) {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n\r\n//show hide AllergicMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicMedications').value) {\r\n        fd.field('AllergicMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicMedicationsList').hidden = true;\r\n    }\r\n}\r\n//show hide AllergicFood field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value) {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n//show/hide questions about smoking\r\nfunction smoker() {\r\n    if (fd.field('AreYouASmoker').value) {\r\n        $('.smoker').show()\r\n    } else {\r\n        $('.smoker').hide()\r\n    }\r\n}\r\n//show/hide questions about alcohol\r\nfunction alcohol() {\r\n    if (fd.field('Alcohol').value == 'Occasionally' || fd.field('Alcohol').value == 'Often') {\r\n        $('.alcohol').show()\r\n    } else {\r\n        $('.alcohol').hide()\r\n    }\r\n}\r\n\r\n//disable dates to allow only 18+ users\r\n//set up start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}",
+    "css": "/* setting h1 text color to white*/\n.fd-form h1{\n    color: white !important;\n}\n\n/* making hospital information compact */\n.fd-form .info p {\n    margin-top: 0;\n    margin-bottom: 0 !important;\n}\n\n/* setting the Heading background depending on the theme */\n.fd-form h1 > span,\n.fd-form .fd-heading{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n\n\n/** styling of the disable Date field **/\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.completion-date .k-select {\n    display: none !important;\n}\n\n/* setting the styling of tabs */\n\n.fd-form .nav-tabs .nav-link.active,\n.fd-form .nav-tabs .nav-link:focus {\n    border-color: #335da3 rgba(0,0,0,0) #335da3 #335da3;\n    background-color: #335da2;\n    color: white;\n}\n\n/* changing the styling of tabs when theme changes*/\n\n/****** THEME 1 ******/\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:hover {\n    color: #fff;\n    background-color: #bbc756;\n    border-color: #bbc756 #bbc756 #bbc756;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-item {\n    margin-bottom: 0;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link.active,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:focus \n{\n    color: #889e5c !important;\n    border-color: #889e5c #ffffff #889e5c #889e5c !important;\n    background-color: transparent !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-link {\n    color: #3f3f3f !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs:hover {\n    border-right-color: #889e5c !important;\n    color: white\n}\n\n/****** THEME 2 ******/\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: transparent !important;\n    border-right: 5px solid #eaeaea;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link.active,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:focus {\n    color: #333;\n    border: none !important;\n    border-right: 5px solid #ed885d!important;\n    background-color: transparent !important;\n}\n\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-link {\n    color: #333;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs:hover {\n    border: none !important;\n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5;\n    border-color: #D7E1E5 #D7E1E5 #006699;\n    border-radius: 10px;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link.active,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:focus {\n    border-color: #883f86 #883f86 #883f86 !Important;\n    background-color: #883f86;\n    color: white;\n    border-radius: 10px;\n}\n\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-link {\n    color: #883f86;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs:hover {\n    border-color: transparent !Important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
@@ -3632,7 +3719,7 @@
         "shadow": false,
         "themeId": "368d63b3dd0a111ba38538ae302332a9"
     },
-    "timezone": "Europe/Budapest",
+    "timezone": "America/Los_Angeles",
     "culture": "en",
     "userLanguage": null,
     "userCulture": null,

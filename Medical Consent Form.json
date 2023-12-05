@@ -515,7 +515,7 @@
     "tablet": null,
     "phone": null,
     "js": "fd.rendered(function() {\r\n    //disable fields\r\n    fd.field('Date').disabled = true;\r\n\r\n    //set CompletionDate to the current date\r\n    fd.field('Date').value = new Date();\r\n\r\n\r\n    //load the Moment.js library to calculate patient's age and disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calendarSetUp();\r\n\r\n        });\r\n\r\n    // add validation for Consent\r\n    fd.field('Consent').addValidator({\r\n        name: 'ConsentValidator',\r\n        error: 'You must check all points. If you still have questions, contact your family doctor.',\r\n        validate: function(value) {\r\n            if (fd.field('Consent').value.length < 5)\r\n                return false;\r\n\r\n            return true;\r\n        }\r\n    });\r\n});\r\n\r\n\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}",
-    "css": "/** resolve styling conflict on plumsail.com **/\n.fd-form h1 {\n    color: white !important;\n}\n\n/** styling of the disable Date field **/\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-select {\n    display: none !important;\n}\n\n.fd-form .completion-date input {\n    padding-left: 0px;\n}\n\n/** add top dorder to the main container **/\n.fd-form .main-container {\n    border-top: 20px solid rgba(var(--fd-primary-rgb)) !important;\n}\n",
+    "css": "/** h1 text color to white **/\n.fd-form h1 {\n    color: white !important;\n}\n\n/** styling of the disable Date field **/\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-select {\n    display: none !important;\n}\n\n.fd-form .completion-date input {\n    padding-left: 0px;\n}\n\n/** add top dorder to the main container **/\n.fd-form .main-container {\n    border-top: 20px solid rgba(var(--fd-primary-rgb)) !important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
@@ -531,7 +531,7 @@
         "shadow": true,
         "themeId": "b90802a5fb92994519822f5bbb995382"
     },
-    "timezone": "Europe/Budapest",
+    "timezone": "America/Los_Angeles",
     "culture": "en",
     "userLanguage": null,
     "userCulture": null,

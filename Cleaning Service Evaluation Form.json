@@ -321,7 +321,7 @@
     "phone": null,
     "js": "fd.rendered(function() {\r\n\r\n    //load the Moment.js library to calculate the minimum allowed date\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n                var today = moment(new Date());\r\n                var newDate = today.subtract(2, 'weeks');\r\n                //future dates and dates prior to two weeks are disabled\r\n                fd.field('CleaningDate').widgetOptions = {\r\n                    min: moment(newDate).toDate(),\r\n                    max: new Date()\r\n                }\r\n\r\n        });\r\n});",
     "css": ".fd-form .fd-likert-question-title {\r\n    text-align: center;\r\n}\r\n.fd-form h1,\r\n.fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n}",
-    "notifySubscribers": true,
+    "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
         "primary": "#26577C",
