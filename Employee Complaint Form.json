@@ -30,6 +30,7 @@
                                 "vertical": null,
                                 "radius": null
                             },
+                            "class": "bg-primary",
                             "fill": "#8764B8",
                             "size": "H1",
                             "textAlignment": "Center"
@@ -579,8 +580,8 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "//setting the form header background when changing the theme\r\n//for plumsail.com site\r\nfd.themeChanged = theme => {\r\n    switch (theme) {\r\n        case '54ffdf77c99512360e16de33f4fc5e37':\r\n            fd.control('Heading1').fill = '#f66f69';\r\n            break;\r\n\r\n        case '3a786676a9391ac6e95404541837c423':\r\n            fd.control('Heading1').fill = '#9d2d30';\r\n            break;\r\n        case 'a6a6c91aa7b3d2e301f9e16f4ff99ad7':\r\n            fd.control('Heading1').fill = '#413393';\r\n            break;\r\n\r\n        default:\r\n            return '#8764B8';\r\n    }\r\n\r\n};",
-    "css": ".fd-form h1, .fd-form .h1 {\n    color: #ffff !important;\n}",
+    "js": "",
+    "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span{\n   background-color: var(--fd-primary-rgb) !important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {

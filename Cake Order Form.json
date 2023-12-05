@@ -1,647 +1,726 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid4",
-                          "stacked": "md",
-                          "class": "fd-blur-background",
-                          "rows": [{
-                              "cells": [{
-                                  "padding": [null, null, 20, null],
-                                  "component": {
-                                      "type": "Heading",
-                                      "model": {
-                                          "_internalName": "Heading1",
-                                          "heading": "Cake Order Form",
-                                          "view": "Normal",
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "size": "H1",
-                                          "textAlignment": "Center"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Heading",
-                                      "model": {
-                                          "_internalName": "Heading2",
-                                          "heading": "Customer Information",
-                                          "view": "Normal",
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "size": "H4",
-                                          "textAlignment": "Center"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Grid",
-                                      "model": {
-                                          "_internalName": "Grid1",
-                                          "stacked": "md",
-                                          "rows": [{
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "FirstName",
-                                                          "title": {
-                                                              "text": "FirstName",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "First Name",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "LastName",
-                                                          "title": {
-                                                              "text": "Last Name",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Last Name",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "Email",
-                                                          "title": {
-                                                              "text": "Email",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Email",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "E-mail",
-                                                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                          "error": "This field must contain a valid e-mail address."
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "MaskedInput",
-                                                      "model": {
-                                                          "_internalName": "MobileNumber",
-                                                          "title": {
-                                                              "text": "Mobile Number",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "mask": "000-000-0000"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "MultiLineText",
-                                                      "model": {
-                                                          "_internalName": "Address",
-                                                          "title": {
-                                                              "text": "Address",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Address",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "mode": "Plain"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }]
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [10, null, null, null],
-                                  "component": {
-                                      "type": "Heading",
-                                      "model": {
-                                          "_internalName": "Heading3",
-                                          "heading": "Cake Description",
-                                          "view": "Normal",
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "size": "H4",
-                                          "textAlignment": "Center"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Grid",
-                                      "model": {
-                                          "_internalName": "Grid2",
-                                          "stacked": "md",
-                                          "rows": [{
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "DropDown",
-                                                      "model": {
-                                                          "_internalName": "Flavor",
-                                                          "title": {
-                                                              "text": "Flavor",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Flavor",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "dataSource": "StaticList",
-                                                          "StaticList": {
-                                                              "options": "Banana cake with cream cheese\nVanilla cupcakes\nFlourless orange cake\nChocolate mud cupcakes\nLemon yoghurt cake with syrup\nCarrot and walnut cake\nChocolate coconut cake\nNew York baked cheesecake\nBanana cake with cream cheese"
-                                                          },
-                                                          "selection": "Single",
-                                                          "options": "Banana cake with cream cheese\nVanilla cupcakes\nFlourless orange cake\nChocolate mud cupcakes\nLemon yoghurt cake with syrup\nCarrot and walnut cake\nChocolate coconut cake\nNew York baked cheesecake\nBanana cake with cream cheese"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "DropDown",
-                                                      "model": {
-                                                          "_internalName": "Filling",
-                                                          "title": {
-                                                              "text": "Filling",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Filling",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "dataSource": "StaticList",
-                                                          "StaticList": {
-                                                              "options": "Cream cheese\nCinnamon sponge and mascarpone filling\nCustard \nBerry mascarpone\nLemon raspberry\nStrawberry jelly"
-                                                          },
-                                                          "selection": "Single",
-                                                          "options": "Cream cheese\nCinnamon sponge and mascarpone filling\nCustard \nBerry mascarpone\nLemon raspberry\nStrawberry jelly"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "DropDown",
-                                                      "model": {
-                                                          "_internalName": "Icing",
-                                                          "title": {
-                                                              "text": "Icing",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Icing",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "dataSource": "StaticList",
-                                                          "StaticList": {
-                                                              "options": "Whipped Cream\r\nGanache\r\nFrench Meringue Buttercream\r\nItalian Meringue Buttercream\r\nSwiss Meringue Buttercream\r\nCream Cheese Frosting\r\nButtercream\r\n"
-                                                          },
-                                                          "selection": "Single",
-                                                          "options": "Whipped Cream\r\nGanache\r\nFrench Meringue Buttercream\r\nItalian Meringue Buttercream\r\nSwiss Meringue Buttercream\r\nCream Cheese Frosting\r\nButtercream\r\n"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "DropDown",
-                                                      "model": {
-                                                          "_internalName": "Shape",
-                                                          "title": {
-                                                              "text": "Shape",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": true,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Shape",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "dataSource": "StaticList",
-                                                          "StaticList": {
-                                                              "options": "Circle\nSquare\nCustom"
-                                                          },
-                                                          "selection": "Single",
-                                                          "options": "Circle\nSquare\nCustom"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "MultiLineText",
-                                                      "model": {
-                                                          "_internalName": "Comments",
-                                                          "title": {
-                                                              "text": "Comments",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Comments",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "mode": "Plain"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }]
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "class": "fd-cake-shape",
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text12",
-                                          "text": "<h4>Cake Shape</h4>"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "class": "fd-cake-shape",
-                                  "component": {
-                                      "type": "Grid",
-                                      "model": {
-                                          "_internalName": "Grid3",
-                                          "stacked": "md",
-                                          "rows": [{
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "Text",
-                                                      "model": {
-                                                          "_internalName": "Text14",
-                                                          "text": "Draw cake shape or upload a picture"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "Signature",
-                                                      "model": {
-                                                          "_internalName": "InkSketch1",
-                                                          "title": {
-                                                              "text": "InkSketch1",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cWidth": 300,
-                                                          "height": 150,
-                                                          "inkColor": "#cc313d",
-                                                          "style": "background-color: #ffffff;"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Left",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "Attachments",
-                                                      "model": {
-                                                          "_internalName": "Attachments1",
-                                                          "title": {
-                                                              "text": "Attachments1",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "maxSize": 10240
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }]
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Submit",
-                                      "model": {
-                                          "_internalName": "Submit1",
-                                          "width": 300,
-                                          "text": "ORDER CAKE",
-                                          "savingText": "Submitting...",
-                                          "type": "Primary",
-                                          "click": "return fd.save();"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Center",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "fd.rendered(function () {\r\n    // hides container on form load\r\n    $('.fd-cake-shape').hide();\r\n    \r\n    // shows/hides container when the field value is changed\r\n    fd.field('Shape').$on('change',function(value){\r\n        if(value === 'Custom'){\r\n            $('.fd-cake-shape').show();\r\n        } else {\r\n            $('.fd-cake-shape').hide();\r\n        }\r\n        \r\n    })\r\n});\r\n",
-  "css": ".fd-form  {\n    box-sizing: border-box;\n    background: url(https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/4a4ff5ae-26d9-492d-b3a0-a8121c25dc4d_bg.jpg) no-repeat center center fixed;\n    -webkit-background-size: auto;\n    -moz-background-size: cover;\n    -o-background-size: cover;\n    background-size: cover;\n}\n\n.fd-form.k-animation-container {\n    background-image: none !important;\n}\n\n.fd-form h1, .fd-form h4, .fd-form p {\n    color: #4e778f !important;\n}\n\n.fd-form h1{\n    font-size: min(6.5vw, 2.34375rem) !important;\n}\n\n.fd-form h1 > span,\n.fd-form h4 > span{\n   background-color: transparent !important;;\n}\n\n.fd-form .fd-heading {\n    background-color: transparent !important;\n}\n\n.fd-form h4 {\n    font-size: min(4.5vw, 1.40625rem) !important;\n    display: flex !important;\n    flex-direction: row !important;\n}\n\n.fd-form h4:before, .fd-form h4:after{\n    content: '';\n    flex: 1 1;\n    border-bottom: 1px solid;\n    margin: auto;\n}\n\n.fd-form h4:before {\n    margin-right: 10px\n}\n\n.fd-form h4:after {\n    margin-left: 10px\n}\n\n.fd-form .fd-blur-background {\n    background: rgba(255, 255, 255, 0.7);\n    backdrop-filter: blur(8px);\n    border-radius: 2px;\n}\n\n.fd-form .alert-body {\n    background-color: #ffffff;\n}\n\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-      "primary": "#4e778f",
-      "bodyText": "#373A3C",
-      "bodyBackground": "#ffffff",
-      "fontFamily": null,
-      "fontType": 0,
-      "fontSize": 15,
-      "fontWeight": 400,
-      "borderThickness": 1,
-      "borderRadius": 8,
-      "shadow": true,
-      "themeId": "8cbe7f62d7d0e54547d69fa60443bb83"
-  },
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid4",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": 1,
+                                "color": "#f2f2f2"
+                            },
+                            "class": "fd-blur-background",
+                            "fill": "#ffffffb3",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [null, null, 15, null],
+                                    "component": {
+                                        "type": "Heading",
+                                        "model": {
+                                            "_internalName": "Heading1",
+                                            "heading": "Cake Order Form",
+                                            "view": "Normal",
+                                            "font": {
+                                                "color": "#4e778f",
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "size": "H1",
+                                            "textAlignment": "Center"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 10, null],
+                                    "component": {
+                                        "type": "Grid",
+                                        "model": {
+                                            "_internalName": "Grid1",
+                                            "stacked": "md",
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "border": {
+                                                "width": null,
+                                                "color": null
+                                            },
+                                            "rows": [{
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "Heading",
+                                                        "model": {
+                                                            "_internalName": "Heading2",
+                                                            "heading": "Customer Information",
+                                                            "view": "Line",
+                                                            "font": {
+                                                                "color": "#4e778f",
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": null
+                                                            },
+                                                            "size": "H4",
+                                                            "textAlignment": "Center"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "FirstName",
+                                                            "title": {
+                                                                "text": "FirstName",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "First Name",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }, {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "LastName",
+                                                            "title": {
+                                                                "text": "Last Name",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Last Name",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Email",
+                                                            "title": {
+                                                                "text": "Email",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Email",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "E-mail",
+                                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                            "error": "This field must contain a valid e-mail address."
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }, {
+                                                    "component": {
+                                                        "type": "MaskedInput",
+                                                        "model": {
+                                                            "_internalName": "MobileNumber",
+                                                            "title": {
+                                                                "text": "Mobile Number",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "mask": "000-000-0000"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "MultiLineText",
+                                                        "model": {
+                                                            "_internalName": "Address",
+                                                            "title": {
+                                                                "text": "Address",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Address",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "mode": "Plain"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 10, null],
+                                    "component": {
+                                        "type": "Grid",
+                                        "model": {
+                                            "_internalName": "Grid2",
+                                            "stacked": "md",
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "border": {
+                                                "width": null,
+                                                "color": null
+                                            },
+                                            "rows": [{
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "Heading",
+                                                        "model": {
+                                                            "_internalName": "Heading3",
+                                                            "heading": "Cake Description",
+                                                            "view": "Normal",
+                                                            "font": {
+                                                                "color": "#4e778f",
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": null
+                                                            },
+                                                            "size": "H4",
+                                                            "textAlignment": "Center"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "Flavor",
+                                                            "title": {
+                                                                "text": "Flavor",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Flavor",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "StaticList": {
+                                                                "options": "Banana cake with cream cheese\nVanilla cupcakes\nFlourless orange cake\nChocolate mud cupcakes\nLemon yoghurt cake with syrup\nCarrot and walnut cake\nChocolate coconut cake\nNew York baked cheesecake\nBanana cake with cream cheese"
+                                                            },
+                                                            "selection": "Single",
+                                                            "options": "Banana cake with cream cheese\nVanilla cupcakes\nFlourless orange cake\nChocolate mud cupcakes\nLemon yoghurt cake with syrup\nCarrot and walnut cake\nChocolate coconut cake\nNew York baked cheesecake\nBanana cake with cream cheese"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }, {
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "Filling",
+                                                            "title": {
+                                                                "text": "Filling",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Filling",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "StaticList": {
+                                                                "options": "Cream cheese\nCinnamon sponge and mascarpone filling\nCustard \nBerry mascarpone\nLemon raspberry\nStrawberry jelly"
+                                                            },
+                                                            "selection": "Single",
+                                                            "options": "Cream cheese\nCinnamon sponge and mascarpone filling\nCustard \nBerry mascarpone\nLemon raspberry\nStrawberry jelly"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "Icing",
+                                                            "title": {
+                                                                "text": "Icing",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Icing",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "StaticList": {
+                                                                "options": "Whipped Cream\r\nGanache\r\nFrench Meringue Buttercream\r\nItalian Meringue Buttercream\r\nSwiss Meringue Buttercream\r\nCream Cheese Frosting\r\nButtercream\r\n"
+                                                            },
+                                                            "selection": "Single",
+                                                            "options": "Whipped Cream\r\nGanache\r\nFrench Meringue Buttercream\r\nItalian Meringue Buttercream\r\nSwiss Meringue Buttercream\r\nCream Cheese Frosting\r\nButtercream\r\n"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }, {
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "Shape",
+                                                            "title": {
+                                                                "text": "Shape",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": true,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Shape",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "StaticList": {
+                                                                "options": "Circle\nSquare\nCustom"
+                                                            },
+                                                            "selection": "Single",
+                                                            "options": "Circle\nSquare\nCustom"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "MultiLineText",
+                                                        "model": {
+                                                            "_internalName": "Comments",
+                                                            "title": {
+                                                                "text": "Comments",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Comments",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "mode": "Plain"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 10, null],
+                                    "class": "fd-cake-shape",
+                                    "component": {
+                                        "type": "Grid",
+                                        "model": {
+                                            "_internalName": "Grid3",
+                                            "stacked": "md",
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "border": {
+                                                "width": null,
+                                                "color": null
+                                            },
+                                            "rows": [{
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "Heading",
+                                                        "model": {
+                                                            "_internalName": "Heading4",
+                                                            "heading": "Cake Shape",
+                                                            "view": "Normal",
+                                                            "font": {
+                                                                "color": "#4e778f",
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": null
+                                                            },
+                                                            "size": "H4",
+                                                            "textAlignment": "Center"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "Text",
+                                                        "model": {
+                                                            "_internalName": "Text14",
+                                                            "text": "Draw cake shape or upload a picture"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "Signature",
+                                                        "model": {
+                                                            "_internalName": "InkSketch1",
+                                                            "title": {
+                                                                "text": "InkSketch1",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cWidth": 300,
+                                                            "height": 150,
+                                                            "inkColor": "#cc313d",
+                                                            "style": "background-color: #ffffff;"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Left",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }, {
+                                                    "component": {
+                                                        "type": "Attachments",
+                                                        "model": {
+                                                            "_internalName": "Attachments1",
+                                                            "title": {
+                                                                "text": "Attachments1",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "maxSize": 10240
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }]
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Submit",
+                                        "model": {
+                                            "_internalName": "Submit1",
+                                            "width": 300,
+                                            "text": "ORDER CAKE",
+                                            "savingText": "Submitting...",
+                                            "type": "Primary",
+                                            "click": "return fd.save();",
+                                            "style": "font-weight: 700 !important; color: white;"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Center",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "fd.rendered(function () {\r\n    // hides container on form load\r\n    $('.fd-cake-shape').hide();\r\n    \r\n    // shows/hides container when the field value is changed\r\n    fd.field('Shape').$on('change',function(value){\r\n        if(value === 'Custom'){\r\n            $('.fd-cake-shape').show();\r\n        } else {\r\n            $('.fd-cake-shape').hide();\r\n        }\r\n        \r\n    })\r\n});\r\n",
+    "css": "/* setting a transparent background for the Heading control */\n.fd-form h1 > span,\n.fd-form h4 > span,\n.fd-form .fd-heading{\n   background-color: transparent !important;;\n}\n\n/* setting the image as the background of the form */\n.fd-form  {\n    box-sizing: border-box;\n    background: url(https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/cake_order_form.jpg) no-repeat center center fixed;\n    background-size: auto;\n    background-size: cover;\n}\n\n.fd-form .form-widget > .fd-form {\n    background: none;\n}\n\n/* adding blur to the background of Wizard container */\n.fd-form .fd-blur-background{\n    backdrop-filter: blur(8px);\n}\n\n/* adding line to h4 */\n.fd-form h4:before, .fd-form h4:after{\n    content: '';\n    flex: 1 1;\n    border-bottom: 1px solid;\n    margin: auto;\n}\n\n.fd-form h4 {\n    margin-right: 10px;\n    margin-left: 10px;\n}\n\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#4e778f",
+        "bodyText": "#373A3C",
+        "bodyBackground": "#ffffff",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 8,
+        "shadow": true,
+        "themeId": "8cbe7f62d7d0e54547d69fa60443bb83"
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }
