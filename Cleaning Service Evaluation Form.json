@@ -58,7 +58,7 @@
                                 "width": 2,
                                 "color": "#c6c6c6"
                             },
-                            "fill": "#ffffff",
+                            "fill": "#f2f2f2",
                             "rows": [{
                                 "cells": [{
                                     "component": {
@@ -229,81 +229,54 @@
                 "cells": [{
                     "padding": [20, null, null, null],
                     "component": {
-                        "type": "Grid",
+                        "type": "Text",
                         "model": {
-                            "_internalName": "Grid2",
-                            "stacked": "md",
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
-                            },
-                            "border": {
-                                "width": null,
-                                "color": null
-                            },
-                            "rows": [{
-                                "cells": [{
-                                    "padding": [null, null, 40, null],
-                                    "component": {
-                                        "type": "Text",
-                                        "model": {
-                                            "_internalName": "Text1",
-                                            "text": "<h5 style=\"text-align:center;\">Below, you'll find the evaluation points for our cleaning service.</h5><h5 style=\"text-align:center;\">Please rate each aspect based on your experience.</h5>"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "LikertScale",
-                                        "model": {
-                                            "_internalName": "LikertScale1",
-                                            "width": 800,
-                                            "type": "Radio",
-                                            "required": false,
-                                            "questions": "Upholstery cleaning\nCarpet vacuuming\nHard floor cleaning\nKitchen cleaning\nBathroom cleaning\nOrganization\nTrash disposal\nFogging/Pest control",
-                                            "answers": "Good\nSatisfactory\nUnsatisfactory\nN/A"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Center",
-                                        "vertical": "Middle"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [20, null, null, null],
-                                    "component": {
-                                        "type": "Submit",
-                                        "model": {
-                                            "_internalName": "Submit1",
-                                            "text": "SEND",
-                                            "savingText": "Submitting...",
-                                            "type": "Primary",
-                                            "click": "return fd.save();",
-                                            "style": "font-weight: 700 !important;"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }]
+                            "_internalName": "Text1",
+                            "text": "<h5 style=\"text-align:center;\">Below, you'll find the evaluation points for our cleaning service.</h5><h5 style=\"text-align:center;\">Please rate each aspect based on your experience.</h5>"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "LikertScale",
+                        "model": {
+                            "_internalName": "LikertScale1",
+                            "width": 800,
+                            "type": "Radio",
+                            "required": false,
+                            "questions": "Upholstery cleaning\nCarpet vacuuming\nHard floor cleaning\nKitchen cleaning\nBathroom cleaning\nOrganization\nTrash disposal\nFogging/Pest control",
+                            "answers": "Good\nSatisfactory\nUnsatisfactory\nN/A"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Center",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 10,
+                        "offset": 1
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "SEND",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();",
+                            "style": "font-weight: 700 !important;"
                         }
                     },
                     "alignment": {
@@ -320,7 +293,7 @@
     "tablet": null,
     "phone": null,
     "js": "fd.rendered(function() {\r\n\r\n    //load the Moment.js library to calculate the minimum allowed date\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n                var today = moment(new Date());\r\n                var newDate = today.subtract(2, 'weeks');\r\n                //future dates and dates prior to two weeks are disabled\r\n                fd.field('CleaningDate').widgetOptions = {\r\n                    min: moment(newDate).toDate(),\r\n                    max: new Date()\r\n                }\r\n\r\n        });\r\n});",
-    "css": ".fd-form .fd-likert-question-title {\r\n    text-align: center;\r\n}\r\n.fd-form h1,\r\n.fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n}",
+    "css": "/* align likert scalequestions */\r\n.fd-form .fd-likert-question-title {\r\n    text-align: center;\r\n}",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {

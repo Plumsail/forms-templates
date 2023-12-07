@@ -1,822 +1,865 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "_internalName": "2a65b3e31d9a444b95519e75ef1bb98e",
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading1",
-                          "heading": "Fill in W-9 form",
-                          "view": "Underline1",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H1",
-                          "textAlignment": "Left"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Text",
-                      "model": {
-                          "_internalName": "Text2",
-                          "text": "<p>Fill in and submit the form to complete your W-9. <a href=\"https://www.irs.gov/pub/irs-pdf/iw9.pdf\">See instructions</a></p>"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [20, null, null, null],
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid1",
-                          "stacked": "md",
-                          "class": "bg-secondary",
-                          "rows": [{
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "Name",
-                                          "title": {
-                                              "text": "(1) Name (as shown on your income tax return). Name is required on this line; do not leave this line blank",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "BusinessName",
-                                          "title": {
-                                              "text": "(2) Business name/disregarded entity name, if different from above",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleChoice",
-                                      "model": {
-                                          "_internalName": "OrgType",
-                                          "title": {
-                                              "text": "(3) Check the appropriate box for the federal tax classification of the person whose name is entered on line 1. Check only one of the following seven boxes",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "dataSource": "StaticList",
-                                          "StaticList": {
-                                              "options": "Individual/sole proprietor or single-member LLC\r\nC Corporation\r\nS Corporation\r\nPartnership\r\nTrust/estate\r\nLimited liability company\r\nOther (see instructions)"
-                                          },
-                                          "cColumns": 3,
-                                          "options": "Individual/sole proprietor or single-member LLC\r\nC Corporation\r\nS Corporation\r\nPartnership\r\nTrust/estate\r\nLimited liability company\r\nOther (see instructions)"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "OtherOrgType",
-                                          "title": {
-                                              "text": "Other",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cHint": "Specify \"Other\" here",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 6
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "class": "fd-llc",
-                                  "component": {
-                                      "type": "SingleChoice",
-                                      "model": {
-                                          "_internalName": "LlcTaxClassification",
-                                          "title": {
-                                              "text": "Enter the tax classification for Limited liability company",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "dataSource": "StaticList",
-                                          "StaticList": {
-                                              "options": "C corporation\nS corporation\nPartnership",
-                                              "allowUserValue": false
-                                          },
-                                          "cColumns": 6,
-                                          "options": "C corporation\nS corporation\nPartnership",
-                                          "allowUserValue": false
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [null, null, 15, null],
-                                  "class": "fd-llc",
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text7",
-                                          "text": "NOTE: Check the appropriate box in the line above for the tax classification of the single-member owner.&nbsp; Do not check LLC if the LLC is classified as a single-member LLC that is disregarded from the owner unless the owner of the LLC is another LLC that is not disregarded from the owner for U.S. federal tax purposes. Otherwise, a single-member LLC that is disregarded from the owner should check the appropriate box for the tax classification of its owner"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text8",
-                                          "text": "<h6>(4) Exemptions (codes apply only to certain entities, not individuals; see instructions on page 3)*</h6>"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "ExemptCode",
-                                          "title": {
-                                              "text": "Exempt payee code (if any)",
-                                              "visible": false
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "Exempt payee code (if any)",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 3
-                                  }
-                              }, {
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "FATCAcode",
-                                          "title": {
-                                              "text": "Exemption from FATCA reporting  code (if any)",
-                                              "visible": false
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "Exemption from FATCA reporting  code (if any)",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 3
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [null, null, 15, null],
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text11",
-                                          "text": "* (Applies to accounts maintained outside the U.S.)"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [null, 0, null, 0],
-                                  "component": {
-                                      "type": "Grid",
-                                      "model": {
-                                          "_internalName": "Grid3",
-                                          "stacked": "md",
-                                          "style": "padding-top: 0; padding-bottom: 0;",
-                                          "rows": [{
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "Address",
-                                                          "title": {
-                                                              "text": "(5) Address (number, street, and apt. or suite no.). See instructions",
-                                                              "visible": true
-                                                          },
-                                                          "orientation": "Vertical",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "Address2",
-                                                          "title": {
-                                                              "text": "(6) City, state, and ZIP code",
-                                                              "visible": true
-                                                          },
-                                                          "orientation": "Vertical",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }]
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 6
-                                  }
-                              }, {
-                                  "component": {
-                                      "type": "MultiLineText",
-                                      "model": {
-                                          "_internalName": "RequesterAddress",
-                                          "title": {
-                                              "text": "Requester’s name and address (optional)",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "mode": "Plain",
-                                          "cHeight": 125
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 6
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "AccountNumbers",
-                                          "title": {
-                                              "text": "(7) List account number(s) here (optional)",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading2",
-                          "heading": "Part I Taxpayer Identification Number (TIN)",
-                          "view": "Normal",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H4",
-                          "textAlignment": "Left"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid2",
-                          "stacked": "md",
-                          "class": "bg-secondary",
-                          "rows": [{
-                              "cells": [{
-                                  "padding": [null, null, 15, null],
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text17",
-                                          "text": "Enter your TIN in the appropriate box. The TIN provided must match the name given on line 1 to avoid&nbsp;backup withholding. For individuals, this is generally your social security number (SSN). However, for a&nbsp;resident alien, sole proprietor, or disregarded entity, see the instructions for Part I, later. For other&nbsp;entities, it is your employer identification number (EIN). If you do not have a number, see How to get a&nbsp;TIN, later.<br />"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "MaskedInput",
-                                      "model": {
-                                          "_internalName": "SSN",
-                                          "title": {
-                                              "text": "Social security number (in format 000 00 0000)",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "mask": "000-00-0000"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text19",
-                                          "text": "<p>OR</p>"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "MaskedInput",
-                                      "model": {
-                                          "_internalName": "EIN",
-                                          "title": {
-                                              "text": "Employer identification number (in format 00 0000000)",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "mask": "00-0000000"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text21",
-                                          "text": "<strong>Note:</strong> If the account is in more than one name, see the instructions for line 1. Also see What Name and&nbsp;<br />Number To Give the Requester for guidelines on whose number to enter."
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading3",
-                          "heading": "Part II. Certification",
-                          "view": "Normal",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H4",
-                          "textAlignment": "Left"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid4",
-                          "stacked": "md",
-                          "class": "bg-secondary",
-                          "rows": [{
-                              "cells": [{
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text25",
-                                          "text": "<p>Under penalties of perjury, I certify that:</p><ol><li>The number shown on this form is my correct taxpayer identification number (or I am waiting for a number to be issued to me); and</li><li>I am not subject to backup withholding because: (a) I am exempt from backup withholding, or (b) I have not been notified by the Internal Revenue&nbsp;Service (IRS) that I am subject to backup withholding as a result of a failure to report all interest or dividends, or (c) the IRS has notified me that I am&nbsp;<br />no longer subject to backup withholding; and<br /></li><li>I am a U.S. citizen or other U.S. person (defined below); and<br /></li><li>The FATCA code(s) entered on this form (if any) indicating that I am exempt from FATCA reporting is correct.<br /></li></ol><p><strong>Certification instructions.</strong> You must cross out item 2 above if you have been notified by the IRS that you are currently subject to backup withholding because&nbsp;you have failed to report all interest and dividends on your tax return. For real estate transactions, item 2 does not apply. For mortgage interest paid,&nbsp;acquisition or abandonment of secured property, cancellation of debt, contributions to an individual retirement arrangement (IRA), and generally, payments&nbsp;other than interest and dividends, you are not required to sign the certification, but you must provide your correct TIN. See the instructions for Part II, later</p>"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [15, null, null, null],
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text26",
-                                          "text": "<h6>Sign Here:</h6>"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Signature",
-                                      "model": {
-                                          "_internalName": "Signature",
-                                          "title": {
-                                              "text": "Signature",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cWidth": 300,
-                                          "height": 150,
-                                          "inkColor": "#000000"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Left",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Submit",
-                      "model": {
-                          "_internalName": "submit",
-                          "text": "Submit W9",
-                          "savingText": "Submitting...",
-                          "type": "Primary",
-                          "click": "return fd.save();"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Center",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "function toggleOtherOrgTypeField() {\n    if (fd.field('OrgType').value === 'Other (see instructions)') {\n        fd.field('OtherOrgType').hidden = false;\n    } else {\n        fd.field('OtherOrgType').hidden = true;\n    }\n}\n\nfunction toggleLlcTaxClassificationField() {\n    if (fd.field('OrgType').value === 'Limited liability company') {\n        $('.fd-llc').show();\n    } else {\n        $('.fd-llc').hide();\n    }\n}\n\nfd.rendered(function() {\n    toggleOtherOrgTypeField();\n    toggleLlcTaxClassificationField();\n    \n    fd.field('OrgType').$on('change', function() {\n        toggleOtherOrgTypeField();\n        toggleLlcTaxClassificationField();\n    })\n})",
-  "css": ".fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem) !important;\r\n}\r\n\r\n.fd-form h4, .fd-form .h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n    padding-top: 4px !important;\r\n    padding-bottom: 4px !important;\r\n}\r\n\r\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": null,
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "_internalName": "2a65b3e31d9a444b95519e75ef1bb98e",
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Fill in W-9 form",
+                            "view": "Underline1",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H1",
+                            "textAlignment": "Left"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text2",
+                            "text": "<p>Fill in and submit the form to complete your W-9. <a href=\"https://www.irs.gov/pub/irs-pdf/iw9.pdf\">See instructions</a></p>"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid1",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Name",
+                                            "title": {
+                                                "text": "(1) Name (as shown on your income tax return). Name is required on this line; do not leave this line blank",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "BusinessName",
+                                            "title": {
+                                                "text": "(2) Business name/disregarded entity name, if different from above",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "OrgType",
+                                            "title": {
+                                                "text": "(3) Check the appropriate box for the federal tax classification of the person whose name is entered on line 1. Check only one of the following seven boxes",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "Individual/sole proprietor or single-member LLC\r\nC Corporation\r\nS Corporation\r\nPartnership\r\nTrust/estate\r\nLimited liability company\r\nOther (see instructions)"
+                                            },
+                                            "cColumns": 3,
+                                            "options": "Individual/sole proprietor or single-member LLC\r\nC Corporation\r\nS Corporation\r\nPartnership\r\nTrust/estate\r\nLimited liability company\r\nOther (see instructions)"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "OtherOrgType",
+                                            "title": {
+                                                "text": "Other",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Specify \"Other\" here",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "class": "fd-llc",
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "LlcTaxClassification",
+                                            "title": {
+                                                "text": "Enter the tax classification for Limited liability company",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "C corporation\nS corporation\nPartnership",
+                                                "allowUserValue": false
+                                            },
+                                            "cColumns": 6,
+                                            "options": "C corporation\nS corporation\nPartnership",
+                                            "allowUserValue": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 15, null],
+                                    "class": "fd-llc",
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text7",
+                                            "text": "NOTE: Check the appropriate box in the line above for the tax classification of the single-member owner.&nbsp; Do not check LLC if the LLC is classified as a single-member LLC that is disregarded from the owner unless the owner of the LLC is another LLC that is not disregarded from the owner for U.S. federal tax purposes. Otherwise, a single-member LLC that is disregarded from the owner should check the appropriate box for the tax classification of its owner"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text8",
+                                            "text": "<h6>(4) Exemptions (codes apply only to certain entities, not individuals; see instructions on page 3)*</h6>"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "ExemptCode",
+                                            "title": {
+                                                "text": "Exempt payee code (if any)",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Exempt payee code (if any)",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 3
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "FATCAcode",
+                                            "title": {
+                                                "text": "Exemption from FATCA reporting  code (if any)",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Exemption from FATCA reporting  code (if any)",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 3
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 15, null],
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text11",
+                                            "text": "* (Applies to accounts maintained outside the U.S.)"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, 0, null, 0],
+                                    "component": {
+                                        "type": "Grid",
+                                        "model": {
+                                            "_internalName": "Grid3",
+                                            "stacked": "md",
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "border": {
+                                                "width": null,
+                                                "color": null
+                                            },
+                                            "style": "padding-top: 0; padding-bottom: 0;",
+                                            "rows": [{
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Address",
+                                                            "title": {
+                                                                "text": "(5) Address (number, street, and apt. or suite no.). See instructions",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }, {
+                                                "cells": [{
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Address2",
+                                                            "title": {
+                                                                "text": "(6) City, state, and ZIP code",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }]
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "MultiLineText",
+                                        "model": {
+                                            "_internalName": "RequesterAddress",
+                                            "title": {
+                                                "text": "Requester’s name and address (optional)",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mode": "Plain",
+                                            "cHeight": 125
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "AccountNumbers",
+                                            "title": {
+                                                "text": "(7) List account number(s) here (optional)",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [5, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading2",
+                            "heading": "Part I Taxpayer Identification Number (TIN)",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Left"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid2",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [null, null, 15, null],
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text17",
+                                            "text": "Enter your TIN in the appropriate box. The TIN provided must match the name given on line 1 to avoid&nbsp;backup withholding. For individuals, this is generally your social security number (SSN). However, for a&nbsp;resident alien, sole proprietor, or disregarded entity, see the instructions for Part I, later. For other&nbsp;entities, it is your employer identification number (EIN). If you do not have a number, see How to get a&nbsp;TIN, later.<br />"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                            "_internalName": "SSN",
+                                            "title": {
+                                                "text": "Social security number (in format 000 00 0000)",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mask": "000-00-0000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text19",
+                                            "text": "<p>OR</p>"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                            "_internalName": "EIN",
+                                            "title": {
+                                                "text": "Employer identification number (in format 00 0000000)",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mask": "00-0000000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text21",
+                                            "text": "<strong>Note:</strong> If the account is in more than one name, see the instructions for line 1. Also see What Name and&nbsp;<br />Number To Give the Requester for guidelines on whose number to enter."
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [5, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading3",
+                            "heading": "Part II. Certification",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Left"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid4",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text25",
+                                            "text": "<p>Under penalties of perjury, I certify that:</p><ol><li>The number shown on this form is my correct taxpayer identification number (or I am waiting for a number to be issued to me); and</li><li>I am not subject to backup withholding because: (a) I am exempt from backup withholding, or (b) I have not been notified by the Internal Revenue&nbsp;Service (IRS) that I am subject to backup withholding as a result of a failure to report all interest or dividends, or (c) the IRS has notified me that I am&nbsp;<br />no longer subject to backup withholding; and<br /></li><li>I am a U.S. citizen or other U.S. person (defined below); and<br /></li><li>The FATCA code(s) entered on this form (if any) indicating that I am exempt from FATCA reporting is correct.<br /></li></ol><p><strong>Certification instructions.</strong> You must cross out item 2 above if you have been notified by the IRS that you are currently subject to backup withholding because&nbsp;you have failed to report all interest and dividends on your tax return. For real estate transactions, item 2 does not apply. For mortgage interest paid,&nbsp;acquisition or abandonment of secured property, cancellation of debt, contributions to an individual retirement arrangement (IRA), and generally, payments&nbsp;other than interest and dividends, you are not required to sign the certification, but you must provide your correct TIN. See the instructions for Part II, later</p>"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [5, null, null, null],
+                                    "component": {
+                                        "type": "Signature",
+                                        "model": {
+                                            "_internalName": "Signature",
+                                            "title": {
+                                                "text": "Sign Here:",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cWidth": 300,
+                                            "height": 150,
+                                            "inkColor": "#000000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Left",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "submit",
+                            "text": "Submit W9",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Center",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "//show or hide OtherOrgType depending on OrgType field value\nfunction toggleOtherOrgTypeField() {\n    if (fd.field('OrgType').value === 'Other (see instructions)') {\n        fd.field('OtherOrgType').hidden = false;\n    } else {\n        fd.field('OtherOrgType').hidden = true;\n    }\n}\n//show or hide Enter the tax classification for Limited liability company\n//and notes depending on OrgType field value\nfunction toggleLlcTaxClassificationField() {\n    if (fd.field('OrgType').value === 'Limited liability company') {\n        $('.fd-llc').show();\n    } else {\n        $('.fd-llc').hide();\n    }\n}\n\nfd.rendered(function() {\n    //call functionw when form is rendered\n    toggleOtherOrgTypeField();\n    toggleLlcTaxClassificationField();\n    \n    //call functions when field value changes\n    fd.field('OrgType').$on('change', function() {\n        toggleOtherOrgTypeField();\n        toggleLlcTaxClassificationField();\n    })\n})",
+    "css": "",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": null,
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }

@@ -1,222 +1,245 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "class": "bg-primary",
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid3",
-                          "stacked": "sm",
-                          "rows": [{
-                              "cells": [{
-                                  "padding": [15, null, null, null],
-                                  "class": "col-md-auto",
-                                  "component": {
-                                      "type": "Image",
-                                      "model": {
-                                          "_internalName": "Image1",
-                                          "width": 120,
-                                          "target": "Blank",
-                                          "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Left",
-                                      "vertical": "Middle"
-                                  },
-                                  "columns": {
-                                      "width": 2
-                                  }
-                              }, {
-                                  "component": {
-                                      "type": "Heading",
-                                      "model": {
-                                          "_internalName": "Heading1",
-                                          "heading": "Customer Satisfaction Survey",
-                                          "view": "Normal",
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "subheading": "Please help us to improve our service. Rate your satisfaction level with each of the following statements. It takes less than five minutes.",
-                                          "size": "H1",
-                                          "textAlignment": "Left"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Middle"
-                                  },
-                                  "columns": {
-                                      "width": 10
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [40, null, null, null],
-                  "component": {
-                      "type": "LikertScale",
-                      "model": {
-                          "_internalName": "LikertScale1",
-                          "type": "Radio",
-                          "required": false,
-                          "questions": "How satisfied are you with with the delivery of our products?\nHow do you rate the response time of our Sales Representatives?\nHow satisfied are you with the quality of our products?\nHow do you rate our customer communications?\nRate your overall satisfaction with the customer service.",
-                          "answers": "Very dissatisfied\nSomewhat dissatisfied\nNeutral\nSomewhat satisfied\nVery satisfied"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [20, null, null, null],
-                  "component": {
-                      "type": "Text",
-                      "model": {
-                          "_internalName": "Text3",
-                          "text": "<h6 style=\"font-weight:700;\">Based on your experience, what is the likelihood that you will...</h6>"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [10, null, null, null],
-                  "component": {
-                      "type": "LikertScale",
-                      "model": {
-                          "_internalName": "LikertScale2",
-                          "type": "Radio",
-                          "required": false,
-                          "questions": "Recommend our company to your friends?\nUse our product/service again?",
-                          "answers": "Not at all likely\r\nNot very likely\r\nSomewhat likely\r\nLikely\r\nHighly likely"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [20, null, null, null],
-                  "component": {
-                      "type": "MultiLineText",
-                      "model": {
-                          "_internalName": "AdditionalCommentsOrConcerns",
-                          "title": {
-                              "text": "Additional comments or concerns:",
-                              "visible": false
-                          },
-                          "orientation": "Vertical",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "What do you think? Any additional comments or concerns:",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "mode": "Plain",
-                          "cHeight": 150
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Submit",
-                      "model": {
-                          "_internalName": "Submit1",
-                          "text": "SEND",
-                          "savingText": "Submitting...",
-                          "type": "Primary",
-                          "click": "return fd.save();",
-                          "style": "font-weight: 700 !important;"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "fd.rendered(function () {\r\n    // add background for questions\r\n    var element = document.querySelectorAll('.fd-likert-question-title');\r\n    element.forEach(function(e){\r\n        e.classList.add('bg-primary');\r\n    });\r\n});",
-  "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    color: #ffffff !important;\n}\n\n.fd-form h1 > span,\n.fd-form .fd-heading{\n    background-color: var(--fd-primary-rgb) !important;\n}\n\n.fd-form h6, .fd-form .h6, .fd-form .fd-field-title {\n    font-size: min(4.5vw, .9375rem) !important;\n    font-weight: 600 !important;\n    padding-top: 4px;\n    padding-bottom: 4px;\n}\n\n.fd-form p,\n.fd-form .fd-heading__subheading{\n    color: #ffffff;\n}\n\n.fd-form .fd-likert-answer-connected-lines > .flex-column {\n    align-items: center;\n}\n\n.fd-form .fd-likert-answer-connected-lines label {\n    text-align: center;\n}\n\n.fd-form .fd-likert-question-title {\n    padding: 10px;\n    margin-bottom: 1rem !important;\n}\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-      "primary": "#8e44ad",
-      "bodyText": "#333333",
-      "bodyBackground": "#FFFFFF",
-      "fontFamily": null,
-      "fontType": 0,
-      "fontSize": 15,
-      "fontWeight": 400,
-      "borderThickness": 1,
-      "borderRadius": 0,
-      "shadow": true,
-      "themeId": "e78ffee815e6fd08fa05b9fa21867b98"
-  },
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid3",
+                            "stacked": "sm",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": 15,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": ""
+                            },
+                            "class": "bg-primary",
+                            "fill": "#8e44ad",
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "Image",
+                                        "model": {
+                                            "_internalName": "Image1",
+                                            "width": 120,
+                                            "target": "Blank",
+                                            "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Center",
+                                        "vertical": "Middle"
+                                    },
+                                    "columns": {
+                                        "width": 2
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "Heading",
+                                        "model": {
+                                            "_internalName": "Heading1",
+                                            "heading": "Customer Satisfaction Survey",
+                                            "view": "Normal",
+                                            "font": {
+                                                "color": "#ffffff",
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "subheading": "Please help us to improve our service. Rate your satisfaction level with each of the following statements. It takes less than five minutes.",
+                                            "size": "H1",
+                                            "textAlignment": "Left"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Middle"
+                                    },
+                                    "columns": {
+                                        "width": 10
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [40, null, null, null],
+                    "component": {
+                        "type": "LikertScale",
+                        "model": {
+                            "_internalName": "LikertScale1",
+                            "type": "Radio",
+                            "required": false,
+                            "questions": "How satisfied are you with with the delivery of our products?\nHow do you rate the response time of our Sales Representatives?\nHow satisfied are you with the quality of our products?\nHow do you rate our customer communications?\nRate your overall satisfaction with the customer service.",
+                            "answers": "Very dissatisfied\nSomewhat dissatisfied\nNeutral\nSomewhat satisfied\nVery satisfied"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text3",
+                            "text": "<h6 style=\"font-weight:700;\">Based on your experience, what is the likelihood that you will...</h6>"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "LikertScale",
+                        "model": {
+                            "_internalName": "LikertScale2",
+                            "type": "Radio",
+                            "required": false,
+                            "questions": "Recommend our company to your friends?\nUse our product/service again?",
+                            "answers": "Not at all likely\r\nNot very likely\r\nSomewhat likely\r\nLikely\r\nHighly likely"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "MultiLineText",
+                        "model": {
+                            "_internalName": "AdditionalCommentsOrConcerns",
+                            "title": {
+                                "text": "Additional comments or concerns:",
+                                "visible": false
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "What do you think? Any additional comments or concerns:",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Plain",
+                            "cHeight": 150
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "SEND",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();",
+                            "style": "font-weight: 700 !important;"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span,\n.fd-form .fd-heading{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n\n\n/* styling of questions on a Likert scale  */\n.fd-form p{\n    color: #ffffff !important;\n}\n\n.fd-form .fd-likert-answer-connected-lines > .flex-column,\n.fd-form .fd-likert-answer-connected-lines label{\n    align-items: center;\n}\n\n.fd-form .fd-likert-question-title {\n    padding: 10px;\n    margin-bottom: 1rem !important;\n}\n\n.fd-likert-question-title {\n    background-color: var(--fd-primary) !important;\n}\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#8e44ad",
+        "bodyText": "#333333",
+        "bodyBackground": "#FFFFFF",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 0,
+        "shadow": true,
+        "themeId": "e78ffee815e6fd08fa05b9fa21867b98"
+    },
+    "timezone": "Etc/GMT+8",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }

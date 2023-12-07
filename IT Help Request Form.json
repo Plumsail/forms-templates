@@ -1,301 +1,316 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "padding": [null, null, 15, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading1",
-                          "heading": "IT Help Request",
-                          "view": "Underline1",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H1",
-                          "textAlignment": "Left"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "SingleLineText",
-                      "model": {
-                          "_internalName": "RequesterName",
-                          "width": 150,
-                          "title": {
-                              "text": "Requester Name:",
-                              "visible": true
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "Peter Pan",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "type": "Anything"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "DropDown",
-                      "model": {
-                          "_internalName": "Department",
-                          "width": 150,
-                          "title": {
-                              "text": "Department:",
-                              "visible": true
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "Marketing",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "dataSource": "StaticList",
-                          "StaticList": {
-                              "options": "Production\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
-                          },
-                          "selection": "Single",
-                          "options": "Production\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "SingleLineText",
-                      "model": {
-                          "_internalName": "Email",
-                          "width": 150,
-                          "title": {
-                              "text": "Email:",
-                              "visible": true
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "p.pan@domain.com",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "type": "E-mail",
-                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                          "error": "This field must contain a valid e-mail address."
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "DropDown",
-                      "model": {
-                          "_internalName": "RequestType",
-                          "width": 150,
-                          "title": {
-                              "text": "Request Type:",
-                              "visible": true
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "Select request type",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "dataSource": "StaticList",
-                          "StaticList": {
-                              "options": "Generic request\r\nIncident\r\nHardware request\r\nHardware repair\r\nPassword change\r\nSoftware request"
-                          },
-                          "selection": "Single",
-                          "options": "Generic request\r\nIncident\r\nHardware request\r\nHardware repair\r\nPassword change\r\nSoftware request"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "MultiLineText",
-                      "model": {
-                          "_internalName": "Comments",
-                          "width": 150,
-                          "title": {
-                              "text": "Comments:",
-                              "visible": true
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "Provide the detailed description of the case",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "mode": "Plain"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Attachments",
-                      "model": {
-                          "_internalName": "Attachments",
-                          "width": 150,
-                          "title": {
-                              "text": "Attachments:",
-                              "visible": true
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "description": "Attach files that will help us to resolve the issue faster, like screenshots, photos or manager's approval",
-                          "maxSize": 10240
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Submit",
-                      "model": {
-                          "_internalName": "Submit1",
-                          "text": "HELP!",
-                          "savingText": "Submitting...",
-                          "type": "Primary",
-                          "click": "return fd.save();",
-                          "style": "font-weight: 700 !important;"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "",
-  "css": ".fd-form h1, .fd-form .h1 {\r\n    font-size: min(6.5vw, 2.34375rem)!important;\r\n    text-align: left!important;\r\n}\r\n\r\n.fd-form h1:after {\r\n    content: ' ';\r\n    display: block;\r\n    border: 2px solid;\r\n    margin: 10px 0px 15px;\r\n    -webkit-border-radius: 4px;\r\n    -moz-border-radius: 4px;\r\n    box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);\r\n    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);\r\n    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\r\n}",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-      "primary": "#31859b",
-      "bodyText": "#373A3C",
-      "bodyBackground": "#f2f2f2",
-      "fontFamily": null,
-      "fontType": 0,
-      "fontSize": 15,
-      "fontWeight": 400,
-      "borderThickness": 1,
-      "borderRadius": 8,
-      "shadow": true,
-      "themeId": "0af757f2997fee3eb5cbd37a5af9e803"
-  },
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": "We are already working on your request!",
-  "redirectURL": null,
-  "hideAfterSubmission": true,
-  "submissionTimeout": "60",
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "padding": [null, null, 15, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "IT Help Request",
+                            "view": "Underline1",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H1",
+                            "textAlignment": "Left"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "RequesterName",
+                            "width": 150,
+                            "title": {
+                                "text": "Requester Name:",
+                                "visible": true
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "Peter Pan",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "DropDown",
+                        "model": {
+                            "_internalName": "Department",
+                            "width": 150,
+                            "title": {
+                                "text": "Department:",
+                                "visible": true
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "Marketing",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Production\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
+                            },
+                            "selection": "Single",
+                            "options": "Production\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "Email",
+                            "width": 150,
+                            "title": {
+                                "text": "Email:",
+                                "visible": true
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "p.pan@domain.com",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "E-mail",
+                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                            "error": "This field must contain a valid e-mail address."
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "DropDown",
+                        "model": {
+                            "_internalName": "RequestType",
+                            "width": 150,
+                            "title": {
+                                "text": "Request Type:",
+                                "visible": true
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "Select request type",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Generic request\r\nIncident\r\nHardware request\r\nHardware repair\r\nPassword change\r\nSoftware request"
+                            },
+                            "selection": "Single",
+                            "options": "Generic request\r\nIncident\r\nHardware request\r\nHardware repair\r\nPassword change\r\nSoftware request"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "MultiLineText",
+                        "model": {
+                            "_internalName": "Comments",
+                            "width": 150,
+                            "title": {
+                                "text": "Comments:",
+                                "visible": true
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "Provide the detailed description of the case",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Plain"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Attachments",
+                        "model": {
+                            "_internalName": "Attachments",
+                            "width": 150,
+                            "title": {
+                                "text": "Attachments:",
+                                "visible": true
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "description": "Attach files that will help us to resolve the issue faster, like screenshots, photos or manager's approval",
+                            "maxSize": 10240
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [5, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "HELP!",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();",
+                            "style": "font-weight: 500 !important;"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#31859b",
+        "bodyText": "#373A3C",
+        "bodyBackground": "#f2f2f2",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 8,
+        "shadow": true,
+        "themeId": "0af757f2997fee3eb5cbd37a5af9e803"
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": "We are already working on your request!",
+    "redirectURL": null,
+    "hideAfterSubmission": true,
+    "submissionTimeout": "60",
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }

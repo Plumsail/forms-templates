@@ -1,173 +1,165 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "class": "bg-primary",
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading1",
-                          "heading": "Support Satisfaction Survey",
-                          "view": "Normal",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H1",
-                          "textAlignment": "Center"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [40, null, null, null],
-                  "component": {
-                      "type": "LikertScale",
-                      "model": {
-                          "_internalName": "LikertScale1",
-                          "type": "Radio",
-                          "required": false,
-                          "questions": "How would you rate the overall quality of the support you received?\r\nHow would you rate the speed in which you received an answer from the customer support?\r\nHow would you rate the overall knowledge of the support specialist?",
-                          "answers": "Very Satisfied\nSatisfied\nPartly Satisfied\nNot at all Satisfied"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading2",
-                          "heading": "Has the issue been resolved?",
-                          "view": "Normal",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H4",
-                          "textAlignment": "Left"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "SingleChoice",
-                      "model": {
-                          "_internalName": "IssueResolved",
-                          "title": {
-                              "text": "IssueResolved",
-                              "visible": false
-                          },
-                          "orientation": "Vertical",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "dataSource": "StaticList",
-                          "StaticList": {
-                              "options": "Yes, because of support specialist\r\nYes, because I found the solution myself\r\nNo, but support specialist answered my question\r\nNo, and support specialist could not answer my question"
-                          },
-                          "cColumns": 1,
-                          "options": "Yes, because of support specialist\r\nYes, because I found the solution myself\r\nNo, but support specialist answered my question\r\nNo, and support specialist could not answer my question"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [20, null, null, null],
-                  "component": {
-                      "type": "Submit",
-                      "model": {
-                          "_internalName": "Submit1",
-                          "text": "SEND FEEDBACK",
-                          "savingText": "Submitting...",
-                          "type": "Primary",
-                          "click": "return fd.save();",
-                          "style": "font-weight: 700 !important;"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Center",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "",
-  "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem)!important;\n    color: white!important;\n    padding-bottom: 8px!important;\n    padding-top: 8px!important;\n    margin: 0px!important;\n}\n\n.fd-form h1 > span,\n.fd-form .fd-heading{\n    background-color: var(--fd-primary-rgb) !important;\n}\n\n\n.fd-form h4, .fd-form .h4 {\n    font-size: min(4.5vw, 1.40625rem)!important;\n    padding-top: 4px!important;\n    padding-bottom: 4px!important;\n}\n\n.fd-form .fd-likert-answer-connected-lines > .flex-column {\n    align-items: center;\n}\n\n.fd-form .fd-likert-answer-connected-lines label {\n    text-align: center;\n}\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-      "primary": "#8064a2",
-      "bodyText": "#373A3C",
-      "bodyBackground": "#f2f2f2",
-      "fontFamily": null,
-      "fontType": 0,
-      "fontSize": 15,
-      "fontWeight": 400,
-      "borderThickness": 1,
-      "borderRadius": 0,
-      "shadow": true,
-      "themeId": "6d72e1407fdf549b078317c86fff77e3"
-  },
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Support Satisfaction Survey",
+                            "view": "Normal",
+                            "font": {
+                                "color": "#ffffff",
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": 15,
+                                "radius": null
+                            },
+                            "class": "bg-primary",
+                            "fill": "#8064a2",
+                            "size": "H1",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "LikertScale",
+                        "model": {
+                            "_internalName": "LikertScale1",
+                            "type": "Radio",
+                            "required": false,
+                            "questions": "How would you rate the overall quality of the support you received?\r\nHow would you rate the speed in which you received an answer from the customer support?\r\nHow would you rate the overall knowledge of the support specialist?",
+                            "answers": "Very Satisfied\nSatisfied\nPartly Satisfied\nNot at all Satisfied"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [5, null, null, null],
+                    "component": {
+                        "type": "SingleChoice",
+                        "model": {
+                            "_internalName": "IssueResolved",
+                            "title": {
+                                "text": "Has the issue been resolved?",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Yes, because of support specialist\r\nYes, because I found the solution myself\r\nNo, but support specialist answered my question\r\nNo, and support specialist could not answer my question"
+                            },
+                            "cColumns": 1,
+                            "options": "Yes, because of support specialist\r\nYes, because I found the solution myself\r\nNo, but support specialist answered my question\r\nNo, and support specialist could not answer my question"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "SEND FEEDBACK",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();",
+                            "style": "font-weight: 500 !important;"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Center",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span {\n    background-color: var(--fd-primary-rgb) !important;\n}",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#8064a2",
+        "bodyText": "#373A3C",
+        "bodyBackground": "#f2f2f2",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 0,
+        "shadow": true,
+        "themeId": "6d72e1407fdf549b078317c86fff77e3"
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }

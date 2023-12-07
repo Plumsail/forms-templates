@@ -1,430 +1,461 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading1",
-                          "heading": "Students Progress Report",
-                          "view": "Normal",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "class": "bg-primary",
-                          "size": "H1",
-                          "textAlignment": "Center"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [30, null, null, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading2",
-                          "heading": "Teacher's Name",
-                          "view": "Underline1",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H4",
-                          "textAlignment": "Left"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "SingleLineText",
-                      "model": {
-                          "_internalName": "FirstName",
-                          "title": {
-                              "text": "First Name",
-                              "visible": false
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "First Name",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "type": "Anything"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 6
-                  }
-              }, {
-                  "component": {
-                      "type": "SingleLineText",
-                      "model": {
-                          "_internalName": "LastName",
-                          "title": {
-                              "text": "Last Name",
-                              "visible": false
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "Last Name",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "type": "Anything"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 6
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading3",
-                          "heading": "Subject and Level",
-                          "view": "Underline1",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H4",
-                          "textAlignment": "Left"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "SingleLineText",
-                      "model": {
-                          "_internalName": "Subject",
-                          "title": {
-                              "text": "Subject",
-                              "visible": false
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "Subject",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "type": "Anything"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 6
-                  }
-              }, {
-                  "component": {
-                      "type": "DropDown",
-                      "model": {
-                          "_internalName": "Level",
-                          "title": {
-                              "text": "Level",
-                              "visible": false
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "Level",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "dataSource": "StaticList",
-                          "StaticList": {
-                              "options": "Level 1\nLevel 2\nLevel 3"
-                          },
-                          "selection": "Single",
-                          "options": "Level 1\nLevel 2\nLevel 3"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 6
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading4",
-                          "heading": "Class",
-                          "view": "Underline1",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H4",
-                          "textAlignment": "Left"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "DataTable",
-                      "model": {
-                          "_internalName": "DataTable1",
-                          "title": {
-                              "text": "DataTable1",
-                              "visible": false
-                          },
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "newLine": "Top",
-                          "delete": "Last",
-                          "columns": [{
-                              "_internalName": "StudentName",
-                              "title": "Student Name",
-                              "required": true,
-                              "type": "String"
-                          }, {
-                              "_internalName": "HomeWork",
-                              "title": "Homework turned in",
-                              "required": false,
-                              "type": "Boolean"
-                          }, {
-                              "_internalName": "Attendance",
-                              "title": "Attendance",
-                              "required": false,
-                              "type": "Dropdown",
-                              "selection": "Single",
-                              "options": "Tardies\r\nAbsence"
-                          }, {
-                              "_internalName": "Comments",
-                              "title": "Comments",
-                              "required": false,
-                              "type": "String"
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "MultiLineText",
-                      "model": {
-                          "_internalName": "Comments",
-                          "title": {
-                              "text": "Comments",
-                              "visible": false
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cHint": "Comments",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "mode": "Plain",
-                          "cHeight": 150
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Text",
-                      "model": {
-                          "_internalName": "Text8",
-                          "text": "<h6>Teacher's Signature:</h6>"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 4
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Signature",
-                      "model": {
-                          "_internalName": "Signature",
-                          "title": {
-                              "text": "Signature",
-                              "visible": false
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cWidth": 300,
-                          "height": 150,
-                          "inkColor": "#000000"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Left",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Submit",
-                      "model": {
-                          "_internalName": "Submit1",
-                          "text": "Submit",
-                          "savingText": "Submitting...",
-                          "type": "Primary",
-                          "click": "return fd.save();",
-                          "style": "font-weight: 500 !important"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "",
-  "css": ".fd-form h1 {\r\n    font-size: min(6.5vw, 2.34375rem)!important;\r\n    color: #ffff !important;\r\n}\r\n.fd-form h1 > span{\r\n    background-color: var(--fd-primary-rgb) !important;\r\n}\r\n.fd-form h4, .fd-form .h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n\r\n}\r\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-      "primary": "#407855",
-      "bodyText": "#333333",
-      "bodyBackground": "#FFFFFF",
-      "fontFamily": null,
-      "fontType": 0,
-      "fontSize": 15,
-      "fontWeight": 400,
-      "borderThickness": 1,
-      "borderRadius": 0,
-      "shadow": true,
-      "themeId": "green"
-  },
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Students Progress Report",
+                            "view": "Normal",
+                            "font": {
+                                "color": "#ffffff",
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": 15,
+                                "radius": null
+                            },
+                            "class": "bg-primary",
+                            "fill": "#407855",
+                            "size": "H1",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [30, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading2",
+                            "heading": "Teacher's Name",
+                            "view": "Underline1",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Left"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "FirstName",
+                            "title": {
+                                "text": "First Name",
+                                "visible": false
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "First Name",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "LastName",
+                            "title": {
+                                "text": "Last Name",
+                                "visible": false
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "Last Name",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading3",
+                            "heading": "Subject and Level",
+                            "view": "Underline1",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Left"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "Subject",
+                            "title": {
+                                "text": "Subject",
+                                "visible": false
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "Subject",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "component": {
+                        "type": "DropDown",
+                        "model": {
+                            "_internalName": "Level",
+                            "title": {
+                                "text": "Level",
+                                "visible": false
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "Level",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Level 1\nLevel 2\nLevel 3"
+                            },
+                            "selection": "Single",
+                            "options": "Level 1\nLevel 2\nLevel 3"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading4",
+                            "heading": "Class",
+                            "view": "Underline1",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Left"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "DataTable",
+                        "model": {
+                            "_internalName": "DataTable1",
+                            "title": {
+                                "text": "DataTable1",
+                                "visible": false
+                            },
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "newLine": "Top",
+                            "delete": "Last",
+                            "columns": [{
+                                "_internalName": "StudentName",
+                                "title": "Student Name",
+                                "required": true,
+                                "type": "String"
+                            }, {
+                                "_internalName": "HomeWork",
+                                "title": "Homework turned in",
+                                "required": false,
+                                "type": "Boolean"
+                            }, {
+                                "_internalName": "Attendance",
+                                "title": "Attendance",
+                                "required": false,
+                                "type": "Dropdown",
+                                "selection": "Single",
+                                "options": "Tardies\r\nAbsence"
+                            }, {
+                                "_internalName": "Comments",
+                                "title": "Comments",
+                                "required": false,
+                                "type": "String"
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "MultiLineText",
+                        "model": {
+                            "_internalName": "Comments",
+                            "title": {
+                                "text": "Comments",
+                                "visible": false
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "Comments",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Plain",
+                            "cHeight": 150
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text8",
+                            "text": "<h6>Teacher's Signature:</h6>"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 4
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Signature",
+                        "model": {
+                            "_internalName": "Signature",
+                            "title": {
+                                "text": "Signature",
+                                "visible": false
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cWidth": 300,
+                            "height": 150,
+                            "inkColor": "#000000"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Left",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "Submit",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();",
+                            "style": "font-weight: 500 !important"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span {\n    background-color: var(--fd-primary-rgb) !important;\n}\n\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#407855",
+        "bodyText": "#333333",
+        "bodyBackground": "#FFFFFF",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 0,
+        "shadow": true,
+        "themeId": "green"
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }
