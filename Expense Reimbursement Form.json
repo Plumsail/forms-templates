@@ -1,618 +1,610 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading1",
-                          "heading": "Expense Reimbursement Form",
-                          "view": "Normal",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H1",
-                          "textAlignment": "Center"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [30, null, null, null],
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid3",
-                          "stacked": "md",
-                          "rows": [{
-                              "cells": [{
-                                  "component": {
-                                      "type": "Heading",
-                                      "model": {
-                                          "_internalName": "Heading2",
-                                          "heading": "Employee Information",
-                                          "view": "Line",
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "size": "H4",
-                                          "textAlignment": "Center"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [0, null, null, null],
-                                  "class": "bg-secondary",
-                                  "component": {
-                                      "type": "Grid",
-                                      "model": {
-                                          "_internalName": "Grid2",
-                                          "stacked": "md",
-                                          "rows": [{
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "FirstName",
-                                                          "title": {
-                                                              "text": "First Name",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "First Name",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "FamilyName",
-                                                          "title": {
-                                                              "text": "Family Name",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Family Name",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "DropDown",
-                                                      "model": {
-                                                          "_internalName": "Department",
-                                                          "title": {
-                                                              "text": "Department",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Department",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "dataSource": "StaticList",
-                                                          "StaticList": {
-                                                              "options": "Production.\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
-                                                          },
-                                                          "selection": "Single",
-                                                          "options": "Production.\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "ManagerName",
-                                                          "title": {
-                                                              "text": "Manager",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Manager Name",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }]
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [15, null, null, null],
-                                  "component": {
-                                      "type": "Heading",
-                                      "model": {
-                                          "_internalName": "Heading3",
-                                          "heading": "Expense Information",
-                                          "view": "Line",
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "size": "H4",
-                                          "textAlignment": "Center"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [0, null, null, null],
-                                  "class": "bg-secondary",
-                                  "component": {
-                                      "type": "Grid",
-                                      "model": {
-                                          "_internalName": "Grid1",
-                                          "stacked": "md",
-                                          "rows": [{
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "Text",
-                                                      "model": {
-                                                          "_internalName": "Text8",
-                                                          "text": "<h6>Expense Period:</h6>"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "Date",
-                                                      "model": {
-                                                          "_internalName": "From",
-                                                          "title": {
-                                                              "text": "From",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "From",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          }
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }, {
-                                                  "component": {
-                                                      "type": "Date",
-                                                      "model": {
-                                                          "_internalName": "To",
-                                                          "title": {
-                                                              "text": "To",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "To",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          }
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 6
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "SingleLineText",
-                                                      "model": {
-                                                          "_internalName": "BusinessPurpose",
-                                                          "title": {
-                                                              "text": "Business Purpose",
-                                                              "visible": false
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": true,
-                                                          "cHint": "Business Purpose",
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "type": "Anything"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "padding": [15, null, null, null],
-                                                  "component": {
-                                                      "type": "Text",
-                                                      "model": {
-                                                          "_internalName": "Text9",
-                                                          "text": "<h6>Itemized Expenses</h6>"
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "DataTable",
-                                                      "model": {
-                                                          "_internalName": "DataTable1",
-                                                          "title": {
-                                                              "text": "DataTable1",
-                                                              "visible": false
-                                                          },
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "newLine": "Top",
-                                                          "delete": "Last",
-                                                          "columns": [{
-                                                              "_internalName": "Description",
-                                                              "title": "Description",
-                                                              "required": false,
-                                                              "type": "String"
-                                                          }, {
-                                                              "_internalName": "Date",
-                                                              "title": "Date",
-                                                              "required": false,
-                                                              "type": "Date"
-                                                          }, {
-                                                              "_internalName": "Category",
-                                                              "title": "Category",
-                                                              "required": false,
-                                                              "type": "Dropdown",
-                                                              "selection": "Single",
-                                                              "options": "Advertising Expenses \r\nBusiness Vehicle(s) \r\nPayroll \r\nEmployee Benefits \r\nMeals & Entertainment Expenses \r\nOffice Expenses \r\nOffice Supplies \r\nProfessional Services"
-                                                          }, {
-                                                              "_internalName": "Amount",
-                                                              "title": "Amount",
-                                                              "required": false,
-                                                              "type": "Number",
-                                                              "min": 0,
-                                                              "decimals": 2,
-                                                              "format": "c2",
-                                                              "step": 1
-                                                          }]
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Justify",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }, {
-                                              "cells": [{
-                                                  "component": {
-                                                      "type": "Number",
-                                                      "model": {
-                                                          "_internalName": "Total",
-                                                          "width": 80,
-                                                          "title": {
-                                                              "text": "Total:",
-                                                              "visible": true
-                                                          },
-                                                          "orientation": "Horizontal",
-                                                          "required": false,
-                                                          "font": {
-                                                              "style": "Normal",
-                                                              "weight": "Semibold"
-                                                          },
-                                                          "wrap": false,
-                                                          "class": "fd-total-field",
-                                                          "cWidth": 120,
-                                                          "cFont": {
-                                                              "style": "Normal",
-                                                              "weight": "Normal"
-                                                          },
-                                                          "decimals": 2,
-                                                          "format": "c2",
-                                                          "step": 1
-                                                      }
-                                                  },
-                                                  "alignment": {
-                                                      "horizontal": "Right",
-                                                      "vertical": "Top"
-                                                  },
-                                                  "columns": {
-                                                      "width": 12
-                                                  }
-                                              }]
-                                          }]
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [30, 0, null, 0],
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text10",
-                                          "text": "<h5>Signature:</h5>"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "padding": [null, 0, null, 0],
-                                  "component": {
-                                      "type": "Signature",
-                                      "model": {
-                                          "_internalName": "Signature",
-                                          "title": {
-                                              "text": "Signature",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cWidth": 300,
-                                          "height": 150,
-                                          "inkColor": "#000000"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Left",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid4",
-                          "stacked": "md"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Submit",
-                      "model": {
-                          "_internalName": "Submit1",
-                          "text": "SEND REPORT",
-                          "savingText": "Submitting...",
-                          "type": "Primary",
-                          "click": "return fd.save();",
-                          "style": "font-weight: 700 !important;"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "fd.rendered(function () {\r\n    fd.field('Total').disabled = true;\r\n\r\n    // require a valid time interval to be entered\r\n    fd.validators.push({\r\n        name: 'ExpensePeriodValidation',\r\n        error: 'Select a valid interval as expense period',\r\n        validate: function (value) {\r\n            if (fd.field('From').value > fd.field('To').value) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    // require at least one record to the data table\r\n    fd.validators.push({\r\n        name: 'ExpenseItemsValidation',\r\n        error: 'Add at least one expense item',\r\n        validate: function (value) {\r\n            if (fd.control('DataTable1').value.length < 1) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    //require a signature\r\n    fd.validators.push({\r\n        name: 'SignatureValidation',\r\n        error: 'Sign the form',\r\n        validate: function (value) {\r\n            if (fd.control('Signature').value == null) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    // calculate Total\r\n    fd.control('DataTable1').$on('change', function (value) {\r\n        var total = 0.0;\r\n\r\n        if (value) {\r\n            for (var i = 0; i < value.length; i++) {\r\n                if (value[i].Amount) {\r\n                    total += value[i].Amount;\r\n                }\r\n            }\r\n        }\r\n\r\n        fd.field('Total').value = total;\r\n    });\r\n});\r\n",
-  "css": ".fd-form h1, .fd-form .h1 {\r\n    font-size: 2.34375rem !important;\r\n}\r\n\r\n.fd-form h4, .fd-form .h4 {\r\n    font-size: min(4.5vw, 1.40625rem) !important;\r\n}\r\n\r\n\r\n.fd-form .fd-total-field input {\r\n    text-align: right;\r\n    font-weight: 600;\r\n    padding-left: 0;\r\n    background-color: white !important;\r\n    border-radius: 0;\r\n}\r\n\r\n.fd-form .fd-total-field span.k-select {\r\n    display: none !important;\r\n}\r\n\r\n.fd-form .fd-total-field .k-numeric-wrap {\r\n    border: none !important;\r\n}\r\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-      "primary": "#8764B8",
-      "bodyText": "#333333",
-      "bodyBackground": "#e5e0ec96",
-      "fontFamily": null,
-      "fontType": 0,
-      "fontSize": 15,
-      "fontWeight": 400,
-      "borderThickness": 0,
-      "borderRadius": 8,
-      "shadow": true,
-      "themeId": null
-  },
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "padding": [null, null, 20, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Expense Reimbursement Form",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H1",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading2",
+                            "heading": "Employee Information",
+                            "view": "Line",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [null, null, 10, null],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid2",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "FirstName",
+                                            "title": {
+                                                "text": "First Name",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "First Name",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "FamilyName",
+                                            "title": {
+                                                "text": "Family Name",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Family Name",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 10, null],
+                                    "component": {
+                                        "type": "DropDown",
+                                        "model": {
+                                            "_internalName": "Department",
+                                            "title": {
+                                                "text": "Department",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Department",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "Production.\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
+                                            },
+                                            "selection": "Single",
+                                            "options": "Production.\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "padding": [null, null, 10, null],
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "ManagerName",
+                                            "title": {
+                                                "text": "Manager",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Manager Name",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading3",
+                            "heading": "Expense Information",
+                            "view": "Line",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid1",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text8",
+                                            "text": "<h6>Expense Period:</h6>"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Date",
+                                        "model": {
+                                            "_internalName": "From",
+                                            "title": {
+                                                "text": "From",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "From",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            }
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "Date",
+                                        "model": {
+                                            "_internalName": "To",
+                                            "title": {
+                                                "text": "To",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "To",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            }
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "BusinessPurpose",
+                                            "title": {
+                                                "text": "Business Purpose",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "Business Purpose",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text9",
+                                            "text": "<h6>Itemized Expenses</h6>"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "DataTable",
+                                        "model": {
+                                            "_internalName": "DataTable1",
+                                            "title": {
+                                                "text": "DataTable1",
+                                                "visible": false
+                                            },
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "newLine": "Top",
+                                            "delete": "Last",
+                                            "columns": [{
+                                                "_internalName": "Description",
+                                                "title": "Description",
+                                                "required": false,
+                                                "type": "String"
+                                            }, {
+                                                "_internalName": "Date",
+                                                "title": "Date",
+                                                "required": false,
+                                                "type": "Date"
+                                            }, {
+                                                "_internalName": "Category",
+                                                "title": "Category",
+                                                "required": false,
+                                                "type": "Dropdown",
+                                                "selection": "Single",
+                                                "options": "Advertising Expenses \r\nBusiness Vehicle(s) \r\nPayroll \r\nEmployee Benefits \r\nMeals & Entertainment Expenses \r\nOffice Expenses \r\nOffice Supplies \r\nProfessional Services"
+                                            }, {
+                                                "_internalName": "Amount",
+                                                "title": "Amount",
+                                                "required": false,
+                                                "type": "Currency",
+                                                "min": 0,
+                                                "step": 1,
+                                                "symbol": null,
+                                                "spinButtons": true,
+                                                "precision": 2
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Currency",
+                                        "model": {
+                                            "_internalName": "Total",
+                                            "width": 80,
+                                            "title": {
+                                                "text": "Total:",
+                                                "visible": true
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "class": "fd-total-field",
+                                            "cWidth": 120,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "min": 0,
+                                            "symbol": "$",
+                                            "precision": 2,
+                                            "spinButtons": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Right",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [5, null, null, null],
+                    "component": {
+                        "type": "Signature",
+                        "model": {
+                            "_internalName": "Signature",
+                            "title": {
+                                "text": "Signature:",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cWidth": 300,
+                            "height": 150,
+                            "inkColor": "#000000"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Left",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "SEND REPORT",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();",
+                            "style": "font-weight: 500 !important;"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "fd.rendered(function () {\r\n    //disable Total field\r\n    fd.field('Total').disabled = true;\r\n\r\n    // require a valid time interval to be entered\r\n    fd.validators.push({\r\n        name: 'ExpensePeriodValidation',\r\n        error: 'Select a valid interval as expense period',\r\n        validate: function (value) {\r\n            if (fd.field('From').value > fd.field('To').value) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    // require at least one record to the data table\r\n    fd.validators.push({\r\n        name: 'ExpenseItemsValidation',\r\n        error: 'Add at least one expense item',\r\n        validate: function (value) {\r\n            if (fd.control('DataTable1').value.length < 1) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    //require a signature\r\n    fd.validators.push({\r\n        name: 'SignatureValidation',\r\n        error: 'Sign the form',\r\n        validate: function (value) {\r\n            if (fd.control('Signature').value == null) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    // calculate Total\r\n    fd.control('DataTable1').$on('change', function (value) {\r\n        var total = 0.0;\r\n\r\n        if (value) {\r\n            for (var i = 0; i < value.length; i++) {\r\n                if (value[i].Amount) {\r\n                    total += value[i].Amount;\r\n                }\r\n            }\r\n        }\r\n\r\n        fd.field('Total').value = total;\r\n    });\r\n});\r\n",
+    "css": "/* styling of the disabled total field  */\r\n.fd-form .fd-total-field input {\r\n    text-align: right;\r\n    font-weight: 600;\r\n    padding-left: 0;\r\n    border-radius: 0;\r\n}\r\n\r\n\r\n.fd-form .fd-total-field .k-numeric-wrap {\r\n    border: none !important;\r\n}\r\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#8764B8",
+        "bodyText": "#333333",
+        "bodyBackground": "#e5e0ec96",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 0,
+        "borderRadius": 8,
+        "shadow": true,
+        "themeId": null
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }
