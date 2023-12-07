@@ -1,677 +1,716 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid1",
-                          "stacked": "md",
-                          "rows": [{
-                              "cells": [{
-                                  "class": "col-md-auto",
-                                  "component": {
-                                      "type": "Image",
-                                      "model": {
-                                          "_internalName": "Image2",
-                                          "width": 120,
-                                          "target": "Blank",
-                                          "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Left",
-                                      "vertical": "Middle"
-                                  },
-                                  "columns": {
-                                      "width": 2
-                                  }
-                              }, {
-                                  "component": {
-                                      "type": "Heading",
-                                      "model": {
-                                          "_internalName": "Heading1",
-                                          "heading": "Supplier Registration Form",
-                                          "view": "Normal",
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "subheading": "Please fill out the form to become one of our potential suppliers.",
-                                          "size": "H1",
-                                          "textAlignment": "Center"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Middle"
-                                  },
-                                  "columns": {
-                                      "width": 10
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [30, null, null, null],
-                  "component": {
-                      "type": "TabControl",
-                      "model": {
-                          "_internalName": "TabControl1",
-                          "orientation": "Left",
-                          "tabs": [{
-                              "_internalName": "Tab1",
-                              "title": "Company Information",
-                              "component": {
-                                  "type": "Grid",
-                                  "model": {
-                                      "stacked": "md",
-                                      "rows": [{
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "BusinessName",
-                                                      "title": {
-                                                          "text": "Business Name",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Vertical",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Bold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "Monster Corp",
-                                                      "description": "Business Name",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "Anything"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }, {
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "BusinessOwner",
-                                                      "title": {
-                                                          "text": "Business Owner",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Vertical",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "Mike Wazowski",
-                                                      "description": "Business Owner Name",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "Anything"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }, {
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "BusinessRegistrationNumber",
-                                                      "title": {
-                                                          "text": "Business Registration Number",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Vertical",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Bold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "012345678",
-                                                      "description": "Business Registration Number",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "Custom",
-                                                      "pattern": "^[0-9]*d{9}$",
-                                                      "error": "This field must contain numeric characters only."
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }, {
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "TaxpayerIdentificationNumber",
-                                                      "title": {
-                                                          "text": "Taxpayer Identification Number",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Vertical",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Bold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "ex: 0123456789",
-                                                      "description": "Taxpayer Identification Number",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "Custom",
-                                                      "pattern": "^[0-9]*d{10}$",
-                                                      "error": "TIN is invalid"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }, {
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "MultiLineText",
-                                                  "model": {
-                                                      "_internalName": "CompanyDescription",
-                                                      "title": {
-                                                          "text": "",
-                                                          "visible": true
-                                                      },
-                                                      "orientation": "Vertical",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Bold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "Tell us more about your company",
-                                                      "description": "Company Description",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "mode": "Plain"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }]
-                                  }
-                              }
-                          }, {
-                              "_internalName": "Tab2",
-                              "title": "Address",
-                              "component": {
-                                  "type": "Grid",
-                                  "model": {
-                                      "stacked": "md",
-                                      "rows": [{
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "Street",
-                                                      "title": {
-                                                          "text": "Street",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Horizontal",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "Oak street 22",
-                                                      "description": "Street",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "Anything"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }, {
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "City",
-                                                      "title": {
-                                                          "text": "City",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Horizontal",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "Chicago",
-                                                      "description": "City",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "Anything"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 6
-                                              }
-                                          }, {
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "State",
-                                                      "title": {
-                                                          "text": "State",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Horizontal",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "Illinois",
-                                                      "description": "State / Province",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "Anything"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 6
-                                              }
-                                          }]
-                                      }, {
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "Country",
-                                                      "title": {
-                                                          "text": "Country",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Horizontal",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "USA",
-                                                      "description": "Country",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "Anything"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 6
-                                              }
-                                          }, {
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "ZIP",
-                                                      "title": {
-                                                          "text": "ZIP",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Horizontal",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "60007 ",
-                                                      "description": "ZIP Code",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "Anything"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 6
-                                              }
-                                          }]
-                                      }]
-                                  }
-                              }
-                          }, {
-                              "_internalName": "Tab3",
-                              "title": "Contact Information",
-                              "component": {
-                                  "type": "Grid",
-                                  "model": {
-                                      "stacked": "md",
-                                      "rows": [{
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "MaskedInput",
-                                                  "model": {
-                                                      "_internalName": "MobileNumber",
-                                                      "title": {
-                                                          "text": "Mobile Number",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Horizontal",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "description": "Phone",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "mask": "000-000-0000"
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }, {
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "Email",
-                                                      "title": {
-                                                          "text": "E-mail",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Horizontal",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "name@domain.com",
-                                                      "description": "E-mail",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "E-mail",
-                                                      "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                      "error": "This field must contain a valid e-mail address."
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }, {
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "SingleLineText",
-                                                  "model": {
-                                                      "_internalName": "SiteURL",
-                                                      "title": {
-                                                          "text": "siteURL",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Horizontal",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "cHint": "www.monster.com",
-                                                      "description": "SiteURL",
-                                                      "cFont": {
-                                                          "style": "Normal",
-                                                          "weight": "Normal"
-                                                      },
-                                                      "type": "E-mail",
-                                                      "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                      "error": "This field must contain a valid e-mail address."
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }]
-                                  }
-                              }
-                          }, {
-                              "_internalName": "Tab4",
-                              "title": "Documents",
-                              "component": {
-                                  "type": "Grid",
-                                  "model": {
-                                      "stacked": "md",
-                                      "rows": [{
-                                          "cells": [{
-                                              "component": {
-                                                  "type": "Attachments",
-                                                  "model": {
-                                                      "_internalName": "Attachments1",
-                                                      "title": {
-                                                          "text": "Attachments1",
-                                                          "visible": false
-                                                      },
-                                                      "orientation": "Horizontal",
-                                                      "required": false,
-                                                      "font": {
-                                                          "style": "Normal",
-                                                          "weight": "Semibold"
-                                                      },
-                                                      "wrap": true,
-                                                      "description": "Please attach price-list or catalog:",
-                                                      "maxSize": 10240
-                                                  }
-                                              },
-                                              "alignment": {
-                                                  "horizontal": "Justify",
-                                                  "vertical": "Top"
-                                              },
-                                              "columns": {
-                                                  "width": 12
-                                              }
-                                          }]
-                                      }]
-                                  }
-                              }
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid2",
-                          "stacked": "md",
-                          "rows": [{
-                              "cells": [{
-                                  "component": {
-                                      "type": "Submit",
-                                      "model": {
-                                          "_internalName": "Submit1",
-                                          "width": 300,
-                                          "text": "SEND REQUEST",
-                                          "savingText": "Submitting...",
-                                          "type": "Primary",
-                                          "click": "return fd.save();",
-                                          "style": "font-weight: 700 !important;"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Right",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "/*****************************************************************************\r\nThe JavaScript code from this section will be executed while loading\r\nthe current form.\r\n\r\nThe following predefined variables can be utilized in the code:\r\n\r\nfd  - instance of the current form\r\n$   - jQuery object\r\n\r\n==============================================================================\r\n\r\nfd.rendered(function () {\r\n    // This code is executed once the form is rendered\r\n\r\n    // Hide State field for all values of Country field except 'USA'\r\n    function updateStateVisibility() {\r\n        var stateContainer = $(fd.field('State').$el).closest('.form-group');\r\n        if (fd.field('Country').value === 'USA') {\r\n            stateContainer.show();\r\n        } else {\r\n            stateContainer.hide();\r\n        }\r\n    }\r\n\r\n    // Set initial State visibility\r\n    updateStateVisibility();\r\n\r\n    // Update State visibility after changing Country\r\n    fd.field('Country').$on('change', updateStateVisibility)\r\n});\r\n\r\nfd.beforeSave(function () {\r\n    // This code is exeuted before saving the form and\r\n    // may return Promise. The saving does not proceed until\r\n    // the Promise is resolved. If the Promise is rejected,\r\n    // the saving interrupts. This is the appropriate place\r\n    // for adding custom validation.\r\n\r\n    // Prevent saving if Start Date is greater than End Date\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\nfd.saved(function (result) {\r\n    // This code is executed after saving the form\r\n\r\n    // Forwarding users to specific URL\r\n    window.location = '--- Some URL ---';\r\n});\r\n\r\n*****************************************************************************/\r\n\r\n",
-  "css": ".fd-form h1, .fd-form .h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    text-align: center !important;\n    color: var(--fd-primary) !important;\n}\n\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-      "primary": "#8e44ac",
-      "bodyText": "#333",
-      "bodyBackground": "#FFF5E7",
-      "fontFamily": null,
-      "fontType": 0,
-      "fontSize": 18,
-      "fontWeight": 300,
-      "borderThickness": 2,
-      "borderRadius": 8,
-      "shadow": true,
-      "themeId": "466c3bdb92b2c9e0c1491aef572eaf75"
-  },
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid1",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "rows": [{
+                                "cells": [{
+                                    "class": "col-md-auto",
+                                    "component": {
+                                        "type": "Image",
+                                        "model": {
+                                            "_internalName": "Image2",
+                                            "width": 120,
+                                            "target": "Blank",
+                                            "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder.png"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Left",
+                                        "vertical": "Middle"
+                                    },
+                                    "columns": {
+                                        "width": 2
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "Heading",
+                                        "model": {
+                                            "_internalName": "Heading1",
+                                            "heading": "Supplier Registration Form",
+                                            "view": "Normal",
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "subheading": "Please fill out the form to become one of our potential suppliers.",
+                                            "size": "H1",
+                                            "textAlignment": "Center"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Middle"
+                                    },
+                                    "columns": {
+                                        "width": 10
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [30, null, 30, null],
+                    "component": {
+                        "type": "TabControl",
+                        "model": {
+                            "_internalName": "TabControl1",
+                            "orientation": "Left",
+                            "tabs": [{
+                                "_internalName": "Tab1",
+                                "title": "Company Information",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "BusinessName",
+                                                        "title": {
+                                                            "text": "Business Name",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Bold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "Monster Corp",
+                                                        "description": "Business Name",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Anything"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "BusinessOwner",
+                                                        "title": {
+                                                            "text": "Business Owner",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "Mike Wazowski",
+                                                        "description": "Business Owner Name",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Anything"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "BusinessRegistrationNumber",
+                                                        "title": {
+                                                            "text": "Business Registration Number",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Bold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "012345678",
+                                                        "description": "Business Registration Number",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Custom",
+                                                        "pattern": "^[0-9]*d{9}$",
+                                                        "error": "This field must contain numeric characters only."
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "TaxpayerIdentificationNumber",
+                                                        "title": {
+                                                            "text": "Taxpayer Identification Number",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Bold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "ex: 0123456789",
+                                                        "description": "Taxpayer Identification Number",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Custom",
+                                                        "pattern": "^[0-9]*d{10}$",
+                                                        "error": "TIN is invalid"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "MultiLineText",
+                                                    "model": {
+                                                        "_internalName": "CompanyDescription",
+                                                        "title": {
+                                                            "text": "",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Bold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "Tell us more about your company",
+                                                        "description": "Company Description",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "mode": "Plain"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }, {
+                                "_internalName": "Tab2",
+                                "title": "Address",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "Street",
+                                                        "title": {
+                                                            "text": "Street",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Horizontal",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "Oak street 22",
+                                                        "description": "Street",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Anything"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "City",
+                                                        "title": {
+                                                            "text": "City",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Horizontal",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "Chicago",
+                                                        "description": "City",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Anything"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }, {
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "State",
+                                                        "title": {
+                                                            "text": "State",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Horizontal",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "Illinois",
+                                                        "description": "State / Province",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Anything"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "Country",
+                                                        "title": {
+                                                            "text": "Country",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Horizontal",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "USA",
+                                                        "description": "Country",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Anything"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }, {
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "ZIP",
+                                                        "title": {
+                                                            "text": "ZIP",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Horizontal",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "60007 ",
+                                                        "description": "ZIP Code",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Anything"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }, {
+                                "_internalName": "Tab3",
+                                "title": "Contact Information",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "MaskedInput",
+                                                    "model": {
+                                                        "_internalName": "MobileNumber",
+                                                        "title": {
+                                                            "text": "Mobile Number",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Horizontal",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "description": "Phone",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "mask": "000-000-0000"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "Email",
+                                                        "title": {
+                                                            "text": "E-mail",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Horizontal",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "name@domain.com",
+                                                        "description": "E-mail",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "E-mail",
+                                                        "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                        "error": "This field must contain a valid e-mail address."
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "SiteURL",
+                                                        "title": {
+                                                            "text": "siteURL",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Horizontal",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "www.monster.com",
+                                                        "description": "SiteURL",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "E-mail",
+                                                        "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                        "error": "This field must contain a valid e-mail address."
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }, {
+                                "_internalName": "Tab4",
+                                "title": "Documents",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "Attachments",
+                                                    "model": {
+                                                        "_internalName": "Attachments1",
+                                                        "title": {
+                                                            "text": "Attachments1",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Horizontal",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "description": "Please attach price-list or catalog:",
+                                                        "maxSize": 10240
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "REGISTER",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Center",
+                        "vertical": "Middle"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "/*****************************************************************************\r\nThe JavaScript code from this section will be executed while loading\r\nthe current form.\r\n\r\nThe following predefined variables can be utilized in the code:\r\n\r\nfd  - instance of the current form\r\n$   - jQuery object\r\n\r\n==============================================================================\r\n\r\nfd.rendered(function () {\r\n    // This code is executed once the form is rendered\r\n\r\n    // Hide State field for all values of Country field except 'USA'\r\n    function updateStateVisibility() {\r\n        var stateContainer = $(fd.field('State').$el).closest('.form-group');\r\n        if (fd.field('Country').value === 'USA') {\r\n            stateContainer.show();\r\n        } else {\r\n            stateContainer.hide();\r\n        }\r\n    }\r\n\r\n    // Set initial State visibility\r\n    updateStateVisibility();\r\n\r\n    // Update State visibility after changing Country\r\n    fd.field('Country').$on('change', updateStateVisibility)\r\n});\r\n\r\nfd.beforeSave(function () {\r\n    // This code is exeuted before saving the form and\r\n    // may return Promise. The saving does not proceed until\r\n    // the Promise is resolved. If the Promise is rejected,\r\n    // the saving interrupts. This is the appropriate place\r\n    // for adding custom validation.\r\n\r\n    // Prevent saving if Start Date is greater than End Date\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\nfd.saved(function (result) {\r\n    // This code is executed after saving the form\r\n\r\n    // Forwarding users to specific URL\r\n    window.location = '--- Some URL ---';\r\n});\r\n\r\n*****************************************************************************/\r\n\r\n",
+    "css": "/* setting the h1 color depending on the theme */\n.fd-form h1, .fd-form .h1 {\n    color: var(--fd-primary) !important;\n}\n\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#8e44ac",
+        "bodyText": "#333",
+        "bodyBackground": "#FFF5E7",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 18,
+        "fontWeight": 300,
+        "borderThickness": 2,
+        "borderRadius": 8,
+        "shadow": true,
+        "themeId": "466c3bdb92b2c9e0c1491aef572eaf75"
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }
