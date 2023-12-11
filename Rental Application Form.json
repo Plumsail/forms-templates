@@ -1,830 +1,896 @@
 {
-  "pc": {
-      "type": "Grid",
-      "model": {
-          "stacked": "md",
-          "rows": [{
-              "cells": [{
-                  "class": "bg-primary",
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading1",
-                          "heading": "Rental Application Form",
-                          "view": "Normal",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "class": "bg-primary",
-                          "size": "H1",
-                          "textAlignment": "Center"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Middle"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Date",
-                      "model": {
-                          "_internalName": "MoveInDate",
-                          "title": {
-                              "text": "Date of anticipated move in",
-                              "visible": false
-                          },
-                          "orientation": "Vertical",
-                          "required": true,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "description": "Date of anticipated move in",
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          }
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 4
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading2",
-                          "heading": "Applicant Information",
-                          "view": "Line",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H4",
-                          "textAlignment": "Center"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid1",
-                          "stacked": "md",
-                          "class": "bg-secondary",
-                          "rows": [{
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "Name",
-                                          "title": {
-                                              "text": "Name",
-                                              "visible": false
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "Full Name",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "Email",
-                                          "title": {
-                                              "text": "",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "E-mail",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "E-mail",
-                                          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                          "error": "This field must contain a valid e-mail address."
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "MaskedInput",
-                                      "model": {
-                                          "_internalName": "MobileNumber",
-                                          "title": {
-                                              "text": "Mobile Number",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "Phone",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "mask": "000-000-0000"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading3",
-                          "heading": "Current Address",
-                          "view": "Line",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H4",
-                          "textAlignment": "Center"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid2",
-                          "stacked": "md",
-                          "class": "bg-secondary",
-                          "rows": [{
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "StreetAddress",
-                                          "title": {
-                                              "text": "",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "Street Address",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "City",
-                                          "title": {
-                                              "text": "City",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "City",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "State",
-                                          "title": {
-                                              "text": "State",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "State / Province",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "Country",
-                                          "title": {
-                                              "text": "Country",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "Country",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "ZIP",
-                                          "title": {
-                                              "text": "ZIP",
-                                              "visible": false
-                                          },
-                                          "orientation": "Horizontal",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "ZIP Code",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [15, null, null, null],
-                  "component": {
-                      "type": "Heading",
-                      "model": {
-                          "_internalName": "Heading4",
-                          "heading": "Tenant",
-                          "view": "Line",
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "size": "H4",
-                          "textAlignment": "Center"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "padding": [null, null, 20, null],
-                  "component": {
-                      "type": "Grid",
-                      "model": {
-                          "_internalName": "Grid3",
-                          "stacked": "md",
-                          "class": "bg-secondary",
-                          "rows": [{
-                              "cells": [{
-                                  "component": {
-                                      "type": "Number",
-                                      "model": {
-                                          "_internalName": "NumberOfTenants",
-                                          "title": {
-                                              "text": "",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "description": "Number of Tenants",
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "min": 0,
-                                          "max": 5,
-                                          "decimals": 0,
-                                          "format": "n0",
-                                          "step": 1
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 5
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "class": "fd-occupants-list",
-                                  "component": {
-                                      "type": "Text",
-                                      "model": {
-                                          "_internalName": "Text19",
-                                          "text": "<h6>Additional Tenants&nbsp;<span style=\"color:#ff0000;\">*</span></h6><p>Tenants over 18 years old must complete a separate application</p>"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "class": "fd-occupants-list",
-                                  "component": {
-                                      "type": "DataTable",
-                                      "model": {
-                                          "_internalName": "Occupants",
-                                          "title": {
-                                              "text": "Occupants",
-                                              "visible": false
-                                          },
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "newLine": "Bottom",
-                                          "delete": "Last",
-                                          "columns": [{
-                                              "_internalName": "FullName",
-                                              "title": "Full Name",
-                                              "required": true,
-                                              "type": "String"
-                                          }, {
-                                              "_internalName": "Age",
-                                              "title": "Age",
-                                              "required": false,
-                                              "type": "Number",
-                                              "min": 0,
-                                              "max": 99,
-                                              "decimals": 0,
-                                              "format": "n0",
-                                              "step": 1
-                                          }, {
-                                              "_internalName": "Language",
-                                              "title": "Language",
-                                              "required": false,
-                                              "type": "Dropdown",
-                                              "selection": "Single",
-                                              "options": "English\nSpanish\nFrench\nGerman"
-                                          }, {
-                                              "_internalName": "Relationship",
-                                              "title": "Relationship",
-                                              "required": false,
-                                              "type": "Dropdown",
-                                              "selection": "Single",
-                                              "options": "Spouse\nChild\nRelative\nOther"
-                                          }]
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Toggle",
-                                      "model": {
-                                          "_internalName": "Smokers",
-                                          "title": {
-                                              "text": "Are you or any other occupant a smoker?",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "mode": "Toggle",
-                                          "cOnText": "Yes",
-                                          "cOffText": "No"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 12
-                                  }
-                              }]
-                          }, {
-                              "cells": [{
-                                  "component": {
-                                      "type": "Toggle",
-                                      "model": {
-                                          "_internalName": "Pets",
-                                          "title": {
-                                              "text": "Do you or any other occupant have pets?",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "mode": "Toggle",
-                                          "cOnText": "Yes",
-                                          "cOffText": "No"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 6
-                                  }
-                              }, {
-                                  "component": {
-                                      "type": "SingleLineText",
-                                      "model": {
-                                          "_internalName": "PetInformation",
-                                          "title": {
-                                              "text": "Pet Information",
-                                              "visible": true
-                                          },
-                                          "orientation": "Vertical",
-                                          "required": false,
-                                          "font": {
-                                              "style": "Normal",
-                                              "weight": "Semibold"
-                                          },
-                                          "wrap": true,
-                                          "cFont": {
-                                              "style": "Normal",
-                                              "weight": "Normal"
-                                          },
-                                          "type": "Anything"
-                                      }
-                                  },
-                                  "alignment": {
-                                      "horizontal": "Justify",
-                                      "vertical": "Top"
-                                  },
-                                  "columns": {
-                                      "width": 6
-                                  }
-                              }]
-                          }]
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "HTML",
-                      "model": {
-                          "_internalName": "HTML1",
-                          "content": "<iframe src=\"https://drive.google.com/file/d/1pBq8XK3n8AdOaTdasHxgMfPASRJ-qG4V/preview\" width=\"100%\" height=\"300\" allow=\"autoplay\"></iframe>"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Toggle",
-                      "model": {
-                          "_internalName": "Accept",
-                          "title": {
-                              "text": "Terms and conditions",
-                              "visible": false
-                          },
-                          "orientation": "Horizontal",
-                          "required": true,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cFont": {
-                              "style": "Normal",
-                              "weight": "Normal"
-                          },
-                          "mode": "Checkbox",
-                          "cLabel": "I agree to terms and condition"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Text",
-                      "model": {
-                          "_internalName": "Text22",
-                          "text": "<h6>Signature</h6>"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 4
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Signature",
-                      "model": {
-                          "_internalName": "InkSketch1",
-                          "title": {
-                              "text": "InkSketch1",
-                              "visible": false
-                          },
-                          "orientation": "Horizontal",
-                          "required": false,
-                          "font": {
-                              "style": "Normal",
-                              "weight": "Semibold"
-                          },
-                          "wrap": true,
-                          "cWidth": 500,
-                          "height": 150,
-                          "inkColor": "#000000"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Left",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }, {
-              "cells": [{
-                  "component": {
-                      "type": "Submit",
-                      "model": {
-                          "_internalName": "Submit1",
-                          "text": "SEND APPLICATION",
-                          "savingText": "Submitting...",
-                          "type": "Primary",
-                          "click": "return fd.save();",
-                          "style": "font-weight: 600 !important"
-                      }
-                  },
-                  "alignment": {
-                      "horizontal": "Justify",
-                      "vertical": "Top"
-                  },
-                  "columns": {
-                      "width": 12
-                  }
-              }]
-          }]
-      }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "// Validate the list of tenants\r\nfunction toggleOccupants() {\r\n    var occupantsNumber = fd.field('NumberOfTenants').value;\r\n\r\n    fd.validators.length = [];\r\n\r\n    if (occupantsNumber > 0) {\r\n        $('.fd-occupants-list').show();\r\n\r\n        fd.validators.push({\r\n            name: 'OccupantsValidation',\r\n            error: 'List all occupants',\r\n            validate: function (value) {\r\n                if (fd.control('Occupants').value.length < occupantsNumber) {\r\n                    return false;\r\n                }\r\n\r\n                return true;\r\n            },\r\n        });\r\n    } else {\r\n        $('.fd-occupants-list').hide();\r\n    }\r\n}\r\n\r\n// Show/hide PetInformation field and make it mandatory\r\nfunction togglePetInfo() {\r\n    var petInfo = fd.field('PetInformation');\r\n\r\n    if (fd.field('Pets').value) {\r\n        petInfo.hidden = false;\r\n        petInfo.required = true;\r\n    } else {\r\n        petInfo.hidden = true;\r\n        petInfo.required = false;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    //show only future dates\r\n    var today = new Date();\r\n    var minDate = today.setDate(today.getDate() + 2);\r\n    fd.field('MoveInDate').widgetOptions = {\r\n        min: new Date(minDate),\r\n    };\r\n\r\n    toggleOccupants();\r\n    fd.field('NumberOfTenants').$on('change', toggleOccupants);\r\n\r\n    togglePetInfo();\r\n    fd.field('Pets').$on('change', togglePetInfo);\r\n});\r\n",
-  "css": ".fd-form h1 {\n    font-size: min(6.5vw, 2.34375rem) !important;\n    color: #ffff !important;\n}\n.fd-form h1 > span {\n    background-color: var(--fd-primary-rgb) !important;\n}\n\n.fd-form h4 {\n    font-size: min(4.5vw, 1.40625rem) !important;\n}\n.fd-form h4:after{\n    content: '*';\n    color: red;\n    background-color: var(--bg-color);\n    position: sticky;\n    padding-right: 10px;\n}\n\n\n\n.fd-occupants-list {\n    display: none;\n}\n\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-      "primary": "#008EFF",
-      "bodyText": "#373A3C",
-      "bodyBackground": "#FFFFFF",
-      "fontFamily": null,
-      "fontType": 0,
-      "fontSize": 15,
-      "fontWeight": 400,
-      "borderThickness": 1,
-      "borderRadius": 0,
-      "shadow": true,
-      "themeId": "default"
-  },
-  "timezone": "Europe/Budapest",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Rental Application Form",
+                            "view": "Normal",
+                            "font": {
+                                "color": "#ffffff",
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "class": "bg-primary",
+                            "fill": "#008EFF",
+                            "size": "H1",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Middle"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Date",
+                        "model": {
+                            "_internalName": "MoveInDate",
+                            "title": {
+                                "text": "Date of anticipated move in",
+                                "visible": false
+                            },
+                            "orientation": "Vertical",
+                            "required": true,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "description": "Date of anticipated move in",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            }
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 4
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading2",
+                            "heading": "Applicant Information",
+                            "view": "Line",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid1",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 20,
+                                "vertical": 20,
+                                "radius": 4
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Name",
+                                            "title": {
+                                                "text": "Name",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Full Name",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Email",
+                                            "title": {
+                                                "text": "",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "E-mail",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "E-mail",
+                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                            "error": "This field must contain a valid e-mail address."
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 10, null],
+                                    "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                            "_internalName": "MobileNumber",
+                                            "title": {
+                                                "text": "Mobile Number",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Phone",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mask": "000-000-0000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading3",
+                            "heading": "Current Address",
+                            "view": "Line",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid2",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 20,
+                                "vertical": 20,
+                                "radius": 4
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "StreetAddress",
+                                            "title": {
+                                                "text": "",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Street Address",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "City",
+                                            "title": {
+                                                "text": "City",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "City",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "State",
+                                            "title": {
+                                                "text": "State",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "State / Province",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Country",
+                                            "title": {
+                                                "text": "Country",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Country",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 10, null],
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "ZIP",
+                                            "title": {
+                                                "text": "ZIP",
+                                                "visible": false
+                                            },
+                                            "orientation": "Horizontal",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "ZIP Code",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading4",
+                            "heading": "Tenant",
+                            "view": "Line",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H4",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [null, null, 20, null],
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid3",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 20,
+                                "vertical": 20,
+                                "radius": 4
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "fill": "#f2f2f2",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [10, null, null, null],
+                                    "component": {
+                                        "type": "Number",
+                                        "model": {
+                                            "_internalName": "NumberOfTenants",
+                                            "title": {
+                                                "text": "",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "description": "Number of Tenants",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "min": 0,
+                                            "max": 5,
+                                            "precision": "0",
+                                            "percents": false,
+                                            "spinButtons": true,
+                                            "step": 1
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 5
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "class": "fd-occupants-list",
+                                    "component": {
+                                        "type": "Text",
+                                        "model": {
+                                            "_internalName": "Text19",
+                                            "text": "<h6>Additional Tenants&nbsp;<span style=\"color:#ff0000;\">*</span></h6><p>Tenants over 18 years old must complete a separate application</p>"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "class": "fd-occupants-list",
+                                    "component": {
+                                        "type": "DataTable",
+                                        "model": {
+                                            "_internalName": "Occupants",
+                                            "title": {
+                                                "text": "Occupants",
+                                                "visible": false
+                                            },
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "newLine": "Bottom",
+                                            "delete": "Last",
+                                            "columns": [{
+                                                "_internalName": "FullName",
+                                                "title": "Full Name",
+                                                "required": true,
+                                                "type": "String"
+                                            }, {
+                                                "_internalName": "Age",
+                                                "title": "Age",
+                                                "required": false,
+                                                "type": "Number",
+                                                "min": 0,
+                                                "max": 99,
+                                                "step": 1,
+                                                "spinButtons": true,
+                                                "percents": false,
+                                                "precision": 0
+                                            }, {
+                                                "_internalName": "Language",
+                                                "title": "Language",
+                                                "required": false,
+                                                "type": "Dropdown",
+                                                "selection": "Single",
+                                                "options": "English\nSpanish\nFrench\nGerman"
+                                            }, {
+                                                "_internalName": "Relationship",
+                                                "title": "Relationship",
+                                                "required": false,
+                                                "type": "Dropdown",
+                                                "selection": "Single",
+                                                "options": "Spouse\nChild\nRelative\nOther"
+                                            }]
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Toggle",
+                                        "model": {
+                                            "_internalName": "Smokers",
+                                            "title": {
+                                                "text": "Are you or any other occupant a smoker?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mode": "Toggle",
+                                            "cOnText": "Yes",
+                                            "cOffText": "No"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "padding": [null, null, 10, null],
+                                    "component": {
+                                        "type": "Toggle",
+                                        "model": {
+                                            "_internalName": "Pets",
+                                            "title": {
+                                                "text": "Do you or any other occupant have pets?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mode": "Toggle",
+                                            "cOnText": "Yes",
+                                            "cOffText": "No"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "padding": [null, null, 10, null],
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "PetInformation",
+                                            "title": {
+                                                "text": "Pet Information",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "HTML",
+                        "model": {
+                            "_internalName": "HTML1",
+                            "content": "<iframe src=\"https://drive.google.com/file/d/1pBq8XK3n8AdOaTdasHxgMfPASRJ-qG4V/preview\" width=\"100%\" height=\"300\" allow=\"autoplay\"></iframe>"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Toggle",
+                        "model": {
+                            "_internalName": "Accept",
+                            "title": {
+                                "text": "Terms and conditions",
+                                "visible": false
+                            },
+                            "orientation": "Horizontal",
+                            "required": true,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Checkbox",
+                            "cLabel": "I agree to terms and condition"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text22",
+                            "text": "<h6>Signature</h6>"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 4
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Signature",
+                        "model": {
+                            "_internalName": "InkSketch1",
+                            "title": {
+                                "text": "InkSketch1",
+                                "visible": false
+                            },
+                            "orientation": "Horizontal",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cWidth": 500,
+                            "height": 150,
+                            "inkColor": "#000000"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Left",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "SEND APPLICATION",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();",
+                            "style": "font-weight: 600 !important"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "// Validate the list of tenants\r\nfunction toggleOccupants() {\r\n    var occupantsNumber = fd.field('NumberOfTenants').value;\r\n\r\n    fd.validators.length = [];\r\n\r\n    if (occupantsNumber > 0) {\r\n        $('.fd-occupants-list').show();\r\n\r\n        fd.validators.push({\r\n            name: 'OccupantsValidation',\r\n            error: 'List all occupants',\r\n            validate: function (value) {\r\n                if (fd.control('Occupants').value.length < occupantsNumber) {\r\n                    return false;\r\n                }\r\n\r\n                return true;\r\n            },\r\n        });\r\n    } else {\r\n        $('.fd-occupants-list').hide();\r\n    }\r\n}\r\n\r\n// Show/hide PetInformation field and make it mandatory\r\nfunction togglePetInfo() {\r\n    var petInfo = fd.field('PetInformation');\r\n\r\n    if (fd.field('Pets').value) {\r\n        petInfo.hidden = false;\r\n        petInfo.required = true;\r\n    } else {\r\n        petInfo.hidden = true;\r\n        petInfo.required = false;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    //show only future dates\r\n    var today = new Date();\r\n    var minDate = today.setDate(today.getDate() + 2);\r\n    fd.field('MoveInDate').widgetOptions = {\r\n        min: new Date(minDate),\r\n    };\r\n    \r\n    //call functions when the form is rendered\r\n    togglePetInfo();\r\n    toggleOccupants();\r\n    \r\n    //call functions when field value changes\r\n    fd.field('NumberOfTenants').$on('change', toggleOccupants);\r\n    fd.field('Pets').$on('change', togglePetInfo);\r\n});\r\n",
+    "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span{\n   background-color: var(--fd-primary-rgb) !important;\n}\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#008EFF",
+        "bodyText": "#373A3C",
+        "bodyBackground": "#FFFFFF",
+        "fontFamily": null,
+        "fontType": 0,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 0,
+        "shadow": true,
+        "themeId": "default"
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
 }

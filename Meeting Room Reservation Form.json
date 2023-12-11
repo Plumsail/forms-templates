@@ -30,6 +30,7 @@
                                 "color": "#a1b2bc"
                             },
                             "class": "fd-blur-background",
+                            "fill": "#ffffffb3",
                             "rows": [{
                                 "cells": [{
                                     "component": {
@@ -91,28 +92,11 @@
                                                         "rows": [{
                                                             "cells": [{
                                                                 "component": {
-                                                                    "type": "Text",
-                                                                    "model": {
-                                                                        "_internalName": "Text5",
-                                                                        "text": "<h4>Meeting Room</h4>"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
                                                                     "type": "DropDown",
                                                                     "model": {
                                                                         "_internalName": "MeetingRoom",
                                                                         "title": {
-                                                                            "text": "",
+                                                                            "text": "Meeting Room",
                                                                             "visible": true
                                                                         },
                                                                         "orientation": "Vertical",
@@ -163,31 +147,13 @@
                                                         },
                                                         "rows": [{
                                                             "cells": [{
-                                                                "padding": [0, null, null, null],
-                                                                "component": {
-                                                                    "type": "Text",
-                                                                    "model": {
-                                                                        "_internalName": "Text4",
-                                                                        "text": "<h4>Meeting Time</h4>"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
                                                                 "component": {
                                                                     "type": "DateTime",
                                                                     "model": {
                                                                         "_internalName": "StartTime",
                                                                         "title": {
-                                                                            "text": "Start Time",
-                                                                            "visible": false
+                                                                            "text": "Meeting Time",
+                                                                            "visible": true
                                                                         },
                                                                         "orientation": "Vertical",
                                                                         "required": true,
@@ -216,11 +182,11 @@
                                                                     "model": {
                                                                         "_internalName": "EndTime",
                                                                         "title": {
-                                                                            "text": "End Time",
-                                                                            "visible": false
+                                                                            "text": " ",
+                                                                            "visible": true
                                                                         },
                                                                         "orientation": "Vertical",
-                                                                        "required": true,
+                                                                        "required": false,
                                                                         "font": {
                                                                             "style": "Normal",
                                                                             "weight": "Semibold"
@@ -262,30 +228,12 @@
                                                         },
                                                         "rows": [{
                                                             "cells": [{
-                                                                "padding": [0, null, null, null],
-                                                                "component": {
-                                                                    "type": "Text",
-                                                                    "model": {
-                                                                        "_internalName": "Text3",
-                                                                        "text": "<h4>Number of Attendees</h4>"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
                                                                 "component": {
                                                                     "type": "Number",
                                                                     "model": {
                                                                         "_internalName": "NumberOfAttendees",
                                                                         "title": {
-                                                                            "text": "",
+                                                                            "text": "Number of Attendees",
                                                                             "visible": true
                                                                         },
                                                                         "orientation": "Vertical",
@@ -312,7 +260,7 @@
                                                                     "vertical": "Top"
                                                                 },
                                                                 "columns": {
-                                                                    "width": 12
+                                                                    "width": 6
                                                                 }
                                                             }]
                                                         }]
@@ -336,31 +284,13 @@
                                                         },
                                                         "rows": [{
                                                             "cells": [{
-                                                                "padding": [0, null, null, null],
-                                                                "component": {
-                                                                    "type": "Text",
-                                                                    "model": {
-                                                                        "_internalName": "Text6",
-                                                                        "text": "<h4>Meeting Agenda</h4>"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
                                                                 "component": {
                                                                     "type": "MultiLineText",
                                                                     "model": {
                                                                         "_internalName": "MeetingAgenda",
                                                                         "title": {
                                                                             "text": "Meeting Agenda",
-                                                                            "visible": false
+                                                                            "visible": true
                                                                         },
                                                                         "orientation": "Vertical",
                                                                         "required": false,
@@ -406,32 +336,14 @@
                                                         "rows": [{
                                                             "cells": [{
                                                                 "component": {
-                                                                    "type": "Text",
-                                                                    "model": {
-                                                                        "_internalName": "Text2",
-                                                                        "width": 250,
-                                                                        "text": "<h4 style=\"text-align:left;\">Reserved for</h4>"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Left",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
                                                                     "type": "SingleLineText",
                                                                     "model": {
                                                                         "_internalName": "FirstName",
                                                                         "title": {
-                                                                            "text": "FirstName",
-                                                                            "visible": false
+                                                                            "text": "Reserved for",
+                                                                            "visible": true
                                                                         },
-                                                                        "orientation": "Horizontal",
+                                                                        "orientation": "Vertical",
                                                                         "required": false,
                                                                         "font": {
                                                                             "style": "Normal",
@@ -459,10 +371,10 @@
                                                                     "model": {
                                                                         "_internalName": "LastName",
                                                                         "title": {
-                                                                            "text": "Last Name",
-                                                                            "visible": false
+                                                                            "text": " ",
+                                                                            "visible": true
                                                                         },
-                                                                        "orientation": "Horizontal",
+                                                                        "orientation": "Vertical",
                                                                         "required": false,
                                                                         "font": {
                                                                             "style": "Normal",

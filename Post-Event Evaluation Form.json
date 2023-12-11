@@ -17,26 +17,26 @@
                     "component": {
                         "type": "Grid",
                         "model": {
-                            "_internalName": "Grid2",
+                            "_internalName": "Grid1",
                             "stacked": "md",
                             "frame": {
                                 "horizontal": null,
                                 "vertical": null,
-                                "radius": 2
+                                "radius": null
                             },
                             "border": {
                                 "width": null,
                                 "color": null
                             },
-                            "class": "fd-blur-background",
+                            "class": "background",
                             "rows": [{
                                 "cells": [{
-                                    "padding": [null, null, 10, null],
+                                    "padding": [null, null, 30, null],
                                     "component": {
                                         "type": "Heading",
                                         "model": {
                                             "_internalName": "Heading1",
-                                            "heading": "Table Reservation",
+                                            "heading": "Post-Event Evaluation Form",
                                             "view": "Normal",
                                             "font": {
                                                 "style": "Normal",
@@ -62,77 +62,11 @@
                             }, {
                                 "cells": [{
                                     "component": {
-                                        "type": "DateTime",
+                                        "type": "SingleChoice",
                                         "model": {
-                                            "_internalName": "ReservationTime",
+                                            "_internalName": "Impression",
                                             "title": {
-                                                "text": "Reservation Time",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            }
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 6
-                                    }
-                                }, {
-                                    "component": {
-                                        "type": "Number",
-                                        "model": {
-                                            "_internalName": "NumberOfGuests",
-                                            "title": {
-                                                "text": "Number of Guests",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "min": 1,
-                                            "max": 15,
-                                            "precision": "0",
-                                            "percents": false,
-                                            "spinButtons": true,
-                                            "step": 1
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 6
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "DropDown",
-                                        "model": {
-                                            "_internalName": "ReservationType",
-                                            "title": {
-                                                "text": "Reservation Type",
+                                                "text": "What is your overall impression of the event?",
                                                 "visible": true
                                             },
                                             "orientation": "Vertical",
@@ -148,10 +82,12 @@
                                             },
                                             "dataSource": "StaticList",
                                             "StaticList": {
-                                                "options": "Birthday\nFamily Dinner\nBusness Dinner\nAnniversary\nDinner"
+                                                "options": "⭐⭐⭐⭐⭐\n⭐⭐⭐⭐\n⭐⭐⭐\n⭐⭐\n⭐",
+                                                "allowUserValue": false
                                             },
-                                            "selection": "Single",
-                                            "options": "Birthday\nFamily Dinner\nBusness Dinner\nAnniversary\nDinner"
+                                            "cColumns": 1,
+                                            "options": "⭐⭐⭐⭐⭐\n⭐⭐⭐⭐\n⭐⭐⭐\n⭐⭐\n⭐",
+                                            "allowUserValue": false
                                         }
                                     },
                                     "alignment": {
@@ -167,9 +103,9 @@
                                     "component": {
                                         "type": "MultiLineText",
                                         "model": {
-                                            "_internalName": "ReservationComments",
+                                            "_internalName": "WhatDidYouLikeAboutThisEvent",
                                             "title": {
-                                                "text": "Reservation Comments",
+                                                "text": "What did you like about this event?",
                                                 "visible": true
                                             },
                                             "orientation": "Vertical",
@@ -179,7 +115,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "cHint": "Any special requests or comments",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -197,24 +132,26 @@
                                 }]
                             }, {
                                 "cells": [{
-                                    "padding": [20, null, 5, null],
                                     "component": {
-                                        "type": "Heading",
+                                        "type": "MultiLineText",
                                         "model": {
-                                            "_internalName": "Heading2",
-                                            "heading": "Reservation for",
-                                            "view": "Normal",
+                                            "_internalName": "WhatWouldYouImproveAboutThisEvent",
+                                            "title": {
+                                                "text": "What would you improve about this event?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
                                             "font": {
                                                 "style": "Normal",
                                                 "weight": "Semibold"
                                             },
-                                            "frame": {
-                                                "horizontal": null,
-                                                "vertical": null,
-                                                "radius": null
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
                                             },
-                                            "size": "H4",
-                                            "textAlignment": "Center"
+                                            "mode": "Plain"
                                         }
                                     },
                                     "alignment": {
@@ -228,26 +165,103 @@
                             }, {
                                 "cells": [{
                                     "component": {
-                                        "type": "SingleLineText",
+                                        "type": "MultiLineText",
                                         "model": {
-                                            "_internalName": "Name",
+                                            "_internalName": "IsThereAnythingYouThinkWeCould'veDoneBetter",
                                             "title": {
-                                                "text": "FirstName",
-                                                "visible": false
+                                                "text": "Is there anything you think we could've done better?",
+                                                "visible": true
                                             },
-                                            "orientation": "Horizontal",
+                                            "orientation": "Vertical",
                                             "required": false,
                                             "font": {
                                                 "style": "Normal",
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "cHint": "Full Name",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
                                             },
-                                            "type": "Anything"
+                                            "mode": "Plain"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "Impression1",
+                                            "title": {
+                                                "text": " How helpful were the event staff?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "⭐⭐⭐⭐⭐\n⭐⭐⭐⭐\n⭐⭐⭐\n⭐⭐\n⭐",
+                                                "allowUserValue": false
+                                            },
+                                            "cColumns": 1,
+                                            "options": "⭐⭐⭐⭐⭐\n⭐⭐⭐⭐\n⭐⭐⭐\n⭐⭐\n⭐",
+                                            "allowUserValue": false
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "WouldYouRecommendOurEventToAFriend",
+                                            "title": {
+                                                "text": "Would you recommend our event to a friend?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "StaticList": {
+                                                "options": "Yes\nNo",
+                                                "allowUserValue": false
+                                            },
+                                            "cColumns": 1,
+                                            "options": "Yes\nNo",
+                                            "allowUserValue": false
                                         }
                                     },
                                     "alignment": {
@@ -265,24 +279,21 @@
                                         "model": {
                                             "_internalName": "Email",
                                             "title": {
-                                                "text": "Email",
-                                                "visible": false
+                                                "text": "If you'd like to learn more about future events, leave us your e-mail:",
+                                                "visible": true
                                             },
-                                            "orientation": "Horizontal",
+                                            "orientation": "Vertical",
                                             "required": false,
                                             "font": {
                                                 "style": "Normal",
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "cHint": "E-mail",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
                                             },
-                                            "type": "E-mail",
-                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                            "error": "This field must contain a valid e-mail address."
+                                            "type": "Anything"
                                         }
                                     },
                                     "alignment": {
@@ -295,47 +306,16 @@
                                 }]
                             }, {
                                 "cells": [{
-                                    "component": {
-                                        "type": "MaskedInput",
-                                        "model": {
-                                            "_internalName": "MobileNumber",
-                                            "title": {
-                                                "text": "Mobile Number",
-                                                "visible": false
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "mask": "000-000-0000"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
+                                    "padding": [40, null, null, null],
                                     "component": {
                                         "type": "Submit",
                                         "model": {
-                                            "_internalName": "Submit1",
-                                            "text": "RESERVE TABLE",
+                                            "_internalName": "Submit",
+                                            "text": "Send Review",
                                             "savingText": "Submitting...",
                                             "type": "Primary",
                                             "click": "return fd.save();",
-                                            "style": "font-weight: 600 !important"
+                                            "style": "font-weight: 500 !important"
                                         }
                                     },
                                     "alignment": {
@@ -354,7 +334,7 @@
                         "vertical": "Top"
                     },
                     "columns": {
-                        "width": 8
+                        "width": 12
                     }
                 }]
             }]
@@ -362,31 +342,32 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "/*****************************************************************************\r\nThe JavaScript code from this section will be executed while loading\r\nthe current form.\r\n\r\nThe following predefined variables can be utilized in the code:\r\n\r\nfd  - instance of the current form\r\n$   - jQuery object\r\n\r\n==============================================================================\r\n\r\nfd.rendered(function () {\r\n    // This code is executed once the form is rendered\r\n\r\n    // Hide State field for all values of Country field except 'USA'\r\n    function updateStateVisibility() {\r\n        var stateContainer = $(fd.field('State').$el).closest('.form-group');\r\n        if (fd.field('Country').value === 'USA') {\r\n            stateContainer.show();\r\n        } else {\r\n            stateContainer.hide();\r\n        }\r\n    }\r\n\r\n    // Set initial State visibility\r\n    updateStateVisibility();\r\n\r\n    // Update State visibility after changing Country\r\n    fd.field('Country').$on('change', updateStateVisibility)\r\n});\r\n\r\nfd.beforeSave(function () {\r\n    // This code is exeuted before saving the form and\r\n    // may return Promise. The saving does not proceed until\r\n    // the Promise is resolved. If the Promise is rejected,\r\n    // the saving interrupts. This is the appropriate place\r\n    // for adding custom validation.\r\n\r\n    // Prevent saving if Start Date is greater than End Date\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\nfd.saved(function (result) {\r\n    // This code is executed after saving the form\r\n\r\n    // Forwarding users to specific URL\r\n    window.location = '--- Some URL ---';\r\n});\r\n\r\n*****************************************************************************/\r\n\r\n",
-    "css": "/* setting the image as the background of the form */\r\n.fd-form {\r\n    background: url(https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/154ca303-1797-4064-add4-edf8f265ebfd_bg.jpg) no-repeat center top ;\r\n    background-size: cover;\r\n}\r\n\r\n\r\n/* setting a transparent background for the Heading control */\r\n.fd-form h1 > span,\r\n.fd-form h4 > span,\r\n.fd-form .fd-heading{\r\n   background-color: transparent !important;;\r\n}\r\n\r\n/* setting the background of Grid container */\r\n.fd-form .fd-blur-background {\r\n    background: rgba(0, 0, 0, 0.2);\r\n    backdrop-filter: blur(8px);\r\n}\r\n\r\n/* setting the text color to white */\r\n.fd-form h4, .fd-form .h4,\r\n.fd-form .fd-field-title,\r\n.fd-form h1, .fd-form .h1{\r\n    color: white !important;\r\n}\r\n\r\n/* adding line to h4 */\r\n.fd-form h4:before, .fd-form h4:after, .fd-form h1:before, .fd-form h1:after{\r\n    content: \"\";\r\n    flex: 1 1;\r\n    border-bottom: 1px solid;\r\n    margin: auto;\r\n}\r\n\r\n.fd-form h4:before, .fd-form h1:before {\r\n    margin-right: 10px\r\n}\r\n\r\n.fd-form h4:after, .fd-form h1:after {\r\n    margin-left: 10px\r\n}",
+    "js": "",
+    "css": "/* setting the image as the background of the form */\n.fd-form {\n    background: url(https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/bg-event.jpg) no-repeat center top ;\n    background-size: cover;\n}\n\n/* setting a transparent background for the Heading control */\n.fd-form h1 > span,\n.fd-form .fd-heading{\n   background-color: transparent !important;;\n}\n\n/* setting the background of Grid container */\n.fd-form .background {\n    background: #ffffff69;\n    backdrop-filter: blur(6px);\n}",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "primary": "#cc4f03",
-        "bodyText": "#373a3c",
+        "primary": "#3a4e12",
+        "bodyText": "#373A3C",
         "bodyBackground": "#FFFFFF",
-        "fontFamily": null,
-        "fontType": 0,
+        "fontFamily": "Raleway",
+        "fontType": 1,
         "fontSize": 15,
         "fontWeight": 400,
         "borderThickness": 1,
-        "borderRadius": 0,
+        "borderRadius": 2,
         "shadow": true,
-        "themeId": "c65e181b0cfa0c52549c29479e0d8d8a"
+        "themeId": "f1b1e1d14776c74969d0c5599191ca9a",
+        "isDark": false
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
     "userLanguage": null,
     "userCulture": null,
-    "thankYouMessage": "Thanks for booking! You will receive a confirmation email.",
+    "thankYouMessage": null,
     "redirectURL": null,
-    "hideAfterSubmission": true,
-    "submissionTimeout": "60",
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
     "authentication": 0,
     "singleSubmissionPerUser": false,
     "allowEditingSubmission": false,

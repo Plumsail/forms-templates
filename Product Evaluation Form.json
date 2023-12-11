@@ -1,0 +1,327 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid3",
+                            "stacked": "sm",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "class": "bg-primary",
+                            "fill": "#445D48",
+                            "rows": [{
+                                "cells": [{
+                                    "padding": [null, 20, null, 10],
+                                    "component": {
+                                        "type": "Image",
+                                        "model": {
+                                            "_internalName": "Image1",
+                                            "width": 100,
+                                            "target": "Blank",
+                                            "image": "https://raw.githubusercontent.com/Plumsail/forms-templates/main/images/logo-placeholder-01.png"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Center",
+                                        "vertical": "Middle"
+                                    },
+                                    "columns": {
+                                        "width": 2
+                                    }
+                                }, {
+                                    "padding": [null, null, null, 20],
+                                    "component": {
+                                        "type": "Heading",
+                                        "model": {
+                                            "_internalName": "Heading1",
+                                            "heading": "Product Evaluation",
+                                            "view": "Normal",
+                                            "font": {
+                                                "color": "#ffffff",
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "frame": {
+                                                "horizontal": null,
+                                                "vertical": null,
+                                                "radius": null
+                                            },
+                                            "subheading": "Please help us to improve our product. Rate your satisfaction with each of the following statements. This takes less than five minutes.",
+                                            "size": "H1",
+                                            "textAlignment": "Left"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 10
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [40, null, null, null],
+                    "component": {
+                        "type": "LikertScale",
+                        "model": {
+                            "_internalName": "LikertScale1",
+                            "type": "Radio",
+                            "required": false,
+                            "questions": "How satisfied are you with our product?\nHow satisfied are you with with the delivery of our products?\nHow do you rate the response time of our Sales Representatives?\nHow do you rate our customer communications?\nRate your overall satisfaction with the customer service.",
+                            "answers": "Very dissatisfied\nSomewhat dissatisfied\nNeutral\nSomewhat satisfied\nVery satisfied"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "Text",
+                        "model": {
+                            "_internalName": "Text3",
+                            "text": "<h6 style=\"font-weight:700;\">Based on your experience, what is the likelihood that you will...</h6>"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "LikertScale",
+                        "model": {
+                            "_internalName": "LikertScale2",
+                            "type": "Radio",
+                            "required": false,
+                            "questions": "Recommend our company to your friends?\nUse our product/service again?",
+                            "answers": "Not at all likely\r\nNot very likely\r\nSomewhat likely\r\nLikely\r\nHighly likely"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "MultipleChoice",
+                        "model": {
+                            "_internalName": "Like",
+                            "title": {
+                                "text": "What do you like most about the product? (You can select several options)",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Ease of use\nDesign\nFunctionality\nPrice",
+                                "allowUserValue": true
+                            },
+                            "cColumns": 1,
+                            "options": "Ease of use\nDesign\nFunctionality\nPrice",
+                            "allowUserValue": true
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "MultipleChoice",
+                        "model": {
+                            "_internalName": "Dislike",
+                            "title": {
+                                "text": "What do you dislike most about the product? (You can select several options)",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "dataSource": "StaticList",
+                            "StaticList": {
+                                "options": "Ease of use\nDesign\nFunctionality\nPrice",
+                                "allowUserValue": true
+                            },
+                            "cColumns": 1,
+                            "options": "Ease of use\nDesign\nFunctionality\nPrice",
+                            "allowUserValue": true
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [20, null, null, null],
+                    "component": {
+                        "type": "MultiLineText",
+                        "model": {
+                            "_internalName": "AdditionalCommentsOrConcerns",
+                            "title": {
+                                "text": "Additional comments or concerns:",
+                                "visible": false
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "What do you think? Any additional comments or concerns:",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mode": "Plain",
+                            "cHeight": 150
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "SEND REVIEW",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();",
+                            "style": "font-weight: 700 !important;"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span,\n.fd-form .fd-heading{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n/*styling the likert scale questions */\n.fd-form .fd-likert-question-title {\n    padding-top: 10px;\n}\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#445D48",
+        "bodyText": "#0c0c0c",
+        "bodyBackground": "#fffbf8",
+        "fontFamily": "Roboto Slab",
+        "fontType": 1,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 0,
+        "shadow": true,
+        "themeId": "e42103e11f2246a842ec4edb05c4fd7a"
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null
+}
