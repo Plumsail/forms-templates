@@ -1,1423 +1,1425 @@
 {
-    "pc": {
-        "type": "Grid",
-        "model": {
-            "stacked": "md",
-            "frame": {
-                "horizontal": null,
-                "vertical": null,
-                "radius": null
-            },
-            "border": {
-                "width": null,
-                "color": null
-            },
-            "rows": [{
-                "cells": [{
-                    "component": {
-                        "type": "Heading",
-                        "model": {
-                            "_internalName": "Heading1",
-                            "heading": "Vehicle Accident Report",
-                            "view": "Normal",
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                            },
-                            "frame": {
-                                "horizontal": 15,
-                                "vertical": null,
-                                "radius": null
-                            },
-                            "subheading": "All information on this form is important and must be obtained as soon as possible, within 24 hours",
-                            "size": "H1",
-                            "textAlignment": "Left"
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [15, null, null, null],
-                    "component": {
-                        "type": "Accordion",
-                        "model": {
-                            "_internalName": "Accordion1",
-                            "mode": "SingleCollapsable",
-                            "items": [{
-                                "_internalName": "Item1",
-                                "title": "General information",
-                                "expanded": false,
-                                "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                        "stacked": "md",
-                                        "frame": {
-                                            "horizontal": null,
-                                            "vertical": null,
-                                            "radius": null
-                                        },
-                                        "border": {
-                                            "width": null,
-                                            "color": null
-                                        },
-                                        "rows": [{
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "DateTime",
-                                                    "model": {
-                                                        "_internalName": "DateTime",
-                                                        "title": {
-                                                            "text": "Date & Time",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        }
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "SingleLineText",
-                                                    "model": {
-                                                        "_internalName": "Location",
-                                                        "title": {
-                                                            "text": "Location",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "type": "Anything"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "DropDown",
-                                                    "model": {
-                                                        "_internalName": "Weather",
-                                                        "title": {
-                                                            "text": "Weather",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Sunny\nCloudy\nRaining\nSnowing\nFreezing Rain"
-                                                        },
-                                                        "selection": "Single",
-                                                        "options": "Sunny\nCloudy\nRaining\nSnowing\nFreezing Rain"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }, {
-                                                "component": {
-                                                    "type": "DropDown",
-                                                    "model": {
-                                                        "_internalName": "RoadConditions",
-                                                        "title": {
-                                                            "text": "Road Conditions",
-                                                            "visible": true
-                                                        },
-                                                        "orientation": "Vertical",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cFont": {
-                                                            "style": "Normal",
-                                                            "weight": "Normal"
-                                                        },
-                                                        "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Wet\nDry\nSnow Covered\nIcy\nRoad Obstruction\nRoad Constructions"
-                                                        },
-                                                        "selection": "Single",
-                                                        "options": "Wet\nDry\nSnow Covered\nIcy\nRoad Obstruction\nRoad Constructions"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 6
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Heading",
-                                                    "model": {
-                                                        "_internalName": "Heading2",
-                                                        "heading": "Description of accident",
-                                                        "view": "Underline1",
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "subheading": "Include direction your car was going and its speed. Same for other cars. Label streets and indicate traffic controls.",
-                                                        "size": "H4",
-                                                        "textAlignment": "Left"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Signature",
-                                                    "model": {
-                                                        "_internalName": "AccidentSchema",
-                                                        "title": {
-                                                            "text": "AccidentSchema",
-                                                            "visible": false
-                                                        },
-                                                        "orientation": "Horizontal",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "cWidth": 500,
-                                                        "height": 500,
-                                                        "inkColor": "#000000"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Left",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "MultiLineText",
-                                                    "model": {
-                                                        "_internalName": "Comments",
-                                                        "title": {
-                                                            "text": "Comments",
-                                                            "visible": false
-                                                        },
-                                                        "orientation": "Horizontal",
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "wrap": true,
-                                                        "mode": "Rich",
-                                                        "cHeight": 150
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }]
-                                    }
-                                }
-                            }, {
-                                "_internalName": "Item2",
-                                "title": "Insured vehicle and driver",
-                                "expanded": false,
-                                "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                        "stacked": "md",
-                                        "frame": {
-                                            "horizontal": null,
-                                            "vertical": null,
-                                            "radius": null
-                                        },
-                                        "border": {
-                                            "width": null,
-                                            "color": null
-                                        },
-                                        "rows": [{
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Heading",
-                                                    "model": {
-                                                        "_internalName": "Heading3",
-                                                        "heading": "Driver",
-                                                        "view": "Underline1",
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "size": "H4",
-                                                        "textAlignment": "Left"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "_internalName": "Grid1",
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Driver'sName",
-                                                                        "title": {
-                                                                            "text": "Driver's Name",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "DrivingLicense",
-                                                                        "title": {
-                                                                            "text": "Driving license",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Address",
-                                                                        "title": {
-                                                                            "text": "Address",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "MaskedInput",
-                                                                    "model": {
-                                                                        "_internalName": "ClientMobileNumber",
-                                                                        "title": {
-                                                                            "text": "Mobile Number",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "mask": "000-000-0000"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }, {
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "ClientEmail",
-                                                                        "title": {
-                                                                            "text": "Email",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cHint": "username@domain.com",
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "E-mail",
-                                                                        "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                                        "error": "This field must contain a valid e-mail address."
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Heading",
-                                                    "model": {
-                                                        "_internalName": "Heading4",
-                                                        "heading": "Vehicle",
-                                                        "view": "Underline1",
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "size": "H4",
-                                                        "textAlignment": "Left"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "_internalName": "Grid2",
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Make",
-                                                                        "title": {
-                                                                            "text": "Make",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }, {
-                                                                "component": {
-                                                                    "type": "Number",
-                                                                    "model": {
-                                                                        "_internalName": "Year",
-                                                                        "title": {
-                                                                            "text": "Year",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "min": 1920,
-                                                                        "precision": "0",
-                                                                        "percents": false,
-                                                                        "spinButtons": true,
-                                                                        "step": 1
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Model",
-                                                                        "title": {
-                                                                            "text": "Model",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }, {
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "VehicleNumber",
-                                                                        "title": {
-                                                                            "text": "Vehicle Number",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "MultiLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Damage1",
-                                                                        "title": {
-                                                                            "text": "Damage",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "mode": "Plain"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "Attachments",
-                                                                    "model": {
-                                                                        "_internalName": "InsuredVehicle",
-                                                                        "title": {
-                                                                            "text": "Insured vehicle",
-                                                                            "visible": false
-                                                                        },
-                                                                        "orientation": "Horizontal",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "maxSize": 10240
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }]
-                                    }
-                                }
-                            }, {
-                                "_internalName": "Item3",
-                                "title": "Other vehicle and driver",
-                                "expanded": false,
-                                "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                        "stacked": "md",
-                                        "frame": {
-                                            "horizontal": null,
-                                            "vertical": null,
-                                            "radius": null
-                                        },
-                                        "border": {
-                                            "width": null,
-                                            "color": null
-                                        },
-                                        "rows": [{
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Heading",
-                                                    "model": {
-                                                        "_internalName": "Heading5",
-                                                        "heading": "Driver",
-                                                        "view": "Underline1",
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "size": "H4",
-                                                        "textAlignment": "Left"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "_internalName": "Grid3",
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Driver'sName1",
-                                                                        "title": {
-                                                                            "text": "Driver's Name",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "DrivingLicense1",
-                                                                        "title": {
-                                                                            "text": "Driving license",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Address1",
-                                                                        "title": {
-                                                                            "text": "Address",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "MaskedInput",
-                                                                    "model": {
-                                                                        "_internalName": "DriverMobileNumber",
-                                                                        "title": {
-                                                                            "text": "Mobile Number",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "mask": "000-000-0000"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }, {
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "DriverEmail",
-                                                                        "title": {
-                                                                            "text": "Email",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cHint": "username@domain.com",
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "E-mail",
-                                                                        "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                                        "error": "This field must contain a valid e-mail address."
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Heading",
-                                                    "model": {
-                                                        "_internalName": "Heading6",
-                                                        "heading": "Vehicle",
-                                                        "view": "Underline1",
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "size": "H4",
-                                                        "textAlignment": "Left"
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }, {
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "_internalName": "Grid4",
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Make1",
-                                                                        "title": {
-                                                                            "text": "Make",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }, {
-                                                                "component": {
-                                                                    "type": "Number",
-                                                                    "model": {
-                                                                        "_internalName": "Year1",
-                                                                        "title": {
-                                                                            "text": "Year",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "min": 1920,
-                                                                        "precision": "0",
-                                                                        "percents": false,
-                                                                        "spinButtons": true,
-                                                                        "step": 1
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Model1",
-                                                                        "title": {
-                                                                            "text": "Model",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }, {
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "VehicleNumber1",
-                                                                        "title": {
-                                                                            "text": "Vehicle Number",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "MultiLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Damage",
-                                                                        "title": {
-                                                                            "text": "Damage",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "mode": "Plain"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "Attachments",
-                                                                    "model": {
-                                                                        "_internalName": "OtherVehicle",
-                                                                        "title": {
-                                                                            "text": "Other Vehicle",
-                                                                            "visible": false
-                                                                        },
-                                                                        "orientation": "Horizontal",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "maxSize": 10240
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }]
-                                    }
-                                }
-                            }, {
-                                "_internalName": "Item4",
-                                "title": "Witnesses (Including passengers)",
-                                "expanded": false,
-                                "component": {
-                                    "type": "Grid",
-                                    "model": {
-                                        "stacked": "md",
-                                        "frame": {
-                                            "horizontal": null,
-                                            "vertical": null,
-                                            "radius": null
-                                        },
-                                        "border": {
-                                            "width": null,
-                                            "color": null
-                                        },
-                                        "rows": [{
-                                            "cells": [{
-                                                "component": {
-                                                    "type": "DataTable",
-                                                    "model": {
-                                                        "_internalName": "DataTable1",
-                                                        "title": {
-                                                            "text": "DataTable1",
-                                                            "visible": false
-                                                        },
-                                                        "required": false,
-                                                        "font": {
-                                                            "style": "Normal",
-                                                            "weight": "Semibold"
-                                                        },
-                                                        "newLine": "Top",
-                                                        "delete": "Last",
-                                                        "columns": [{
-                                                            "_internalName": "FullName",
-                                                            "title": "Full Name",
-                                                            "required": false,
-                                                            "type": "String"
-                                                        }, {
-                                                            "_internalName": "Passenger",
-                                                            "title": "Passenger?",
-                                                            "required": false,
-                                                            "type": "Boolean"
-                                                        }, {
-                                                            "_internalName": "PhoneNumber",
-                                                            "title": "Phone Number",
-                                                            "required": false,
-                                                            "type": "String"
-                                                        }]
-                                                    }
-                                                },
-                                                "alignment": {
-                                                    "horizontal": "Justify",
-                                                    "vertical": "Top"
-                                                },
-                                                "columns": {
-                                                    "width": 12
-                                                }
-                                            }]
-                                        }]
-                                    }
-                                }
-                            }]
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [null, null, null, 28],
-                    "component": {
-                        "type": "Signature",
-                        "model": {
-                            "_internalName": "InkSketch2",
-                            "title": {
-                                "text": "With this signature, I confirm that the report has been properly completed and the information in it is true.",
-                                "visible": true
-                            },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                            },
-                            "wrap": true,
-                            "cWidth": 300,
-                            "height": 150,
-                            "inkColor": "#000000"
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Left",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [20, null, null, null],
-                    "class": "button-cell",
-                    "component": {
-                        "type": "Submit",
-                        "model": {
-                            "_internalName": "Submit",
-                            "text": "SEND REPORT TO INSUARNCE COMPANY",
-                            "savingText": "Submitting...",
-                            "type": "Primary",
-                            "click": "return fd.save();"
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
-        }
-    },
-    "tablet": null,
-    "phone": null,
-    "js": "",
-    "css": "/* setting the h1 color depending on the theme */\r\n.fd-form h1, .fd-form .h1 {\r\n    color: var(--fd-primary) !important;\r\n}\r\n\r\n/* setting the background of the InkSketch control */\r\n.fd-form .fd-signature .fd-signature-canvas  {\r\n    box-sizing: border-box;\r\n    background: url(https://plumsail.com/assets/forms/templates/vehicle-accident-report-form-image-01.jpg) no-repeat;\r\n    background-size: cover;\r\n}",
-    "notifySubscribers": false,
-    "version": "1.0.2",
-    "theme": {
-        "primary": "#0078D7",
-        "bodyText": "#333333",
-        "bodyBackground": "#FFFFFF",
-        "fontFamily": null,
-        "fontType": 0,
-        "fontSize": 15,
-        "fontWeight": 400,
-        "borderThickness": 1,
-        "borderRadius": 25,
-        "shadow": true,
-        "themeId": "0ee89be2d3ccf5f0a6540c72d67db07f"
-    },
-    "timezone": "America/Los_Angeles",
-    "culture": "en",
-    "userLanguage": null,
-    "userCulture": null,
-    "thankYouMessage": "The report has been sent to the insurance company. Agent will contact you as soon as possible.",
-    "redirectURL": null,
-    "hideAfterSubmission": true,
-    "submissionTimeout": "180",
-    "authentication": 0,
-    "singleSubmissionPerUser": false,
-    "allowEditingSubmission": false,
-    "restrictAccess": false,
-    "azureADTenant": null,
-    "azureADObjects": [],
-    "azureB2CProperties": null
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading1",
+							"heading": "Vehicle Accident Report",
+							"view": "Normal",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": 15,
+								"vertical": null,
+								"radius": null
+							},
+							"subheading": "All information on this form is important and must be obtained as soon as possible, within 24 hours",
+							"size": "H1",
+							"textAlignment": "Left"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [15, null, null, null],
+					"component": {
+						"type": "Accordion",
+						"model": {
+							"_internalName": "Accordion1",
+							"mode": "SingleCollapsable",
+							"items": [{
+								"_internalName": "Item1",
+								"title": "General information",
+								"expanded": false,
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "DateTime",
+													"model": {
+														"_internalName": "DateTime",
+														"title": {
+															"text": "Date & Time",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														}
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "Location",
+														"title": {
+															"text": "Location",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "DropDown",
+													"model": {
+														"_internalName": "Weather",
+														"title": {
+															"text": "Weather",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"dataSource": "StaticList",
+														"StaticList": {
+															"options": "Sunny\nCloudy\nRaining\nSnowing\nFreezing Rain"
+														},
+														"selection": "Single",
+														"options": "Sunny\nCloudy\nRaining\nSnowing\nFreezing Rain"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "DropDown",
+													"model": {
+														"_internalName": "RoadConditions",
+														"title": {
+															"text": "Road Conditions",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"dataSource": "StaticList",
+														"StaticList": {
+															"options": "Wet\nDry\nSnow Covered\nIcy\nRoad Obstruction\nRoad Constructions"
+														},
+														"selection": "Single",
+														"options": "Wet\nDry\nSnow Covered\nIcy\nRoad Obstruction\nRoad Constructions"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Heading",
+													"model": {
+														"_internalName": "Heading2",
+														"heading": "Description of accident",
+														"view": "Underline1",
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"subheading": "Include direction your car was going and its speed. Same for other cars. Label streets and indicate traffic controls.",
+														"size": "H4",
+														"textAlignment": "Left"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Signature",
+													"model": {
+														"_internalName": "AccidentSchema",
+														"title": {
+															"text": "AccidentSchema",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cWidth": 500,
+														"height": 500,
+														"inkColor": "#000000",
+														"class": "accident"
+													}
+												},
+												"alignment": {
+													"horizontal": "Left",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "MultiLineText",
+													"model": {
+														"_internalName": "Comments",
+														"title": {
+															"text": "Comments",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"mode": "Rich",
+														"cHeight": 150
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Item2",
+								"title": "Insured vehicle and driver",
+								"expanded": false,
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "Heading",
+													"model": {
+														"_internalName": "Heading3",
+														"heading": "Driver",
+														"view": "Underline1",
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"size": "H4",
+														"textAlignment": "Left"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Grid",
+													"model": {
+														"_internalName": "Grid1",
+														"stacked": "md",
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"border": {
+															"width": null,
+															"color": null
+														},
+														"rows": [{
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "Driver'sName",
+																		"title": {
+																			"text": "Driver's Name",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "DrivingLicense",
+																		"title": {
+																			"text": "Driving license",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "Address",
+																		"title": {
+																			"text": "Address",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "MaskedInput",
+																	"model": {
+																		"_internalName": "ClientMobileNumber",
+																		"title": {
+																			"text": "Mobile Number",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"mask": "000-000-0000"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}, {
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "ClientEmail",
+																		"title": {
+																			"text": "Email",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cHint": "username@domain.com",
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "E-mail",
+																		"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+																		"error": "This field must contain a valid e-mail address."
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}]
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Heading",
+													"model": {
+														"_internalName": "Heading4",
+														"heading": "Vehicle",
+														"view": "Underline1",
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"size": "H4",
+														"textAlignment": "Left"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Grid",
+													"model": {
+														"_internalName": "Grid2",
+														"stacked": "md",
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"border": {
+															"width": null,
+															"color": null
+														},
+														"rows": [{
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "Make",
+																		"title": {
+																			"text": "Make",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}, {
+																"component": {
+																	"type": "Number",
+																	"model": {
+																		"_internalName": "Year",
+																		"title": {
+																			"text": "Year",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"min": 1920,
+																		"precision": "0",
+																		"percents": false,
+																		"spinButtons": true,
+																		"step": 1
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "Model",
+																		"title": {
+																			"text": "Model",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}, {
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "VehicleNumber",
+																		"title": {
+																			"text": "Vehicle Number",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "MultiLineText",
+																	"model": {
+																		"_internalName": "Damage1",
+																		"title": {
+																			"text": "Damage",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"mode": "Plain"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "Attachments",
+																	"model": {
+																		"_internalName": "InsuredVehicle",
+																		"title": {
+																			"text": "Insured vehicle",
+																			"visible": false
+																		},
+																		"orientation": "Horizontal",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"maxSize": 10240
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Item3",
+								"title": "Other vehicle and driver",
+								"expanded": false,
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "Heading",
+													"model": {
+														"_internalName": "Heading5",
+														"heading": "Driver",
+														"view": "Underline1",
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"size": "H4",
+														"textAlignment": "Left"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Grid",
+													"model": {
+														"_internalName": "Grid3",
+														"stacked": "md",
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"border": {
+															"width": null,
+															"color": null
+														},
+														"rows": [{
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "Driver'sName1",
+																		"title": {
+																			"text": "Driver's Name",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "DrivingLicense1",
+																		"title": {
+																			"text": "Driving license",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "Address1",
+																		"title": {
+																			"text": "Address",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "MaskedInput",
+																	"model": {
+																		"_internalName": "DriverMobileNumber",
+																		"title": {
+																			"text": "Mobile Number",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"mask": "000-000-0000"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}, {
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "DriverEmail",
+																		"title": {
+																			"text": "Email",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cHint": "username@domain.com",
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "E-mail",
+																		"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+																		"error": "This field must contain a valid e-mail address."
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}]
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Heading",
+													"model": {
+														"_internalName": "Heading6",
+														"heading": "Vehicle",
+														"view": "Underline1",
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"size": "H4",
+														"textAlignment": "Left"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Grid",
+													"model": {
+														"_internalName": "Grid4",
+														"stacked": "md",
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"border": {
+															"width": null,
+															"color": null
+														},
+														"rows": [{
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "Make1",
+																		"title": {
+																			"text": "Make",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}, {
+																"component": {
+																	"type": "Number",
+																	"model": {
+																		"_internalName": "Year1",
+																		"title": {
+																			"text": "Year",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"min": 1920,
+																		"precision": "0",
+																		"percents": false,
+																		"spinButtons": true,
+																		"step": 1
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "Model1",
+																		"title": {
+																			"text": "Model",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}, {
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "VehicleNumber1",
+																		"title": {
+																			"text": "Vehicle Number",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 6
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "MultiLineText",
+																	"model": {
+																		"_internalName": "Damage",
+																		"title": {
+																			"text": "Damage",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"mode": "Plain"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "Attachments",
+																	"model": {
+																		"_internalName": "OtherVehicle",
+																		"title": {
+																			"text": "Other Vehicle",
+																			"visible": false
+																		},
+																		"orientation": "Horizontal",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"maxSize": 10240
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Item4",
+								"title": "Witnesses (Including passengers)",
+								"expanded": false,
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "DataTable",
+													"model": {
+														"_internalName": "DataTable1",
+														"title": {
+															"text": "DataTable1",
+															"visible": false
+														},
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"newLine": "Top",
+														"delete": "Last",
+														"columns": [{
+															"_internalName": "FullName",
+															"title": "Full Name",
+															"required": false,
+															"type": "String"
+														}, {
+															"_internalName": "Passenger",
+															"title": "Passenger?",
+															"required": false,
+															"type": "Boolean"
+														}, {
+															"_internalName": "PhoneNumber",
+															"title": "Phone Number",
+															"required": false,
+															"type": "String"
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [null, null, null, 28],
+					"component": {
+						"type": "Signature",
+						"model": {
+							"_internalName": "InkSketch2",
+							"title": {
+								"text": "With this signature, I confirm that the report has been properly completed and the information in it is true.",
+								"visible": true
+							},
+							"orientation": "Vertical",
+							"required": false,
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"wrap": true,
+							"cWidth": 300,
+							"height": 150,
+							"inkColor": "#000000"
+						}
+					},
+					"alignment": {
+						"horizontal": "Left",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [20, null, null, null],
+					"class": "button-cell",
+					"component": {
+						"type": "Submit",
+						"model": {
+							"_internalName": "Submit",
+							"text": "SEND REPORT TO INSUARNCE COMPANY",
+							"savingText": "Submitting...",
+							"type": "Primary",
+							"click": "return fd.save();"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "",
+	"css": "/* setting the h1 color depending on the theme */\r\n.fd-form h1, .fd-form .h1 {\r\n    color: var(--fd-primary) !important;\r\n}\r\n\r\n/* setting the background of the InkSketch control */\r\n.fd-form .fd-signature.accident .fd-signature-canvas   {\r\n    box-sizing: border-box;\r\n    background: url(https://plumsail.com/assets/forms/templates/vehicle-accident-report-form-image-01.jpg) no-repeat;\r\n    background-size: cover;\r\n}",
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#0078D7",
+		"bodyText": "#333333",
+		"bodyBackground": "#FFFFFF",
+		"fontFamily": null,
+		"fontType": 0,
+		"fontSize": 15,
+		"fontWeight": 400,
+		"borderThickness": 1,
+		"borderRadius": 25,
+		"shadow": true,
+		"themeId": "0ee89be2d3ccf5f0a6540c72d67db07f"
+	},
+	"timezone": "America/Los_Angeles",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": "The report has been sent to the insurance company. Agent will contact you as soon as possible.",
+	"redirectURL": null,
+	"hideAfterSubmission": true,
+	"submissionTimeout": "180",
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
 }
