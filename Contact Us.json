@@ -1,232 +1,236 @@
 {
-    "pc": {
-        "type": "Grid",
-        "model": {
-            "stacked": "md",
-            "frame": {
-                "horizontal": null,
-                "vertical": null,
-                "radius": null
-            },
-            "border": {
-                "width": null,
-                "color": null
-            },
-            "rows": [{
-                "cells": [{
-                    "component": {
-                        "type": "Grid",
-                        "model": {
-                            "_internalName": "Grid1",
-                            "stacked": "md",
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
-                            },
-                            "border": {
-                                "width": null,
-                                "color": null
-                            },
-                            "rows": [{
-                                "cells": [{
-                                    "padding": [15, null, null, null],
-                                    "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                            "_internalName": "Name",
-                                            "title": {
-                                                "text": "Name",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cHint": "Peter Jackson",
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "type": "Anything"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "MaskedInput",
-                                        "model": {
-                                            "_internalName": "Phone",
-                                            "title": {
-                                                "text": "Phone Number",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "mask": "000-000-0000"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                            "_internalName": "Email",
-                                            "title": {
-                                                "text": "Email",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cHint": "username@domain.com",
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "type": "E-mail",
-                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                            "error": "This field must contain a valid e-mail address."
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "MultiLineText",
-                                        "model": {
-                                            "_internalName": "Message1",
-                                            "title": {
-                                                "text": "Message",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "mode": "Plain"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "Submit",
-                                        "model": {
-                                            "_internalName": "Submit",
-                                            "text": "Contact!",
-                                            "savingText": "Submitting...",
-                                            "type": "Primary",
-                                            "click": "return fd.save();"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }]
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
-        }
-    },
-    "tablet": null,
-    "phone": null,
-    "js": "",
-    "css": "",
-    "notifySubscribers": false,
-    "version": "1.0.2",
-    "theme": {
-        "primary": "#008EFF",
-        "bodyText": "#373A3C",
-        "bodyBackground": "#FFFFFF",
-        "fontFamily": null,
-        "fontType": 0,
-        "fontSize": 15,
-        "fontWeight": 400,
-        "borderThickness": 1,
-        "borderRadius": 0,
-        "shadow": true,
-        "themeId": "default"
-    },
-    "timezone": "America/Los_Angeles",
-    "culture": "en",
-    "userLanguage": null,
-    "userCulture": null,
-    "thankYouMessage": "We will contact you at a given time.\nThank you! ",
-    "redirectURL": null,
-    "hideAfterSubmission": true,
-    "submissionTimeout": "60",
-    "authentication": 0,
-    "singleSubmissionPerUser": false,
-    "allowEditingSubmission": false,
-    "restrictAccess": false,
-    "azureADTenant": null,
-    "azureADObjects": [],
-    "azureB2CProperties": null
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"component": {
+						"type": "Grid",
+						"model": {
+							"_internalName": "Grid1",
+							"stacked": "md",
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"border": {
+								"width": null,
+								"color": null
+							},
+							"rows": [{
+								"cells": [{
+									"padding": [15, null, null, null],
+									"component": {
+										"type": "SingleLineText",
+										"model": {
+											"_internalName": "Name",
+											"title": {
+												"text": "Name",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cHint": "Roger A. Muldowney",
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"type": "Anything"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "MaskedInput",
+										"model": {
+											"_internalName": "Phone",
+											"title": {
+												"text": "Phone Number",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cHint": "402-298-6925",
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"mask": "000-000-0000"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "SingleLineText",
+										"model": {
+											"_internalName": "Email",
+											"title": {
+												"text": "Email",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cHint": " RogerAMuldowney@teleworm.us",
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"type": "E-mail",
+											"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+											"error": "This field must contain a valid e-mail address."
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "MultiLineText",
+										"model": {
+											"_internalName": "Message1",
+											"title": {
+												"text": "Message",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cHint": "Please share your comment or question",
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"mode": "Plain"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "Submit",
+										"model": {
+											"_internalName": "Submit",
+											"text": "Send",
+											"savingText": "Submitting...",
+											"type": "Primary",
+											"click": "return fd.save();"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "",
+	"css": "",
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#407855",
+		"bodyText": "#333333",
+		"bodyBackground": "#FFFFFF",
+		"fontFamily": null,
+		"fontType": 0,
+		"fontSize": 15,
+		"fontWeight": 400,
+		"borderThickness": 1,
+		"borderRadius": 2,
+		"shadow": true,
+		"themeId": "green",
+		"isDark": false
+	},
+	"timezone": "America/Los_Angeles",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": "We will contact you at a given time.\nThank you! ",
+	"redirectURL": null,
+	"hideAfterSubmission": true,
+	"submissionTimeout": "60",
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
 }
