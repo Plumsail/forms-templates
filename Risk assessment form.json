@@ -1,0 +1,751 @@
+{
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading1",
+							"heading": "General Risk Assessment",
+							"view": "Underline2",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H1",
+							"textAlignment": "Left"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [15, null, 5, null],
+					"component": {
+						"type": "TabControl",
+						"model": {
+							"_internalName": "Tabs1",
+							"orientation": "Top",
+							"pills": true,
+							"wrap": true,
+							"border": {
+								"width": null,
+								"color": null
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"font": {
+								"style": "Normal",
+								"weight": "Normal"
+							},
+							"tabs": [{
+								"_internalName": "Tab1",
+								"title": "General Info",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "Date",
+													"model": {
+														"_internalName": "Date",
+														"title": {
+															"text": "Date",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														}
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "MultiLineText",
+													"model": {
+														"_internalName": "Location",
+														"title": {
+															"text": "Location",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mode": "Plain"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "DataTable",
+													"model": {
+														"_internalName": "ListTheNamesOfAllAssessorsInvolvedInThisRiskEvaluation",
+														"title": {
+															"text": "List the names of all assessors involved in this risk evaluation",
+															"visible": true
+														},
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"newLine": "Top",
+														"delete": "Last",
+														"columns": [{
+															"_internalName": "Name",
+															"title": "Name",
+															"required": false,
+															"type": "String"
+														}, {
+															"_internalName": "PhoneNumber",
+															"title": "Phone Number",
+															"required": false,
+															"type": "String"
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Tab2",
+								"title": "Hazards",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "MultiLineText",
+													"model": {
+														"_internalName": "DescriptionOfActivitytask",
+														"title": {
+															"text": "Description of Activity/Process/Situation",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mode": "Plain"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "MultiLineText",
+													"model": {
+														"_internalName": "WorkplaceConditions",
+														"title": {
+															"text": "Workplace Conditions",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "Describe the layout of the workspace, including access points and exits. Additionally, describe any relevant physical conditions, such as lighting, temperature, and noise levels.",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mode": "Plain"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "MultiLineText",
+													"model": {
+														"_internalName": "RisksAssociatedWithActivityProcessSituation",
+														"title": {
+															"text": "Risks Associated with Activity/Process/Situation",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mode": "Plain"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Attachments",
+													"model": {
+														"_internalName": "PhotoOfHazard",
+														"title": {
+															"text": "Photo of hazard",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"maxSize": 10240
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Tab3",
+								"title": "Risk Assessment",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "Image",
+													"model": {
+														"_internalName": "Image1",
+														"width": 500,
+														"image": "https://plumsailforms.blob.core.windows.net/e90a6c64-b19a-42c1-ad3a-4f13a1244ebc-images/3868a00f-risk-matrix.png",
+														"target": "_blank"
+													}
+												},
+												"alignment": {
+													"horizontal": "Left",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "DropDown",
+													"model": {
+														"_internalName": "RiskRating",
+														"title": {
+															"text": "Risk Rating",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"dataSource": "StaticList",
+														"StaticList": {
+															"options": "Low\nMedium\nHigh\nExtreme",
+															"allowUserValue": false
+														},
+														"selection": "Single",
+														"options": "Low\nMedium\nHigh\nExtreme",
+														"allowUserValue": false
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Tab4",
+								"title": "Control Measures",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "Image",
+													"model": {
+														"_internalName": "Image2",
+														"width": 500,
+														"target": "_blank",
+														"image": "https://plumsailforms.blob.core.windows.net/e90a6c64-b19a-42c1-ad3a-4f13a1244ebc-images/eca22230-control-measures.png"
+													}
+												},
+												"alignment": {
+													"horizontal": "Left",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "DropDown",
+													"model": {
+														"_internalName": "ControlMeasures",
+														"title": {
+															"text": "Control Measures",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"dataSource": "StaticList",
+														"StaticList": {
+															"options": "Elimination\r\nSubstitution\r\nEngineering controls\r\nAdministrative controls\r\nPersonal protective equipment",
+															"allowUserValue": false
+														},
+														"selection": "Single",
+														"options": "Elimination\r\nSubstitution\r\nEngineering controls\r\nAdministrative controls\r\nPersonal protective equipment",
+														"allowUserValue": false
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "MultiLineText",
+													"model": {
+														"_internalName": "DescribeSupportMeasures",
+														"title": {
+															"text": "Describe Support Measures",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mode": "Plain"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Tab5",
+								"title": "Completed By",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "Grid",
+													"model": {
+														"_internalName": "Grid1",
+														"stacked": "md",
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"border": {
+															"width": null,
+															"color": null
+														},
+														"rows": [{
+															"cells": [{
+																"component": {
+																	"type": "SingleLineText",
+																	"model": {
+																		"_internalName": "CompletedBy",
+																		"title": {
+																			"text": "Completed by",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"type": "Anything"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "Date",
+																	"model": {
+																		"_internalName": "Date1",
+																		"title": {
+																			"text": "Date",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		}
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "Grid",
+													"model": {
+														"_internalName": "Grid2",
+														"stacked": "md",
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"border": {
+															"width": null,
+															"color": null
+														},
+														"rows": [{
+															"cells": [{
+																"component": {
+																	"type": "Signature",
+																	"model": {
+																		"_internalName": "InkSketch1",
+																		"title": {
+																			"text": "InkSketch1",
+																			"visible": false
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cWidth": 300,
+																		"height": 150,
+																		"inkColor": "#000000"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Middle"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}]
+									}
+								}
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Submit",
+						"model": {
+							"_internalName": "Submit1",
+							"text": "Submit",
+							"savingText": "Submitting...",
+							"type": "Primary",
+							"click": "return fd.save();"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "",
+	"css": "",
+	"notifySubscribers": true,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#333399",
+		"bodyText": "#333333",
+		"bodyBackground": "#F5F5F5",
+		"fontFamily": "Kanit",
+		"fontType": 1,
+		"fontSize": 16,
+		"fontWeight": 300,
+		"borderThickness": 2,
+		"borderRadius": 2,
+		"shadow": true,
+		"themeId": "564e55d44251594342ac989c32cbd286",
+		"isDark": false
+	},
+	"timezone": "America/Los_Angeles",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": null,
+	"redirectURL": null,
+	"hideAfterSubmission": false,
+	"submissionTimeout": 0,
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
+}
