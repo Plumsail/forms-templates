@@ -1,0 +1,1042 @@
+{
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading1",
+							"heading": "Rental Agreement",
+							"view": "Normal",
+							"font": {
+								"style": "Normal",
+								"weight": "Normal"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"border": {
+								"width": null,
+								"color": ""
+							},
+							"size": "H1",
+							"textAlignment": "Center"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [10, null, 10, null],
+					"component": {
+						"type": "Accordion",
+						"model": {
+							"_internalName": "Accordion1",
+							"mode": "Multiple",
+							"border": {
+								"width": 2,
+								"color": "#d8d8d8"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": 15,
+								"radius": null
+							},
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold",
+								"color": ""
+							},
+							"fill": "#EBEBEB",
+							"items": [{
+								"_internalName": "Item1",
+								"title": "Landlord",
+								"expanded": true,
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "LandlordName",
+														"title": {
+															"text": "Full Name",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "LandlordStreetAddress",
+														"title": {
+															"text": "Address",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "Street Address line 1",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "LandlordStreetAddress2",
+														"title": {
+															"text": "Address",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "Street Address line 2",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "LandlordCity",
+														"title": {
+															"text": "City",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "City",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "LandlordState",
+														"title": {
+															"text": "State",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "State / Province",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "LandlordZIP",
+														"title": {
+															"text": "ZIP",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "ZIP Code",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "LandlordCountry",
+														"title": {
+															"text": "Country",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "Country",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "MaskedInput",
+													"model": {
+														"_internalName": "LandlordPhoneNumber",
+														"title": {
+															"text": "Phone Number",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mask": "000-000-0000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "LandlordEmail",
+														"title": {
+															"text": "E-mail",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cHint": "username@domain.com",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "E-mail",
+														"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+														"error": "This field must contain a valid e-mail address."
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Item2",
+								"title": "Tenant",
+								"expanded": false,
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "TenantName",
+														"title": {
+															"text": "Full Name",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "TenantEmail",
+														"title": {
+															"text": "E-mail",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cHint": "username@domain.com",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "E-mail",
+														"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+														"error": "This field must contain a valid e-mail address."
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "MaskedInput",
+													"model": {
+														"_internalName": "PhoneNumber",
+														"title": {
+															"text": "Phone Number",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mask": "000-000-0000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Number",
+													"model": {
+														"_internalName": "NumberOfOccupants",
+														"title": {
+															"text": "Number of Occupants",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"min": 0,
+														"max": 10,
+														"precision": 0,
+														"percents": false,
+														"spinButtons": false
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Item3",
+								"title": "Rental Information",
+								"expanded": false,
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "HouseStreetAddress1",
+														"title": {
+															"text": "House Rental Address",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "Street Address line 1",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "HouseStreetAddress2",
+														"title": {
+															"text": "Address",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "Street Address line 2",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "HouseCity",
+														"title": {
+															"text": "City",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "City",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "HouseState1",
+														"title": {
+															"text": "State",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "State / Province",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "HouseZIP",
+														"title": {
+															"text": "ZIP",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "ZIP Code",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "HouseCountry",
+														"title": {
+															"text": "Country",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"description": "Country",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Date",
+													"model": {
+														"_internalName": "RentStartDate",
+														"title": {
+															"text": "Rent Start Date",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														}
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "Date",
+													"model": {
+														"_internalName": "RentEndDate",
+														"title": {
+															"text": "Rent End Date",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														}
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Currency",
+													"model": {
+														"_internalName": "MonthlyRent",
+														"title": {
+															"text": "Monthly Rent",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"min": 0,
+														"symbol": "$",
+														"precision": 2,
+														"spinButtons": false
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "Currency",
+													"model": {
+														"_internalName": "SecurityDeposit",
+														"title": {
+															"text": "Security Deposit",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"min": 0,
+														"symbol": "$",
+														"precision": 2,
+														"spinButtons": false
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Item4",
+								"title": "Terms & Conditions",
+								"expanded": false,
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "HTML",
+													"model": {
+														"_internalName": "HTML1",
+														"content": "<iframe src=\"https://plumsail.com/assets/forms/templates/rental-application-form-contract.pdf\" width=\"100%\" height=\"500\" allow=\"autoplay\"></iframe>"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Signature",
+													"model": {
+														"_internalName": "LandlordSignature",
+														"title": {
+															"text": "Landlord Signature",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cWidth": 300,
+														"height": 150,
+														"inkColor": "#000000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Left",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "Signature",
+													"model": {
+														"_internalName": "TenantSignature",
+														"title": {
+															"text": "Tenant Signature",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cWidth": 300,
+														"height": 150,
+														"inkColor": "#000000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Left",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}]
+									}
+								}
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Submit",
+						"model": {
+							"_internalName": "Submit1",
+							"text": "Submit",
+							"savingText": "Submitting...",
+							"type": "Primary",
+							"click": "return fd.save();"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "",
+	"css": "",
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#228B22",
+		"bodyText": "#333333",
+		"bodyBackground": "#F5F5F5",
+		"fontFamily": "Verdana, Geneva, sans-serif",
+		"fontType": 0,
+		"fontSize": 16,
+		"fontWeight": 300,
+		"borderThickness": 2,
+		"borderRadius": 10,
+		"shadow": true,
+		"themeId": "d5eb383f072540c29aff0f2cb2895d3f",
+		"isDark": false
+	},
+	"timezone": "America/Los_Angeles",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": null,
+	"redirectURL": null,
+	"hideAfterSubmission": false,
+	"submissionTimeout": 0,
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
+}
