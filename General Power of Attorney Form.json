@@ -1,0 +1,902 @@
+{
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"component": {
+						"type": "Grid",
+						"model": {
+							"_internalName": "Grid1",
+							"stacked": "md",
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"border": {
+								"width": null,
+								"color": null
+							},
+							"rows": [{
+								"cells": [{
+									"component": {
+										"type": "Heading",
+										"model": {
+											"_internalName": "Heading1",
+											"heading": "General Power of Attorney Form",
+											"view": "Underline1",
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"frame": {
+												"horizontal": null,
+												"vertical": null,
+												"radius": null
+											},
+											"size": "H1",
+											"textAlignment": "Left"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "Text",
+										"model": {
+											"_internalName": "Text1",
+											"text": "<h6><span style=\"color:#373a3c;font-family:'Segoe UI', 'Source Sans Pro', calibri, candara, arial, sans-serif;white-space-collapse:break-spaces;background-color:#ffffff;\">This form grants broad authority to another adult, called your attorney-in-fact (Agent), to act on your behalf in a wide range of matters. This may include managing your finances, real estate, personal property, and engaging in various business transactions. If you have any questions about these powers, obtain competent legal advice.</span></h6>"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Wizard",
+						"model": {
+							"_internalName": "Wizard1",
+							"shape": "Tab",
+							"nextText": "Next",
+							"backText": "Back",
+							"finishText": "Finish",
+							"savingText": "Submitting...",
+							"finish": "return fd.save();",
+							"steps": [{
+								"_internalName": "Step1",
+								"title": "Principal",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalFullName",
+														"title": {
+															"text": "Principal Full Name",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalStreetAddress1",
+														"description": "Street Address line 1",
+														"title": {
+															"text": "Principal Address",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalStreetAddress2",
+														"description": "Street Address line 2",
+														"title": {
+															"text": "Address",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalCity",
+														"description": "City",
+														"title": {
+															"text": "City",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalState",
+														"description": "State / Province",
+														"title": {
+															"text": "State",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalZIP",
+														"description": "ZIP",
+														"title": {
+															"text": "ZIP",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalCountry",
+														"description": "Country",
+														"title": {
+															"text": "Country",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalEmail",
+														"title": {
+															"text": "Principal Email",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cHint": "username@domain.com",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "E-mail",
+														"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+														"error": "This field must contain a valid e-mail address."
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "MaskedInput",
+													"model": {
+														"_internalName": "PrincipalPhone",
+														"title": {
+															"text": "Principal Phone",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mask": "000-000-0000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step2",
+								"title": "Agent",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "AgentFullName",
+														"title": {
+															"text": "Agent Full Name",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "AgentStreetAddress1",
+														"description": "Street Address line 1",
+														"title": {
+															"text": "Agent Address",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "AgentStreetAddress2",
+														"description": "Street Address line 2",
+														"title": {
+															"text": "Address",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "AgentCity",
+														"description": "City",
+														"title": {
+															"text": "City",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "AgentState",
+														"description": "State / Province",
+														"title": {
+															"text": "State",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "AgentZIP",
+														"description": "ZIP",
+														"title": {
+															"text": "ZIP",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "AgentCountry",
+														"description": "Country",
+														"title": {
+															"text": "Country",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "AgentEmail",
+														"title": {
+															"text": "Agent Email",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cHint": "username@domain.com",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "E-mail",
+														"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+														"error": "This field must contain a valid e-mail address."
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "MaskedInput",
+													"model": {
+														"_internalName": "AgentPhone",
+														"title": {
+															"text": "Agent Phone",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mask": "000-000-0000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "DataTable",
+													"model": {
+														"_internalName": "DesignationOfSuccessorAgentsOptional",
+														"title": {
+															"text": "Designation of successor agent(s) (optional)",
+															"visible": true
+														},
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"newLine": "Top",
+														"delete": "Last",
+														"columns": [{
+															"_internalName": "FullName",
+															"title": "Full Name",
+															"required": false,
+															"type": "String"
+														}, {
+															"_internalName": "Address",
+															"title": "Address",
+															"required": false,
+															"type": "String"
+														}, {
+															"_internalName": "Phone",
+															"title": "Phone",
+															"required": false,
+															"type": "MaskedText",
+															"mask": "000-000-0000"
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step3",
+								"title": "Acknowledgement",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "MultipleChoice",
+													"model": {
+														"_internalName": "Consent",
+														"title": {
+															"text": "MultiChoice1",
+															"visible": false
+														},
+														"orientation": "Horizontal",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"dataSource": "StaticList",
+														"StaticList": {
+															"options": "I do hereby ratify and agree to ratify all actions by my agent, which are performed in terms of the authority conferred upon him by this General Power of Attorney",
+															"allowUserValue": false
+														},
+														"cColumns": 1,
+														"options": "I do hereby ratify and agree to ratify all actions by my agent, which are performed in terms of the authority conferred upon him by this General Power of Attorney",
+														"allowUserValue": false
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Signature",
+													"model": {
+														"_internalName": "PrincipalSignature",
+														"title": {
+															"text": "Principal Signature",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cWidth": 300,
+														"height": 150,
+														"inkColor": "#000000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Left",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "",
+	"css": "",
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#336699",
+		"bodyText": "#373A3C",
+		"bodyBackground": "#FFFFFF",
+		"fontFamily": "Tahoma, Geneva, sans-serif",
+		"fontType": 0,
+		"fontSize": 14,
+		"fontWeight": 400,
+		"borderThickness": 1,
+		"borderRadius": 2,
+		"shadow": true,
+		"themeId": "7b90c88d049207bd2c87dfb2e833cf0c",
+		"isDark": false
+	},
+	"timezone": "America/Halifax",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": null,
+	"redirectURL": null,
+	"hideAfterSubmission": false,
+	"submissionTimeout": 0,
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
+}
