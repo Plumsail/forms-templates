@@ -1,305 +1,312 @@
 {
-    "pc": {
-        "type": "Grid",
-        "model": {
-            "stacked": "md",
-            "frame": {
-                "horizontal": null,
-                "vertical": null,
-                "radius": null
-            },
-            "border": {
-                "width": null,
-                "color": null
-            },
-            "rows": [{
-                "cells": [{
-                    "component": {
-                        "type": "Grid",
-                        "model": {
-                            "_internalName": "Grid1",
-                            "stacked": "md",
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
-                            },
-                            "border": {
-                                "width": null,
-                                "color": null
-                            },
-                            "class": "fd-blur-background",
-                            "rows": [{
-                                "cells": [{
-                                    "padding": [null, null, 10, null],
-                                    "component": {
-                                        "type": "Heading",
-                                        "model": {
-                                            "_internalName": "Heading1",
-                                            "heading": "Employee NPS survey",
-                                            "view": "Normal",
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "frame": {
-                                                "horizontal": null,
-                                                "vertical": null,
-                                                "radius": null
-                                            },
-                                            "size": "H1",
-                                            "textAlignment": "Center"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "Wizard",
-                                        "model": {
-                                            "_internalName": "Wizard1",
-                                            "shape": "Circle",
-                                            "nextText": "Next",
-                                            "backText": "Back",
-                                            "finishText": "Send Feedback",
-                                            "savingText": "Sending...",
-                                            "finish": "return fd.save();",
-                                            "steps": [{
-                                                "_internalName": "Step1",
-                                                "title": "Step 1",
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "Text",
-                                                                    "model": {
-                                                                        "_internalName": "Text1",
-                                                                        "text": "<p>Dear colleague,</p><p>We would be grateful if you could give us feedback about our company and help us understand and improve our workplace. Please take a few minutes to share your honest thoughts and experiences with us. Your responses are completely anonymous.<br /></p><p>Let&rsquo;s get started!</p>"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "LikertScale",
-                                                                    "model": {
-                                                                        "_internalName": "LikertScale1",
-                                                                        "type": "Radio",
-                                                                        "required": false,
-                                                                        "questions": "On a scale of 0 to 10, how satisfied are you with your job at our company?\nOn a scale of 0 to 10, how would you rate the work environment in terms of collaboration and teamwork?\nOn a scale of 0 to 10, how likely are you to recommend our company as a place to work to your friends or professional network?",
-                                                                        "answers": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                }
-                                            }, {
-                                                "_internalName": "Step3",
-                                                "title": "Step 2",
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "MultiLineText",
-                                                                    "model": {
-                                                                        "_internalName": "WhatIsThePrimaryReasonForYourScoreAbovePleaseExplainInAFewWords",
-                                                                        "title": {
-                                                                            "text": "What is the primary reason for your score? Please explain in a few words:",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "mode": "Plain"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "MultiLineText",
-                                                                    "model": {
-                                                                        "_internalName": "LikeTheMost",
-                                                                        "title": {
-                                                                            "text": "What do you like the most about working here?",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "mode": "Plain"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "padding": [10, null, null, null],
-                                                                "component": {
-                                                                    "type": "MultiLineText",
-                                                                    "model": {
-                                                                        "_internalName": "NeedImprovement",
-                                                                        "title": {
-                                                                            "text": "What aspects of your job or the company, in general, do you think need improvement?",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "mode": "Plain"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                }
-                                            }]
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }]
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
-        }
-    },
-    "tablet": null,
-    "phone": null,
-    "js": "",
-    "css": "/* setting a transparent background for the Heading control */\n.fd-form h1 > span,\n.fd-form h4 > span,\n.fd-form .fd-heading{\n   background-color: transparent !important;;\n}\n\n\n/* setting the image as the background of the form */\n.fd-form {\n    background: url(\"https://plumsail.com/assets/forms/templates/enps-image-01.jpg\") no-repeat center top;\n    background-size: cover;\n}\n\n/* setting the background of Grid container */\n.fd-form .fd-blur-background {\n    background: rgb(255 255 255 / 18%);\n    backdrop-filter: blur(8px);\n    border-radius: 2px;\n}",
-    "notifySubscribers": false,
-    "version": "1.0.2",
-    "theme": {
-        "primary": "#3b1210",
-        "bodyText": "#3b1210",
-        "bodyBackground": "#ffffff",
-        "fontFamily": "Lato",
-        "fontType": 1,
-        "fontSize": 16,
-        "fontWeight": 400,
-        "borderThickness": 2,
-        "borderRadius": 15,
-        "shadow": false,
-        "themeId": "9961d16484ad0069b7dee4b16625b9ae"
-    },
-    "timezone": "America/Halifax",
-    "culture": "en",
-    "userLanguage": null,
-    "userCulture": null,
-    "thankYouMessage": "Thank you very much for your honest feedback 😊",
-    "redirectURL": null,
-    "hideAfterSubmission": true,
-    "submissionTimeout": 0,
-    "authentication": 0,
-    "singleSubmissionPerUser": false,
-    "allowEditingSubmission": false,
-    "restrictAccess": false,
-    "azureADTenant": null,
-    "azureADObjects": [],
-    "azureB2CProperties": null
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"component": {
+						"type": "Grid",
+						"model": {
+							"_internalName": "Grid1",
+							"stacked": "md",
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"border": {
+								"width": null,
+								"color": null
+							},
+							"class": "fd-blur-background",
+							"rows": [{
+								"cells": [{
+									"padding": [null, null, 10, null],
+									"component": {
+										"type": "Heading",
+										"model": {
+											"_internalName": "Heading1",
+											"heading": "Employee NPS survey",
+											"view": "Normal",
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"frame": {
+												"horizontal": null,
+												"vertical": null,
+												"radius": null
+											},
+											"size": "H1",
+											"textAlignment": "Center"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "Wizard",
+										"model": {
+											"_internalName": "Wizard1",
+											"direction": "Right",
+											"step": {
+												"size": 16,
+												"color": null,
+												"shape": "Circle"
+											},
+											"nextText": "Next",
+											"backText": "Back",
+											"finishText": "Send Feedback",
+											"savingText": "Sending...",
+											"finish": "return fd.save();",
+											"steps": [{
+												"_internalName": "Step1",
+												"title": "Scale",
+												"component": {
+													"type": "Grid",
+													"model": {
+														"stacked": "md",
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"border": {
+															"width": null,
+															"color": null
+														},
+														"rows": [{
+															"cells": [{
+																"component": {
+																	"type": "Text",
+																	"model": {
+																		"_internalName": "Text1",
+																		"text": "<p>Dear colleague,</p><p>We would be grateful if you could give us feedback about our company and help us understand and improve our workplace. Please take a few minutes to share your honest thoughts and experiences with us. Your responses are completely anonymous.<br /></p><p>Let&rsquo;s get started!</p>"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "LikertScale",
+																	"model": {
+																		"_internalName": "LikertScale1",
+																		"type": "Radio",
+																		"required": false,
+																		"questions": "On a scale of 0 to 10, how satisfied are you with your job at our company?\nOn a scale of 0 to 10, how would you rate the work environment in terms of collaboration and teamwork?\nOn a scale of 0 to 10, how likely are you to recommend our company as a place to work to your friends or professional network?",
+																		"answers": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}]
+													}
+												}
+											}, {
+												"_internalName": "Step3",
+												"title": "Comments",
+												"component": {
+													"type": "Grid",
+													"model": {
+														"stacked": "md",
+														"frame": {
+															"horizontal": null,
+															"vertical": null,
+															"radius": null
+														},
+														"border": {
+															"width": null,
+															"color": null
+														},
+														"rows": [{
+															"cells": [{
+																"component": {
+																	"type": "MultiLineText",
+																	"model": {
+																		"_internalName": "WhatIsThePrimaryReasonForYourScoreAbovePleaseExplainInAFewWords",
+																		"title": {
+																			"text": "What is the primary reason for your score? Please explain in a few words:",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"mode": "Plain"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"component": {
+																	"type": "MultiLineText",
+																	"model": {
+																		"_internalName": "LikeTheMost",
+																		"title": {
+																			"text": "What do you like the most about working here?",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"mode": "Plain"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}, {
+															"cells": [{
+																"padding": [10, null, null, null],
+																"component": {
+																	"type": "MultiLineText",
+																	"model": {
+																		"_internalName": "NeedImprovement",
+																		"title": {
+																			"text": "What aspects of your job or the company, in general, do you think need improvement?",
+																			"visible": true
+																		},
+																		"orientation": "Vertical",
+																		"required": false,
+																		"font": {
+																			"style": "Normal",
+																			"weight": "Semibold"
+																		},
+																		"wrap": true,
+																		"cFont": {
+																			"style": "Normal",
+																			"weight": "Normal"
+																		},
+																		"mode": "Plain"
+																	}
+																},
+																"alignment": {
+																	"horizontal": "Justify",
+																	"vertical": "Top"
+																},
+																"columns": {
+																	"width": 12
+																}
+															}]
+														}]
+													}
+												}
+											}],
+											"shape": "Circle"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "",
+	"css": "/* setting a transparent background for the Heading control */\n.fd-form h1 > span,\n.fd-form h4 > span,\n.fd-form .fd-heading{\n   background-color: transparent !important;;\n}\n\n\n/* setting the image as the background of the form */\n.fd-form {\n    background: url(\"https://plumsail.com/assets/forms/templates/enps-image-01.jpg\") no-repeat center top;\n    background-size: cover;\n}\n\n/* setting the background of Grid container */\n.fd-form .fd-blur-background {\n    background: rgb(255 255 255 / 18%);\n    backdrop-filter: blur(8px);\n    border-radius: 2px;\n}",
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#3b1210",
+		"bodyText": "#3b1210",
+		"bodyBackground": "#ffffff",
+		"fontFamily": "Lato",
+		"fontType": 1,
+		"fontSize": 16,
+		"fontWeight": 400,
+		"borderThickness": 2,
+		"borderRadius": 15,
+		"shadow": false,
+		"themeId": "9961d16484ad0069b7dee4b16625b9ae"
+	},
+	"timezone": "America/Halifax",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": "Thank you very much for your honest feedback 😊",
+	"redirectURL": null,
+	"hideAfterSubmission": true,
+	"submissionTimeout": 0,
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
 }
