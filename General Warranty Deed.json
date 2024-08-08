@@ -1,0 +1,839 @@
+{
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"padding": [null, null, 15, null],
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading1",
+							"heading": "General Warranty Deed",
+							"view": "Normal",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold",
+								"color": ""
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H1",
+							"textAlignment": "Center"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Grid",
+						"model": {
+							"_internalName": "Grid2",
+							"stacked": "md",
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"border": {
+								"width": null,
+								"color": null
+							},
+							"fill": "#f8f8f8",
+							"rows": [{
+								"cells": [{
+									"component": {
+										"type": "MultiLineText",
+										"model": {
+											"_internalName": "PreparedBy",
+											"title": {
+												"text": "Prepared By",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"mode": "Plain"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 6
+									}
+								}, {
+									"component": {
+										"type": "MultiLineText",
+										"model": {
+											"_internalName": "AfterRecordingReturnTo",
+											"title": {
+												"text": "After Recording Return To",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"mode": "Plain"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 6
+									}
+								}]
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [10, null, 10, null],
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading2",
+							"heading": "",
+							"view": "Line",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H4",
+							"textAlignment": "Center"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading4",
+							"heading": "Grantor(s)",
+							"view": "Normal",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H3",
+							"textAlignment": "Center"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Grid",
+						"model": {
+							"_internalName": "Grid1",
+							"stacked": "md",
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"border": {
+								"width": 2,
+								"color": "#d5d5d5"
+							},
+							"rows": [{
+								"cells": [{
+									"component": {
+										"type": "SingleLineText",
+										"model": {
+											"_internalName": "Grantor(s)",
+											"title": {
+												"text": "Name",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"type": "Anything"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "SingleChoice",
+										"model": {
+											"_internalName": "GrantorType",
+											"title": {
+												"text": "Type",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"dataSource": "StaticList",
+											"cColumns": 2,
+											"options": [{
+												"value": "a married couple",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "a business",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "a trust",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "individual(s)",
+												"backgroundColor": null,
+												"textColor": null
+											}],
+											"allowUserValue": false,
+											"defaultValue": []
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "MultiLineText",
+										"model": {
+											"_internalName": "GrantorAddress",
+											"title": {
+												"text": "Mailing Address",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"mode": "Plain"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [10, null, null, null],
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading5",
+							"heading": "Grantee(s)",
+							"view": "Normal",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H3",
+							"textAlignment": "Center"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Grid",
+						"model": {
+							"_internalName": "Grid3",
+							"stacked": "md",
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"border": {
+								"width": 2,
+								"color": "#d5d5d5"
+							},
+							"rows": [{
+								"cells": [{
+									"component": {
+										"type": "SingleLineText",
+										"model": {
+											"_internalName": "Grantee(s)",
+											"title": {
+												"text": "Name",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"type": "Anything"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "SingleChoice",
+										"model": {
+											"_internalName": "GranteeType",
+											"title": {
+												"text": "Type",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"dataSource": "StaticList",
+											"cColumns": 2,
+											"options": [{
+												"value": "a married couple",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "a business",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "a trust",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "individual(s)",
+												"backgroundColor": null,
+												"textColor": null
+											}],
+											"allowUserValue": false,
+											"defaultValue": []
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "MultiLineText",
+										"model": {
+											"_internalName": "GranteeAddress1",
+											"title": {
+												"text": "Mailing Address",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"mode": "Plain"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [10, null, null, null],
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading3",
+							"heading": "Property Information",
+							"view": "Normal",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H3",
+							"textAlignment": "Center"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Grid",
+						"model": {
+							"_internalName": "Grid4",
+							"stacked": "md",
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"border": {
+								"width": 2,
+								"color": "#d5d5d5"
+							},
+							"rows": [{
+								"cells": [{
+									"component": {
+										"type": "DropDown",
+										"model": {
+											"_internalName": "PropertyRype",
+											"title": {
+												"text": "Property Type",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"dataSource": "StaticList",
+											"selection": "Single",
+											"options": [{
+												"value": "Residential",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "Commercial",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "Industrial",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "Land",
+												"backgroundColor": null,
+												"textColor": null
+											}, {
+												"value": "Mixed-use",
+												"backgroundColor": null,
+												"textColor": null
+											}],
+											"allowUserValue": true,
+											"defaultValue": []
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 6
+									}
+								}, {
+									"component": {
+										"type": "Currency",
+										"model": {
+											"_internalName": "ConsiderationAmount",
+											"title": {
+												"text": "Consideration Amount",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"min": 0,
+											"symbol": "$",
+											"precision": 2,
+											"spinButtons": false
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 6
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "MultiLineText",
+										"model": {
+											"_internalName": "LegalDescriptionOfTheProperty",
+											"title": {
+												"text": "Legal Description Of The Property",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"mode": "Plain"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 6
+									}
+								}, {
+									"component": {
+										"type": "Attachments",
+										"model": {
+											"_internalName": "OrAttachLegalDescription",
+											"title": {
+												"text": "Or Attach Legal Description",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"maxSize": 10240
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 6
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "MultiLineText",
+										"model": {
+											"_internalName": "PropertyAddress",
+											"title": {
+												"text": "Property Address",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"mode": "Plain"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}, {
+								"cells": [{
+									"component": {
+										"type": "MultiLineText",
+										"model": {
+											"_internalName": "PropertyUseRestrictions",
+											"title": {
+												"text": "Property Use Restrictions",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"mode": "Plain"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 12
+									}
+								}]
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [15, null, null, null],
+					"component": {
+						"type": "Submit",
+						"model": {
+							"_internalName": "Submit1",
+							"text": "Submit",
+							"savingText": "Submitting...",
+							"type": "Primary",
+							"click": "return fd.save();"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "",
+	"css": "",
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#4CAF50",
+		"bodyText": "#373A3C",
+		"bodyBackground": "#F5F5F5",
+		"fontFamily": "Noto Sans Georgian",
+		"fontType": 1,
+		"fontSize": 14,
+		"fontWeight": 500,
+		"borderThickness": 1,
+		"borderRadius": 2,
+		"shadow": true,
+		"themeId": "d0420d16ec49a5dbd7d38d11e200d836",
+		"isDark": false
+	},
+	"timezone": "Etc/UTC",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": null,
+	"redirectURL": null,
+	"hideAfterSubmission": false,
+	"submissionTimeout": 0,
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
+}

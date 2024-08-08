@@ -1,0 +1,561 @@
+{
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"padding": [null, null, 15, null],
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading1",
+							"heading": "Living Will Form",
+							"view": "Underline1",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H1",
+							"textAlignment": "Center"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Wizard",
+						"model": {
+							"_internalName": "Wizard1",
+							"direction": "Right",
+							"step": {
+								"size": null,
+								"color": "",
+								"shape": "Tab"
+							},
+							"nextText": "Next",
+							"backText": "Back",
+							"finishText": "Finish",
+							"savingText": "Submitting...",
+							"finish": "return fd.save();",
+							"steps": [{
+								"_internalName": "Step3",
+								"title": "Life Support",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "Text",
+													"model": {
+														"_internalName": "Text1",
+														"text": "I desire that my doctor make a concerted effort to return me to an acceptable quality of\nlife using then available treatments and therapies. However, if my quality of life\nbecomes unacceptable to me and my doctors have determined that\nmy condition will not improve (is irreversible), I direct that all treatments that extend my\nlife be withdrawn.\n"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "MultipleChoice",
+													"model": {
+														"_internalName": "AnUnacceptableQualityOfLifeToMeMeans",
+														"title": {
+															"text": "An unacceptable quality of life to me means:",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"dataSource": "StaticList",
+														"cColumns": 2,
+														"options": [{
+															"value": "Chronic coma or persistent vegetative state",
+															"backgroundColor": null,
+															"textColor": null
+														}, {
+															"value": "No longer able to communicate my needs",
+															"backgroundColor": null,
+															"textColor": null
+														}, {
+															"value": "No longer able to recognize family or friends",
+															"backgroundColor": null,
+															"textColor": null
+														}, {
+															"value": "Total dependence on others for daily care",
+															"backgroundColor": null,
+															"textColor": null
+														}],
+														"allowUserValue": true,
+														"defaultValue": []
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleChoice",
+													"model": {
+														"_internalName": "SelectOne",
+														"title": {
+															"text": "Select one:",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"dataSource": "StaticList",
+														"cColumns": 1,
+														"options": [{
+															"value": "Even if I have the quality of life described above, I still wish to be treated with food and water by tube or intravenously",
+															"backgroundColor": null,
+															"textColor": null
+														}, {
+															"value": "If I have the quality of life described above, I do NOT wish to be treated with food and water by tube or intravenously",
+															"backgroundColor": null,
+															"textColor": null
+														}],
+														"allowUserValue": false,
+														"defaultValue": []
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step2",
+								"title": "Life-Sustaining Treatments",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "Text",
+													"model": {
+														"_internalName": "Text2",
+														"text": "Some people do not wish to have certain life-sustaining treatments under any\ncircumstance, even if recovery is a possibility. Check treatments below, if any, that you\ndo not wish to have under any circumstances:"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "MultipleChoice",
+													"model": {
+														"_internalName": "CertainLifeSustainingTreatment",
+														"title": {
+															"text": "Certain Life-Sustaining Treatment",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"dataSource": "StaticList",
+														"cColumns": 1,
+														"options": [{
+															"value": "Cardiopulmonary Resuscitation (CPR)",
+															"backgroundColor": null,
+															"textColor": null
+														}, {
+															"value": "Ventilation (breathing machine)",
+															"backgroundColor": null,
+															"textColor": null
+														}, {
+															"value": "Feeding tube",
+															"backgroundColor": null,
+															"textColor": null
+														}, {
+															"value": "Dialysis",
+															"backgroundColor": null,
+															"textColor": null
+														}],
+														"allowUserValue": true,
+														"defaultValue": []
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step4",
+								"title": "End of Life Wishes",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "MultiLineText",
+													"model": {
+														"_internalName": "WhenIAmNearDeathItIsImportantToMeThat",
+														"title": {
+															"text": "When I am near death, it is important to me that:",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mode": "Plain"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step1",
+								"title": "Principal",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalFullName",
+														"title": {
+															"text": "Full Name",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "MaskedInput",
+													"model": {
+														"_internalName": "SocialSecurityNumberSSN",
+														"title": {
+															"text": "Social security number (SSN)",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mask": "000-00-0000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "PrincipalEmail",
+														"title": {
+															"text": "Email",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cHint": "username@domain.com",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "E-mail",
+														"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+														"error": "This field must contain a valid e-mail address."
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "MaskedInput",
+													"model": {
+														"_internalName": "PrincipalPhone",
+														"title": {
+															"text": "Phone",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mask": "000-000-0000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"padding": [10, null, null, null],
+												"component": {
+													"type": "Signature",
+													"model": {
+														"_internalName": "PrincipalSignature",
+														"title": {
+															"text": "I, being of sound mind and memory, do hereby make, publish, and declare this document as my Living Will to serve as a directive to my physicians, family, and healthcare providers in the event that I am unable to communicate my wishes regarding life-sustaining treatment.",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cWidth": 300,
+														"height": 150,
+														"inkColor": "#000000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Left",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}],
+							"shape": "Tab"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "",
+	"css": "",
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#5c6595",
+		"bodyText": "#3f3f3f",
+		"bodyBackground": "#ffffff",
+		"fontFamily": "Georgia, serif",
+		"fontType": 0,
+		"fontSize": 16,
+		"fontWeight": 400,
+		"borderThickness": 2,
+		"borderRadius": 1,
+		"shadow": true,
+		"themeId": "b1c6b91b45499e3074fbc019c6370662",
+		"isDark": false
+	},
+	"timezone": "America/Halifax",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": null,
+	"redirectURL": null,
+	"hideAfterSubmission": false,
+	"submissionTimeout": 0,
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
+}
