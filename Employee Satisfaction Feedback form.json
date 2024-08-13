@@ -1,0 +1,392 @@
+{
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"padding": [null, null, 15, null],
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading1",
+							"heading": "Employee Satisfaction Feedback",
+							"view": "Normal",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H1",
+							"textAlignment": "Center"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Grid",
+						"model": {
+							"_internalName": "Grid1",
+							"stacked": "md",
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"border": {
+								"width": null,
+								"color": null
+							},
+							"rows": [{
+								"cells": [{
+									"component": {
+										"type": "SingleLineText",
+										"model": {
+											"_internalName": "FullName",
+											"title": {
+												"text": "Full Name",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"type": "Anything"
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 6
+									}
+								}, {
+									"component": {
+										"type": "DropDown",
+										"model": {
+											"_internalName": "Department",
+											"title": {
+												"text": "Department",
+												"visible": true
+											},
+											"orientation": "Vertical",
+											"required": false,
+											"font": {
+												"style": "Normal",
+												"weight": "Semibold"
+											},
+											"wrap": true,
+											"cFont": {
+												"style": "Normal",
+												"weight": "Normal"
+											},
+											"dataSource": "StaticList",
+											"selection": "Single",
+											"options": [{
+												"value": "Human Resources (HR)",
+												"backgroundColor": "#7b0ece",
+												"textColor": "#ffffff"
+											}, {
+												"value": "Finance",
+												"backgroundColor": "#f99fc9",
+												"textColor": "#940a4a"
+											}, {
+												"value": "Sales",
+												"backgroundColor": "#f9c59f",
+												"textColor": "#94440a"
+											}, {
+												"value": "Marketing",
+												"backgroundColor": "#ce830e",
+												"textColor": "#ffffff"
+											}, {
+												"value": "Operations",
+												"backgroundColor": "#0eaece",
+												"textColor": "#ffffff"
+											}, {
+												"value": "Information Technology (IT)",
+												"backgroundColor": "#37a448",
+												"textColor": "#ffffff"
+											}, {
+												"value": "Customer Service",
+												"backgroundColor": "#9feaf9",
+												"textColor": "#0a7d94"
+											}, {
+												"value": "Research and Development (R&D)",
+												"backgroundColor": "#ce0e68",
+												"textColor": "#ffffff"
+											}, {
+												"value": "Legal",
+												"backgroundColor": "#9feaf9",
+												"textColor": "#0a7d94"
+											}, {
+												"value": "Quality Assurance (QA)",
+												"backgroundColor": "#f9d69f",
+												"textColor": "#945e0a"
+											}, {
+												"value": "Logistics",
+												"backgroundColor": "#e1e5ea",
+												"textColor": "#434f5c"
+											}, {
+												"value": "Supply Chain Management",
+												"backgroundColor": "#cff4fc",
+												"textColor": "#0a7d94"
+											}, {
+												"value": "Human Resources Development",
+												"backgroundColor": "#d9f2dd",
+												"textColor": "#287634"
+											}, {
+												"value": "Public Relations",
+												"backgroundColor": "#fce2cf",
+												"textColor": "#94440a"
+											}, {
+												"value": "Business Development",
+												"backgroundColor": "#fccfe4",
+												"textColor": "#940a4a"
+											}, {
+												"value": "Project Management",
+												"backgroundColor": "#e8cffc",
+												"textColor": "#580a94"
+											}, {
+												"value": "Administration",
+												"backgroundColor": "#cfe9fc",
+												"textColor": "#0a5a94"
+											}],
+											"allowUserValue": false,
+											"defaultValue": []
+										}
+									},
+									"alignment": {
+										"horizontal": "Justify",
+										"vertical": "Top"
+									},
+									"columns": {
+										"width": 6
+									}
+								}]
+							}]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [10, null, null, null],
+					"component": {
+						"type": "Wizard",
+						"model": {
+							"_internalName": "Wizard1",
+							"direction": "Down",
+							"step": {
+								"size": 16,
+								"color": null,
+								"shape": "Circle"
+							},
+							"nextText": "Next",
+							"backText": "Back",
+							"finishText": "Send",
+							"savingText": "Submitting...",
+							"finish": "return fd.save();",
+							"steps": [{
+								"_internalName": "Step1",
+								"title": "Job Satisfaction",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "LikertScale",
+													"model": {
+														"_internalName": "LikertScale3",
+														"type": "Radio",
+														"required": false,
+														"questions": "I feel challenged and stimulated by my work.\nMy job contributes meaningfully to the company's success.\nI have a good work-life balance.\nI feel recognized and appreciated for my work.\nI have opportunities to use my skills and abilities.\nI feel fairly compensated for my work.\nI have a sense of belonging in my team.\nI feel supported by my colleagues.",
+														"answers": "Strongly Disagree\nDisagree\nNeutral\nAgree\nStrongly Agree"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step2",
+								"title": "Learning and Development",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "LikertScale",
+													"model": {
+														"_internalName": "LikertScale1",
+														"type": "Radio",
+														"required": false,
+														"questions": "The company offers sufficient opportunities for professional development.\nThe training provided is relevant to my job role.\nI have the opportunity to apply what I learn from training on the job.\nThe company supports my career growth and development.\nI have a clear understanding of career progression opportunities within the company.",
+														"answers": "Strongly Disagree\nDisagree\nNeutral\nAgree\nStrongly Agree"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step3",
+								"title": "Management and Leadership",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "LikertScale",
+													"model": {
+														"_internalName": "LikertScale2",
+														"type": "Radio",
+														"required": false,
+														"questions": "My manager effectively communicates expectations and goals.\nMy manager provides regular and constructive feedback.\nMy manager is approachable and supportive.\nMy manager creates a positive and motivating work environment.\nThe company leadership demonstrates effective communication.\nThe company leadership demonstrates strong leadership and vision.\nI feel valued and appreciated by the company leadership.",
+														"answers": "Strongly Disagree\nDisagree\nNeutral\nAgree\nStrongly Agree"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}],
+							"shape": "Circle"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": null,
+	"css": null,
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#69b5f2",
+		"bodyText": "#3f3f3f",
+		"bodyBackground": "#f5fbff",
+		"fontFamily": "Roboto",
+		"fontType": 1,
+		"fontSize": 14,
+		"fontWeight": 400,
+		"borderThickness": 1,
+		"borderRadius": 6,
+		"shadow": true,
+		"themeId": null,
+		"isDark": false
+	},
+	"timezone": "America/Los_Angeles",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": null,
+	"redirectURL": null,
+	"hideAfterSubmission": false,
+	"submissionTimeout": 0,
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
+}

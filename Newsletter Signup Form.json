@@ -1,0 +1,293 @@
+{
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"component": {
+						"type": "Grid",
+						"model": {
+							"_internalName": "Grid1",
+							"stacked": "md",
+							"frame": {
+								"horizontal": null,
+								"vertical": 50,
+								"radius": null
+							},
+							"border": {
+								"width": null,
+								"color": null
+							},
+							"class": "bg-img"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [null, null, 15, null],
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading1",
+							"heading": "Newsletter Signup Form",
+							"view": "Underline1",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H1",
+							"textAlignment": "Left"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "SingleLineText",
+						"model": {
+							"_internalName": "FirstName",
+							"description": "First Name",
+							"title": {
+								"text": "Name",
+								"visible": true
+							},
+							"orientation": "Vertical",
+							"required": false,
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"wrap": true,
+							"cFont": {
+								"style": "Normal",
+								"weight": "Normal"
+							},
+							"type": "Anything"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 6
+					}
+				}, {
+					"component": {
+						"type": "SingleLineText",
+						"model": {
+							"_internalName": "LastName",
+							"description": "Last Name",
+							"title": {
+								"text": " ",
+								"visible": true
+							},
+							"orientation": "Vertical",
+							"required": false,
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"wrap": true,
+							"cFont": {
+								"style": "Normal",
+								"weight": "Normal"
+							},
+							"type": "Anything"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 6
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "SingleLineText",
+						"model": {
+							"_internalName": "Email",
+							"title": {
+								"text": "Email",
+								"visible": true
+							},
+							"orientation": "Vertical",
+							"required": false,
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"wrap": true,
+							"cHint": "username@domain.com",
+							"cFont": {
+								"style": "Normal",
+								"weight": "Normal"
+							},
+							"type": "E-mail",
+							"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+							"error": "This field must contain a valid e-mail address."
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "DropDown",
+						"model": {
+							"_internalName": "Interests",
+							"title": {
+								"text": "Interests ",
+								"visible": true
+							},
+							"orientation": "Vertical",
+							"required": false,
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"wrap": true,
+							"cFont": {
+								"style": "Normal",
+								"weight": "Normal"
+							},
+							"dataSource": "StaticList",
+							"selection": "Multiple",
+							"options": [{
+								"value": "News",
+								"backgroundColor": "#d9f2dd",
+								"textColor": "#287634"
+							}, {
+								"value": "How-tos",
+								"backgroundColor": "#fceacf",
+								"textColor": "#945e0a"
+							}, {
+								"value": "Release notes",
+								"backgroundColor": "#fccfe4",
+								"textColor": "#940a4a"
+							}],
+							"allowUserValue": false,
+							"defaultValue": ["News", "How-tos", "Release notes"]
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Text",
+						"model": {
+							"_internalName": "Text1",
+							"text": "<strong>Note:</strong>&nbsp;you can unsubscribe at any time."
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"component": {
+						"type": "Button",
+						"model": {
+							"_internalName": "Button1",
+							"text": "Subscribe",
+							"type": "Primary"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "",
+	"css": "/* set the bacground of the header grid */\n.fd-form div.bg-img {\n\tbackground: url('https://plumsailforms.blob.core.windows.net/e90a6c64-b19a-42c1-ad3a-4f13a1244ebc-images/bcdd6b82-joanna-kosinska-uGcDWKN91Fs-unsplash.jpg') no-repeat center;\n\tbackground-size: cover;\n}\n",
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#d7b47c",
+		"bodyText": "#373A3C",
+		"bodyBackground": "#fafafa",
+		"fontFamily": "Montserrat",
+		"fontType": 1,
+		"fontSize": 14,
+		"fontWeight": 300,
+		"borderThickness": 1,
+		"borderRadius": 1,
+		"shadow": true,
+		"themeId": null,
+		"isDark": false
+	},
+	"timezone": "America/Los_Angeles",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": "",
+	"redirectURL": null,
+	"hideAfterSubmission": true,
+	"submissionTimeout": "60",
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
+}
