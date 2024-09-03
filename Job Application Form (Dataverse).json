@@ -1,0 +1,566 @@
+{
+	"pc": {
+		"type": "Grid",
+		"model": {
+			"stacked": "md",
+			"frame": {
+				"horizontal": null,
+				"vertical": null,
+				"radius": null
+			},
+			"border": {
+				"width": null,
+				"color": null
+			},
+			"rows": [{
+				"cells": [{
+					"padding": [30, null, null, null],
+					"component": {
+						"type": "Heading",
+						"model": {
+							"_internalName": "Heading1",
+							"heading": "Job Application",
+							"view": "Normal",
+							"font": {
+								"style": "Normal",
+								"weight": "Semibold"
+							},
+							"frame": {
+								"horizontal": null,
+								"vertical": null,
+								"radius": null
+							},
+							"size": "H1",
+							"textAlignment": "Center"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}, {
+				"cells": [{
+					"padding": [15, null, null, null],
+					"component": {
+						"type": "Wizard",
+						"model": {
+							"_internalName": "Wizard1",
+							"direction": "Right",
+							"step": {
+								"size": 20,
+								"color": null,
+								"shape": "Circle"
+							},
+							"nextText": "Next",
+							"backText": "Back",
+							"finishText": "Finish",
+							"savingText": "Submitting...",
+							"finish": "return fd.save();",
+							"steps": [{
+								"_internalName": "Step1",
+								"title": "Personal Details",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "DropDown",
+													"model": {
+														"_internalName": "Position",
+														"title": {
+															"text": "Application for a position of:",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"dataSource": "StaticList",
+														"selection": "Single",
+														"options": [{
+															"value": "Account Manager",
+															"backgroundColor": null,
+															"textColor": null
+														}, {
+															"value": "Customer Program Manager",
+															"backgroundColor": null,
+															"textColor": null
+														}, {
+															"value": "Software Engineer",
+															"backgroundColor": null,
+															"textColor": null
+														}],
+														"defaultValue": []
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "Name",
+														"title": {
+															"text": "Name",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "Anything"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "Date",
+													"model": {
+														"_internalName": "BirthDate",
+														"title": {
+															"text": "Birth Date",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														}
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "MultiLineText",
+													"model": {
+														"_internalName": "Address",
+														"title": {
+															"text": "Address",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mode": "Plain"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "SingleLineText",
+													"model": {
+														"_internalName": "Email",
+														"title": {
+															"text": "Email",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cHint": "username@domain.com",
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"type": "E-mail",
+														"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+														"error": "This field must contain a valid e-mail address."
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}, {
+												"component": {
+													"type": "MaskedInput",
+													"model": {
+														"_internalName": "Phone",
+														"title": {
+															"text": "Phone",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mask": "000-000-0000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 6
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step2",
+								"title": "Experience",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "DataTable",
+													"model": {
+														"_internalName": "Employment History",
+														"title": {
+															"text": "Please give details of relevant previous employment, starting with the most recent employment, working backwards.",
+															"visible": true
+														},
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"newLine": "Top",
+														"delete": "Last",
+														"columns": [{
+															"_internalName": "Position",
+															"title": "Position",
+															"required": false,
+															"type": "String"
+														}, {
+															"_internalName": "Company",
+															"title": "Company",
+															"required": false,
+															"type": "String"
+														}, {
+															"_internalName": "HireDate",
+															"title": "Hire Date",
+															"required": false,
+															"type": "Date"
+														}, {
+															"_internalName": "LeaveDate",
+															"title": "Leave Date",
+															"required": false,
+															"type": "Date"
+														}, {
+															"_internalName": "Phone",
+															"title": "Phone",
+															"required": false,
+															"type": "String"
+														}]
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Attachments",
+													"model": {
+														"_internalName": "Resume",
+														"title": {
+															"text": "Resume",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"maxSize": 10240
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step3",
+								"title": "Cover Letter",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "MultiLineText",
+													"model": {
+														"_internalName": "CoverLetter",
+														"title": {
+															"text": "A couple of words about yourself",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"mode": "Rich"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}, {
+								"_internalName": "Step5",
+								"title": "Consent",
+								"component": {
+									"type": "Grid",
+									"model": {
+										"stacked": "md",
+										"frame": {
+											"horizontal": null,
+											"vertical": null,
+											"radius": null
+										},
+										"border": {
+											"width": null,
+											"color": null
+										},
+										"rows": [{
+											"cells": [{
+												"component": {
+													"type": "Toggle",
+													"model": {
+														"_internalName": "Consent",
+														"title": {
+															"text": "I hereby consent to the collection, processing, and storage of my personal data as provided in this job application form.",
+															"visible": true
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cFont": {
+															"style": "Normal",
+															"weight": "Normal"
+														},
+														"mode": "Checkbox"
+													}
+												},
+												"alignment": {
+													"horizontal": "Justify",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}, {
+											"cells": [{
+												"component": {
+													"type": "Signature",
+													"model": {
+														"_internalName": "Signature",
+														"title": {
+															"text": "InkSketch1",
+															"visible": false
+														},
+														"orientation": "Vertical",
+														"required": false,
+														"font": {
+															"style": "Normal",
+															"weight": "Semibold"
+														},
+														"wrap": true,
+														"cWidth": 300,
+														"height": 150,
+														"inkColor": "#000000"
+													}
+												},
+												"alignment": {
+													"horizontal": "Left",
+													"vertical": "Top"
+												},
+												"columns": {
+													"width": 12
+												}
+											}]
+										}]
+									}
+								}
+							}],
+							"shape": "Circle"
+						}
+					},
+					"alignment": {
+						"horizontal": "Justify",
+						"vertical": "Top"
+					},
+					"columns": {
+						"width": 12
+					}
+				}]
+			}]
+		}
+	},
+	"tablet": null,
+	"phone": null,
+	"js": "fd.rendered(function(){\r\n    // require at least one record in the employment history\r\n    fd.control('History').addValidator({\r\n        error: 'Error message',\r\n        validate: function(value) {\r\n            if (value.length === 0) {\r\n                this.error = 'Add at least one record of the previous employment list';\r\n                return false;\r\n            }\r\n\r\n            return true;\r\n        }\r\n    });\r\n});",
+	"css": "",
+	"notifySubscribers": false,
+	"version": "1.0.2",
+	"theme": {
+		"primary": "#008EFF",
+		"bodyText": "#373A3C",
+		"bodyBackground": "#FFFFFF",
+		"fontFamily": null,
+		"fontType": 0,
+		"fontSize": 18,
+		"fontWeight": 400,
+		"borderThickness": 2,
+		"borderRadius": 3,
+		"shadow": true,
+		"themeId": "67eef1dde31c73360201dc602553540b",
+		"isDark": false
+	},
+	"timezone": "America/Los_Angeles",
+	"culture": "en",
+	"userLanguage": "",
+	"userCulture": "",
+	"thankYouMessage": null,
+	"redirectURL": null,
+	"hideAfterSubmission": true,
+	"submissionTimeout": "10",
+	"authentication": 0,
+	"singleSubmissionPerUser": false,
+	"allowEditingSubmission": false,
+	"restrictAccess": false,
+	"azureADTenant": null,
+	"azureADObjects": [],
+	"azureB2CProperties": null,
+	"connection": null
+}
