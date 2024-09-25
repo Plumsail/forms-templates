@@ -1,330 +1,307 @@
 {
-	"pc": {
-		"type": "Grid",
-		"model": {
-			"stacked": "md",
-			"frame": {
-				"horizontal": null,
-				"vertical": null,
-				"radius": null
-			},
-			"border": {
-				"width": null,
-				"color": null
-			},
-			"rows": [{
-				"cells": [{
-					"padding": [null, null, 15, null],
-					"component": {
-						"type": "Heading",
-						"model": {
-							"_internalName": "Heading1",
-							"heading": "Customer Feedback",
-							"view": "Normal",
-							"font": {
-								"style": "Normal",
-								"weight": "Semibold"
-							},
-							"frame": {
-								"horizontal": null,
-								"vertical": null,
-								"radius": null
-							},
-							"size": "H1",
-							"textAlignment": "Center"
-						}
-					},
-					"alignment": {
-						"horizontal": "Justify",
-						"vertical": "Top"
-					},
-					"columns": {
-						"width": 12
-					}
-				}]
-			}, {
-				"cells": [{
-					"component": {
-						"type": "Grid",
-						"model": {
-							"_internalName": "Grid1",
-							"stacked": "md",
-							"frame": {
-								"horizontal": null,
-								"vertical": null,
-								"radius": null
-							},
-							"border": {
-								"width": null,
-								"color": null
-							},
-							"rows": [{
-								"cells": [{
-									"component": {
-										"type": "SingleLineText",
-										"model": {
-											"_internalName": "FullName",
-											"title": {
-												"text": "Full Name",
-												"visible": true
-											},
-											"orientation": "Vertical",
-											"required": false,
-											"font": {
-												"style": "Normal",
-												"weight": "Semibold"
-											},
-											"wrap": true,
-											"cFont": {
-												"style": "Normal",
-												"weight": "Normal"
-											},
-											"type": "Anything"
-										}
-									},
-									"alignment": {
-										"horizontal": "Justify",
-										"vertical": "Top"
-									},
-									"columns": {
-										"width": 6
-									}
-								}, {
-									"component": {
-										"type": "SingleLineText",
-										"model": {
-											"_internalName": "Email",
-											"description": "Optional",
-											"title": {
-												"text": "Email",
-												"visible": true
-											},
-											"orientation": "Vertical",
-											"required": false,
-											"font": {
-												"style": "Normal",
-												"weight": "Semibold"
-											},
-											"wrap": true,
-											"cHint": "username@domain.com",
-											"cFont": {
-												"style": "Normal",
-												"weight": "Normal"
-											},
-											"type": "E-mail",
-											"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-											"error": "This field must contain a valid e-mail address."
-										}
-									},
-									"alignment": {
-										"horizontal": "Justify",
-										"vertical": "Top"
-									},
-									"columns": {
-										"width": 6
-									}
-								}]
-							}, {
-								"cells": [{
-									"component": {
-										"type": "SingleChoice",
-										"model": {
-											"_internalName": "HowWouldYouRateYourOverallExperience",
-											"title": {
-												"text": "How would you rate your overall experience?",
-												"visible": true
-											},
-											"orientation": "Vertical",
-											"required": false,
-											"font": {
-												"style": "Normal",
-												"weight": "Semibold"
-											},
-											"wrap": true,
-											"cFont": {
-												"style": "Normal",
-												"weight": "Normal"
-											},
-											"dataSource": "StaticList",
-											"cColumns": 1,
-											"options": [{
-												"value": "⭐⭐⭐⭐⭐",
-												"backgroundColor": null,
-												"textColor": null
-											}, {
-												"value": "⭐⭐⭐⭐",
-												"backgroundColor": null,
-												"textColor": null
-											}, {
-												"value": "⭐⭐⭐",
-												"backgroundColor": null,
-												"textColor": null
-											}, {
-												"value": "⭐⭐",
-												"backgroundColor": null,
-												"textColor": null
-											}, {
-												"value": "⭐",
-												"backgroundColor": null,
-												"textColor": null
-											}],
-											"allowUserValue": false,
-											"defaultValue": []
-										}
-									},
-									"alignment": {
-										"horizontal": "Justify",
-										"vertical": "Top"
-									},
-									"columns": {
-										"width": 12
-									}
-								}]
-							}, {
-								"cells": [{
-									"component": {
-										"type": "MultiLineText",
-										"model": {
-											"_internalName": "PleaseShareYourThoughtsAboutYourExperience",
-											"title": {
-												"text": "Please share your thoughts about your experience:",
-												"visible": true
-											},
-											"orientation": "Vertical",
-											"required": false,
-											"font": {
-												"style": "Normal",
-												"weight": "Semibold"
-											},
-											"wrap": true,
-											"cFont": {
-												"style": "Normal",
-												"weight": "Normal"
-											},
-											"mode": "Plain"
-										}
-									},
-									"alignment": {
-										"horizontal": "Justify",
-										"vertical": "Top"
-									},
-									"columns": {
-										"width": 12
-									}
-								}]
-							}, {
-								"cells": [{
-									"component": {
-										"type": "SingleChoice",
-										"model": {
-											"_internalName": "WouldYouRecommendUsToAFriend",
-											"title": {
-												"text": "Would you recommend us to a friend?",
-												"visible": true
-											},
-											"orientation": "Vertical",
-											"required": false,
-											"font": {
-												"style": "Normal",
-												"weight": "Semibold"
-											},
-											"wrap": true,
-											"cFont": {
-												"color": "",
-												"style": "Normal",
-												"weight": "Normal"
-											},
-											"dataSource": "StaticList",
-											"cColumns": 1,
-											"options": [{
-												"value": "Yes",
-												"backgroundColor": "#b3e5bb",
-												"textColor": "#287634"
-											}, {
-												"value": "No",
-												"backgroundColor": "#f9b09f",
-												"textColor": "#94230a"
-											}],
-											"allowUserValue": false,
-											"defaultValue": []
-										}
-									},
-									"alignment": {
-										"horizontal": "Justify",
-										"vertical": "Top"
-									},
-									"columns": {
-										"width": 12
-									}
-								}]
-							}]
-						}
-					},
-					"alignment": {
-						"horizontal": "Justify",
-						"vertical": "Top"
-					},
-					"columns": {
-						"width": 12
-					}
-				}]
-			}, {
-				"cells": [{
-					"component": {
-						"type": "Submit",
-						"model": {
-							"_internalName": "Submit1",
-							"text": "Submit",
-							"savingText": "Submitting...",
-							"type": "Primary",
-							"click": "return fd.save();"
-						}
-					},
-					"alignment": {
-						"horizontal": "Justify",
-						"vertical": "Top"
-					},
-					"columns": {
-						"width": 12
-					}
-				}]
-			}]
-		}
-	},
-	"tablet": null,
-	"phone": null,
-	"js": null,
-	"css": null,
-	"notifySubscribers": false,
-	"version": "1.0.2",
-	"theme": {
-		"primary": "#9fc6f9",
-		"bodyText": "#3f3f3f",
-		"bodyBackground": "#fcfcfc",
-		"fontFamily": "Oswald",
-		"fontType": 1,
-		"fontSize": 16,
-		"fontWeight": 300,
-		"borderThickness": 1,
-		"borderRadius": 1,
-		"shadow": true,
-		"themeId": null,
-		"isDark": false
-	},
-	"timezone": "America/Los_Angeles",
-	"culture": "en",
-	"userLanguage": "",
-	"userCulture": "",
-	"thankYouMessage": "Thank you for your feedback! ❤️",
-	"redirectURL": null,
-	"hideAfterSubmission": false,
-	"submissionTimeout": 0,
-	"authentication": 0,
-	"singleSubmissionPerUser": false,
-	"allowEditingSubmission": false,
-	"restrictAccess": false,
-	"azureADTenant": null,
-	"azureADObjects": [],
-	"azureB2CProperties": null,
-	"connection": null
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "padding": [null, null, 15, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Customer Feedback",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H1",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid1",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "FullName",
+                                            "title": {
+                                                "text": "Full Name",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Email",
+                                            "description": "Optional",
+                                            "title": {
+                                                "text": "Email",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cHint": "username@domain.com",
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "E-mail",
+                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                            "error": "This field must contain a valid e-mail address."
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "Rating",
+                                        "model": {
+                                            "_internalName": "HowWouldYouRateYourOverallExperience",
+                                            "symbol": {
+                                                "size": null,
+                                                "color": null,
+                                                "character": "★"
+                                            },
+                                            "range": 5,
+                                            "title": {
+                                                "text": "How would you rate your overall experience?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MultiLineText",
+                                        "model": {
+                                            "_internalName": "PleaseShareYourThoughtsAboutYourExperience",
+                                            "title": {
+                                                "text": "Please share your thoughts about your experience:",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mode": "Plain"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "WouldYouRecommendUsToAFriend",
+                                            "title": {
+                                                "text": "Would you recommend us to a friend?",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "color": "",
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "cColumns": 1,
+                                            "options": [{
+                                                "value": "Yes",
+                                                "backgroundColor": "#b3e5bb",
+                                                "textColor": "#287634"
+                                            }, {
+                                                "value": "No",
+                                                "backgroundColor": "#f9b09f",
+                                                "textColor": "#94230a"
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "Submit",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": null,
+    "css": null,
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#9fc6f9",
+        "bodyText": "#3f3f3f",
+        "bodyBackground": "#fcfcfc",
+        "fontFamily": "Oswald",
+        "fontType": 1,
+        "fontSize": 16,
+        "fontWeight": 300,
+        "borderThickness": 1,
+        "borderRadius": 1,
+        "shadow": true,
+        "themeId": "0e6516de1ec42deed9a646f78497ba95",
+        "isDark": false
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": "",
+    "userCulture": "",
+    "thankYouMessage": "Thank you for your feedback! ❤️",
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null,
+    "connection": null
 }

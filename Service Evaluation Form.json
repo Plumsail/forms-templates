@@ -1,438 +1,411 @@
 {
-  "pc": {
-    "type": "Grid",
-    "model": {
-      "stacked": "md",
-      "frame": { "horizontal": null, "vertical": null, "radius": null },
-      "border": { "width": null, "color": null },
-      "rows": [
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Heading",
-                "model": {
-                  "_internalName": "Heading1",
-                  "heading": "Service Evaluation",
-                  "view": "Normal",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "frame": {
-                    "horizontal": null,
-                    "vertical": null,
-                    "radius": null
-                  },
-                  "subheading": "Please help us to improve our serivce. Rate your satisfaction with each of the following statements. This takes less than five minutes.",
-                  "size": "H1",
-                  "textAlignment": "Center"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [10, null, null, null],
-              "component": {
-                "type": "Wizard",
-                "model": {
-                  "_internalName": "Wizard1",
-                  "direction": "Right",
-                  "step": { "shape": "Circle" },
-                  "nextText": "Next",
-                  "backText": "Back",
-                  "finishText": "Finish",
-                  "savingText": "Submitting...",
-                  "finish": "return fd.save();",
-                  "steps": [
-                    {
-                      "_internalName": "Step1",
-                      "title": "Step 1",
-                      "component": {
-                        "type": "Grid",
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Heading",
                         "model": {
-                          "stacked": "md",
-                          "frame": {
-                            "horizontal": null,
-                            "vertical": null,
-                            "radius": null
-                          },
-                          "border": { "width": null, "color": null },
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "SingleChoice",
-                                    "model": {
-                                      "_internalName": "HowWouldYouRateYourOverallExperience",
-                                      "title": {
-                                        "text": "How would you rate your overall experience? ",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "wrap": true,
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "dataSource": "StaticList",
-                                      "cColumns": 1,
-                                      "options": [
-                                        {
-                                          "value": "⭐⭐⭐⭐⭐",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "⭐⭐⭐⭐",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "⭐⭐⭐",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "⭐⭐",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "⭐",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        }
-                                      ],
-                                      "allowUserValue": false,
-                                      "defaultValue": []
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
+                            "_internalName": "Heading1",
+                            "heading": "Service Evaluation",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
                             },
-                            {
-                              "cells": [
-                                {
-                                  "padding": [20, null, null, null],
-                                  "component": {
-                                    "type": "MultiLineText",
-                                    "model": {
-                                      "_internalName": "Comments",
-                                      "title": {
-                                        "text": "Comments",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "wrap": true,
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "mode": "Plain"
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      }
-                    },
-                    {
-                      "_internalName": "Step2",
-                      "title": "Step 2",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "stacked": "md",
-                          "frame": {
-                            "horizontal": null,
-                            "vertical": null,
-                            "radius": null
-                          },
-                          "border": { "width": null, "color": null },
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "MultipleChoice",
-                                    "model": {
-                                      "_internalName": "Like",
-                                      "title": {
-                                        "text": "What do you like most about the service? (You can select several options)",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "wrap": true,
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "dataSource": "StaticList",
-                                      "cColumns": 1,
-                                      "options": [
-                                        {
-                                          "value": "Service quality",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "Ease of use",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "Price",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "Speed of service",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        }
-                                      ],
-                                      "allowUserValue": true,
-                                      "defaultValue": []
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
                             },
-                            {
-                              "cells": [
-                                {
-                                  "padding": [20, null, null, null],
-                                  "component": {
-                                    "type": "MultipleChoice",
-                                    "model": {
-                                      "_internalName": "Dislike",
-                                      "title": {
-                                        "text": "What do you dislike most about the product? (You can select several options)",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "wrap": true,
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "dataSource": "StaticList",
-                                      "cColumns": 1,
-                                      "options": [
-                                        {
-                                          "value": "Service quality",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "Ease of use",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "Price",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        },
-                                        {
-                                          "value": "Speed of service",
-                                          "backgroundColor": null,
-                                          "textColor": null
-                                        }
-                                      ],
-                                      "allowUserValue": true,
-                                      "defaultValue": []
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ]
+                            "subheading": "Please help us to improve our serivce. Rate your satisfaction with each of the following statements. This takes less than five minutes.",
+                            "size": "H1",
+                            "textAlignment": "Center"
                         }
-                      }
                     },
-                    {
-                      "_internalName": "Step3",
-                      "title": "Step 3",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "stacked": "md",
-                          "frame": {
-                            "horizontal": null,
-                            "vertical": null,
-                            "radius": null
-                          },
-                          "border": { "width": null, "color": null },
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "LikertScale",
-                                    "model": {
-                                      "_internalName": "LikertScale1",
-                                      "type": "Radio",
-                                      "required": false,
-                                      "questions": "Would you recommend our service to your friends?\nWill you use our service again?",
-                                      "answers": "Not at all likely\r\nNot very likely\r\nSomewhat likely\r\nLikely\r\nHighly likely"
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      }
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
                     },
-                    {
-                      "_internalName": "Step4",
-                      "title": "Step 4",
-                      "component": {
-                        "type": "Grid",
-                        "model": {
-                          "stacked": "md",
-                          "frame": {
-                            "horizontal": null,
-                            "vertical": null,
-                            "radius": null
-                          },
-                          "border": { "width": null, "color": null },
-                          "rows": [
-                            {
-                              "cells": [
-                                {
-                                  "component": {
-                                    "type": "MultiLineText",
-                                    "model": {
-                                      "_internalName": "WhatImprovementsCouldWeMakeToOurServiceToBetterMeetYourNeeds",
-                                      "title": {
-                                        "text": "What improvements could we make to our service to better meet your needs?",
-                                        "visible": true
-                                      },
-                                      "orientation": "Vertical",
-                                      "required": false,
-                                      "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                      },
-                                      "wrap": true,
-                                      "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                      },
-                                      "mode": "Plain"
-                                    }
-                                  },
-                                  "alignment": {
-                                    "horizontal": "Justify",
-                                    "vertical": "Top"
-                                  },
-                                  "columns": { "width": 12 }
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      }
+                    "columns": {
+                        "width": 12
                     }
-                  ],
-                  "shape": "Circle"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "Wizard",
+                        "model": {
+                            "_internalName": "Wizard1",
+                            "direction": "Right",
+                            "step": {
+                                "shape": "Circle"
+                            },
+                            "nextText": "Next",
+                            "backText": "Back",
+                            "finishText": "Finish",
+                            "savingText": "Submitting...",
+                            "finish": "return fd.save();",
+                            "steps": [{
+                                "_internalName": "Step1",
+                                "title": "Step 1",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "Rating",
+                                                    "model": {
+                                                        "_internalName": "HowWouldYouRateYourOverallExperience",
+                                                        "symbol": {
+                                                            "size": null,
+                                                            "color": null,
+                                                            "character": "★"
+                                                        },
+                                                        "range": 5,
+                                                        "title": {
+                                                            "text": "How would you rate your overall experience? ",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "padding": [20, null, null, null],
+                                                "component": {
+                                                    "type": "MultiLineText",
+                                                    "model": {
+                                                        "_internalName": "Comments",
+                                                        "title": {
+                                                            "text": "Comments",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "mode": "Plain"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }, {
+                                "_internalName": "Step2",
+                                "title": "Step 2",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "MultipleChoice",
+                                                    "model": {
+                                                        "_internalName": "Like",
+                                                        "title": {
+                                                            "text": "What do you like most about the service? (You can select several options)",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "dataSource": "StaticList",
+                                                        "cColumns": 1,
+                                                        "options": [{
+                                                            "value": "Service quality",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Ease of use",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Price",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Speed of service",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": true,
+                                                        "defaultValue": []
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "padding": [20, null, null, null],
+                                                "component": {
+                                                    "type": "MultipleChoice",
+                                                    "model": {
+                                                        "_internalName": "Dislike",
+                                                        "title": {
+                                                            "text": "What do you dislike most about the product? (You can select several options)",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "dataSource": "StaticList",
+                                                        "cColumns": 1,
+                                                        "options": [{
+                                                            "value": "Service quality",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Ease of use",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Price",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Speed of service",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": true,
+                                                        "defaultValue": []
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }, {
+                                "_internalName": "Step3",
+                                "title": "Step 3",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "LikertScale",
+                                                    "model": {
+                                                        "_internalName": "LikertScale1",
+                                                        "type": "Radio",
+                                                        "required": false,
+                                                        "questions": "Would you recommend our service to your friends?\nWill you use our service again?",
+                                                        "answers": "Not at all likely\r\nNot very likely\r\nSomewhat likely\r\nLikely\r\nHighly likely"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }, {
+                                "_internalName": "Step4",
+                                "title": "Step 4",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "MultiLineText",
+                                                    "model": {
+                                                        "_internalName": "WhatImprovementsCouldWeMakeToOurServiceToBetterMeetYourNeeds",
+                                                        "title": {
+                                                            "text": "What improvements could we make to our service to better meet your needs?",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "mode": "Plain"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }],
+                            "shape": "Circle"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
         }
-      ]
-    }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "",
-  "css": "",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-    "primary": "#EE9322",
-    "bodyText": "#0c0c0c",
-    "bodyBackground": "#fffbf8",
-    "fontFamily": "Montserrat",
-    "fontType": 1,
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 15,
-    "shadow": true,
-    "themeId": "0736c348826d2f27213ec46849601dfc",
-    "isDark": false
-  },
-  "timezone": "America/Los_Angeles",
-  "culture": "en-US",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": "Thank you for completing our satisfaction survey!\nYour feedback is appreciated and will help us improve our product.",
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "azureB2CProperties": null,
-  "connection": null
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#EE9322",
+        "bodyText": "#0c0c0c",
+        "bodyBackground": "#fffbf8",
+        "fontFamily": "Montserrat",
+        "fontType": 1,
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 15,
+        "shadow": true,
+        "themeId": "0736c348826d2f27213ec46849601dfc",
+        "isDark": false
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": "",
+    "userCulture": "",
+    "thankYouMessage": "Thank you for completing our satisfaction survey!\nYour feedback is appreciated and will help us improve our product.",
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null,
+    "connection": null
 }
