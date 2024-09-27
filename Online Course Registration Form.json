@@ -1,0 +1,580 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "padding": [null, null, 15, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Online Course Registration Form",
+                            "view": "Underline1",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H1",
+                            "textAlignment": "Left"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Wizard",
+                        "model": {
+                            "_internalName": "Wizard1",
+                            "direction": "Down",
+                            "step": {
+                                "size": null,
+                                "color": null,
+                                "shape": "Tab"
+                            },
+                            "nextText": "Next",
+                            "backText": "Back",
+                            "finishText": "Finish",
+                            "savingText": "Submitting...",
+                            "finish": "return fd.save();",
+                            "steps": [{
+                                "_internalName": "Step3",
+                                "title": "Student",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "First Name",
+                                                        "description": "First Name",
+                                                        "title": {
+                                                            "text": "Student Name",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Anything"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }, {
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "Last Name",
+                                                        "description": "Last Name",
+                                                        "title": {
+                                                            "text": " ",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "Anything"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "Date",
+                                                    "model": {
+                                                        "_internalName": "DateOfBirth",
+                                                        "title": {
+                                                            "text": "Date of Birth",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        }
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }, {
+                                                "component": {
+                                                    "type": "MaskedInput",
+                                                    "model": {
+                                                        "_internalName": "StudentID",
+                                                        "description": "if you have previously attended any courses",
+                                                        "title": {
+                                                            "text": "Student ID",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "mask": "0000-0000"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleLineText",
+                                                    "model": {
+                                                        "_internalName": "Email",
+                                                        "title": {
+                                                            "text": "Email",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cHint": "username@domain.com",
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "type": "E-mail",
+                                                        "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                        "error": "This field must contain a valid e-mail address."
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }, {
+                                                "component": {
+                                                    "type": "MaskedInput",
+                                                    "model": {
+                                                        "_internalName": "Phone",
+                                                        "title": {
+                                                            "text": "Phone",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "mask": "000-000-0000"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }, {
+                                "_internalName": "Step2",
+                                "title": "Course",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "DropDown",
+                                                    "model": {
+                                                        "_internalName": "Course",
+                                                        "title": {
+                                                            "text": "Course",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "dataSource": "StaticList",
+                                                        "selection": "Single",
+                                                        "options": [{
+                                                            "value": "Introduction to Computer Science",
+                                                            "backgroundColor": "#c4ccd4",
+                                                            "textColor": "#434f5c"
+                                                        }, {
+                                                            "value": "Principles of Microeconomics",
+                                                            "backgroundColor": "#b3e5bb",
+                                                            "textColor": "#287634"
+                                                        }, {
+                                                            "value": "Calculus I",
+                                                            "backgroundColor": "#f9b09f",
+                                                            "textColor": "#94230a"
+                                                        }, {
+                                                            "value": "Calculus II",
+                                                            "backgroundColor": "#f9c59f",
+                                                            "textColor": "#94440a"
+                                                        }, {
+                                                            "value": "General Chemistry I",
+                                                            "backgroundColor": "#f99fc9",
+                                                            "textColor": "#940a4a"
+                                                        }, {
+                                                            "value": "General Chemistry II",
+                                                            "backgroundColor": "#d29ff9",
+                                                            "textColor": "#580a94"
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }, {
+                                                "component": {
+                                                    "type": "DropDown",
+                                                    "model": {
+                                                        "_internalName": "StartDate",
+                                                        "title": {
+                                                            "text": "Start Date",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "dataSource": "StaticList",
+                                                        "selection": "Single",
+                                                        "options": [{
+                                                            "value": "September",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "November",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "February",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "March",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 6
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "SingleChoice",
+                                                    "model": {
+                                                        "_internalName": "PaymentMethods",
+                                                        "title": {
+                                                            "text": "Payment Methods",
+                                                            "visible": true
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": false,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "dataSource": "StaticList",
+                                                        "cColumns": 1,
+                                                        "options": [{
+                                                            "value": "Card",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "PayPal",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Bank Transfer",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Cash",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }, {
+                                "_internalName": "Step4",
+                                "title": "Terms",
+                                "component": {
+                                    "type": "Grid",
+                                    "model": {
+                                        "stacked": "md",
+                                        "frame": {
+                                            "horizontal": null,
+                                            "vertical": null,
+                                            "radius": null
+                                        },
+                                        "border": {
+                                            "width": null,
+                                            "color": null
+                                        },
+                                        "rows": [{
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "Text",
+                                                    "model": {
+                                                        "_internalName": "Text1",
+                                                        "text": "<p><strong>By submitting this registration form, you agree to the following terms and conditions:</strong></p><ol><li><strong>Registration Fee:</strong> You acknowledge that a registration fee may be applicable and agree to pay it according to the specified payment terms.</li><li><strong>Course Availability:</strong> Course availability is subject to change and may be canceled if minimum enrollment requirements are not met.</li><li><strong>Cancellation Policy:</strong> Please refer to our cancellation policy for information on refund eligibility and procedures.</li><li><strong>Privacy Policy:</strong> Your personal information will be handled in accordance with our privacy policy.<strong></strong></li></ol><p><strong>Please review these terms and conditions carefully before submitting your registration.</strong></p>"
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }, {
+                                            "cells": [{
+                                                "component": {
+                                                    "type": "MultipleChoice",
+                                                    "model": {
+                                                        "_internalName": "Terms",
+                                                        "title": {
+                                                            "text": "Terms",
+                                                            "visible": false
+                                                        },
+                                                        "orientation": "Vertical",
+                                                        "required": true,
+                                                        "font": {
+                                                            "style": "Normal",
+                                                            "weight": "Semibold"
+                                                        },
+                                                        "wrap": true,
+                                                        "cFont": {
+                                                            "style": "Normal",
+                                                            "weight": "Normal"
+                                                        },
+                                                        "dataSource": "StaticList",
+                                                        "cColumns": 1,
+                                                        "options": [{
+                                                            "value": "I agree to terms & conditions",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
+                                                    }
+                                                },
+                                                "alignment": {
+                                                    "horizontal": "Justify",
+                                                    "vertical": "Top"
+                                                },
+                                                "columns": {
+                                                    "width": 12
+                                                }
+                                            }]
+                                        }]
+                                    }
+                                }
+                            }],
+                            "shape": "Tab"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#5c6595",
+        "bodyText": "#3f3f3f",
+        "bodyBackground": "#ffffff",
+        "fontFamily": "Georgia, serif",
+        "fontType": 0,
+        "fontSize": 16,
+        "fontWeight": 400,
+        "borderThickness": 2,
+        "borderRadius": 1,
+        "shadow": true,
+        "themeId": null,
+        "isDark": false
+    },
+    "timezone": "America/Glace_Bay",
+    "culture": "en",
+    "userLanguage": "",
+    "userCulture": "",
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null,
+    "connection": null
+}
