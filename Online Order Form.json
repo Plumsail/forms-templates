@@ -528,7 +528,22 @@
                                                 "required": true,
                                                 "type": "Dropdown",
                                                 "selection": "Single",
-                                                "options": "Pen Holder\nAlarm Clock\nIce Tray"
+                                                "dataSource": "StaticList",
+                                                "allowUserValue": false,
+                                                "options": [{
+                                                    "value": "Pen Holder",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Alarm Clock",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Ice Tray",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }],
+                                                "defaultValue": null
                                             }, {
                                                 "_internalName": "Quantity",
                                                 "title": "Quantity",
@@ -536,30 +551,31 @@
                                                 "type": "Number",
                                                 "min": 1,
                                                 "max": 10,
-                                                "step": 1,
-                                                "spinButtons": true,
+                                                "precision": 0,
                                                 "percents": false,
-                                                "precision": 0
+                                                "spinButtons": true,
+                                                "step": 1
                                             }, {
                                                 "_internalName": "Price",
-                                                "title": "Price ($)",
+                                                "title": "Price",
                                                 "required": false,
                                                 "type": "Currency",
-                                                "step": 1,
-                                                "symbol": null,
-                                                "spinButtons": true,
+                                                "min": 0,
                                                 "precision": 2,
-                                                "min": 0
+                                                "symbol": "$",
+                                                "spinButtons": true,
+                                                "step": 1
                                             }, {
                                                 "_internalName": "Total",
                                                 "title": "Total",
-                                                "required": false,
-                                                "type": "Currency",
-                                                "step": 1,
-                                                "symbol": null,
-                                                "spinButtons": true,
+                                                "type": "Calculated",
+                                                "formula": {
+                                                    "mode": "formula",
+                                                    "formula": "Price * Quantity"
+                                                },
+                                                "resultType": "Currency",
                                                 "precision": 2,
-                                                "min": 0
+                                                "symbol": "$"
                                             }]
                                         }
                                     },
@@ -718,7 +734,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "// prices\r\nvar products = {};\r\nproducts['Pen Holder'] = 9.99;\r\nproducts['Ice Tray'] = 19.99;\r\nproducts['Alarm Clock'] = 4.99;\r\n\r\n// total to be paid\r\nvar total = 0.0;\r\n\r\nfd.rendered(function() {\r\n    //hide payment button  when the form is rendered\r\n    $('.fd-payment-form').hide();\r\n    \r\n    var itemsList = fd.control('ItemsList')\r\n    var totalField = fd.field('Total1');\r\n    totalField.disabled = true;\r\n\r\n\r\n    // make Price column read-only\r\n    const unitPriceColumn = itemsList.columns.find(c => c.field === 'Price');\r\n    unitPriceColumn.editable = () => false;\r\n\r\n    // make Total column read-only\r\n    const lineTotalColumn = itemsList.columns.find(c => c.field === 'Total');\r\n    lineTotalColumn.editable = () => false;\r\n    \r\n    //add validation to ItemsList\r\n    itemsList.addValidator({\r\n        name: 'ItemsList validator',\r\n        error: 'Enter at least one record into the table',\r\n        validate: function(value) {\r\n            //change this number to make more records required\r\n            if (value.length < 1) {\r\n                return false;\r\n            }\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    itemsList.$on('change', function(value) {\r\n        var total = 0.0;\r\n\r\n        if (value) {\r\n            for (var i = 0; i < value.length; i++) {\r\n                if (!value[i].Item) {\r\n                    value[i].set('Item', 'Pen Holder');\r\n                }\r\n\r\n                if (!value[i].Quantity) {\r\n                    value[i].set('Quantity', 1);\r\n                }\r\n                // populate Price column\r\n                value[i].set('Price', products[value[i].Item] || 0);\r\n\r\n                // calculate total for the row\r\n                value[i].set('Total', value[i].Quantity * value[i].Price || 0);\r\n\r\n                total += parseFloat(value[i].Total);\r\n            }\r\n        }\r\n\r\n        totalField.value = total;\r\n    });\r\n});\r\n\r\nfd.beforeSave(function(data) {\r\n    total = data.Total1;\r\n});\r\n\r\nfd.saved(function() {\r\n    $('.fd-order-form').hide();\r\n    $('.fd-payment-form').show();\r\n\r\n    if (typeof paypal !== 'undefined') return;\r\n\r\n    function initPayPalButtons() {\r\n        paypal\r\n            .Buttons({\r\n                style: {\r\n                    shape: 'rect',\r\n                    color: 'gold',\r\n                    layout: 'vertical',\r\n                    label: 'paypal',\r\n                },\r\n\r\n                createOrder: function(data, actions) {\r\n                    return actions.order.create({\r\n                        purchase_units: [{\r\n                            description: 'New order',\r\n                            amount: {\r\n                                currency_code: 'USD',\r\n                                value: parseFloat(total).toFixed(2),\r\n                            },\r\n                        }, ],\r\n                    });\r\n                },\r\n\r\n                onApprove: function(data, actions) {\r\n                    return actions.order.capture().then(function(orderData) {\r\n                        // Full available details\r\n                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));\r\n\r\n                        // Show a success message within this page, e.g.\r\n                        const element = document.getElementById('paypal-button-container');\r\n                        element.innerHTML = '';\r\n                        element.innerHTML = '<h3>Thank you for your payment!</h3>';\r\n\r\n                        // Or go to another URL:  actions.redirect('thank_you.html');\r\n                    });\r\n                },\r\n\r\n                onError: function(err) {\r\n                    console.log(err);\r\n                },\r\n            })\r\n            .render('#paypal-button-container');\r\n    }\r\n\r\n    var script = document.createElement('script');\r\n    script.type = 'text/javascript';\r\n    script.src = 'https://www.paypal.com/sdk/js?client-id=AQ7P3z6oe-fhuUWaRXJnAKAA9x3KJRIY1tNRRooLpBcHK0cj1jJ3N32mse4fLzdKNOrI-cqW0iidCFzo';\r\n    script.setAttribute('data-sdk-integration-source', 'button-factory');\r\n    script.onload = initPayPalButtons;\r\n\r\n    const head = document.getElementsByTagName('head')[0];\r\n    head.appendChild(script);\r\n});",
+    "js": "// prices\r\nvar products = {};\r\nproducts['Pen Holder'] = 9.99;\r\nproducts['Ice Tray'] = 19.99;\r\nproducts['Alarm Clock'] = 4.99;\r\n\r\n// total to be paid\r\nvar total = 0.0;\r\n\r\nfd.rendered(function() {\r\n    //hide payment button  when the form is rendered\r\n    $('.fd-payment-form').hide();\r\n    \r\n    var itemsList = fd.control('ItemsList')\r\n    var totalField = fd.field('Total1');\r\n    totalField.disabled = true;\r\n\r\n\r\n    // make Price column read-only\r\n    const unitPriceColumn = itemsList.columns.find(c => c.field === 'Price');\r\n    unitPriceColumn.editable = () => false;\r\n    \r\n    //add validation to ItemsList\r\n    itemsList.addValidator({\r\n        name: 'ItemsList validator',\r\n        error: 'Enter at least one record into the table',\r\n        validate: function(value) {\r\n            //change this number to make more records required\r\n            if (value.length < 1) {\r\n                return false;\r\n            }\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    itemsList.$on('change', function(value) {\r\n        var total = 0.0;\r\n\r\n        if (value) {\r\n            for (var i = 0; i < value.length; i++) {\r\n                if (value[i].Item) {\r\n                    value[i].set('Price', products[value[i].Item] || 0)\r\n                }\r\n\r\n                total += parseFloat(value[i].Total);\r\n            }\r\n        }\r\n\r\n        totalField.value = total;\r\n    });\r\n});\r\n\r\nfd.beforeSave(function(data) {\r\n    total = data.Total1;\r\n});\r\n\r\nfd.saved(function() {\r\n    $('.fd-order-form').hide();\r\n    $('.fd-payment-form').show();\r\n\r\n    if (typeof paypal !== 'undefined') return;\r\n\r\n    function initPayPalButtons() {\r\n        paypal\r\n            .Buttons({\r\n                style: {\r\n                    shape: 'rect',\r\n                    color: 'gold',\r\n                    layout: 'vertical',\r\n                    label: 'paypal',\r\n                },\r\n\r\n                createOrder: function(data, actions) {\r\n                    return actions.order.create({\r\n                        purchase_units: [{\r\n                            description: 'New order',\r\n                            amount: {\r\n                                currency_code: 'USD',\r\n                                value: parseFloat(total).toFixed(2),\r\n                            },\r\n                        }, ],\r\n                    });\r\n                },\r\n\r\n                onApprove: function(data, actions) {\r\n                    return actions.order.capture().then(function(orderData) {\r\n                        // Full available details\r\n                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));\r\n\r\n                        // Show a success message within this page, e.g.\r\n                        const element = document.getElementById('paypal-button-container');\r\n                        element.innerHTML = '';\r\n                        element.innerHTML = '<h3>Thank you for your payment!</h3>';\r\n\r\n                        // Or go to another URL:  actions.redirect('thank_you.html');\r\n                    });\r\n                },\r\n\r\n                onError: function(err) {\r\n                    console.log(err);\r\n                },\r\n            })\r\n            .render('#paypal-button-container');\r\n    }\r\n\r\n    var script = document.createElement('script');\r\n    script.type = 'text/javascript';\r\n    script.src = 'https://www.paypal.com/sdk/js?client-id=AQ7P3z6oe-fhuUWaRXJnAKAA9x3KJRIY1tNRRooLpBcHK0cj1jJ3N32mse4fLzdKNOrI-cqW0iidCFzo';\r\n    script.setAttribute('data-sdk-integration-source', 'button-factory');\r\n    script.onload = initPayPalButtons;\r\n\r\n    const head = document.getElementsByTagName('head')[0];\r\n    head.appendChild(script);\r\n});",
     "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n\n/* styling for the primary button */\n.fd-form .btn-primary {\n    font-weight: 500 !important;\n    color: white !important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
@@ -738,8 +754,8 @@
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
-    "userLanguage": null,
-    "userCulture": null,
+    "userLanguage": "",
+    "userCulture": "",
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,
@@ -750,5 +766,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }
