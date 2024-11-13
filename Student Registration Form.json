@@ -578,7 +578,7 @@
                                 "text": "Courses",
                                 "visible": false
                             },
-                            "required": false,
+                            "required": true,
                             "font": {
                                 "style": "Normal",
                                 "weight": "Semibold"
@@ -590,27 +590,88 @@
                                 "title": "Course",
                                 "required": true,
                                 "type": "Dropdown",
+                                "aggregates": [],
                                 "selection": "Single",
-                                "options": "Project Management\nData Analytics\nIBM Data Science\nBusiness Administration\nAccounting"
+                                "dataSource": "StaticList",
+                                "allowUserValue": false,
+                                "options": [{
+                                    "value": "Project Management",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Data Analytics",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "IBM Data Science",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Business Administration",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Accounting",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }],
+                                "defaultValue": null
                             }, {
                                 "_internalName": "Level",
                                 "title": "Level",
                                 "required": false,
                                 "type": "Dropdown",
+                                "aggregates": [],
                                 "selection": "Single",
-                                "options": "Level 1\nLevel 2\nLevel 3"
+                                "dataSource": "StaticList",
+                                "allowUserValue": false,
+                                "options": [{
+                                    "value": "Level 1",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Level 2",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Level 3",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }],
+                                "defaultValue": null
                             }, {
                                 "_internalName": "Language",
                                 "title": "Language",
                                 "required": false,
                                 "type": "Dropdown",
+                                "aggregates": [],
                                 "selection": "Single",
-                                "options": "English\nSpanish\nFrench\nGerman"
+                                "dataSource": "StaticList",
+                                "allowUserValue": false,
+                                "options": [{
+                                    "value": "English",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Spanish",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "French",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "German",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }],
+                                "defaultValue": null
                             }, {
                                 "_internalName": "StartDate",
                                 "title": "Start Date",
                                 "required": false,
-                                "type": "Date"
+                                "type": "Date",
+                                "aggregates": []
                             }]
                         }
                     },
@@ -682,7 +743,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "\r\nfd.rendered(function () {\r\n    \r\n    //require a user to add at least one record to the data table\r\n    fd.control('Courses').addValidator({\r\n        name: 'CoursesValidation',\r\n        error: 'Add at least one course',\r\n        validate: function(value) {\r\n            //change this number to make more records required\r\n            if (value.length < 1) {\r\n                return false;\r\n            }\r\n    \r\n            return true;\r\n        }\r\n    });\r\n\r\n});\r\n\r\n/*****************************************************************************\r\nThe JavaScript code from this section will be executed while loading\r\nthe current form.\r\n\r\nThe following predefined variables can be utilized in the code:\r\n\r\nfd  - instance of the current form\r\n$   - jQuery object\r\n\r\n==============================================================================\r\n\r\nfd.rendered(function () {\r\n    // This code is executed once the form is rendered\r\n\r\n    // Hide State field for all values of Country field except 'USA'\r\n    function updateStateVisibility() {\r\n        var stateContainer = $(fd.field('State').$el).closest('.form-group');\r\n        if (fd.field('Country').value === 'USA') {\r\n            stateContainer.show();\r\n        } else {\r\n            stateContainer.hide();\r\n        }\r\n    }\r\n\r\n    // Set initial State visibility\r\n    updateStateVisibility();\r\n\r\n    // Update State visibility after changing Country\r\n    fd.field('Country').$on('change', updateStateVisibility)\r\n});\r\n\r\nfd.beforeSave(function () {\r\n    // This code is exeuted before saving the form and\r\n    // may return Promise. The saving does not proceed until\r\n    // the Promise is resolved. If the Promise is rejected,\r\n    // the saving interrupts. This is the appropriate place\r\n    // for adding custom validation.\r\n\r\n    // Prevent saving if Start Date is greater than End Date\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\nfd.saved(function (result) {\r\n    // This code is executed after saving the form\r\n\r\n    // Forwarding users to specific URL\r\n    window.location = '--- Some URL ---';\r\n});\r\n\r\n*****************************************************************************/\r\n\r\n",
+    "js": "/*****************************************************************************\r\nThe JavaScript code from this section will be executed while loading\r\nthe current form.\r\n\r\nThe following predefined variables can be utilized in the code:\r\n\r\nfd  - instance of the current form\r\n$   - jQuery object\r\n\r\n==============================================================================\r\n\r\nfd.rendered(function () {\r\n    // This code is executed once the form is rendered\r\n\r\n    // Hide State field for all values of Country field except 'USA'\r\n    function updateStateVisibility() {\r\n        var stateContainer = $(fd.field('State').$el).closest('.form-group');\r\n        if (fd.field('Country').value === 'USA') {\r\n            stateContainer.show();\r\n        } else {\r\n            stateContainer.hide();\r\n        }\r\n    }\r\n\r\n    // Set initial State visibility\r\n    updateStateVisibility();\r\n\r\n    // Update State visibility after changing Country\r\n    fd.field('Country').$on('change', updateStateVisibility)\r\n});\r\n\r\nfd.beforeSave(function () {\r\n    // This code is exeuted before saving the form and\r\n    // may return Promise. The saving does not proceed until\r\n    // the Promise is resolved. If the Promise is rejected,\r\n    // the saving interrupts. This is the appropriate place\r\n    // for adding custom validation.\r\n\r\n    // Prevent saving if Start Date is greater than End Date\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\nfd.saved(function (result) {\r\n    // This code is executed after saving the form\r\n\r\n    // Forwarding users to specific URL\r\n    window.location = '--- Some URL ---';\r\n});\r\n\r\n*****************************************************************************/\r\n\r\n",
     "css": "/* add asterix to the Course header */\n.fd-form .heading-required h4:after{\n    content: '*';\n    color: red;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
@@ -701,8 +762,8 @@
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
-    "userLanguage": null,
-    "userCulture": null,
+    "userLanguage": "",
+    "userCulture": "",
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,
@@ -713,5 +774,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }

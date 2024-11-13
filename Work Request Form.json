@@ -51,6 +51,7 @@
                         "type": "SingleLineText",
                         "model": {
                             "_internalName": "FullName",
+                            "description": "Full Name",
                             "title": {
                                 "text": "Full Name",
                                 "visible": false
@@ -62,7 +63,6 @@
                                 "weight": "Semibold"
                             },
                             "wrap": true,
-                            "description": "Full Name",
                             "cFont": {
                                 "style": "Normal",
                                 "weight": "Normal"
@@ -84,6 +84,7 @@
                         "type": "MaskedInput",
                         "model": {
                             "_internalName": "PhoneNumber",
+                            "description": "Phone Number",
                             "title": {
                                 "text": ":",
                                 "visible": false
@@ -95,7 +96,6 @@
                                 "weight": "Semibold"
                             },
                             "wrap": true,
-                            "description": "Phone Number",
                             "cFont": {
                                 "style": "Normal",
                                 "weight": "Normal"
@@ -117,6 +117,7 @@
                         "type": "SingleLineText",
                         "model": {
                             "_internalName": "Email",
+                            "description": "Email",
                             "title": {
                                 "text": "Email:",
                                 "visible": false
@@ -128,7 +129,7 @@
                                 "weight": "Semibold"
                             },
                             "wrap": true,
-                            "description": "Email",
+                            "cHint": "username@domain.com",
                             "cFont": {
                                 "style": "Normal",
                                 "weight": "Normal"
@@ -152,6 +153,7 @@
                         "type": "SingleLineText",
                         "model": {
                             "_internalName": "Location",
+                            "description": "Location",
                             "title": {
                                 "text": "Location",
                                 "visible": false
@@ -163,7 +165,6 @@
                                 "weight": "Semibold"
                             },
                             "wrap": true,
-                            "description": "Location",
                             "cFont": {
                                 "style": "Normal",
                                 "weight": "Normal"
@@ -185,6 +186,7 @@
                         "type": "DropDown",
                         "model": {
                             "_internalName": "WorkType",
+                            "description": "Work Type",
                             "title": {
                                 "text": "Work Type",
                                 "visible": false
@@ -196,17 +198,30 @@
                                 "weight": "Semibold"
                             },
                             "wrap": true,
-                            "description": "Work Type",
                             "cFont": {
                                 "style": "Normal",
                                 "weight": "Normal"
                             },
                             "dataSource": "StaticList",
-                            "StaticList": {
-                                "options": "Repair\nMaintenance\nCleaning\nOther"
-                            },
                             "selection": "Single",
-                            "options": "Repair\nMaintenance\nCleaning\nOther"
+                            "options": [{
+                                "value": "Repair",
+                                "backgroundColor": "#f99fc9",
+                                "textColor": "#940a4a"
+                            }, {
+                                "value": "Maintenance",
+                                "backgroundColor": "#f9b09f",
+                                "textColor": "#94230a"
+                            }, {
+                                "value": "Cleaning",
+                                "backgroundColor": "#b3e5bb",
+                                "textColor": "#287634"
+                            }, {
+                                "value": "Other",
+                                "backgroundColor": "#9feaf9",
+                                "textColor": "#0a7d94"
+                            }],
+                            "defaultValue": []
                         }
                     },
                     "alignment": {
@@ -223,6 +238,7 @@
                         "type": "SingleLineText",
                         "model": {
                             "_internalName": "Other",
+                            "description": "Please specify the work type",
                             "title": {
                                 "text": "Other",
                                 "visible": false
@@ -234,7 +250,6 @@
                                 "weight": "Semibold"
                             },
                             "wrap": true,
-                            "description": "Please specify the work type",
                             "cFont": {
                                 "style": "Normal",
                                 "weight": "Normal"
@@ -256,6 +271,7 @@
                         "type": "MultiLineText",
                         "model": {
                             "_internalName": "Comment",
+                            "description": "Comments",
                             "title": {
                                 "text": "Comment:",
                                 "visible": false
@@ -267,7 +283,6 @@
                                 "weight": "Semibold"
                             },
                             "wrap": true,
-                            "description": "Comments",
                             "cFont": {
                                 "style": "Normal",
                                 "weight": "Normal"
@@ -329,8 +344,8 @@
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
-    "userLanguage": null,
-    "userCulture": null,
+    "userLanguage": "",
+    "userCulture": "",
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,
@@ -341,5 +356,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }

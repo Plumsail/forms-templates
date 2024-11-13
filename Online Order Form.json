@@ -515,7 +515,7 @@
                                                 "text": "ItemsList",
                                                 "visible": false
                                             },
-                                            "required": false,
+                                            "required": true,
                                             "font": {
                                                 "style": "Normal",
                                                 "weight": "Semibold"
@@ -527,6 +527,7 @@
                                                 "title": "Item",
                                                 "required": true,
                                                 "type": "Dropdown",
+                                                "aggregates": [],
                                                 "selection": "Single",
                                                 "dataSource": "StaticList",
                                                 "allowUserValue": false,
@@ -549,6 +550,7 @@
                                                 "title": "Quantity",
                                                 "required": true,
                                                 "type": "Number",
+                                                "aggregates": [],
                                                 "min": 1,
                                                 "max": 10,
                                                 "precision": 0,
@@ -560,6 +562,7 @@
                                                 "title": "Price",
                                                 "required": false,
                                                 "type": "Currency",
+                                                "aggregates": [],
                                                 "min": 0,
                                                 "precision": 2,
                                                 "symbol": "$",
@@ -574,6 +577,10 @@
                                                     "formula": "Price * Quantity"
                                                 },
                                                 "resultType": "Currency",
+                                                "aggregates": [{
+                                                    "type": "sum",
+                                                    "template": "Sum: {0}"
+                                                }],
                                                 "precision": 2,
                                                 "symbol": "$"
                                             }]
@@ -581,42 +588,6 @@
                                     },
                                     "alignment": {
                                         "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "Currency",
-                                        "model": {
-                                            "_internalName": "Total1",
-                                            "title": {
-                                                "text": "Total",
-                                                "visible": true
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cWidth": 150,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "min": 0,
-                                            "symbol": "$",
-                                            "precision": 2,
-                                            "spinButtons": false
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Right",
                                         "vertical": "Top"
                                     },
                                     "columns": {
@@ -734,7 +705,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "// prices\r\nvar products = {};\r\nproducts['Pen Holder'] = 9.99;\r\nproducts['Ice Tray'] = 19.99;\r\nproducts['Alarm Clock'] = 4.99;\r\n\r\n// total to be paid\r\nvar total = 0.0;\r\n\r\nfd.rendered(function() {\r\n    //hide payment button  when the form is rendered\r\n    $('.fd-payment-form').hide();\r\n    \r\n    var itemsList = fd.control('ItemsList')\r\n    var totalField = fd.field('Total1');\r\n    totalField.disabled = true;\r\n\r\n\r\n    // make Price column read-only\r\n    const unitPriceColumn = itemsList.columns.find(c => c.field === 'Price');\r\n    unitPriceColumn.editable = () => false;\r\n    \r\n    //add validation to ItemsList\r\n    itemsList.addValidator({\r\n        name: 'ItemsList validator',\r\n        error: 'Enter at least one record into the table',\r\n        validate: function(value) {\r\n            //change this number to make more records required\r\n            if (value.length < 1) {\r\n                return false;\r\n            }\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    itemsList.$on('change', function(value) {\r\n        var total = 0.0;\r\n\r\n        if (value) {\r\n            for (var i = 0; i < value.length; i++) {\r\n                if (value[i].Item) {\r\n                    value[i].set('Price', products[value[i].Item] || 0)\r\n                }\r\n\r\n                total += parseFloat(value[i].Total);\r\n            }\r\n        }\r\n\r\n        totalField.value = total;\r\n    });\r\n});\r\n\r\nfd.beforeSave(function(data) {\r\n    total = data.Total1;\r\n});\r\n\r\nfd.saved(function() {\r\n    $('.fd-order-form').hide();\r\n    $('.fd-payment-form').show();\r\n\r\n    if (typeof paypal !== 'undefined') return;\r\n\r\n    function initPayPalButtons() {\r\n        paypal\r\n            .Buttons({\r\n                style: {\r\n                    shape: 'rect',\r\n                    color: 'gold',\r\n                    layout: 'vertical',\r\n                    label: 'paypal',\r\n                },\r\n\r\n                createOrder: function(data, actions) {\r\n                    return actions.order.create({\r\n                        purchase_units: [{\r\n                            description: 'New order',\r\n                            amount: {\r\n                                currency_code: 'USD',\r\n                                value: parseFloat(total).toFixed(2),\r\n                            },\r\n                        }, ],\r\n                    });\r\n                },\r\n\r\n                onApprove: function(data, actions) {\r\n                    return actions.order.capture().then(function(orderData) {\r\n                        // Full available details\r\n                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));\r\n\r\n                        // Show a success message within this page, e.g.\r\n                        const element = document.getElementById('paypal-button-container');\r\n                        element.innerHTML = '';\r\n                        element.innerHTML = '<h3>Thank you for your payment!</h3>';\r\n\r\n                        // Or go to another URL:  actions.redirect('thank_you.html');\r\n                    });\r\n                },\r\n\r\n                onError: function(err) {\r\n                    console.log(err);\r\n                },\r\n            })\r\n            .render('#paypal-button-container');\r\n    }\r\n\r\n    var script = document.createElement('script');\r\n    script.type = 'text/javascript';\r\n    script.src = 'https://www.paypal.com/sdk/js?client-id=AQ7P3z6oe-fhuUWaRXJnAKAA9x3KJRIY1tNRRooLpBcHK0cj1jJ3N32mse4fLzdKNOrI-cqW0iidCFzo';\r\n    script.setAttribute('data-sdk-integration-source', 'button-factory');\r\n    script.onload = initPayPalButtons;\r\n\r\n    const head = document.getElementsByTagName('head')[0];\r\n    head.appendChild(script);\r\n});",
+    "js": "// prices\r\nvar products = {};\r\nproducts['Pen Holder'] = 9.99;\r\nproducts['Ice Tray'] = 19.99;\r\nproducts['Alarm Clock'] = 4.99;\r\n\r\n// total to be paid\r\nvar total = 0.0;\r\n\r\nfd.rendered(function() {\r\n    //hide payment button  when the form is rendered\r\n    $('.fd-payment-form').hide();\r\n    \r\n    var itemsList = fd.control('ItemsList')\r\n    var totalField = fd.field('Total1');\r\n\r\n\r\n    // make Price column read-only\r\n    const unitPriceColumn = itemsList.columns.find(c => c.field === 'Price');\r\n    unitPriceColumn.editable = () => false;\r\n\r\n    itemsList.$on('change', function(value) {\r\n\r\n        if (value) {\r\n            for (var i = 0; i < value.length; i++) {\r\n                if (value[i].Item) {\r\n                    value[i].set('Price', products[value[i].Item] || 0)\r\n                }\r\n            }\r\n        }\r\n\r\n\r\n    });\r\n});\r\n\r\nfd.beforeSave(function(data) {\r\n    total = fd.control('ItemsList').aggregates.Total.sum;\r\n});\r\n\r\nfd.saved(function() {\r\n    $('.fd-order-form').hide();\r\n    $('.fd-payment-form').show();\r\n\r\n    if (typeof paypal !== 'undefined') return;\r\n\r\n    function initPayPalButtons() {\r\n        paypal\r\n            .Buttons({\r\n                style: {\r\n                    shape: 'rect',\r\n                    color: 'gold',\r\n                    layout: 'vertical',\r\n                    label: 'paypal',\r\n                },\r\n\r\n                createOrder: function(data, actions) {\r\n                    return actions.order.create({\r\n                        purchase_units: [{\r\n                            description: 'New order',\r\n                            amount: {\r\n                                currency_code: 'USD',\r\n                                value: parseFloat(total).toFixed(2),\r\n                            },\r\n                        }, ],\r\n                    });\r\n                },\r\n\r\n                onApprove: function(data, actions) {\r\n                    return actions.order.capture().then(function(orderData) {\r\n                        // Full available details\r\n                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));\r\n\r\n                        // Show a success message within this page, e.g.\r\n                        const element = document.getElementById('paypal-button-container');\r\n                        element.innerHTML = '';\r\n                        element.innerHTML = '<h3>Thank you for your payment!</h3>';\r\n\r\n                        // Or go to another URL:  actions.redirect('thank_you.html');\r\n                    });\r\n                },\r\n\r\n                onError: function(err) {\r\n                    console.log(err);\r\n                },\r\n            })\r\n            .render('#paypal-button-container');\r\n    }\r\n\r\n    var script = document.createElement('script');\r\n    script.type = 'text/javascript';\r\n    script.src = 'https://www.paypal.com/sdk/js?client-id=AQ7P3z6oe-fhuUWaRXJnAKAA9x3KJRIY1tNRRooLpBcHK0cj1jJ3N32mse4fLzdKNOrI-cqW0iidCFzo';\r\n    script.setAttribute('data-sdk-integration-source', 'button-factory');\r\n    script.onload = initPayPalButtons;\r\n\r\n    const head = document.getElementsByTagName('head')[0];\r\n    head.appendChild(script);\r\n});",
     "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n\n/* styling for the primary button */\n.fd-form .btn-primary {\n    font-weight: 500 !important;\n    color: white !important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",

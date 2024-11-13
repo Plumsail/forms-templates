@@ -622,7 +622,7 @@
                                                 "text": "Courses",
                                                 "visible": false
                                             },
-                                            "required": false,
+                                            "required": true,
                                             "font": {
                                                 "style": "Normal",
                                                 "weight": "Semibold"
@@ -634,27 +634,88 @@
                                                 "title": "Course",
                                                 "required": true,
                                                 "type": "Dropdown",
+                                                "aggregates": [],
                                                 "selection": "Single",
-                                                "options": "Project Management\nData Analytics\nIBM Data Science\nBusiness Administration\nAccounting"
+                                                "dataSource": "StaticList",
+                                                "allowUserValue": false,
+                                                "options": [{
+                                                    "value": "Project Management",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Data Analytics",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "IBM Data Science",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Business Administration",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Accounting",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }],
+                                                "defaultValue": null
                                             }, {
                                                 "_internalName": "Level",
                                                 "title": "Level",
                                                 "required": false,
                                                 "type": "Dropdown",
+                                                "aggregates": [],
                                                 "selection": "Single",
-                                                "options": "Level 1\nLevel 2\nLevel 3"
+                                                "dataSource": "StaticList",
+                                                "allowUserValue": false,
+                                                "options": [{
+                                                    "value": "Level 1",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Level 2",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Level 3",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }],
+                                                "defaultValue": null
                                             }, {
                                                 "_internalName": "Language",
                                                 "title": "Language",
                                                 "required": false,
                                                 "type": "Dropdown",
+                                                "aggregates": [],
                                                 "selection": "Single",
-                                                "options": "English\nSpanish\nFrench\nGerman"
+                                                "dataSource": "StaticList",
+                                                "allowUserValue": false,
+                                                "options": [{
+                                                    "value": "English",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Spanish",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "French",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "German",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }],
+                                                "defaultValue": null
                                             }, {
                                                 "_internalName": "StartDate",
                                                 "title": "Start Date",
                                                 "required": false,
-                                                "type": "Date"
+                                                "type": "Date",
+                                                "aggregates": []
                                             }]
                                         }
                                     },
@@ -796,7 +857,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.rendered(function () {\r\n    // require a user to add at least one record to the data table\r\n    fd.control('Courses').addValidator({\r\n        name: 'Courses validator',\r\n        error: 'At least one course must be added',\r\n        validate: function(value) {\r\n            // change this number to make more records required\r\n            if (value.length < 1) {\r\n                return false;\r\n            }\r\n\r\n            return true;\r\n        }\r\n    });\r\n});",
+    "js": "",
     "css": "",
     "notifySubscribers": false,
     "version": "1.0.2",
@@ -815,8 +876,8 @@
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
-    "userLanguage": null,
-    "userCulture": null,
+    "userLanguage": "",
+    "userCulture": "",
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,
@@ -827,5 +888,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }

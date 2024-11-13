@@ -179,11 +179,33 @@
                                                 "weight": "Normal"
                                             },
                                             "dataSource": "StaticList",
-                                            "StaticList": {
-                                                "options": "Production.\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
-                                            },
                                             "selection": "Single",
-                                            "options": "Production.\r\nResearch and Development\r\nProcurement and Sourcing\r\nMarketing \r\nHuman Resource Management\r\nAccounting and Finance"
+                                            "options": [{
+                                                "value": "Production.",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Research and Development",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Procurement and Sourcing",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Marketing",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Human Resource Management",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Accounting and Finance",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "defaultValue": []
                                         }
                                     },
                                     "alignment": {
@@ -389,7 +411,7 @@
                                                 "text": "Itemized Expenses",
                                                 "visible": true
                                             },
-                                            "required": false,
+                                            "required": true,
                                             "font": {
                                                 "style": "Normal",
                                                 "weight": "Semibold"
@@ -400,72 +422,76 @@
                                                 "_internalName": "Description",
                                                 "title": "Description",
                                                 "required": false,
-                                                "type": "String"
+                                                "type": "String",
+                                                "aggregates": []
                                             }, {
                                                 "_internalName": "Date",
                                                 "title": "Date",
                                                 "required": false,
-                                                "type": "Date"
+                                                "type": "Date",
+                                                "aggregates": []
                                             }, {
                                                 "_internalName": "Category",
                                                 "title": "Category",
                                                 "required": false,
                                                 "type": "Dropdown",
+                                                "aggregates": [],
                                                 "selection": "Single",
-                                                "options": "Advertising Expenses \r\nBusiness Vehicle(s) \r\nPayroll \r\nEmployee Benefits \r\nMeals & Entertainment Expenses \r\nOffice Expenses \r\nOffice Supplies \r\nProfessional Services"
+                                                "dataSource": "StaticList",
+                                                "allowUserValue": false,
+                                                "options": [{
+                                                    "value": "Advertising Expenses",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Business Vehicle(s)",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Payroll",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Employee Benefits",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Meals & Entertainment Expenses",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Office Expenses",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Office Supplies",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }, {
+                                                    "value": "Professional Services",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }],
+                                                "defaultValue": null
                                             }, {
                                                 "_internalName": "Amount",
                                                 "title": "Amount",
                                                 "required": false,
                                                 "type": "Currency",
+                                                "aggregates": [{
+                                                    "type": "sum",
+                                                    "template": "Sum: {0}"
+                                                }],
                                                 "min": 0,
-                                                "step": 1,
+                                                "precision": 2,
                                                 "symbol": null,
                                                 "spinButtons": true,
-                                                "precision": 2
+                                                "step": 1
                                             }]
                                         }
                                     },
                                     "alignment": {
                                         "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "Currency",
-                                        "model": {
-                                            "_internalName": "Total",
-                                            "width": 80,
-                                            "title": {
-                                                "text": "Total:",
-                                                "visible": true
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "class": "fd-total-field",
-                                            "cWidth": 120,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "min": 0,
-                                            "symbol": "$",
-                                            "precision": 2,
-                                            "spinButtons": false
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Right",
                                         "vertical": "Top"
                                     },
                                     "columns": {
@@ -495,7 +521,7 @@
                                 "visible": true
                             },
                             "orientation": "Vertical",
-                            "required": false,
+                            "required": true,
                             "font": {
                                 "style": "Normal",
                                 "weight": "Semibold"
@@ -541,8 +567,8 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.rendered(function () {\r\n    //disable Total field\r\n    fd.field('Total').disabled = true;\r\n\r\n    // require a valid time interval to be entered\r\n    fd.validators.push({\r\n        name: 'ExpensePeriodValidation',\r\n        error: 'Select a valid interval as expense period',\r\n        validate: function (value) {\r\n            if (fd.field('From').value > fd.field('To').value) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    // require at least one record to the data table\r\n    fd.validators.push({\r\n        name: 'ExpenseItemsValidation',\r\n        error: 'Add at least one expense item',\r\n        validate: function (value) {\r\n            if (fd.control('DataTable1').value.length < 1) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    //require a signature\r\n    fd.validators.push({\r\n        name: 'SignatureValidation',\r\n        error: 'Sign the form',\r\n        validate: function (value) {\r\n            if (fd.control('Signature').value == null) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n    // calculate Total\r\n    fd.control('DataTable1').$on('change', function (value) {\r\n        var total = 0.0;\r\n\r\n        if (value) {\r\n            for (var i = 0; i < value.length; i++) {\r\n                if (value[i].Amount) {\r\n                    total += value[i].Amount;\r\n                }\r\n            }\r\n        }\r\n\r\n        fd.field('Total').value = total;\r\n    });\r\n});\r\n",
-    "css": "/* styling of the disabled total field  */\r\n.fd-form .fd-total-field input {\r\n    text-align: right;\r\n    font-weight: 600;\r\n    padding-left: 0;\r\n    border-radius: 0;\r\n}\r\n\r\n\r\n.fd-form .fd-total-field .k-numeric-wrap {\r\n    border: none !important;\r\n}\r\n",
+    "js": "fd.rendered(function () {\r\n\r\n\r\n    // require a valid time interval to be entered\r\n    fd.validators.push({\r\n        name: 'ExpensePeriodValidation',\r\n        error: 'Select a valid interval as expense period',\r\n        validate: function (value) {\r\n            if (fd.field('From').value > fd.field('To').value) return false;\r\n\r\n            return true;\r\n        },\r\n    });\r\n\r\n\r\n});\r\n",
+    "css": "",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
@@ -560,8 +586,8 @@
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
-    "userLanguage": null,
-    "userCulture": null,
+    "userLanguage": "",
+    "userCulture": "",
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,
@@ -572,5 +598,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }
