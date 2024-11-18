@@ -79,7 +79,10 @@
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
-                                            }
+                                            },
+                                            "interval": 30,
+                                            "startTime": "2024-11-18T09:00:00.000Z",
+                                            "endTime": "2024-11-17T19:00:00.000Z"
                                         }
                                     },
                                     "alignment": {
@@ -147,11 +150,29 @@
                                                 "weight": "Normal"
                                             },
                                             "dataSource": "StaticList",
-                                            "StaticList": {
-                                                "options": "Birthday\nFamily Dinner\nBusness Dinner\nAnniversary\nDinner"
-                                            },
                                             "selection": "Single",
-                                            "options": "Birthday\nFamily Dinner\nBusness Dinner\nAnniversary\nDinner"
+                                            "options": [{
+                                                "value": "Birthday",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Family Dinner",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Busness Dinner",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Anniversary",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Dinner",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "defaultValue": []
                                         }
                                     },
                                     "alignment": {
@@ -381,8 +402,8 @@
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
-    "userLanguage": null,
-    "userCulture": null,
+    "userLanguage": "",
+    "userCulture": "",
     "thankYouMessage": "Thanks for booking! You will receive a confirmation email.",
     "redirectURL": null,
     "hideAfterSubmission": true,
@@ -393,5 +414,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }
