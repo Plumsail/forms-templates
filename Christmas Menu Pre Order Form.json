@@ -1,0 +1,447 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Image",
+                        "model": {
+                            "_internalName": "Image1",
+                            "height": 250,
+                            "class": "img",
+                            "target": "_blank",
+                            "image": "https://plumsailforms.blob.core.windows.net/e90a6c64-b19a-42c1-ad3a-4f13a1244ebc-images/9ef8def7-Frame%2019856.png"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Left",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Christmas Menu Pre Order Form",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H1",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "PrimaryContactName",
+                            "title": {
+                                "text": "Primary Contact Name",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "Anything"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "SingleLineText",
+                        "model": {
+                            "_internalName": "Email",
+                            "title": {
+                                "text": "Email",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cHint": "username@domain.com",
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "type": "E-mail",
+                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                            "error": "This field must contain a valid e-mail address."
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }, {
+                    "component": {
+                        "type": "MaskedInput",
+                        "model": {
+                            "_internalName": "Phone",
+                            "title": {
+                                "text": "Phone",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "mask": "000-0000-0000"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 6
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Date",
+                        "model": {
+                            "_internalName": "PartyDate",
+                            "title": {
+                                "text": "Party Date",
+                                "visible": true
+                            },
+                            "orientation": "Vertical",
+                            "required": false,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "wrap": true,
+                            "cFont": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
+                            "startDate": "2024-12-19T19:00:00.000Z",
+                            "endDate": "2024-12-24T19:00:00.000Z"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "DataTable",
+                        "model": {
+                            "_internalName": "MenuSelection",
+                            "title": {
+                                "text": "Menu Selection",
+                                "visible": true
+                            },
+                            "required": true,
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "newLine": "Top",
+                            "delete": "Last",
+                            "columns": [{
+                                "_internalName": "Column1",
+                                "title": "Guest Name",
+                                "required": false,
+                                "type": "String",
+                                "aggregates": [{
+                                    "type": "count",
+                                    "template": "Guest Count: {0}"
+                                }]
+                            }, {
+                                "_internalName": "Appetizers",
+                                "title": "Appetizers",
+                                "required": false,
+                                "type": "Dropdown",
+                                "aggregates": [],
+                                "selection": "Single",
+                                "dataSource": "StaticList",
+                                "allowUserValue": false,
+                                "options": [{
+                                    "value": "Cheese and Charcuterie Board",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Mini Quiches",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Bruschetta",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Cranberry Brie Bites",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Mini Sausage Rolls",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Festive Veggie Skewers",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }],
+                                "defaultValue": null
+                            }, {
+                                "_internalName": "MainCourse",
+                                "title": "Main Course",
+                                "required": false,
+                                "type": "Dropdown",
+                                "aggregates": [],
+                                "selection": "Single",
+                                "dataSource": "StaticList",
+                                "allowUserValue": false,
+                                "options": [{
+                                    "value": "Roasted Turkey with Gravy and Stuffing",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Honey-Glazed Ham",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Prime Rib",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Roasted Vegetable Wellington",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Creamy Mushroom Risotto",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Lentil Shepherd's Pie",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }],
+                                "defaultValue": null
+                            }, {
+                                "_internalName": "Dessert",
+                                "title": "Dessert",
+                                "required": false,
+                                "type": "Dropdown",
+                                "aggregates": [],
+                                "selection": "Single",
+                                "dataSource": "StaticList",
+                                "allowUserValue": false,
+                                "options": [{
+                                    "value": "Christmas Pudding with Brandy Sauce",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Yule Log",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Fruit Cake",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Chocolate Lava Cake",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Gingerbread Cheesecake",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Peppermint Bark",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }],
+                                "defaultValue": null
+                            }, {
+                                "_internalName": "Beverages",
+                                "title": "Beverages",
+                                "required": false,
+                                "type": "Dropdown",
+                                "aggregates": [],
+                                "selection": "Multiple",
+                                "dataSource": "StaticList",
+                                "allowUserValue": false,
+                                "options": [{
+                                    "value": "Wine",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Beer",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Champagne",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Mulled Wine",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Christmas Margarita",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Juice",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Water",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }, {
+                                    "value": "Hot Chocolate",
+                                    "backgroundColor": null,
+                                    "textColor": null
+                                }],
+                                "defaultValue": null
+                            }, {
+                                "_internalName": "Allergies",
+                                "title": "Restrictions or Allergies",
+                                "required": false,
+                                "type": "String",
+                                "aggregates": []
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [15, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "Submit",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#f33d39",
+        "bodyText": "#3f3f3f",
+        "bodyBackground": "#FFFFFF",
+        "fontFamily": "Playfair Display",
+        "fontType": 1,
+        "fontSize": 16,
+        "fontWeight": 500,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "themeId": "3862f968e48d168cf3ff7cc33dcc412c",
+        "isDark": false
+    },
+    "timezone": "Etc/GMT-12",
+    "culture": "en",
+    "userLanguage": "",
+    "userCulture": "",
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null,
+    "connection": null
+}
