@@ -1,0 +1,740 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [{
+                "cells": [{
+                    "component": {
+                        "type": "Image",
+                        "model": {
+                            "_internalName": "Image1",
+                            "image": "https://plumsailforms.blob.core.windows.net/e90a6c64-b19a-42c1-ad3a-4f13a1244ebc-images/7c1a6c56-Frame%2019857%20%281%29.png",
+                            "target": "_blank"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Left",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, 10, null],
+                    "component": {
+                        "type": "Heading",
+                        "model": {
+                            "_internalName": "Heading1",
+                            "heading": "Christmas Tree Order Form",
+                            "view": "Normal",
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Semibold"
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "size": "H1",
+                            "textAlignment": "Center"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid2",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "DropDown",
+                                        "model": {
+                                            "_internalName": "TreeType",
+                                            "title": {
+                                                "text": " Christmas Tree Type",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "selection": "Single",
+                                            "options": [{
+                                                "value": "Fraser Fir",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Canaan Fir",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Douglas Fir",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Grand Fir",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Noble Fir",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Norway Spruce",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "DropDown",
+                                        "model": {
+                                            "_internalName": "Size",
+                                            "title": {
+                                                "text": "Size",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "selection": "Single",
+                                            "options": [{
+                                                "value": "Small (3-4 feet)",
+                                                "backgroundColor": "#d9f2dd",
+                                                "textColor": "#287634"
+                                            }, {
+                                                "value": "Medium (5-7 feet)",
+                                                "backgroundColor": "#b3e5bb",
+                                                "textColor": "#287634"
+                                            }, {
+                                                "value": "Large (7-9 feet)",
+                                                "backgroundColor": "#37a448",
+                                                "textColor": "#ffffff"
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "MultipleChoice",
+                                        "model": {
+                                            "_internalName": "Include",
+                                            "title": {
+                                                "text": "Include",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "cColumns": 1,
+                                            "options": [{
+                                                "value": "Lights",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Stand",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Cedar garland",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Holly Wreath",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid1",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 15,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": ""
+                            },
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "First Name",
+                                            "description": "First Name",
+                                            "title": {
+                                                "text": "Name",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Last Name",
+                                            "description": "Last Name",
+                                            "title": {
+                                                "text": " ",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Email",
+                                            "title": {
+                                                "text": "Email",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "MaskedInput",
+                                        "model": {
+                                            "_internalName": "Phone",
+                                            "title": {
+                                                "text": "Phone",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "mask": "000-0000-0000"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "Payment",
+                                            "title": {
+                                                "text": "Payment Method",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "cColumns": 1,
+                                            "options": [{
+                                                "value": "Online",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "On delivery",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleChoice",
+                                        "model": {
+                                            "_internalName": "DeliveryPreference",
+                                            "title": {
+                                                "text": "Delivery Preference",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "dataSource": "StaticList",
+                                            "cColumns": 1,
+                                            "options": [{
+                                                "value": "Pickup",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Delivery",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "class": "delivery-address",
+                    "component": {
+                        "type": "Grid",
+                        "model": {
+                            "_internalName": "Grid3",
+                            "stacked": "md",
+                            "frame": {
+                                "horizontal": 15,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "border": {
+                                "width": null,
+                                "color": ""
+                            },
+                            "rows": [{
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "AddressLine1",
+                                            "description": "Street Address Line1",
+                                            "title": {
+                                                "text": "Delivery Address",
+                                                "visible": true
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "AddressLine2",
+                                            "description": "Street Address Line2",
+                                            "title": {
+                                                "text": "Address",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 12
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "City",
+                                            "description": "City",
+                                            "title": {
+                                                "text": "City",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }, {
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "State",
+                                            "description": "State / Province",
+                                            "title": {
+                                                "text": "State",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }, {
+                                "cells": [{
+                                    "component": {
+                                        "type": "SingleLineText",
+                                        "model": {
+                                            "_internalName": "Zip",
+                                            "description": "ZIP",
+                                            "title": {
+                                                "text": "Zip",
+                                                "visible": false
+                                            },
+                                            "orientation": "Vertical",
+                                            "required": false,
+                                            "font": {
+                                                "style": "Normal",
+                                                "weight": "Semibold"
+                                            },
+                                            "wrap": true,
+                                            "cFont": {
+                                                "style": "Normal",
+                                                "weight": "Normal"
+                                            },
+                                            "type": "Anything"
+                                        }
+                                    },
+                                    "alignment": {
+                                        "horizontal": "Justify",
+                                        "vertical": "Top"
+                                    },
+                                    "columns": {
+                                        "width": 6
+                                    }
+                                }]
+                            }]
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }, {
+                "cells": [{
+                    "padding": [10, null, null, null],
+                    "component": {
+                        "type": "Submit",
+                        "model": {
+                            "_internalName": "Submit1",
+                            "text": "Order",
+                            "savingText": "Submitting...",
+                            "type": "Primary",
+                            "click": "return fd.save();"
+                        }
+                    },
+                    "alignment": {
+                        "horizontal": "Justify",
+                        "vertical": "Top"
+                    },
+                    "columns": {
+                        "width": 12
+                    }
+                }]
+            }]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "//function to show/hide section with delivery address\r\nfunction showHideDeliveryDetails() {\r\n    if(fd.field('DeliveryPreference').value === 'Delivery') {\r\n        $('.delivery-address').show();\r\n    }\r\n    else {\r\n        $('.delivery-address').hide();\r\n    }\r\n}\r\n\r\n\r\nfd.rendered(function () {\r\n    \r\n    //call function on form load\r\n    showHideDeliveryDetails();\r\n    \r\n    //call function when field value changes\r\n    fd.field('DeliveryPreference').$on('change', showHideDeliveryDetails);\r\n    \r\n});\r\n\r\n/*******************************************************************************************************\r\n* The code from this section is executed once the form is loaded.                                      *\r\n*                                                                                                      *\r\n* Depending on the stage of the form lifecycle when a particular action should be performed,           *\r\n* you can use on the following hooks:                                                                  *\r\n*                                                                                                      *\r\n* fd.rendered()     the code is executed once the form is rendered                                     *\r\n*                                                                                                      *\r\n* fd.beforeSave()   the code is executed right before saving the form. If returns Promise, the saving  *\r\n*                   does not proceed until the Promise is resoved. If the Promise is rejected,         * \r\n*                   the saving interrupts. This is the appropriate place for adding custom validation. *\r\n*                                                                                                      *\r\n* fd.saved()        the code is executed once the form is submitted                                    *\r\n*                                                                                                      *\r\n* The following predefined variables can be utilized in the code:                                      *\r\n*                                                                                                      *\r\n* fd    an instance of the current form                                                                *\r\n* $     jQuery object                                                                                  *\r\n*                                                                                                      *\r\n*******************************************************************************************************/\r\n\r\n\r\n/* Uncomment the code below to start using it in the form.\r\n\r\n// ================================================================\r\n//  EXAMPLE 1: The code is executed right after rendering the form \r\n// ================================================================\r\nfd.rendered(function () {\r\n\r\n    // The function populates FullName with values from FirstName and LastName\r\n    function updateFullName() {\r\n        var firstName = fd.field('FirstName').value || '';\r\n        var lastName = fd.field('LastName').value || '';\r\n        fd.field('FullName').value = (firstName ? firstName + ' ' : '') + lastName;\r\n    }\r\n\r\n    // Populate FullName when the form is rendered\r\n    updateFullName();\r\n\r\n    // Update FullName when FirstName changes\r\n    fd.field('FirstName').$on('change', updateFullName);\r\n\r\n    // Update FullName when LastName changes\r\n    fd.field('LastName').$on('change', updateFullName);\r\n});\r\n\r\n\r\n// ========================================================\r\n//  EXAMPLE 2: The code is executed before saving the form\r\n// ========================================================\r\nfd.beforeSave(function () {\r\n\r\n    // Prevent saving if StartDate is greater than EndDate\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\n\r\n// =============================================================\r\n//  EXAMPLE 3: The code is executed right after saving the form\r\n// =============================================================\r\nfd.saved(function (result) {\r\n\r\n    // Forward users to a custom Thank You page with a parameter\r\n    window.location = 'https://mysite.com/thank-you?email=' + fd.field('Email').value;\r\n});\r\n*/\r\n\r\n",
+    "css": null,
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#25645c",
+        "bodyText": "#205650",
+        "bodyBackground": "#FFFFFF",
+        "fontFamily": "Quicksand",
+        "fontType": 1,
+        "fontSize": 16,
+        "fontWeight": 600,
+        "borderThickness": 2,
+        "borderRadius": 2,
+        "shadow": true,
+        "themeId": "87eb201521614873961c9ad9f922e7ed",
+        "isDark": false
+    },
+    "timezone": "Etc/GMT-12",
+    "culture": "en",
+    "userLanguage": "",
+    "userCulture": "",
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "azureB2CProperties": null,
+    "connection": null
+}
