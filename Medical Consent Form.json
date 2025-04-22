@@ -175,13 +175,22 @@
                                                 "weight": "Normal"
                                             },
                                             "dataSource": "StaticList",
-                                            "StaticList": {
-                                                "options": "Female\nMale\nOther",
-                                                "allowUserValue": false
-                                            },
                                             "cColumns": 3,
-                                            "options": "Female\nMale\nOther",
-                                            "allowUserValue": false
+                                            "options": [{
+                                                "value": "Female",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Male",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Other",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
                                         }
                                     },
                                     "alignment": {
@@ -370,13 +379,30 @@
                                                 "weight": "Normal"
                                             },
                                             "dataSource": "StaticList",
-                                            "StaticList": {
-                                                "options": "I authorize the hospital to perform the necessary treatment or procedure on me.\r\nI confirm that the doctors explained the procedure to me.\r\nI authorize the procedure and understand the potential side effects.\r\nI understand the risks and potential complications if I don't follow post-procedure instructions and attend follow-up appointments.\r\nI acknowledge that all the information I provided in this form is true and accurate.",
-                                                "allowUserValue": false
-                                            },
                                             "cColumns": 1,
-                                            "options": "I authorize the hospital to perform the necessary treatment or procedure on me.\r\nI confirm that the doctors explained the procedure to me.\r\nI authorize the procedure and understand the potential side effects.\r\nI understand the risks and potential complications if I don't follow post-procedure instructions and attend follow-up appointments.\r\nI acknowledge that all the information I provided in this form is true and accurate.",
-                                            "allowUserValue": false
+                                            "options": [{
+                                                "value": "I authorize the hospital to perform the necessary treatment or procedure on me.",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "I confirm that the doctors explained the procedure to me.",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "I authorize the procedure and understand the potential side effects.",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "I understand the risks and potential complications if I don't follow post-procedure instructions and attend follow-up appointments.",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "I acknowledge that all the information I provided in this form is true and accurate.",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
                                         }
                                     },
                                     "alignment": {
@@ -514,7 +540,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.rendered(function() {\r\n    //disable fields\r\n    fd.field('Date').disabled = true;\r\n\r\n    //set CompletionDate to the current date\r\n    fd.field('Date').value = new Date();\r\n\r\n\r\n    //load the Moment.js library to calculate patient's age and disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calendarSetUp();\r\n\r\n        });\r\n\r\n    // add validation for Consent\r\n    fd.field('Consent').addValidator({\r\n        name: 'ConsentValidator',\r\n        error: 'You must check all points. If you still have questions, contact your family doctor.',\r\n        validate: function(value) {\r\n            if (fd.field('Consent').value.length < 5)\r\n                return false;\r\n\r\n            return true;\r\n        }\r\n    });\r\n});\r\n\r\n\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}",
+    "js": "fd.rendered(function() {\r\n    //disable fields\r\n    fd.field('Date').disabled = true;\r\n\r\n    //set CompletionDate to the current date\r\n    fd.field('Date').value = new Date();\r\n\r\n\r\n    //call function on form load\r\n    calendarSetUp();\r\n\r\n    // add validation for Consent\r\n    fd.field('Consent').addValidator({\r\n        name: 'ConsentValidator',\r\n        error: 'You must check all points. If you still have questions, contact your family doctor.',\r\n        validate: function(value) {\r\n            if (fd.field('Consent').value.length < 5)\r\n                return false;\r\n\r\n            return true;\r\n        }\r\n    });\r\n});\r\n\r\n\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nconst calendarSetUp = async () => {\r\n\r\n    // Load external libraries\r\n    await $.getScript('https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js');\r\n\r\n    // Get today's date\r\n    const today = luxon.DateTime.now();\r\n\r\n    const newDate = today.minus({\r\n        years: 18\r\n    });\r\n\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: newDate.toJSDate(),\r\n        start: 'decade'\r\n    }\r\n}",
     "css": "/** h1 text color to white **/\n.fd-form h1 {\n    color: white !important;\n}\n\n/** styling of the disable Date field **/\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-select {\n    display: none !important;\n}\n\n.fd-form .completion-date input {\n    padding-left: 0px;\n}\n\n/** add top dorder to the main container **/\n.fd-form .main-container {\n    border-top: 20px solid rgba(var(--fd-primary-rgb)) !important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
@@ -545,5 +571,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }

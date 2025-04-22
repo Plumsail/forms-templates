@@ -208,6 +208,20 @@
                         "model": {
                             "_internalName": "Tabs1",
                             "orientation": "Left",
+                            "pills": false,
+                            "border": {
+                                "width": null,
+                                "color": null
+                            },
+                            "frame": {
+                                "horizontal": null,
+                                "vertical": null,
+                                "radius": null
+                            },
+                            "font": {
+                                "style": "Normal",
+                                "weight": "Normal"
+                            },
                             "tabs": [{
                                 "_internalName": "Tab1",
                                 "title": "Patient Contact Details",
@@ -337,13 +351,22 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Male\nFemale\nOther",
-                                                            "allowUserValue": false
-                                                        },
                                                         "selection": "Single",
-                                                        "options": "Male\nFemale\nOther",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Male",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Female",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Other",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -503,13 +526,34 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Single\r\nMarried\r\nCivil Partnership\r\nSeparated\r\nDivorced\r\nOther",
-                                                            "allowUserValue": false
-                                                        },
                                                         "selection": "Single",
-                                                        "options": "Single\r\nMarried\r\nCivil Partnership\r\nSeparated\r\nDivorced\r\nOther",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Single",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Married",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Civil Partnership",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Separated",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Divorced",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Other",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -944,25 +988,42 @@
                                                             "_internalName": "MedicationName",
                                                             "title": "Medication name",
                                                             "required": false,
-                                                            "type": "String"
+                                                            "type": "String",
+                                                            "aggregates": []
                                                         }, {
                                                             "_internalName": "Dosage",
                                                             "title": "Dosage(mg)",
                                                             "required": false,
                                                             "type": "Number",
-                                                            "step": 1,
-                                                            "spinButtons": true,
-                                                            "percents": false,
+                                                            "aggregates": [],
+                                                            "min": 0,
                                                             "precision": 0,
-                                                            "min": 0
+                                                            "percents": false,
+                                                            "spinButtons": true,
+                                                            "step": 1
                                                         }, {
                                                             "_internalName": "FrequencyDay",
                                                             "title": "How often on daily basis?",
                                                             "required": false,
                                                             "type": "Dropdown",
+                                                            "aggregates": [],
                                                             "selection": "Single",
+                                                            "dataSource": "StaticList",
                                                             "allowUserValue": true,
-                                                            "options": "1 time\n2 times\n3 times\n"
+                                                            "options": [{
+                                                                "value": "1 time",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "2 times",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "3 times",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }],
+                                                            "defaultValue": null
                                                         }]
                                                     }
                                                 },
@@ -1126,14 +1187,126 @@
                                                             "title": "Type of surgery ",
                                                             "required": false,
                                                             "type": "Dropdown",
+                                                            "aggregates": [],
                                                             "selection": "Single",
+                                                            "dataSource": "StaticList",
                                                             "allowUserValue": true,
-                                                            "options": "Appendectomy\nBrain surgery\nBreast surgery\nCABG\nCholecystectomy\nColon surgery\nTonsillectomy\nAppendectomy\nThyroid surgery\nLung surgery\nC-section\nEye surgery\nFracture surgery\nHernia repair\nHysterectomy\nJoint surgery\nBunionectomy\nVaricose vein surgery\nProstate surgery\nWeight reduction surgery\nSmall intestine surgery\nSpine surgery\nTubal ligation\nValve replacement\nVasectomy\nVascular surgery\nCardiac stent\nBladder surgery"
+                                                            "options": [{
+                                                                "value": "Appendectomy",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Brain surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Breast surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "CABG",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Cholecystectomy",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Colon surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Tonsillectomy",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Thyroid surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Lung surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "C-section",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Eye surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Fracture surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Hernia repair",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Hysterectomy",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Joint surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Bunionectomy",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Varicose vein surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Prostate surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Weight reduction surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Small intestine surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Spine surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Tubal ligation",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Valve replacement",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Vasectomy",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Vascular surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Cardiac stent",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }, {
+                                                                "value": "Bladder surgery",
+                                                                "backgroundColor": null,
+                                                                "textColor": null
+                                                            }],
+                                                            "defaultValue": null
                                                         }, {
                                                             "_internalName": "Date",
                                                             "title": "Date of surgery ",
                                                             "required": false,
-                                                            "type": "String"
+                                                            "type": "String",
+                                                            "aggregates": []
                                                         }]
                                                     }
                                                 },
@@ -1270,13 +1443,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -1357,13 +1535,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -1444,13 +1627,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -1531,13 +1719,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -1618,13 +1811,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -1705,13 +1903,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -1792,13 +1995,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -1879,13 +2087,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -1966,13 +2179,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2053,13 +2271,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2140,13 +2363,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2227,13 +2455,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2314,13 +2547,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2401,13 +2639,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2488,13 +2731,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2575,13 +2823,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2662,13 +2915,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2749,13 +3007,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2836,13 +3099,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -2923,13 +3191,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -3010,13 +3283,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -3097,13 +3375,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -3184,13 +3467,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -3271,13 +3559,18 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "Yes\nNo",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 2,
-                                                        "options": "Yes\nNo",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Yes",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -3465,13 +3758,22 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": "No\nOccasionally\nOften",
-                                                            "allowUserValue": false
-                                                        },
                                                         "cColumns": 1,
-                                                        "options": "No\nOccasionally\nOften",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "No",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Occasionally",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "Often",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -3505,13 +3807,26 @@
                                                             "weight": "Normal"
                                                         },
                                                         "dataSource": "StaticList",
-                                                        "StaticList": {
-                                                            "options": " Monthly or less\n 2-4 times a month\n 2-3 times a week\n 4 or more times a week",
-                                                            "allowUserValue": false
-                                                        },
                                                         "selection": "Single",
-                                                        "options": " Monthly or less\n 2-4 times a month\n 2-3 times a week\n 4 or more times a week",
-                                                        "allowUserValue": false
+                                                        "options": [{
+                                                            "value": "Monthly or less",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "2-4 times a month",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "2-3 times a week",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }, {
+                                                            "value": "4 or more times a week",
+                                                            "backgroundColor": null,
+                                                            "textColor": null
+                                                        }],
+                                                        "allowUserValue": false,
+                                                        "defaultValue": []
                                                     }
                                                 },
                                                 "alignment": {
@@ -3726,7 +4041,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n}\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable registration date fields\r\n    fd.field('RegistrationDate').disabled = true;\r\n    //set RegistrationDate to the current date\r\n    fd.field('RegistrationDate').value = new Date();\r\n\r\n\r\n    //сalling functions on form loading\r\n    showHideMedicationsList();\r\n    showHideAllergicOnMedicationsList();\r\n    showHideAllergicFood();\r\n    smoker();\r\n    alcohol();\r\n\r\n    //call functions when changing field values    \r\n    fd.field('AllergicMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', smoker);\r\n    fd.field('Alcohol').$on('change', alcohol);\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n\r\n    //load the Moment.js library to calculate the date range to disable\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calendarSetUp();\r\n        });\r\n\r\n});\r\n\r\n//show/hide MedicationsList\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value) {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n\r\n//show hide AllergicMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicMedications').value) {\r\n        fd.field('AllergicMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicMedicationsList').hidden = true;\r\n    }\r\n}\r\n//show hide AllergicFood field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value) {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n//show/hide questions about smoking\r\nfunction smoker() {\r\n    if (fd.field('AreYouASmoker').value) {\r\n        $('.smoker').show()\r\n    } else {\r\n        $('.smoker').hide()\r\n    }\r\n}\r\n//show/hide questions about alcohol\r\nfunction alcohol() {\r\n    if (fd.field('Alcohol').value == 'Occasionally' || fd.field('Alcohol').value == 'Often') {\r\n        $('.alcohol').show()\r\n    } else {\r\n        $('.alcohol').hide()\r\n    }\r\n}\r\n\r\n//disable dates to allow only 18+ users\r\n//set up start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}",
+    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n}\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable registration date fields\r\n    fd.field('RegistrationDate').disabled = true;\r\n    //set RegistrationDate to the current date\r\n    fd.field('RegistrationDate').value = new Date();\r\n\r\n    //сalling functions on form loading\r\n    showHideMedicationsList();\r\n    showHideAllergicOnMedicationsList();\r\n    showHideAllergicFood();\r\n    smoker();\r\n    alcohol();\r\n    calendarSetUp();\r\n\r\n    //call functions when changing field values    \r\n    fd.field('AllergicMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', smoker);\r\n    fd.field('Alcohol').$on('change', alcohol);\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n\r\n});\r\n\r\n//show/hide MedicationsList\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value) {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicMedications').value) {\r\n        fd.field('AllergicMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicMedicationsList').hidden = true;\r\n    }\r\n}\r\n//show hide AllergicFood field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value) {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n//show/hide questions about smoking\r\nfunction smoker() {\r\n    if (fd.field('AreYouASmoker').value) {\r\n        $('.smoker').show()\r\n    } else {\r\n        $('.smoker').hide()\r\n    }\r\n}\r\n//show/hide questions about alcohol\r\nfunction alcohol() {\r\n    if (fd.field('Alcohol').value == 'Occasionally' || fd.field('Alcohol').value == 'Often') {\r\n        $('.alcohol').show()\r\n    } else {\r\n        $('.alcohol').hide()\r\n    }\r\n}\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nconst calendarSetUp = async () => {\r\n\r\n    // Load external libraries\r\n    await $.getScript('https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js');\r\n\r\n    // Get today's date\r\n    const today = luxon.DateTime.now();\r\n\r\n    const newDate = today.minus({\r\n        years: 18\r\n    });\r\n\r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        max: newDate.toJSDate(),\r\n        start: 'decade'\r\n    }\r\n}",
     "css": "/* making hospital information compact */\n.fd-form .info p {\n    margin-top: 0;\n    margin-bottom: 0 !important;\n}\n\n/* setting the Heading background depending on the theme */\n.fd-form h1 > span,\n.fd-form .fd-heading{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n\n\n/** styling of the disable Date field **/\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.completion-date .k-select {\n    display: none !important;\n}\n\n/* setting the styling of tabs */\n\n.fd-form .nav-tabs .nav-link.active,\n.fd-form .nav-tabs .nav-link:focus {\n    border-color: #335da3 rgba(0,0,0,0) #335da3 #335da3;\n    background-color: #335da2;\n    color: white;\n}\n\n/* changing the styling of tabs when theme changes*/\n\n/****** THEME 1 ******/\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:hover {\n    color: #fff;\n    background-color: #bbc756;\n    border-color: #bbc756 #bbc756 #bbc756;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-item {\n    margin-bottom: 0;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link.active,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:focus \n{\n    color: #889e5c !important;\n    border-color: #889e5c #ffffff #889e5c #889e5c !important;\n    background-color: transparent !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-link {\n    color: #3f3f3f !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs:hover {\n    border-right-color: #889e5c !important;\n    color: white\n}\n\n/****** THEME 2 ******/\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: transparent !important;\n    border-right: 5px solid #eaeaea;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link.active,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:focus {\n    color: #333;\n    border: none !important;\n    border-right: 5px solid #ed885d!important;\n    background-color: transparent !important;\n}\n\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-link {\n    color: #333;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs:hover {\n    border: none !important;\n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5;\n    border-color: #D7E1E5 #D7E1E5 #006699;\n    border-radius: 10px;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link.active,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:focus {\n    border-color: #883f86 #883f86 #883f86 !Important;\n    background-color: #883f86;\n    color: white;\n    border-radius: 10px;\n}\n\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-link {\n    color: #883f86;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs:hover {\n    border-color: transparent !Important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
@@ -3757,5 +4072,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }

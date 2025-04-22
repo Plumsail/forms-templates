@@ -227,13 +227,82 @@
                                                 "weight": "Normal"
                                             },
                                             "dataSource": "StaticList",
-                                            "StaticList": {
-                                                "options": "Pediatrician\r\nObstetricians/gynecologist (OBGYNs)\r\nCardiologist\r\nOncologist\r\nGastroenterologist\r\nPulmonologist\r\nInfectious disease\r\nNephrologist\r\nEndocrinologist\r\nOphthalmologist\r\nOtolaryngologist\r\nDermatologist\r\nPsychiatrist\r\nNeurologist\r\nRadiologist\r\nAnesthesiologist\r\nSurgeon\r\nPhysician executive",
-                                                "allowUserValue": false
-                                            },
                                             "selection": "Single",
-                                            "options": "Pediatrician\r\nObstetricians/gynecologist (OBGYNs)\r\nCardiologist\r\nOncologist\r\nGastroenterologist\r\nPulmonologist\r\nInfectious disease\r\nNephrologist\r\nEndocrinologist\r\nOphthalmologist\r\nOtolaryngologist\r\nDermatologist\r\nPsychiatrist\r\nNeurologist\r\nRadiologist\r\nAnesthesiologist\r\nSurgeon\r\nPhysician executive",
-                                            "allowUserValue": false
+                                            "options": [{
+                                                "value": "Pediatrician",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Obstetricians/gynecologist (OBGYNs)",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Cardiologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Oncologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Gastroenterologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Pulmonologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Infectious disease",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Nephrologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Endocrinologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Ophthalmologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Otolaryngologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Dermatologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Psychiatrist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Neurologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Radiologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Anesthesiologist",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Surgeon",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Physician executive",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
                                         }
                                     },
                                     "alignment": {
@@ -652,6 +721,7 @@
                                         "type": "MultiLineText",
                                         "model": {
                                             "_internalName": "Diagnosis",
+                                            "description": "Diagnosis",
                                             "title": {
                                                 "text": "Diagnosis",
                                                 "visible": false
@@ -663,7 +733,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Diagnosis",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -686,6 +755,7 @@
                                         "type": "MultiLineText",
                                         "model": {
                                             "_internalName": "Prescription",
+                                            "description": "Prescription",
                                             "title": {
                                                 "text": "Prescription",
                                                 "visible": false
@@ -697,7 +767,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Prescription",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -750,7 +819,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nfd.rendered(function() {\r\n    \r\n    //disable visit date fields\r\n    fd.field('VisitDate').disabled = true;\r\n    //set Vist Date to the current date\r\n    fd.field('VisitDate').value = new Date();\r\n\r\n    //load the Moment.js library to calculate patient's age and disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calendarSetUp();\r\n\r\n        });\r\n\r\n});\r\n\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}",
+    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable visit date fields\r\n    fd.field('VisitDate').disabled = true;\r\n    //set Vist Date to the current date\r\n    fd.field('VisitDate').value = new Date();\r\n\r\n    //call function on form load\r\n    calendarSetUp();\r\n\r\n});\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nconst calendarSetUp = async () => {\r\n\r\n    // Load external libraries\r\n    await $.getScript('https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js');\r\n\r\n    // Get today's date\r\n    const today = luxon.DateTime.now();\r\n\r\n    const newDate = today.minus({\r\n        years: 18\r\n    });\r\n\r\n    fd.field('BirthDate').widgetOptions = {\r\n        max: newDate.toJSDate(),\r\n        start: 'decade'\r\n    }\r\n}",
     "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span,\n.fd-form .fd-heading{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n/** styling of the disable Date field **/\n.fd-form .visit-date .form-control:disabled,\n.fd-form .visit-date .form-control[readonly],\n.fd-form .visit-date .k-datepicker .k-picker-wrap,\n.fd-form .visit-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .visit-date .k-select {\n    display: none !important;\n}\n\n.fd-form .visit-date input {\n    padding-left: 0px;\n}\n\n/* chnage the color of the logo to white */\n.fd-form .icon{\n    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(170deg) brightness(107%) contrast(100%);\n}",
     "notifySubscribers": false,
     "version": "1.0.2",
@@ -781,5 +850,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }

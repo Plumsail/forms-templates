@@ -304,7 +304,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.rendered(function() {\r\n\r\n    //load the Moment.js library to calculate the minimum allowed date\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n                var today = moment(new Date());\r\n                var newDate = today.subtract(2, 'weeks');\r\n                //future dates and dates prior to two weeks are disabled\r\n                fd.field('CleaningDate').widgetOptions = {\r\n                    min: moment(newDate).toDate(),\r\n                    max: new Date()\r\n                }\r\n\r\n        });\r\n});",
+    "js": "fd.rendered(function() {\r\n    //call function on form Load\r\n    calendarSetUp();\r\n});\r\n\r\n//disable dates in the calendar\r\nconst calendarSetUp = async () => {\r\n    // Load external libraries\r\n    await $.getScript('https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js');\r\n    // Get today's date\r\n    const today = luxon.DateTime.now();\r\n    const newDate = today.minus({\r\n        weeks: 2\r\n    });\r\n    fd.field('CleaningDate').widgetOptions = {\r\n        min: newDate.toJSDate(),\r\n        max: new Date()\r\n    }\r\n}",
     "css": "/* align likert scalequestions */\r\n.fd-form .fd-likert-question-title {\r\n    text-align: center;\r\n}",
     "notifySubscribers": false,
     "version": "1.0.2",
@@ -335,5 +335,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }

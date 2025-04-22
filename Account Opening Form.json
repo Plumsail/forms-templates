@@ -65,6 +65,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "FirstName",
+                                            "description": " First Name",
                                             "title": {
                                                 "text": "Full Name",
                                                 "visible": true
@@ -76,7 +77,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": " First Name",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -96,6 +96,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "LastName",
+                                            "description": "Last Name",
                                             "title": {
                                                 "text": " ",
                                                 "visible": true
@@ -107,7 +108,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Last Name",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -253,6 +253,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "StreetAddress",
+                                            "description": "Street Address",
                                             "title": {
                                                 "text": "Residential Address",
                                                 "visible": true
@@ -264,7 +265,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Street Address",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -286,6 +286,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "StreetAddress1",
+                                            "description": "Street Address Line 2",
                                             "title": {
                                                 "text": "Street Address",
                                                 "visible": false
@@ -297,7 +298,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Street Address Line 2",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -319,6 +319,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "City",
+                                            "description": "City",
                                             "title": {
                                                 "text": "City",
                                                 "visible": false
@@ -330,7 +331,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "City",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -350,6 +350,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "RegionState",
+                                            "description": "Region/State",
                                             "title": {
                                                 "text": "Region/State",
                                                 "visible": false
@@ -361,7 +362,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Region/State",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -383,6 +383,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "PostalZipCode",
+                                            "description": "Postal / Zip Code",
                                             "title": {
                                                 "text": "Postal / Zip Code",
                                                 "visible": false
@@ -394,7 +395,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Postal / Zip Code",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -414,6 +414,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "Country",
+                                            "description": "Country",
                                             "title": {
                                                 "text": "Country",
                                                 "visible": false
@@ -425,7 +426,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Country",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
@@ -464,13 +464,14 @@
                                                 "weight": "Normal"
                                             },
                                             "dataSource": "StaticList",
-                                            "StaticList": {
-                                                "options": "Same as residential address",
-                                                "allowUserValue": false
-                                            },
                                             "cColumns": 3,
-                                            "options": "Same as residential address",
-                                            "allowUserValue": false
+                                            "options": [{
+                                                "value": "Same as residential address",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
                                         }
                                     },
                                     "alignment": {
@@ -487,6 +488,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "MailingStreetAddress",
+                                            "description": "Street Address",
                                             "title": {
                                                 "text": "StreetAddress1",
                                                 "visible": false
@@ -498,7 +500,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Street Address",
                                             "class": "mailing-address",
                                             "cFont": {
                                                 "style": "Normal",
@@ -521,6 +522,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "MailingStreetAddress1",
+                                            "description": "Street Address Line 2",
                                             "title": {
                                                 "text": "StreetAddress1",
                                                 "visible": false
@@ -532,7 +534,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Street Address Line 2",
                                             "class": "mailing-address",
                                             "cFont": {
                                                 "style": "Normal",
@@ -555,6 +556,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "MailingCity",
+                                            "description": "City",
                                             "title": {
                                                 "text": "City1",
                                                 "visible": false
@@ -566,7 +568,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "City",
                                             "class": "mailing-address",
                                             "cFont": {
                                                 "style": "Normal",
@@ -587,6 +588,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "MailingRegionState",
+                                            "description": "Region/State",
                                             "title": {
                                                 "text": "RegionState1",
                                                 "visible": false
@@ -598,7 +600,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Region/State",
                                             "class": "mailing-address",
                                             "cFont": {
                                                 "style": "Normal",
@@ -621,6 +622,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "MailingPostalZipCode",
+                                            "description": "Postal / Zip Code",
                                             "title": {
                                                 "text": "PostalZipCode1",
                                                 "visible": false
@@ -632,7 +634,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Postal / Zip Code",
                                             "class": "mailing-address",
                                             "cFont": {
                                                 "style": "Normal",
@@ -653,6 +654,7 @@
                                         "type": "SingleLineText",
                                         "model": {
                                             "_internalName": "MailingCountry",
+                                            "description": "Country",
                                             "title": {
                                                 "text": "Country1",
                                                 "visible": false
@@ -664,7 +666,6 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Country",
                                             "class": "mailing-address",
                                             "cFont": {
                                                 "style": "Normal",
@@ -715,6 +716,7 @@
                                         "type": "DropDown",
                                         "model": {
                                             "_internalName": "AccountType",
+                                            "description": "Account Type",
                                             "title": {
                                                 "text": "Account Information",
                                                 "visible": true
@@ -726,19 +728,35 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Account Type",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
                                             },
                                             "dataSource": "StaticList",
-                                            "StaticList": {
-                                                "options": "General Account\nPriority Banking\nPreferred Banking\nPrivate Banking\nTime Deposit",
-                                                "allowUserValue": true
-                                            },
                                             "selection": "Single",
-                                            "options": "General Account\nPriority Banking\nPreferred Banking\nPrivate Banking\nTime Deposit",
-                                            "allowUserValue": true
+                                            "options": [{
+                                                "value": "General Account",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Priority Banking",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Preferred Banking",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Private Banking",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Time Deposit",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": true,
+                                            "defaultValue": []
                                         }
                                     },
                                     "alignment": {
@@ -753,6 +771,7 @@
                                         "type": "DropDown",
                                         "model": {
                                             "_internalName": "AccountCategory",
+                                            "description": "Account Category",
                                             "title": {
                                                 "text": " ",
                                                 "visible": true
@@ -764,19 +783,31 @@
                                                 "weight": "Semibold"
                                             },
                                             "wrap": true,
-                                            "description": "Account Category",
                                             "cFont": {
                                                 "style": "Normal",
                                                 "weight": "Normal"
                                             },
                                             "dataSource": "StaticList",
-                                            "StaticList": {
-                                                "options": "Individual\nJoint\nPartnership\nMixed",
-                                                "allowUserValue": false
-                                            },
                                             "selection": "Single",
-                                            "options": "Individual\nJoint\nPartnership\nMixed",
-                                            "allowUserValue": false
+                                            "options": [{
+                                                "value": "Individual",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Joint",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Partnership",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }, {
+                                                "value": "Mixed",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
                                         }
                                     },
                                     "alignment": {
@@ -923,13 +954,14 @@
                                                 "weight": "Normal"
                                             },
                                             "dataSource": "StaticList",
-                                            "StaticList": {
-                                                "options": "I hereby declare that the information provided in the application for a new bank account is true, complete, and accurate to the best of my knowledge. I understand that the bank relies on the information provided in this application for the purpose of opening and maintaining the account.",
-                                                "allowUserValue": false
-                                            },
                                             "cColumns": 1,
-                                            "options": "I hereby declare that the information provided in the application for a new bank account is true, complete, and accurate to the best of my knowledge. I understand that the bank relies on the information provided in this application for the purpose of opening and maintaining the account.",
-                                            "allowUserValue": false
+                                            "options": [{
+                                                "value": "I hereby declare that the information provided in the application for a new bank account is true, complete, and accurate to the best of my knowledge. I understand that the bank relies on the information provided in this application for the purpose of opening and maintaining the account.",
+                                                "backgroundColor": null,
+                                                "textColor": null
+                                            }],
+                                            "allowUserValue": false,
+                                            "defaultValue": []
                                         }
                                     },
                                     "alignment": {
@@ -1039,7 +1071,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.rendered(function() {\r\n    //disable CompletionDate field\r\n    fd.field('CompletionDate').disabled = true;\r\n    //set CompletionDate to the current date\r\n    fd.field('CompletionDate').value = new Date();\r\n    \r\n    //load the Moment.js library to disable dates\r\n    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')\r\n        .then(function() {\r\n            calendarSetUp();\r\n        });\r\n        \r\n    fd.field('Same').$on('change', mailingAddressSame);    \r\n    mailingAddressSame();\r\n    \r\n});\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nfunction calendarSetUp() {\r\n    var today = moment(new Date());\r\n    var newDate = today.subtract(18, 'years');\r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        max: moment(newDate).toDate(),\r\n        start: 'decade'\r\n    }\r\n}\r\n\r\n//fill out Mailing Address and hide fields\r\nfunction mailingAddressSame() {\r\n    if(fd.field('Same').value.length > 0) {\r\n        fd.field('MailingStreetAddress').value = fd.field('StreetAddress').value;\r\n        fd.field('MailingStreetAddress1').value = fd.field('StreetAddress1').value;\r\n        fd.field('MailingCity').value = fd.field('City').value;\r\n        fd.field('MailingRegionState').value = fd.field('RegionState').value;\r\n        fd.field('MailingPostalZipCode').value = fd.field('PostalZipCode').value;\r\n        fd.field('MailingCountry').value = fd.field('Country').value;\r\n        \r\n        fd.field('MailingStreetAddress').disabled = true;\r\n        fd.field('MailingStreetAddress1').disabled = true;\r\n        fd.field('MailingCity').disabled = true;\r\n        fd.field('MailingRegionState').disabled = true;\r\n        fd.field('MailingPostalZipCode').disabled = true;\r\n        fd.field('MailingCountry').disabled = true;\r\n    }\r\n    else {\r\n        fd.field('MailingStreetAddress').clear();\r\n        fd.field('MailingStreetAddress1').clear();\r\n        fd.field('MailingCity').clear();\r\n        fd.field('MailingRegionState').clear();\r\n        fd.field('MailingPostalZipCode').clear();\r\n        fd.field('MailingCountry').clear();\r\n        \r\n        \r\n        fd.field('MailingStreetAddress').disabled = false;\r\n        fd.field('MailingStreetAddress1').disabled = false;\r\n        fd.field('MailingCity').disabled = false;\r\n        fd.field('MailingRegionState').disabled = false;\r\n        fd.field('MailingPostalZipCode').disabled = false;\r\n        fd.field('MailingCountry').disabled = false;\r\n    }\r\n}",
+    "js": "fd.rendered(function() {\r\n    //disable CompletionDate field\r\n    fd.field('CompletionDate').disabled = true;\r\n    //set CompletionDate to the current date\r\n    fd.field('CompletionDate').value = new Date();\r\n\r\n\r\n    //call function on form load\r\n    calendarSetUp();\r\n\r\n    fd.field('Same').$on('change', mailingAddressSame);\r\n    mailingAddressSame();\r\n\r\n});\r\n\r\n//disable dates to allow only 18+ users\r\n//set up calendar start view\r\nconst calendarSetUp = async () => {\r\n\r\n    // Load external libraries\r\n    await $.getScript('https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js');\r\n\r\n    // Get today's date\r\n    const today = luxon.DateTime.now();\r\n\r\n    const newDate = today.minus({\r\n        years: 18\r\n    });\r\n\r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        max: newDate.toJSDate(),\r\n        start: 'decade'\r\n    }\r\n}\r\n\r\n//fill out Mailing Address and hide fields\r\nfunction mailingAddressSame() {\r\n    if (fd.field('Same').value.length > 0) {\r\n        fd.field('MailingStreetAddress').value = fd.field('StreetAddress').value;\r\n        fd.field('MailingStreetAddress1').value = fd.field('StreetAddress1').value;\r\n        fd.field('MailingCity').value = fd.field('City').value;\r\n        fd.field('MailingRegionState').value = fd.field('RegionState').value;\r\n        fd.field('MailingPostalZipCode').value = fd.field('PostalZipCode').value;\r\n        fd.field('MailingCountry').value = fd.field('Country').value;\r\n\r\n        fd.field('MailingStreetAddress').disabled = true;\r\n        fd.field('MailingStreetAddress1').disabled = true;\r\n        fd.field('MailingCity').disabled = true;\r\n        fd.field('MailingRegionState').disabled = true;\r\n        fd.field('MailingPostalZipCode').disabled = true;\r\n        fd.field('MailingCountry').disabled = true;\r\n    } else {\r\n        fd.field('MailingStreetAddress').clear();\r\n        fd.field('MailingStreetAddress1').clear();\r\n        fd.field('MailingCity').clear();\r\n        fd.field('MailingRegionState').clear();\r\n        fd.field('MailingPostalZipCode').clear();\r\n        fd.field('MailingCountry').clear();\r\n\r\n\r\n        fd.field('MailingStreetAddress').disabled = false;\r\n        fd.field('MailingStreetAddress1').disabled = false;\r\n        fd.field('MailingCity').disabled = false;\r\n        fd.field('MailingRegionState').disabled = false;\r\n        fd.field('MailingPostalZipCode').disabled = false;\r\n        fd.field('MailingCountry').disabled = false;\r\n    }\r\n}",
     "css": "/** styling of the disable Date field **/\n.fd-form .completion-date .form-control:disabled,\n.fd-form .completion-date .form-control[readonly],\n.fd-form .completion-date .k-datepicker .k-picker-wrap,\n.fd-form .completion-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-select {\n    display: none !important;\n}",
     "notifySubscribers": false,
     "version": "1.0.2",
@@ -1070,5 +1102,6 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "azureB2CProperties": null,
+    "connection": null
 }
