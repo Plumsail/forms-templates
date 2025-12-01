@@ -12,400 +12,729 @@
                 "width": null,
                 "color": null
             },
-            "rows": [{
-                "cells": [{
-                    "component": {
-                        "type": "Image",
-                        "model": {
-                            "_internalName": "Image1",
-                            "height": 250,
-                            "class": "img",
-                            "target": "_blank",
-                            "image": "https://plumsail.com/assets/forms/templates/christmas-menu-pre-order-form-banner.webp"
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Image",
+                                "model": {
+                                    "_internalName": "Image1",
+                                    "height": 250,
+                                    "class": "img",
+                                    "target": "_blank",
+                                    "image": "https://plumsail.com/assets/forms/templates/christmas-menu-pre-order-form-banner.webp"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Left",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Left",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [15, null, null, null],
-                    "component": {
-                        "type": "Heading",
-                        "model": {
-                            "_internalName": "Heading1",
-                            "heading": "Christmas Menu Pre Order Form",
-                            "view": "Normal",
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading1",
+                                    "heading": "Christmas Menu Pre Order Form",
+                                    "view": "Normal",
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H1",
+                                    "textAlignment": "Center"
+                                }
                             },
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "size": "H1",
-                            "textAlignment": "Center"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "SingleLineText",
-                        "model": {
-                            "_internalName": "PrimaryContactName",
-                            "title": {
-                                "text": "Primary Contact Name",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "PrimaryContactName",
+                                    "title": {
+                                        "text": "Primary Contact Name",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                            },
-                            "type": "Anything"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "SingleLineText",
-                        "model": {
-                            "_internalName": "Email",
-                            "title": {
-                                "text": "Email",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "Email",
+                                    "title": {
+                                        "text": "Email",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "username@domain.com",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "E-mail",
+                                    "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                    "error": "This field must contain a valid e-mail address."
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cHint": "username@domain.com",
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "Phone",
+                                "model": {
+                                    "_internalName": "Phone1",
+                                    "countries": [
+                                        "AF",
+                                        "AX",
+                                        "AL",
+                                        "DZ",
+                                        "AS",
+                                        "AD",
+                                        "AO",
+                                        "AI",
+                                        "AQ",
+                                        "AG",
+                                        "AR",
+                                        "AM",
+                                        "AW",
+                                        "AC",
+                                        "AU",
+                                        "AT",
+                                        "AZ",
+                                        "BS",
+                                        "BH",
+                                        "BD",
+                                        "BB",
+                                        "BY",
+                                        "BE",
+                                        "BZ",
+                                        "BJ",
+                                        "BM",
+                                        "BT",
+                                        "BO",
+                                        "BA",
+                                        "BW",
+                                        "BR",
+                                        "IO",
+                                        "BN",
+                                        "BG",
+                                        "BF",
+                                        "BI",
+                                        "KH",
+                                        "CM",
+                                        "CA",
+                                        "CV",
+                                        "KY",
+                                        "CF",
+                                        "TD",
+                                        "CL",
+                                        "CN",
+                                        "CX",
+                                        "CC",
+                                        "CO",
+                                        "KM",
+                                        "CG",
+                                        "CK",
+                                        "CR",
+                                        "HR",
+                                        "CU",
+                                        "CY",
+                                        "CZ",
+                                        "CD",
+                                        "DK",
+                                        "DJ",
+                                        "DM",
+                                        "DO",
+                                        "EC",
+                                        "EG",
+                                        "SV",
+                                        "GQ",
+                                        "ER",
+                                        "EE",
+                                        "SZ",
+                                        "ET",
+                                        "FK",
+                                        "FO",
+                                        "FJ",
+                                        "FI",
+                                        "FR",
+                                        "GF",
+                                        "PF",
+                                        "GA",
+                                        "GM",
+                                        "GE",
+                                        "DE",
+                                        "GH",
+                                        "GI",
+                                        "GR",
+                                        "GL",
+                                        "GD",
+                                        "GP",
+                                        "GU",
+                                        "GT",
+                                        "GG",
+                                        "GN",
+                                        "GW",
+                                        "GY",
+                                        "HT",
+                                        "VA",
+                                        "HN",
+                                        "HK",
+                                        "HU",
+                                        "IS",
+                                        "IN",
+                                        "ID",
+                                        "IR",
+                                        "IQ",
+                                        "IE",
+                                        "IM",
+                                        "IL",
+                                        "IT",
+                                        "CI",
+                                        "JM",
+                                        "JP",
+                                        "JE",
+                                        "JO",
+                                        "KZ",
+                                        "KE",
+                                        "KI",
+                                        "KP",
+                                        "KR",
+                                        "XK",
+                                        "KW",
+                                        "KG",
+                                        "LA",
+                                        "LV",
+                                        "LB",
+                                        "LS",
+                                        "LR",
+                                        "LY",
+                                        "LI",
+                                        "LT",
+                                        "LU",
+                                        "MO",
+                                        "MG",
+                                        "MW",
+                                        "MY",
+                                        "MV",
+                                        "ML",
+                                        "MT",
+                                        "MH",
+                                        "MQ",
+                                        "MR",
+                                        "MU",
+                                        "YT",
+                                        "MX",
+                                        "FM",
+                                        "MD",
+                                        "MC",
+                                        "MN",
+                                        "ME",
+                                        "MS",
+                                        "MA",
+                                        "MZ",
+                                        "MM",
+                                        "NA",
+                                        "NR",
+                                        "NP",
+                                        "NL",
+                                        "NC",
+                                        "NZ",
+                                        "NI",
+                                        "NE",
+                                        "NG",
+                                        "NU",
+                                        "NF",
+                                        "MK",
+                                        "MP",
+                                        "NO",
+                                        "OM",
+                                        "PK",
+                                        "PW",
+                                        "PS",
+                                        "PA",
+                                        "PG",
+                                        "PY",
+                                        "PE",
+                                        "PH",
+                                        "PN",
+                                        "PL",
+                                        "PT",
+                                        "PR",
+                                        "QA",
+                                        "RE",
+                                        "RO",
+                                        "RU",
+                                        "RW",
+                                        "BL",
+                                        "SH",
+                                        "KN",
+                                        "LC",
+                                        "MF",
+                                        "PM",
+                                        "VC",
+                                        "WS",
+                                        "SM",
+                                        "ST",
+                                        "SA",
+                                        "SN",
+                                        "RS",
+                                        "SC",
+                                        "SL",
+                                        "SG",
+                                        "SX",
+                                        "SK",
+                                        "SI",
+                                        "SB",
+                                        "SO",
+                                        "ZA",
+                                        "GS",
+                                        "SS",
+                                        "ES",
+                                        "LK",
+                                        "SD",
+                                        "SR",
+                                        "SJ",
+                                        "SE",
+                                        "CH",
+                                        "SY",
+                                        "TW",
+                                        "TJ",
+                                        "TZ",
+                                        "TH",
+                                        "TL",
+                                        "TG",
+                                        "TK",
+                                        "TO",
+                                        "TT",
+                                        "TN",
+                                        "TR",
+                                        "TM",
+                                        "TC",
+                                        "TV",
+                                        "UG",
+                                        "UA",
+                                        "AE",
+                                        "GB",
+                                        "US",
+                                        "UY",
+                                        "UZ",
+                                        "VU",
+                                        "VE",
+                                        "VN",
+                                        "VG",
+                                        "VI",
+                                        "WF",
+                                        "YE",
+                                        "ZM",
+                                        "ZW"
+                                    ],
+                                    "width": 120,
+                                    "title": {
+                                        "text": "Phone1",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    }
+                                }
                             },
-                            "type": "E-mail",
-                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                            "error": "This field must contain a valid e-mail address."
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 6
-                    }
-                }, {
-                    "component": {
-                        "type": "MaskedInput",
-                        "model": {
-                            "_internalName": "Phone",
-                            "title": {
-                                "text": "Phone",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Date",
+                                "model": {
+                                    "_internalName": "PartyDate",
+                                    "title": {
+                                        "text": "Party Date",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "startDate": {
+                                        "mode": "Fixed",
+                                        "date": "2024-12-19T19:00:00.000Z"
+                                    },
+                                    "endDate": {
+                                        "mode": "Fixed",
+                                        "date": "2024-12-24T19:00:00.000Z"
+                                    }
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                            },
-                            "mask": "000-0000-0000"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 6
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "Date",
-                        "model": {
-                            "_internalName": "PartyDate",
-                            "title": {
-                                "text": "Party Date",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                10,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "DataTable",
+                                "model": {
+                                    "_internalName": "MenuSelection",
+                                    "title": {
+                                        "text": "Menu Selection",
+                                        "visible": true
+                                    },
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "newLine": "Top",
+                                    "delete": "Last",
+                                    "columns": [
+                                        {
+                                            "_internalName": "Column1",
+                                            "title": "Guest Name",
+                                            "required": false,
+                                            "type": "String",
+                                            "aggregates": [
+                                                {
+                                                    "type": "count",
+                                                    "template": "Guest Count: {0}"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_internalName": "Appetizers",
+                                            "title": "Appetizers",
+                                            "required": false,
+                                            "type": "Dropdown",
+                                            "aggregates": [],
+                                            "selection": "Single",
+                                            "dataSource": "StaticList",
+                                            "allowUserValue": false,
+                                            "options": [
+                                                {
+                                                    "value": "Cheese and Charcuterie Board",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Mini Quiches",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Bruschetta",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Cranberry Brie Bites",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Mini Sausage Rolls",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Festive Veggie Skewers",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }
+                                            ],
+                                            "defaultValue": null
+                                        },
+                                        {
+                                            "_internalName": "MainCourse",
+                                            "title": "Main Course",
+                                            "required": false,
+                                            "type": "Dropdown",
+                                            "aggregates": [],
+                                            "selection": "Single",
+                                            "dataSource": "StaticList",
+                                            "allowUserValue": false,
+                                            "options": [
+                                                {
+                                                    "value": "Roasted Turkey with Gravy and Stuffing",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Honey-Glazed Ham",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Prime Rib",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Roasted Vegetable Wellington",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Creamy Mushroom Risotto",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Lentil Shepherd's Pie",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }
+                                            ],
+                                            "defaultValue": null
+                                        },
+                                        {
+                                            "_internalName": "Dessert",
+                                            "title": "Dessert",
+                                            "required": false,
+                                            "type": "Dropdown",
+                                            "aggregates": [],
+                                            "selection": "Single",
+                                            "dataSource": "StaticList",
+                                            "allowUserValue": false,
+                                            "options": [
+                                                {
+                                                    "value": "Christmas Pudding with Brandy Sauce",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Yule Log",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Fruit Cake",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Chocolate Lava Cake",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Gingerbread Cheesecake",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Peppermint Bark",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }
+                                            ],
+                                            "defaultValue": null
+                                        },
+                                        {
+                                            "_internalName": "Beverages",
+                                            "title": "Beverages",
+                                            "required": false,
+                                            "type": "Dropdown",
+                                            "aggregates": [],
+                                            "selection": "Multiple",
+                                            "dataSource": "StaticList",
+                                            "allowUserValue": false,
+                                            "options": [
+                                                {
+                                                    "value": "Wine",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Beer",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Champagne",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Mulled Wine",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Christmas Margarita",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Juice",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Water",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                },
+                                                {
+                                                    "value": "Hot Chocolate",
+                                                    "backgroundColor": null,
+                                                    "textColor": null
+                                                }
+                                            ],
+                                            "defaultValue": null
+                                        },
+                                        {
+                                            "_internalName": "Allergies",
+                                            "title": "Restrictions or Allergies",
+                                            "required": false,
+                                            "type": "String",
+                                            "aggregates": []
+                                        }
+                                    ]
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                            },
-                            "startDate": "2024-12-19T19:00:00.000Z",
-                            "endDate": "2024-12-24T19:00:00.000Z"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [10, null, null, null],
-                    "component": {
-                        "type": "DataTable",
-                        "model": {
-                            "_internalName": "MenuSelection",
-                            "title": {
-                                "text": "Menu Selection",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Submit",
+                                "model": {
+                                    "_internalName": "Submit1",
+                                    "text": "Submit",
+                                    "savingText": "Submitting...",
+                                    "type": "Primary",
+                                    "click": "return fd.save();"
+                                }
                             },
-                            "required": true,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "newLine": "Top",
-                            "delete": "Last",
-                            "columns": [{
-                                "_internalName": "Column1",
-                                "title": "Guest Name",
-                                "required": false,
-                                "type": "String",
-                                "aggregates": [{
-                                    "type": "count",
-                                    "template": "Guest Count: {0}"
-                                }]
-                            }, {
-                                "_internalName": "Appetizers",
-                                "title": "Appetizers",
-                                "required": false,
-                                "type": "Dropdown",
-                                "aggregates": [],
-                                "selection": "Single",
-                                "dataSource": "StaticList",
-                                "allowUserValue": false,
-                                "options": [{
-                                    "value": "Cheese and Charcuterie Board",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Mini Quiches",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Bruschetta",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Cranberry Brie Bites",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Mini Sausage Rolls",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Festive Veggie Skewers",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }],
-                                "defaultValue": null
-                            }, {
-                                "_internalName": "MainCourse",
-                                "title": "Main Course",
-                                "required": false,
-                                "type": "Dropdown",
-                                "aggregates": [],
-                                "selection": "Single",
-                                "dataSource": "StaticList",
-                                "allowUserValue": false,
-                                "options": [{
-                                    "value": "Roasted Turkey with Gravy and Stuffing",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Honey-Glazed Ham",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Prime Rib",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Roasted Vegetable Wellington",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Creamy Mushroom Risotto",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Lentil Shepherd's Pie",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }],
-                                "defaultValue": null
-                            }, {
-                                "_internalName": "Dessert",
-                                "title": "Dessert",
-                                "required": false,
-                                "type": "Dropdown",
-                                "aggregates": [],
-                                "selection": "Single",
-                                "dataSource": "StaticList",
-                                "allowUserValue": false,
-                                "options": [{
-                                    "value": "Christmas Pudding with Brandy Sauce",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Yule Log",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Fruit Cake",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Chocolate Lava Cake",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Gingerbread Cheesecake",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Peppermint Bark",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }],
-                                "defaultValue": null
-                            }, {
-                                "_internalName": "Beverages",
-                                "title": "Beverages",
-                                "required": false,
-                                "type": "Dropdown",
-                                "aggregates": [],
-                                "selection": "Multiple",
-                                "dataSource": "StaticList",
-                                "allowUserValue": false,
-                                "options": [{
-                                    "value": "Wine",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Beer",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Champagne",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Mulled Wine",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Christmas Margarita",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Juice",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Water",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }, {
-                                    "value": "Hot Chocolate",
-                                    "backgroundColor": null,
-                                    "textColor": null
-                                }],
-                                "defaultValue": null
-                            }, {
-                                "_internalName": "Allergies",
-                                "title": "Restrictions or Allergies",
-                                "required": false,
-                                "type": "String",
-                                "aggregates": []
-                            }]
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [15, null, null, null],
-                    "component": {
-                        "type": "Submit",
-                        "model": {
-                            "_internalName": "Submit1",
-                            "text": "Submit",
-                            "savingText": "Submitting...",
-                            "type": "Primary",
-                            "click": "return fd.save();"
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
+                    ]
+                }
+            ]
         }
     },
     "tablet": null,
@@ -430,8 +759,8 @@
     },
     "timezone": "Etc/GMT-12",
     "culture": "en",
-    "userLanguage": "",
-    "userCulture": "",
+    "userLanguage": null,
+    "userCulture": null,
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,
@@ -442,6 +771,7 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
+    "entraExternalIdProperties": null,
     "azureB2CProperties": null,
     "connection": null
 }

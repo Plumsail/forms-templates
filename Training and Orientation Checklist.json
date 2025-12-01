@@ -1,0 +1,572 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading1",
+                                    "heading": "Training and Orientation",
+                                    "view": "Line",
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H1",
+                                    "textAlignment": "Center"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                15,
+                                null
+                            ],
+                            "component": {
+                                "type": "Accordion",
+                                "model": {
+                                    "_internalName": "Accordion1",
+                                    "mode": "Single",
+                                    "border": {
+                                        "width": null,
+                                        "color": ""
+                                    },
+                                    "frame": {
+                                        "horizontal": 10,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "items": [
+                                        {
+                                            "_internalName": "Item1",
+                                            "title": "Employee information",
+                                            "expanded": false,
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "Name",
+                                                                            "title": {
+                                                                                "text": "Name",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Date",
+                                                                        "model": {
+                                                                            "_internalName": "StartDate",
+                                                                            "title": {
+                                                                                "text": "Start Date",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "startDate": {
+                                                                                "mode": "Fixed"
+                                                                            },
+                                                                            "endDate": {
+                                                                                "mode": "Fixed"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DropDown",
+                                                                        "model": {
+                                                                            "_internalName": "Department",
+                                                                            "title": {
+                                                                                "text": "Department",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "selection": "Single",
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "Human Resources (HR)",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Information Technology (IT)",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Finance and Accounting",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Sales",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Marketing",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Operations",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Product Development",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Engineering",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Customer Service / Support",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Legal",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Executive / Administration",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": false,
+                                                                            "defaultValue": []
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "Manager",
+                                                                            "title": {
+                                                                                "text": "Manager",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "HRTrainerRepresentat",
+                                                                            "title": {
+                                                                                "text": "HR/Trainer Representative",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "Item2",
+                                            "title": "General Company Orientation",
+                                            "expanded": false,
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DataTable",
+                                                                        "model": {
+                                                                            "_internalName": "General",
+                                                                            "title": {
+                                                                                "text": "General",
+                                                                                "visible": false
+                                                                            },
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "newLine": "Top",
+                                                                            "delete": "Last",
+                                                                            "columns": [
+                                                                                {
+                                                                                    "_internalName": "Training",
+                                                                                    "title": "Training",
+                                                                                    "required": false,
+                                                                                    "type": "String",
+                                                                                    "aggregates": []
+                                                                                },
+                                                                                {
+                                                                                    "_internalName": "Responsible",
+                                                                                    "title": "Responsible Party",
+                                                                                    "required": false,
+                                                                                    "type": "String",
+                                                                                    "aggregates": []
+                                                                                },
+                                                                                {
+                                                                                    "_internalName": "Date",
+                                                                                    "title": "Date Completed",
+                                                                                    "required": false,
+                                                                                    "type": "DateTime",
+                                                                                    "aggregates": [],
+                                                                                    "interval": 15
+                                                                                },
+                                                                                {
+                                                                                    "_internalName": "Status",
+                                                                                    "title": "Status",
+                                                                                    "required": false,
+                                                                                    "type": "Boolean",
+                                                                                    "aggregates": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "Item3",
+                                            "title": "Departmental and Role-Specific Training",
+                                            "expanded": false,
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DataTable",
+                                                                        "model": {
+                                                                            "_internalName": "Role",
+                                                                            "title": {
+                                                                                "text": "Role",
+                                                                                "visible": false
+                                                                            },
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "newLine": "Top",
+                                                                            "delete": "Last",
+                                                                            "columns": [
+                                                                                {
+                                                                                    "_internalName": "Training",
+                                                                                    "title": "Training",
+                                                                                    "required": false,
+                                                                                    "type": "String",
+                                                                                    "aggregates": []
+                                                                                },
+                                                                                {
+                                                                                    "_internalName": "Responsible",
+                                                                                    "title": "Responsible Party",
+                                                                                    "required": false,
+                                                                                    "type": "String",
+                                                                                    "aggregates": []
+                                                                                },
+                                                                                {
+                                                                                    "_internalName": "Date",
+                                                                                    "title": "Date Completed",
+                                                                                    "required": false,
+                                                                                    "type": "DateTime",
+                                                                                    "aggregates": [],
+                                                                                    "interval": 15
+                                                                                },
+                                                                                {
+                                                                                    "_internalName": "Status",
+                                                                                    "title": "Status",
+                                                                                    "required": false,
+                                                                                    "type": "Boolean",
+                                                                                    "aggregates": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Submit",
+                                "model": {
+                                    "_internalName": "Submit1",
+                                    "text": "Submit",
+                                    "savingText": "Submitting...",
+                                    "type": "Primary",
+                                    "click": "return fd.save();"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "fd.rendered(function () {\r\n    const readOnlyColumns = ['Training', 'Responsible'];\r\n\r\n    // Initialize the 'General' table\r\n    initializeDataTable('General', general, readOnlyColumns);\r\n\r\n    // Initialize the 'Role' table\r\n    initializeDataTable('Role', roleSpecific, readOnlyColumns);\r\n});\r\n\r\nfunction initializeDataTable(controlName, defaultData, readOnlyFields) {\r\n    const dt = fd.control(controlName);\r\n\r\n    // Set default data if the table is empty\r\n    if (dt.value.length < 1) {\r\n        dt.value = defaultData;\r\n    }\r\n    // Hide add and delete column\r\n    $(dt.$el).find('.k-toolbar').hide();\r\n    $(dt.$el).find('.fd-datatable table tr th:last-child,.fd-datatable table tr td:last-child').hide();\r\n    // Configure specified columns to be read-only\r\n    readOnlyFields.forEach(fieldName => {\r\n        const column = dt.columns.find(c => c.field === fieldName);\r\n        // Make column read-only\r\n        column.editable = () => false;\r\n    });\r\n}\r\n\r\nlet general = [\r\n    { \"Training\": \"Welcome & Company History/Mission Review\", \"Responsible\": \"HR\" },\r\n    { \"Training\": \"Review of Employee Handbook (Includes general policies)\", \"Responsible\": \"HR\" },\r\n    { \"Training\": \"Workplace Health & Safety Training\", \"Responsible\": \"HR/Trainer\" },\r\n    { \"Training\": \"Code of Conduct & Ethics Training\", \"Responsible\": \"HR\" },\r\n    { \"Training\": \"Sexual Harassment & Anti-Discrimination Policy Review\", \"Responsible\": \"HR\" },\r\n    { \"Training\": \"IT Security & Data Privacy Policy Review\", \"Responsible\": \"IT/HR\" }\r\n];\r\n \r\nlet roleSpecific = [\r\n    { \"Training\": \"Introduction to Team/Team Structure\", \"Responsible\": \"Manager\" },\r\n    { \"Training\": \"Role and Key Performance Indicators (KPIs) Review\", \"Responsible\": \"Manager\" },\r\n    { \"Training\": \"Overview of Current Projects/Priorities\", \"Responsible\": \"Manager\" },\r\n    { \"Training\": \"Primary Role-Specific Software/Tool Training\", \"Responsible\": \"Manager/Peer\" },\r\n    { \"Training\": \"Process for Requesting Support/Escalation\", \"Responsible\": \"Manager\" },\r\n    { \"Training\": \"Introduction to Key Cross-Functional Contacts\", \"Responsible\": \"Manager\" }\r\n];",
+    "css": "",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "themeId": "f5c7911cfd6d787b7e719abed560d2de",
+        "bodyText": "#262626",
+        "bodyBackground": "#fcfcfc",
+        "fontSize": 18,
+        "fontWeight": 300,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "isDark": false,
+        "primary": "#30af53",
+        "fontFamily": "Lato",
+        "fontType": 1
+    },
+    "timezone": "Etc/GMT",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": true,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null
+}

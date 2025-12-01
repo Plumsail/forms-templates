@@ -12,506 +12,823 @@
                 "width": null,
                 "color": null
             },
-            "rows": [{
-                "cells": [{
-                    "padding": [null, null, 100, null],
-                    "component": {
-                        "type": "Grid",
-                        "model": {
-                            "_internalName": "Grid1",
-                            "stacked": "md",
-                            "frame": {
-                                "horizontal": 20,
-                                "vertical": null,
-                                "radius": 2
-                            },
-                            "border": {
-                                "width": 1,
-                                "color": "#a1b2bc"
-                            },
-                            "class": "fd-blur-background",
-                            "fill": "#ffffffb3",
-                            "rows": [{
-                                "cells": [{
-                                    "component": {
-                                        "type": "Heading",
-                                        "model": {
-                                            "_internalName": "Heading1",
-                                            "heading": "Meeting Room Reservation",
-                                            "view": "Normal",
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "frame": {
-                                                "horizontal": null,
-                                                "vertical": null,
-                                                "radius": null
-                                            },
-                                            "size": "H1",
-                                            "textAlignment": "Left"
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                null,
+                                null,
+                                100,
+                                null
+                            ],
+                            "component": {
+                                "type": "Grid",
+                                "model": {
+                                    "_internalName": "Grid1",
+                                    "stacked": "md",
+                                    "frame": {
+                                        "horizontal": 20,
+                                        "vertical": null,
+                                        "radius": 2
+                                    },
+                                    "border": {
+                                        "width": 1,
+                                        "color": "#a1b2bc"
+                                    },
+                                    "class": "fd-blur-background",
+                                    "fill": "#ffffffb3",
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Heading",
+                                                        "model": {
+                                                            "_internalName": "Heading1",
+                                                            "heading": "Meeting Room Reservation",
+                                                            "view": "Normal",
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": null
+                                                            },
+                                                            "size": "H1",
+                                                            "textAlignment": "Left"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        null,
+                                                        0,
+                                                        null,
+                                                        0
+                                                    ],
+                                                    "component": {
+                                                        "type": "Wizard",
+                                                        "model": {
+                                                            "_internalName": "Wizard1",
+                                                            "direction": "Right",
+                                                            "step": {
+                                                                "shape": "Tab"
+                                                            },
+                                                            "nextText": "Next",
+                                                            "backText": "Back",
+                                                            "finishText": "Finish",
+                                                            "savingText": "Submitting...",
+                                                            "finish": "return fd.save();",
+                                                            "steps": [
+                                                                {
+                                                                    "_internalName": "Step2",
+                                                                    "title": "Room",
+                                                                    "component": {
+                                                                        "type": "Grid",
+                                                                        "model": {
+                                                                            "stacked": "md",
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "border": {
+                                                                                "width": null,
+                                                                                "color": null
+                                                                            },
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cells": [
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "DropDown",
+                                                                                                "model": {
+                                                                                                    "_internalName": "MeetingRoom",
+                                                                                                    "title": {
+                                                                                                        "text": "Meeting Room",
+                                                                                                        "visible": true
+                                                                                                    },
+                                                                                                    "orientation": "Vertical",
+                                                                                                    "required": false,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    },
+                                                                                                    "dataSource": "StaticList",
+                                                                                                    "selection": "Single",
+                                                                                                    "options": [
+                                                                                                        {
+                                                                                                            "value": "Red Room",
+                                                                                                            "backgroundColor": null,
+                                                                                                            "textColor": null
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "value": "Green Room",
+                                                                                                            "backgroundColor": null,
+                                                                                                            "textColor": null
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "value": "Purple Room",
+                                                                                                            "backgroundColor": null,
+                                                                                                            "textColor": null
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "value": "Blue Room",
+                                                                                                            "backgroundColor": null,
+                                                                                                            "textColor": null
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "defaultValue": []
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": {
+                                                                                                "width": 12
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "_internalName": "Step1",
+                                                                    "title": "Time",
+                                                                    "component": {
+                                                                        "type": "Grid",
+                                                                        "model": {
+                                                                            "stacked": "md",
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "border": {
+                                                                                "width": null,
+                                                                                "color": null
+                                                                            },
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cells": [
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "DateTime",
+                                                                                                "model": {
+                                                                                                    "_internalName": "StartTime",
+                                                                                                    "title": {
+                                                                                                        "text": "Meeting Time",
+                                                                                                        "visible": true
+                                                                                                    },
+                                                                                                    "orientation": "Vertical",
+                                                                                                    "required": true,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "cHint": "Start Time",
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    },
+                                                                                                    "interval": 30,
+                                                                                                    "startTime": "2024-11-18T04:00:00.000Z",
+                                                                                                    "endTime": "2024-11-18T15:00:00.000Z",
+                                                                                                    "startDate": {
+                                                                                                        "mode": "Fixed"
+                                                                                                    },
+                                                                                                    "endDate": {
+                                                                                                        "mode": "Fixed"
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": {
+                                                                                                "width": 6
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "DateTime",
+                                                                                                "model": {
+                                                                                                    "_internalName": "EndTime",
+                                                                                                    "title": {
+                                                                                                        "text": " ",
+                                                                                                        "visible": true
+                                                                                                    },
+                                                                                                    "orientation": "Vertical",
+                                                                                                    "required": false,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "cHint": "End Time",
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    },
+                                                                                                    "interval": 30,
+                                                                                                    "startTime": "2024-11-18T04:00:00.000Z",
+                                                                                                    "endTime": "2024-11-18T15:00:00.000Z",
+                                                                                                    "startDate": {
+                                                                                                        "mode": "Relative",
+                                                                                                        "fieldInternalName": null,
+                                                                                                        "offsetUnit": "Day"
+                                                                                                    },
+                                                                                                    "endDate": {
+                                                                                                        "mode": "Fixed"
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": {
+                                                                                                "width": 6
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "_internalName": "Step3",
+                                                                    "title": "Attendees",
+                                                                    "component": {
+                                                                        "type": "Grid",
+                                                                        "model": {
+                                                                            "stacked": "md",
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "border": {
+                                                                                "width": null,
+                                                                                "color": null
+                                                                            },
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cells": [
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "Number",
+                                                                                                "model": {
+                                                                                                    "_internalName": "NumberOfAttendees",
+                                                                                                    "title": {
+                                                                                                        "text": "Number of Attendees",
+                                                                                                        "visible": true
+                                                                                                    },
+                                                                                                    "orientation": "Vertical",
+                                                                                                    "required": false,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    },
+                                                                                                    "min": 1,
+                                                                                                    "max": 15,
+                                                                                                    "precision": "0",
+                                                                                                    "percents": false,
+                                                                                                    "spinButtons": true,
+                                                                                                    "step": 1
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": {
+                                                                                                "width": 6
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "_internalName": "Step4",
+                                                                    "title": "Agenda",
+                                                                    "component": {
+                                                                        "type": "Grid",
+                                                                        "model": {
+                                                                            "stacked": "md",
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "border": {
+                                                                                "width": null,
+                                                                                "color": null
+                                                                            },
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cells": [
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "MultiLineText",
+                                                                                                "model": {
+                                                                                                    "_internalName": "MeetingAgenda",
+                                                                                                    "title": {
+                                                                                                        "text": "Meeting Agenda",
+                                                                                                        "visible": true
+                                                                                                    },
+                                                                                                    "orientation": "Vertical",
+                                                                                                    "required": false,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    },
+                                                                                                    "mode": "Plain"
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": {
+                                                                                                "width": 12
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "_internalName": "Step5",
+                                                                    "title": "Organizer",
+                                                                    "component": {
+                                                                        "type": "Grid",
+                                                                        "model": {
+                                                                            "stacked": "md",
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "border": {
+                                                                                "width": null,
+                                                                                "color": null
+                                                                            },
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cells": [
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "SingleLineText",
+                                                                                                "model": {
+                                                                                                    "_internalName": "FirstName",
+                                                                                                    "title": {
+                                                                                                        "text": "Reserved for",
+                                                                                                        "visible": true
+                                                                                                    },
+                                                                                                    "orientation": "Vertical",
+                                                                                                    "required": false,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "cHint": "First Name",
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    },
+                                                                                                    "type": "Anything"
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": {
+                                                                                                "width": 6
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "SingleLineText",
+                                                                                                "model": {
+                                                                                                    "_internalName": "LastName",
+                                                                                                    "title": {
+                                                                                                        "text": " ",
+                                                                                                        "visible": true
+                                                                                                    },
+                                                                                                    "orientation": "Vertical",
+                                                                                                    "required": false,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "cHint": "Last Name",
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    },
+                                                                                                    "type": "Anything"
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": {
+                                                                                                "width": 6
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cells": [
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "SingleLineText",
+                                                                                                "model": {
+                                                                                                    "_internalName": "Email",
+                                                                                                    "title": {
+                                                                                                        "text": "Email",
+                                                                                                        "visible": false
+                                                                                                    },
+                                                                                                    "orientation": "Horizontal",
+                                                                                                    "required": false,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "cHint": "E-mail",
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    },
+                                                                                                    "type": "E-mail",
+                                                                                                    "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                                                                    "error": "This field must contain a valid e-mail address."
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": {
+                                                                                                "width": 6
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "component": {
+                                                                                                "type": "Phone",
+                                                                                                "model": {
+                                                                                                    "_internalName": "Phone",
+                                                                                                    "countries": [
+                                                                                                        "AF",
+                                                                                                        "AX",
+                                                                                                        "AL",
+                                                                                                        "DZ",
+                                                                                                        "AS",
+                                                                                                        "AD",
+                                                                                                        "AO",
+                                                                                                        "AI",
+                                                                                                        "AQ",
+                                                                                                        "AG",
+                                                                                                        "AR",
+                                                                                                        "AM",
+                                                                                                        "AW",
+                                                                                                        "AC",
+                                                                                                        "AU",
+                                                                                                        "AT",
+                                                                                                        "AZ",
+                                                                                                        "BS",
+                                                                                                        "BH",
+                                                                                                        "BD",
+                                                                                                        "BB",
+                                                                                                        "BY",
+                                                                                                        "BE",
+                                                                                                        "BZ",
+                                                                                                        "BJ",
+                                                                                                        "BM",
+                                                                                                        "BT",
+                                                                                                        "BO",
+                                                                                                        "BA",
+                                                                                                        "BW",
+                                                                                                        "BR",
+                                                                                                        "IO",
+                                                                                                        "BN",
+                                                                                                        "BG",
+                                                                                                        "BF",
+                                                                                                        "BI",
+                                                                                                        "KH",
+                                                                                                        "CM",
+                                                                                                        "CA",
+                                                                                                        "CV",
+                                                                                                        "KY",
+                                                                                                        "CF",
+                                                                                                        "TD",
+                                                                                                        "CL",
+                                                                                                        "CN",
+                                                                                                        "CX",
+                                                                                                        "CC",
+                                                                                                        "CO",
+                                                                                                        "KM",
+                                                                                                        "CG",
+                                                                                                        "CK",
+                                                                                                        "CR",
+                                                                                                        "HR",
+                                                                                                        "CU",
+                                                                                                        "CY",
+                                                                                                        "CZ",
+                                                                                                        "CD",
+                                                                                                        "DK",
+                                                                                                        "DJ",
+                                                                                                        "DM",
+                                                                                                        "DO",
+                                                                                                        "EC",
+                                                                                                        "EG",
+                                                                                                        "SV",
+                                                                                                        "GQ",
+                                                                                                        "ER",
+                                                                                                        "EE",
+                                                                                                        "SZ",
+                                                                                                        "ET",
+                                                                                                        "FK",
+                                                                                                        "FO",
+                                                                                                        "FJ",
+                                                                                                        "FI",
+                                                                                                        "FR",
+                                                                                                        "GF",
+                                                                                                        "PF",
+                                                                                                        "GA",
+                                                                                                        "GM",
+                                                                                                        "GE",
+                                                                                                        "DE",
+                                                                                                        "GH",
+                                                                                                        "GI",
+                                                                                                        "GR",
+                                                                                                        "GL",
+                                                                                                        "GD",
+                                                                                                        "GP",
+                                                                                                        "GU",
+                                                                                                        "GT",
+                                                                                                        "GG",
+                                                                                                        "GN",
+                                                                                                        "GW",
+                                                                                                        "GY",
+                                                                                                        "HT",
+                                                                                                        "VA",
+                                                                                                        "HN",
+                                                                                                        "HK",
+                                                                                                        "HU",
+                                                                                                        "IS",
+                                                                                                        "IN",
+                                                                                                        "ID",
+                                                                                                        "IR",
+                                                                                                        "IQ",
+                                                                                                        "IE",
+                                                                                                        "IM",
+                                                                                                        "IL",
+                                                                                                        "IT",
+                                                                                                        "CI",
+                                                                                                        "JM",
+                                                                                                        "JP",
+                                                                                                        "JE",
+                                                                                                        "JO",
+                                                                                                        "KZ",
+                                                                                                        "KE",
+                                                                                                        "KI",
+                                                                                                        "KP",
+                                                                                                        "KR",
+                                                                                                        "XK",
+                                                                                                        "KW",
+                                                                                                        "KG",
+                                                                                                        "LA",
+                                                                                                        "LV",
+                                                                                                        "LB",
+                                                                                                        "LS",
+                                                                                                        "LR",
+                                                                                                        "LY",
+                                                                                                        "LI",
+                                                                                                        "LT",
+                                                                                                        "LU",
+                                                                                                        "MO",
+                                                                                                        "MG",
+                                                                                                        "MW",
+                                                                                                        "MY",
+                                                                                                        "MV",
+                                                                                                        "ML",
+                                                                                                        "MT",
+                                                                                                        "MH",
+                                                                                                        "MQ",
+                                                                                                        "MR",
+                                                                                                        "MU",
+                                                                                                        "YT",
+                                                                                                        "MX",
+                                                                                                        "FM",
+                                                                                                        "MD",
+                                                                                                        "MC",
+                                                                                                        "MN",
+                                                                                                        "ME",
+                                                                                                        "MS",
+                                                                                                        "MA",
+                                                                                                        "MZ",
+                                                                                                        "MM",
+                                                                                                        "NA",
+                                                                                                        "NR",
+                                                                                                        "NP",
+                                                                                                        "NL",
+                                                                                                        "NC",
+                                                                                                        "NZ",
+                                                                                                        "NI",
+                                                                                                        "NE",
+                                                                                                        "NG",
+                                                                                                        "NU",
+                                                                                                        "NF",
+                                                                                                        "MK",
+                                                                                                        "MP",
+                                                                                                        "NO",
+                                                                                                        "OM",
+                                                                                                        "PK",
+                                                                                                        "PW",
+                                                                                                        "PS",
+                                                                                                        "PA",
+                                                                                                        "PG",
+                                                                                                        "PY",
+                                                                                                        "PE",
+                                                                                                        "PH",
+                                                                                                        "PN",
+                                                                                                        "PL",
+                                                                                                        "PT",
+                                                                                                        "PR",
+                                                                                                        "QA",
+                                                                                                        "RE",
+                                                                                                        "RO",
+                                                                                                        "RU",
+                                                                                                        "RW",
+                                                                                                        "BL",
+                                                                                                        "SH",
+                                                                                                        "KN",
+                                                                                                        "LC",
+                                                                                                        "MF",
+                                                                                                        "PM",
+                                                                                                        "VC",
+                                                                                                        "WS",
+                                                                                                        "SM",
+                                                                                                        "ST",
+                                                                                                        "SA",
+                                                                                                        "SN",
+                                                                                                        "RS",
+                                                                                                        "SC",
+                                                                                                        "SL",
+                                                                                                        "SG",
+                                                                                                        "SX",
+                                                                                                        "SK",
+                                                                                                        "SI",
+                                                                                                        "SB",
+                                                                                                        "SO",
+                                                                                                        "ZA",
+                                                                                                        "GS",
+                                                                                                        "SS",
+                                                                                                        "ES",
+                                                                                                        "LK",
+                                                                                                        "SD",
+                                                                                                        "SR",
+                                                                                                        "SJ",
+                                                                                                        "SE",
+                                                                                                        "CH",
+                                                                                                        "SY",
+                                                                                                        "TW",
+                                                                                                        "TJ",
+                                                                                                        "TZ",
+                                                                                                        "TH",
+                                                                                                        "TL",
+                                                                                                        "TG",
+                                                                                                        "TK",
+                                                                                                        "TO",
+                                                                                                        "TT",
+                                                                                                        "TN",
+                                                                                                        "TR",
+                                                                                                        "TM",
+                                                                                                        "TC",
+                                                                                                        "TV",
+                                                                                                        "UG",
+                                                                                                        "UA",
+                                                                                                        "AE",
+                                                                                                        "GB",
+                                                                                                        "US",
+                                                                                                        "UY",
+                                                                                                        "UZ",
+                                                                                                        "VU",
+                                                                                                        "VE",
+                                                                                                        "VN",
+                                                                                                        "VG",
+                                                                                                        "VI",
+                                                                                                        "WF",
+                                                                                                        "YE",
+                                                                                                        "ZM",
+                                                                                                        "ZW"
+                                                                                                    ],
+                                                                                                    "title": {
+                                                                                                        "text": "Phone",
+                                                                                                        "visible": false
+                                                                                                    },
+                                                                                                    "orientation": "Horizontal",
+                                                                                                    "required": false,
+                                                                                                    "font": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Semibold"
+                                                                                                    },
+                                                                                                    "wrap": true,
+                                                                                                    "cFont": {
+                                                                                                        "style": "Normal",
+                                                                                                        "weight": "Normal"
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "alignment": {
+                                                                                                "horizontal": "Justify",
+                                                                                                "vertical": "Top"
+                                                                                            },
+                                                                                            "columns": {
+                                                                                                "width": 6
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "shape": "Tab"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
                                         }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [null, 0, null, 0],
-                                    "component": {
-                                        "type": "Wizard",
-                                        "model": {
-                                            "_internalName": "Wizard1",
-                                            "direction": "Right",
-                                            "step": {
-                                                "shape": "Tab"
-                                            },
-                                            "nextText": "Next",
-                                            "backText": "Back",
-                                            "finishText": "Finish",
-                                            "savingText": "Submitting...",
-                                            "finish": "return fd.save();",
-                                            "steps": [{
-                                                "_internalName": "Step2",
-                                                "title": "Room",
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "DropDown",
-                                                                    "model": {
-                                                                        "_internalName": "MeetingRoom",
-                                                                        "title": {
-                                                                            "text": "Meeting Room",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "dataSource": "StaticList",
-                                                                        "selection": "Single",
-                                                                        "options": [{
-                                                                            "value": "Red Room",
-                                                                            "backgroundColor": null,
-                                                                            "textColor": null
-                                                                        }, {
-                                                                            "value": "Green Room",
-                                                                            "backgroundColor": null,
-                                                                            "textColor": null
-                                                                        }, {
-                                                                            "value": "Purple Room",
-                                                                            "backgroundColor": null,
-                                                                            "textColor": null
-                                                                        }, {
-                                                                            "value": "Blue Room",
-                                                                            "backgroundColor": null,
-                                                                            "textColor": null
-                                                                        }],
-                                                                        "defaultValue": []
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                }
-                                            }, {
-                                                "_internalName": "Step1",
-                                                "title": "Time",
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "DateTime",
-                                                                    "model": {
-                                                                        "_internalName": "StartTime",
-                                                                        "title": {
-                                                                            "text": "Meeting Time",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": true,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cHint": "Start Time",
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "interval": 30,
-                                                                        "startTime": "2024-11-18T04:00:00.000Z",
-                                                                        "endTime": "2024-11-18T15:00:00.000Z"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }, {
-                                                                "component": {
-                                                                    "type": "DateTime",
-                                                                    "model": {
-                                                                        "_internalName": "EndTime",
-                                                                        "title": {
-                                                                            "text": " ",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cHint": "End Time",
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "interval": 30,
-                                                                        "startTime": "2024-11-18T04:00:00.000Z",
-                                                                        "endTime": "2024-11-18T15:00:00.000Z"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                }
-                                            }, {
-                                                "_internalName": "Step3",
-                                                "title": "Attendees",
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "Number",
-                                                                    "model": {
-                                                                        "_internalName": "NumberOfAttendees",
-                                                                        "title": {
-                                                                            "text": "Number of Attendees",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "min": 1,
-                                                                        "max": 15,
-                                                                        "precision": "0",
-                                                                        "percents": false,
-                                                                        "spinButtons": true,
-                                                                        "step": 1
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                }
-                                            }, {
-                                                "_internalName": "Step4",
-                                                "title": "Agenda",
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "MultiLineText",
-                                                                    "model": {
-                                                                        "_internalName": "MeetingAgenda",
-                                                                        "title": {
-                                                                            "text": "Meeting Agenda",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "mode": "Plain"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 12
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                }
-                                            }, {
-                                                "_internalName": "Step5",
-                                                "title": "Organizer",
-                                                "component": {
-                                                    "type": "Grid",
-                                                    "model": {
-                                                        "stacked": "md",
-                                                        "frame": {
-                                                            "horizontal": null,
-                                                            "vertical": null,
-                                                            "radius": null
-                                                        },
-                                                        "border": {
-                                                            "width": null,
-                                                            "color": null
-                                                        },
-                                                        "rows": [{
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "FirstName",
-                                                                        "title": {
-                                                                            "text": "Reserved for",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cHint": "First Name",
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }, {
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "LastName",
-                                                                        "title": {
-                                                                            "text": " ",
-                                                                            "visible": true
-                                                                        },
-                                                                        "orientation": "Vertical",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cHint": "Last Name",
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "Anything"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }, {
-                                                            "cells": [{
-                                                                "component": {
-                                                                    "type": "SingleLineText",
-                                                                    "model": {
-                                                                        "_internalName": "Email",
-                                                                        "title": {
-                                                                            "text": "Email",
-                                                                            "visible": false
-                                                                        },
-                                                                        "orientation": "Horizontal",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cHint": "E-mail",
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "type": "E-mail",
-                                                                        "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                                        "error": "This field must contain a valid e-mail address."
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }, {
-                                                                "component": {
-                                                                    "type": "MaskedInput",
-                                                                    "model": {
-                                                                        "_internalName": "MobileNumber",
-                                                                        "title": {
-                                                                            "text": "Mobile Number",
-                                                                            "visible": false
-                                                                        },
-                                                                        "orientation": "Horizontal",
-                                                                        "required": false,
-                                                                        "font": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Semibold"
-                                                                        },
-                                                                        "wrap": true,
-                                                                        "cFont": {
-                                                                            "style": "Normal",
-                                                                            "weight": "Normal"
-                                                                        },
-                                                                        "mask": "000-000-0000"
-                                                                    }
-                                                                },
-                                                                "alignment": {
-                                                                    "horizontal": "Justify",
-                                                                    "vertical": "Top"
-                                                                },
-                                                                "columns": {
-                                                                    "width": 6
-                                                                }
-                                                            }]
-                                                        }]
-                                                    }
-                                                }
-                                            }],
-                                            "shape": "Tab"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }]
+                                    ]
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
+                    ]
+                }
+            ]
         }
     },
     "tablet": null,
@@ -521,22 +838,23 @@
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "primary": "#737373",
+        "themeId": "gray",
         "bodyText": "#333333",
         "bodyBackground": "#FFFFFF",
-        "fontFamily": null,
-        "fontType": 0,
         "fontSize": 15,
         "fontWeight": 400,
         "borderThickness": 1,
-        "borderRadius": 0,
+        "borderRadius": 2,
         "shadow": true,
-        "themeId": "gray"
+        "isDark": false,
+        "primary": "#737373",
+        "fontFamily": null,
+        "fontType": 0
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
-    "userLanguage": "",
-    "userCulture": "",
+    "userLanguage": null,
+    "userCulture": null,
     "thankYouMessage": "Room is reserved.\n\nYou will receive confirmation by email.",
     "redirectURL": null,
     "hideAfterSubmission": true,
@@ -547,6 +865,7 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
+    "entraExternalIdProperties": null,
     "azureB2CProperties": null,
     "connection": null
 }

@@ -16,18 +16,12 @@
                 {
                     "cells": [
                         {
-                            "padding": [
-                                10,
-                                null,
-                                30,
-                                null
-                            ],
                             "component": {
                                 "type": "Heading",
                                 "model": {
                                     "_internalName": "Heading1",
-                                    "heading": "Supplier Registration Form",
-                                    "view": "Normal",
+                                    "heading": "IT New Employee Request Form",
+                                    "view": "Line",
                                     "font": {
                                         "style": "Normal",
                                         "weight": "Semibold"
@@ -55,29 +49,24 @@
                     "cells": [
                         {
                             "component": {
-                                "type": "TabControl",
+                                "type": "Wizard",
                                 "model": {
-                                    "_internalName": "TabControl1",
-                                    "orientation": "Top",
-                                    "pills": false,
-                                    "wrap": true,
-                                    "border": {
-                                        "width": null,
-                                        "color": null
+                                    "_internalName": "Wizard1",
+                                    "direction": "Right",
+                                    "step": {
+                                        "size": null,
+                                        "color": null,
+                                        "shape": "Circle"
                                     },
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "tabs": [
+                                    "nextText": "Next",
+                                    "backText": "Back",
+                                    "finishText": "Finish",
+                                    "savingText": "Submitting...",
+                                    "finish": "return fd.save();",
+                                    "steps": [
                                         {
-                                            "_internalName": "Tab1",
-                                            "title": "Company Information",
+                                            "_internalName": "Step2",
+                                            "title": "Employee information",
                                             "component": {
                                                 "type": "Grid",
                                                 "model": {
@@ -95,237 +84,14 @@
                                                         {
                                                             "cells": [
                                                                 {
-                                                                    "padding": [
-                                                                        30,
-                                                                        null,
-                                                                        null,
-                                                                        null
-                                                                    ],
                                                                     "component": {
                                                                         "type": "SingleLineText",
                                                                         "model": {
-                                                                            "_internalName": "BusinessName",
-                                                                            "description": "Business Name",
+                                                                            "_internalName": "Name",
                                                                             "title": {
-                                                                                "text": "Business Name",
-                                                                                "visible": false
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Bold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "Monster Corp",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "Anything"
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 12
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "BusinessOwner",
-                                                                            "description": "Business Owner Name",
-                                                                            "title": {
-                                                                                "text": "Business Owner",
-                                                                                "visible": false
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "Mike Wazowski",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "Anything"
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 12
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "BusinessRegistrationNumber",
-                                                                            "description": "Business Registration Number",
-                                                                            "title": {
-                                                                                "text": "Business Registration Number",
-                                                                                "visible": false
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Bold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "012345678",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "Custom",
-                                                                            "pattern": "^[0-9]*d{9}$",
-                                                                            "error": "This field must contain numeric characters only."
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 12
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "TaxpayerIdentificationNumber",
-                                                                            "description": "Taxpayer Identification Number",
-                                                                            "title": {
-                                                                                "text": "Taxpayer Identification Number",
-                                                                                "visible": false
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Bold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "ex: 0123456789",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "Custom",
-                                                                            "pattern": "^[0-9]*d{10}$",
-                                                                            "error": "TIN is invalid"
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 12
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "MultiLineText",
-                                                                        "model": {
-                                                                            "_internalName": "CompanyDescription",
-                                                                            "description": "Company Description",
-                                                                            "title": {
-                                                                                "text": "",
+                                                                                "text": "Name",
                                                                                 "visible": true
                                                                             },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Bold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "Tell us more about your company",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "mode": "Plain"
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 12
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "_internalName": "Tab2",
-                                            "title": "Address",
-                                            "component": {
-                                                "type": "Grid",
-                                                "model": {
-                                                    "stacked": "md",
-                                                    "frame": {
-                                                        "horizontal": null,
-                                                        "vertical": null,
-                                                        "radius": null
-                                                    },
-                                                    "border": {
-                                                        "width": null,
-                                                        "color": null
-                                                    },
-                                                    "rows": [
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "padding": [
-                                                                        30,
-                                                                        null,
-                                                                        null,
-                                                                        null
-                                                                    ],
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "Street",
-                                                                            "description": "Street",
-                                                                            "title": {
-                                                                                "text": "Street",
-                                                                                "visible": false
-                                                                            },
                                                                             "orientation": "Horizontal",
                                                                             "required": false,
                                                                             "font": {
@@ -333,7 +99,6 @@
                                                                                 "weight": "Semibold"
                                                                             },
                                                                             "wrap": true,
-                                                                            "cHint": "Oak street 22",
                                                                             "cFont": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
@@ -355,27 +120,30 @@
                                                             "cells": [
                                                                 {
                                                                     "component": {
-                                                                        "type": "SingleLineText",
+                                                                        "type": "Date",
                                                                         "model": {
-                                                                            "_internalName": "City",
-                                                                            "description": "City",
+                                                                            "_internalName": "StartDate",
                                                                             "title": {
-                                                                                "text": "City",
-                                                                                "visible": false
+                                                                                "text": "Start Date",
+                                                                                "visible": true
                                                                             },
                                                                             "orientation": "Horizontal",
-                                                                            "required": false,
+                                                                            "required": true,
                                                                             "font": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Semibold"
                                                                             },
                                                                             "wrap": true,
-                                                                            "cHint": "Chicago",
                                                                             "cFont": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
                                                                             },
-                                                                            "type": "Anything"
+                                                                            "startDate": {
+                                                                                "mode": "Fixed"
+                                                                            },
+                                                                            "endDate": {
+                                                                                "mode": "Fixed"
+                                                                            }
                                                                         }
                                                                     },
                                                                     "alignment": {
@@ -383,40 +151,7 @@
                                                                         "vertical": "Top"
                                                                     },
                                                                     "columns": {
-                                                                        "width": 6
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "State",
-                                                                            "description": "State / Province",
-                                                                            "title": {
-                                                                                "text": "State",
-                                                                                "visible": false
-                                                                            },
-                                                                            "orientation": "Horizontal",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "Illinois",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "Anything"
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 6
+                                                                        "width": 12
                                                                     }
                                                                 }
                                                             ]
@@ -427,11 +162,10 @@
                                                                     "component": {
                                                                         "type": "SingleLineText",
                                                                         "model": {
-                                                                            "_internalName": "Country",
-                                                                            "description": "Country",
+                                                                            "_internalName": "Email",
                                                                             "title": {
-                                                                                "text": "Country",
-                                                                                "visible": false
+                                                                                "text": "Email",
+                                                                                "visible": true
                                                                             },
                                                                             "orientation": "Horizontal",
                                                                             "required": false,
@@ -440,12 +174,14 @@
                                                                                 "weight": "Semibold"
                                                                             },
                                                                             "wrap": true,
-                                                                            "cHint": "USA",
+                                                                            "cHint": "username@domain.com",
                                                                             "cFont": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
                                                                             },
-                                                                            "type": "Anything"
+                                                                            "type": "E-mail",
+                                                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                                            "error": "This field must contain a valid e-mail address."
                                                                         }
                                                                     },
                                                                     "alignment": {
@@ -453,65 +189,11 @@
                                                                         "vertical": "Top"
                                                                     },
                                                                     "columns": {
-                                                                        "width": 6
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "ZIP",
-                                                                            "description": "ZIP Code",
-                                                                            "title": {
-                                                                                "text": "ZIP",
-                                                                                "visible": false
-                                                                            },
-                                                                            "orientation": "Horizontal",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "60007 ",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "Anything"
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 6
+                                                                        "width": 12
                                                                     }
                                                                 }
                                                             ]
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "_internalName": "Tab3",
-                                            "title": "Contact Information",
-                                            "component": {
-                                                "type": "Grid",
-                                                "model": {
-                                                    "stacked": "md",
-                                                    "frame": {
-                                                        "horizontal": null,
-                                                        "vertical": null,
-                                                        "radius": null
-                                                    },
-                                                    "border": {
-                                                        "width": null,
-                                                        "color": null
-                                                    },
-                                                    "rows": [
+                                                        },
                                                         {
                                                             "cells": [
                                                                 {
@@ -519,7 +201,21 @@
                                                                         "type": "Phone",
                                                                         "model": {
                                                                             "_internalName": "Phone",
-                                                                            "description": "Phone",
+                                                                            "title": {
+                                                                                "text": "Phone",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Horizontal",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
                                                                             "countries": [
                                                                                 "AF",
                                                                                 "AX",
@@ -765,22 +461,7 @@
                                                                                 "YE",
                                                                                 "ZM",
                                                                                 "ZW"
-                                                                            ],
-                                                                            "title": {
-                                                                                "text": "Phone",
-                                                                                "visible": false
-                                                                            },
-                                                                            "orientation": "Horizontal",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            }
+                                                                            ]
                                                                         }
                                                                     },
                                                                     "alignment": {
@@ -799,11 +480,10 @@
                                                                     "component": {
                                                                         "type": "SingleLineText",
                                                                         "model": {
-                                                                            "_internalName": "Email",
-                                                                            "description": "E-mail",
+                                                                            "_internalName": "Position",
                                                                             "title": {
-                                                                                "text": "E-mail",
-                                                                                "visible": false
+                                                                                "text": "Position",
+                                                                                "visible": true
                                                                             },
                                                                             "orientation": "Horizontal",
                                                                             "required": false,
@@ -812,51 +492,76 @@
                                                                                 "weight": "Semibold"
                                                                             },
                                                                             "wrap": true,
-                                                                            "cHint": "name@domain.com",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "E-mail",
-                                                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                                            "error": "This field must contain a valid e-mail address."
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 12
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "SiteURL",
-                                                                            "description": "Site URL",
-                                                                            "title": {
-                                                                                "text": "siteURL",
-                                                                                "visible": false
-                                                                            },
-                                                                            "orientation": "Horizontal",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "www.monster.com",
                                                                             "cFont": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
                                                                             },
                                                                             "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DropDown",
+                                                                        "model": {
+                                                                            "_internalName": "Manager",
+                                                                            "title": {
+                                                                                "text": "Manager",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Horizontal",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "selection": "Single",
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "Harry Le",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Casey Zamora",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Walker Mendez",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Alfonso Lozano",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Brad Reilly",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": false,
+                                                                            "defaultValue": []
                                                                         }
                                                                     },
                                                                     "alignment": {
@@ -874,8 +579,8 @@
                                             }
                                         },
                                         {
-                                            "_internalName": "Tab4",
-                                            "title": "Documents",
+                                            "_internalName": "Step1",
+                                            "title": "IT and resource access",
                                             "component": {
                                                 "type": "Grid",
                                                 "model": {
@@ -893,20 +598,13 @@
                                                         {
                                                             "cells": [
                                                                 {
-                                                                    "padding": [
-                                                                        30,
-                                                                        null,
-                                                                        null,
-                                                                        null
-                                                                    ],
                                                                     "component": {
-                                                                        "type": "Attachments",
+                                                                        "type": "DropDown",
                                                                         "model": {
-                                                                            "_internalName": "Attachments1",
-                                                                            "description": "Please attach price-list or catalog:",
+                                                                            "_internalName": "Computer",
                                                                             "title": {
-                                                                                "text": "Attachments1",
-                                                                                "visible": false
+                                                                                "text": "Computer",
+                                                                                "visible": true
                                                                             },
                                                                             "orientation": "Horizontal",
                                                                             "required": false,
@@ -915,7 +613,196 @@
                                                                                 "weight": "Semibold"
                                                                             },
                                                                             "wrap": true,
-                                                                            "maxSize": 10240
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "selection": "Single",
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "Desktop",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Laptop",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": false,
+                                                                            "defaultValue": []
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "MultipleChoice",
+                                                                        "model": {
+                                                                            "_internalName": "Peripherals",
+                                                                            "title": {
+                                                                                "text": "Peripherals",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Horizontal",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "cColumns": 3,
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "monitor",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "keyboard",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "mouse",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "speakers",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "headset",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": false,
+                                                                            "defaultValue": []
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Toggle",
+                                                                        "model": {
+                                                                            "_internalName": "RemoteAccess",
+                                                                            "title": {
+                                                                                "text": "Remote access",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Horizontal",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "BasicToggle"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Toggle",
+                                                                        "model": {
+                                                                            "_internalName": "SharedDrives",
+                                                                            "title": {
+                                                                                "text": "Shared drives",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Horizontal",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "BasicToggle"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "MultiLineText",
+                                                                        "model": {
+                                                                            "_internalName": "Comments",
+                                                                            "title": {
+                                                                                "text": "Comments",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Horizontal",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Plain"
                                                                         }
                                                                     },
                                                                     "alignment": {
@@ -932,30 +819,8 @@
                                                 }
                                             }
                                         }
-                                    ]
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "component": {
-                                "type": "Submit",
-                                "model": {
-                                    "_internalName": "Submit2",
-                                    "text": "Submit Request",
-                                    "savingText": "Submitting...",
-                                    "type": "Primary",
-                                    "click": "return fd.save();"
+                                    ],
+                                    "shape": "Circle"
                                 }
                             },
                             "alignment": {
@@ -973,30 +838,31 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "//detect theme change\nfd.themeChanged = theme => {\n    $('.fd-form').attr('theme', theme);\n}\n\n/*******************************************************************************************************\n* The code from this section is executed once the form is loaded.                                      *\n*                                                                                                      *\n* Depending on the stage of the form lifecycle when a particular action should be performed,           *\n* you can use on the following hooks:                                                                  *\n*                                                                                                      *\n* fd.rendered()     the code is executed once the form is rendered                                     *\n*                                                                                                      *\n* fd.beforeSave()   the code is executed right before saving the form. If returns Promise, the saving  *\n*                   does not proceed until the Promise is resoved. If the Promise is rejected,         * \n*                   the saving interrupts. This is the appropriate place for adding custom validation. *\n*                                                                                                      *\n* fd.saved()        the code is executed once the form is submitted                                    *\n*                                                                                                      *\n* The following predefined variables can be utilized in the code:                                      *\n*                                                                                                      *\n* fd    an instance of the current form                                                                *\n* $     jQuery object                                                                                  *\n*                                                                                                      *\n*******************************************************************************************************/\n\n\n/* Uncomment the code below to start using it in the form.\n\n// ================================================================\n//  EXAMPLE 1: The code is executed right after rendering the form \n// ================================================================\nfd.rendered(function () {\n\n    // The function populates FullName with values from FirstName and LastName\n    function updateFullName() {\n        var firstName = fd.field('FirstName').value || '';\n        var lastName = fd.field('LastName').value || '';\n        fd.field('FullName').value = (firstName ? firstName + ' ' : '') + lastName;\n    }\n\n    // Populate FullName when the form is rendered\n    updateFullName();\n\n    // Update FullName when FirstName changes\n    fd.field('FirstName').$on('change', updateFullName);\n\n    // Update FullName when LastName changes\n    fd.field('LastName').$on('change', updateFullName);\n});\n\n\n// ========================================================\n//  EXAMPLE 2: The code is executed before saving the form\n// ========================================================\nfd.beforeSave(function () {\n\n    // Prevent saving if StartDate is greater than EndDate\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\n        throw Error('Start Date must not be greater than End Date.');\n    }\n});\n\n\n// =============================================================\n//  EXAMPLE 3: The code is executed right after saving the form\n// =============================================================\nfd.saved(function (result) {\n\n    // Forward users to a custom Thank You page with a parameter\n    window.location = 'https://mysite.com/thank-you?email=' + fd.field('Email').value;\n});\n*/\n\n",
-    "css": "/* setting the Header color depending on the theme */\n.fd-form h1 {\n    color: var(--fd-primary) !important;\n}\n\n/* changing the styling of the Tab container when theme changes*/\n\n/****** THEME 1 ******/\n\n.fd-form .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5 !important;\n    border-color: #D7E1E5 #D7E1E5 #006699 !important;\n}\n\n.fd-form .nav-tabs .nav-link.active,\n.fd-form .nav-tabs .nav-link:focus {\n    color: #333;\n    border-color: #006699 #006699 #fff5e7 !important;\n}\n\n.fd-form .nav-link {\n    color: #006699;\n}\n\n.fd-form .tabset:not(.fd-form .tabset--nowrap).tabs-top>.nav-tabs>.nav-item::before {\n    border-bottom-color: #006699 !important;\n}\n\n.fd-form .nav-tabs,\n.fd-form .nav-tabs:hover {\n    border-bottom-color: #006699 !important;\n}\n\n/****** THEME 2 ******/\n\n\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5 !important;\n    border-color: #D7E1E5 #D7E1E5 #006699 !important;\n    border-radius: 10px !important;\n}\n\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs .nav-link.active,\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs .nav-link:focus {\n    border-color: #006699 #006699 #fff5e7 !important;\n    background-color: #6658EA !important;\n    color: white !important;\n    border-radius: 10px !important;\n}\n\n\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-link {\n    color: #006699;\n}\n\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs,\n.fd-form[theme='2ecd4ce5facf19377e01db09718441c2'] .nav-tabs:hover {\n    border-bottom-color: #006699 !important;\n}\n\n/****** THEME 3 ******/\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] h1 {\n    font-weight: 1000;\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: transparent !important;\n    border-bottom: 5px solid #9C27B0 !important;\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs .nav-link.active,\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs .nav-link:focus {\n    color: #333;\n    border-bottom: 5px solid #9C27B0 !important;\n}\n\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-link {\n    color: #333;\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs,\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .nav-tabs:hover {\n    border-bottom-color: #9C27B0 !important;\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .form-control, \n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .k-input {\n    background: none !important;\n    padding-left: 0px !important;\n    border: none;\n}\n\n.fd-form[theme='801be8983d8d8103fc06734df046c645'] .form-control, \n.fd-form[theme='801be8983d8d8103fc06734df046c645'] span.k-picker-wrap.k-state-default {\n    border: 0px;\n    border-bottom: 2px solid #868E9D !important;\n}\n\n/****** THEME 4 ******/\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] h1 {\n    font-weight: 1000;\n}\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs .nav-link:hover {\n    color: #f5a637;\n    background-color: #D7E1E5;\n    border: none;\n}\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs .nav-link.active,\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs .nav-link:focus {\n    color: #f5a637;\n    border: none !important;\n    background-color: transparent !important;\n}\n\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-link {\n    color: black;\n    border: none !important;\n    background-color: transparent !important;\n}\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs,\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .nav-tabs:hover {\n    border: none;\n}\n\n.fd-form[theme='3ea78ff0c01ec9657c0230a11b1997e1'] .btn-primary {\n    color: white !important;\n}\n\n",
+    "js": "",
+    "css": "",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "primary": "#006699",
-        "bodyText": "#333",
-        "bodyBackground": "#FFF5E7",
-        "fontFamily": null,
-        "fontType": 0,
-        "fontSize": 18,
-        "fontWeight": 400,
+        "themeId": "04e135f418d8fd0f4ab957bd4a16fcf0",
+        "bodyText": "#262626",
+        "bodyBackground": "#FFFFFF",
+        "fontSize": 16,
+        "fontWeight": 600,
         "borderThickness": 2,
-        "borderRadius": 8,
+        "borderRadius": 10,
         "shadow": true,
-        "themeId": "d0d799c233e363cf357227bcc379b8a6"
+        "isDark": false,
+        "primary": "#e36c09",
+        "fontFamily": "Montserrat",
+        "fontType": 1
     },
-    "timezone": "America/Los_Angeles",
+    "timezone": "Etc/GMT",
     "culture": "en",
     "userLanguage": null,
     "userCulture": null,
     "thankYouMessage": null,
     "redirectURL": null,
-    "hideAfterSubmission": true,
+    "hideAfterSubmission": false,
     "submissionTimeout": 0,
     "authentication": 0,
     "singleSubmissionPerUser": false,

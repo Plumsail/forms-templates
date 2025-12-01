@@ -12,768 +12,1144 @@
                 "width": null,
                 "color": null
             },
-            "rows": [{
-                "cells": [{
-                    "component": {
-                        "type": "Grid",
-                        "model": {
-                            "_internalName": "Grid3",
-                            "stacked": "sm",
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": 4
-                            },
-                            "border": {
-                                "width": null,
-                                "color": null
-                            },
-                            "class": "bg-img",
-                            "rows": [{
-                                "cells": [{
-                                    "component": {
-                                        "type": "Heading",
-                                        "model": {
-                                            "_internalName": "Heading1",
-                                            "heading": "Your Restaurant Favorites",
-                                            "view": "Normal",
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "frame": {
-                                                "horizontal": null,
-                                                "vertical": null,
-                                                "radius": null
-                                            },
-                                            "size": "H1",
-                                            "textAlignment": "Center"
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Grid",
+                                "model": {
+                                    "_internalName": "Grid3",
+                                    "stacked": "sm",
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": 4
+                                    },
+                                    "border": {
+                                        "width": null,
+                                        "color": null
+                                    },
+                                    "class": "bg-img",
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Heading",
+                                                        "model": {
+                                                            "_internalName": "Heading1",
+                                                            "heading": "Your Restaurant Favorites",
+                                                            "view": "Normal",
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": null
+                                                            },
+                                                            "size": "H1",
+                                                            "textAlignment": "Center"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
                                         }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 6
-                                    }
-                                }]
-                            }]
+                                    ]
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "Grid",
-                        "model": {
-                            "_internalName": "Grid6",
-                            "stacked": "md",
-                            "frame": {
-                                "horizontal": 40,
-                                "vertical": 20,
-                                "radius": null
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Grid",
+                                "model": {
+                                    "_internalName": "Grid6",
+                                    "stacked": "md",
+                                    "frame": {
+                                        "horizontal": 40,
+                                        "vertical": 20,
+                                        "radius": null
+                                    },
+                                    "border": {
+                                        "width": null,
+                                        "color": null
+                                    },
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Text",
+                                                        "model": {
+                                                            "_internalName": "Text1",
+                                                            "text": "Please select your preferred dishes from the menu below and specifying the quantity for each item."
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "DataTable",
+                                                        "model": {
+                                                            "_internalName": "Appetizers",
+                                                            "title": {
+                                                                "text": "Appetizers & Salads",
+                                                                "visible": true
+                                                            },
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "newLine": "Top",
+                                                            "delete": "Last",
+                                                            "columns": [
+                                                                {
+                                                                    "_internalName": "Item",
+                                                                    "title": "Item",
+                                                                    "required": true,
+                                                                    "type": "Dropdown",
+                                                                    "aggregates": [],
+                                                                    "selection": "Single",
+                                                                    "dataSource": "StaticList",
+                                                                    "allowUserValue": false,
+                                                                    "options": [
+                                                                        {
+                                                                            "value": "Garlic Parmesan Fries",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Mozzarella Sticks",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Chicken Wings (6 pcs)",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Bruschetta",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Caesar Salad",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Greek Salad",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Cobb Salad",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Caprese Salad",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        }
+                                                                    ],
+                                                                    "defaultValue": null
+                                                                },
+                                                                {
+                                                                    "_internalName": "Quantity",
+                                                                    "title": "Quantity",
+                                                                    "required": true,
+                                                                    "type": "Number",
+                                                                    "aggregates": [],
+                                                                    "min": 1,
+                                                                    "max": 10,
+                                                                    "precision": 0,
+                                                                    "percents": false,
+                                                                    "spinButtons": true,
+                                                                    "step": 1
+                                                                },
+                                                                {
+                                                                    "_internalName": "Price",
+                                                                    "title": "Price",
+                                                                    "required": false,
+                                                                    "type": "Currency",
+                                                                    "aggregates": [],
+                                                                    "min": 0,
+                                                                    "precision": 2,
+                                                                    "symbol": "$",
+                                                                    "spinButtons": true,
+                                                                    "step": 1
+                                                                },
+                                                                {
+                                                                    "_internalName": "Total",
+                                                                    "title": "Total",
+                                                                    "type": "Calculated",
+                                                                    "formula": {
+                                                                        "mode": "formula",
+                                                                        "formula": "Quantity * Price"
+                                                                    },
+                                                                    "resultType": "Currency",
+                                                                    "aggregates": [
+                                                                        {
+                                                                            "type": "sum",
+                                                                            "template": "Sum: {0}"
+                                                                        }
+                                                                    ],
+                                                                    "precision": 2,
+                                                                    "symbol": "$"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        10,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "DataTable",
+                                                        "model": {
+                                                            "_internalName": "MainCourses",
+                                                            "title": {
+                                                                "text": "Main Courses",
+                                                                "visible": true
+                                                            },
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "newLine": "Top",
+                                                            "delete": "Last",
+                                                            "columns": [
+                                                                {
+                                                                    "_internalName": "Item",
+                                                                    "title": "Item",
+                                                                    "required": true,
+                                                                    "type": "Dropdown",
+                                                                    "aggregates": [],
+                                                                    "selection": "Single",
+                                                                    "dataSource": "StaticList",
+                                                                    "allowUserValue": false,
+                                                                    "options": [
+                                                                        {
+                                                                            "value": "Spaghetti Bolognese",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Grilled Salmon",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Chicken Alfredo Pasta",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Steak (8 oz)",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Margherita Pizza",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Pepperoni Pizza",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Vegetarian Pizza",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "BBQ Chicken Pizza",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Classic Cheeseburger",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Veggie Burger",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Bacon Avocado Burger",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Mushroom Swiss Burger",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        }
+                                                                    ],
+                                                                    "defaultValue": null
+                                                                },
+                                                                {
+                                                                    "_internalName": "Quantity",
+                                                                    "title": "Quantity",
+                                                                    "required": true,
+                                                                    "type": "Number",
+                                                                    "aggregates": [],
+                                                                    "min": 1,
+                                                                    "max": 10,
+                                                                    "precision": 0,
+                                                                    "percents": false,
+                                                                    "spinButtons": true,
+                                                                    "step": 1
+                                                                },
+                                                                {
+                                                                    "_internalName": "Price",
+                                                                    "title": "Price",
+                                                                    "required": false,
+                                                                    "type": "Currency",
+                                                                    "aggregates": [],
+                                                                    "min": 0,
+                                                                    "precision": 2,
+                                                                    "symbol": "$",
+                                                                    "spinButtons": true,
+                                                                    "step": 1
+                                                                },
+                                                                {
+                                                                    "_internalName": "Total",
+                                                                    "title": "Total",
+                                                                    "type": "Calculated",
+                                                                    "formula": {
+                                                                        "mode": "formula",
+                                                                        "formula": "Quantity * Price"
+                                                                    },
+                                                                    "resultType": "Currency",
+                                                                    "aggregates": [
+                                                                        {
+                                                                            "type": "sum",
+                                                                            "template": "Sum: {0}"
+                                                                        }
+                                                                    ],
+                                                                    "precision": 2,
+                                                                    "symbol": "$"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        10,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "DataTable",
+                                                        "model": {
+                                                            "_internalName": "Desserts",
+                                                            "title": {
+                                                                "text": "Desserts",
+                                                                "visible": true
+                                                            },
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "newLine": "Top",
+                                                            "delete": "Last",
+                                                            "columns": [
+                                                                {
+                                                                    "_internalName": "Item",
+                                                                    "title": "Item",
+                                                                    "required": true,
+                                                                    "type": "Dropdown",
+                                                                    "aggregates": [],
+                                                                    "selection": "Single",
+                                                                    "dataSource": "StaticList",
+                                                                    "allowUserValue": false,
+                                                                    "options": [
+                                                                        {
+                                                                            "value": "Chocolate Lava Cake",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "New York Cheesecake",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Fruit Tart",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Tiramisu",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        }
+                                                                    ],
+                                                                    "defaultValue": null
+                                                                },
+                                                                {
+                                                                    "_internalName": "Quantity",
+                                                                    "title": "Quantity",
+                                                                    "required": true,
+                                                                    "type": "Number",
+                                                                    "aggregates": [],
+                                                                    "min": 1,
+                                                                    "max": 10,
+                                                                    "precision": 0,
+                                                                    "percents": false,
+                                                                    "spinButtons": true,
+                                                                    "step": 1
+                                                                },
+                                                                {
+                                                                    "_internalName": "Price",
+                                                                    "title": "Price",
+                                                                    "required": false,
+                                                                    "type": "Currency",
+                                                                    "aggregates": [],
+                                                                    "min": 0,
+                                                                    "precision": 2,
+                                                                    "symbol": "$",
+                                                                    "spinButtons": true,
+                                                                    "step": 1
+                                                                },
+                                                                {
+                                                                    "_internalName": "Total",
+                                                                    "title": "Total",
+                                                                    "type": "Calculated",
+                                                                    "formula": {
+                                                                        "mode": "formula",
+                                                                        "formula": "Quantity * Price"
+                                                                    },
+                                                                    "resultType": "Currency",
+                                                                    "aggregates": [
+                                                                        {
+                                                                            "type": "sum",
+                                                                            "template": "Sum: {0}"
+                                                                        }
+                                                                    ],
+                                                                    "precision": 2,
+                                                                    "symbol": "$"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        10,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "Currency",
+                                                        "model": {
+                                                            "_internalName": "Total",
+                                                            "width": 100,
+                                                            "title": {
+                                                                "text": "Total",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cWidth": 150,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "min": 0,
+                                                            "symbol": "$",
+                                                            "precision": 2,
+                                                            "spinButtons": false
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Left",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        20,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "SingleChoice",
+                                                        "model": {
+                                                            "_internalName": "Delivery",
+                                                            "title": {
+                                                                "text": "How would you like to receive your order today: delivery or take-away?",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "cColumns": 3,
+                                                            "options": [
+                                                                {
+                                                                    "value": "Delivery",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Take away",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                }
+                                                            ],
+                                                            "allowUserValue": false,
+                                                            "defaultValue": []
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        10,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "FirstName",
+                                                            "title": {
+                                                                "text": "Name",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Phone",
+                                                        "model": {
+                                                            "_internalName": "Phone",
+                                                            "countries": [
+                                                                "AF",
+                                                                "AX",
+                                                                "AL",
+                                                                "DZ",
+                                                                "AS",
+                                                                "AD",
+                                                                "AO",
+                                                                "AI",
+                                                                "AQ",
+                                                                "AG",
+                                                                "AR",
+                                                                "AM",
+                                                                "AW",
+                                                                "AC",
+                                                                "AU",
+                                                                "AT",
+                                                                "AZ",
+                                                                "BS",
+                                                                "BH",
+                                                                "BD",
+                                                                "BB",
+                                                                "BY",
+                                                                "BE",
+                                                                "BZ",
+                                                                "BJ",
+                                                                "BM",
+                                                                "BT",
+                                                                "BO",
+                                                                "BA",
+                                                                "BW",
+                                                                "BR",
+                                                                "IO",
+                                                                "BN",
+                                                                "BG",
+                                                                "BF",
+                                                                "BI",
+                                                                "KH",
+                                                                "CM",
+                                                                "CA",
+                                                                "CV",
+                                                                "KY",
+                                                                "CF",
+                                                                "TD",
+                                                                "CL",
+                                                                "CN",
+                                                                "CX",
+                                                                "CC",
+                                                                "CO",
+                                                                "KM",
+                                                                "CG",
+                                                                "CK",
+                                                                "CR",
+                                                                "HR",
+                                                                "CU",
+                                                                "CY",
+                                                                "CZ",
+                                                                "CD",
+                                                                "DK",
+                                                                "DJ",
+                                                                "DM",
+                                                                "DO",
+                                                                "EC",
+                                                                "EG",
+                                                                "SV",
+                                                                "GQ",
+                                                                "ER",
+                                                                "EE",
+                                                                "SZ",
+                                                                "ET",
+                                                                "FK",
+                                                                "FO",
+                                                                "FJ",
+                                                                "FI",
+                                                                "FR",
+                                                                "GF",
+                                                                "PF",
+                                                                "GA",
+                                                                "GM",
+                                                                "GE",
+                                                                "DE",
+                                                                "GH",
+                                                                "GI",
+                                                                "GR",
+                                                                "GL",
+                                                                "GD",
+                                                                "GP",
+                                                                "GU",
+                                                                "GT",
+                                                                "GG",
+                                                                "GN",
+                                                                "GW",
+                                                                "GY",
+                                                                "HT",
+                                                                "VA",
+                                                                "HN",
+                                                                "HK",
+                                                                "HU",
+                                                                "IS",
+                                                                "IN",
+                                                                "ID",
+                                                                "IR",
+                                                                "IQ",
+                                                                "IE",
+                                                                "IM",
+                                                                "IL",
+                                                                "IT",
+                                                                "CI",
+                                                                "JM",
+                                                                "JP",
+                                                                "JE",
+                                                                "JO",
+                                                                "KZ",
+                                                                "KE",
+                                                                "KI",
+                                                                "KP",
+                                                                "KR",
+                                                                "XK",
+                                                                "KW",
+                                                                "KG",
+                                                                "LA",
+                                                                "LV",
+                                                                "LB",
+                                                                "LS",
+                                                                "LR",
+                                                                "LY",
+                                                                "LI",
+                                                                "LT",
+                                                                "LU",
+                                                                "MO",
+                                                                "MG",
+                                                                "MW",
+                                                                "MY",
+                                                                "MV",
+                                                                "ML",
+                                                                "MT",
+                                                                "MH",
+                                                                "MQ",
+                                                                "MR",
+                                                                "MU",
+                                                                "YT",
+                                                                "MX",
+                                                                "FM",
+                                                                "MD",
+                                                                "MC",
+                                                                "MN",
+                                                                "ME",
+                                                                "MS",
+                                                                "MA",
+                                                                "MZ",
+                                                                "MM",
+                                                                "NA",
+                                                                "NR",
+                                                                "NP",
+                                                                "NL",
+                                                                "NC",
+                                                                "NZ",
+                                                                "NI",
+                                                                "NE",
+                                                                "NG",
+                                                                "NU",
+                                                                "NF",
+                                                                "MK",
+                                                                "MP",
+                                                                "NO",
+                                                                "OM",
+                                                                "PK",
+                                                                "PW",
+                                                                "PS",
+                                                                "PA",
+                                                                "PG",
+                                                                "PY",
+                                                                "PE",
+                                                                "PH",
+                                                                "PN",
+                                                                "PL",
+                                                                "PT",
+                                                                "PR",
+                                                                "QA",
+                                                                "RE",
+                                                                "RO",
+                                                                "RU",
+                                                                "RW",
+                                                                "BL",
+                                                                "SH",
+                                                                "KN",
+                                                                "LC",
+                                                                "MF",
+                                                                "PM",
+                                                                "VC",
+                                                                "WS",
+                                                                "SM",
+                                                                "ST",
+                                                                "SA",
+                                                                "SN",
+                                                                "RS",
+                                                                "SC",
+                                                                "SL",
+                                                                "SG",
+                                                                "SX",
+                                                                "SK",
+                                                                "SI",
+                                                                "SB",
+                                                                "SO",
+                                                                "ZA",
+                                                                "GS",
+                                                                "SS",
+                                                                "ES",
+                                                                "LK",
+                                                                "SD",
+                                                                "SR",
+                                                                "SJ",
+                                                                "SE",
+                                                                "CH",
+                                                                "SY",
+                                                                "TW",
+                                                                "TJ",
+                                                                "TZ",
+                                                                "TH",
+                                                                "TL",
+                                                                "TG",
+                                                                "TK",
+                                                                "TO",
+                                                                "TT",
+                                                                "TN",
+                                                                "TR",
+                                                                "TM",
+                                                                "TC",
+                                                                "TV",
+                                                                "UG",
+                                                                "UA",
+                                                                "AE",
+                                                                "GB",
+                                                                "US",
+                                                                "UY",
+                                                                "UZ",
+                                                                "VU",
+                                                                "VE",
+                                                                "VN",
+                                                                "VG",
+                                                                "VI",
+                                                                "WF",
+                                                                "YE",
+                                                                "ZM",
+                                                                "ZW"
+                                                            ],
+                                                            "title": {
+                                                                "text": "Phone",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            }
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Email",
+                                                            "title": {
+                                                                "text": "Email",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Email",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "E-mail",
+                                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                            "error": "This field must contain a valid e-mail address."
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        10,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Address",
+                                                            "description": "Address",
+                                                            "title": {
+                                                                "text": "Delivery Address",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Building",
+                                                            "description": "Building",
+                                                            "title": {
+                                                                "text": "Building",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Apartment",
+                                                            "description": "Apt./Off.",
+                                                            "title": {
+                                                                "text": "Apartment",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "MultiLineText",
+                                                        "model": {
+                                                            "_internalName": "Instructions",
+                                                            "description": "Special ",
+                                                            "title": {
+                                                                "text": "Instructions",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "mode": "Plain"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Button",
+                                                        "model": {
+                                                            "_internalName": "Button1",
+                                                            "text": "Order Now!",
+                                                            "type": "Primary",
+                                                            "click": "return fd.save();"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
                             },
-                            "border": {
-                                "width": null,
-                                "color": null
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "rows": [{
-                                "cells": [{
-                                    "component": {
-                                        "type": "Text",
-                                        "model": {
-                                            "_internalName": "Text1",
-                                            "text": "Please select your preferred dishes from the menu below and specifying the quantity for each item."
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "DataTable",
-                                        "model": {
-                                            "_internalName": "Appetizers",
-                                            "title": {
-                                                "text": "Appetizers & Salads",
-                                                "visible": true
-                                            },
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "newLine": "Top",
-                                            "delete": "Last",
-                                            "columns": [{
-                                                "_internalName": "Item",
-                                                "title": "Item",
-                                                "required": true,
-                                                "type": "Dropdown",
-                                                "aggregates": [],
-                                                "selection": "Single",
-                                                "dataSource": "StaticList",
-                                                "allowUserValue": false,
-                                                "options": [{
-                                                    "value": "Garlic Parmesan Fries",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Mozzarella Sticks",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Chicken Wings (6 pcs)",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Bruschetta",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Caesar Salad",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Greek Salad",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Cobb Salad",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Caprese Salad",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }],
-                                                "defaultValue": null
-                                            }, {
-                                                "_internalName": "Quantity",
-                                                "title": "Quantity",
-                                                "required": true,
-                                                "type": "Number",
-                                                "aggregates": [],
-                                                "min": 1,
-                                                "max": 10,
-                                                "precision": 0,
-                                                "percents": false,
-                                                "spinButtons": true,
-                                                "step": 1
-                                            }, {
-                                                "_internalName": "Price",
-                                                "title": "Price",
-                                                "required": false,
-                                                "type": "Currency",
-                                                "aggregates": [],
-                                                "min": 0,
-                                                "precision": 2,
-                                                "symbol": "$",
-                                                "spinButtons": true,
-                                                "step": 1
-                                            }, {
-                                                "_internalName": "Total",
-                                                "title": "Total",
-                                                "type": "Calculated",
-                                                "formula": {
-                                                    "mode": "formula",
-                                                    "formula": "Quantity * Price"
-                                                },
-                                                "resultType": "Currency",
-                                                "aggregates": [{
-                                                    "type": "sum",
-                                                    "template": "Sum: {0}"
-                                                }],
-                                                "precision": 2,
-                                                "symbol": "$"
-                                            }]
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [10, null, null, null],
-                                    "component": {
-                                        "type": "DataTable",
-                                        "model": {
-                                            "_internalName": "MainCourses",
-                                            "title": {
-                                                "text": "Main Courses",
-                                                "visible": true
-                                            },
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "newLine": "Top",
-                                            "delete": "Last",
-                                            "columns": [{
-                                                "_internalName": "Item",
-                                                "title": "Item",
-                                                "required": true,
-                                                "type": "Dropdown",
-                                                "aggregates": [],
-                                                "selection": "Single",
-                                                "dataSource": "StaticList",
-                                                "allowUserValue": false,
-                                                "options": [{
-                                                    "value": "Spaghetti Bolognese",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Grilled Salmon",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Chicken Alfredo Pasta",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Steak (8 oz)",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Margherita Pizza",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Pepperoni Pizza",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Vegetarian Pizza",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "BBQ Chicken Pizza",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Classic Cheeseburger",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Veggie Burger",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Bacon Avocado Burger",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Mushroom Swiss Burger",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }],
-                                                "defaultValue": null
-                                            }, {
-                                                "_internalName": "Quantity",
-                                                "title": "Quantity",
-                                                "required": true,
-                                                "type": "Number",
-                                                "aggregates": [],
-                                                "min": 1,
-                                                "max": 10,
-                                                "precision": 0,
-                                                "percents": false,
-                                                "spinButtons": true,
-                                                "step": 1
-                                            }, {
-                                                "_internalName": "Price",
-                                                "title": "Price",
-                                                "required": false,
-                                                "type": "Currency",
-                                                "aggregates": [],
-                                                "min": 0,
-                                                "precision": 2,
-                                                "symbol": "$",
-                                                "spinButtons": true,
-                                                "step": 1
-                                            }, {
-                                                "_internalName": "Total",
-                                                "title": "Total",
-                                                "type": "Calculated",
-                                                "formula": {
-                                                    "mode": "formula",
-                                                    "formula": "Quantity * Price"
-                                                },
-                                                "resultType": "Currency",
-                                                "aggregates": [{
-                                                    "type": "sum",
-                                                    "template": "Sum: {0}"
-                                                }],
-                                                "precision": 2,
-                                                "symbol": "$"
-                                            }]
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [10, null, null, null],
-                                    "component": {
-                                        "type": "DataTable",
-                                        "model": {
-                                            "_internalName": "Desserts",
-                                            "title": {
-                                                "text": "Desserts",
-                                                "visible": true
-                                            },
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "newLine": "Top",
-                                            "delete": "Last",
-                                            "columns": [{
-                                                "_internalName": "Item",
-                                                "title": "Item",
-                                                "required": true,
-                                                "type": "Dropdown",
-                                                "aggregates": [],
-                                                "selection": "Single",
-                                                "dataSource": "StaticList",
-                                                "allowUserValue": false,
-                                                "options": [{
-                                                    "value": "Chocolate Lava Cake",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "New York Cheesecake",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Fruit Tart",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }, {
-                                                    "value": "Tiramisu",
-                                                    "backgroundColor": null,
-                                                    "textColor": null
-                                                }],
-                                                "defaultValue": null
-                                            }, {
-                                                "_internalName": "Quantity",
-                                                "title": "Quantity",
-                                                "required": true,
-                                                "type": "Number",
-                                                "aggregates": [],
-                                                "min": 1,
-                                                "max": 10,
-                                                "precision": 0,
-                                                "percents": false,
-                                                "spinButtons": true,
-                                                "step": 1
-                                            }, {
-                                                "_internalName": "Price",
-                                                "title": "Price",
-                                                "required": false,
-                                                "type": "Currency",
-                                                "aggregates": [],
-                                                "min": 0,
-                                                "precision": 2,
-                                                "symbol": "$",
-                                                "spinButtons": true,
-                                                "step": 1
-                                            }, {
-                                                "_internalName": "Total",
-                                                "title": "Total",
-                                                "type": "Calculated",
-                                                "formula": {
-                                                    "mode": "formula",
-                                                    "formula": "Quantity * Price"
-                                                },
-                                                "resultType": "Currency",
-                                                "aggregates": [{
-                                                    "type": "sum",
-                                                    "template": "Sum: {0}"
-                                                }],
-                                                "precision": 2,
-                                                "symbol": "$"
-                                            }]
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [10, null, null, null],
-                                    "component": {
-                                        "type": "Currency",
-                                        "model": {
-                                            "_internalName": "Total",
-                                            "width": 100,
-                                            "title": {
-                                                "text": "Total",
-                                                "visible": true
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cWidth": 150,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "min": 0,
-                                            "symbol": "$",
-                                            "precision": 2,
-                                            "spinButtons": false
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Left",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [20, null, null, null],
-                                    "component": {
-                                        "type": "SingleChoice",
-                                        "model": {
-                                            "_internalName": "Delivery",
-                                            "title": {
-                                                "text": "How would you like to receive your order today: delivery or take-away?",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "dataSource": "StaticList",
-                                            "cColumns": 3,
-                                            "options": [{
-                                                "value": "Delivery",
-                                                "backgroundColor": null,
-                                                "textColor": null
-                                            }, {
-                                                "value": "Take away",
-                                                "backgroundColor": null,
-                                                "textColor": null
-                                            }],
-                                            "allowUserValue": false,
-                                            "defaultValue": []
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [10, null, null, null],
-                                    "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                            "_internalName": "FirstName",
-                                            "title": {
-                                                "text": "Name",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "type": "Anything"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "MaskedInput",
-                                        "model": {
-                                            "_internalName": "Phone",
-                                            "title": {
-                                                "text": "Phone",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "mask": "000-000-0000"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 6
-                                    }
-                                }, {
-                                    "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                            "_internalName": "Email",
-                                            "title": {
-                                                "text": "Email",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cHint": "Email",
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "type": "E-mail",
-                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                            "error": "This field must contain a valid e-mail address."
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 6
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [10, null, null, null],
-                                    "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                            "_internalName": "Address",
-                                            "description": "Address",
-                                            "title": {
-                                                "text": "Delivery Address",
-                                                "visible": true
-                                            },
-                                            "orientation": "Vertical",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "type": "Anything"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                            "_internalName": "Building",
-                                            "description": "Building",
-                                            "title": {
-                                                "text": "Building",
-                                                "visible": false
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "type": "Anything"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 6
-                                    }
-                                }, {
-                                    "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                            "_internalName": "Apartment",
-                                            "description": "Apt./Off.",
-                                            "title": {
-                                                "text": "Apartment",
-                                                "visible": false
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "type": "Anything"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 6
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "MultiLineText",
-                                        "model": {
-                                            "_internalName": "Instructions",
-                                            "description": "Special ",
-                                            "title": {
-                                                "text": "Instructions",
-                                                "visible": false
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "mode": "Plain"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "Button",
-                                        "model": {
-                                            "_internalName": "Button1",
-                                            "text": "Order Now!",
-                                            "type": "Primary",
-                                            "click": "return fd.save();"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }]
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
+                    ]
+                }
+            ]
         }
     },
     "tablet": null,
@@ -798,8 +1174,8 @@
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
-    "userLanguage": "",
-    "userCulture": "",
+    "userLanguage": null,
+    "userCulture": null,
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,
@@ -810,6 +1186,7 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
+    "entraExternalIdProperties": null,
     "azureB2CProperties": null,
     "connection": null
 }
