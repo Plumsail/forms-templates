@@ -16,32 +16,17 @@
                 {
                     "cells": [
                         {
-                            "component": {
-                                "type": "Image",
-                                "model": {
-                                    "_internalName": "Image1",
-                                    "target": "_blank",
-                                    "image": "https://plumsail.com/assets/forms/templates/christmas-donation-form-banner.webp"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Left",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
+                            "padding": [
+                                null,
+                                null,
+                                20,
+                                null
+                            ],
                             "component": {
                                 "type": "Heading",
                                 "model": {
                                     "_internalName": "Heading1",
-                                    "heading": "Holiday Donation Form",
+                                    "heading": "Event registration",
                                     "view": "Normal",
                                     "font": {
                                         "style": "Normal",
@@ -52,6 +37,7 @@
                                         "vertical": null,
                                         "radius": null
                                     },
+                                    "subheading": "742 Evergreen Terrace, Springfield, OR 97403 at 7:00 PM.",
                                     "size": "H1",
                                     "textAlignment": "Center"
                                 }
@@ -70,107 +56,11 @@
                     "cells": [
                         {
                             "component": {
-                                "type": "Currency",
+                                "type": "AirtableSingleLineText",
                                 "model": {
-                                    "_internalName": "Amount",
-                                    "title": {
-                                        "text": "Amount",
-                                        "visible": true
-                                    },
-                                    "orientation": "Vertical",
-                                    "required": false,
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "wrap": true,
-                                    "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "min": 0,
-                                    "symbol": "$",
-                                    "precision": 2,
-                                    "spinButtons": false
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 6
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "component": {
-                                "type": "SingleChoice",
-                                "model": {
-                                    "_internalName": "PaymentMethod",
-                                    "title": {
-                                        "text": "Payment Method",
-                                        "visible": true
-                                    },
-                                    "orientation": "Vertical",
-                                    "required": false,
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "wrap": true,
-                                    "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "dataSource": "StaticList",
-                                    "cColumns": 2,
-                                    "options": [
-                                        {
-                                            "value": "cash",
-                                            "backgroundColor": null,
-                                            "textColor": null
-                                        },
-                                        {
-                                            "value": "credit card",
-                                            "backgroundColor": null,
-                                            "textColor": null
-                                        },
-                                        {
-                                            "value": "check",
-                                            "backgroundColor": null,
-                                            "textColor": null
-                                        },
-                                        {
-                                            "value": "bank transfer",
-                                            "backgroundColor": null,
-                                            "textColor": null
-                                        }
-                                    ],
-                                    "allowUserValue": false,
-                                    "defaultValue": []
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "component": {
-                                "type": "SingleLineText",
-                                "model": {
-                                    "_internalName": "Name",
+                                    "_internalName": "fldw0cbcJYkMzY70V",
+                                    "readOnly": false,
+                                    "description": "First Name",
                                     "title": {
                                         "text": "Name",
                                         "visible": true
@@ -194,7 +84,40 @@
                                 "vertical": "Top"
                             },
                             "columns": {
-                                "width": 12
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "AirtableSingleLineText",
+                                "model": {
+                                    "_internalName": "fldwOr7PDC4stPgTZ",
+                                    "readOnly": false,
+                                    "description": "Last Name",
+                                    "title": {
+                                        "text": " ",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
                             }
                         }
                     ]
@@ -203,9 +126,80 @@
                     "cells": [
                         {
                             "component": {
-                                "type": "SingleLineText",
+                                "type": "AirtableSingleLineText",
                                 "model": {
-                                    "_internalName": "Email",
+                                    "_internalName": "fldQqDoLTebcEUFA3",
+                                    "readOnly": false,
+                                    "description": "What do you do?",
+                                    "title": {
+                                        "text": "Role",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "AirtableSingleLineText",
+                                "model": {
+                                    "_internalName": "fldXqd4yBgXjlsB1u",
+                                    "readOnly": false,
+                                    "title": {
+                                        "text": "Company",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "AirtableSingleLineText",
+                                "model": {
+                                    "_internalName": "fldFX0fOVCxqqMW4w",
+                                    "readOnly": false,
+                                    "description": "We will use it only for important messages",
                                     "title": {
                                         "text": "Email",
                                         "visible": true
@@ -232,7 +226,43 @@
                                 "vertical": "Top"
                             },
                             "columns": {
-                                "width": 12
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "AirtableSingleLineText",
+                                "model": {
+                                    "_internalName": "fldGlTtcLhp3l9Wpn",
+                                    "readOnly": false,
+                                    "description": "We will call you only in case of an emergency",
+                                    "title": {
+                                        "text": "Phone",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "123-456-7890",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Phone",
+                                    "pattern": "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]\\d{3}[\\s.-]\\d{4}$",
+                                    "error": "This field must contain a valid phone number."
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
                             }
                         }
                     ]
@@ -241,11 +271,12 @@
                     "cells": [
                         {
                             "component": {
-                                "type": "MultiLineText",
+                                "type": "AirtableSingleSelect",
                                 "model": {
-                                    "_internalName": "GiftMessage",
+                                    "_internalName": "fld6QdyPsjKtuUK34",
+                                    "readOnly": false,
                                     "title": {
-                                        "text": "Gift Message",
+                                        "text": "Attendee Category",
                                         "visible": true
                                     },
                                     "orientation": "Vertical",
@@ -259,7 +290,7 @@
                                         "style": "Normal",
                                         "weight": "Normal"
                                     },
-                                    "mode": "Plain"
+                                    "defaultValue": []
                                 }
                             },
                             "alignment": {
@@ -276,10 +307,52 @@
                     "cells": [
                         {
                             "component": {
+                                "type": "AirtableSingleSelect",
+                                "model": {
+                                    "_internalName": "fldqSuFkwEmYg4ibQ",
+                                    "readOnly": false,
+                                    "title": {
+                                        "text": "Dietary Restrictions",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "defaultValue": []
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                20,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
                                 "type": "Submit",
                                 "model": {
-                                    "_internalName": "Submit1",
-                                    "text": "Donate",
+                                    "_internalName": "Submit",
+                                    "text": "Register",
                                     "savingText": "Submitting...",
                                     "type": "Primary",
                                     "click": "return fd.save();"
@@ -287,7 +360,7 @@
                             },
                             "alignment": {
                                 "horizontal": "Justify",
-                                "vertical": "Top"
+                                "vertical": "Middle"
                             },
                             "columns": {
                                 "width": 12
@@ -305,26 +378,26 @@
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "primary": "#8B0000",
-        "bodyText": "#183711",
-        "bodyBackground": "#ffffff",
-        "fontFamily": "Noto Serif Georgian",
-        "fontType": 1,
-        "fontSize": 16,
-        "fontWeight": 400,
+        "themeId": "47b99a3e5caf579effd2ea40549a9c4c",
+        "bodyText": "#3f3f3f",
+        "bodyBackground": "#f7faf9",
+        "fontSize": 15,
+        "fontWeight": 300,
         "borderThickness": 1,
         "borderRadius": 2,
         "shadow": true,
-        "themeId": "c64929dbd508ef4fa75478ec9fc903d3",
-        "isDark": false
+        "isDark": false,
+        "primary": "#205A28",
+        "fontFamily": "Roboto",
+        "fontType": 1
     },
-    "timezone": "Etc/GMT-12",
+    "timezone": "Etc/GMT",
     "culture": "en",
     "userLanguage": null,
     "userCulture": null,
-    "thankYouMessage": "Thank you for your generous donation! We're grateful for your support. \nWe'll be in touch via email soon.",
+    "thankYouMessage": null,
     "redirectURL": null,
-    "hideAfterSubmission": false,
+    "hideAfterSubmission": true,
     "submissionTimeout": 0,
     "authentication": 0,
     "singleSubmissionPerUser": false,
@@ -334,6 +407,14 @@
     "azureADObjects": [],
     "entraExternalIdProperties": null,
     "azureB2CProperties": null,
-    "connection": null,
+    "connection": {
+        "type": "Airtable",
+        "settings": {
+            "connectionId": "cb15860b-9eb7-429b-95ac-b83593028425",
+            "baseId": "appZ9XDEPVzhA3885",
+            "tableId": "tblvGqjjVElZy1BHZ",
+            "enableEditing": false
+        }
+    },
     "widgetVersion": "2.0.0"
 }

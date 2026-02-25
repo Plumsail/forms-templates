@@ -12,120 +12,167 @@
                 "width": null,
                 "color": null
             },
-            "rows": [{
-                "cells": [{
-                    "component": {
-                        "type": "Heading",
-                        "model": {
-                            "_internalName": "Heading1",
-                            "heading": "Support Satisfaction Survey",
-                            "view": "Normal",
-                            "font": {
-                                "color": "#ffffff",
-                                "style": "Normal",
-                                "weight": "Semibold"
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading1",
+                                    "heading": "Support Satisfaction Survey",
+                                    "view": "Normal",
+                                    "font": {
+                                        "color": "#ffffff",
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": 15,
+                                        "radius": null
+                                    },
+                                    "class": "bg-primary",
+                                    "fill": "#8064a2",
+                                    "size": "H1",
+                                    "textAlignment": "Center"
+                                }
                             },
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": 15,
-                                "radius": null
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "class": "bg-primary",
-                            "fill": "#8064a2",
-                            "size": "H1",
-                            "textAlignment": "Center"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [15, null, null, null],
-                    "component": {
-                        "type": "LikertScale",
-                        "model": {
-                            "_internalName": "LikertScale1",
-                            "type": "Radio",
-                            "required": false,
-                            "questions": "How would you rate the overall quality of the support you received?\r\nHow would you rate the speed in which you received an answer from the customer support?\r\nHow would you rate the overall knowledge of the support specialist?",
-                            "answers": "Very Satisfied\nSatisfied\nPartly Satisfied\nNot at all Satisfied"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "LikertScale",
+                                "model": {
+                                    "_internalName": "LikertScale1",
+                                    "type": "Radio",
+                                    "required": false,
+                                    "questions": "How would you rate the overall quality of the support you received?\r\nHow would you rate the speed in which you received an answer from the customer support?\r\nHow would you rate the overall knowledge of the support specialist?",
+                                    "answers": "Very Satisfied\nSatisfied\nPartly Satisfied\nNot at all Satisfied"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [5, null, null, null],
-                    "component": {
-                        "type": "SingleChoice",
-                        "model": {
-                            "_internalName": "IssueResolved",
-                            "title": {
-                                "text": "Has the issue been resolved?",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                5,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "SingleChoice",
+                                "model": {
+                                    "_internalName": "IssueResolved",
+                                    "title": {
+                                        "text": "Has the issue been resolved?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "cColumns": 1,
+                                    "options": [
+                                        {
+                                            "value": "Yes, because of support specialist",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Yes, because I found the solution myself",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "No, but support specialist answered my question",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "No, and support specialist could not answer my question",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        }
+                                    ],
+                                    "defaultValue": []
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                            },
-                            "dataSource": "StaticList",
-                            "StaticList": {
-                                "options": "Yes, because of support specialist\r\nYes, because I found the solution myself\r\nNo, but support specialist answered my question\r\nNo, and support specialist could not answer my question"
-                            },
-                            "cColumns": 1,
-                            "options": "Yes, because of support specialist\r\nYes, because I found the solution myself\r\nNo, but support specialist answered my question\r\nNo, and support specialist could not answer my question"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [15, null, null, null],
-                    "component": {
-                        "type": "Submit",
-                        "model": {
-                            "_internalName": "Submit1",
-                            "text": "SEND FEEDBACK",
-                            "savingText": "Submitting...",
-                            "type": "Primary",
-                            "click": "return fd.save();",
-                            "style": "font-weight: 500 !important;"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Submit",
+                                "model": {
+                                    "_internalName": "Submit1",
+                                    "text": "SEND FEEDBACK",
+                                    "savingText": "Submitting...",
+                                    "type": "Primary",
+                                    "click": "return fd.save();",
+                                    "style": "font-weight: 500 !important;"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Center",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
+                    ]
+                }
+            ]
         }
     },
     "tablet": null,
@@ -161,5 +208,8 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null,
+    "widgetVersion": "2.0.0"
 }

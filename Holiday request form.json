@@ -2,7 +2,8 @@
     "pc": {
         "type": "Grid",
         "model": {
-            "stacked": "md",
+            "_internalName": "MainGrid",
+            "stacked": "sm",
             "frame": {
                 "horizontal": null,
                 "vertical": null,
@@ -19,12 +20,12 @@
                             "component": {
                                 "type": "Heading",
                                 "model": {
-                                    "_internalName": "Heading1",
-                                    "heading": "Vacation Request Form",
-                                    "view": "Line",
+                                    "_internalName": "FormTitle",
+                                    "heading": "Holiday Request Form",
+                                    "view": "Normal",
                                     "font": {
                                         "style": "Normal",
-                                        "weight": "Semibold"
+                                        "weight": "Normal"
                                     },
                                     "frame": {
                                         "horizontal": null,
@@ -32,7 +33,238 @@
                                         "radius": null
                                     },
                                     "size": "H1",
-                                    "textAlignment": "Left"
+                                    "textAlignment": "Center"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Grid",
+                                "model": {
+                                    "_internalName": "Grid1",
+                                    "stacked": "md",
+                                    "frame": {
+                                        "horizontal": 15,
+                                        "vertical": 20,
+                                        "radius": 25
+                                    },
+                                    "border": {
+                                        "width": 2,
+                                        "color": "#5D4037"
+                                    },
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "EmployeeName",
+                                                            "title": {
+                                                                "text": " Name",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Enter your full name",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "Department",
+                                                            "title": {
+                                                                "text": "Department",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "selection": "Single",
+                                                            "options": [
+                                                                {
+                                                                    "value": "Human Resources (HR)",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Information Technology (IT)",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Finance and Accounting",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Sales",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Marketing",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Operations",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Product Development",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Engineering",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Customer Service / Support",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Legal",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Executive / Administration",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                }
+                                                            ],
+                                                            "allowUserValue": false,
+                                                            "defaultValue": []
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "CoverPerson",
+                                                            "title": {
+                                                                "text": "Cover Person",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Who will cover your responsibilities?",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "ManagerName",
+                                                            "title": {
+                                                                "text": "Direct Manager",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Enter your manager's name",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             },
                             "alignment": {
@@ -57,41 +289,38 @@
                             "component": {
                                 "type": "Grid",
                                 "model": {
-                                    "_internalName": "Grid1",
+                                    "_internalName": "Grid2",
                                     "stacked": "md",
                                     "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
+                                        "horizontal": 15,
+                                        "vertical": 20,
+                                        "radius": 25
                                     },
                                     "border": {
                                         "width": 2,
-                                        "color": "#dfdfdf"
+                                        "color": "#5D4037"
                                     },
                                     "rows": [
                                         {
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "SingleLineText",
+                                                        "type": "Heading",
                                                         "model": {
-                                                            "_internalName": "FirstName",
-                                                            "title": {
-                                                                "text": "First Name",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
+                                                            "_internalName": "HolidayDetailsHeader",
+                                                            "heading": "Holiday Details",
+                                                            "view": "Line",
                                                             "font": {
                                                                 "style": "Normal",
                                                                 "weight": "Semibold"
                                                             },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": null
                                                             },
-                                                            "type": "Anything"
+                                                            "size": "H3",
+                                                            "textAlignment": "Center"
                                                         }
                                                     },
                                                     "alignment": {
@@ -99,38 +328,7 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 6
-                                                    }
-                                                },
-                                                {
-                                                    "component": {
-                                                        "type": "SingleLineText",
-                                                        "model": {
-                                                            "_internalName": "LastName",
-                                                            "title": {
-                                                                "text": "Last Name",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "type": "Anything"
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 6
+                                                        "width": 12
                                                     }
                                                 }
                                             ]
@@ -139,11 +337,11 @@
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "SingleLineText",
+                                                        "type": "DropDown",
                                                         "model": {
-                                                            "_internalName": "Position",
+                                                            "_internalName": "HolidayType",
                                                             "title": {
-                                                                "text": "Position",
+                                                                "text": "Holiday Type",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -153,237 +351,31 @@
                                                                 "weight": "Semibold"
                                                             },
                                                             "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "type": "Anything"
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 6
-                                                    }
-                                                },
-                                                {
-                                                    "component": {
-                                                        "type": "SingleLineText",
-                                                        "model": {
-                                                            "_internalName": "Email",
-                                                            "title": {
-                                                                "text": "Email",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "type": "Anything"
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 6
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "SingleLineText",
-                                                        "model": {
-                                                            "_internalName": "ManagerName",
-                                                            "title": {
-                                                                "text": "Manager name",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "type": "Anything"
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 6
-                                                    }
-                                                },
-                                                {
-                                                    "component": {
-                                                        "type": "SingleLineText",
-                                                        "model": {
-                                                            "_internalName": "ManagerEmail",
-                                                            "title": {
-                                                                "text": "Manager email",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "type": "Anything"
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 6
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "Date",
-                                                        "model": {
-                                                            "_internalName": "From",
-                                                            "title": {
-                                                                "text": "From",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "startDate": {
-                                                                "mode": "Fixed"
-                                                            },
-                                                            "endDate": {
-                                                                "mode": "Fixed"
-                                                            }
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 6
-                                                    }
-                                                },
-                                                {
-                                                    "component": {
-                                                        "type": "Date",
-                                                        "model": {
-                                                            "_internalName": "To",
-                                                            "title": {
-                                                                "text": "To",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "startDate": {
-                                                                "mode": "Relative",
-                                                                "fieldInternalName": "From",
-                                                                "offsetUnit": "Day"
-                                                            },
-                                                            "endDate": {
-                                                                "mode": "Fixed"
-                                                            }
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 6
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "SingleChoice",
-                                                        "model": {
-                                                            "_internalName": "VacationType",
-                                                            "title": {
-                                                                "text": "Vacation type",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
+                                                            "cHint": "Select holiday type",
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
                                                             "dataSource": "StaticList",
-                                                            "cColumns": 1,
+                                                            "selection": "Single",
                                                             "options": [
                                                                 {
-                                                                    "value": "Annual",
-                                                                    "backgroundColor": "#fccfe4",
-                                                                    "textColor": "#940a4a"
+                                                                    "value": "Annual Leave"
                                                                 },
                                                                 {
-                                                                    "value": "PTO",
-                                                                    "backgroundColor": "#fceacf",
-                                                                    "textColor": "#945e0a"
+                                                                    "value": "Sick Leave"
                                                                 },
                                                                 {
-                                                                    "value": "Unpaid",
-                                                                    "backgroundColor": "#cff4fc",
-                                                                    "textColor": "#0a7d94"
+                                                                    "value": "Personal Leave"
+                                                                },
+                                                                {
+                                                                    "value": "Maternity/Paternity Leave"
+                                                                },
+                                                                {
+                                                                    "value": "Compassionate Leave"
+                                                                },
+                                                                {
+                                                                    "value": "Study Leave"
                                                                 }
                                                             ],
                                                             "allowUserValue": false,
@@ -395,7 +387,122 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Toggle",
+                                                        "model": {
+                                                            "_internalName": "HalfDay",
+                                                            "title": {
+                                                                "text": "Half Day",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cWidth": 58,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "mode": "Checkbox",
+                                                            "cLabel": "This is a half-day request"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Date",
+                                                        "model": {
+                                                            "_internalName": "StartDate",
+                                                            "title": {
+                                                                "text": "Start Date",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Select start date",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "startDate": {
+                                                                "mode": "Fixed"
+                                                            },
+                                                            "endDate": {
+                                                                "mode": "Fixed"
+                                                            }
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "Date",
+                                                        "model": {
+                                                            "_internalName": "EndDate",
+                                                            "title": {
+                                                                "text": "End Date",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Select end date",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "startDate": {
+                                                                "mode": "Fixed"
+                                                            },
+                                                            "endDate": {
+                                                                "mode": "Fixed"
+                                                            }
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
                                                     }
                                                 }
                                             ]
@@ -417,7 +524,7 @@
                     "cells": [
                         {
                             "padding": [
-                                15,
+                                20,
                                 null,
                                 null,
                                 null
@@ -425,7 +532,7 @@
                             "component": {
                                 "type": "Submit",
                                 "model": {
-                                    "_internalName": "Request",
+                                    "_internalName": "SubmitButton",
                                     "text": "Submit",
                                     "savingText": "Submitting...",
                                     "type": "Primary",
@@ -433,8 +540,7 @@
                                 }
                             },
                             "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
+                                "horizontal": "Justify"
                             },
                             "columns": {
                                 "width": 12
@@ -447,29 +553,29 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "",
+    "js": "fd.rendered(function () {\r\n\r\n    // Call function when the form is rendered\r\n    showHideEndDate();\r\n\r\n    // Call function when HalfDay changes\r\n    fd.field('HalfDay').$on('change', showHideEndDate);\r\n\r\n});\r\n\r\n// The function hides End Date\r\nfunction showHideEndDate() {\r\n    fd.field('EndDate').hidden = fd.field('HalfDay').value;\r\n}\r\n    \r\n/*******************************************************************************************************\r\n* The code from this section is executed once the form is loaded.                                      *\r\n*                                                                                                      *\r\n* Depending on the stage of the form lifecycle when a particular action should be performed,           *\r\n* you can use on the following hooks:                                                                  *\r\n*                                                                                                      *\r\n* fd.rendered()     the code is executed once the form is rendered                                     *\r\n*                                                                                                      *\r\n* fd.beforeSave()   the code is executed right before saving the form. If returns Promise, the saving  *\r\n*                   does not proceed until the Promise is resoved. If the Promise is rejected,         * \r\n*                   the saving interrupts. This is the appropriate place for adding custom validation. *\r\n*                                                                                                      *\r\n* fd.saved()        the code is executed once the form is submitted                                    *\r\n*                                                                                                      *\r\n* The following predefined variables can be utilized in the code:                                      *\r\n*                                                                                                      *\r\n* fd    an instance of the current form                                                                *\r\n* $     jQuery object                                                                                  *\r\n*                                                                                                      *\r\n*******************************************************************************************************/\r\n\r\n\r\n/* Uncomment the code below to start using it in the form.\r\n\r\n// ================================================================\r\n//  EXAMPLE 1: The code is executed right after rendering the form \r\n// ================================================================\r\nfd.rendered(function () {\r\n\r\n    // The function populates FullName with values from FirstName and LastName\r\n    function updateFullName() {\r\n        var firstName = fd.field('FirstName').value || '';\r\n        var lastName = fd.field('LastName').value || '';\r\n        fd.field('FullName').value = (firstName ? firstName + ' ' : '') + lastName;\r\n    }\r\n\r\n    // Populate FullName when the form is rendered\r\n    updateFullName();\r\n\r\n    // Update FullName when FirstName changes\r\n    fd.field('FirstName').$on('change', updateFullName);\r\n\r\n    // Update FullName when LastName changes\r\n    fd.field('LastName').$on('change', updateFullName);\r\n});\r\n\r\n\r\n// ========================================================\r\n//  EXAMPLE 2: The code is executed before saving the form\r\n// ========================================================\r\nfd.beforeSave(function () {\r\n\r\n    // Prevent saving if StartDate is greater than EndDate\r\n    if (fd.field('StartDate').value > fd.field('EndDate').value) {\r\n        throw Error('Start Date must not be greater than End Date.');\r\n    }\r\n});\r\n\r\n\r\n// =============================================================\r\n//  EXAMPLE 3: The code is executed right after saving the form\r\n// =============================================================\r\nfd.saved(function (result) {\r\n\r\n    // Forward users to a custom Thank You page with a parameter\r\n    window.location = 'https://mysite.com/thank-you?email=' + fd.field('Email').value;\r\n});\r\n*/\r\n\r\n",
     "css": "",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "themeId": "e2f22e9ef44b4d79da3a5fda78d4a5d9",
+        "themeId": "039e2ab9d8428b1b39db2b02fb01a6ef",
         "bodyText": "#262626",
-        "bodyBackground": "#F0F8FF",
-        "fontSize": 15,
-        "fontWeight": 400,
+        "bodyBackground": "#ffffff",
+        "fontSize": 16,
+        "fontWeight": 300,
         "borderThickness": 1,
-        "borderRadius": 2,
+        "borderRadius": 10,
         "shadow": true,
         "isDark": false,
-        "primary": "#4A90E2",
-        "fontFamily": "Roboto Mono",
+        "primary": "#4A6D63",
+        "fontFamily": "Lora",
         "fontType": 1
     },
-    "timezone": "America/Los_Angeles",
+    "timezone": "Atlantic/Canary",
     "culture": "en",
     "userLanguage": null,
     "userCulture": null,
-    "thankYouMessage": null,
+    "thankYouMessage": "",
     "redirectURL": null,
     "hideAfterSubmission": false,
     "submissionTimeout": 0,
@@ -482,5 +588,6 @@
     "entraExternalIdProperties": null,
     "azureB2CProperties": null,
     "connection": null,
+    "redirectUrl": null,
     "widgetVersion": "2.0.0"
 }

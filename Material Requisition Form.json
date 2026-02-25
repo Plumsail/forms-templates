@@ -12,344 +12,398 @@
                 "width": null,
                 "color": null
             },
-            "rows": [{
-                "cells": [{
-                    "padding": [null, null, 15, null],
-                    "component": {
-                        "type": "Heading",
-                        "model": {
-                            "_internalName": "Heading1",
-                            "heading": "Material Requisition Form",
-                            "view": "Underline1",
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold",
-                                "color": ""
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                null,
+                                null,
+                                15,
+                                null
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading1",
+                                    "heading": "Material Requisition Form",
+                                    "view": "Underline1",
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold",
+                                        "color": ""
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H1",
+                                    "textAlignment": "Center"
+                                }
                             },
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "size": "H1",
-                            "textAlignment": "Center"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "SingleLineText",
-                        "model": {
-                            "_internalName": "WorkOrder",
-                            "title": {
-                                "text": "Work order #",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "WorkOrder",
+                                    "title": {
+                                        "text": "Work order #",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "DepartmentJob",
+                                    "title": {
+                                        "text": "Department/Job",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
                             },
-                            "type": "Anything"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 6
-                    }
-                }, {
-                    "component": {
-                        "type": "SingleLineText",
-                        "model": {
-                            "_internalName": "DepartmentJob",
-                            "title": {
-                                "text": "Department/Job",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                10,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "DataTable",
+                                "model": {
+                                    "_internalName": "Materials",
+                                    "title": {
+                                        "text": "Materials",
+                                        "visible": true
+                                    },
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "newLine": "Top",
+                                    "delete": "Last",
+                                    "columns": [
+                                        {
+                                            "_internalName": "Item",
+                                            "title": "Item",
+                                            "required": false,
+                                            "type": "String",
+                                            "aggregates": []
+                                        },
+                                        {
+                                            "_internalName": "Quantity",
+                                            "title": "Quantity",
+                                            "required": false,
+                                            "type": "Number",
+                                            "aggregates": [
+                                                {
+                                                    "type": "sum",
+                                                    "template": "Total: {0}"
+                                                }
+                                            ],
+                                            "min": 0,
+                                            "precision": 0,
+                                            "percents": false,
+                                            "spinButtons": false
+                                        },
+                                        {
+                                            "_internalName": "UnitCost",
+                                            "title": "Unit Cost",
+                                            "required": false,
+                                            "type": "Currency",
+                                            "aggregates": [],
+                                            "min": 0,
+                                            "precision": 2,
+                                            "symbol": "$",
+                                            "spinButtons": false
+                                        },
+                                        {
+                                            "_internalName": "TotalCost",
+                                            "title": "Total Cost",
+                                            "type": "Calculated",
+                                            "formula": {
+                                                "mode": "formula",
+                                                "formula": "UnitCost * Quantity "
+                                            },
+                                            "resultType": "Currency",
+                                            "aggregates": [
+                                                {
+                                                    "type": "sum",
+                                                    "template": "Total: {0}"
+                                                }
+                                            ],
+                                            "precision": 2,
+                                            "symbol": "$"
+                                        }
+                                    ]
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                            },
-                            "type": "Anything"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 6
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [10, null, null, null],
-                    "component": {
-                        "type": "DataTable",
-                        "model": {
-                            "_internalName": "Materials",
-                            "title": {
-                                "text": "Materials",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                10,
+                                null,
+                                10,
+                                null
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading2",
+                                    "heading": "",
+                                    "view": "Underline1",
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H4",
+                                    "textAlignment": "Center"
+                                }
                             },
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "newLine": "Top",
-                            "delete": "Last",
-                            "columns": [{
-                                "_internalName": "Item",
-                                "title": "Item",
-                                "required": false,
-                                "type": "String",
-                                "aggregates": []
-                            }, {
-                                "_internalName": "Quantity",
-                                "title": "Quantity",
-                                "required": false,
-                                "type": "Number",
-                                "aggregates": [{
-                                    "type": "sum",
-                                    "template": "Total: {0}"
-                                }],
-                                "min": 0,
-                                "precision": 0,
-                                "percents": false,
-                                "spinButtons": false
-                            }, {
-                                "_internalName": "UnitCost",
-                                "title": "Unit Cost",
-                                "required": false,
-                                "type": "Currency",
-                                "aggregates": [],
-                                "min": 0,
-                                "precision": 2,
-                                "symbol": "$",
-                                "spinButtons": false
-                            }, {
-                                "_internalName": "TotalCost",
-                                "title": "Total Cost",
-                                "type": "Calculated",
-                                "formula": {
-                                    "mode": "formula",
-                                    "formula": "UnitCost * Quantity "
-                                },
-                                "resultType": "Currency",
-                                "aggregates": [{
-                                    "type": "sum",
-                                    "template": "Total: {0}"
-                                }],
-                                "precision": 2,
-                                "symbol": "$"
-                            }]
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [10, null, 10, null],
-                    "component": {
-                        "type": "Heading",
-                        "model": {
-                            "_internalName": "Heading2",
-                            "heading": "",
-                            "view": "Underline1",
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "RequestedBy",
+                                    "title": {
+                                        "text": "Requested By",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
                             },
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "size": "H4",
-                            "textAlignment": "Center"
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "IssuedBy",
+                                    "title": {
+                                        "text": "Issued By",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "SingleLineText",
-                        "model": {
-                            "_internalName": "RequestedBy",
-                            "title": {
-                                "text": "Requested By",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Signature",
+                                "model": {
+                                    "_internalName": "RequestedSignature",
+                                    "title": {
+                                        "text": "RequestedSignature",
+                                        "visible": false
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cWidth": 300,
+                                    "height": 150,
+                                    "inkColor": "#000000"
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "Signature",
+                                "model": {
+                                    "_internalName": "IssuedSignature",
+                                    "title": {
+                                        "text": "IssuedSignature",
+                                        "visible": false
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cWidth": 300,
+                                    "height": 150,
+                                    "inkColor": "#000000"
+                                }
                             },
-                            "type": "Anything"
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 6
-                    }
-                }, {
-                    "component": {
-                        "type": "SingleLineText",
-                        "model": {
-                            "_internalName": "IssuedBy",
-                            "title": {
-                                "text": "Issued By",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Submit",
+                                "model": {
+                                    "_internalName": "Submit1",
+                                    "text": "Submit",
+                                    "savingText": "Submitting...",
+                                    "type": "Primary",
+                                    "click": "return fd.save();"
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                            },
-                            "type": "Anything"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 6
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "Signature",
-                        "model": {
-                            "_internalName": "RequestedSignature",
-                            "title": {
-                                "text": "RequestedSignature",
-                                "visible": false
-                            },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                            },
-                            "wrap": true,
-                            "cWidth": 300,
-                            "height": 150,
-                            "inkColor": "#000000"
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Center",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 6
-                    }
-                }, {
-                    "component": {
-                        "type": "Signature",
-                        "model": {
-                            "_internalName": "IssuedSignature",
-                            "title": {
-                                "text": "IssuedSignature",
-                                "visible": false
-                            },
-                            "orientation": "Vertical",
-                            "required": false,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
-                            },
-                            "wrap": true,
-                            "cWidth": 300,
-                            "height": 150,
-                            "inkColor": "#000000"
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Center",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 6
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [15, null, null, null],
-                    "component": {
-                        "type": "Submit",
-                        "model": {
-                            "_internalName": "Submit1",
-                            "text": "Submit",
-                            "savingText": "Submitting...",
-                            "type": "Primary",
-                            "click": "return fd.save();"
-                        }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
+                    ]
+                }
+            ]
         }
     },
     "tablet": null,
@@ -374,8 +428,8 @@
     },
     "timezone": "Etc/GMT",
     "culture": "en",
-    "userLanguage": "",
-    "userCulture": "",
+    "userLanguage": null,
+    "userCulture": null,
     "thankYouMessage": null,
     "redirectURL": null,
     "hideAfterSubmission": false,
@@ -386,6 +440,8 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
+    "entraExternalIdProperties": null,
     "azureB2CProperties": null,
-    "connection": null
+    "connection": null,
+    "widgetVersion": "2.0.0"
 }

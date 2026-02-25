@@ -12,146 +12,177 @@
                 "width": null,
                 "color": null
             },
-            "rows": [{
-                "cells": [{
-                    "component": {
-                        "type": "Heading",
-                        "model": {
-                            "_internalName": "Heading2",
-                            "heading": "360° Appraisal",
-                            "view": "Normal",
-                            "font": {
-                                "color": "#ffffff",
-                                "style": "Normal",
-                                "weight": "Semibold"
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading2",
+                                    "heading": "360° Appraisal",
+                                    "view": "Normal",
+                                    "font": {
+                                        "color": "#ffffff",
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": 15,
+                                        "radius": null
+                                    },
+                                    "class": "bg-primary",
+                                    "fill": "#008EFF",
+                                    "size": "H1",
+                                    "textAlignment": "Center"
+                                }
                             },
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": 15,
-                                "radius": null
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "class": "bg-primary",
-                            "fill": "#008EFF",
-                            "size": "H1",
-                            "textAlignment": "Center"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [15, null, null, null],
-                    "component": {
-                        "type": "SingleLineText",
-                        "model": {
-                            "_internalName": "EmployeeName",
-                            "title": {
-                                "text": "Employee Name",
-                                "visible": false
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "EmployeeName",
+                                    "description": "Employee Name",
+                                    "title": {
+                                        "text": "Employee Name",
+                                        "visible": false
+                                    },
+                                    "orientation": "Horizontal",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "Jane Doe",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
                             },
-                            "orientation": "Horizontal",
-                            "required": true,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cHint": "Jane Doe",
-                            "description": "Employee Name",
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                            },
-                            "type": "Anything"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "Heading",
-                        "model": {
-                            "_internalName": "Heading1",
-                            "heading": "Please rate employee using a scale from 1 (Strongly Agree) to 5 (Strongly Disagree).",
-                            "view": "Normal",
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading1",
+                                    "heading": "Please rate employee using a scale from 1 (Strongly Agree) to 5 (Strongly Disagree).",
+                                    "view": "Normal",
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H4",
+                                    "textAlignment": "Left"
+                                }
                             },
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "size": "H4",
-                            "textAlignment": "Left"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [20, null, null, null],
-                    "component": {
-                        "type": "LikertScale",
-                        "model": {
-                            "_internalName": "LikertScale1",
-                            "type": "Radio",
-                            "required": false,
-                            "questions": "Constantly accurate in tasks\r\nMeets deadlines\r\nUnderstands company’s policies\r\nMakes an effort to expand job presidency & knowledge \r\nUnderstands the importance of profitability \r\nProjects a professional image\r\nTakes any complaint to proper management personnel\r\nOffers new & creative ideas for improvement in the team\r\nListens well\r\nResponds without procrastinating\r\nDemonstrates an excellent attitude\r\nIs unafraid to ask questions\r\nIs never “too busy” to answer questions\r\nOffers criticism constructively\r\nIs organized and efficient\r\nControls cost, expenses, inventory, waste\r\nIs a self-starter\r\nShows motivation\r\nTakes on added assignments\r\nIs regular in attendance\r\nShows up on time for work & meetings\r\nIs available for overtime\r\nDemonstrates ability to fight fires & control stress\r\nIs loyal to company\r\nIs honest with others",
-                            "answers": "1\n2\n3\n4\n5"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                20,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "LikertScale",
+                                "model": {
+                                    "_internalName": "LikertScale1",
+                                    "type": "Radio",
+                                    "required": false,
+                                    "questions": "Constantly accurate in tasks\r\nMeets deadlines\r\nUnderstands company’s policies\r\nMakes an effort to expand job presidency & knowledge \r\nUnderstands the importance of profitability \r\nProjects a professional image\r\nTakes any complaint to proper management personnel\r\nOffers new & creative ideas for improvement in the team\r\nListens well\r\nResponds without procrastinating\r\nDemonstrates an excellent attitude\r\nIs unafraid to ask questions\r\nIs never “too busy” to answer questions\r\nOffers criticism constructively\r\nIs organized and efficient\r\nControls cost, expenses, inventory, waste\r\nIs a self-starter\r\nShows motivation\r\nTakes on added assignments\r\nIs regular in attendance\r\nShows up on time for work & meetings\r\nIs available for overtime\r\nDemonstrates ability to fight fires & control stress\r\nIs loyal to company\r\nIs honest with others",
+                                    "answers": "1\n2\n3\n4\n5"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [20, null, null, null],
-                    "component": {
-                        "type": "Submit",
-                        "model": {
-                            "_internalName": "Submit1",
-                            "text": "SEND APPRAISAL",
-                            "savingText": "Submitting...",
-                            "type": "Primary",
-                            "click": "return fd.save();",
-                            "style": "font-weight: 500 !important"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                20,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Submit",
+                                "model": {
+                                    "_internalName": "Submit1",
+                                    "text": "SEND APPRAISAL",
+                                    "savingText": "Submitting...",
+                                    "type": "Primary",
+                                    "click": "return fd.save();",
+                                    "style": "font-weight: 500 !important"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
+                    ]
+                }
+            ]
         }
     },
     "tablet": null,
@@ -160,7 +191,20 @@
     "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span {\n    background-color: var(--fd-primary-rgb) !important;\n}",
     "notifySubscribers": false,
     "version": "1.0.2",
-    "theme": null,
+    "theme": {
+        "themeId": "default",
+        "bodyText": "#373A3C",
+        "bodyBackground": "#FFFFFF",
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "isDark": false,
+        "primary": "#008EFF",
+        "fontFamily": null,
+        "fontType": 0
+    },
     "timezone": "America/Los_Angeles",
     "culture": "en",
     "userLanguage": null,
@@ -175,5 +219,8 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null,
+    "widgetVersion": "2.0.0"
 }

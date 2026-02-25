@@ -12,132 +12,174 @@
                 "width": null,
                 "color": null
             },
-            "rows": [{
-                "cells": [{
-                    "padding": [null, null, 15, null],
-                    "component": {
-                        "type": "Heading",
-                        "model": {
-                            "_internalName": "Heading1",
-                            "heading": "We would love to know what you think about our service.",
-                            "view": "Underline1",
-                            "font": {
-                                "color": "",
-                                "style": "Normal",
-                                "weight": "Semibold"
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                null,
+                                null,
+                                15,
+                                null
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading1",
+                                    "heading": "We would love to know what you think about our service.",
+                                    "view": "Underline1",
+                                    "font": {
+                                        "color": "",
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": 10,
+                                        "radius": null
+                                    },
+                                    "size": "H4",
+                                    "textAlignment": "Left"
+                                }
                             },
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": 10,
-                                "radius": null
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "size": "H4",
-                            "textAlignment": "Left"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "DropDown",
-                        "model": {
-                            "_internalName": "Type",
-                            "title": {
-                                "text": "Please select feedback type",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "DropDown",
+                                "model": {
+                                    "_internalName": "Type",
+                                    "title": {
+                                        "text": "Please select feedback type",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "Feedback type",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "selection": "Single",
+                                    "options": [
+                                        {
+                                            "value": "Comment",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Suggestion",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Question",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Complaint",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        }
+                                    ],
+                                    "defaultValue": []
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": true,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cHint": "Feedback type",
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                            },
-                            "dataSource": "StaticList",
-                            "StaticList": {
-                                "options": "Comment \nSuggestion\nQuestion\nComplaint"
-                            },
-                            "selection": "Single",
-                            "options": "Comment \nSuggestion\nQuestion\nComplaint"
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "component": {
-                        "type": "MultiLineText",
-                        "model": {
-                            "_internalName": "Message",
-                            "title": {
-                                "text": "",
-                                "visible": true
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "MultiLineText",
+                                "model": {
+                                    "_internalName": "Message",
+                                    "title": {
+                                        "text": "",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "What do you think?",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "mode": "Plain",
+                                    "cHeight": 150
+                                }
                             },
-                            "orientation": "Vertical",
-                            "required": true,
-                            "font": {
-                                "style": "Normal",
-                                "weight": "Semibold"
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "wrap": true,
-                            "cHint": "What do you think?",
-                            "cFont": {
-                                "style": "Normal",
-                                "weight": "Normal"
-                            },
-                            "mode": "Plain",
-                            "cHeight": 150
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "padding": [15, null, null, null],
-                    "component": {
-                        "type": "Submit",
-                        "model": {
-                            "_internalName": "Submit1",
-                            "text": "SEND",
-                            "savingText": "Submitting...",
-                            "type": "Primary",
-                            "click": "return fd.save();",
-                            "style": "font-weight: 700 !important"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Submit",
+                                "model": {
+                                    "_internalName": "Submit1",
+                                    "text": "SEND",
+                                    "savingText": "Submitting...",
+                                    "type": "Primary",
+                                    "click": "return fd.save();",
+                                    "style": "font-weight: 700 !important"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
+                    ]
+                }
+            ]
         }
     },
     "tablet": null,
@@ -173,5 +215,8 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null,
+    "widgetVersion": "2.0.0"
 }

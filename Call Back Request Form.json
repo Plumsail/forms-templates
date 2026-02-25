@@ -113,6 +113,21 @@
                                                         "type": "Phone",
                                                         "model": {
                                                             "_internalName": "Phone1",
+                                                            "title": {
+                                                                "text": "Phone1",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
                                                             "countries": [
                                                                 "AF",
                                                                 "AX",
@@ -358,22 +373,7 @@
                                                                 "YE",
                                                                 "ZM",
                                                                 "ZW"
-                                                            ],
-                                                            "title": {
-                                                                "text": "Phone1",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            }
+                                                            ]
                                                         }
                                                     },
                                                     "alignment": {
@@ -536,7 +536,7 @@
     "tablet": null,
     "phone": null,
     "js": "",
-    "css": "/* add a border to the left grid container for large screens */\r\n@media (min-width: 750px){\r\n    .fd-form .fd-left-grid{\r\n        border-right: solid;\r\n    }\r\n}\r\n\r\n/* styling of input fields */\r\n.fd-form .form-control, \r\n.k-input {\r\n    background: none !important;\r\n    padding-left: 0px !important;\r\n    border: none;\r\n}\r\n\r\n.fd-form .form-control,\r\n.fd-form span.k-picker-wrap.k-state-default {\r\n    border: 0px;\r\n    border-bottom: solid;\r\n    border-radius: 0 !important;\r\n}\r\n\r\n/* styling of focused input fields */\r\n.fd-form .form-control:focus,\r\n.fd-form .fd-field-control .k-state-focused\r\n{\r\n    box-shadow: none !important;\r\n    border-color: #ced4da !important;\r\n}\r\n\r\n",
+    "css": "/* add a border to the left grid container for large screens */\r\n@media (min-width: 750px){\r\n    .fd-form .fd-left-grid{\r\n        border-right: solid;\r\n    }\r\n}\r\n\r\n/* styling of input fields */\r\n.fd-form .form-control, \r\n.fd-form .k-datepicker,\r\n.fd-form .k-input {\r\n    background: none !important;\r\n    padding-left: 0px !important;\r\n    border: none;\r\n    border-bottom: solid;\r\n}\r\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
@@ -569,5 +569,6 @@
     "azureADObjects": [],
     "entraExternalIdProperties": null,
     "azureB2CProperties": null,
-    "connection": null
+    "connection": null,
+    "widgetVersion": "2.0.0"
 }

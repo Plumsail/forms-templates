@@ -1,361 +1,473 @@
 {
-  "pc": {
-    "type": "Grid",
-    "model": {
-      "stacked": "md",
-      "frame": { "horizontal": null, "vertical": null, "radius": null },
-      "border": { "width": null, "color": null },
-      "rows": [
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Heading",
-                "model": {
-                  "_internalName": "Heading1",
-                  "heading": "Video Evaluation Survey",
-                  "view": "Normal",
-                  "font": {
-                    "color": "#ffffff",
-                    "style": "Normal",
-                    "weight": "Semibold"
-                  },
-                  "frame": {
-                    "horizontal": null,
-                    "vertical": null,
-                    "radius": null
-                  },
-                  "class": "bg-primary",
-                  "fill": "#008EFF",
-                  "size": "H1",
-                  "textAlignment": "Center"
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading1",
+                                    "heading": "Video Evaluation Survey",
+                                    "view": "Normal",
+                                    "font": {
+                                        "color": "#ffffff",
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "class": "bg-primary",
+                                    "fill": "#008EFF",
+                                    "size": "H1",
+                                    "textAlignment": "Center"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Middle"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading2",
+                                    "heading": "Please watch this short video and share your opinion with us",
+                                    "view": "Normal",
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H4",
+                                    "textAlignment": "Center"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                30,
+                                null,
+                                15,
+                                null
+                            ],
+                            "component": {
+                                "type": "HTML",
+                                "model": {
+                                    "_internalName": "HTML1",
+                                    "content": "<iframe style=\"text-align:center;\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/PUsNLugROP8?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                10,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "SingleChoice",
+                                "model": {
+                                    "_internalName": "OverallDidYouEnjoyTheVideo",
+                                    "title": {
+                                        "text": "Overall, did you enjoy the video?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cWidth": 500,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "cColumns": 4,
+                                    "options": [
+                                        {
+                                            "value": "Yes",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "No",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        }
+                                    ],
+                                    "allowUserValue": false,
+                                    "defaultValue": []
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleChoice",
+                                "model": {
+                                    "_internalName": "DidYouLikeTheVoiceover",
+                                    "title": {
+                                        "text": "Did you like the voice-over?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cWidth": 500,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "cColumns": 4,
+                                    "options": [
+                                        {
+                                            "value": "Yes",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "No",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        }
+                                    ],
+                                    "allowUserValue": false,
+                                    "defaultValue": []
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleChoice",
+                                "model": {
+                                    "_internalName": "WereTheInstructionsClearToYou",
+                                    "title": {
+                                        "text": "Were the instructions clear to you?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cWidth": 500,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "cColumns": 4,
+                                    "options": [
+                                        {
+                                            "value": "Yes",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "No",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        }
+                                    ],
+                                    "allowUserValue": false,
+                                    "defaultValue": []
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleChoice",
+                                "model": {
+                                    "_internalName": "HowAppealingWasTheGraphicalDisplayOfThisVideo",
+                                    "title": {
+                                        "text": "How appealing was the graphical display of this video?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cWidth": 500,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "cColumns": 1,
+                                    "options": [
+                                        {
+                                            "value": "Bad",
+                                            "backgroundColor": "#940a4a",
+                                            "textColor": "#ffffff"
+                                        },
+                                        {
+                                            "value": "Average",
+                                            "backgroundColor": "#ce310e",
+                                            "textColor": "#ffffff"
+                                        },
+                                        {
+                                            "value": "Good",
+                                            "backgroundColor": "#ce830e",
+                                            "textColor": "#ffffff"
+                                        },
+                                        {
+                                            "value": "Excellent",
+                                            "backgroundColor": "#37a448",
+                                            "textColor": "#ffffff"
+                                        }
+                                    ],
+                                    "allowUserValue": false,
+                                    "defaultValue": []
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "MultiLineText",
+                                "model": {
+                                    "_internalName": "WhatDidYouLikeMostAboutTheVideo",
+                                    "title": {
+                                        "text": "What did you like most about the video?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cWidth": 500,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "mode": "Plain"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "MultiLineText",
+                                "model": {
+                                    "_internalName": "WhatDidn'tYouLikeAboutTheVideo",
+                                    "title": {
+                                        "text": "What didn't you like about the video?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cWidth": 500,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "mode": "Plain"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                15,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Submit",
+                                "model": {
+                                    "_internalName": "Submit",
+                                    "width": 500,
+                                    "text": "Submit the Feedback",
+                                    "savingText": "Submitting...",
+                                    "type": "Primary",
+                                    "click": "return fd.save();",
+                                    "style": "font-weight: 700 !important;"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
                 }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Middle" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "Heading",
-                "model": {
-                  "_internalName": "Heading2",
-                  "heading": "Please watch this short video and share your opinion with us",
-                  "view": "Normal",
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "frame": {
-                    "horizontal": null,
-                    "vertical": null,
-                    "radius": null
-                  },
-                  "size": "H4",
-                  "textAlignment": "Center"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [30, null, 15, null],
-              "component": {
-                "type": "HTML",
-                "model": {
-                  "_internalName": "HTML1",
-                  "content": "<iframe style=\"text-align:center;\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/PUsNLugROP8?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-                }
-              },
-              "alignment": { "horizontal": "Justify", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [10, null, null, null],
-              "component": {
-                "type": "SingleChoice",
-                "model": {
-                  "_internalName": "OverallDidYouEnjoyTheVideo",
-                  "title": {
-                    "text": "Overall, did you enjoy the video?",
-                    "visible": true
-                  },
-                  "orientation": "Vertical",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "wrap": true,
-                  "cWidth": 500,
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "dataSource": "StaticList",
-                  "cColumns": 4,
-                  "options": [
-                    {
-                      "value": "Yes",
-                      "backgroundColor": null,
-                      "textColor": null
-                    },
-                    {
-                      "value": "No",
-                      "backgroundColor": null,
-                      "textColor": null
-                    }
-                  ],
-                  "allowUserValue": false,
-                  "defaultValue": []
-                }
-              },
-              "alignment": { "horizontal": "Center", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "SingleChoice",
-                "model": {
-                  "_internalName": "DidYouLikeTheVoiceover",
-                  "title": {
-                    "text": "Did you like the voice-over?",
-                    "visible": true
-                  },
-                  "orientation": "Vertical",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "wrap": true,
-                  "cWidth": 500,
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "dataSource": "StaticList",
-                  "cColumns": 4,
-                  "options": [
-                    {
-                      "value": "Yes",
-                      "backgroundColor": null,
-                      "textColor": null
-                    },
-                    {
-                      "value": "No",
-                      "backgroundColor": null,
-                      "textColor": null
-                    }
-                  ],
-                  "allowUserValue": false,
-                  "defaultValue": []
-                }
-              },
-              "alignment": { "horizontal": "Center", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "SingleChoice",
-                "model": {
-                  "_internalName": "WereTheInstructionsClearToYou",
-                  "title": {
-                    "text": "Were the instructions clear to you?",
-                    "visible": true
-                  },
-                  "orientation": "Vertical",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "wrap": true,
-                  "cWidth": 500,
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "dataSource": "StaticList",
-                  "cColumns": 4,
-                  "options": [
-                    {
-                      "value": "Yes",
-                      "backgroundColor": null,
-                      "textColor": null
-                    },
-                    {
-                      "value": "No",
-                      "backgroundColor": null,
-                      "textColor": null
-                    }
-                  ],
-                  "allowUserValue": false,
-                  "defaultValue": []
-                }
-              },
-              "alignment": { "horizontal": "Center", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "SingleChoice",
-                "model": {
-                  "_internalName": "HowAppealingWasTheGraphicalDisplayOfThisVideo",
-                  "title": {
-                    "text": "How appealing was the graphical display of this video?",
-                    "visible": true
-                  },
-                  "orientation": "Vertical",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "wrap": true,
-                  "cWidth": 500,
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "dataSource": "StaticList",
-                  "cColumns": 1,
-                  "options": [
-                    {
-                      "value": "Bad",
-                      "backgroundColor": "#940a4a",
-                      "textColor": "#ffffff"
-                    },
-                    {
-                      "value": "Average",
-                      "backgroundColor": "#ce310e",
-                      "textColor": "#ffffff"
-                    },
-                    {
-                      "value": "Good",
-                      "backgroundColor": "#ce830e",
-                      "textColor": "#ffffff"
-                    },
-                    {
-                      "value": "Excellent",
-                      "backgroundColor": "#37a448",
-                      "textColor": "#ffffff"
-                    }
-                  ],
-                  "allowUserValue": false,
-                  "defaultValue": []
-                }
-              },
-              "alignment": { "horizontal": "Center", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "MultiLineText",
-                "model": {
-                  "_internalName": "WhatDidYouLikeMostAboutTheVideo",
-                  "title": {
-                    "text": "What did you like most about the video?",
-                    "visible": true
-                  },
-                  "orientation": "Vertical",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "wrap": true,
-                  "cWidth": 500,
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "mode": "Plain"
-                }
-              },
-              "alignment": { "horizontal": "Center", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "component": {
-                "type": "MultiLineText",
-                "model": {
-                  "_internalName": "WhatDidn'tYouLikeAboutTheVideo",
-                  "title": {
-                    "text": "What didn't you like about the video?",
-                    "visible": true
-                  },
-                  "orientation": "Vertical",
-                  "required": false,
-                  "font": { "style": "Normal", "weight": "Semibold" },
-                  "wrap": true,
-                  "cWidth": 500,
-                  "cFont": { "style": "Normal", "weight": "Normal" },
-                  "mode": "Plain"
-                }
-              },
-              "alignment": { "horizontal": "Center", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
-        },
-        {
-          "cells": [
-            {
-              "padding": [15, null, null, null],
-              "component": {
-                "type": "Submit",
-                "model": {
-                  "_internalName": "Submit",
-                  "width": 500,
-                  "text": "Submit the Feedback",
-                  "savingText": "Submitting...",
-                  "type": "Primary",
-                  "click": "return fd.save();",
-                  "style": "font-weight: 700 !important;"
-                }
-              },
-              "alignment": { "horizontal": "Center", "vertical": "Top" },
-              "columns": { "width": 12 }
-            }
-          ]
+            ]
         }
-      ]
-    }
-  },
-  "tablet": null,
-  "phone": null,
-  "js": "",
-  "css": "/* center the video */\n.fd-form iframe {\n    display:block;\n    margin: 0 auto;\n}\n\n/* setting the Heading background depending on the theme */\n.fd-form h1 > span {\n    background-color: var(--fd-primary-rgb) !important;\n}\n\n",
-  "notifySubscribers": false,
-  "version": "1.0.2",
-  "theme": {
-    "themeId": "default",
-    "bodyText": "#373A3C",
-    "bodyBackground": "#FFFFFF",
-    "fontSize": 15,
-    "fontWeight": 400,
-    "borderThickness": 1,
-    "borderRadius": 2,
-    "shadow": true,
-    "isDark": false,
-    "primary": "#008EFF",
-    "fontFamily": null,
-    "fontType": 0
-  },
-  "timezone": "America/Los_Angeles",
-  "culture": "en",
-  "userLanguage": null,
-  "userCulture": null,
-  "thankYouMessage": null,
-  "redirectURL": null,
-  "hideAfterSubmission": false,
-  "submissionTimeout": 0,
-  "authentication": 0,
-  "singleSubmissionPerUser": false,
-  "allowEditingSubmission": false,
-  "restrictAccess": false,
-  "azureADTenant": null,
-  "azureADObjects": [],
-  "entraExternalIdProperties": null,
-  "azureB2CProperties": null,
-  "connection": null
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "/* center the video */\n.fd-form iframe {\n    display:block;\n    margin: 0 auto;\n}\n\n/* setting the Heading background depending on the theme */\n.fd-form h1 > span {\n    background-color: var(--fd-primary-rgb) !important;\n}\n\n",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "themeId": "default",
+        "bodyText": "#373A3C",
+        "bodyBackground": "#FFFFFF",
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "isDark": false,
+        "primary": "#008EFF",
+        "fontFamily": null,
+        "fontType": 0
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": null,
+    "redirectURL": null,
+    "hideAfterSubmission": false,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null,
+    "widgetVersion": "2.0.0"
 }

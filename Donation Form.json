@@ -12,457 +12,513 @@
                 "width": null,
                 "color": null
             },
-            "rows": [{
-                "cells": [{
-                    "class": "fd-donation-form",
-                    "component": {
-                        "type": "Grid",
-                        "model": {
-                            "_internalName": "Grid1",
-                            "stacked": "md",
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "class": "fd-donation-form",
+                            "component": {
+                                "type": "Grid",
+                                "model": {
+                                    "_internalName": "Grid1",
+                                    "stacked": "md",
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "border": {
+                                        "width": null,
+                                        "color": null
+                                    },
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Heading",
+                                                        "model": {
+                                                            "_internalName": "Heading1",
+                                                            "heading": "Make a Donation",
+                                                            "view": "Normal",
+                                                            "font": {
+                                                                "color": "#ffffff",
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": 10,
+                                                                "radius": null
+                                                            },
+                                                            "class": "bg-primary",
+                                                            "fill": "#008EFF",
+                                                            "size": "H1",
+                                                            "textAlignment": "Center"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        15,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Name",
+                                                            "description": "Full Name",
+                                                            "title": {
+                                                                "text": "Name",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": true,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Jane Parker",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Email",
+                                                            "description": "Email",
+                                                            "title": {
+                                                                "text": "Email",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": true,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "jparker@domain.com",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "E-mail",
+                                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                            "error": "This field must contain a valid e-mail address."
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "MultiLineText",
+                                                        "model": {
+                                                            "_internalName": "Comment",
+                                                            "description": "Leave a comment or good wishes.",
+                                                            "title": {
+                                                                "text": "Comment",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Thank you!",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "mode": "Plain"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        5,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "Heading",
+                                                        "model": {
+                                                            "_internalName": "Heading2",
+                                                            "heading": "Choose an amount to donate:",
+                                                            "view": "Normal",
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": null
+                                                            },
+                                                            "size": "H4",
+                                                            "textAlignment": "Left"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Button",
+                                                        "model": {
+                                                            "_internalName": "Button1",
+                                                            "width": 150,
+                                                            "text": "$25",
+                                                            "type": "Light",
+                                                            "click": "fd.field('DonationAmount').value = 25;",
+                                                            "class": "fd-donation-amount-button",
+                                                            "style": "font-weight: 500 !important;"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Center",
+                                                        "vertical": "Middle"
+                                                    },
+                                                    "columns": {
+                                                        "width": 4
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "Button",
+                                                        "model": {
+                                                            "_internalName": "Button2",
+                                                            "width": 150,
+                                                            "text": "$50",
+                                                            "type": "Light",
+                                                            "click": "fd.field('DonationAmount').value = 50;",
+                                                            "class": "fd-donation-amount-button",
+                                                            "style": "font-weight: 500 !important;"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Center",
+                                                        "vertical": "Middle"
+                                                    },
+                                                    "columns": {
+                                                        "width": 4
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "Button",
+                                                        "model": {
+                                                            "_internalName": "Button3",
+                                                            "width": 150,
+                                                            "text": "$100",
+                                                            "type": "Light",
+                                                            "click": "fd.field('DonationAmount').value = 100;",
+                                                            "class": "fd-donation-amount-button",
+                                                            "style": "font-weight: 500 !important;"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Center",
+                                                        "vertical": "Middle"
+                                                    },
+                                                    "columns": {
+                                                        "width": 4
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Button",
+                                                        "model": {
+                                                            "_internalName": "Button4",
+                                                            "width": 150,
+                                                            "text": "$150",
+                                                            "type": "Light",
+                                                            "click": "fd.field('DonationAmount').value = 150;",
+                                                            "class": "fd-donation-amount-button",
+                                                            "style": "font-weight: 500 !important;"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Center",
+                                                        "vertical": "Middle"
+                                                    },
+                                                    "columns": {
+                                                        "width": 4
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "Button",
+                                                        "model": {
+                                                            "_internalName": "Button5",
+                                                            "width": 150,
+                                                            "text": "$200",
+                                                            "type": "Light",
+                                                            "click": "fd.field('DonationAmount').value = 200;",
+                                                            "class": "fd-donation-amount-button",
+                                                            "style": "font-weight: 500 !important;"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Center",
+                                                        "vertical": "Middle"
+                                                    },
+                                                    "columns": {
+                                                        "width": 4
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "Button",
+                                                        "model": {
+                                                            "_internalName": "Button6",
+                                                            "width": 150,
+                                                            "text": "$300",
+                                                            "type": "Light",
+                                                            "click": "fd.field('DonationAmount').value = 300;",
+                                                            "class": "fd-donation-amount-button",
+                                                            "style": "font-weight: 500 !important;"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Center",
+                                                        "vertical": "Middle"
+                                                    },
+                                                    "columns": {
+                                                        "width": 4
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Currency",
+                                                        "model": {
+                                                            "_internalName": "DonationAmount",
+                                                            "description": "Donation Amount",
+                                                            "title": {
+                                                                "text": "Donation Amount",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "min": 1,
+                                                            "symbol": "$",
+                                                            "precision": "0",
+                                                            "spinButtons": false
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Submit",
+                                                        "model": {
+                                                            "_internalName": "Submit1",
+                                                            "text": "Donate",
+                                                            "savingText": "Submitting...",
+                                                            "type": "Primary",
+                                                            "click": "return fd.save();",
+                                                            "style": "font-weight: 500 !important"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
                             },
-                            "border": {
-                                "width": null,
-                                "color": null
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
                             },
-                            "rows": [{
-                                "cells": [{
-                                    "component": {
-                                        "type": "Heading",
-                                        "model": {
-                                            "_internalName": "Heading1",
-                                            "heading": "Make a Donation",
-                                            "view": "Normal",
-                                            "font": {
-                                                "color": "#ffffff",
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "frame": {
-                                                "horizontal": null,
-                                                "vertical": 10,
-                                                "radius": null
-                                            },
-                                            "class": "bg-primary",
-                                            "fill": "#008EFF",
-                                            "size": "H1",
-                                            "textAlignment": "Center"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [15, null, null, null],
-                                    "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                            "_internalName": "Name",
-                                            "title": {
-                                                "text": "Name",
-                                                "visible": false
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": true,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cHint": "Jane Parker",
-                                            "description": "Full Name",
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "type": "Anything"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "SingleLineText",
-                                        "model": {
-                                            "_internalName": "Email",
-                                            "title": {
-                                                "text": "Email",
-                                                "visible": false
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": true,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cHint": "jparker@domain.com",
-                                            "description": "Email",
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "type": "E-mail",
-                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                            "error": "This field must contain a valid e-mail address."
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "MultiLineText",
-                                        "model": {
-                                            "_internalName": "Comment",
-                                            "title": {
-                                                "text": "Comment",
-                                                "visible": false
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "cHint": "Thank you!",
-                                            "description": "Leave a comment or good wishes.",
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "mode": "Plain"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "padding": [5, null, null, null],
-                                    "component": {
-                                        "type": "Heading",
-                                        "model": {
-                                            "_internalName": "Heading2",
-                                            "heading": "Choose an amount to donate:",
-                                            "view": "Normal",
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "frame": {
-                                                "horizontal": null,
-                                                "vertical": null,
-                                                "radius": null
-                                            },
-                                            "size": "H4",
-                                            "textAlignment": "Left"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "Button",
-                                        "model": {
-                                            "_internalName": "Button1",
-                                            "width": 150,
-                                            "text": "$25",
-                                            "type": "Light",
-                                            "click": "fd.field('DonationAmount').value = 25;",
-                                            "class": "fd-donation-amount-button",
-                                            "style": "font-weight: 500 !important;"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Center",
-                                        "vertical": "Middle"
-                                    },
-                                    "columns": {
-                                        "width": 4
-                                    }
-                                }, {
-                                    "component": {
-                                        "type": "Button",
-                                        "model": {
-                                            "_internalName": "Button2",
-                                            "width": 150,
-                                            "text": "$50",
-                                            "type": "Light",
-                                            "click": "fd.field('DonationAmount').value = 50;",
-                                            "class": "fd-donation-amount-button",
-                                            "style": "font-weight: 500 !important;"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Center",
-                                        "vertical": "Middle"
-                                    },
-                                    "columns": {
-                                        "width": 4
-                                    }
-                                }, {
-                                    "component": {
-                                        "type": "Button",
-                                        "model": {
-                                            "_internalName": "Button3",
-                                            "width": 150,
-                                            "text": "$100",
-                                            "type": "Light",
-                                            "click": "fd.field('DonationAmount').value = 100;",
-                                            "class": "fd-donation-amount-button",
-                                            "style": "font-weight: 500 !important;"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Center",
-                                        "vertical": "Middle"
-                                    },
-                                    "columns": {
-                                        "width": 4
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "Button",
-                                        "model": {
-                                            "_internalName": "Button4",
-                                            "width": 150,
-                                            "text": "$150",
-                                            "type": "Light",
-                                            "click": "fd.field('DonationAmount').value = 150;",
-                                            "class": "fd-donation-amount-button",
-                                            "style": "font-weight: 500 !important;"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Center",
-                                        "vertical": "Middle"
-                                    },
-                                    "columns": {
-                                        "width": 4
-                                    }
-                                }, {
-                                    "component": {
-                                        "type": "Button",
-                                        "model": {
-                                            "_internalName": "Button5",
-                                            "width": 150,
-                                            "text": "$200",
-                                            "type": "Light",
-                                            "click": "fd.field('DonationAmount').value = 200;",
-                                            "class": "fd-donation-amount-button",
-                                            "style": "font-weight: 500 !important;"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Center",
-                                        "vertical": "Middle"
-                                    },
-                                    "columns": {
-                                        "width": 4
-                                    }
-                                }, {
-                                    "component": {
-                                        "type": "Button",
-                                        "model": {
-                                            "_internalName": "Button6",
-                                            "width": 150,
-                                            "text": "$300",
-                                            "type": "Light",
-                                            "click": "fd.field('DonationAmount').value = 300;",
-                                            "class": "fd-donation-amount-button",
-                                            "style": "font-weight: 500 !important;"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Center",
-                                        "vertical": "Middle"
-                                    },
-                                    "columns": {
-                                        "width": 4
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "Currency",
-                                        "model": {
-                                            "_internalName": "DonationAmount",
-                                            "title": {
-                                                "text": "Donation Amount",
-                                                "visible": false
-                                            },
-                                            "orientation": "Horizontal",
-                                            "required": false,
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "wrap": true,
-                                            "description": "Donation Amount",
-                                            "cFont": {
-                                                "style": "Normal",
-                                                "weight": "Normal"
-                                            },
-                                            "min": 1,
-                                            "symbol": "$",
-                                            "precision": "0",
-                                            "spinButtons": false
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "Submit",
-                                        "model": {
-                                            "_internalName": "Submit1",
-                                            "text": "Donate",
-                                            "savingText": "Submitting...",
-                                            "type": "Primary",
-                                            "click": "return fd.save();",
-                                            "style": "font-weight: 500 !important"
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }]
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }, {
-                "cells": [{
-                    "class": "fd-payment-form",
-                    "component": {
-                        "type": "Grid",
-                        "model": {
-                            "_internalName": "Grid2",
-                            "stacked": "md",
-                            "frame": {
-                                "horizontal": null,
-                                "vertical": null,
-                                "radius": null
-                            },
-                            "border": {
-                                "width": null,
-                                "color": null
-                            },
-                            "rows": [{
-                                "cells": [{
-                                    "component": {
-                                        "type": "Heading",
-                                        "model": {
-                                            "_internalName": "Heading3",
-                                            "heading": "Please proceed with the payment.",
-                                            "view": "Normal",
-                                            "font": {
-                                                "style": "Normal",
-                                                "weight": "Semibold"
-                                            },
-                                            "frame": {
-                                                "horizontal": null,
-                                                "vertical": null,
-                                                "radius": null
-                                            },
-                                            "size": "H2",
-                                            "textAlignment": "Center"
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "class": "fd-payment-form",
+                            "component": {
+                                "type": "Grid",
+                                "model": {
+                                    "_internalName": "Grid2",
+                                    "stacked": "md",
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "border": {
+                                        "width": null,
+                                        "color": null
+                                    },
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Heading",
+                                                        "model": {
+                                                            "_internalName": "Heading3",
+                                                            "heading": "Please proceed with the payment.",
+                                                            "view": "Normal",
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": null
+                                                            },
+                                                            "size": "H2",
+                                                            "textAlignment": "Center"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "HTML",
+                                                        "model": {
+                                                            "_internalName": "HTML1",
+                                                            "content": "<div id=\"smart-button-container\">\r\n    <div id=\"invoiceidDiv\" style=\"text-align: center; display: none;\"><label for=\"invoiceid\"> </label><input name=\"invoiceid\" maxlength=\"127\" type=\"text\" id=\"invoiceid\" value=\"\" ></div>\r\n    <p id=\"invoiceidError\" style=\"visibility: hidden; color:red; text-align: center;\">Please enter an Invoice ID</p>\r\n    <div style=\"text-align: center; margin-top: 0.625rem;\" id=\"paypal-button-container\"></div>\r\n</div>\r\n "
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
                                         }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }, {
-                                "cells": [{
-                                    "component": {
-                                        "type": "HTML",
-                                        "model": {
-                                            "_internalName": "HTML1",
-                                            "content": "<div id=\"smart-button-container\">\r\n    <div id=\"invoiceidDiv\" style=\"text-align: center; display: none;\"><label for=\"invoiceid\"> </label><input name=\"invoiceid\" maxlength=\"127\" type=\"text\" id=\"invoiceid\" value=\"\" ></div>\r\n    <p id=\"invoiceidError\" style=\"visibility: hidden; color:red; text-align: center;\">Please enter an Invoice ID</p>\r\n    <div style=\"text-align: center; margin-top: 0.625rem;\" id=\"paypal-button-container\"></div>\r\n</div>\r\n "
-                                        }
-                                    },
-                                    "alignment": {
-                                        "horizontal": "Justify",
-                                        "vertical": "Top"
-                                    },
-                                    "columns": {
-                                        "width": 12
-                                    }
-                                }]
-                            }]
+                                    ]
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
                         }
-                    },
-                    "alignment": {
-                        "horizontal": "Justify",
-                        "vertical": "Top"
-                    },
-                    "columns": {
-                        "width": 12
-                    }
-                }]
-            }]
+                    ]
+                }
+            ]
         }
     },
     "tablet": null,
@@ -472,18 +528,18 @@
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "primary": "#008EFF",
+        "themeId": "default",
         "bodyText": "#373A3C",
         "bodyBackground": "#FFFFFF",
-        "fontFamily": null,
-        "fontType": 0,
         "fontSize": 15,
         "fontWeight": 400,
         "borderThickness": 1,
         "borderRadius": 2,
         "shadow": true,
-        "themeId": "default",
-        "isDark": false
+        "isDark": false,
+        "primary": "#008EFF",
+        "fontFamily": null,
+        "fontType": 0
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
@@ -499,5 +555,8 @@
     "restrictAccess": false,
     "azureADTenant": null,
     "azureADObjects": [],
-    "azureB2CProperties": null
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null,
+    "widgetVersion": "2.0.0"
 }

@@ -1,0 +1,681 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "_internalName": "MainGrid",
+            "stacked": "",
+            "frame": {
+                "horizontal": 20,
+                "vertical": 20,
+                "radius": 8
+            },
+            "border": {
+                "width": 1,
+                "color": "#e0e0e0"
+            },
+            "fill": "#ffffff",
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "FormTitle",
+                                    "heading": "Holiday Booking Form",
+                                    "view": "Normal",
+                                    "font": {
+                                        "style": "Normal"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": 20,
+                                        "radius": null
+                                    },
+                                    "size": "H1",
+                                    "textAlignment": "Center"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "FirstName",
+                                    "title": {
+                                        "text": "First Name",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cHint": "Enter your first name",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "LastName",
+                                    "title": {
+                                        "text": "Last Name",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cHint": "Enter your last name",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "Email",
+                                    "title": {
+                                        "text": "Email Address",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cHint": "name@domain.com",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "E-mail",
+                                    "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                    "error": "This field must contain a valid e-mail address."
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "Phone",
+                                "model": {
+                                    "_internalName": "Phone",
+                                    "title": {
+                                        "text": "Phone Number",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "countries": [
+                                        "AU",
+                                        "AT",
+                                        "BE",
+                                        "CA",
+                                        "DK",
+                                        "FI",
+                                        "FR",
+                                        "DE",
+                                        "GR",
+                                        "IN",
+                                        "IE",
+                                        "IT",
+                                        "NL",
+                                        "NO",
+                                        "PK",
+                                        "PT",
+                                        "ES",
+                                        "SE",
+                                        "CH",
+                                        "GB",
+                                        "US"
+                                    ]
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "BookingDetailsHeading",
+                                    "heading": "Booking Details",
+                                    "view": "Underline1",
+                                    "font": {
+                                        "style": "Normal"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": 15,
+                                        "radius": null
+                                    },
+                                    "size": "H3",
+                                    "textAlignment": "Center"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Date",
+                                "model": {
+                                    "_internalName": "CheckInDate",
+                                    "title": {
+                                        "text": "Check-in Date",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cHint": "Select check-in date",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "startDate": {
+                                        "mode": "Relative",
+                                        "fieldInternalName": null
+                                    },
+                                    "endDate": {
+                                        "mode": "Fixed"
+                                    }
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "Date",
+                                "model": {
+                                    "_internalName": "CheckOutDate",
+                                    "title": {
+                                        "text": "Check-out Date",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cHint": "Select check-out date",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "startDate": {
+                                        "mode": "Relative",
+                                        "fieldInternalName": "CheckInDate",
+                                        "offsetUnit": "Day",
+                                        "offset": 1
+                                    },
+                                    "endDate": {
+                                        "mode": "Fixed"
+                                    }
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Number",
+                                "model": {
+                                    "_internalName": "Adults",
+                                    "title": {
+                                        "text": "Number of Adults",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cHint": "Enter number of adults",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "min": 1,
+                                    "max": 10,
+                                    "precision": 0,
+                                    "percents": false,
+                                    "spinButtons": true,
+                                    "step": 1
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "Number",
+                                "model": {
+                                    "_internalName": "Children",
+                                    "title": {
+                                        "text": "Number of Children",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cHint": "Enter number of children",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "min": 0,
+                                    "max": 8,
+                                    "precision": 0,
+                                    "percents": false,
+                                    "spinButtons": true,
+                                    "step": 1
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "DropDown",
+                                "model": {
+                                    "_internalName": "Room Type",
+                                    "title": {
+                                        "text": "RoomType",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cHint": "Select accommodation type",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "selection": "Single",
+                                    "options": [
+                                        {
+                                            "value": "Standard",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Deluxe",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Studio",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Suite",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Villa",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        }
+                                    ],
+                                    "allowUserValue": false,
+                                    "defaultValue": []
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "MultipleChoice",
+                                "model": {
+                                    "_internalName": "Services",
+                                    "description": "Select any additional services you would like to include",
+                                    "title": {
+                                        "text": "Additional Services",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "cColumns": 2,
+                                    "options": [
+                                        {
+                                            "value": "Airport Transfer",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Travel Insurance",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Car Rental",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Tour Guide",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Spa Services",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        },
+                                        {
+                                            "value": "Restaurant Reservations",
+                                            "backgroundColor": null,
+                                            "textColor": null
+                                        }
+                                    ],
+                                    "allowUserValue": false,
+                                    "defaultValue": []
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "MultiLineText",
+                                "model": {
+                                    "_internalName": "SpecialRequests",
+                                    "description": "Any special dietary requirements, accessibility needs, or other requests",
+                                    "title": {
+                                        "text": "Special Requests or Comments",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cHint": "Please describe any special requests...",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "mode": "Plain",
+                                    "cHeight": 100
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Toggle",
+                                "model": {
+                                    "_internalName": "NewsletterSubscription",
+                                    "title": {
+                                        "text": "Marketing Communications",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": false,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "mode": "Checkbox",
+                                    "cLabel": "I would like to receive travel deals and newsletters"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                30,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Submit",
+                                "model": {
+                                    "_internalName": "SubmitButton",
+                                    "text": "Submit Booking Request",
+                                    "savingText": "Processing your booking...",
+                                    "type": "Primary",
+                                    "click": "return fd.save();"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "",
+    "notifySubscribers": true,
+    "version": "1.0.2",
+    "theme": {
+        "themeId": "f204c14fc401f277e11fd0b057cd56a6",
+        "bodyText": "#2c3e50",
+        "bodyBackground": "#f8f9fa",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "borderThickness": 2,
+        "borderRadius": 6,
+        "shadow": true,
+        "isDark": false,
+        "primary": "#007bff",
+        "fontFamily": "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+        "fontType": 0
+    },
+    "timezone": "Asia/Karachi",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": "Thank you for your booking request! We will review your information and contact you within 24 hours to confirm your holiday booking details.",
+    "redirectURL": null,
+    "hideAfterSubmission": true,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null,
+    "redirectUrl": null,
+    "widgetVersion": "2.0.0"
+}

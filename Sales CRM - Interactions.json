@@ -16,19 +16,14 @@
                 {
                     "cells": [
                         {
-                            "padding": [
-                                null,
-                                null,
-                                15,
-                                null
-                            ],
                             "component": {
                                 "type": "Heading",
                                 "model": {
                                     "_internalName": "Heading1",
-                                    "heading": "Customer Feedback",
+                                    "heading": "Sales CRM - Interactions",
                                     "view": "Normal",
                                     "font": {
+                                        "color": "#3b66a3",
                                         "style": "Normal",
                                         "weight": "Semibold"
                                     },
@@ -60,24 +55,25 @@
                                     "_internalName": "Grid1",
                                     "stacked": "md",
                                     "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
+                                        "horizontal": 20,
+                                        "vertical": 20,
+                                        "radius": 10
                                     },
                                     "border": {
-                                        "width": null,
-                                        "color": null
+                                        "width": 2,
+                                        "color": "#3b66a3"
                                     },
                                     "rows": [
                                         {
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "SingleLineText",
+                                                        "type": "AirtableDate",
                                                         "model": {
-                                                            "_internalName": "FullName",
+                                                            "_internalName": "fldeW1zvmWdXGZSDT",
+                                                            "readOnly": false,
                                                             "title": {
-                                                                "text": "Full Name",
+                                                                "text": "Date",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -90,8 +86,7 @@
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
-                                                            },
-                                                            "type": "Anything"
+                                                            }
                                                         }
                                                     },
                                                     "alignment": {
@@ -104,12 +99,15 @@
                                                 },
                                                 {
                                                     "component": {
-                                                        "type": "SingleLineText",
+                                                        "type": "AirtableLinkedRecord",
                                                         "model": {
-                                                            "_internalName": "Email",
-                                                            "description": "Optional",
+                                                            "_internalName": "fld52htDW1nmrzRNv",
+                                                            "readOnly": false,
+                                                            "operator": "startsWith",
+                                                            "orderType": "asc",
+                                                            "extraFields": [],
                                                             "title": {
-                                                                "text": "Email",
+                                                                "text": "Type",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -119,14 +117,14 @@
                                                                 "weight": "Semibold"
                                                             },
                                                             "wrap": true,
-                                                            "cHint": "username@domain.com",
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
-                                                            "type": "E-mail",
-                                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
-                                                            "error": "This field must contain a valid e-mail address."
+                                                            "displayField": "fldykxSmf8nL8oSmH",
+                                                            "orderBy": "fldykxSmf8nL8oSmH",
+                                                            "tableId": "tblseDeqVk1hMo6TW",
+                                                            "multiple": false
                                                         }
                                                     },
                                                     "alignment": {
@@ -143,17 +141,15 @@
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "Rating",
+                                                        "type": "AirtableLinkedRecord",
                                                         "model": {
-                                                            "_internalName": "HowWouldYouRateYourOverallExperience",
-                                                            "symbol": {
-                                                                "size": null,
-                                                                "color": null,
-                                                                "character": "★"
-                                                            },
-                                                            "range": 5,
+                                                            "_internalName": "fld880DC04D9GytyS",
+                                                            "readOnly": false,
+                                                            "operator": "startsWith",
+                                                            "orderType": "asc",
+                                                            "extraFields": [],
                                                             "title": {
-                                                                "text": "How would you rate your overall experience?",
+                                                                "text": "Accounts",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -162,7 +158,95 @@
                                                                 "style": "Normal",
                                                                 "weight": "Semibold"
                                                             },
-                                                            "wrap": true
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "displayField": "fldR3KWiNpgDZoRGD",
+                                                            "orderBy": "fldR3KWiNpgDZoRGD",
+                                                            "tableId": "tblf8e8GcogcEuZW7",
+                                                            "multiple": false
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "AirtableLinkedRecord",
+                                                        "model": {
+                                                            "_internalName": "fldB1Ua3CUfHi9HxA",
+                                                            "readOnly": false,
+                                                            "operator": "startsWith",
+                                                            "orderType": "asc",
+                                                            "extraFields": [],
+                                                            "title": {
+                                                                "text": "Contacts",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "displayField": "fld41SG7JKCMqJH2N",
+                                                            "orderBy": "fld41SG7JKCMqJH2N",
+                                                            "tableId": "tblWPvL8NxFMzpyHJ",
+                                                            "multiple": true
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "AirtableLinkedRecord",
+                                                        "model": {
+                                                            "_internalName": "fld3axhOQ3QfC2YYa",
+                                                            "readOnly": false,
+                                                            "operator": "startsWith",
+                                                            "orderType": "asc",
+                                                            "extraFields": [],
+                                                            "title": {
+                                                                "text": "Opportunity",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "displayField": "fldqenCXQOBk0vx7S",
+                                                            "orderBy": "fldqenCXQOBk0vx7S",
+                                                            "tableId": "tblxR9fvVuOyhSA8d",
+                                                            "multiple": false
                                                         }
                                                     },
                                                     "alignment": {
@@ -179,11 +263,12 @@
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "MultiLineText",
+                                                        "type": "AirtableLongText",
                                                         "model": {
-                                                            "_internalName": "PleaseShareYourThoughtsAboutYourExperience",
+                                                            "_internalName": "fldkDWaewA53rsLeA",
+                                                            "readOnly": false,
                                                             "title": {
-                                                                "text": "Please share your thoughts about your experience:",
+                                                                "text": "Notes",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -193,62 +278,7 @@
                                                                 "weight": "Semibold"
                                                             },
                                                             "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "mode": "Plain"
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 12
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "SingleChoice",
-                                                        "model": {
-                                                            "_internalName": "WouldYouRecommendUsToAFriend",
-                                                            "title": {
-                                                                "text": "Would you recommend us to a friend?",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "color": "",
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "dataSource": "StaticList",
-                                                            "cColumns": 1,
-                                                            "options": [
-                                                                {
-                                                                    "value": "Yes",
-                                                                    "backgroundColor": "#b3e5bb",
-                                                                    "textColor": "#287634"
-                                                                },
-                                                                {
-                                                                    "value": "No",
-                                                                    "backgroundColor": "#f9b09f",
-                                                                    "textColor": "#94230a"
-                                                                }
-                                                            ],
-                                                            "allowUserValue": false,
-                                                            "defaultValue": []
+                                                            "isRichText": true
                                                         }
                                                     },
                                                     "alignment": {
@@ -307,26 +337,26 @@
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "primary": "#9fc6f9",
+        "themeId": "6464c8d1bf2f827587a56a074fbe2cc9",
         "bodyText": "#3f3f3f",
-        "bodyBackground": "#fcfcfc",
-        "fontFamily": "Oswald",
-        "fontType": 1,
-        "fontSize": 16,
-        "fontWeight": 300,
+        "bodyBackground": "#FFFFFF",
+        "fontSize": 15,
+        "fontWeight": 400,
         "borderThickness": 1,
-        "borderRadius": 1,
+        "borderRadius": 10,
         "shadow": true,
-        "themeId": "0e6516de1ec42deed9a646f78497ba95",
-        "isDark": false
+        "isDark": false,
+        "primary": "#3b66a3",
+        "fontFamily": "Montserrat",
+        "fontType": 1
     },
-    "timezone": "America/Los_Angeles",
+    "timezone": "Asia/Karachi",
     "culture": "en",
     "userLanguage": null,
     "userCulture": null,
-    "thankYouMessage": "Thank you for your feedback! ❤️",
+    "thankYouMessage": null,
     "redirectURL": null,
-    "hideAfterSubmission": false,
+    "hideAfterSubmission": true,
     "submissionTimeout": 0,
     "authentication": 0,
     "singleSubmissionPerUser": false,
@@ -336,6 +366,14 @@
     "azureADObjects": [],
     "entraExternalIdProperties": null,
     "azureB2CProperties": null,
-    "connection": null,
+    "connection": {
+        "type": "Airtable",
+        "settings": {
+            "connectionId": "cb15860b-9eb7-429b-95ac-b83593028425",
+            "baseId": "appZ8HuAx2qET5aS4",
+            "tableId": "tblwx2c2iTgTEz5YT",
+            "enableEditing": true
+        }
+    },
     "widgetVersion": "2.0.0"
 }

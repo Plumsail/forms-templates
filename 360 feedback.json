@@ -1,0 +1,790 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": null,
+            "border": null,
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                null,
+                                null,
+                                20,
+                                null
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "FormTitle",
+                                    "heading": "360-Degree Feedback Form",
+                                    "view": "Line",
+                                    "font": {
+                                        "weight": "Bold",
+                                        "color": ""
+                                    },
+                                    "frame": {
+                                        "horizontal": 20,
+                                        "vertical": 15,
+                                        "radius": 8
+                                    },
+                                    "border": {
+                                        "width": 1,
+                                        "color": "#dee2e6"
+                                    },
+                                    "subheading": "Comprehensive Performance Evaluation",
+                                    "fill": "#fdfaff",
+                                    "size": "H1",
+                                    "textAlignment": "Center"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "EmployeeName",
+                                    "title": {
+                                        "text": "Ratee",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "Enter the name of the person being evaluated",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "EvaluatorName",
+                                    "title": {
+                                        "text": "Rater",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "Enter your full name",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "DropDown",
+                                "model": {
+                                    "_internalName": "EvaluatorRelationship",
+                                    "title": {
+                                        "text": "Feedback Source",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "selection": "Single",
+                                    "options": [
+                                        {
+                                            "value": "Direct Manager",
+                                            "backgroundColor": "#d29ff9",
+                                            "textColor": "#580a94"
+                                        },
+                                        {
+                                            "value": "Peer/Colleague"
+                                        },
+                                        {
+                                            "value": "Direct Report"
+                                        },
+                                        {
+                                            "value": "Internal Customer"
+                                        },
+                                        {
+                                            "value": "External Customer"
+                                        },
+                                        {
+                                            "value": "Other"
+                                        }
+                                    ],
+                                    "defaultValue": []
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "SingleLineText",
+                                "model": {
+                                    "_internalName": "Department",
+                                    "title": {
+                                        "text": "Department",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "Enter the department or team",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "type": "Anything"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                10,
+                                0,
+                                10,
+                                0
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "CoreCompetenciesHeading",
+                                    "heading": "Core Competencies Evaluation",
+                                    "view": "Underline1",
+                                    "font": {
+                                        "weight": "Semibold",
+                                        "color": ""
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "subheading": "Rate the employee on the following competencies (1 = Needs Improvement, 5 = Excellent)",
+                                    "size": "H2",
+                                    "textAlignment": "Left"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "LikertScale",
+                                "model": {
+                                    "_internalName": "CoreCompetencies",
+                                    "type": "Radio",
+                                    "required": true,
+                                    "questions": "Communication Skills - Clearly expresses ideas and listens effectively\nLeadership - Guides and motivates others towards goals\nTeamwork & Collaboration - Works effectively with others\nProblem Solving - Identifies issues and develops solutions\nAdaptability - Adjusts to change and new situations\nTime Management - Prioritizes tasks and meets deadlines\nInitiative - Takes proactive action without being asked\nQuality of Work - Produces accurate and thorough results\nCustomer Focus - Prioritizes customer needs and satisfaction\nProfessional Development - Seeks to improve skills and knowledge",
+                                    "answers": "1 - Needs Improvement\n2 - Below Average\n3 - Meets Expectations\n4 - Above Average\n5 - Excellent"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                20,
+                                0,
+                                20,
+                                0
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "BehaviorsHeading",
+                                    "heading": "Behavioral Assessment",
+                                    "view": "Underline1",
+                                    "font": {
+                                        "weight": "Semibold",
+                                        "color": "#34495e"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "subheading": "Evaluate the employee's behaviors and interpersonal skills",
+                                    "size": "H2",
+                                    "textAlignment": "Left"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "LikertScale",
+                                "model": {
+                                    "_internalName": "BehavioralAssessment",
+                                    "type": "Radio",
+                                    "required": true,
+                                    "questions": "Reliability - Consistently delivers on commitments\nAccountability - Takes responsibility for actions and outcomes\nIntegrity - Acts ethically and honestly\nRespectfulness - Treats others with courtesy and consideration\nConflict Resolution - Handles disagreements constructively\nMentoring Others - Helps develop colleagues' skills\nInnovation - Brings creative ideas and solutions\nEmotional Intelligence - Manages emotions and understands others",
+                                    "answers": "1 - Needs Improvement\n2 - Below Average\n3 - Meets Expectations\n4 - Above Average\n5 - Excellent"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                20,
+                                0,
+                                10,
+                                0
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "StrengthsHeading",
+                                    "heading": "Key Strengths",
+                                    "view": "Normal",
+                                    "font": {
+                                        "weight": "Semibold",
+                                        "color": "#2980b9"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H3",
+                                    "textAlignment": "Left"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "MultiLineText",
+                                "model": {
+                                    "_internalName": "KeyStrengths",
+                                    "title": {
+                                        "text": "What are this person's greatest strengths?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Horizontal",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "Describe specific strengths and provide examples where possible",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "mode": "Plain",
+                                    "cHeight": 120
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                20,
+                                0,
+                                10,
+                                0
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "ImprovementHeading",
+                                    "heading": "Areas for Improvement",
+                                    "view": "Normal",
+                                    "font": {
+                                        "weight": "Semibold",
+                                        "color": "#e74c3c"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H3",
+                                    "textAlignment": "Left"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "MultiLineText",
+                                "model": {
+                                    "_internalName": "AreasForImprovement",
+                                    "title": {
+                                        "text": "What areas could this person improve in?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Horizontal",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "Be specific and constructive in your feedback",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "mode": "Plain",
+                                    "cHeight": 120
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                20,
+                                0,
+                                10,
+                                0
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "RecommendationsHeading",
+                                    "heading": "Development Recommendations",
+                                    "view": "Normal",
+                                    "font": {
+                                        "weight": "Semibold",
+                                        "color": "#27ae60"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H3",
+                                    "textAlignment": "Left"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "MultiLineText",
+                                "model": {
+                                    "_internalName": "DevelopmentRecommendations",
+                                    "title": {
+                                        "text": "What specific actions or training would help this person develop further?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Horizontal",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "Suggest specific training, experiences, or resources",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "mode": "Plain",
+                                    "cHeight": 120
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                20,
+                                0,
+                                10,
+                                0
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "OverallHeading",
+                                    "heading": "Overall Assessment",
+                                    "view": "Normal",
+                                    "font": {
+                                        "weight": "Semibold",
+                                        "color": ""
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H3",
+                                    "textAlignment": "Left"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Rating",
+                                "model": {
+                                    "_internalName": "OverallPerformance",
+                                    "symbol": {
+                                        "character": "★",
+                                        "size": 32,
+                                        "color": "#f39c12"
+                                    },
+                                    "range": 5,
+                                    "title": {
+                                        "text": "Overall Performance Rating",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        },
+                        {
+                            "component": {
+                                "type": "SingleChoice",
+                                "model": {
+                                    "_internalName": "RecommendForPromotion",
+                                    "title": {
+                                        "text": "Would you recommend this person for promotion?",
+                                        "visible": true
+                                    },
+                                    "orientation": "Vertical",
+                                    "required": true,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "dataSource": "StaticList",
+                                    "cColumns": 1,
+                                    "options": [
+                                        {
+                                            "value": "Strongly Recommend"
+                                        },
+                                        {
+                                            "value": "Recommend"
+                                        },
+                                        {
+                                            "value": "Neutral"
+                                        },
+                                        {
+                                            "value": "Do Not Recommend"
+                                        }
+                                    ],
+                                    "defaultValue": []
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "MultiLineText",
+                                "model": {
+                                    "_internalName": "AdditionalComments",
+                                    "title": {
+                                        "text": "Additional Comments",
+                                        "visible": true
+                                    },
+                                    "orientation": "Horizontal",
+                                    "required": false,
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "wrap": true,
+                                    "cHint": "Any other feedback or observations you'd like to share",
+                                    "cFont": {
+                                        "style": "Normal",
+                                        "weight": "Normal"
+                                    },
+                                    "mode": "Plain",
+                                    "cHeight": 100
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                30,
+                                0,
+                                0,
+                                0
+                            ],
+                            "component": {
+                                "type": "Submit",
+                                "model": {
+                                    "_internalName": "SubmitButton",
+                                    "text": "Submit 360° Feedback",
+                                    "savingText": "Submitting Feedback...",
+                                    "type": "Primary",
+                                    "click": "return fd.save();"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Center",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "",
+    "css": "",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "primary": "#b028dc",
+        "bodyText": "#595959",
+        "bodyBackground": "#ffffff",
+        "fontSize": 16,
+        "fontWeight": 600,
+        "borderThickness": 1,
+        "borderRadius": 4,
+        "shadow": true,
+        "isDark": false,
+        "fontFamily": "Montserrat",
+        "fontType": 1,
+        "themeId": "01317530cc1d3b74119d9a4408a91eed"
+    },
+    "timezone": "Etc/GMT",
+    "culture": "en",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": "Thank you for your feedback!",
+    "redirectURL": null,
+    "hideAfterSubmission": true,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null,
+    "redirectUrl": null,
+    "widgetVersion": "2.0.0"
+}

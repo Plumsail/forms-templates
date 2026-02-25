@@ -2,6 +2,7 @@
     "pc": {
         "type": "Grid",
         "model": {
+            "_internalName": "MainGrid",
             "stacked": "md",
             "frame": {
                 "horizontal": null,
@@ -16,24 +17,40 @@
                 {
                     "cells": [
                         {
-                            "padding": [
-                                null,
-                                null,
-                                20,
-                                null
-                            ],
+                            "component": {
+                                "type": "Image",
+                                "model": {
+                                    "_internalName": "Image1",
+                                    "class": "christmas-rsvp",
+                                    "target": "_blank",
+                                    "image": "https://plumsailforms.blob.core.windows.net/e90a6c64-b19a-42c1-ad3a-4f13a1244ebc-images/3a608efd-xmas-banner.png"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Left",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
                             "component": {
                                 "type": "Heading",
                                 "model": {
-                                    "_internalName": "Heading1",
-                                    "heading": "Site Visit Form",
+                                    "_internalName": "FormTitle",
+                                    "heading": "Christmas Party RSVP",
                                     "view": "Normal",
                                     "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
+                                        "color": "",
+                                        "weight": "Normal"
                                     },
                                     "frame": {
-                                        "horizontal": null,
+                                        "horizontal": 14,
                                         "vertical": null,
                                         "radius": null
                                     },
@@ -54,52 +71,20 @@
                 {
                     "cells": [
                         {
-                            "component": {
-                                "type": "Heading",
-                                "model": {
-                                    "_internalName": "Heading2",
-                                    "heading": "Visit Information",
-                                    "view": "Underline1",
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "size": "H2",
-                                    "textAlignment": "Left"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
                             "padding": [
+                                5,
                                 null,
                                 null,
-                                10,
                                 null
                             ],
                             "component": {
                                 "type": "Grid",
                                 "model": {
-                                    "_internalName": "Grid1",
+                                    "_internalName": "Grid2",
                                     "stacked": "md",
                                     "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
+                                        "horizontal": 20,
+                                        "vertical": 10,
                                         "radius": null
                                     },
                                     "border": {
@@ -111,25 +96,43 @@
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "SingleLineText",
+                                                        "type": "Grid",
                                                         "model": {
-                                                            "_internalName": "SiteAddress",
-                                                            "title": {
-                                                                "text": "Site Address",
-                                                                "visible": true
+                                                            "_internalName": "Grid1",
+                                                            "stacked": "md",
+                                                            "frame": {
+                                                                "horizontal": 25,
+                                                                "vertical": 10,
+                                                                "radius": 10
                                                             },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
+                                                            "border": {
+                                                                "width": null,
+                                                                "color": ""
                                                             },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "type": "Anything"
+                                                            "class": "event-info",
+                                                            "fill": "#F8F6F1",
+                                                            "rows": [
+                                                                {
+                                                                    "cells": [
+                                                                        {
+                                                                            "component": {
+                                                                                "type": "Text",
+                                                                                "model": {
+                                                                                    "_internalName": "EventDetails",
+                                                                                    "text": "📅 <strong>Date:</strong> December 20th<br>⏰ <strong>Time:</strong> 6:00 PM - 11:00 PM<br>📍 <strong>Location:</strong> Grand Ballroom, Holiday Inn<br>🎁 <strong>Dress Code:</strong> Festive Attire Welcome!<br><br>Please RSVP by December 15th so we can plan accordingly. We're excited to celebrate the holiday season with you!"
+                                                                                }
+                                                                            },
+                                                                            "alignment": {
+                                                                                "horizontal": "Justify",
+                                                                                "vertical": "Top"
+                                                                            },
+                                                                            "columns": {
+                                                                                "width": 12
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
                                                         }
                                                     },
                                                     "alignment": {
@@ -146,15 +149,15 @@
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "SingleLineText",
+                                                        "type": "SingleChoice",
                                                         "model": {
-                                                            "_internalName": "Project",
+                                                            "_internalName": "Attendance",
                                                             "title": {
-                                                                "text": "Project",
+                                                                "text": "Will you be attending?",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
-                                                            "required": false,
+                                                            "required": true,
                                                             "font": {
                                                                 "style": "Normal",
                                                                 "weight": "Semibold"
@@ -164,7 +167,26 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
-                                                            "type": "Anything"
+                                                            "dataSource": "StaticList",
+                                                            "cColumns": 1,
+                                                            "options": [
+                                                                {
+                                                                    "value": "Yes, I'll be there!",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Sorry, I can't make it",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Maybe (please contact me)",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                }
+                                                            ],
+                                                            "defaultValue": []
                                                         }
                                                     },
                                                     "alignment": {
@@ -172,7 +194,7 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 9
                                                     }
                                                 }
                                             ]
@@ -181,11 +203,11 @@
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "Date",
+                                                        "type": "SingleLineText",
                                                         "model": {
-                                                            "_internalName": "DateOfVisit",
+                                                            "_internalName": "FirstName",
                                                             "title": {
-                                                                "text": "Date of Visit",
+                                                                "text": "First Name",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -195,21 +217,12 @@
                                                                 "weight": "Semibold"
                                                             },
                                                             "wrap": true,
+                                                            "cHint": "Enter your first name",
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
-                                                            "startDate": {
-                                                                "mode": "Relative",
-                                                                "fieldInternalName": null,
-                                                                "offsetUnit": "Day",
-                                                                "offset": -3
-                                                            },
-                                                            "endDate": {
-                                                                "mode": "Relative",
-                                                                "fieldInternalName": null,
-                                                                "offsetUnit": "Day"
-                                                            }
+                                                            "type": "Anything"
                                                         }
                                                     },
                                                     "alignment": {
@@ -222,11 +235,11 @@
                                                 },
                                                 {
                                                     "component": {
-                                                        "type": "Time",
+                                                        "type": "SingleLineText",
                                                         "model": {
-                                                            "_internalName": "Time",
+                                                            "_internalName": "LastName",
                                                             "title": {
-                                                                "text": "Time",
+                                                                "text": "Last Name",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -236,11 +249,12 @@
                                                                 "weight": "Semibold"
                                                             },
                                                             "wrap": true,
+                                                            "cHint": "Enter your last name",
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
-                                                            "interval": 15
+                                                            "type": "Anything"
                                                         }
                                                     },
                                                     "alignment": {
@@ -259,9 +273,9 @@
                                                     "component": {
                                                         "type": "SingleLineText",
                                                         "model": {
-                                                            "_internalName": "ConductedBy",
+                                                            "_internalName": "Email",
                                                             "title": {
-                                                                "text": "Conducted by",
+                                                                "text": "Email",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -271,6 +285,7 @@
                                                                 "weight": "Semibold"
                                                             },
                                                             "wrap": true,
+                                                            "cHint": "your.email@example.com",
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
@@ -283,89 +298,16 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
                                                     }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "component": {
-                                "type": "Heading",
-                                "model": {
-                                    "_internalName": "Heading3",
-                                    "heading": "Site Observations",
-                                    "view": "Underline1",
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "size": "H2",
-                                    "textAlignment": "Left"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "padding": [
-                                null,
-                                null,
-                                10,
-                                null
-                            ],
-                            "component": {
-                                "type": "Grid",
-                                "model": {
-                                    "_internalName": "Grid2",
-                                    "stacked": "md",
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "border": {
-                                        "width": null,
-                                        "color": null
-                                    },
-                                    "rows": [
-                                        {
-                                            "cells": [
+                                                },
                                                 {
                                                     "component": {
-                                                        "type": "MultiLineText",
+                                                        "type": "Phone",
                                                         "model": {
-                                                            "_internalName": "SiteConditions",
+                                                            "_internalName": "Phone",
                                                             "title": {
-                                                                "text": "Site Conditions",
+                                                                "text": "Mobile",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -379,7 +321,18 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
-                                                            "mode": "Plain"
+                                                            "countries": [
+                                                                "AU",
+                                                                "CA",
+                                                                "FR",
+                                                                "DE",
+                                                                "IN",
+                                                                "IT",
+                                                                "NL",
+                                                                "ES",
+                                                                "GB",
+                                                                "US"
+                                                            ]
                                                         }
                                                     },
                                                     "alignment": {
@@ -387,7 +340,7 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
                                                     }
                                                 }
                                             ]
@@ -396,11 +349,11 @@
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "MultiLineText",
+                                                        "type": "Number",
                                                         "model": {
-                                                            "_internalName": "WorkInProgress",
+                                                            "_internalName": "GuestCount",
                                                             "title": {
-                                                                "text": "Work in Progress",
+                                                                "text": "How many guests will join you?",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -414,7 +367,12 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
-                                                            "mode": "Plain"
+                                                            "min": 1,
+                                                            "max": 5,
+                                                            "precision": 0,
+                                                            "percents": false,
+                                                            "spinButtons": true,
+                                                            "step": 1
                                                         }
                                                     },
                                                     "alignment": {
@@ -422,120 +380,16 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
                                                     }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "Attachments",
-                                                        "model": {
-                                                            "_internalName": "SiteConditionsAndProgressPhotos",
-                                                            "title": {
-                                                                "text": "Site Conditions and Progress Photos",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "maxSize": 10240
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 12
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "component": {
-                                "type": "Heading",
-                                "model": {
-                                    "_internalName": "Heading4",
-                                    "heading": "Safety Observations",
-                                    "view": "Underline1",
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "size": "H2",
-                                    "textAlignment": "Left"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "padding": [
-                                null,
-                                null,
-                                10,
-                                null
-                            ],
-                            "component": {
-                                "type": "Grid",
-                                "model": {
-                                    "_internalName": "Grid3",
-                                    "stacked": "md",
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "border": {
-                                        "width": null,
-                                        "color": null
-                                    },
-                                    "rows": [
-                                        {
-                                            "cells": [
+                                                },
                                                 {
                                                     "component": {
                                                         "type": "SingleChoice",
                                                         "model": {
-                                                            "_internalName": "CompliantWithSafetyRegulationsAndProtocols",
+                                                            "_internalName": "SecretSanta",
                                                             "title": {
-                                                                "text": "Compliant with Safety Regulations and Protocols",
+                                                                "text": "Would you like to participate in Secret Santa? ($20 limit)",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -553,17 +407,130 @@
                                                             "cColumns": 3,
                                                             "options": [
                                                                 {
-                                                                    "value": "Yes",
-                                                                    "backgroundColor": null,
-                                                                    "textColor": null
+                                                                    "value": "Yes, count me in!"
                                                                 },
                                                                 {
-                                                                    "value": "No",
-                                                                    "backgroundColor": null,
-                                                                    "textColor": null
+                                                                    "value": "No, thanks"
                                                                 }
                                                             ],
-                                                            "allowUserValue": false,
+                                                            "defaultValue": []
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "MultipleChoice",
+                                                        "model": {
+                                                            "_internalName": "DietaryRestrictions",
+                                                            "title": {
+                                                                "text": "Dietary Restrictions (select all that apply)",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "cColumns": 2,
+                                                            "options": [
+                                                                {
+                                                                    "value": "Vegetarian"
+                                                                },
+                                                                {
+                                                                    "value": "Vegan"
+                                                                },
+                                                                {
+                                                                    "value": "Gluten-free"
+                                                                },
+                                                                {
+                                                                    "value": "Dairy-free"
+                                                                },
+                                                                {
+                                                                    "value": "Nut allergies"
+                                                                },
+                                                                {
+                                                                    "value": "Other food allergies"
+                                                                },
+                                                                {
+                                                                    "value": "No restrictions"
+                                                                }
+                                                            ],
+                                                            "defaultValue": []
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "ActivityPreference",
+                                                            "title": {
+                                                                "text": "Which activity are you most excited about?",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Select your favorite activity",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "selection": "Single",
+                                                            "options": [
+                                                                {
+                                                                    "value": "Holiday Karaoke 🎤"
+                                                                },
+                                                                {
+                                                                    "value": "Christmas Trivia 🧠"
+                                                                },
+                                                                {
+                                                                    "value": "Ugly Sweater Contest 🎽"
+                                                                },
+                                                                {
+                                                                    "value": "Holiday Photo Booth 📸"
+                                                                },
+                                                                {
+                                                                    "value": "Dancing 💃"
+                                                                },
+                                                                {
+                                                                    "value": "Just here for the food! 🍽️"
+                                                                }
+                                                            ],
                                                             "defaultValue": []
                                                         }
                                                     },
@@ -583,9 +550,9 @@
                                                     "component": {
                                                         "type": "MultiLineText",
                                                         "model": {
-                                                            "_internalName": "SafetyHazards",
+                                                            "_internalName": "SpecialRequests",
                                                             "title": {
-                                                                "text": "Safety Hazards",
+                                                                "text": "Special Requests or Comments",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -595,11 +562,13 @@
                                                                 "weight": "Semibold"
                                                             },
                                                             "wrap": true,
+                                                            "cHint": "Any special accommodations, song requests, or messages for the hosts?",
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
-                                                            "mode": "Plain"
+                                                            "mode": "Plain",
+                                                            "cHeight": 80
                                                         }
                                                     },
                                                     "alignment": {
@@ -616,111 +585,11 @@
                                             "cells": [
                                                 {
                                                     "component": {
-                                                        "type": "Attachments",
+                                                        "type": "Toggle",
                                                         "model": {
-                                                            "_internalName": "SafetyHazardsPhotos",
+                                                            "_internalName": "NewsletterSubscribe",
                                                             "title": {
-                                                                "text": "Safety Hazards Photos",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "maxSize": 10240
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 12
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "component": {
-                                "type": "Heading",
-                                "model": {
-                                    "_internalName": "Heading5",
-                                    "heading": "Issues and Recommendations",
-                                    "view": "Underline1",
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "size": "H2",
-                                    "textAlignment": "Left"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "padding": [
-                                null,
-                                null,
-                                10,
-                                null
-                            ],
-                            "component": {
-                                "type": "Grid",
-                                "model": {
-                                    "_internalName": "Grid4",
-                                    "stacked": "md",
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "border": {
-                                        "width": null,
-                                        "color": null
-                                    },
-                                    "rows": [
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "MultiLineText",
-                                                        "model": {
-                                                            "_internalName": "IssuesAndConcerns",
-                                                            "title": {
-                                                                "text": "Issues and Concerns",
+                                                                "text": "Stay updated with future events",
                                                                 "visible": true
                                                             },
                                                             "orientation": "Vertical",
@@ -734,7 +603,8 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
-                                                            "mode": "Plain"
+                                                            "mode": "Checkbox",
+                                                            "cLabel": "Yes, I'd like to receive updates about future company events"
                                                         }
                                                     },
                                                     "alignment": {
@@ -750,26 +620,20 @@
                                         {
                                             "cells": [
                                                 {
+                                                    "padding": [
+                                                        20,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
                                                     "component": {
-                                                        "type": "SingleLineText",
+                                                        "type": "Submit",
                                                         "model": {
-                                                            "_internalName": "Recommendations",
-                                                            "title": {
-                                                                "text": "Recommendations",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
-                                                            },
-                                                            "type": "Anything"
+                                                            "_internalName": "Submit",
+                                                            "text": "REPLY",
+                                                            "savingText": "Submitting your RSVP...",
+                                                            "type": "Primary",
+                                                            "click": "return fd.save();"
                                                         }
                                                     },
                                                     "alignment": {
@@ -783,160 +647,6 @@
                                             ]
                                         }
                                     ]
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "component": {
-                                "type": "Heading",
-                                "model": {
-                                    "_internalName": "Heading6",
-                                    "heading": "",
-                                    "view": "Underline1",
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "size": "H4",
-                                    "textAlignment": "Center"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "padding": [
-                                10,
-                                null,
-                                10,
-                                null
-                            ],
-                            "component": {
-                                "type": "Grid",
-                                "model": {
-                                    "_internalName": "Grid5",
-                                    "stacked": "md",
-                                    "frame": {
-                                        "horizontal": null,
-                                        "vertical": null,
-                                        "radius": null
-                                    },
-                                    "border": {
-                                        "width": null,
-                                        "color": null
-                                    },
-                                    "rows": [
-                                        {
-                                            "cells": [
-                                                {
-                                                    "component": {
-                                                        "type": "Signature",
-                                                        "model": {
-                                                            "_internalName": "ConductedBy1",
-                                                            "title": {
-                                                                "text": "Conducted by",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cWidth": 300,
-                                                            "height": 150,
-                                                            "inkColor": "#000000"
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Center",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 6
-                                                    }
-                                                },
-                                                {
-                                                    "component": {
-                                                        "type": "Signature",
-                                                        "model": {
-                                                            "_internalName": "Engineer",
-                                                            "title": {
-                                                                "text": "Engineer ",
-                                                                "visible": true
-                                                            },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
-                                                            },
-                                                            "wrap": true,
-                                                            "cWidth": 300,
-                                                            "height": 150,
-                                                            "inkColor": "#000000"
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Center",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 6
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "component": {
-                                "type": "Submit",
-                                "model": {
-                                    "_internalName": "Submit1",
-                                    "text": "Submit Report",
-                                    "savingText": "Submitting...",
-                                    "type": "Primary",
-                                    "click": "return fd.save();"
                                 }
                             },
                             "alignment": {
@@ -954,31 +664,31 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "",
-    "css": "",
+    "js": "fd.rendered(() => {\n    \n    // Show/hide dietary restrictions based on attendance\n    const toggleFieldsBasedOnAttendance = () => {\n        const attendance = fd.field('Attendance').value;\n        const isAttending = attendance === \"Yes, I'll be there!\";\n        \n        fd.field('GuestCount').hidden = !isAttending;\n        fd.field('DietaryRestrictions').hidden = !isAttending;\n        fd.field('SecretSanta').hidden = !isAttending;\n        fd.field('ActivityPreference').hidden = !isAttending;\n        fd.field('SpecialRequests').hidden = !isAttending;\n    };\n    \n    fd.field('Attendance').$on('change', toggleFieldsBasedOnAttendance);\n    toggleFieldsBasedOnAttendance();\n});",
+    "css": "img.christmas-rsvp {\n filter: none !important;\n}\n\n.event-info {\n    background: #4A6D63;\n    border-left: 4px solid #4A6D63;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "primary": "#316e34",
-        "bodyText": "#3f3f3f",
-        "bodyBackground": "#f6f6f6",
-        "fontFamily": "Open Sans",
-        "fontType": 1,
-        "fontSize": 15,
+        "primary": "#4A6D63",
+        "bodyText": "#262626",
+        "bodyBackground": "#ffffff",
+        "fontSize": 14,
         "fontWeight": 400,
         "borderThickness": 1,
-        "borderRadius": 10,
+        "borderRadius": 4,
         "shadow": true,
-        "themeId": "5f33b6de91e8ec3cfc254416900d29d4",
-        "isDark": false
+        "isDark": false,
+        "fontFamily": "Lora",
+        "fontType": 1,
+        "themeId": "d0031ddae9250bb456ca9871dc4b88d3"
     },
-    "timezone": "Etc/GMT",
+    "timezone": "Asia/Karachi",
     "culture": "en",
     "userLanguage": null,
     "userCulture": null,
-    "thankYouMessage": null,
+    "thankYouMessage": "🎄 Thank you for your RSVP! 🎄\n\nIf you need to make any changes to your RSVP, please contact us at events@company.com.",
     "redirectURL": null,
-    "hideAfterSubmission": false,
+    "hideAfterSubmission": true,
     "submissionTimeout": 0,
     "authentication": 0,
     "singleSubmissionPerUser": false,
@@ -989,5 +699,6 @@
     "entraExternalIdProperties": null,
     "azureB2CProperties": null,
     "connection": null,
+    "redirectUrl": null,
     "widgetVersion": "2.0.0"
 }

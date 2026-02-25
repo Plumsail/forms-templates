@@ -1002,7 +1002,7 @@
     "tablet": null,
     "phone": null,
     "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable visit date fields\r\n    fd.field('VisitDate').disabled = true;\r\n    //set Vist Date to the current date\r\n    fd.field('VisitDate').value = new Date();\r\n\r\n    fd.field('BirthDate').widgetOptions = {\r\n        start: 'decade'\r\n    }\r\n});",
-    "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span,\n.fd-form .fd-heading{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n/** styling of the disable Date field **/\n.fd-form .visit-date .form-control:disabled,\n.fd-form .visit-date .form-control[readonly],\n.fd-form .visit-date .k-datepicker .k-picker-wrap,\n.fd-form .visit-date  .form-control{\n    background-color: transparent;\n    border-style: none;\n    font-weight: bold;\n}\n\n.fd-form .visit-date .k-select {\n    display: none !important;\n}\n\n.fd-form .visit-date input {\n    padding-left: 0px;\n}\n\n/* chnage the color of the logo to white */\n.fd-form .icon{\n    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(170deg) brightness(107%) contrast(100%);\n}",
+    "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span,\n.fd-form .fd-heading{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n/** styling of the disable Date field **/\n\n.fd-form .visit-date .fd-field-control:disabled,\n.fd-form .visit-date .fd-field-control[readonly],\n.fd-form .visit-date .k-datepicker {\n    background: none;\n    border: none;\n    font-weight: bold;\n}\n\n.fd-form .visit-date .k-input-button {\n    display: none !important;\n}\n\n.fd-form .visit-date input {\n    padding-left: 0px;\n}\n\n\n/* chnage the color of the logo to white */\n.fd-form .icon{\n    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(170deg) brightness(107%) contrast(100%);\n}",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
@@ -1034,5 +1034,6 @@
     "azureADObjects": [],
     "entraExternalIdProperties": null,
     "azureB2CProperties": null,
-    "connection": null
+    "connection": null,
+    "widgetVersion": "2.0.0"
 }
