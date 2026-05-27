@@ -748,6 +748,23 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Allergic"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Yes"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
                                                             "mode": "Plain"
                                                         }
                                                     },
@@ -829,6 +846,23 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "VaccineReaction"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Yes"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
                                                             "mode": "Plain"
                                                         }
                                                     },
@@ -909,6 +943,23 @@
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
+                                                            },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "СhronicСonditions"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Yes"
+                                                                        }
+                                                                    }
+                                                                ]
                                                             },
                                                             "mode": "Plain"
                                                         }
@@ -1299,7 +1350,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nfd.rendered(function() {\r\n    //disable fields\r\n    fd.field('Date').disabled = true;\r\n\r\n    //set Date to the current date\r\n    fd.field('Date').value = new Date();\r\n\r\n\r\n    // add validation for Consent\r\n    fd.field('Consent').addValidator({\r\n        name: 'ConsentValidator',\r\n        error: 'You must confirm all points. If you still have questions, contact your family doctor.',\r\n        validate: function(value) {\r\n            if (fd.field('Consent').value.length < 6)\r\n                return false;\r\n\r\n            return true;\r\n        }\r\n    });\r\n    \r\n    fd.field('BirthDate').widgetOptions = {\r\n        start: 'decade'\r\n    }\r\n\r\n    //call functions when changing field values\r\n    fd.field('Allergic').$on('change', showHideAllergicList);\r\n    fd.field('VaccineReaction').$on('change', showHideVaccineReactionList);\r\n    fd.field('СhronicСonditions').$on('change', showHideСhronicСonditionList);\r\n\r\n    //сalling functions on form loading\r\n    showHideAllergicList();\r\n    showHideVaccineReactionList();\r\n    showHideСhronicСonditionList();\r\n\r\n});\r\n\r\n//show/hide AllergicDetails list\r\nfunction showHideAllergicList() {\r\n    if (fd.field('Allergic').value == 'Yes') {\r\n        fd.field('AllergicDetails').hidden = false;\r\n    } else {\r\n        fd.field('AllergicDetails').hidden = true;\r\n    }\r\n}\r\n\r\n//show/hide Vaccine Reaction list\r\nfunction showHideVaccineReactionList() {\r\n    if (fd.field('VaccineReaction').value == 'Yes') {\r\n        fd.field('VaccineDetails').hidden = false;\r\n    } else {\r\n        fd.field('VaccineDetails').hidden = true;\r\n    }\r\n}\r\n\r\n//show/hide Сhronic Сonditions list\r\nfunction showHideСhronicСonditionList() {\r\n    if (fd.field('СhronicСonditions').value == 'Yes') {\r\n        fd.field('СhronicСonditionsDetails').hidden = false;\r\n    } else {\r\n        fd.field('СhronicСonditionsDetails').hidden = true;\r\n    }\r\n}\r\n",
+    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nfd.rendered(function() {\r\n    //disable fields\r\n    fd.field('Date').disabled = true;\r\n\r\n    //set Date to the current date\r\n    fd.field('Date').value = new Date();\r\n\r\n\r\n    // add validation for Consent\r\n    fd.field('Consent').addValidator({\r\n        name: 'ConsentValidator',\r\n        error: 'You must confirm all points. If you still have questions, contact your family doctor.',\r\n        validate: function(value) {\r\n            if (fd.field('Consent').value.length < 6)\r\n                return false;\r\n\r\n            return true;\r\n        }\r\n    });\r\n    \r\n    fd.field('BirthDate').widgetOptions = {\r\n        start: 'decade'\r\n    }\r\n\r\n});\r\n",
     "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span{\n   background-color: var(--fd-primary-rgb) !important;;\n}\n\n/** styling of the disable Date field **/\n\n.fd-form .completion-date .fd-field-control:disabled,\n.fd-form .completion-date .fd-field-control[readonly],\n.fd-form .completion-date .k-datepicker {\n    background: none;\n    border: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-input-button {\n    display: none !important;\n}\n\n.fd-form .completion-date input {\n    padding-left: 0px;\n}",
     "notifySubscribers": false,
     "version": "1.0.2",

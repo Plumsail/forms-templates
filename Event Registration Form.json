@@ -658,6 +658,23 @@
                                                             },
                                                             "newLine": "Top",
                                                             "delete": "Last",
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Friends"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "Boolean",
+                                                                            "value": true
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
                                                             "columns": [
                                                                 {
                                                                     "_internalName": "FriendName",
@@ -741,7 +758,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "//function that shows/hides container with the DataTable\r\nfunction friendsList() {\r\n    \r\n    var friends = fd.field('Friends').value;\r\n\r\n    if (friends) {\r\n        //show table\r\n        fd.control('DataTable1').hidden = false;\r\n    }\r\n    else {\r\n        //hide table\r\n        fd.control('DataTable1').hidden = true;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    //call the function on form load\r\n    friendsList();\r\n    \r\n    //call function when field is changed\r\n    fd.field('Friends').$on('change', friendsList)\r\n});\r\n",
+    "js": "",
     "css": "/* setting the image as the background of the form */\r\n.fd-form  {\r\n    box-sizing: border-box;\r\n    background: url(https://plumsail.com/assets/forms/templates/event-registration-form-image-01.jpg) no-repeat center center fixed;\r\n    background-size: auto;\r\n    background-size: cover;\r\n}\r\n\r\n\r\n/* setting a transparent background for the Heading control */\r\n.fd-form h1 > span,\r\n.fd-form h4 > span,\r\n.fd-form .fd-heading{\r\n   background-color: transparent !important;;\r\n}\r\n\r\n/* setting the background of Grid container */\r\n.fd-form .fd-blur-background{\r\n    background: rgba(0, 0, 0, 0.4);\r\n    backdrop-filter: blur(8px);\r\n}\r\n\r\n/* setting the the size of the iframe */\r\n.fd-form .event-form iframe {\r\n    width:100%;\r\n    height:300px;\r\n}\r\n",
     "notifySubscribers": false,
     "version": "1.0.2",

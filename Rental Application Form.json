@@ -231,13 +231,9 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
                                                     }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
+                                                },
                                                 {
                                                     "component": {
                                                         "type": "Phone",
@@ -512,7 +508,7 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
                                                     }
                                                 }
                                             ]
@@ -660,13 +656,9 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
                                                     }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
+                                                },
                                                 {
                                                     "component": {
                                                         "type": "SingleLineText",
@@ -696,7 +688,7 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
                                                     }
                                                 }
                                             ]
@@ -732,20 +724,10 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
                                                     }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
+                                                },
                                                 {
-                                                    "padding": [
-                                                        null,
-                                                        null,
-                                                        10,
-                                                        null
-                                                    ],
                                                     "component": {
                                                         "type": "SingleLineText",
                                                         "model": {
@@ -774,7 +756,7 @@
                                                         "vertical": "Top"
                                                     },
                                                     "columns": {
-                                                        "width": 12
+                                                        "width": 6
                                                     }
                                                 }
                                             ]
@@ -910,6 +892,30 @@
                                                         "type": "Text",
                                                         "model": {
                                                             "_internalName": "Text19",
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "NumberOfTenants"
+                                                                        },
+                                                                        "operator": "Less",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "Number",
+                                                                            "value": 1
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "NumberOfTenants"
+                                                                        },
+                                                                        "operator": "Empty"
+                                                                    }
+                                                                ]
+                                                            },
                                                             "text": "<h6>Additional Tenants&nbsp;<span style=\"color:#ff0000;\">*</span></h6><p>Tenants over 18 years old must complete a separate application</p>"
                                                         }
                                                     },
@@ -942,6 +948,30 @@
                                                             },
                                                             "newLine": "Bottom",
                                                             "delete": "Last",
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "NumberOfTenants"
+                                                                        },
+                                                                        "operator": "Less",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "Number",
+                                                                            "value": 1
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "NumberOfTenants"
+                                                                        },
+                                                                        "operator": "Empty"
+                                                                    }
+                                                                ]
+                                                            },
                                                             "columns": [
                                                                 {
                                                                     "_internalName": "FullName",
@@ -1148,6 +1178,23 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Pets"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "Boolean",
+                                                                            "value": true
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
                                                             "type": "Anything"
                                                         }
                                                     },
@@ -1312,12 +1359,13 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "// Validate the list of tenants\r\nfunction toggleOccupants() {\r\n    var occupantsNumber = fd.field('NumberOfTenants').value;\r\n\r\n    fd.validators.length = [];\r\n\r\n    if (occupantsNumber > 0) {\r\n        $('.fd-occupants-list').show();\r\n\r\n        fd.validators.push({\r\n            name: 'OccupantsValidation',\r\n            error: 'List all occupants',\r\n            validate: function (value) {\r\n                if (fd.control('Occupants').value.length < occupantsNumber) {\r\n                    return false;\r\n                }\r\n\r\n                return true;\r\n            },\r\n        });\r\n    } else {\r\n        $('.fd-occupants-list').hide();\r\n    }\r\n}\r\n\r\n// Show/hide PetInformation field and make it mandatory\r\nfunction togglePetInfo() {\r\n    var petInfo = fd.field('PetInformation');\r\n\r\n    if (fd.field('Pets').value) {\r\n        petInfo.hidden = false;\r\n        petInfo.required = true;\r\n    } else {\r\n        petInfo.hidden = true;\r\n        petInfo.required = false;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n\r\n    //call functions when the form is rendered\r\n    togglePetInfo();\r\n    toggleOccupants();\r\n    \r\n    //call functions when field value changes\r\n    fd.field('NumberOfTenants').$on('change', toggleOccupants);\r\n    fd.field('Pets').$on('change', togglePetInfo);\r\n});\r\n",
+    "js": "",
     "css": "/* setting the Heading background depending on the theme */\n.fd-form h1 > span{\n   background-color: var(--fd-primary-rgb) !important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
         "themeId": "default",
+        "primary": "#008EFF",
         "bodyText": "#373A3C",
         "bodyBackground": "#FFFFFF",
         "fontSize": 15,
@@ -1326,7 +1374,6 @@
         "borderRadius": 2,
         "shadow": true,
         "isDark": false,
-        "primary": "#008EFF",
         "fontFamily": null,
         "fontType": 0
     },

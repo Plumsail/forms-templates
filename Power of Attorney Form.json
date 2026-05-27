@@ -1427,6 +1427,23 @@
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
                                                                             },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "GeneralAuthority"
+                                                                                        },
+                                                                                        "operator": "Equals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "Boolean",
+                                                                                            "value": true
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            },
                                                                             "dataSource": "StaticList",
                                                                             "cColumns": 2,
                                                                             "options": [
@@ -1497,6 +1514,23 @@
                                                                             "cFont": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
+                                                                            },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "GeneralAuthority"
+                                                                                        },
+                                                                                        "operator": "Equals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "Boolean",
+                                                                                            "value": true
+                                                                                        }
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             "dataSource": "StaticList",
                                                                             "cColumns": 2,
@@ -1574,6 +1608,23 @@
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
                                                                             },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "GeneralAuthority"
+                                                                                        },
+                                                                                        "operator": "Equals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "Boolean",
+                                                                                            "value": true
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            },
                                                                             "dataSource": "StaticList",
                                                                             "cColumns": 1,
                                                                             "options": [
@@ -1630,6 +1681,23 @@
                                                                             "cFont": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
+                                                                            },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "GeneralAuthority"
+                                                                                        },
+                                                                                        "operator": "Equals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "Boolean",
+                                                                                            "value": true
+                                                                                        }
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             "mode": "Plain"
                                                                         }
@@ -1833,7 +1901,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.rendered(function () {\r\n    // The function shows/hides fields for limitted POA  \r\n    function updateListOfAreasVisibility() {\r\n        if(fd.field('GeneralAuthority').value){\r\n            $('.not-general').hide()\r\n        }\r\n        else {\r\n            $('.not-general').show()\r\n        }\r\n    }\r\n\r\n    // call function when the form is rendered\r\n    updateListOfAreasVisibility();\r\n \r\n    // call function when FirstName changes\r\n    fd.field('GeneralAuthority').$on('change', updateListOfAreasVisibility);\r\n\r\n});\r\n\r\n",
+    "js": "",
     "css": "",
     "notifySubscribers": false,
     "version": "1.0.2",

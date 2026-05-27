@@ -367,6 +367,23 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Attendance"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Yes, I'll be there!"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
                                                             "min": 1,
                                                             "max": 5,
                                                             "precision": 0,
@@ -402,6 +419,23 @@
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
+                                                            },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Attendance"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Yes, I'll be there!"
+                                                                        }
+                                                                    }
+                                                                ]
                                                             },
                                                             "dataSource": "StaticList",
                                                             "cColumns": 3,
@@ -447,6 +481,23 @@
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
+                                                            },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Attendance"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Yes, I'll be there!"
+                                                                        }
+                                                                    }
+                                                                ]
                                                             },
                                                             "dataSource": "StaticList",
                                                             "cColumns": 2,
@@ -509,6 +560,23 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Attendance"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Yes, I'll be there!"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
                                                             "dataSource": "StaticList",
                                                             "selection": "Single",
                                                             "options": [
@@ -566,6 +634,23 @@
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
+                                                            },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Attendance"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Yes, I'll be there!"
+                                                                        }
+                                                                    }
+                                                                ]
                                                             },
                                                             "mode": "Plain",
                                                             "cHeight": 80
@@ -664,7 +749,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "fd.rendered(() => {\n    \n    // Show/hide dietary restrictions based on attendance\n    const toggleFieldsBasedOnAttendance = () => {\n        const attendance = fd.field('Attendance').value;\n        const isAttending = attendance === \"Yes, I'll be there!\";\n        \n        fd.field('GuestCount').hidden = !isAttending;\n        fd.field('DietaryRestrictions').hidden = !isAttending;\n        fd.field('SecretSanta').hidden = !isAttending;\n        fd.field('ActivityPreference').hidden = !isAttending;\n        fd.field('SpecialRequests').hidden = !isAttending;\n    };\n    \n    fd.field('Attendance').$on('change', toggleFieldsBasedOnAttendance);\n    toggleFieldsBasedOnAttendance();\n});",
+    "js": "",
     "css": "img.christmas-rsvp {\n filter: none !important;\n}\n\n.event-info {\n    background: #4A6D63;\n    border-left: 4px solid #4A6D63;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",

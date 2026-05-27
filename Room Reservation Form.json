@@ -886,6 +886,23 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "PickUp"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "Boolean",
+                                                                            "value": true
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
                                                             "interval": 30
                                                         }
                                                     },
@@ -917,6 +934,23 @@
                                                             "cFont": {
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
+                                                            },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "PickUp"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "Boolean",
+                                                                            "value": true
+                                                                        }
+                                                                    }
+                                                                ]
                                                             },
                                                             "type": "Anything"
                                                         }
@@ -979,12 +1013,13 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "// show/hide ArrivalTime and FlightNumber fields and make them mandatory when PickUp field is enabled\r\nfunction toggleArrivalInfo() {\r\n    var pickUpRequired = fd.field('PickUp').value\r\n    \r\n    if(pickUpRequired) {\r\n        fd.field('ArrivalTime').required = true;\r\n        fd.field('FlightNumber').required = true;\r\n        \r\n        fd.field('ArrivalTime').hidden = false\r\n        fd.field('FlightNumber').hidden = false;\r\n    }\r\n    else {\r\n        fd.field('ArrivalTime').required = false;\r\n        fd.field('FlightNumber').required = false;\r\n        \r\n        fd.field('ArrivalTime').hidden = true;\r\n        fd.field('FlightNumber').hidden = true;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n\r\n    // call the function on form load\r\n    toggleArrivalInfo();\r\n    \r\n    // call the function when the PickUp field changes\r\n    fd.field('PickUp').$on('change', toggleArrivalInfo);\r\n});",
+    "js": "",
     "css": "/* setting the Heading background depending on the theme */\r\n.fd-form h1 > span,\r\n.fd-form .fd-heading{\r\n   background-color: var(--fd-primary-rgb) !important;\r\n}\r\n\r\n\r\n\r\n",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
         "themeId": "orange",
+        "primary": "#CA5010",
         "bodyText": "#333333",
         "bodyBackground": "#FFFFFF",
         "fontSize": 15,
@@ -993,7 +1028,6 @@
         "borderRadius": 2,
         "shadow": true,
         "isDark": false,
-        "primary": "#CA5010",
         "fontFamily": null,
         "fontType": 0
     },

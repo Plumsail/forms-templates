@@ -445,6 +445,25 @@
                                         "style": "Normal",
                                         "weight": "Normal"
                                     },
+                                    "hideCondition": {
+                                        "match": "Any",
+                                        "rules": [
+                                            {
+                                                "left": {
+                                                    "type": "Field",
+                                                    "internalName": "PromoInformation"
+                                                },
+                                                "operator": "ContainsNone",
+                                                "right": {
+                                                    "type": "Value",
+                                                    "valueType": "MultiString",
+                                                    "value": [
+                                                        "by e-mail"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
                                     "type": "E-mail",
                                     "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
                                     "error": "This field must contain a valid e-mail address."
@@ -481,6 +500,25 @@
                                     "cFont": {
                                         "style": "Normal",
                                         "weight": "Normal"
+                                    },
+                                    "hideCondition": {
+                                        "match": "Any",
+                                        "rules": [
+                                            {
+                                                "left": {
+                                                    "type": "Field",
+                                                    "internalName": "PromoInformation"
+                                                },
+                                                "operator": "ContainsNone",
+                                                "right": {
+                                                    "type": "Value",
+                                                    "valueType": "MultiString",
+                                                    "value": [
+                                                        "by SMS"
+                                                    ]
+                                                }
+                                            }
+                                        ]
                                     },
                                     "countries": [
                                         "AF",
@@ -1032,12 +1070,13 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "// show/hide Email and MobileNumber fields and make them mandatory\r\nfunction notificationMethod() {\r\n    var notifyBy = fd.field('PromoInformation').value;\r\n    \r\n    // hide fields\r\n    fd.field('Email').hidden = true;\r\n    fd.field('MobileNumber').hidden = true;\r\n    \r\n    // make fields optional\r\n    fd.field('Email').required = false;\r\n    fd.field('MobileNumber').required = false;\r\n    \r\n    if (notifyBy.includes('by e-mail')) {\r\n        //show Email field and make it required\r\n        fd.field('Email').hidden = false;\r\n        fd.field('Email').required = true;\r\n    }\r\n    \r\n    if (notifyBy.includes('by SMS')) {\r\n        //show MobileNumber field and make it required\r\n        fd.field('MobileNumber').hidden = false;\r\n        fd.field('MobileNumber').required = true;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    // сall the function on form load\r\n    notificationMethod();\r\n    \r\n    // call the function when PromoInformation is changed\r\n    fd.field('PromoInformation').$on('change', notificationMethod)\r\n});\r\n\r\n",
+    "js": "",
     "css": "",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
         "themeId": "default",
+        "primary": "#008EFF",
         "bodyText": "#373A3C",
         "bodyBackground": "#FFFFFF",
         "fontSize": 15,
@@ -1046,7 +1085,6 @@
         "borderRadius": 2,
         "shadow": true,
         "isDark": false,
-        "primary": "#008EFF",
         "fontFamily": null,
         "fontType": 0
     },

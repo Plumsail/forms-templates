@@ -1829,6 +1829,23 @@
                                                                             },
                                                                             "newLine": "Top",
                                                                             "delete": "Last",
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "Medications"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "Boolean",
+                                                                                            "value": true
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            },
                                                                             "columns": [
                                                                                 {
                                                                                     "_internalName": "MedicationName",
@@ -1949,6 +1966,23 @@
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
                                                                             },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "AllergicMedications"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "Boolean",
+                                                                                            "value": true
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            },
                                                                             "mode": "Plain"
                                                                         }
                                                                     },
@@ -2020,6 +2054,23 @@
                                                                             "cFont": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
+                                                                            },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "AllergicFood"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "Boolean",
+                                                                                            "value": true
+                                                                                        }
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             "mode": "Plain"
                                                                         }
@@ -5167,6 +5218,23 @@
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
                                                                             },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "AreYouASmoker"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "Boolean",
+                                                                                            "value": true
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            },
                                                                             "min": 0,
                                                                             "precision": "0",
                                                                             "percents": false,
@@ -5202,6 +5270,23 @@
                                                                             "cFont": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
+                                                                            },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "AreYouASmoker"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "Boolean",
+                                                                                            "value": true
+                                                                                        }
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             "min": 0,
                                                                             "precision": "0",
@@ -5298,6 +5383,30 @@
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
                                                                             },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "Alcohol"
+                                                                                        },
+                                                                                        "operator": "Equals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "String",
+                                                                                            "value": "No"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "Alcohol"
+                                                                                        },
+                                                                                        "operator": "Empty"
+                                                                                    }
+                                                                                ]
+                                                                            },
                                                                             "dataSource": "StaticList",
                                                                             "selection": "Single",
                                                                             "options": [
@@ -5354,6 +5463,30 @@
                                                                             "cFont": {
                                                                                 "style": "Normal",
                                                                                 "weight": "Normal"
+                                                                            },
+                                                                            "hideCondition": {
+                                                                                "match": "Any",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "Alcohol"
+                                                                                        },
+                                                                                        "operator": "Equals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "String",
+                                                                                            "value": "No"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "Alcohol"
+                                                                                        },
+                                                                                        "operator": "Empty"
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             "min": 0,
                                                                             "precision": "0",
@@ -5577,7 +5710,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n}\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable registration date fields\r\n    fd.field('RegistrationDate').disabled = true;\r\n    //set RegistrationDate to the current date\r\n    fd.field('RegistrationDate').value = new Date();\r\n\r\n    //сalling functions on form loading\r\n    showHideMedicationsList();\r\n    showHideAllergicOnMedicationsList();\r\n    showHideAllergicFood();\r\n    smoker();\r\n    alcohol();\r\n    \r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        start: 'decade'\r\n    }\r\n\r\n    //call functions when changing field values    \r\n    fd.field('AllergicMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', smoker);\r\n    fd.field('Alcohol').$on('change', alcohol);\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n\r\n});\r\n\r\n//show/hide MedicationsList\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value) {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicMedications').value) {\r\n        fd.field('AllergicMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicMedicationsList').hidden = true;\r\n    }\r\n}\r\n//show hide AllergicFood field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value) {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n//show/hide questions about smoking\r\nfunction smoker() {\r\n    if (fd.field('AreYouASmoker').value) {\r\n        $('.smoker').show()\r\n    } else {\r\n        $('.smoker').hide()\r\n    }\r\n}\r\n//show/hide questions about alcohol\r\nfunction alcohol() {\r\n    if (fd.field('Alcohol').value == 'Occasionally' || fd.field('Alcohol').value == 'Often') {\r\n        $('.alcohol').show()\r\n    } else {\r\n        $('.alcohol').hide()\r\n    }\r\n}",
+    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n}\r\n\r\nfd.rendered(function() {\r\n\r\n    //disable registration date fields\r\n    fd.field('RegistrationDate').disabled = true;\r\n    //set RegistrationDate to the current date\r\n    fd.field('RegistrationDate').value = new Date();\r\n\r\n    \r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        start: 'decade'\r\n    }\r\n\r\n});\r\n",
     "css": "/* making hospital information compact */\n.fd-form .info p {\n    margin-top: 0;\n    margin-bottom: 0 !important;\n}\n\n/* setting the Heading background depending on the theme */\n.fd-form h1 > span,\n.fd-form .fd-heading{\n   background-color: var(--fd-primary-rgb) !important;\n}\n\n\n\n/** styling of the disable Date field **/\n\n.fd-form .completion-date .fd-field-control:disabled,\n.fd-form .completion-date .fd-field-control[readonly],\n.fd-form .completion-date .k-datepicker {\n    background: none;\n    border: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-input-button {\n    display: none !important;\n}\n\n.fd-form .completion-date input {\n    padding-left: 0px;\n}\n\n\n/* setting the styling of tabs */\n\n.fd-form .nav-tabs .nav-link.active,\n.fd-form .nav-tabs .nav-link:focus {\n    border-color: #335da3 rgba(0,0,0,0) #335da3 #335da3;\n    background-color: #335da2;\n    color: white;\n}\n\n/* changing the styling of tabs when theme changes*/\n\n/****** THEME 1 ******/\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:hover {\n    color: #fff;\n    background-color: #bbc756;\n    border-color: #bbc756 #bbc756 #bbc756;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-item {\n    margin-bottom: 0;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link.active,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs .nav-link:focus \n{\n    color: #889e5c !important;\n    border-color: #889e5c #ffffff #889e5c #889e5c !important;\n    background-color: transparent !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-link {\n    color: #3f3f3f !important;\n}\n\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs,\n.fd-form[theme='d4b892b7e88741ba2b1f0d2e98a0a9e1'] .nav-tabs:hover {\n    border-right-color: #889e5c !important;\n    color: white\n}\n\n/****** THEME 2 ******/\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: transparent !important;\n    border-right: 5px solid #eaeaea;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link.active,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs .nav-link:focus {\n    color: #333;\n    border: none !important;\n    border-right: 5px solid #ed885d!important;\n    background-color: transparent !important;\n}\n\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-link {\n    color: #333;\n}\n\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs,\n.fd-form[theme='52b2a644ef443224de40b25c57a8760d'] .nav-tabs:hover {\n    border: none !important;\n}\n\n/****** THEME 2 ******/\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:hover {\n    color: #333;\n    background-color: #D7E1E5;\n    border-color: #D7E1E5 #D7E1E5 #006699;\n    border-radius: 10px;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link.active,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs .nav-link:focus {\n    border-color: #883f86 #883f86 #883f86 !Important;\n    background-color: #883f86;\n    color: white;\n    border-radius: 10px;\n}\n\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-link {\n    color: #883f86;\n}\n\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs,\n.fd-form[theme='3d2ef296ab0bae09e44e945dde3b0311'] .nav-tabs:hover {\n    border-color: transparent !Important;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",

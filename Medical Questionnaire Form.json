@@ -928,27 +928,280 @@
                 {
                     "cells": [
                         {
-                            "class": "insurance",
                             "component": {
-                                "type": "SingleLineText",
+                                "type": "Grid",
                                 "model": {
-                                    "_internalName": "InsuranceProvider",
-                                    "title": {
-                                        "text": "Insurance Provider",
-                                        "visible": true
+                                    "_internalName": "Grid1",
+                                    "hideCondition": {
+                                        "match": "Any",
+                                        "rules": [
+                                            {
+                                                "left": {
+                                                    "type": "Field",
+                                                    "internalName": "Insurance"
+                                                },
+                                                "operator": "NotEquals",
+                                                "right": {
+                                                    "type": "Value",
+                                                    "valueType": "String",
+                                                    "value": "Yes"
+                                                }
+                                            }
+                                        ]
                                     },
-                                    "orientation": "Vertical",
-                                    "required": false,
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
+                                    "stacked": "md",
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
                                     },
-                                    "wrap": true,
-                                    "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
+                                    "border": {
+                                        "width": null,
+                                        "color": null
                                     },
-                                    "type": "Anything"
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "InsuranceProvider",
+                                                            "title": {
+                                                                "text": "Insurance Provider",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "HealthFundName",
+                                                            "title": {
+                                                                "text": "Health Fund Name",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "MembershipNumber",
+                                                            "title": {
+                                                                "text": "Membership Number",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "Reference Number",
+                                                            "title": {
+                                                                "text": "Reference Number",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "LevelInsurance",
+                                                            "title": {
+                                                                "text": "Level of the Insurance Coverage",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "InsuranceDate",
+                                                            "title": {
+                                                                "text": "Insurance Start Date ",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "Number",
+                                                        "model": {
+                                                            "_internalName": "Excess",
+                                                            "title": {
+                                                                "text": "Insurance Excess",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "min": 0,
+                                                            "precision": "0",
+                                                            "percents": false,
+                                                            "spinButtons": true,
+                                                            "step": 1
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             },
                             "alignment": {
@@ -957,218 +1210,6 @@
                             },
                             "columns": {
                                 "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "class": "insurance",
-                            "component": {
-                                "type": "SingleLineText",
-                                "model": {
-                                    "_internalName": "HealthFundName",
-                                    "title": {
-                                        "text": "Health Fund Name",
-                                        "visible": true
-                                    },
-                                    "orientation": "Vertical",
-                                    "required": false,
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "wrap": true,
-                                    "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "type": "Anything"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "class": "insurance",
-                            "component": {
-                                "type": "SingleLineText",
-                                "model": {
-                                    "_internalName": "MembershipNumber",
-                                    "title": {
-                                        "text": "Membership Number",
-                                        "visible": true
-                                    },
-                                    "orientation": "Vertical",
-                                    "required": false,
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "wrap": true,
-                                    "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "type": "Anything"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 6
-                            }
-                        },
-                        {
-                            "class": "insurance",
-                            "component": {
-                                "type": "SingleLineText",
-                                "model": {
-                                    "_internalName": "Reference Number",
-                                    "title": {
-                                        "text": "Reference Number",
-                                        "visible": true
-                                    },
-                                    "orientation": "Vertical",
-                                    "required": false,
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "wrap": true,
-                                    "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "type": "Anything"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 6
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "class": "insurance",
-                            "component": {
-                                "type": "SingleLineText",
-                                "model": {
-                                    "_internalName": "LevelInsurance",
-                                    "title": {
-                                        "text": "Level of the Insurance Coverage",
-                                        "visible": true
-                                    },
-                                    "orientation": "Vertical",
-                                    "required": false,
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "wrap": true,
-                                    "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "type": "Anything"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "cells": [
-                        {
-                            "class": "insurance",
-                            "component": {
-                                "type": "SingleLineText",
-                                "model": {
-                                    "_internalName": "InsuranceDate",
-                                    "title": {
-                                        "text": "Insurance Start Date ",
-                                        "visible": true
-                                    },
-                                    "orientation": "Vertical",
-                                    "required": false,
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "wrap": true,
-                                    "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "type": "Anything"
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 6
-                            }
-                        },
-                        {
-                            "class": "insurance",
-                            "component": {
-                                "type": "Number",
-                                "model": {
-                                    "_internalName": "Excess",
-                                    "title": {
-                                        "text": "Insurance Excess",
-                                        "visible": true
-                                    },
-                                    "orientation": "Vertical",
-                                    "required": false,
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Semibold"
-                                    },
-                                    "wrap": true,
-                                    "cFont": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "min": 0,
-                                    "precision": "0",
-                                    "percents": false,
-                                    "spinButtons": true,
-                                    "step": 1
-                                }
-                            },
-                            "alignment": {
-                                "horizontal": "Justify",
-                                "vertical": "Top"
-                            },
-                            "columns": {
-                                "width": 6
                             }
                         }
                     ]
@@ -1846,6 +1887,23 @@
                                     },
                                     "newLine": "Top",
                                     "delete": "Last",
+                                    "hideCondition": {
+                                        "match": "Any",
+                                        "rules": [
+                                            {
+                                                "left": {
+                                                    "type": "Field",
+                                                    "internalName": "Medications"
+                                                },
+                                                "operator": "NotEquals",
+                                                "right": {
+                                                    "type": "Value",
+                                                    "valueType": "String",
+                                                    "value": "Yes"
+                                                }
+                                            }
+                                        ]
+                                    },
                                     "columns": [
                                         {
                                             "_internalName": "MedicationName",
@@ -1987,6 +2045,23 @@
                                         "style": "Normal",
                                         "weight": "Normal"
                                     },
+                                    "hideCondition": {
+                                        "match": "Any",
+                                        "rules": [
+                                            {
+                                                "left": {
+                                                    "type": "Field",
+                                                    "internalName": "AllergicOnMedications"
+                                                },
+                                                "operator": "NotEquals",
+                                                "right": {
+                                                    "type": "Value",
+                                                    "valueType": "String",
+                                                    "value": "Yes"
+                                                }
+                                            }
+                                        ]
+                                    },
                                     "mode": "Plain"
                                 }
                             },
@@ -2080,6 +2155,23 @@
                                         "style": "Normal",
                                         "weight": "Normal"
                                     },
+                                    "hideCondition": {
+                                        "match": "Any",
+                                        "rules": [
+                                            {
+                                                "left": {
+                                                    "type": "Field",
+                                                    "internalName": "AllergicFood"
+                                                },
+                                                "operator": "NotEquals",
+                                                "right": {
+                                                    "type": "Value",
+                                                    "valueType": "String",
+                                                    "value": "Yes"
+                                                }
+                                            }
+                                        ]
+                                    },
                                     "mode": "Plain"
                                 }
                             },
@@ -2172,6 +2264,23 @@
                                     "cFont": {
                                         "style": "Normal",
                                         "weight": "Normal"
+                                    },
+                                    "hideCondition": {
+                                        "match": "Any",
+                                        "rules": [
+                                            {
+                                                "left": {
+                                                    "type": "Field",
+                                                    "internalName": "AreYouASmoker"
+                                                },
+                                                "operator": "NotEquals",
+                                                "right": {
+                                                    "type": "Value",
+                                                    "valueType": "String",
+                                                    "value": "Yes"
+                                                }
+                                            }
+                                        ]
                                     },
                                     "min": 0,
                                     "precision": "0",
@@ -2647,7 +2756,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nconst loadLuxon = async () => {\r\n    // Load external library\r\n    await $.getScript('https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js');\r\n}\r\n\r\nfd.rendered(function() {\r\n    //disable fields\r\n    fd.field('Age').disabled = true;\r\n    fd.field('CompletionDate').disabled = true;\r\n    //set CompletionDate to the current date\r\n    fd.field('CompletionDate').value = new Date();\r\n\r\n    loadLuxon().then(() => {\r\n        fd.field('DateOfBirth').$on('change', calculateAge);\r\n    });\r\n    \r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        start: 'decade'\r\n    }\r\n    \r\n    //call functions when changing field values\r\n    fd.field('Medications').$on('change', showHideMedicationsList);\r\n    fd.field('Insurance').$on('change', showHideInsuranceFields);\r\n    fd.field('AllergicOnMedications').$on('change', showHideAllergicOnMedicationsList);\r\n    fd.field('AllergicFood').$on('change', showHideAllergicFood);\r\n    fd.field('AreYouASmoker').$on('change', showHideSmokingDaily);\r\n    fd.field('DateOfBirth').$on('change', ageDescription);\r\n    fd.field('DateOfBirth').$on('change', calculateAge);\r\n\r\n    //сalling functions on form loading\r\n    showHideMedicationsList();\r\n    showHideInsuranceFields();\r\n    showHideAllergicFood();\r\n    showHideSmokingDaily();\r\n    showHideAllergicOnMedicationsList();\r\n    ageDescription();\r\n\r\n});\r\n\r\n//show/hide Age field description\r\nfunction ageDescription() {\r\n    if (!fd.field('DateOfBirth').value) {\r\n        fd.field('Age').description = 'Select date of birth'\r\n    } else {\r\n        fd.field('Age').description = ''\r\n    }\r\n}\r\n\r\n//show/hide insurance details\r\nfunction showHideInsuranceFields() {\r\n    if (fd.field('Insurance').value == 'Yes') {\r\n        $('.insurance').show();\r\n    } else {\r\n        $('.insurance').hide();\r\n    }\r\n}\r\n\r\n//show/hide medications list\r\nfunction showHideMedicationsList() {\r\n    if (fd.field('Medications').value == 'Yes') {\r\n        fd.control('MedicationsList').hidden = false;\r\n    } else {\r\n        fd.control('MedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicOnMedicationsList field\r\nfunction showHideAllergicOnMedicationsList() {\r\n    if (fd.field('AllergicOnMedications').value == 'Yes') {\r\n        fd.field('AllergicOnMedicationsList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicOnMedicationsList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide AllergicFoodList field\r\nfunction showHideAllergicFood() {\r\n    if (fd.field('AllergicFood').value == 'Yes') {\r\n        fd.field('AllergicFoodList').hidden = false;\r\n    } else {\r\n        fd.field('AllergicFoodList').hidden = true;\r\n    }\r\n}\r\n\r\n//show hide SmokingDaily field\r\nfunction showHideSmokingDaily() {\r\n    if (fd.field('AreYouASmoker').value == 'Yes') {\r\n        fd.field('SmokingDaily').hidden = false;\r\n    } else {\r\n        fd.field('SmokingDaily').hidden = true;\r\n    }\r\n}\r\n\r\n//calculate patient's age\r\nfunction calculateAge() {\r\n    const selectedDate = fd.field('DateOfBirth').value;\r\n    if (selectedDate) {\r\n        const birthDate = luxon.DateTime.fromISO(selectedDate.toISOString());\r\n        const today = luxon.DateTime.now();\r\n        const dateDiff = today.diff(birthDate, 'years').as('years');\r\n        fd.field('Age').value = Math.round(dateDiff);\r\n    } else {\r\n        fd.field('Age').value = '';\r\n    }\r\n}",
+    "js": "//detect theme change\r\nfd.themeChanged = theme => {\r\n    $('.fd-form').attr('theme', theme);\r\n};\r\n\r\nconst loadLuxon = async () => {\r\n    // Load external library\r\n    await $.getScript('https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js');\r\n}\r\n\r\nfd.rendered(function() {\r\n    //disable fields\r\n    fd.field('Age').disabled = true;\r\n    fd.field('CompletionDate').disabled = true;\r\n    //set CompletionDate to the current date\r\n    fd.field('CompletionDate').value = new Date();\r\n\r\n    loadLuxon().then(() => {\r\n        fd.field('DateOfBirth').$on('change', calculateAge);\r\n    });\r\n    \r\n    fd.field('DateOfBirth').widgetOptions = {\r\n        start: 'decade'\r\n    }\r\n\r\n});\r\n\r\n\r\n//calculate patient's age\r\nfunction calculateAge() {\r\n    const selectedDate = fd.field('DateOfBirth').value;\r\n    if (selectedDate) {\r\n        const birthDate = luxon.DateTime.fromISO(selectedDate.toISOString());\r\n        const today = luxon.DateTime.now();\r\n        const dateDiff = today.diff(birthDate, 'years').as('years');\r\n        fd.field('Age').value = Math.round(dateDiff);\r\n    } else {\r\n        fd.field('Age').value = '';\r\n    }\r\n}",
     "css": "/* setting the Heading background depending on the theme */\n.fd-form h3 > span {\n    background-color: var(--fd-primary-rgb) !important;\n}\n\n/** styling of the disable Age field **/\n.fd-form .age .form-control:disabled {\n    background-color: transparent;\n    border: none;\n}\n\n/** styling of the disable Date field **/\n\n.fd-form .completion-date .fd-field-control:disabled,\n.fd-form .completion-date .fd-field-control[readonly],\n.fd-form .completion-date .k-datepicker {\n    background: none;\n    border: none;\n    font-weight: bold;\n}\n\n.fd-form .completion-date .k-input-button {\n    display: none !important;\n}\n\n.fd-form .completion-date input {\n    padding-left: 0px;\n}\n/* styling for the hospital name */\n.fd-form .company-name {\n    border-left: solid 15px;\n    padding: 25px\n}\n\n.fd-form .company-name h6 {    \n    margin-top: 0;\n    margin-bottom: 5px;\n    padding-left: 10px;\n}\n\n/* changing the styling of the hospital name and section headers when theme changes*/\n\n/****** THEME 1 ******/\n\n.fd-form .company-name {\n    border-left-color: #1a1a1a;\n}\n\n.fd-form .company-name h6,\n.fd-form h3{    \n    color: #4f4d4d;\n}\n\n.fd-form h3::before {\n    content: ' /';\n}\n\n\n/****** THEME 2 ******/\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .company-name,\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .fd-heading.bg-primary {\n    border-left-color: #3d9e87;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .company-name h6 {    \n    color: #ffffff;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] h3 {\n    color: #ffffff;\n}\n\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] .fd-heading {\n    border-left: solid 15px;\n}\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5']  .fd-heading::before,\n.fd-form[theme='d3d0e45fe35e8efafd7c37a2b012a5c5'] h3::before{\n    content: none;\n}\n\n\n/****** THEME 3 ******/\n.fd-form[theme='blue'] .company-name {\n    border-left-color: #1a1a1a;\n}\n\n.fd-form[theme='blue']  .company-name h6,\n.fd-form[theme='blue']  h3{    \n    color: #ffffff;\n}\n\n.fd-form[theme='blue']  h3::before {\n    content: ' #';\n}\n\n\n/****** THEME 4 ******/\n\n.fd-form[theme='purple'] .company-name,\n.fd-form[theme='purple'] .fd-heading.bg-primary{\n    border-left-color: #F7C200;\n}\n\n.fd-form[theme='purple'] .company-name h6,\n.fd-form[theme='purple'] h3{    \n    color: #ffffff;\n}\n\n\n.fd-form[theme='purple'] .fd-heading {\n    border-left: solid 15px;\n}\n\n.fd-form[theme='purple']  .fd-heading::before,\n.fd-form[theme='purple']  h3::before{\n    content: none;\n}\n",
     "notifySubscribers": false,
     "version": "1.0.2",

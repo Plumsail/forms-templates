@@ -369,6 +369,23 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "ReasonForRequest"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Other"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
                                                             "type": "Anything"
                                                         }
                                                     },
@@ -545,7 +562,7 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "// show/hide Reason field and make it mandatory based on a ReasonForRequest selection\r\nfunction toggleReasonField() {\r\n    if(fd.field('ReasonForRequest').value === 'Other') {\r\n        fd.field('Reason').hidden = false;\r\n        fd.field('Reason').required = true;\r\n    } else {\r\n        fd.field('Reason').hidden = true;\r\n        fd.field('Reason').required = false;\r\n    }\r\n}\r\n\r\nfd.rendered(function () {\r\n    \r\n    // call the function on form load\r\n    toggleReasonField();\r\n    \r\n    // call function when the ReasonForRequest field is changed\r\n    fd.field('ReasonForRequest').$on('change', toggleReasonField)\r\n});",
+    "js": "",
     "css": "",
     "notifySubscribers": false,
     "version": "1.0.2",

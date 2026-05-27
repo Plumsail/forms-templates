@@ -258,6 +258,23 @@
                                                                 "style": "Normal",
                                                                 "weight": "Normal"
                                                             },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "OrgType"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Other (see instructions)"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
                                                             "type": "Anything"
                                                         }
                                                     },
@@ -274,74 +291,114 @@
                                         {
                                             "cells": [
                                                 {
-                                                    "class": "fd-llc",
                                                     "component": {
-                                                        "type": "SingleChoice",
+                                                        "type": "Grid",
                                                         "model": {
-                                                            "_internalName": "LlcTaxClassification",
-                                                            "title": {
-                                                                "text": "Enter the tax classification for Limited liability company",
-                                                                "visible": true
+                                                            "_internalName": "Grid5",
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "OrgType"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Limited liability company"
+                                                                        }
+                                                                    }
+                                                                ]
                                                             },
-                                                            "orientation": "Vertical",
-                                                            "required": false,
-                                                            "font": {
-                                                                "style": "Normal",
-                                                                "weight": "Semibold"
+                                                            "stacked": "md",
+                                                            "frame": {
+                                                                "horizontal": null,
+                                                                "vertical": null,
+                                                                "radius": null
                                                             },
-                                                            "wrap": true,
-                                                            "cFont": {
-                                                                "style": "Normal",
-                                                                "weight": "Normal"
+                                                            "border": {
+                                                                "width": null,
+                                                                "color": null
                                                             },
-                                                            "dataSource": "StaticList",
-                                                            "cColumns": 6,
-                                                            "options": [
+                                                            "rows": [
                                                                 {
-                                                                    "value": "C corporation",
-                                                                    "backgroundColor": null,
-                                                                    "textColor": null
+                                                                    "cells": [
+                                                                        {
+                                                                            "component": {
+                                                                                "type": "SingleChoice",
+                                                                                "model": {
+                                                                                    "_internalName": "LlcTaxClassification",
+                                                                                    "title": {
+                                                                                        "text": "Enter the tax classification for Limited liability company",
+                                                                                        "visible": true
+                                                                                    },
+                                                                                    "orientation": "Vertical",
+                                                                                    "required": false,
+                                                                                    "font": {
+                                                                                        "style": "Normal",
+                                                                                        "weight": "Semibold"
+                                                                                    },
+                                                                                    "wrap": true,
+                                                                                    "cFont": {
+                                                                                        "style": "Normal",
+                                                                                        "weight": "Normal"
+                                                                                    },
+                                                                                    "dataSource": "StaticList",
+                                                                                    "cColumns": 6,
+                                                                                    "options": [
+                                                                                        {
+                                                                                            "value": "C corporation",
+                                                                                            "backgroundColor": null,
+                                                                                            "textColor": null
+                                                                                        },
+                                                                                        {
+                                                                                            "value": "S corporation",
+                                                                                            "backgroundColor": null,
+                                                                                            "textColor": null
+                                                                                        },
+                                                                                        {
+                                                                                            "value": "Partnership",
+                                                                                            "backgroundColor": null,
+                                                                                            "textColor": null
+                                                                                        }
+                                                                                    ],
+                                                                                    "allowUserValue": false,
+                                                                                    "defaultValue": []
+                                                                                }
+                                                                            },
+                                                                            "alignment": {
+                                                                                "horizontal": "Justify",
+                                                                                "vertical": "Top"
+                                                                            },
+                                                                            "columns": {
+                                                                                "width": 12
+                                                                            }
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
-                                                                    "value": "S corporation",
-                                                                    "backgroundColor": null,
-                                                                    "textColor": null
-                                                                },
-                                                                {
-                                                                    "value": "Partnership",
-                                                                    "backgroundColor": null,
-                                                                    "textColor": null
+                                                                    "cells": [
+                                                                        {
+                                                                            "component": {
+                                                                                "type": "Text",
+                                                                                "model": {
+                                                                                    "_internalName": "Text7",
+                                                                                    "text": "NOTE: Check the appropriate box in the line above for the tax classification of the single-member owner.&nbsp; Do not check LLC if the LLC is classified as a single-member LLC that is disregarded from the owner unless the owner of the LLC is another LLC that is not disregarded from the owner for U.S. federal tax purposes. Otherwise, a single-member LLC that is disregarded from the owner should check the appropriate box for the tax classification of its owner"
+                                                                                }
+                                                                            },
+                                                                            "alignment": {
+                                                                                "horizontal": "Justify",
+                                                                                "vertical": "Top"
+                                                                            },
+                                                                            "columns": {
+                                                                                "width": 12
+                                                                            }
+                                                                        }
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "allowUserValue": false,
-                                                            "defaultValue": []
-                                                        }
-                                                    },
-                                                    "alignment": {
-                                                        "horizontal": "Justify",
-                                                        "vertical": "Top"
-                                                    },
-                                                    "columns": {
-                                                        "width": 12
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "cells": [
-                                                {
-                                                    "padding": [
-                                                        null,
-                                                        null,
-                                                        15,
-                                                        null
-                                                    ],
-                                                    "class": "fd-llc",
-                                                    "component": {
-                                                        "type": "Text",
-                                                        "model": {
-                                                            "_internalName": "Text7",
-                                                            "text": "NOTE: Check the appropriate box in the line above for the tax classification of the single-member owner.&nbsp; Do not check LLC if the LLC is classified as a single-member LLC that is disregarded from the owner unless the owner of the LLC is another LLC that is not disregarded from the owner for U.S. federal tax purposes. Otherwise, a single-member LLC that is disregarded from the owner should check the appropriate box for the tax classification of its owner"
+                                                            ]
                                                         }
                                                     },
                                                     "alignment": {
@@ -1025,12 +1082,13 @@
     },
     "tablet": null,
     "phone": null,
-    "js": "//show or hide OtherOrgType depending on OrgType field value\nfunction toggleOtherOrgTypeField() {\n    if (fd.field('OrgType').value === 'Other (see instructions)') {\n        fd.field('OtherOrgType').hidden = false;\n    } else {\n        fd.field('OtherOrgType').hidden = true;\n    }\n}\n//show or hide Enter the tax classification for Limited liability company\n//and notes depending on OrgType field value\nfunction toggleLlcTaxClassificationField() {\n    if (fd.field('OrgType').value === 'Limited liability company') {\n        $('.fd-llc').show();\n    } else {\n        $('.fd-llc').hide();\n    }\n}\n\nfd.rendered(function() {\n    //call functionw when form is rendered\n    toggleOtherOrgTypeField();\n    toggleLlcTaxClassificationField();\n    \n    //call functions when field value changes\n    fd.field('OrgType').$on('change', function() {\n        toggleOtherOrgTypeField();\n        toggleLlcTaxClassificationField();\n    })\n})",
+    "js": "",
     "css": "",
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
         "themeId": "default",
+        "primary": "#008EFF",
         "bodyText": "#373A3C",
         "bodyBackground": "#FFFFFF",
         "fontSize": 15,
@@ -1039,7 +1097,6 @@
         "borderRadius": 2,
         "shadow": true,
         "isDark": false,
-        "primary": "#008EFF",
         "fontFamily": null,
         "fontType": 0
     },
