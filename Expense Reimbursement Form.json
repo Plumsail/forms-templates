@@ -55,480 +55,22 @@
                     "cells": [
                         {
                             "component": {
-                                "type": "TabControl",
+                                "type": "Heading",
                                 "model": {
-                                    "_internalName": "Tabs1",
-                                    "orientation": "Top",
-                                    "pills": false,
-                                    "wrap": true,
-                                    "border": {
-                                        "width": null,
-                                        "color": null
+                                    "_internalName": "Heading2",
+                                    "heading": "Employee Information",
+                                    "view": "Line",
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
                                     },
                                     "frame": {
                                         "horizontal": null,
                                         "vertical": null,
                                         "radius": null
                                     },
-                                    "font": {
-                                        "style": "Normal",
-                                        "weight": "Normal"
-                                    },
-                                    "tabs": [
-                                        {
-                                            "_internalName": "Tab1",
-                                            "title": "Employee Information",
-                                            "component": {
-                                                "type": "Grid",
-                                                "model": {
-                                                    "stacked": "md",
-                                                    "frame": {
-                                                        "horizontal": null,
-                                                        "vertical": null,
-                                                        "radius": null
-                                                    },
-                                                    "border": {
-                                                        "width": null,
-                                                        "color": null
-                                                    },
-                                                    "rows": [
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "FirstName",
-                                                                            "title": {
-                                                                                "text": "Name",
-                                                                                "visible": true
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "First Name",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "Anything"
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 6
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "FamilyName",
-                                                                            "title": {
-                                                                                "text": " ",
-                                                                                "visible": false
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "Last Name",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "Anything"
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 6
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "DropDown",
-                                                                        "model": {
-                                                                            "_internalName": "Department",
-                                                                            "title": {
-                                                                                "text": "Department",
-                                                                                "visible": true
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "dataSource": "StaticList",
-                                                                            "selection": "Single",
-                                                                            "options": [
-                                                                                {
-                                                                                    "value": "Production.",
-                                                                                    "backgroundColor": null,
-                                                                                    "textColor": null
-                                                                                },
-                                                                                {
-                                                                                    "value": "Research and Development",
-                                                                                    "backgroundColor": null,
-                                                                                    "textColor": null
-                                                                                },
-                                                                                {
-                                                                                    "value": "Procurement and Sourcing",
-                                                                                    "backgroundColor": null,
-                                                                                    "textColor": null
-                                                                                },
-                                                                                {
-                                                                                    "value": "Marketing",
-                                                                                    "backgroundColor": null,
-                                                                                    "textColor": null
-                                                                                },
-                                                                                {
-                                                                                    "value": "Human Resource Management",
-                                                                                    "backgroundColor": null,
-                                                                                    "textColor": null
-                                                                                },
-                                                                                {
-                                                                                    "value": "Accounting and Finance",
-                                                                                    "backgroundColor": null,
-                                                                                    "textColor": null
-                                                                                }
-                                                                            ],
-                                                                            "defaultValue": []
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 6
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "component": {
-                                                                        "type": "SingleLineText",
-                                                                        "model": {
-                                                                            "_internalName": "ManagerName",
-                                                                            "title": {
-                                                                                "text": "Manager Name",
-                                                                                "visible": true
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "Manager Name",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "type": "Anything"
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 6
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "_internalName": "Tab2",
-                                            "title": "Expense Information",
-                                            "component": {
-                                                "type": "Grid",
-                                                "model": {
-                                                    "stacked": "md",
-                                                    "frame": {
-                                                        "horizontal": null,
-                                                        "vertical": null,
-                                                        "radius": null
-                                                    },
-                                                    "border": {
-                                                        "width": null,
-                                                        "color": null
-                                                    },
-                                                    "rows": [
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "Date",
-                                                                        "model": {
-                                                                            "_internalName": "From",
-                                                                            "title": {
-                                                                                "text": "Expense Period:",
-                                                                                "visible": true
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "From",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "startDate": {
-                                                                                "mode": "Fixed"
-                                                                            },
-                                                                            "endDate": {
-                                                                                "mode": "Relative",
-                                                                                "fieldInternalName": null,
-                                                                                "offsetUnit": "Day"
-                                                                            }
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 6
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "component": {
-                                                                        "type": "Date",
-                                                                        "model": {
-                                                                            "_internalName": "To",
-                                                                            "title": {
-                                                                                "text": " ",
-                                                                                "visible": true
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cHint": "To",
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "startDate": {
-                                                                                "mode": "Relative",
-                                                                                "fieldInternalName": "From",
-                                                                                "offsetUnit": "Day"
-                                                                            },
-                                                                            "endDate": {
-                                                                                "mode": "Relative",
-                                                                                "fieldInternalName": null,
-                                                                                "offsetUnit": "Day"
-                                                                            }
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 6
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "Currency",
-                                                                        "model": {
-                                                                            "_internalName": "Amount",
-                                                                            "title": {
-                                                                                "text": "Amount",
-                                                                                "visible": true
-                                                                            },
-                                                                            "orientation": "Vertical",
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "wrap": true,
-                                                                            "cFont": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Normal"
-                                                                            },
-                                                                            "min": 0,
-                                                                            "symbol": "$",
-                                                                            "precision": 2,
-                                                                            "spinButtons": false
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 6
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "cells": [
-                                                                {
-                                                                    "component": {
-                                                                        "type": "DataTable",
-                                                                        "model": {
-                                                                            "_internalName": "DataTable1",
-                                                                            "title": {
-                                                                                "text": "Itemized Expenses",
-                                                                                "visible": false
-                                                                            },
-                                                                            "required": false,
-                                                                            "font": {
-                                                                                "style": "Normal",
-                                                                                "weight": "Semibold"
-                                                                            },
-                                                                            "newLine": "Top",
-                                                                            "delete": "Last",
-                                                                            "columns": [
-                                                                                {
-                                                                                    "_internalName": "Description",
-                                                                                    "width": 150,
-                                                                                    "title": "Description",
-                                                                                    "required": false,
-                                                                                    "type": "String",
-                                                                                    "aggregates": []
-                                                                                },
-                                                                                {
-                                                                                    "_internalName": "Date",
-                                                                                    "width": 100,
-                                                                                    "title": "Date",
-                                                                                    "required": false,
-                                                                                    "type": "Date",
-                                                                                    "aggregates": []
-                                                                                },
-                                                                                {
-                                                                                    "_internalName": "Category",
-                                                                                    "width": 200,
-                                                                                    "title": "Category",
-                                                                                    "required": false,
-                                                                                    "type": "Dropdown",
-                                                                                    "aggregates": [],
-                                                                                    "selection": "Single",
-                                                                                    "dataSource": "StaticList",
-                                                                                    "allowUserValue": false,
-                                                                                    "options": [
-                                                                                        {
-                                                                                            "value": "Advertising Expenses",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Business Vehicle(s)",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Payroll",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Employee Benefits",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Meals & Entertainment Expenses",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Office Expenses",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Office Supplies",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Professional Services",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        }
-                                                                                    ],
-                                                                                    "defaultValue": null
-                                                                                },
-                                                                                {
-                                                                                    "_internalName": "Amount",
-                                                                                    "width": 150,
-                                                                                    "title": "Amount",
-                                                                                    "required": false,
-                                                                                    "type": "Currency",
-                                                                                    "aggregates": [
-                                                                                        {
-                                                                                            "type": "sum",
-                                                                                            "template": "Sum: {0}"
-                                                                                        }
-                                                                                    ],
-                                                                                    "min": 0,
-                                                                                    "precision": 2,
-                                                                                    "symbol": null,
-                                                                                    "spinButtons": true,
-                                                                                    "step": 1
-                                                                                }
-                                                                            ]
-                                                                        }
-                                                                    },
-                                                                    "alignment": {
-                                                                        "horizontal": "Justify",
-                                                                        "vertical": "Top"
-                                                                    },
-                                                                    "columns": {
-                                                                        "width": 12
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        }
-                                    ]
+                                    "size": "H4",
+                                    "textAlignment": "Center"
                                 }
                             },
                             "alignment": {
@@ -547,8 +89,727 @@
                             "padding": [
                                 null,
                                 null,
+                                10,
+                                null
+                            ],
+                            "component": {
+                                "type": "Grid",
+                                "model": {
+                                    "_internalName": "Grid2",
+                                    "stacked": "md",
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "border": {
+                                        "width": null,
+                                        "color": null
+                                    },
+                                    "fill": "#f2f2f2",
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        10,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "FirstName",
+                                                            "title": {
+                                                                "text": "First Name",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "First Name",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "padding": [
+                                                        10,
+                                                        null,
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "FamilyName",
+                                                            "title": {
+                                                                "text": "Family Name",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Family Name",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "padding": [
+                                                        null,
+                                                        null,
+                                                        10,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "Department",
+                                                            "title": {
+                                                                "text": "Department",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Department",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "selection": "Single",
+                                                            "options": [
+                                                                {
+                                                                    "value": "Production.",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Research and Development",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Procurement and Sourcing",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Marketing",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Human Resource Management",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Accounting and Finance",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                }
+                                                            ],
+                                                            "defaultValue": []
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "padding": [
+                                                        null,
+                                                        null,
+                                                        10,
+                                                        null
+                                                    ],
+                                                    "component": {
+                                                        "type": "SingleLineText",
+                                                        "model": {
+                                                            "_internalName": "ManagerName",
+                                                            "title": {
+                                                                "text": "Manager",
+                                                                "visible": false
+                                                            },
+                                                            "orientation": "Horizontal",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "Manager Name",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "type": "Anything"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                10,
                                 null,
-                                30
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "Heading3",
+                                    "heading": "Expense Information",
+                                    "view": "Line",
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H4",
+                                    "textAlignment": "Center"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "component": {
+                                "type": "Grid",
+                                "model": {
+                                    "_internalName": "Grid1",
+                                    "stacked": "md",
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "border": {
+                                        "width": null,
+                                        "color": null
+                                    },
+                                    "fill": "#f2f2f2",
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Date",
+                                                        "model": {
+                                                            "_internalName": "From",
+                                                            "title": {
+                                                                "text": "Expense Period:",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "From",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "startDate": {
+                                                                "mode": "Fixed"
+                                                            },
+                                                            "endDate": {
+                                                                "mode": "Relative",
+                                                                "fieldInternalName": null,
+                                                                "offsetUnit": "Day"
+                                                            }
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                },
+                                                {
+                                                    "component": {
+                                                        "type": "Date",
+                                                        "model": {
+                                                            "_internalName": "To",
+                                                            "title": {
+                                                                "text": " ",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cHint": "To",
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "startDate": {
+                                                                "mode": "Relative",
+                                                                "fieldInternalName": "From",
+                                                                "offsetUnit": "Day"
+                                                            },
+                                                            "endDate": {
+                                                                "mode": "Relative",
+                                                                "fieldInternalName": null,
+                                                                "offsetUnit": "Day"
+                                                            }
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 6
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "DropDown",
+                                                        "model": {
+                                                            "_internalName": "BusinessPurpose",
+                                                            "title": {
+                                                                "text": "Business Purpose",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "dataSource": "StaticList",
+                                                            "selection": "Single",
+                                                            "options": [
+                                                                {
+                                                                    "value": "International Travel",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Local Travel",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                },
+                                                                {
+                                                                    "value": "Client Entertainment",
+                                                                    "backgroundColor": null,
+                                                                    "textColor": null
+                                                                }
+                                                            ],
+                                                            "allowUserValue": false,
+                                                            "defaultValue": []
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Currency",
+                                                        "model": {
+                                                            "_internalName": "Amount",
+                                                            "title": {
+                                                                "text": "Amount",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "min": 0,
+                                                            "symbol": "$",
+                                                            "precision": 2,
+                                                            "spinButtons": false
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "MultiLineText",
+                                                        "model": {
+                                                            "_internalName": "Comments",
+                                                            "title": {
+                                                                "text": "Comments",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "cFont": {
+                                                                "style": "Normal",
+                                                                "weight": "Normal"
+                                                            },
+                                                            "hideCondition": {
+                                                                "match": "Any",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Amount"
+                                                                        },
+                                                                        "operator": "LessOrEqual",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "Number",
+                                                                            "value": 500
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "BusinessPurpose"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Local Travel"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "mode": "Plain"
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "Attachments",
+                                                        "model": {
+                                                            "_internalName": "Attachments1",
+                                                            "title": {
+                                                                "text": "Receipts and invoices",
+                                                                "visible": true
+                                                            },
+                                                            "orientation": "Vertical",
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "wrap": true,
+                                                            "maxSize": 10240
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "component": {
+                                                        "type": "DataTable",
+                                                        "model": {
+                                                            "_internalName": "DataTable1",
+                                                            "title": {
+                                                                "text": "Itemized Expenses",
+                                                                "visible": true
+                                                            },
+                                                            "required": false,
+                                                            "font": {
+                                                                "style": "Normal",
+                                                                "weight": "Semibold"
+                                                            },
+                                                            "newLine": "Top",
+                                                            "delete": "Last",
+                                                            "hideCondition": {
+                                                                "match": "All",
+                                                                "rules": [
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "Amount"
+                                                                        },
+                                                                        "operator": "LessOrEqual",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "Number",
+                                                                            "value": 1000
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "left": {
+                                                                            "type": "Field",
+                                                                            "internalName": "BusinessPurpose"
+                                                                        },
+                                                                        "operator": "NotEquals",
+                                                                        "right": {
+                                                                            "type": "Value",
+                                                                            "valueType": "String",
+                                                                            "value": "Client Entertainment"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "columns": [
+                                                                {
+                                                                    "_internalName": "Description",
+                                                                    "title": "Description",
+                                                                    "required": false,
+                                                                    "type": "String",
+                                                                    "aggregates": []
+                                                                },
+                                                                {
+                                                                    "_internalName": "Date",
+                                                                    "title": "Date",
+                                                                    "required": false,
+                                                                    "type": "Date",
+                                                                    "aggregates": []
+                                                                },
+                                                                {
+                                                                    "_internalName": "Category",
+                                                                    "title": "Category",
+                                                                    "required": false,
+                                                                    "type": "Dropdown",
+                                                                    "aggregates": [],
+                                                                    "selection": "Single",
+                                                                    "dataSource": "StaticList",
+                                                                    "allowUserValue": false,
+                                                                    "options": [
+                                                                        {
+                                                                            "value": "Advertising Expenses",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Business Vehicle(s)",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Payroll",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Employee Benefits",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Meals & Entertainment Expenses",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Office Expenses",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Office Supplies",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        },
+                                                                        {
+                                                                            "value": "Professional Services",
+                                                                            "backgroundColor": null,
+                                                                            "textColor": null
+                                                                        }
+                                                                    ],
+                                                                    "defaultValue": null
+                                                                },
+                                                                {
+                                                                    "_internalName": "Amount",
+                                                                    "title": "Amount",
+                                                                    "required": false,
+                                                                    "type": "Currency",
+                                                                    "aggregates": [
+                                                                        {
+                                                                            "type": "sum",
+                                                                            "template": "Sum: {0}"
+                                                                        }
+                                                                    ],
+                                                                    "min": 0,
+                                                                    "precision": 2,
+                                                                    "symbol": null,
+                                                                    "spinButtons": true,
+                                                                    "step": 1
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "alignment": {
+                                                        "horizontal": "Justify",
+                                                        "vertical": "Top"
+                                                    },
+                                                    "columns": {
+                                                        "width": 12
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                5,
+                                null,
+                                null,
+                                null
                             ],
                             "component": {
                                 "type": "Signature",
@@ -620,18 +881,18 @@
     "notifySubscribers": false,
     "version": "1.0.2",
     "theme": {
-        "themeId": null,
-        "primary": "#8764B8",
-        "bodyText": "#333333",
+        "themeId": "smooth",
+        "primary": "#008EFF",
+        "bodyText": "#373A3C",
         "bodyBackground": "#FFFFFF",
         "fontSize": 15,
-        "fontWeight": 300,
+        "fontWeight": 400,
         "borderThickness": 1,
-        "borderRadius": 7,
+        "borderRadius": 4,
         "shadow": true,
         "isDark": false,
-        "fontFamily": "Roboto",
-        "fontType": 1
+        "fontFamily": null,
+        "fontType": 0
     },
     "timezone": "America/Los_Angeles",
     "culture": "en",
