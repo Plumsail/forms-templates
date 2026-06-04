@@ -432,68 +432,6 @@
                                                                                     "aggregates": []
                                                                                 },
                                                                                 {
-                                                                                    "_internalName": "Date",
-                                                                                    "width": 100,
-                                                                                    "title": "Date",
-                                                                                    "required": false,
-                                                                                    "type": "Date",
-                                                                                    "aggregates": []
-                                                                                },
-                                                                                {
-                                                                                    "_internalName": "Category",
-                                                                                    "width": 200,
-                                                                                    "title": "Category",
-                                                                                    "required": false,
-                                                                                    "type": "Dropdown",
-                                                                                    "aggregates": [],
-                                                                                    "selection": "Single",
-                                                                                    "dataSource": "StaticList",
-                                                                                    "allowUserValue": false,
-                                                                                    "options": [
-                                                                                        {
-                                                                                            "value": "Advertising Expenses",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Business Vehicle(s)",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Payroll",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Employee Benefits",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Meals & Entertainment Expenses",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Office Expenses",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Office Supplies",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        },
-                                                                                        {
-                                                                                            "value": "Professional Services",
-                                                                                            "backgroundColor": null,
-                                                                                            "textColor": null
-                                                                                        }
-                                                                                    ],
-                                                                                    "defaultValue": null
-                                                                                },
-                                                                                {
                                                                                     "_internalName": "Amount",
                                                                                     "width": 150,
                                                                                     "title": "Amount",
@@ -519,7 +457,34 @@
                                                                         "vertical": "Top"
                                                                     },
                                                                     "columns": {
-                                                                        "width": 12
+                                                                        "width": 6
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Attachments",
+                                                                        "model": {
+                                                                            "_internalName": "Attachments1",
+                                                                            "title": {
+                                                                                "text": "Receipts and invoices",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "maxSize": 10240
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
                                                                     }
                                                                 }
                                                             ]
