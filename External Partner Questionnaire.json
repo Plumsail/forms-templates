@@ -1,0 +1,1821 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                12,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "TabControl",
+                                "model": {
+                                    "_internalName": "ExternalSubmissionTabs",
+                                    "orientation": "Top",
+                                    "pills": true,
+                                    "wrap": true,
+                                    "border": {
+                                        "width": 1,
+                                        "color": "#D7E2EA"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": 12,
+                                        "radius": 8
+                                    },
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "tabs": [
+                                        {
+                                            "_internalName": "ProfileTab",
+                                            "title": "Profile",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "FirstName",
+                                                                            "title": {
+                                                                                "text": "First name",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "LastName",
+                                                                            "title": {
+                                                                                "text": "Last name",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "Email",
+                                                                            "title": {
+                                                                                "text": "Email",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cHint": "username@domain.com",
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "E-mail",
+                                                                            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                                                                            "error": "This field must contain a valid e-mail address."
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Phone",
+                                                                        "model": {
+                                                                            "_internalName": "PhoneNumber",
+                                                                            "title": {
+                                                                                "text": "Phone number",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "countries": [
+                                                                                "AF",
+                                                                                "AX",
+                                                                                "AL",
+                                                                                "DZ",
+                                                                                "AS",
+                                                                                "AD",
+                                                                                "AO",
+                                                                                "AI",
+                                                                                "AQ",
+                                                                                "AG",
+                                                                                "AR",
+                                                                                "AM",
+                                                                                "AW",
+                                                                                "AC",
+                                                                                "AU",
+                                                                                "AT",
+                                                                                "AZ",
+                                                                                "BS",
+                                                                                "BH",
+                                                                                "BD",
+                                                                                "BB",
+                                                                                "BY",
+                                                                                "BE",
+                                                                                "BZ",
+                                                                                "BJ",
+                                                                                "BM",
+                                                                                "BT",
+                                                                                "BO",
+                                                                                "BA",
+                                                                                "BW",
+                                                                                "BR",
+                                                                                "IO",
+                                                                                "BN",
+                                                                                "BG",
+                                                                                "BF",
+                                                                                "BI",
+                                                                                "KH",
+                                                                                "CM",
+                                                                                "CA",
+                                                                                "CV",
+                                                                                "KY",
+                                                                                "CF",
+                                                                                "TD",
+                                                                                "CL",
+                                                                                "CN",
+                                                                                "CX",
+                                                                                "CC",
+                                                                                "CO",
+                                                                                "KM",
+                                                                                "CG",
+                                                                                "CK",
+                                                                                "CR",
+                                                                                "HR",
+                                                                                "CU",
+                                                                                "CY",
+                                                                                "CZ",
+                                                                                "CD",
+                                                                                "DK",
+                                                                                "DJ",
+                                                                                "DM",
+                                                                                "DO",
+                                                                                "EC",
+                                                                                "EG",
+                                                                                "SV",
+                                                                                "GQ",
+                                                                                "ER",
+                                                                                "EE",
+                                                                                "SZ",
+                                                                                "ET",
+                                                                                "FK",
+                                                                                "FO",
+                                                                                "FJ",
+                                                                                "FI",
+                                                                                "FR",
+                                                                                "GF",
+                                                                                "PF",
+                                                                                "GA",
+                                                                                "GM",
+                                                                                "GE",
+                                                                                "DE",
+                                                                                "GH",
+                                                                                "GI",
+                                                                                "GR",
+                                                                                "GL",
+                                                                                "GD",
+                                                                                "GP",
+                                                                                "GU",
+                                                                                "GT",
+                                                                                "GG",
+                                                                                "GN",
+                                                                                "GW",
+                                                                                "GY",
+                                                                                "HT",
+                                                                                "VA",
+                                                                                "HN",
+                                                                                "HK",
+                                                                                "HU",
+                                                                                "IS",
+                                                                                "IN",
+                                                                                "ID",
+                                                                                "IR",
+                                                                                "IQ",
+                                                                                "IE",
+                                                                                "IM",
+                                                                                "IL",
+                                                                                "IT",
+                                                                                "CI",
+                                                                                "JM",
+                                                                                "JP",
+                                                                                "JE",
+                                                                                "JO",
+                                                                                "KZ",
+                                                                                "KE",
+                                                                                "KI",
+                                                                                "KP",
+                                                                                "KR",
+                                                                                "XK",
+                                                                                "KW",
+                                                                                "KG",
+                                                                                "LA",
+                                                                                "LV",
+                                                                                "LB",
+                                                                                "LS",
+                                                                                "LR",
+                                                                                "LY",
+                                                                                "LI",
+                                                                                "LT",
+                                                                                "LU",
+                                                                                "MO",
+                                                                                "MG",
+                                                                                "MW",
+                                                                                "MY",
+                                                                                "MV",
+                                                                                "ML",
+                                                                                "MT",
+                                                                                "MH",
+                                                                                "MQ",
+                                                                                "MR",
+                                                                                "MU",
+                                                                                "YT",
+                                                                                "MX",
+                                                                                "FM",
+                                                                                "MD",
+                                                                                "MC",
+                                                                                "MN",
+                                                                                "ME",
+                                                                                "MS",
+                                                                                "MA",
+                                                                                "MZ",
+                                                                                "MM",
+                                                                                "NA",
+                                                                                "NR",
+                                                                                "NP",
+                                                                                "NL",
+                                                                                "NC",
+                                                                                "NZ",
+                                                                                "NI",
+                                                                                "NE",
+                                                                                "NG",
+                                                                                "NU",
+                                                                                "NF",
+                                                                                "MK",
+                                                                                "MP",
+                                                                                "NO",
+                                                                                "OM",
+                                                                                "PK",
+                                                                                "PW",
+                                                                                "PS",
+                                                                                "PA",
+                                                                                "PG",
+                                                                                "PY",
+                                                                                "PE",
+                                                                                "PH",
+                                                                                "PN",
+                                                                                "PL",
+                                                                                "PT",
+                                                                                "PR",
+                                                                                "QA",
+                                                                                "RE",
+                                                                                "RO",
+                                                                                "RU",
+                                                                                "RW",
+                                                                                "BL",
+                                                                                "SH",
+                                                                                "KN",
+                                                                                "LC",
+                                                                                "MF",
+                                                                                "PM",
+                                                                                "VC",
+                                                                                "WS",
+                                                                                "SM",
+                                                                                "ST",
+                                                                                "SA",
+                                                                                "SN",
+                                                                                "RS",
+                                                                                "SC",
+                                                                                "SL",
+                                                                                "SG",
+                                                                                "SX",
+                                                                                "SK",
+                                                                                "SI",
+                                                                                "SB",
+                                                                                "SO",
+                                                                                "ZA",
+                                                                                "GS",
+                                                                                "SS",
+                                                                                "ES",
+                                                                                "LK",
+                                                                                "SD",
+                                                                                "SR",
+                                                                                "SJ",
+                                                                                "SE",
+                                                                                "CH",
+                                                                                "SY",
+                                                                                "TW",
+                                                                                "TJ",
+                                                                                "TZ",
+                                                                                "TH",
+                                                                                "TL",
+                                                                                "TG",
+                                                                                "TK",
+                                                                                "TO",
+                                                                                "TT",
+                                                                                "TN",
+                                                                                "TR",
+                                                                                "TM",
+                                                                                "TC",
+                                                                                "TV",
+                                                                                "UG",
+                                                                                "UA",
+                                                                                "AE",
+                                                                                "GB",
+                                                                                "US",
+                                                                                "UY",
+                                                                                "UZ",
+                                                                                "VU",
+                                                                                "VE",
+                                                                                "VN",
+                                                                                "VG",
+                                                                                "VI",
+                                                                                "WF",
+                                                                                "YE",
+                                                                                "ZM",
+                                                                                "ZW"
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "JobTitleRole",
+                                                                            "title": {
+                                                                                "text": "Job title / role",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "OrganizationUniversity",
+                                                                            "title": {
+                                                                                "text": "Organization or university",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "padding": [
+                                                                        12,
+                                                                        null,
+                                                                        null,
+                                                                        null
+                                                                    ],
+                                                                    "component": {
+                                                                        "type": "Heading",
+                                                                        "model": {
+                                                                            "_internalName": "RelationshipHeading",
+                                                                            "heading": "Relationship with the organization",
+                                                                            "view": "Normal",
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "size": "H4",
+                                                                            "textAlignment": "Left"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DropDown",
+                                                                        "model": {
+                                                                            "_internalName": "SubmissionType",
+                                                                            "title": {
+                                                                                "text": "Type of submission",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "selection": "Single",
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "Founder",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Academic",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Consultant",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "External partner",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": false,
+                                                                            "defaultValue": []
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "DepartmentTeam",
+                                                                            "title": {
+                                                                                "text": "Department or team involved",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "InternalContact",
+                                                                            "title": {
+                                                                                "text": "Internal contact, if known",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "MultiLineText",
+                                                                        "model": {
+                                                                            "_internalName": "SubmissionReason",
+                                                                            "title": {
+                                                                                "text": "Reason for submitting the form",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Plain"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "ProjectTab",
+                                            "title": "Project",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "ProjectCompanyName",
+                                                                            "title": {
+                                                                                "text": "Project / company name",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "MultiLineText",
+                                                                        "model": {
+                                                                            "_internalName": "ShortDescription",
+                                                                            "title": {
+                                                                                "text": "Short description",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Plain"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DropDown",
+                                                                        "model": {
+                                                                            "_internalName": "DevelopmentStage",
+                                                                            "title": {
+                                                                                "text": "Current development stage",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "selection": "Single",
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "Idea / concept",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Research",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Prototype / proof of concept",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Pilot / validation",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Early operations",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Growth / scaling",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Established",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Other",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": false,
+                                                                            "defaultValue": []
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "Website",
+                                                                            "title": {
+                                                                                "text": "Website, if available",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cHint": "https://example.org",
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "MainContactPerson",
+                                                                            "title": {
+                                                                                "text": "Main contact person",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DataTable",
+                                                                        "model": {
+                                                                            "_internalName": "Collaborators",
+                                                                            "title": {
+                                                                                "text": "Additional collaborators or founders",
+                                                                                "visible": true
+                                                                            },
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "newLine": "Bottom",
+                                                                            "delete": "Last",
+                                                                            "columns": [
+                                                                                {
+                                                                                    "_internalName": "CollaboratorName",
+                                                                                    "title": "Name",
+                                                                                    "required": false,
+                                                                                    "type": "String",
+                                                                                    "aggregates": []
+                                                                                },
+                                                                                {
+                                                                                    "_internalName": "CollaboratorRole",
+                                                                                    "title": "Role",
+                                                                                    "required": false,
+                                                                                    "type": "String",
+                                                                                    "aggregates": []
+                                                                                },
+                                                                                {
+                                                                                    "_internalName": "CollaboratorEmail",
+                                                                                    "title": "Email",
+                                                                                    "required": false,
+                                                                                    "type": "String",
+                                                                                    "aggregates": []
+                                                                                },
+                                                                                {
+                                                                                    "_internalName": "CollaboratorOrganization",
+                                                                                    "title": "Organization",
+                                                                                    "required": false,
+                                                                                    "type": "String",
+                                                                                    "aggregates": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "SecurityTab",
+                                            "title": "Security",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "padding": [
+                                                                        12,
+                                                                        null,
+                                                                        null,
+                                                                        null
+                                                                    ],
+                                                                    "component": {
+                                                                        "type": "Text",
+                                                                        "model": {
+                                                                            "_internalName": "SecurityHelp",
+                                                                            "text": "<p>Choose three different questions and provide an answer for each. Selecting a question removes it from the other lists.</p>"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DropDown",
+                                                                        "model": {
+                                                                            "_internalName": "SecurityQuestion1",
+                                                                            "title": {
+                                                                                "text": "Security question 1",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "selection": "Single",
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "What was the name of your first project or venture?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What city hosted your first professional conference?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the surname of an influential teacher or mentor?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of your first research group or work team?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the title of a memorable book from your studies?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of the street where your first workplace was located?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of your first professional organization?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What city did you visit on your first business trip?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of your first major client or partner?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the topic of your first major presentation?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": false,
+                                                                            "defaultValue": []
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "SecurityAnswer1",
+                                                                            "title": {
+                                                                                "text": "Answer 1",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DropDown",
+                                                                        "model": {
+                                                                            "_internalName": "SecurityQuestion2",
+                                                                            "title": {
+                                                                                "text": "Security question 2",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "selection": "Single",
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "What was the name of your first project or venture?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What city hosted your first professional conference?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the surname of an influential teacher or mentor?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of your first research group or work team?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the title of a memorable book from your studies?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of the street where your first workplace was located?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of your first professional organization?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What city did you visit on your first business trip?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of your first major client or partner?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the topic of your first major presentation?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": false,
+                                                                            "defaultValue": []
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "SecurityAnswer2",
+                                                                            "title": {
+                                                                                "text": "Answer 2",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DropDown",
+                                                                        "model": {
+                                                                            "_internalName": "SecurityQuestion3",
+                                                                            "title": {
+                                                                                "text": "Security question 3",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "selection": "Single",
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "What was the name of your first project or venture?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What city hosted your first professional conference?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the surname of an influential teacher or mentor?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of your first research group or work team?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the title of a memorable book from your studies?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of the street where your first workplace was located?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of your first professional organization?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What city did you visit on your first business trip?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the name of your first major client or partner?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "What was the topic of your first major presentation?",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": false,
+                                                                            "defaultValue": []
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "SecurityAnswer3",
+                                                                            "title": {
+                                                                                "text": "Answer 3",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "DeclarationTab",
+                                            "title": "Documents & declaration",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "MultiLineText",
+                                                                        "model": {
+                                                                            "_internalName": "AdditionalComments",
+                                                                            "title": {
+                                                                                "text": "Additional comments",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Plain"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Attachments",
+                                                                        "model": {
+                                                                            "_internalName": "SupportingDocuments",
+                                                                            "description": "Upload relevant documents. Remove confidential or sensitive information that is not needed for this submission.",
+                                                                            "title": {
+                                                                                "text": "Supporting documents",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "maxSize": 10240
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Heading",
+                                                                        "model": {
+                                                                            "_internalName": "DeclarationHeading",
+                                                                            "heading": "Declaration",
+                                                                            "view": "Normal",
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "frame": {
+                                                                                "horizontal": null,
+                                                                                "vertical": null,
+                                                                                "radius": null
+                                                                            },
+                                                                            "size": "H3",
+                                                                            "textAlignment": "Left"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Toggle",
+                                                                        "model": {
+                                                                            "_internalName": "InformationCorrect",
+                                                                            "title": {
+                                                                                "text": "I confirm that the information provided is correct",
+                                                                                "visible": false
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Checkbox",
+                                                                            "cLabel": "I confirm that the information provided is correct"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Toggle",
+                                                                        "model": {
+                                                                            "_internalName": "PrivacyAcknowledgement",
+                                                                            "title": {
+                                                                                "text": "I acknowledge the privacy notice and processing of my information",
+                                                                                "visible": false
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Checkbox",
+                                                                            "cLabel": "I acknowledge the privacy notice and processing of my information"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "SubmittedByName",
+                                                                            "description": "Initially copied from the first and last name; you can correct it.",
+                                                                            "title": {
+                                                                                "text": "Name of person submitting",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Date",
+                                                                        "model": {
+                                                                            "_internalName": "SubmissionDate",
+                                                                            "title": {
+                                                                                "text": "Date",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "startDate": {
+                                                                                "mode": "Fixed"
+                                                                            },
+                                                                            "endDate": {
+                                                                                "mode": "Fixed"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 4
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Signature",
+                                                                        "model": {
+                                                                            "_internalName": "Signature",
+                                                                            "title": {
+                                                                                "text": "Signature",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cWidth": 300,
+                                                                            "height": 150,
+                                                                            "inkColor": "#000000"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Left",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 8
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "padding": [
+                                                                        12,
+                                                                        null,
+                                                                        null,
+                                                                        null
+                                                                    ],
+                                                                    "component": {
+                                                                        "type": "Submit",
+                                                                        "model": {
+                                                                            "_internalName": "QuestionnaireSubmit",
+                                                                            "text": "Submit questionnaire",
+                                                                            "savingText": "Submitting…",
+                                                                            "type": "Primary",
+                                                                            "click": "return fd.save();",
+                                                                            "style": "width: 100%; min-height: 48px; font-weight: 600;"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "fd.rendered(function() {\n    fd.field('SubmittedByName').disabled = true;\n    fd.field('SubmissionDate').disabled = true;\n    if (!fd.field('SubmissionDate').value) fd.field('SubmissionDate').value = new Date();\n    \n    var questionNames = ['SecurityQuestion1','SecurityQuestion2','SecurityQuestion3'];\n    var questions = [\"What was the name of your first project or venture?\", \"What city hosted your first professional conference?\", \"What was the surname of an influential teacher or mentor?\", \"What was the name of your first research group or work team?\", \"What was the title of a memorable book from your studies?\", \"What was the name of the street where your first workplace was located?\", \"What was the name of your first professional organization?\", \"What city did you visit on your first business trip?\", \"What was the name of your first major client or partner?\", \"What was the topic of your first major presentation?\"];\n    var updating = false;\n    function refreshQuestions() {\n        if (updating) return;\n        updating = true;\n        var seen = {};\n        questionNames.forEach(function(name) {\n            var field = fd.field(name);\n            if (field.value && seen[field.value]) field.value = null;\n            if (field.value) seen[field.value] = true;\n        });\n        questionNames.forEach(function(name) {\n            var field = fd.field(name);\n            var current = field.value;\n            var selectedElsewhere = {};\n            questionNames.forEach(function(other) {\n                if (other !== name && fd.field(other).value) selectedElsewhere[fd.field(other).value] = true;\n            });\n            field.widget.setDataSource(questions.filter(function(question) { return question === current || !selectedElsewhere[question]; }));\n            if (current) field.value = current;\n        });\n        updating = false;\n    }\n    questionNames.forEach(function(name) { fd.field(name).$on('change', refreshQuestions); });\n    refreshQuestions();\n\n    var copiedName = '';\n    function syncSubmitterName() {\n        var name = [fd.field('FirstName').value, fd.field('LastName').value].filter(Boolean).join(' ');\n        var target = fd.field('SubmittedByName');\n        if (!target.value || target.value === copiedName) target.value = name || null;\n        copiedName = name;\n    }\n    fd.field('FirstName').$on('change', syncSubmitterName);\n    fd.field('LastName').$on('change', syncSubmitterName);\n    if (!fd.field('SubmissionDate').value) fd.field('SubmissionDate').value = new Date();\n    syncSubmitterName();\n});\n",
+    "css": "",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "themeId": "green",
+        "primary": "#407855",
+        "bodyText": "#333333",
+        "bodyBackground": "#FFFFFF",
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "isDark": false,
+        "fontFamily": null,
+        "fontType": 0
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en-US",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": "Thank you. Your questionnaire has been submitted successfully.",
+    "redirectURL": null,
+    "hideAfterSubmission": true,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null,
+    "widgetVersion": "2.0.0"
+}

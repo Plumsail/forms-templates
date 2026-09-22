@@ -1,0 +1,812 @@
+{
+    "pc": {
+        "type": "Grid",
+        "model": {
+            "stacked": "md",
+            "frame": {
+                "horizontal": null,
+                "vertical": null,
+                "radius": null
+            },
+            "border": {
+                "width": null,
+                "color": null
+            },
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                12,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Heading",
+                                "model": {
+                                    "_internalName": "SiteInductionHeading",
+                                    "heading": "Site induction",
+                                    "view": "Normal",
+                                    "font": {
+                                        "style": "Normal",
+                                        "weight": "Semibold"
+                                    },
+                                    "frame": {
+                                        "horizontal": null,
+                                        "vertical": null,
+                                        "radius": null
+                                    },
+                                    "size": "H1",
+                                    "textAlignment": "Left"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "padding": [
+                                12,
+                                null,
+                                null,
+                                null
+                            ],
+                            "component": {
+                                "type": "Wizard",
+                                "model": {
+                                    "_internalName": "SiteInductionWizard",
+                                    "direction": "Right",
+                                    "step": {
+                                        "size": 18,
+                                        "color": null,
+                                        "shape": "Tab"
+                                    },
+                                    "nextText": "Next",
+                                    "backText": "Back",
+                                    "finishText": "Submit induction",
+                                    "savingText": "Submitting…",
+                                    "finish": "return fd.save();",
+                                    "steps": [
+                                        {
+                                            "_internalName": "WorkerStep",
+                                            "title": "Worker",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "FullName",
+                                                                            "title": {
+                                                                                "text": "Full name",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "Company",
+                                                                            "title": {
+                                                                                "text": "Company",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "JobRoleTrade",
+                                                                            "title": {
+                                                                                "text": "Job role or trade",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "SiteLocation",
+                                                                            "title": {
+                                                                                "text": "Site / location",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "SingleLineText",
+                                                                        "model": {
+                                                                            "_internalName": "SupervisorContact",
+                                                                            "title": {
+                                                                                "text": "Supervisor or site contact",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "type": "Anything"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 6
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "WorkStep",
+                                            "title": "Work",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "DropDown",
+                                                                        "model": {
+                                                                            "_internalName": "WorkType",
+                                                                            "title": {
+                                                                                "text": "Type of work",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "dataSource": "StaticList",
+                                                                            "selection": "Single",
+                                                                            "options": [
+                                                                                {
+                                                                                    "value": "General site work",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Construction",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Electrical work",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Hot work",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Scaffolding",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Crane / lifting operations",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Plant or heavy equipment operation",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Confined space work",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Inspection / audit",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Delivery / collection",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Maintenance / repair",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                },
+                                                                                {
+                                                                                    "value": "Other",
+                                                                                    "backgroundColor": null,
+                                                                                    "textColor": null
+                                                                                }
+                                                                            ],
+                                                                            "allowUserValue": true,
+                                                                            "defaultValue": []
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Attachments",
+                                                                        "model": {
+                                                                            "_internalName": "LicenseCertificate",
+                                                                            "description": "Upload a current license or certificate for the selected work type. Accepted file types follow the form settings.",
+                                                                            "title": {
+                                                                                "text": "Relevant license or certificate",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "hideCondition": {
+                                                                                "match": "All",
+                                                                                "rules": [
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "WorkType"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "String",
+                                                                                            "value": "Electrical work"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "WorkType"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "String",
+                                                                                            "value": "Hot work"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "WorkType"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "String",
+                                                                                            "value": "Scaffolding"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "WorkType"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "String",
+                                                                                            "value": "Crane / lifting operations"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "WorkType"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "String",
+                                                                                            "value": "Plant or heavy equipment operation"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "left": {
+                                                                                            "type": "Field",
+                                                                                            "internalName": "WorkType"
+                                                                                        },
+                                                                                        "operator": "NotEquals",
+                                                                                        "right": {
+                                                                                            "type": "Value",
+                                                                                            "valueType": "String",
+                                                                                            "value": "Confined space work"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "maxSize": 10240
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_internalName": "SafetyStep",
+                                            "title": "Safety & sign-off",
+                                            "component": {
+                                                "type": "Grid",
+                                                "model": {
+                                                    "stacked": "md",
+                                                    "frame": {
+                                                        "horizontal": null,
+                                                        "vertical": null,
+                                                        "radius": null
+                                                    },
+                                                    "border": {
+                                                        "width": null,
+                                                        "color": null
+                                                    },
+                                                    "rows": [
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Text",
+                                                                        "model": {
+                                                                            "_internalName": "SafetyHelp",
+                                                                            "text": "<p>Confirm each statement before submitting your induction. These four acknowledgements are required.</p>"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Toggle",
+                                                                        "model": {
+                                                                            "_internalName": "SafetyRulesAcknowledged",
+                                                                            "title": {
+                                                                                "text": "I have read and understood the site safety rules",
+                                                                                "visible": false
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": true,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Checkbox",
+                                                                            "cLabel": "I have read and understood the site safety rules"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Toggle",
+                                                                        "model": {
+                                                                            "_internalName": "EmergencyProceduresAcknowledged",
+                                                                            "title": {
+                                                                                "text": "I understand the emergency procedures",
+                                                                                "visible": false
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": true,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Checkbox",
+                                                                            "cLabel": "I understand the emergency procedures"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Toggle",
+                                                                        "model": {
+                                                                            "_internalName": "PpeAcknowledged",
+                                                                            "title": {
+                                                                                "text": "I agree to wear the required PPE",
+                                                                                "visible": false
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": true,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Checkbox",
+                                                                            "cLabel": "I agree to wear the required PPE"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Toggle",
+                                                                        "model": {
+                                                                            "_internalName": "HazardReportingAcknowledged",
+                                                                            "title": {
+                                                                                "text": "I know how to report hazards or incidents",
+                                                                                "visible": false
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": true,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "mode": "Checkbox",
+                                                                            "cLabel": "I know how to report hazards or incidents"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 12
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cells": [
+                                                                {
+                                                                    "padding": [
+                                                                        12,
+                                                                        null,
+                                                                        null,
+                                                                        null
+                                                                    ],
+                                                                    "component": {
+                                                                        "type": "Date",
+                                                                        "model": {
+                                                                            "_internalName": "InductionDate",
+                                                                            "title": {
+                                                                                "text": "Date",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cFont": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Normal"
+                                                                            },
+                                                                            "startDate": {
+                                                                                "mode": "Fixed"
+                                                                            },
+                                                                            "endDate": {
+                                                                                "mode": "Fixed"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Justify",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 4
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "component": {
+                                                                        "type": "Signature",
+                                                                        "model": {
+                                                                            "_internalName": "Signature",
+                                                                            "title": {
+                                                                                "text": "Signature",
+                                                                                "visible": true
+                                                                            },
+                                                                            "orientation": "Vertical",
+                                                                            "required": false,
+                                                                            "font": {
+                                                                                "style": "Normal",
+                                                                                "weight": "Semibold"
+                                                                            },
+                                                                            "wrap": true,
+                                                                            "cWidth": 300,
+                                                                            "height": 170,
+                                                                            "inkColor": "#243746"
+                                                                        }
+                                                                    },
+                                                                    "alignment": {
+                                                                        "horizontal": "Left",
+                                                                        "vertical": "Top"
+                                                                    },
+                                                                    "columns": {
+                                                                        "width": 8
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "shape": "Tab"
+                                }
+                            },
+                            "alignment": {
+                                "horizontal": "Justify",
+                                "vertical": "Top"
+                            },
+                            "columns": {
+                                "width": 12
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "tablet": null,
+    "phone": null,
+    "js": "/*******************************************************************************************************\r\n* The code from this section is executed once the form is loaded.                                      *\r\n*                                                                                                      *\r\n* Depending on the stage of the form lifecycle when a particular action should be performed,           *\r\n* you can use on the following hooks:                                                                  *\r\n*                                                                                                      *\r\n* fd.rendered()     the code is executed once the form is rendered                                     *\r\n*                                                                                                      *\r\n* fd.beforeSave()   the code is executed right before saving the form. If returns Promise, the saving  *\r\n*                   does not proceed until the Promise is resoved. If the Promise is rejected,         * \r\n*                   the saving interrupts. This is the appropriate place for adding custom validation. *\r\n*                                                                                                      *\r\n* fd.saved()        the code is executed once the form is submitted                                    *\r\n*                                                                                                      *\r\n* The following predefined variables can be utilized in the code:                                      *\r\n*                                                                                                      *\r\n* fd    an instance of the current form                                                                *\r\n* $     jQuery object                                                                                  *\r\n*                                                                                                      *\r\n*******************************************************************************************************/\r\nfd.rendered(function() {\r\n    fd.field('InductionDate').disabled = true;\r\n    if (!fd.field('InductionDate').value) fd.field('InductionDate').value = new Date();\r\n});\r\n\r\n",
+    "css": "",
+    "notifySubscribers": false,
+    "version": "1.0.2",
+    "theme": {
+        "themeId": "green",
+        "primary": "#407855",
+        "bodyText": "#333333",
+        "bodyBackground": "#FFFFFF",
+        "fontSize": 15,
+        "fontWeight": 400,
+        "borderThickness": 1,
+        "borderRadius": 2,
+        "shadow": true,
+        "isDark": false,
+        "fontFamily": null,
+        "fontType": 0
+    },
+    "timezone": "America/Los_Angeles",
+    "culture": "en-US",
+    "userLanguage": null,
+    "userCulture": null,
+    "thankYouMessage": "Your site induction has been submitted successfully.",
+    "redirectURL": null,
+    "hideAfterSubmission": true,
+    "submissionTimeout": 0,
+    "authentication": 0,
+    "singleSubmissionPerUser": false,
+    "allowEditingSubmission": false,
+    "restrictAccess": false,
+    "azureADTenant": null,
+    "azureADObjects": [],
+    "entraExternalIdProperties": null,
+    "azureB2CProperties": null,
+    "connection": null,
+    "widgetVersion": "2.0.0"
+}
